@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* main styling */
+
+/*====================================
+  main styling for index.html and main styling for content
+=====================================*/
+
+* {
+    box-sizing: border-box;
+}/* (*) */
+
+body{
+  height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+
+  background-image: url('../img/1.jpg');
+  background-repeat:no-repeat;
+	background-attachment: fixed;
+  background-size:auto;
+	background-position:center, center;
+  font-family: verdana, sans-serif;
+  font-size: 0.9em;
+  line-height: 1.5;
+  overflow: hidden;
+
+}/*body*/
+
+img{
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 5%;
+    z-index: 500;
+  }/*image content pages 3 and 5*/
+
+.main{
+  display: block;
+  height: 100vh;
+  min-height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+
+}
+.wrap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: auto;
+  overflow: hidden;
+  justify-content: center;
+}
+
+#features, #pricing, #textContent {
+  width: 30%;
+  height: 30vh;
+  padding: 0;
+  margin: 2.5% 5%;
+  background-color: black;
+  border: 1px solid red;
+  color: yellow;
+
+}
+
+#textContent{
+  width: 70%;
+}
+
+
+  /*====================================
+  nav  attributes
+  =====================================*/
+
+#nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+    /* This aligns items to the end line on main-axis */
+    justify-content: flex-end;
+    background-color: #222222;
+
+}
+
+#nav ul li {
+    height: 5em;
+    line-height: 2em;
+    width: 14.2857%;
+    text-align: center;
+    padding-top: 1.3em;
+    padding-bottom: 3em;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#nav ul li:hover {
+    background-color: lightblue;
+    color: #000;
+    transition-duration: 1s;
+}
+
+#nav-button-max-500 {
+    display: none;
+}
+
+#nav ul li:nth-child (1) {
+ color: red;
+}
+
+/*
+#nav ul li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+*/

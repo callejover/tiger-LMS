@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* Media Query for resizeing */
+
+/*====================================
+  media querys 1200px or less screen width
+=====================================*/
+
+@media (max-width: 1200px) {
+}
+
+/*====================================
+  media querys 769px or less screen width
+=====================================*/
+
+@media (max-width: 769px) {
+}
+
+/*====================================
+	  media querys 500px or less screen width
+	=====================================*/
+
+@media (max-width: 500px) {
+}
