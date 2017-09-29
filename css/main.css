@@ -18,7 +18,7 @@ body{
   background-image: url('../img/1.jpg');
   background-repeat:no-repeat;
 	background-attachment: fixed;
-  background-size:auto;
+  background-size: 100% auto;
 	background-position:center, center;
   font-family: verdana, sans-serif;
   font-size: 0.9em;
@@ -60,7 +60,7 @@ img{
 
 #features, #pricing, #textContent {
   width: 30%;
-  height: 30vh;
+  height: 35vh;
   padding: 0;
   margin: 2.5% 5%;
   background-color: black;
@@ -78,42 +78,55 @@ img{
   nav  attributes
   =====================================*/
 
-#nav ul {
-    display: flex;
-    flex-direction: row-reverse;
-    /* This aligns items to the end line on main-axis */
-    justify-content: flex-end;
-    background-color: #222222;
+  #nav ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      /* This aligns items to the end line on main-axis */
+      justify-content: flex-end;
+      background-color: #222222;
+      width: 100%;
+      overflow: hidden;
 
-}
+  }
 
-#nav ul li {
-    height: 5em;
-    line-height: 2em;
-    width: 14.2857%;
-    text-align: center;
-    padding-top: 1.3em;
-    padding-bottom: 3em;
-    text-decoration: none;
-    color: white;
-    letter-spacing: 1px;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-#nav ul li:hover {
-    background-color: lightblue;
-    color: #000;
-    transition-duration: 1s;
-}
+  #nav ul li {
+      height: 5em;
+      line-height: 5em;
+      width: 10%;
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 1em;
+      text-transform: uppercase;
+      font-weight: bold;
+      align-content: flex-end;
+  }
 
-#nav-button-max-500 {
-    display: none;
-}
+  #nav ul li a {
+      transition-duration: 1s;
+      padding: 2em;
+      text-decoration: none;
+      color: white;
+  }
 
-#nav ul li:nth-child (1) {
- color: red;
-}
+  #nav ul li a:hover {
+      background-color: lightblue;
+      transition-duration: 1s;
+  }
+
+  #nav-button-max-500 {
+      display: none;
+  }
+
+  #nav ul li:nth-child(1) {
+   color: red;
+   flex-grow: 3;
+   flex-shrink: 0;
+   display: flex;
+   line-height: normal;
+  }
+
+/*  #nav > ul > li:nth-child(1) > a */
 
 /*
 #nav ul li a {
