@@ -1,0 +1,56 @@
+
+.courses ul li:hover{
+background-color: lightblue;
+transition-duration:1s;
+
+}
+.courses ul li a:hover {
+color: #0000CC;
+text-decoration: none;
+
+}
+.courses ul li a {
+
+  display: block;
+  padding: 15px;
+
+
+}
+.courses ul li:hover p {
+  display:block;
+  background-color: white;
+  color:black;
+}
+.courses ul p {
+  display:none;
+  position:absolute;
+  font-size:15px;
+  width:30%;
+}
+.courses ul li {
+  list-style-type:none;
+  color:yellow;
+  width:35%;
+}
+.courses {
+width:50%;
+margin: 2.5% 5%;
+background-color:black;
+padding:0;
+border: 1px solid red;
+
+}
+.courses a {
+  font-size:20px;
+  color:#0000CC;
+  z-index:1;
+
+}
+.courses h1 {
+  color:yellow;
+
+}
+.courses ul li a {
+
+  display:inline-block;
+}
