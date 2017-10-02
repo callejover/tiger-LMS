@@ -1,6 +1,22 @@
 @charset "UTF-8";
-/* main styling */
+/* main styling
+Color map
 
+hex:
+1. D900E8
+2. A64FAC
+3. 91009C
+4. DD46E8
+5. 620069
+
+rgb():
+1. 217,0,232
+2. 166,79,172
+3. 145,0,156
+4. 221,70,232
+5. 98,0,105
+
+*/
 /*====================================
   main styling for index.html and main styling for content
 =====================================*/
@@ -86,6 +102,7 @@ img{
 .pricingContent{
   border: 2px solid red;
   margin: 2.5% 5%;
+  height: 75vh;
 }
 
 h2{
@@ -131,7 +148,7 @@ h2{
       flex-wrap: wrap;
       /* This aligns items to the end line on main-axis */
       justify-content: flex-end;
-      background-color: #222222;
+      background-color:rgba(145,0,156,1);
       width: 100%;
       overflow: hidden;
 
