@@ -16,6 +16,10 @@ rgb():
 4. 221,70,232
 5. 98,0,105
 
+Background
+1. rgba(255,242,255,0.9)
+2. Dark rgba(255,231,255,0.9)
+
 */
 /*====================================
   main styling for index.html and main styling for content
@@ -40,6 +44,7 @@ body{
   font-family: verdana, sans-serif;
   font-size: 0.9em;
   line-height: 1.5;
+  color: rgba(255, 255, 255, 1);
 
 }/*body*/
 
@@ -67,23 +72,26 @@ img{
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  min-height: 100vh;
   padding: 0;
   margin: auto;
   justify-content: center;
+  background-color: rgba(255,242,255,0.9);
 }
 
 
 .content{
- background-color: blue;
  min-height: 100vh;
  width: 100%;
  display: flex;
  flex-direction: row;
- justify-content: flex-start;
+ justify-content: center;
+ width: 100%;
+ background-color: rgba(255,242,255,0.9);
 }
 
 .content.dark{
-  background-color: yellow;
+  background-color: rgba(255,231,255,0.9);
 
 }
 
@@ -91,17 +99,19 @@ img{
   width: 30%;
   height: 35vh;
   padding: 0;
-  margin: 2.5% 5%;
-  color: yellow;
-
+  margin: 2.5% 5% 0 5%;
 }
 
 .textContent{
   width: 70%;
 }
 
+<<<<<<< HEAD
 .pricingContent {
   border: 2px solid red;
+=======
+.pricingContent{
+>>>>>>> 74a14e1b4872a045f2184961277f74442739d472
   margin: 2.5% 5%;
   height: 75vh;
   width: 33%;
@@ -113,9 +123,8 @@ h2{
 }
 
 .apperance {
-
-  background-color: green;
-  border: 1px solid red;
+  background-color:rgba(98,0,105,1);
+  font-size: 1.1em;
 }
 
 .innerContent {
@@ -151,7 +160,7 @@ h2{
       flex-wrap: wrap;
       /* This aligns items to the end line on main-axis */
       justify-content: flex-end;
-      background-color:rgba(145,0,156,1);
+      background-color:rgba(98,0,105,1);
       width: 100%;
       overflow: hidden;
 
@@ -177,7 +186,7 @@ h2{
   }
 
   #nav ul li a:hover {
-      background-color: lightblue;
+      background-color: rgba(145,0,156,1);
       transition-duration: 1s;
   }
 
