@@ -1,0 +1,32 @@
+ul.pricing-list {
+   list-style-position: inside;
+   margin: 1em;
+}
+
+ul.pricing-list li {
+    list-style-type: dotted;
+    font-size: 1.5em
+}
+
+ul.pricing-list li.yes {
+    list-style-image: url(../img/yes_tick.png);
+}
+
+ul.pricing-list li.no {
+    list-style-image: url(../img/no_tick.png);
+}
+
+.pricingContent button {
+    width: calc(100% - 2em);
+    margin: 0 1em;
+    font-size: 1.5em;
+    padding: .5em;
+    cursor: pointer
+}
+
+.pricing_text {
+    float: left;
+}
+.pricing_pic {
+    float: right;
+}
