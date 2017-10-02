@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="../css/reset.css"><!--Reset css-->
         <link rel="stylesheet" href="../css/main.css"><!--main styling and funkutionalety-->
         <link rel="stylesheet" href="../css/mediaq.css"><!--main styling and funkutionalety-->
+        <link rel="stylesheet" href="../css/login.css"><!--login styling-->
 
     </head>
     <body>
@@ -28,14 +29,32 @@
               <li><a href="../index.html">Start</a></li>
               <li><a href="features.html">Features</a></li>
               <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="login.html">Login</a></li>
+              <li><a id="loginButton">LOGIN</a></li>
             </ul>
         </nav>
     </header>
 
+        <!-- Hidden before clicking loginButton -->
+
+          <div id="loginModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>  <!-- Closing X icon in modal -->
+                <div class="header">
+                  <h1>Log in</h1>
+                    <form name="login">  <!-- Form for user input -->
+                      <div class="login">
+                        <input type="text" placeholder="username" id="username"><br>
+                        <input type="password" placeholder="password" id="password"><br>
+                        <button type="button" onclick="getInfo()">Login</button>
+                      </div>
+                    </form>
+                </div>
+              </div>
+            </div> <!-- div loginModal opens the login box on index screen -->
+
 
         <div class="wrap">
-          <div class="content dark">
+          <div class="content">
             <div class="innerContent apperance">
                 <h2>Enkel översik</h2>
                 <p>
@@ -45,7 +64,7 @@
                 </p>
             </div><!--innerContent-->
           </div><!--content dark-->
-          <div class="content">
+          <div class="content dark">
             <div class="innerContent apperance">
                 <h2>Kommunicera med skolan</h2>
                 <p>
@@ -53,7 +72,7 @@
                 </p>
             </div><!--innerContent-->
           </div><!--content-->
-          <div class="content dark">
+          <div class="content">
             <div class="innerContent apperance">
                 <h2>Vara på plats</h2>
                 <p>
@@ -63,7 +82,7 @@
                 </p>
             </div><!--innerContent-->
           </div><!--content dark-->
-          <div class="content">
+          <div class="content dark">
             <div class="innerContent apperance">
                 <h2>Uppgifter</h2>
                 <p>
@@ -75,6 +94,7 @@
           </div><!--content-->
         </div><!--wrap-->
 
+      <script src="../js/login.js"></script>
       <script src="../js/drop.js"></script>
     </body>
 </html>

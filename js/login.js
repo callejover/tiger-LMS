@@ -27,7 +27,7 @@ function getInfo() {
     for(i = 0; i < objPeople.length; i++) {
         if(username == objPeople[i].username && password == objPeople[i].password) {
             if(objPeople[i].account == "student") {
-                window.open('http://www.google.com')
+                window.location.replace('html/courses.html')
             } else if(objPeople[i].account == "teacher") {
                 window.open('http://www.aftonbladet.se')
             } else {
