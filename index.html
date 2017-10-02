@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/reset.css"><!--Reset css-->
         <link rel="stylesheet" href="css/main.css"><!--main styling and funkutionalety-->
         <link rel="stylesheet" href="css/mediaq.css"><!--main styling and funkutionalety-->
+        <link rel="stylesheet" href="css/login.css"><!--login styling-->
 
     </head>
     <body>
@@ -28,10 +29,29 @@
               <li><a href="index.html">Start</a></li>
               <li><a href="html/features.html">Features</a></li>
               <li><a href="html/pricing.html">Pricing</a></li>
-              <li><a href="html/login.html">Login</a></li>
+              <li><button id="loginButton">LOGIN</button></li>  <!-- note! this is a button -->
             </ul>
         </nav>
     </header>
+
+    <!-- Hidden before clicking loginButton -->
+
+      <div id="loginModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>  <!-- Closing X icon in modal -->
+            <div class="header">
+              <h1>Log in</h1>
+                <form name="login">  <!-- Form for user input -->
+                  <div class="login">
+                    <input type="text" placeholder="username" id="username"><br>
+                    <input type="password" placeholder="password" id="password"><br>
+                    <button type="button" onclick="getInfo()">Login</button>
+                  </div>
+                </form>
+            </div>
+          </div>
+        </div> <!-- div loginModal opens the login box on index screen -->
+
         <div class="wrap">
           <div class="textContent apperance">
             <p>qwert</p>
@@ -43,6 +63,7 @@
             <p>pricing</p>
           </div><!--pricing-->
         </div><!--wrap-->
+      <script src="js/login.js"></script>
       <script src="js/drop.js"></script>
     </body>
 </html>

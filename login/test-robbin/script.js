@@ -17,8 +17,8 @@ let usersObject = {
 
             let usernameValue = document.forms["signIn"]["username"].value;
             let passwordValue = document.forms["signIn"]["password"].value;
-            
-            this.usersArray.forEach(function(element) {                
+
+            this.usersArray.forEach(function(element) {
                 if (usernameValue == "" || passwordValue == "") {
                     alert("Du måste fylla i användarnamn och lösenord!");
                     // valid = false;
@@ -32,7 +32,7 @@ let usersObject = {
                     // valid = false;
                     // break;
                 }
-                    
+
             }, this);
         }
 };
