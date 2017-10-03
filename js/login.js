@@ -1,18 +1,26 @@
+
+// Checks witch page youre currently at and pops out the html
+
+var currentPage = window.location.pathname.split('/').pop(); // Split will split the path into different obijects
+
 // Accouts with acess to the page
 
 var objPeople = [
     {
         username: "student",
         password: "student",
-        account: "student"
+        account: "student",
+        refPage: (currentPage === 'index.html') ? 'html/courses.html' : 'courses.html'
     }, {
         username: "teacher",
         password: "teacher",
-        account: "teacher"
+        account: "teacher",
+        refPage: (currentPage === 'index.html') ? 'html/coursessssss.html' : 'courses.html'  // Html waiting for page
     }, {
         username: "admin",
         password: "admin",
-        account: "admin"
+        account: "admin",
+        refPage: (currentPage === 'index.html') ? 'html/courseeeeeeeeees.html' : 'courses.html'  // Html waiting for page 
     }
 ]
 
@@ -27,15 +35,17 @@ function getInfo() {
     for(i = 0; i < objPeople.length; i++) {
         if(username == objPeople[i].username && password == objPeople[i].password) {
             if(objPeople[i].account == "student") {
-                window.location.replace('/Users/calle/Desktop/Skola/tiger-LMS/html/courses.html')
+              window.location.replace(objPeople[i].refPage);  
             } else if(objPeople[i].account == "teacher") {
-                window.open('http://www.aftonbladet.se')
+                window.location.replace(objPeople[i].refPage);
             } else {
-                window.open('http://www.csn.se')
+                window.location.replace(objPeople[i].refPage);
             }
             return; // Stops the loop
         }
-    } alert("Du har angivit fel användarnamn eller lösenord")
+    }
+
+    alert("Du har angivit fel användarnamn eller lösenord");
 }
 
 // Opens modul window to login
