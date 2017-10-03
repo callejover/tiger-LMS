@@ -99,6 +99,13 @@ img{
   width: 70%;
 }
 
+.textContent h2 {
+	color: white;
+	font-family: Georgia;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+}
+
 .pricingContent{
   border: 2px solid red;
   margin: 2.5% 5%;
