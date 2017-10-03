@@ -2,55 +2,60 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;    
+    align-items: center;
+    justify-content: center;
+    padding: 2em
 }
 
 #quick-evaluation img {
     cursor: pointer;
     position: relative;
-    width: 100px;
-    height: 100px
+    width: 80%;
+    margin: 0 20%
+    height: auto
 }
 
+.evaluation-info {
+    font-style: italic;
+    font-size: 80%
+}
+/* 
 #quick-evaluation-thank-you {
     position: absolute;
     visibility: hidden;
     opacity: 0;    
-}
+} */
 
+.quick-evaluation-wrap {position: relative}
 
-/* Modal */
-#quick-evaluation .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: none; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-#quick-evaluation .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 25%; /* Could be more or less, depending on screen size */
-}
-
-#quick-evaluation .close {
-    color: #DBDBDB;
-    float: right;
-    font-size: 28px;
+.glad-message,
+.sad-message,
+.between-message {
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    background: #fff;
+    color: #000;
+    padding: .5em;
+    border-radius: 1em;
+    border-top-left-radius: 0;
+      
+    top: 70%;
+    left: 50%;
+    width: 8em;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
     font-weight: bold;
+    text-align: center
 }
 
-#quick-evaluation .close:hover,
-#quick-evaluation .close:focus {
-    color: #313131;
-    text-decoration: none;
-    cursor: pointer;
+.sad-message {    
+    top: 70%;
+    left: auto;
+    right: 80%;
+    border-radius: 1em;
+    border-top-right-radius: 0;
 }
+
+#glad:focus + .glad-message,
+#sad:focus + .sad-message,
+#between:focus + .between-message {display: block;}
