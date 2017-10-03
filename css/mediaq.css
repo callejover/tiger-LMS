@@ -7,17 +7,20 @@
 
 @media (max-width: 1200px) {
   .pricingContent {
-    margin: 2.5% 5%;
-    width: 90%;
-    padding: 1em;
+    margin: 2.5% 10%;
+    width: 80%;
   }
   
 .pricingAjust{
-  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
 }
+
+.pricing_pic {
+  float: right;
+  width: 60%;
+  margin-left: 0
+}
+
 
 }
 
@@ -26,6 +29,11 @@
 =====================================*/
 
 @media (max-width: 769px) {
+  .pricing_pic {
+    float: right;
+    width: 100%;
+    margin-left: 0
+  }
 }
 
 /*====================================
