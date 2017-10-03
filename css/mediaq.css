@@ -6,6 +6,19 @@
 =====================================*/
 
 @media (max-width: 1200px) {
+  .pricingContent {
+    margin: 2.5% 5%;
+    width: 90%;
+    padding: 1em;
+  }
+  
+.pricingAjust{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
 }
 
 /*====================================
