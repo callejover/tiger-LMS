@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html >
 <head>
-  <meta charset="UTF-8">
-  <title>Login</title>
-  
+	<meta charset="UTF-8">
+	<title>Login</title>
 	<link rel="stylesheet" href="login1.css">
-
+	<script src = "jsforlogin.js">
+	</script>
+	
  </head>
 
 <body>
@@ -14,12 +15,12 @@
 		<div class = "login-page">
 			<div class = "form">
 				<form>
-					<label name="user name">Username</label><br>
-					<input type="text" value = "" placeholder = "Enter Username" name="Name: " required/><br>
+					<label name="username">Username</label><br>
+					<input type="text" value = "" placeholder = "Enter Username" name="userid" required/><br>
 					<label name="password">Password</label><br>
-					<input type="password" value = "" placeholder = "Enter Password" name="Password: " required/>
+					<input type="password" value = "" placeholder = "Enter Password" name="passw" required/>
 					<br><br>
-					<button type="submit">Login</button>			
+					<button type="submit" onclick="check(this.form)">Login</button>			
 				</form>
 			</div>
 		</div>

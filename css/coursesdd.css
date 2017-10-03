@@ -51,3 +51,10 @@
     .tab input:checked ~ .tab-content {
       max-height: 30em;
     }
+	
+	label p {
+		display: inline;
+		float: right;
+		padding: 0 1em 0 0;
+	}
+	

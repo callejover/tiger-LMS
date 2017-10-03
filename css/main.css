@@ -108,10 +108,15 @@ img{
 }
 
 
+
 .pricingContent {
   margin: 2.5% 5%;
   width: 33%;
   padding: 1em;
+}
+
+.pricingContent{
+  border: 2px solid red;
   margin: 2.5% 5%;
   height: auto;
   width: 33%;
