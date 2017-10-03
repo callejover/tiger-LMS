@@ -1,11 +1,13 @@
 ul.pricing-list {
    list-style-position: inside;
    margin: 1em;
+   margin-bottom: 4em
 }
 
 ul.pricing-list li {
     list-style-type: dotted;
-    font-size: 1.5em
+    font-size: 1em;
+    margin: .8em 0;
 }
 
 ul.pricing-list li.yes {
@@ -21,12 +23,27 @@ ul.pricing-list li.no {
     margin: 0 1em;
     font-size: 1.5em;
     padding: .5em;
-    cursor: pointer
+    cursor: pointer;
+    background: rgba(145,0,156,1);
+    border-color: rgba(145,0,156,1);
+    border: 1px solid rgba(145,0,156,1);
+    color: #fff;
+    transition: .5s;
+    text-transform: uppercase
+
+}
+.pricingContent button:hover {
+    background: none;
+    border-color: #fff;
+    transition: 1s
 }
 
-.pricing_text {
-    float: left;
+.pricingContent p {
+    margin: 2em 0;
 }
+
 .pricing_pic {
     float: right;
+    width: auto;
+    margin-left: 3em
 }
