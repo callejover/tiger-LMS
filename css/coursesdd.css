@@ -54,7 +54,7 @@
     .tab input:checked ~ .tab-content {
       max-height: 30em;
     }
-<<<<<<< HEAD
+
 	
 	label p {
 		display: inline;
@@ -62,7 +62,7 @@
 		padding: 0 1em 0 0;
 	}
 	
-=======
+
     .assignments {
       color:black;
       width:50%;
@@ -85,4 +85,4 @@
     ul.pricing-list li.no {
         list-style-image: url(../img/no_tick.png);
     }
->>>>>>> 523d4a4dc6f6b0145f3a542d6f7317b62b0d5d22
+
