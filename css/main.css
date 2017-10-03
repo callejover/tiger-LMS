@@ -109,17 +109,22 @@ img{
 
 .pricingContent {
   margin: 2.5% 5%;
-  height: 75vh;
   width: 33%;
   padding: 1em;
   margin: 2.5% 5%;
-  height: 75vh;
+  height: auto;
   width: 33%;
   padding: 1em;
 }
 
 h2{
   font-size: 3em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.5em
 }
 
 .apperance {
