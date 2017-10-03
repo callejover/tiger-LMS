@@ -42,6 +42,9 @@
       max-height: 0;
       overflow: hidden;
       transition: all .35s;
+      display:flex;
+      flex-direction: row;
+      flex-wrap:nowrap;
     }
 
     .tab-content p {
@@ -50,4 +53,26 @@
 
     .tab input:checked ~ .tab-content {
       max-height: 30em;
+    }
+    .assignments {
+      color:black;
+      width:50%;
+      align-content:center;
+    }
+    .infoTab {
+      color:black;
+      width:50%;
+    }
+    ul.pricing-list li {
+    list-style-type: dotted;
+    font-size: 1em;
+    margin: .8em 0;
+    }
+
+    ul.pricing-list li.yes {
+        list-style-image: url(../img/yes_tick.png);
+    }
+
+    ul.pricing-list li.no {
+        list-style-image: url(../img/no_tick.png);
     }
