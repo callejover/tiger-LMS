@@ -1,3 +1,24 @@
+// Opens the attendence window
+
+function openWin() {
+    var myWindow = window.open('html/attendence.html');
+    setTimeout(function(){ myWindow.close() }, 10000);
+}
+
+// Checks if the attendence code valid
+
+function checkattendence() {
+    /*var inputAttendence = document.getElementById("").value*/
+
+    if(document.getElementById("input-attendence").value == "111") {
+        alert("RÄTT");
+    } else {
+        alert("FEL");
+    }
+}
+
+
+
 
 // Checks witch page youre currently at and pops out the html
 
@@ -62,7 +83,6 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
-    getElementById("text").focus();
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -76,3 +96,4 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
