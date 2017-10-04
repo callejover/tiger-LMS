@@ -1,0 +1,19 @@
+
+.form-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #A64FAC;
+}
+
+.form-wrap h1 {
+    font-size: 2em;
+}
+
+.form-wrap h2 {
+    font-size: 1.3em;
+}
+
+input[type="text"] {
+    width: 30em;
+}
