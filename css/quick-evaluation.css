@@ -4,7 +4,7 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    padding: 2em
+    padding: 2em;
 }
 
 #quick-evaluation img {
@@ -74,7 +74,6 @@
     font-weight: bold;
     text-align: center
 }
-
 
 #glad:focus + .glad-message,
 #sad:focus + .sad-message,
