@@ -1,7 +1,6 @@
     
     .tab-group{
       margin: 0 auto;
-      max-width: 40em;
       width: 100%;
       height:auto;
     }/*.tab_grup*/
@@ -41,7 +40,7 @@
     .tab-content{
       max-height: 0;
       overflow: hidden;
-      transition: all .35s;
+      transition: all .35s; 
       display:flex;
       flex-direction: row;
       flex-wrap:nowrap;
@@ -56,7 +55,7 @@
     }
 
 	
-	label p {
+	label span {
 		display: inline;
 		float: right;
 		padding: 0 1em 0 0;
