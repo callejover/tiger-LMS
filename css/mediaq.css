@@ -6,23 +6,57 @@
 =====================================*/
 
 @media (max-width: 1200px) {
-  .pricingContent {
-    margin: 2.5% 10%;
-    width: 80%;
+
+  body{
+    background-size: auto 100%;
   }
-  
-.pricingAjust{
-  flex-direction: column;
-}
 
-.pricing_pic {
-  float: right;
-  width: 60%;
-  margin-left: 0
-}
+  .mobileHide{
+    display: none;
+  }
+
+  .index{ /*companion to wrap but just for index.html*/
+      flex-direction:row;
+  }
+
+  .textContent{
+    order: 2;
+    width: 100%;
+  }
+
+  .features{
+    order: 0;
+  }
+
+  .pricing{
+    order: 1;
+  }
 
 
-}
+  /*pricing.html*/
+
+  .pricing, .features {
+    width: 50%;
+    margin: 5% 0;
+  }
+
+  .pricingContent {
+      margin: 2.5% 10%;
+      width: 80%;
+    }
+
+  .pricingAjust{
+    flex-direction: column;
+  }
+
+  .pricing_pic {
+    float: right;
+    width: 60%;
+    margin-left: 0
+  }
+
+
+}/*@media 1200px*/
 
 /*====================================
   media querys 769px or less screen width
