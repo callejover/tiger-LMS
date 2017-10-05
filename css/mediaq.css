@@ -24,15 +24,18 @@
     order: 2;
     width: 100%;
     margin: 0;
+    margin-top: -17.5em;
     top: 0;
   }
 
   .features{
     order: 0;
+    z-index: 12;
   }
 
   .pricing{
     order: 1;
+    z-index: 13;
   }
 
   .innerContent {
