@@ -45,5 +45,5 @@ Reflection aka To do list. 171005
 5. ajust text in courses in courses list. innercontent ajust colums with text.(done hoppfully)
 6. menu adjusting to mediaq in all menus
 7. Calle (atendens function).
-8. Kanya week evaluation
+8. Kanya week evaluation (done)
 9. Fix overflow with text.
