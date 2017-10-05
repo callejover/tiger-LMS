@@ -5,15 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
         <title>Veckans Utvärdering</title>
-
         <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
         <link rel="stylesheet" href="../css/reset.css"><!--Reset css-->
         <link rel="stylesheet" href="../css/main.css"><!--main styling and funkutionalety-->
         <link rel="stylesheet" href="../css/mediaq.css"><!--main styling and funkutionalety-->
         <link rel="stylesheet" href="../css/weekly-feedback.css"><!-- weekly feedback styling -->
+        <script src = "../js/feedback.js"></script>
     </head>
     <body class = "form-body"> 
         <header class = "form-header">
@@ -24,6 +22,7 @@
                     <li><a href="../index.html">Start</a></li>
                     <li><a href="../html/features.html">Features</a></li>
                     <li><a href="../html/pricing.html">Pricing</a></li>
+                    <li><a href="../index.html">Log out</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,42 +33,42 @@
                 <div class = "form">
                     <form>
                         <h2>Ditt namn</h2>
-                        <input type = "text" placeholder="Skriv ditt namn..."/><br>
+                        <input type = "text" name = "namn" placeholder="Skriv ditt namn..." autofocus><br>
                         <h2>Hur upplever du just nu tempot i utbildningen?</h2>
                         <div class = "radio">
                             <p>Hänger inte med alls</p>    
-                            <input type="radio"> 1
-                            <input type="radio"> 2
-                            <input type="radio"> 3
-                            <input type="radio"> 4
-                            <input type="radio"> 5
-                            <input type="radio"> 6
-                            <input type="radio"> 7
+                            <input type="radio" name = "num" value = "1"> 1
+                            <input type="radio" name = "num" value = "2"> 2
+                            <input type="radio" name = "num" value = "3"> 3
+                            <input type="radio" name = "num" value = "4"> 4
+                            <input type="radio" name = "num" value = "5"> 5
+                            <input type="radio" name = "num" value = "6"> 6
+                            <input type="radio" name = "num" value = "7"> 7
                             <p>Hänger med till 100 %</p>
                             <br>
                         </div>
                         <h2>Hur engagerad anser du själv att du är i dina studier?</h2>
                         <div class = "radio">
                             <p>Inte engagerad alls</p>
-                            <input type="radio"> 1
-                            <input type="radio"> 2
-                            <input type="radio"> 3
-                            <input type="radio"> 4
-                            <input type="radio"> 5
-                            <input type="radio"> 6
-                            <input type="radio"> 7
+                            <input type="radio" name = "num2" value = "1"> 1
+                            <input type="radio" name = "num2" value = "2"> 2
+                            <input type="radio" name = "num2" value = "3"> 3
+                            <input type="radio" name = "num2" value = "4"> 4
+                            <input type="radio" name = "num2" value = "5"> 5
+                            <input type="radio" name = "num2" value = "6"> 6
+                            <input type="radio" name = "num2" value = "7"> 7
                             <p>Väldigt engagerad</p><br>
                         </div>
                         <h2>Hur upplever du stämningen i klassen?</h2>
                         <div class = "radio">
                             <p>Dålig stämning</p>
-                            <input type="radio"> 1
-                            <input type="radio"> 2
-                            <input type="radio"> 3
-                            <input type="radio"> 4
-                            <input type="radio"> 5
-                            <input type="radio"> 6
-                            <input type="radio"> 7 
+                            <input type="radio" name = "num3" value = "1"> 1
+                            <input type="radio" name = "num3" value = "2"> 2
+                            <input type="radio" name = "num3" value = "3"> 3
+                            <input type="radio" name = "num3" value = "4"> 4
+                            <input type="radio" name = "num3" value = "5"> 5
+                            <input type="radio" name = "num3" value = "6"> 6
+                            <input type="radio" name = "num3" value = "7"> 7
                             <p>Mycket god stämning</p>
                             <br>
                         </div>
@@ -83,7 +82,7 @@
                         <h2>Förslag på förbättringar</h2>
                         <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br><br>
                         
-                        <button class = "send-button" type="submit">Skicka!</button> 
+                        <button class = "send-button" type="submit" onclick="check()">Skicka!</button> 
                         <!-- submit button -->
                     </form>
                 </div>
