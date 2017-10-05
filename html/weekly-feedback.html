@@ -13,28 +13,29 @@
         <link rel="stylesheet" href="../css/weekly-feedback.css"><!-- weekly feedback styling -->
         <script src = "../js/feedback.js"></script>
     </head>
-    <body class = "form-body"> 
-        <header class = "form-header">
+    <body> 
+        <header>
             <nav id="nav">
                 <div id="nav-button-max-500">MENU</div>
-                <ul class="hidden-max-500">
-                    <li><a href="../index.html">logotypeFuture</a></li>
-                    <li><a href="../index.html">Start</a></li>
-                    <li><a href="../html/features.html">Features</a></li>
-                    <li><a href="../html/pricing.html">Pricing</a></li>
-                    <li><a href="../index.html">Log out</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <div class="form-wrap">
-            <div class="form-content">
-                <h1>Veckans Utvärdering</h1><br>
-                <div class = "form">
+                    <ul class="hidden-max-500">
+                        <li><a href="../index.html">logotypeFuture</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="../index.html">Log out</a></li>
+                    </ul>
+                </div>    
+
+            </nav>
+        </header>    
+
+        <div class="wrap">
+            <div class="content">
+                <div class="innerContent apperance">
+                    <h3>Veckans Utvärdering</h3><br>
                     <form>
-                        <h2>Ditt namn</h2>
+                        <h4>Ditt namn</h4>
                         <input type = "text" name = "namn" placeholder="Skriv ditt namn..." autofocus><br>
-                        <h2>Hur upplever du just nu tempot i utbildningen?</h2>
+                        <h4>Hur upplever du just nu tempot i utbildningen?</h4>
                         <div class = "radio">
                             <p>Hänger inte med alls</p>    
                             <input type="radio" name = "num" value = "1"> 1
@@ -47,7 +48,7 @@
                             <p>Hänger med till 100 %</p>
                             <br>
                         </div>
-                        <h2>Hur engagerad anser du själv att du är i dina studier?</h2>
+                        <h4>Hur engagerad anser du själv att du är i dina studier?</h4>
                         <div class = "radio">
                             <p>Inte engagerad alls</p>
                             <input type="radio" name = "num2" value = "1"> 1
@@ -59,7 +60,7 @@
                             <input type="radio" name = "num2" value = "7"> 7
                             <p>Väldigt engagerad</p><br>
                         </div>
-                        <h2>Hur upplever du stämningen i klassen?</h2>
+                        <h4>Hur upplever du stämningen i klassen?</h4>
                         <div class = "radio">
                             <p>Dålig stämning</p>
                             <input type="radio" name = "num3" value = "1"> 1
@@ -73,13 +74,13 @@
                             <br>
                         </div>
 
-                        <h2>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h2> 
+                        <h4>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h4> 
                         <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br>
                          <!-- textarea for longer text -->
-                        <h2>Vad har varit bra?</h2>
+                        <h4>Vad har varit bra?</h4>
                         <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br>
 
-                        <h2>Förslag på förbättringar</h2>
+                        <h4>Förslag på förbättringar</h4>
                         <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br><br>
                         
                         <button class = "send-button" type="submit" onclick="check()">Skicka!</button> 
