@@ -11,6 +11,7 @@
     background-size: auto 100%;
   }
 
+
   .mobileHide{
     display: none;
   }
@@ -23,6 +24,7 @@
     order: 2;
     width: 100%;
     margin: 0;
+    top: 0;
   }
 
   .features{
@@ -33,17 +35,25 @@
     order: 1;
   }
 
+  .innerContent {
+      margin: 5% 0;
+      width: 100%;
+    }
+
 
   /*pricing.html*/
 
   .pricing, .features {
     width: 50%;
-    margin: 5% 0;
+    margin: 2.5% 0;
+    min-height: 2.5em;
+    height: 5em;
+    border: none;
   }
 
   .pricingContent {
-      margin: 2.5% 10%;
-      width: 80%;
+      margin: 5% 0;
+      width: 100%;
     }
 
   .pricingAjust{
