@@ -66,6 +66,7 @@
       color:black;
       width:50%;
       align-content:center;
+      padding-left:5%;
     }
     .infoTab {
       color:black;
@@ -85,3 +86,6 @@
         list-style-image: url(../img/no_tick.png);
     }
 
+.tabPadding {
+  padding-left:1em;
+}
