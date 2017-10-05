@@ -6,6 +6,7 @@ function check() {
     } 
     else {
     } */
-    alert("Tack för dina svart!");
-    window.open('../html/courses.html');
+    alert("Tack för dina svar!");
+    window.history.back();
+    
 }
