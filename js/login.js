@@ -1,7 +1,7 @@
 // Opens the attendence window
 
 function openWin() {
-    var myWindow = window.open('html/attendence.html');
+    var myWindow = window.open("attendence.html");
     setTimeout(function(){ myWindow.close() }, 10000);
 }
 
@@ -11,13 +11,12 @@ function checkattendence() {
     /*var inputAttendence = document.getElementById("").value*/
 
     if(document.getElementById("input-attendence").value == "111") {
-        alert("RÄTT");
-    } else {
-        alert("FEL");
+        alert("Rätt närvarokod! Välkommen till lektionen! Du kan nu stänga fönstret.");
     }
 }
 
 
+/*==========================================================================*/
 
 
 // Checks witch page youre currently at and pops out the html
