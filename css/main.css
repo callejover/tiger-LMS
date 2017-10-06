@@ -56,6 +56,48 @@ img{
     z-index: 500;
   }
 
+    textarea,
+    input,
+    input::placeholder,
+    select,
+    button {
+      background: #A64FAC;
+      border: none;
+      color: #fff;
+      font-size: .9em;
+      padding: .5em;
+      font-family: verdana, sans-serif;
+      margin: .2em 0;
+      border: 1px solid #A64FAC;
+    }
+
+    textarea:focus,
+    input:focus,
+    select:focus,
+    button:focus {
+      background: #fff;
+      color: #D900E8;
+      border: 1px solid #D900E8;
+    }
+
+    input:focus::placeholder{
+      background: #fff;
+      color: #D900E8;
+      
+      border: none;
+    }
+
+    button {
+      cursor: pointer;
+      padding: 1em
+    }
+
+    label,
+    input[type=radio],
+    input[type=checkbox]{
+      cursor: pointer
+    }
+
 .main{
   display: block;
   height: 100vh;

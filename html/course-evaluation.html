@@ -66,7 +66,7 @@
             <div class="innerContent apperance">
                 <h2>Kursutvärdering</h2>
                 <form class="course-evaluation">
-                                        
+
                     <h4>Har vi gjort det vi ska?</h4>
                     <span>Stämmer inte alls</span>
                     <label><input type="radio" name="haveDone" value="1">1</label>
@@ -76,12 +76,10 @@
                     <label><input type="radio" name="haveDone" value="5">5</label>
                     <label><input type="radio" name="haveDone" value="6">6</label>
                     <label><input type="radio" name="haveDone" value="7">7</label>
-                    <span>Stämmer väldigt bra</span><br>
-                    Beskriv i ord:
+                    <span>Stämmer väldigt bra</span><br> Beskriv i ord:
                     <textarea name="haveDone" id="" cols="30" rows="5"></textarea>
 
                     <h4>Hur va kursen?</h4>
-                    
                     <span>Dålig</span>
                     <label><input type="radio" name="howCourse" value="1">1</label>
                     <label><input type="radio" name="howCourse" value="2">2</label>
@@ -90,10 +88,9 @@
                     <label><input type="radio" name="howCourse" value="5">5</label>
                     <label><input type="radio" name="howCourse" value="6">6</label>
                     <label><input type="radio" name="howCourse" value="7">7</label>
-                    <span>Bra</span><br>
-                    Beskriv i ord:
+                    <span>Bra</span><br> Beskriv i ord:
                     <textarea name="howCourse" id="" cols="30" rows="5"></textarea>
-                    
+
                     <h4>Vad tyckte du om läraren?</h4>
                     <span>Dålig</span>
                     <label><input type="radio" name="aboutTeacher" value="1">1</label>
@@ -106,7 +103,7 @@
                     <span>Bra</span><br>
                     <textarea name="" id="aboutTeacher" cols="30" rows="5"></textarea>
                     <br>
-                    
+
                     <h4>Hur var kursen som helhet?</h4>
                     <span>Dålig</span>
                     <label><input type="radio" name="courseOverhead" value="1">1</label>
@@ -116,21 +113,23 @@
                     <label><input type="radio" name="courseOverhead" value="5">5</label>
                     <label><input type="radio" name="courseOverhead" value="6">6</label>
                     <label><input type="radio" name="courseOverhead" value="7">7</label>
-                    <span>Bra</span><br>
-                    Beskriv i ord:
+                    <span>Bra</span><br> Beskriv i ord:
                     <textarea name="" id="courseOverhead" cols="30" rows="10"></textarea>
                     <br>
 
                     <h4>Har kursen innefattat detta?</h4>
+                    <p>Bock i det som stämmer överens med vad kursen har innefattat.</p>
                     <label><input type="checkbox" name="courseContins" value="1">Uppgift 1</label><br>
                     <label><input type="checkbox" name="courseContins" value="2">Uppgift 2</label><br>
                     <label><input type="checkbox" name="courseContins" value="3">Uppgift 3</label><br>
                     <label><input type="checkbox" name="courseContins" value="4">Uppgift 4</label><br>
                     <label><input type="checkbox" name="courseContins" value="5">Uppgift 5</label><br>
-                    <label><input type="checkbox" name="courseContins" value="6">Uppgift 6</label><br>
-                    Något annat utöver detta?
+                    <label><input type="checkbox" name="courseContins" value="6">Uppgift 6</label><br> Något annat utöver
+                    detta?
                     <textarea name="" id="courseContins" cols="30" rows="10"></textarea>
-                    <button>Skicka</button>
+                    
+                    <input type="button" onclick="confirmation()" value="Skicka">
+
                 </form>
             </div>
         </div>
@@ -138,6 +137,7 @@
     </div>
     <!--wrap-->
 
+    <script src = "../js/course-evaluation.js"></script>
     <script src="../js/quick-evaluation.js"></script>
     <script src="../js/login.js"></script>
     <script src="../js/drop.js"></script>
