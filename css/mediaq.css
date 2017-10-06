@@ -52,6 +52,7 @@
     min-height: 2.5em;
     height: 5em;
     border: none;
+    padding: 0.75em;
   }
 
   .pricingContent {
@@ -69,6 +70,18 @@
     margin-left: 0
   }
 
+ /*menu all .html files*/
+
+  #nav ul li {
+    width: 50%;
+    text-align: center;
+  }
+
+  #nav ul li:nth-child(1) {
+    flex-grow: 0;
+    display: block;
+    padding: 2em;
+  }
 
 }/*@media 1200px*/
 

@@ -217,7 +217,6 @@ h4 {
   }
 
   #nav ul li:nth-child(1) {
-   color: red;
    flex-grow: 3;
    flex-shrink: 0;
    display: flex;
