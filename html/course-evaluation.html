@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Studentsidan</title>
+
+    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!--Reset css-->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- quick-evaluation styling -->
+    <link rel="stylesheet" href="../css/mediaq.css">
+    <!-- media querys -->
+    <link rel="stylesheet" href="../css/login.css">
+    <!--login styling-->
+    <link rel="stylesheet" href="../css/course-evaluation.css">
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header>
+        <nav id="nav">
+            <div id="nav-button-max-500">MENU</div>
+            <ul class="hidden-max-500">
+                <li><a href="#">logotypFuture</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="../index.html">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hidden before clicking loginButton -->
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Closing X icon in modal -->
+            <div class="header">
+                <h1>Log in</h1>
+                <form name="login">
+                    <!-- Form for user input -->
+                    <div class="login">
+                        <input type="text" placeholder="username" id="username"><br>
+                        <input type="password" placeholder="password" id="password"><br>
+                        <button type="button" onclick="getInfo()">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- div loginModal opens the login box on index screen -->
+
+
+    <div class="wrap">
+        <div class="content">
+            <div class="innerContent apperance">
+                <h2>Kursutvärdering</h2>
+                <form class="course-evaluation">
+                                        
+                    <h4>Har vi gjort det vi ska?</h4>
+                    <span>Stämmer inte alls</span>
+                    <label><input type="radio" name="haveDone" value="1">1</label>
+                    <label><input type="radio" name="haveDone" value="2">2</label>
+                    <label><input type="radio" name="haveDone" value="3">3</label>
+                    <label><input type="radio" name="haveDone" value="4">4</label>
+                    <label><input type="radio" name="haveDone" value="5">5</label>
+                    <label><input type="radio" name="haveDone" value="6">6</label>
+                    <label><input type="radio" name="haveDone" value="7">7</label>
+                    <span>Stämmer väldigt bra</span><br>
+                    Beskriv i ord:
+                    <textarea name="haveDone" id="" cols="30" rows="5"></textarea>
+
+                    <h4>Hur va kursen?</h4>
+                    
+                    <span>Dålig</span>
+                    <label><input type="radio" name="howCourse" value="1">1</label>
+                    <label><input type="radio" name="howCourse" value="2">2</label>
+                    <label><input type="radio" name="howCourse" value="3">3</label>
+                    <label><input type="radio" name="howCourse" value="4">4</label>
+                    <label><input type="radio" name="howCourse" value="5">5</label>
+                    <label><input type="radio" name="howCourse" value="6">6</label>
+                    <label><input type="radio" name="howCourse" value="7">7</label>
+                    <span>Bra</span><br>
+                    Beskriv i ord:
+                    <textarea name="howCourse" id="" cols="30" rows="5"></textarea>
+                    
+                    <h4>Vad tyckte du om läraren?</h4>
+                    <span>Dålig</span>
+                    <label><input type="radio" name="aboutTeacher" value="1">1</label>
+                    <label><input type="radio" name="aboutTeacher" value="2">2</label>
+                    <label><input type="radio" name="aboutTeacher" value="3">3</label>
+                    <label><input type="radio" name="aboutTeacher" value="4">4</label>
+                    <label><input type="radio" name="aboutTeacher" value="5">5</label>
+                    <label><input type="radio" name="aboutTeacher" value="6">6</label>
+                    <label><input type="radio" name="aboutTeacher" value="7">7</label>
+                    <span>Bra</span><br>
+                    <textarea name="" id="aboutTeacher" cols="30" rows="5"></textarea>
+                    <br>
+                    
+                    <h4>Hur var kursen som helhet?</h4>
+                    <span>Dålig</span>
+                    <label><input type="radio" name="courseOverhead" value="1">1</label>
+                    <label><input type="radio" name="courseOverhead" value="2">2</label>
+                    <label><input type="radio" name="courseOverhead" value="3">3</label>
+                    <label><input type="radio" name="courseOverhead" value="4">4</label>
+                    <label><input type="radio" name="courseOverhead" value="5">5</label>
+                    <label><input type="radio" name="courseOverhead" value="6">6</label>
+                    <label><input type="radio" name="courseOverhead" value="7">7</label>
+                    <span>Bra</span><br>
+                    Beskriv i ord:
+                    <textarea name="" id="courseOverhead" cols="30" rows="10"></textarea>
+                    <br>
+
+                    <h4>Har kursen innefattat detta?</h4>
+                    <label><input type="checkbox" name="courseContins" value="1">Uppgift 1</label><br>
+                    <label><input type="checkbox" name="courseContins" value="2">Uppgift 2</label><br>
+                    <label><input type="checkbox" name="courseContins" value="3">Uppgift 3</label><br>
+                    <label><input type="checkbox" name="courseContins" value="4">Uppgift 4</label><br>
+                    <label><input type="checkbox" name="courseContins" value="5">Uppgift 5</label><br>
+                    <label><input type="checkbox" name="courseContins" value="6">Uppgift 6</label><br>
+                    Något annat utöver detta?
+                    <textarea name="" id="courseContins" cols="30" rows="10"></textarea>
+                    <button>Skicka</button>
+                </form>
+            </div>
+        </div>
+        <!--content-->
+    </div>
+    <!--wrap-->
+
+    <script src="../js/quick-evaluation.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/drop.js"></script>
+
+</body>
+
+</html>
