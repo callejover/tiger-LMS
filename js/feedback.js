@@ -1,10 +1,11 @@
-function check() { 									
-    /* if (confirm("Vill du skicka dina svar nu?") == true) {
-        alert("Tack för dina svar!");
-        window.open('../html/courses.html');       
-    } 
-    else {
-    } */
-    alert("Tack för dina svar!");
-    window.history.back();
-}
+function check() {
+	/* var answer = confirm("Vill du skicka dina svar nu?")
+	if (answer){ */
+		alert("Tack för dina svar!");
+		window.history.back();
+	}
+/* 	else{
+		return false;
+	}
+} */
+
