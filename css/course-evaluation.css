@@ -1,3 +1,17 @@
 .course-evaluation textarea {
     width: 100%
 }
+
+.mandatory {
+    position: relative;
+}
+.mandatory::after {
+    content: "*";
+    position: absolute;
+    color: #ff0000;
+    padding: .2em
+}
+
+.color-red {
+    color: #ff0000
+}

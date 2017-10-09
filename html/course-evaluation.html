@@ -65,70 +65,71 @@
         <div class="content">
             <div class="innerContent apperance">
                 <h2>Kursutvärdering</h2>
-                <form class="course-evaluation">
+                <p>Alla fält med en röd stjärna (<span class="color-red">*</span>) är obligatoriska att fylla i.</p>
+                <form class="course-evaluation" name="checkFormData" action="courses.html" onsubmit="return check()">
 
                     <h4>Har vi gjort det vi ska?</h4>
                     <span>Stämmer inte alls</span>
-                    <label><input type="radio" name="haveDone" value="1">1</label>
-                    <label><input type="radio" name="haveDone" value="2">2</label>
-                    <label><input type="radio" name="haveDone" value="3">3</label>
-                    <label><input type="radio" name="haveDone" value="4">4</label>
-                    <label><input type="radio" name="haveDone" value="5">5</label>
-                    <label><input type="radio" name="haveDone" value="6">6</label>
-                    <label><input type="radio" name="haveDone" value="7">7</label>
-                    <span>Stämmer väldigt bra</span><br> Beskriv i ord:
+                    <label><input type="radio" name="haveDone" value="1" required>1</label>
+                    <label><input type="radio" name="haveDone" value="2" required>2</label>
+                    <label><input type="radio" name="haveDone" value="3" required>3</label>
+                    <label><input type="radio" name="haveDone" value="4" required>4</label>
+                    <label><input type="radio" name="haveDone" value="5" required>5</label>
+                    <label><input type="radio" name="haveDone" value="6" required>6</label>
+                    <label><input type="radio" name="haveDone" value="7" required>7</label>
+                    <span class="mandatory">Stämmer väldigt bra</span><br> Beskriv i ord:
                     <textarea name="haveDone" id="" cols="30" rows="5"></textarea>
 
                     <h4>Hur va kursen?</h4>
                     <span>Dålig</span>
-                    <label><input type="radio" name="howCourse" value="1">1</label>
-                    <label><input type="radio" name="howCourse" value="2">2</label>
-                    <label><input type="radio" name="howCourse" value="3">3</label>
-                    <label><input type="radio" name="howCourse" value="4">4</label>
-                    <label><input type="radio" name="howCourse" value="5">5</label>
-                    <label><input type="radio" name="howCourse" value="6">6</label>
-                    <label><input type="radio" name="howCourse" value="7">7</label>
-                    <span>Bra</span><br> Beskriv i ord:
+                    <label><input type="radio" name="howCourse" value="1" required>1</label>
+                    <label><input type="radio" name="howCourse" value="2" required>2</label>
+                    <label><input type="radio" name="howCourse" value="3" required>3</label>
+                    <label><input type="radio" name="howCourse" value="4" required>4</label>
+                    <label><input type="radio" name="howCourse" value="5" required>5</label>
+                    <label><input type="radio" name="howCourse" value="6" required>6</label>
+                    <label><input type="radio" name="howCourse" value="7" required>7</label>
+                    <span class="mandatory">Bra</span><br> Beskriv i ord:
                     <textarea name="howCourse" id="" cols="30" rows="5"></textarea>
 
                     <h4>Vad tyckte du om läraren?</h4>
                     <span>Dålig</span>
-                    <label><input type="radio" name="aboutTeacher" value="1">1</label>
-                    <label><input type="radio" name="aboutTeacher" value="2">2</label>
-                    <label><input type="radio" name="aboutTeacher" value="3">3</label>
-                    <label><input type="radio" name="aboutTeacher" value="4">4</label>
-                    <label><input type="radio" name="aboutTeacher" value="5">5</label>
-                    <label><input type="radio" name="aboutTeacher" value="6">6</label>
-                    <label><input type="radio" name="aboutTeacher" value="7">7</label>
-                    <span>Bra</span><br>
+                    <label><input type="radio" name="aboutTeacher" value="1" required>1</label>
+                    <label><input type="radio" name="aboutTeacher" value="2" required>2</label>
+                    <label><input type="radio" name="aboutTeacher" value="3" required>3</label>
+                    <label><input type="radio" name="aboutTeacher" value="4" required>4</label>
+                    <label><input type="radio" name="aboutTeacher" value="5" required>5</label>
+                    <label><input type="radio" name="aboutTeacher" value="6" required>6</label>
+                    <label><input type="radio" name="aboutTeacher" value="7" required>7</label>
+                    <span class="mandatory">Bra</span><br>
                     <textarea name="" id="aboutTeacher" cols="30" rows="5"></textarea>
                     <br>
 
                     <h4>Hur var kursen som helhet?</h4>
                     <span>Dålig</span>
-                    <label><input type="radio" name="courseOverhead" value="1">1</label>
-                    <label><input type="radio" name="courseOverhead" value="2">2</label>
-                    <label><input type="radio" name="courseOverhead" value="3">3</label>
-                    <label><input type="radio" name="courseOverhead" value="4">4</label>
-                    <label><input type="radio" name="courseOverhead" value="5">5</label>
-                    <label><input type="radio" name="courseOverhead" value="6">6</label>
-                    <label><input type="radio" name="courseOverhead" value="7">7</label>
-                    <span>Bra</span><br> Beskriv i ord:
+                    <label><input type="radio" name="courseOverhead" value="1" required>1</label>
+                    <label><input type="radio" name="courseOverhead" value="2" required>2</label>
+                    <label><input type="radio" name="courseOverhead" value="3" required>3</label>
+                    <label><input type="radio" name="courseOverhead" value="4" required>4</label>
+                    <label><input type="radio" name="courseOverhead" value="5" required>5</label>
+                    <label><input type="radio" name="courseOverhead" value="6" required>6</label>
+                    <label><input type="radio" name="courseOverhead" value="7" required>7</label>
+                    <span class="mandatory">Bra</span><br> Beskriv i ord:
                     <textarea name="" id="courseOverhead" cols="30" rows="10"></textarea>
                     <br>
 
                     <h4>Har kursen innefattat detta?</h4>
                     <p>Bock i det som stämmer överens med vad kursen har innefattat.</p>
-                    <label><input type="checkbox" name="courseContins" value="1">Uppgift 1</label><br>
-                    <label><input type="checkbox" name="courseContins" value="2">Uppgift 2</label><br>
-                    <label><input type="checkbox" name="courseContins" value="3">Uppgift 3</label><br>
-                    <label><input type="checkbox" name="courseContins" value="4">Uppgift 4</label><br>
-                    <label><input type="checkbox" name="courseContins" value="5">Uppgift 5</label><br>
-                    <label><input type="checkbox" name="courseContins" value="6">Uppgift 6</label><br> Något annat utöver
+                    <label><input type="checkbox" name="courseContains" value="1">Uppgift 1</label><br>
+                    <label><input type="checkbox" name="courseContains" value="2">Uppgift 2</label><br>
+                    <label><input type="checkbox" name="courseContains" value="3">Uppgift 3</label><br>
+                    <label><input type="checkbox" name="courseContains" value="4">Uppgift 4</label><br>
+                    <label><input type="checkbox" name="courseContains" value="5">Uppgift 5</label><br>
+                    <label><input type="checkbox" name="courseContains" value="6">Uppgift 6</label><br> Något annat utöver
                     detta?
-                    <textarea name="" id="courseContins" cols="30" rows="10"></textarea>
+                    <textarea name="" id="courseContains" cols="30" rows="10"></textarea>
                     
-                    <input type="button" onclick="confirmation()" value="Skicka">
+                    <button class = "send-button" type="submit">Skicka!</button>
 
                 </form>
             </div>
@@ -137,8 +138,7 @@
     </div>
     <!--wrap-->
 
-    <script src = "../js/course-evaluation.js"></script>
-    <script src="../js/quick-evaluation.js"></script>
+    <script src="../js/course-evaluation.js"></script>
     <script src="../js/login.js"></script>
     <script src="../js/drop.js"></script>
 

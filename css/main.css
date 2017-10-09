@@ -57,11 +57,12 @@ img{
   }
 
     textarea,
+    input[type=submit],
     input,
     input::placeholder,
     select,
     button {
-      background: #A64FAC;
+      background: rgba(255,242,255,0.9);
       border: none;
       color: #fff;
       font-size: .9em;
@@ -88,10 +89,11 @@ img{
     }
 
     button {
-      cursor: pointer;
       padding: 1em
     }
 
+    button,
+    input[type=submit],
     label,
     input[type=radio],
     input[type=checkbox]{
