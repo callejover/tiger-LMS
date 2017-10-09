@@ -141,7 +141,6 @@ img{
 
 .features, .pricing, .textContent {
   width: 30%;
-  height: 35vh;
   padding: 0;
   margin: 2.5% 5% 0 5%;
   text-align: center;
@@ -149,8 +148,12 @@ img{
 
 .textContent{
   width: 70%;
+  min-height: 35vh;
 }
 
+.features, .pricing{
+    height: 35vh;
+}
 
 .pricingContent {
   margin: 2.5% 5%;

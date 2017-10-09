@@ -1,4 +1,4 @@
-    
+
     .tab-group{
       margin: 0 auto;
       width: 100%;
@@ -40,7 +40,7 @@
     .tab-content{
       max-height: 0;
       overflow: hidden;
-      transition: all .35s; 
+      transition: all .35s;
       display:flex;
       flex-direction: row;
       flex-wrap:nowrap;
@@ -54,13 +54,13 @@
       max-height: 30em;
     }
 
-	
+
 	label span {
 		display: inline;
 		float: right;
 		padding: 0 1em 0 0;
 	}
-	
+
 
     .assignments {
       color:black;
@@ -72,6 +72,11 @@
       color:black;
       width:50%;
     }
+
+    .ex{
+      text-decoration: underline;
+    }
+
     ul.pricing-list li {
     list-style-type: dotted;
     font-size: 1em;
