@@ -82,10 +82,13 @@ img{
     }
 
     input:focus::placeholder{
-      background: #fff;
       color: #D900E8;
-      
       border: none;
+    }
+
+    input::placeholder{
+      border: none;
+      background: none;
     }
 
     button {
