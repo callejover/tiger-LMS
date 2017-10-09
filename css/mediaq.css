@@ -16,6 +16,10 @@
     display: none;
   }
 
+  .mobileShow{
+    display: flex;
+  }
+
   .index{ /*companion to wrap but just for index.html*/
       flex-direction:row;
   }
