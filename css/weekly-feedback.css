@@ -25,7 +25,7 @@ input[type="text"] { /* namebox-sizing */
 .send-button { /* button-styling */
     width: 10em;
     margin: 1em 0 5em 0;
-    background-color: #DD46E8; 
+    background-color: #91009C; 
     border: none;
     color: white;
     padding: 1em 1em;
@@ -35,8 +35,18 @@ input[type="text"] { /* namebox-sizing */
     cursor: pointer;
 }
 
+.send-button:hover {
+    background-color: #DD46E8;
+    color: #FFFFFF;
+}
+
 textarea { /* textarea-sizing */
     height: 4em;
     width: 30em;
     margin: 1em 0 2em 0;
+}
+
+.required {
+    color: red;
+    font-size: 0.9em;
 }
