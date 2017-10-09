@@ -123,7 +123,6 @@ img{
   background-color: rgba(255,242,255,0.9);
 }
 
-
 .content{
  min-height: 100vh;
  width: 100%;
@@ -137,6 +136,15 @@ img{
 .content.dark{
   background-color: rgba(255,231,255,0.9);
 
+}
+
+.content.mobile{
+  min-height: 5em;
+  height: 5em;
+}
+
+.mobileShow{
+  display: none;
 }
 
 .features, .pricing, .textContent {
@@ -261,7 +269,6 @@ h4 {
   }
 
   #nav ul li:nth-child(1) {
-   color: red;
    flex-grow: 3;
    flex-shrink: 0;
    display: flex;
