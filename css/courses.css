@@ -30,10 +30,10 @@
       transition: letter-spacing .55s;
     }
 
-    .tab input:focus +label,
+    .tab input:checked + label,
     .tab label:hover {
-      background: rgb(221,70,232);
       letter-spacing: 1px;
+      background: rgb(221,70,232);
     }
 
     .tab-content{
@@ -75,7 +75,7 @@
     .ex{
       text-decoration: underline;
     }
-    
+
 
     ul.pricing-list li {
     list-style-type: dotted;
