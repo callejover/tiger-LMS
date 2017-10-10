@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Veckans Utvärdering</title>
+        <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+        <link rel="stylesheet" href="../css/reset.css"><!--Reset css-->
+        <link rel="stylesheet" href="../css/main.css"><!--main styling and funkutionalety-->
+        <link rel="stylesheet" href="../css/mediaq.css"><!--main styling and funkutionalety-->
+        <link rel="stylesheet" href="../css/weekly-feedback.css"><!-- weekly feedback styling -->
+        <script src = "../js/feedback.js"></script>
+    </head>
+    <body> 
+        <header>
+            <nav id="nav">
+                <div id="nav-button-max-500">MENU</div>
+
+                    <ul class="hidden-max-500">
+                        <li><a href="../index.html">logotypeFuture</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="../index.html">Log out</a></li>
+                    </ul>
+                </div>    
+
+            </nav>
+        </header>    
+
+        <div class="wrap">
+            <div class="content">
+                <div class="innerContent apperance">
+                    <h3>Veckans Utvärdering</h3><p class = "required">(* = Obligatorisk)</p><br>
+                    <form onsubmit="check()">
+                        <h4>Ditt namn</h4>
+                        <input type = "text" name = "namn" placeholder="Skriv ditt namn..." autofocus><br>
+                        <h4>Hur upplever du just nu tempot i utbildningen?<span style="color:red">*</span></h4>
+                        <div class = "radio">
+                            <p>Hänger inte med alls</p>    
+                            <label><input type="radio" name = "num" value = "1" required> 1</label>
+                            <label><input type="radio" name = "num" value = "2" required> 2</label>
+                            <label><input type="radio" name = "num" value = "3" required> 3</label>
+                            <label><input type="radio" name = "num" value = "4" required> 4</label>
+                            <label><input type="radio" name = "num" value = "5" required> 5</label>
+                            <label><input type="radio" name = "num" value = "6" required> 6</label>
+                            <label><input type="radio" name = "num" value = "7" required> 7</label>
+                            <p>Hänger med till 100 %</p>
+                            <br>
+                        </div>
+                        <h4>Hur engagerad anser du själv att du är i dina studier?<span style="color:red">*</span></h4>
+                        <div class = "radio">
+                            <p>Inte engagerad alls</p>
+                            <label><input type="radio" name = "num2" value = "1" required> 1</label>
+                            <label><input type="radio" name = "num2" value = "2" required> 2</label>
+                            <label><input type="radio" name = "num2" value = "3" required> 3</label>
+                            <label><input type="radio" name = "num2" value = "4" required> 4</label>
+                            <label><input type="radio" name = "num2" value = "5" required> 5</label>
+                            <label><input type="radio" name = "num2" value = "6" required> 6</label>
+                            <label><input type="radio" name = "num2" value = "7" required> 7</label>
+                            <p>Väldigt engagerad</p><br>
+                        </div>
+                        <h4>Hur upplever du stämningen i klassen?<span style="color:red">*</span></h4>
+                        <div class = "radio">
+                            <p>Dålig stämning</p>
+                            <label><input type="radio" name = "num3" value = "1" required> 1</label>
+                            <label><input type="radio" name = "num3" value = "2" required> 2</label>
+                            <label><input type="radio" name = "num3" value = "3" required> 3</label>
+                            <label><input type="radio" name = "num3" value = "4" required> 4</label>
+                            <label><input type="radio" name = "num3" value = "5" required> 5</label>
+                            <label><input type="radio" name = "num3" value = "6" required> 6</label>
+                            <label><input type="radio" name = "num3" value = "7" required> 7</label>
+                            <p>Mycket god stämning</p>
+                            <br>
+                        </div>
+
+                        <h4>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h4> 
+                        <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br>
+                         <!-- textarea for longer text -->
+                        <h4>Vad har varit bra?</h4>
+                        <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br>
+
+                        <h4>Förslag på förbättringar</h4>
+                        <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br><br>
+                        
+                        <button class = "send-button" type="submit" >Skicka!</button> 
+                        <!-- submit button -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

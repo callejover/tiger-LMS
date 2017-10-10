@@ -56,6 +56,53 @@ img{
     z-index: 500;
   }
 
+    textarea,
+    input[type=submit],
+    input,
+    input::placeholder,
+    select,
+    button {
+      background: rgba(255,242,255,0.9);
+      border: none;
+      color: #fff;
+      font-size: .9em;
+      padding: .5em;
+      font-family: verdana, sans-serif;
+      margin: .2em 0;
+      border: 1px solid #A64FAC;
+    }
+
+    textarea:focus,
+    input:focus,
+    select:focus,
+    button:focus {
+      background: #fff;
+      color: #D900E8;
+      border: 1px solid #D900E8;
+    }
+
+    input:focus::placeholder{
+      color: #D900E8;
+      border: none;
+    }
+
+    input::placeholder{
+      border: none;
+      background: none;
+    }
+
+    button {
+      padding: 1em
+    }
+
+    button,
+    input[type=submit],
+    label,
+    input[type=radio],
+    input[type=checkbox]{
+      cursor: pointer
+    }
+
 .main{
   display: block;
   height: 100vh;
@@ -79,7 +126,6 @@ img{
   background-color: rgba(255,242,255,0.9);
 }
 
-
 .content{
  min-height: 100vh;
  width: 100%;
@@ -95,9 +141,17 @@ img{
 
 }
 
+.content.mobile{
+  min-height: 5em;
+  height: 5em;
+}
+
+.mobileShow{
+  display: none;
+}
+
 .features, .pricing, .textContent {
   width: 30%;
-  height: 35vh;
   padding: 0;
   margin: 2.5% 5% 0 5%;
   text-align: center;
@@ -105,9 +159,12 @@ img{
 
 .textContent{
   width: 70%;
+  min-height: 35vh;
 }
 
-
+.features, .pricing{
+    height: 35vh;
+}
 
 .pricingContent {
   margin: 2.5% 5%;
@@ -171,6 +228,7 @@ h4 {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000
   }
 
   #nav ul {
@@ -214,7 +272,6 @@ h4 {
   }
 
   #nav ul li:nth-child(1) {
-   color: red;
    flex-grow: 3;
    flex-shrink: 0;
    display: flex;

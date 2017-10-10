@@ -49,11 +49,10 @@ var objPeople = [
 // Puts typed username and password into variables
 
 function getInfo() {
-    var username = document.getElementById("username").value
-    var password = document.getElementById("password").value
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
 
 // Loops accouts and checks for matches
-
     for(i = 0; i < objPeople.length; i++) {
         if(username == objPeople[i].username && password == objPeople[i].password) {
             if(objPeople[i].account == "student") {

@@ -23,14 +23,38 @@ Workflow:
 2. When somthing is done or working push to github.
 3.
 
-To do list (Tim och Robban):
+To do list (Tim & Robban):
 1. main.css
     index id:s to .class see comment in main.css. (Done)
 
-2. Side menu for features.html create struckture.
+2. Side menu for features.html create structure.
 
 3. Pricing with info section.
 
 ... 3. footer with contact info on every site.
 
-... 4. show current page in menu 
+... 4. show current page in menu
+
+
+Reflection aka To do list. 171005
+
+1. Logotype link to index.html (Done)
+2. Bread text adjustments (Done)
+3. textbox ajustmets to width:100%, in mediaq.css (Done)
+4. Link under emojis in courses.html to work (Done)
+5. ajust text in courses in courses list. innercontent ajust colums with text.(done  Tim L Thinks)
+6. menu adjusting to mediaq in all menus
+7. Calle (atendens function). (Done)
+8. Kanya week evaluation (done)
+9. Fix overflow with text. (Done)
+
+To do list 171010
+
+6. menu adjusting to mediaq in all menus
+10. Login design
+11. Login Enter butten (Done)
+12. Placsement of text for pricing and features.(Done)
+13. Logotype
+14. Courses mobile version
+15. Buttens in pricing.html
+16. footer

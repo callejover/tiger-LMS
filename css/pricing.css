@@ -5,7 +5,6 @@ ul.pricing-list {
 }
 
 ul.pricing-list li {
-    list-style-type: dotted;
     font-size: 1em;
     margin: .8em 0;
 }
