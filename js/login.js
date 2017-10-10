@@ -1,3 +1,25 @@
+// Opens the attendence window
+
+function openWin() {
+    var myWindow = window.open("attendence.html");
+    setTimeout(function(){ myWindow.close() }, 300000);
+}
+
+// Checks if the attendence code valid
+
+function checkattendence() {
+    /*var inputAttendence = document.getElementById("").value*/
+
+    if(document.getElementById("input-attendence").value == "111") {
+        window.location.replace("attendence-response.html");
+    } else {
+        alert("Du har angivit fel lösenord. Försök igen.");
+    }
+}
+
+
+/*==========================================================================*/
+
 
 // Checks witch page youre currently at and pops out the html
 
@@ -47,6 +69,10 @@ function getInfo() {
     alert("Du har angivit fel användarnamn eller lösenord");
 }
 
+
+/*==================================================================================*/
+
+
 // Opens modul window to login
 
 // Get the modal
@@ -74,3 +100,4 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
