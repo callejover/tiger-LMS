@@ -217,6 +217,11 @@ h4 {
   padding: inherit;
 }
 
+.login button,text,password{
+  color:  rgba(255, 255, 255, 1);
+  background-color: rgb(98,0,105);
+}
+
 
   /*====================================
   nav  attributes
