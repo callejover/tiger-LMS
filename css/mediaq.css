@@ -42,7 +42,8 @@
     z-index: 13;
   }
 
-  .innerContent {
+  .innerContent,
+  .quick-evaluation-content {
       margin: 5% 0;
       width: 100%;
     }
@@ -86,6 +87,34 @@
     display: block;
     padding: 2em;
   }
+
+  .quick-evaluation-wrap {
+    position: static;
+    width: 100%;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column
+}
+
+.content-pricing {
+  flex-direction: column
+}
+
+#quick-evaluation {
+  flex-direction: row;
+}
+
+
+.glad-message {
+    top: 70%;
+    right: auto;
+    left: 70%;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 0;
+}
 
 }/*@media 1200px*/
 
