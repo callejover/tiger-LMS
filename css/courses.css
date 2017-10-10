@@ -21,8 +21,8 @@
     }
 
     .tab label{
-      background: #ff0000;
-      color: #000;
+      background: rgba(166,79,172,0.5);
+      color: rgb( 255,255,255);
       display: block;
       font-weight: bold;
       line-height: 3;
@@ -30,11 +30,10 @@
       transition: letter-spacing .55s;
     }
 
-    .tab input:focus +label,
+    .tab input:checked + label,
     .tab label:hover {
-      background: #000;
-      color: #f00;
       letter-spacing: 1px;
+      background: rgb(221,70,232);
     }
 
     .tab-content{
@@ -44,6 +43,8 @@
       display:flex;
       flex-direction: row;
       flex-wrap:nowrap;
+      background-color:rgba(98,0,105,0.9);
+      color: rgb( 255,255,255);
     }
 
     .tab-content p {
@@ -63,19 +64,18 @@
 
 
     .assignments {
-      color:black;
       width:50%;
       align-content:center;
       padding-left:5%;
     }
     .infoTab {
-      color:black;
       width:50%;
     }
 
     .ex{
       text-decoration: underline;
     }
+
 
     ul.pricing-list li {
     list-style-type: dotted;

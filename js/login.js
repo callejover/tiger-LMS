@@ -1,3 +1,25 @@
+// Opens the attendence window
+
+function openWin() {
+    var myWindow = window.open("attendence.html");
+    setTimeout(function(){ myWindow.close() }, 300000);
+}
+
+// Checks if the attendence code valid
+
+function checkattendence() {
+    /*var inputAttendence = document.getElementById("").value*/
+
+    if(document.getElementById("input-attendence").value == "111") {
+        window.location.replace("attendence-response.html");
+    } else {
+        alert("Du har angivit fel lösenord. Försök igen.");
+    }
+}
+
+
+/*==========================================================================*/
+
 
 // Checks witch page youre currently at and pops out the html
 
@@ -27,11 +49,10 @@ var objPeople = [
 // Puts typed username and password into variables
 
 function getInfo() {
-    var username = document.getElementById("username").value
-    var password = document.getElementById("password").value
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
 
 // Loops accouts and checks for matches
-
     for(i = 0; i < objPeople.length; i++) {
         if(username == objPeople[i].username && password == objPeople[i].password) {
             if(objPeople[i].account == "student") {
@@ -47,6 +68,10 @@ function getInfo() {
 
     alert("Du har angivit fel användarnamn eller lösenord");
 }
+
+
+/*==================================================================================*/
+
 
 // Opens modul window to login
 
@@ -75,3 +100,4 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+

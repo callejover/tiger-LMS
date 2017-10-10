@@ -38,12 +38,23 @@ To do list (Tim & Robban):
 
 Reflection aka To do list. 171005
 
-1. Logotype link to index.html
-2. Bread text adjustments
-3. textbox ajustmets to width:100%, in mediaq.css
-4. Link under emojis in courses.html to work
+1. Logotype link to index.html (Done)
+2. Bread text adjustments (Done)
+3. textbox ajustmets to width:100%, in mediaq.css (Done)
+4. Link under emojis in courses.html to work (Done)
 5. ajust text in courses in courses list. innercontent ajust colums with text.(done  Tim L Thinks)
 6. menu adjusting to mediaq in all menus
-7. Calle (atendens function).
+7. Calle (atendens function). (Done)
 8. Kanya week evaluation (done)
-9. Fix overflow with text.
+9. Fix overflow with text. (Done)
+
+To do list 171010
+
+6. menu adjusting to mediaq in all menus
+10. Login design
+11. Login Enter butten (Done)
+12. Placsement of text for pricing and features.(Done)
+13. Logotype
+14. Courses mobile version
+15. Buttens in pricing.html
+16. footer
