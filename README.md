@@ -19,9 +19,9 @@ Team Tigers Learning Management System
 
 
 # Workflow:
-1. When ending work session push to git and resolve possible conflicts.
-2. When somthing is done or working push to github.
-3.
+1. Always create a branch to work on!
+2. When done for the day, push to github for backup if computer gets broken. 
+3. When something is done or working push and merge to github and resolve possible conflicts.
 
 # To do list (Tim & Robban):
 1. main.css
