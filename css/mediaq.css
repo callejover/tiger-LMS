@@ -116,6 +116,11 @@
     border-top-left-radius: 0;
 }
 
+.modal-content {
+  width: 50%; 
+  margin-top: 12em;
+}
+
 }/*@media 1200px*/
 
 /*====================================
