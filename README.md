@@ -6,12 +6,9 @@ Team Tigers Learning Management System
 2. Use <br> in <p> for good praxis.
 3. Use flexbox insted of flot.
 4. Use let and const insted of war in .js.
-5.
 
 # Focus:
 1. Functionalety
-2.  
-
 
 # Links:
 1. Trello https://trello.com/b/UaFE8N4d/tiger-gu1
@@ -50,10 +47,10 @@ Team Tigers Learning Management System
 1. Robbin: Login design (button and inputs/placeholders) (done)
 2. Tim A/Tim L: Login - Submit form on Enter (done)
 3. Robbin: Make attendence like loginmodule (done)
-4. Robbin: make loginmodule in mobileview 100%
-5. Tim L: Placsement of text for pricing and features
+4. Robbin: make loginmodule in mobileview 100% (done)
+5. Tim L: Placsement of text for pricing and features (done)
 6. Tim A/Robbin: menu adjusting to mediaq in all menus
-7. Kanya: Redirect weekley-evaluation to courses.html
+7. Kanya: Redirect weekley-evaluation to courses.html (done)
 
 ---
 
