@@ -42,7 +42,7 @@ var objPeople = [
         username: "admin",
         password: "admin",
         account: "admin",
-        refPage: (currentPage === 'index.html') ? 'html/courseeeeeeeeees.html' : 'courses.html'  // Html waiting for page 
+        refPage: (currentPage === 'index.html') ? 'html/courseeeeeeeeees.html' : 'courses.html'  // Html waiting for page
     }
 ]
 
@@ -56,7 +56,7 @@ function getInfo() {
     for(i = 0; i < objPeople.length; i++) {
         if(username == objPeople[i].username && password == objPeople[i].password) {
             if(objPeople[i].account == "student") {
-              window.location.replace(objPeople[i].refPage);  
+              window.location.replace(objPeople[i].refPage);
             } else if(objPeople[i].account == "teacher") {
                 window.location.replace(objPeople[i].refPage);
             } else {
@@ -100,4 +100,13 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+document.getElementById("password")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("password").click(getInfo());
+    }
+});
 
