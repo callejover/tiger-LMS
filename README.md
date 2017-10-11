@@ -63,6 +63,7 @@ To do list 171010
 To do list 171011
 
 10. Login design (button and inputs/placeholders)
+18. Login - Submit form on Enter
 16. Make attendence like loginmodule
 12. Placsement of text for pricing and features
 6. menu adjusting to mediaq in all menus
