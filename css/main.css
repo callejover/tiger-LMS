@@ -160,6 +160,7 @@ img{
   padding: 0;
   margin: 2.5% 5% 0 5%;
   text-align: center;
+
 }
 
 .textContent{
@@ -168,7 +169,10 @@ img{
 }
 
 .features, .pricing{
-    height: 35vh;
+  height: 35vh;
+  vertical-align:middle;
+  line-height: 35vh;
+  
 }
 
 .pricingContent {
