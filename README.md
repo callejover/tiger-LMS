@@ -63,6 +63,7 @@ To do list 171010
 To do list 171011
 
 10. Login design (button and inputs/placeholders)
+19. make loginmodule in mobileview 100%
 18. Login - Submit form on Enter
 16. Make attendence like loginmodule
 12. Placsement of text for pricing and features
