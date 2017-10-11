@@ -51,17 +51,21 @@ Reflection aka To do list. 171005
 To do list 171010
 
 6. menu adjusting to mediaq in all menus
-
 10. Login design
-
-11. Login Enter butten
-
-12. Placsement of text for pricing and features.
-
+11. Login Enter butten (Done)
+12. Placsement of text for pricing and features
 13. Logotype
+14. Courses mobile version (done)
+15. Buttens in pricing.html (done)
+16. Make attendence like loginmodule
+17. footer (if have time)
 
-14. Courses mobile version
+To do list 171011
 
-15. Buttens in pricing.html
-
-16. footer
+10. Login design (button and inputs/placeholders)
+18. Login - Submit form on Enter
+16. Make attendence like loginmodule
+12. Placsement of text for pricing and features
+6. menu adjusting to mediaq in all menus
+13. Logotype
+17. footer (if have time)
