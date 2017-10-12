@@ -54,8 +54,11 @@ Team Tigers Learning Management System
 3. Robbin: Make attendence like loginmodule (done)
 4. Robbin: make loginmodule in mobileview 100% (done)
 5. Tim L: Placsement of text for pricing and features (done)
-6. Tim A/Robbin: menu adjusting to mediaq in all menus
-7. Kanya: Redirect weekley-evaluation to courses.html (done)
+6. Kanya: Redirect weekley-evaluation to courses.html (done)
+
+# To do list 171012
+1. Tim A: menu adjusting to mediaq in all menus
+2. Tim L: Fix course info pages
 
 ---
 
