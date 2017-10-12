@@ -2,8 +2,8 @@
 Team Tigers Learning Management System
 
 # Roles:
-1. Always insert a comment at the end tag with the name of the start tag same with {}. example </div><!--wrap-->
-2. Use <br> in <p> for good praxis.
+1. Always insert a comment at the end tag with the name of the start tag same with {}. example end-div-tag html-comment
+2. Use br-tag in p-tag for good practies.
 3. Use flexbox insted of flot.
 4. Use let and const insted of war in .js.
 
