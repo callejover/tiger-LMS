@@ -17,11 +17,16 @@ Team Tigers Learning Management System
 
 # Workflow:
 1. Always create a branch to work on!
-2. When done for the day, push to github for backup if computer gets broken. 
-3. When something is done or working push and merge to github and resolve possible conflicts.
+2. Name the branches with initials at the end of the name: "branchNameRE"
+3. When done with feature push and merge to github and resolve possible conflicts.
+4. camelCase in JavaScript and CSS/HTML-code
+5. When done for the day, push to github for backup if computer gets broken. 
+6. Commit message structure.
+    Exampel: "S1: Adds menu on top of page. Alla filer."
+	Syntax: <vilken story som jobbars på>: <Vad koden gör> <vilka filer> <om man jobbar flera än en så ska det antecknas också>
 
 # To do list (Tim & Robban):
-1. main.css
+1. Main.css
     index id:s to .class see comment in main.css. (Done)
 2. Side menu for features.html create structure.
 3. Pricing with info section.
