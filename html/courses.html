@@ -24,8 +24,6 @@
     <!-- quick-evaluation styling -->
     <link rel="stylesheet" href="../css/mediaq.css">
     <!-- media querys -->
-    <link rel="stylesheet" href="../css/login.css">
-    <!--login styling-->
 
 </head>
 
@@ -38,36 +36,39 @@
         <nav id="nav">
             <div id="nav-button-max-500">MENU</div>
             <ul class="hidden-max-500">
-              <li><a href="../index.html">logotypeFuture</a></li>
-              <li><a href="../index.html">Log out</a></li>
-          </ul>
+                <li><a href="../index.html">logotypeFuture</a></li>
+                <li><a id="attendanceButton">Närvaro</a></li>
+                <li><a href="../index.html">Log out</a></li>
+            </ul>
         </nav>
     </header>
 
+
+
+
     <!-- Hidden before clicking loginButton -->
 
-    <div id="loginModal" class="modal">
+    <div id="attendanceModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header">
-                <h1>Log in</h1>
-                <form name="login">
-                    <!-- Form for user input -->
-                    <div class="login">
-                        <input type="text" placeholder="username" id="username"><br>
-                        <input type="password" placeholder="password" id="password"><br>
-                        <button type="button" onclick="getInfo()">Login</button>
+                <h1>Närvaro</h1>
+                <form name="input-attendance">
+                    <div class="attendance">
+                        <h1>För att anmäla din närvaro på lektionen skriv in koden på tavlan i klassrummet.<br>Koden är giltlig i 5 minuter
+                            sen stängs fönstret.</h1><br>
+                        <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
+                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <!-- div loginModal opens the login box on index screen -->
-
+    <!-- div attendanceModal opens the login box on index screen -->
 
     <div class="wrap">
-        <div class="content">
+        <div class="content content-pricing">
             <div class="innerContent apperance">
                 <h2>Kurser</h2>
                 <p>Som elev kan du se information om kursen och om den är pågående eller avslutad och även vad du har för betyg
@@ -265,9 +266,7 @@
         <!--content-->
     </div>
     <!--wrap-->
-
-    <script src="../js/quick-evaluation.js"></script>
-    <script src="../js/login.js"></script>
+    <script src="../js/attendance.js"></script>
     <script src="../js/drop.js"></script>
 </body>
 

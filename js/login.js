@@ -1,4 +1,5 @@
 
+
 // Checks witch page youre currently at and pops out the html
 
 var currentPage = window.location.pathname.split('/').pop(); // Split will split the path into different obijects
@@ -47,6 +48,10 @@ function getInfo() {
     alert("Du har angivit fel användarnamn eller lösenord");
 }
 
+
+/*==================================================================================*/
+
+
 // Opens modul window to login
 
 // Get the modal
@@ -75,6 +80,7 @@ window.onclick = function(event) {
     }
 }
 
+
 document.getElementById("password")
     .addEventListener("keyup", function(event) {
     event.preventDefault();
@@ -82,3 +88,4 @@ document.getElementById("password")
         document.getElementById("password").click(getInfo());
     }
 });
+

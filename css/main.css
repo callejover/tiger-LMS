@@ -7,7 +7,8 @@ hex:
 2. A64FAC
 3. 91009C
 4. DD46E8
-5. 620069
+5. 620069     Dark purple
+6. 3b003f     Darker purple of number 5.
 
 rgb():
 1. 217,0,232
@@ -90,18 +91,22 @@ img{
     input::placeholder{
       border: none;
       background: none;
+      color: #D900E8;
     }
 
     button {
-      padding: 1em
+      padding: 1em;
+      color:  rgba(255, 255, 255, 1);
+      background-color: rgb(98,0,105);
     }
 
     button,
     input[type=submit],
     label,
     input[type=radio],
-    input[type=checkbox]{
-      cursor: pointer
+    input[type=checkbox],
+    a {
+      cursor: pointer;
     }
 
 .main{
@@ -128,7 +133,7 @@ img{
 }
 
 .content{
- min-height: 100vh;
+ min-height: calc(100vh - 5em);
  width: 100%;
  display: flex;
  flex-direction: row;
@@ -156,6 +161,7 @@ img{
   padding: 0;
   margin: 2.5% 5% 0 5%;
   text-align: center;
+
 }
 
 .textContent{
@@ -219,12 +225,6 @@ h4 {
   height: 100%;
   padding: inherit;
 }
-
-.login button,text,password{
-  color:  rgba(255, 255, 255, 1);
-  background-color: rgb(98,0,105);
-}
-
 
   /*====================================
   nav  attributes
@@ -298,3 +298,46 @@ h4 {
   font-weight: bold;
 }
 */
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #DBDBDB;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #313131;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#loginButton:hover {
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: #3b003f
+}
