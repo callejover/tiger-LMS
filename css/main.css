@@ -40,6 +40,7 @@ body{
   background-repeat:no-repeat;
 	background-attachment: fixed;
   background-size: 100% auto;
+  background-size: ;
 	background-position:center, center;
   font-family: verdana, sans-serif;
   font-size: 0.9em;
@@ -164,6 +165,8 @@ img{
 
 .features, .pricing{
     height: 35vh;
+    vertical-align: middle;
+    line-height: 35vh;
 }
 
 .pricingContent {
