@@ -59,7 +59,9 @@
                         <h1>För att anmäla din närvaro på lektionen skriv in koden på tavlan i klassrummet.<br>Koden är giltlig i 5 minuter
                             sen stängs fönstret.</h1><br>
                         <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
-                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button>
+                        <button type="button" onclick="checkAttendance()">Bekräfta närvaro</button>
+                        <br>
+                        <span class="wrongCode"></span>
                     </div>
                 </form>
             </div>
