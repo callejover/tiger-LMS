@@ -78,3 +78,7 @@
 #glad:focus + .glad-message,
 #sad:focus + .sad-message,
 #between:focus + .between-message {display: block;}
+
+.opacity50 {
+    opacity: .5;
+}
