@@ -2,8 +2,8 @@
 Team Tigers Learning Management System
 
 # Roles:
-1. Always insert a comment at the end tag with the name of the start tag same with {}. example </div><!--wrap-->
-2. Use <br> in <p> for good praxis.
+1. Always insert a comment at the end tag with the name of the start tag same with {}. example end-div-tag html-comment
+2. Use br-tag in p-tag for good practies.
 3. Use flexbox insted of flot.
 4. Use let and const insted of war in .js.
 
@@ -17,11 +17,16 @@ Team Tigers Learning Management System
 
 # Workflow:
 1. Always create a branch to work on!
-2. When done for the day, push to github for backup if computer gets broken. 
-3. When something is done or working push and merge to github and resolve possible conflicts.
+2. Name the branches with initials at the end of the name: "branchNameRE"
+3. When done with feature push and merge to github and resolve possible conflicts.
+4. camelCase in JavaScript and CSS/HTML-code
+5. When done for the day, push to github for backup if computer gets broken. 
+6. Commit message structure.
+<br> Exampel: "S1: Adds menu on top of page. Alla filer."
+<br> Syntax: "story name": "what is the code doning?" "affected files" "note names if has been working more then one person"
 
 # To do list (Tim & Robban):
-1. main.css
+1. Main.css
     index id:s to .class see comment in main.css. (Done)
 2. Side menu for features.html create structure.
 3. Pricing with info section.
