@@ -30,6 +30,8 @@ var objPeople = [
 function getInfo() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
+    var message = "Du har skrivit in fel lösenord!"
+  
 
 // Loops accouts and checks for matches
     for(i = 0; i < objPeople.length; i++) {
@@ -43,9 +45,12 @@ function getInfo() {
             }
             return; // Stops the loop
         }
-        
+
     }
-document.getElementById('wrongPass').innerHTML =   document.getElementById('wrongPass').innerHTML + "Du har skrivit in fel lösenord!";
+
+
+document.querySelector('#wrongPass').innerHTML = message;
+
 }
 
 
