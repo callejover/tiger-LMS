@@ -15,3 +15,8 @@
 .color-red {
     color: #ff0000
 }
+
+.course-contains {
+    line-height: 250%;
+    margin-bottom: 1.5em;
+}
