@@ -16,7 +16,7 @@ var objPeople = [
         username: "teacher",
         password: "teacher",
         account: "teacher",
-        refPage: (currentPage === 'index.html') ? 'html/coursessssss.html' : 'courses.html'  // Html waiting for page
+        refPage: (currentPage === 'index.html') ? 'html/teacher.html' : 'teacher.html'
     }, {
         username: "admin",
         password: "admin",
