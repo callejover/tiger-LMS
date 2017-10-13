@@ -2,16 +2,22 @@
 
 function checkAttendance() {
     /*var inputattendance = document.getElementById("").value*/
+    var wrongInput= "Du har angivit fel kod!";
+    var rightInput = "Du har angivit rätt kod!  du kan nu stänga ner denna ruta."
 
     if(document.getElementById("input-attendance").value === "111") {
-        alert("Du har angivit rätt lektionskod.\nVälkommen till lektionen!\nDu kan nu stänga fönstret.");
+        document.querySelector(".header").innerHTML = "";
+        document.querySelector(".header").innerHTML = rightInput;
         // Close module window
-        return true
+
+        return true;
+
     } else {
-        alert("Du har angivit fel lösenord. Försök igen.");
-        return false
+    
+        document.querySelector(".wrongCode").innerHTML = wrongInput;
+        return false;
     }
-    return false
+return false;
 }
 
 

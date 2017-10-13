@@ -30,7 +30,7 @@ var objPeople = [
 function getInfo() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-    var message = "Du har skrivit in fel lösenord!"
+    var message = "Du har skrivit in fel lösenord!";
   
 
 // Loops accouts and checks for matches
