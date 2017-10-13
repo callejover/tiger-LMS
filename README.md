@@ -22,8 +22,8 @@ Team Tigers Learning Management System
 4. camelCase in JavaScript and CSS/HTML-code
 5. When done for the day, push to github for backup if computer gets broken. 
 6. Commit message structure.
-<br> Exampel: "S1: Adds menu on top of page. Alla filer."
-<br> Syntax: "story name": "what is the code doning?" "affected files" "note names if has been working more then one person"
+<br> Exampel: "S1: Adds menu on top of page"
+<br> Syntax: "story name": "what is the code doning?" "note names if has been working more then one person"
 
 # To do list (Tim & Robban):
 1. Main.css
