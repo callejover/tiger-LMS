@@ -50,14 +50,6 @@ body{
 
 }/*body*/
 
-img{
-    display: block;
-    width: 200px;
-    height: auto;
-    border-radius: 5%;
-    z-index: 500;
-  }
-
     textarea,
     input[type=submit],
     input,
@@ -66,7 +58,7 @@ img{
     button {
       background: rgba(255,242,255,0.9);
       border: none;
-      color: #fff;
+      color: #D900E8;
       font-size: .9em;
       padding: .5em;
       font-family: verdana, sans-serif;
@@ -155,6 +147,33 @@ img{
 .mobileShow{
   display: none;
 }
+
+.scrollHead{
+  position: fixed;
+  flex-direction: column;
+  z-index: 1000;
+  right: 0;
+  padding-top: 25%;
+  padding-right: 2.5em;
+}
+
+.scroll{
+
+}
+.scrollSticker{
+  width: 1em;
+  height: 1em;
+  background-color: black;
+
+}
+
+img{
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 5%;
+    z-index: 500;
+  }
 
 .features, .pricing, .textContent {
   width: 30%;
@@ -261,6 +280,7 @@ h4 {
       text-transform: uppercase;
       font-weight: bold;
       align-content: flex-end;
+      flex-grow: 0.1;
   }
 
   #nav ul li a {
@@ -341,3 +361,10 @@ h4 {
 .modal-content {
   background-color: #3b003f
 }
+
+
+
+
+/*====================================
+testing in progress
+=====================================*/
