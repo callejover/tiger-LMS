@@ -94,3 +94,22 @@
 .tabPadding {
   padding-left:1em;
 }
+
+
+.news-heading {
+  background-color: rgb(221,70,232);
+  display: block;
+  padding-left: 1em;
+}
+
+.news-heading h3 {
+  color: rgb( 255,255,255);
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 3;
+  
+}
+
+.news-content {
+  word-wrap: break-word;
+}
