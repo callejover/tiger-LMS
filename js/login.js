@@ -43,9 +43,9 @@ function getInfo() {
             }
             return; // Stops the loop
         }
+        
     }
-
-    alert("Du har angivit fel användarnamn eller lösenord");
+document.getElementById('wrongPass').innerHTML =   document.getElementById('wrongPass').innerHTML + "Du har skrivit in fel lösenord!";
 }
 
 
