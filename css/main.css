@@ -153,7 +153,8 @@ body{
   flex-direction: column;
   z-index: 1000;
   right: 0;
-  padding-top: 25%;
+  padding-top: 25vh;
+  vertical-align: middle;
   padding-right: 2.5em;
 }
 
@@ -161,11 +162,24 @@ body{
 
 }
 .scrollSticker{
+  content:none;
+  display: block;
   width: 1em;
   height: 1em;
-  background-color: black;
+  min-width: 50px;
+  min-height: 50px;
+  background: rgb(98,0,105) no-repeat;
+  background-blend-mode: overlay;
+	background-size: cover;
+  opacity: 0.7;
+  border-radius: 50%;
+
 
 }
+.scrollSticker:hover{
+  opacity: 1;
+}
+
 
 img{
     display: block;

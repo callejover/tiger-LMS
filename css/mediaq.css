@@ -76,6 +76,9 @@
     margin-left: 0
   }
 
+.scrollHead{
+ display: none;
+}
  /*menu all .html files*/
 
   #nav ul li {
@@ -118,7 +121,7 @@
 }
 
 .modal-content {
-  width: 50%; 
+  width: 50%;
   margin-top: 12em;
 }
 
