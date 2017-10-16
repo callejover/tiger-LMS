@@ -1,3 +1,6 @@
+# REMEMBER
+1. Check all pages that all functionality is working. If not, take working page and copy it to the non working page and put the important content in for simple fix.
+
 # tiger-LMS
 Team Tigers Learning Management System
 
