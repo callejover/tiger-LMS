@@ -39,6 +39,7 @@
             <ul class="hidden-max-500">
                 <li><a href="../index.html">logotypeFuture</a></li>
                 <li><a id="newsButton">Nyheter</a></li>
+                <!--<li><a id="newsDropdown">Nyheter</a></li>-->
                 <li><a id="attendanceButton">Närvaro</a></li>
                 <li><a href="../index.html">Log out</a></li>
             </ul>
@@ -50,11 +51,11 @@
 
     <!-- Hidden before clicking loginButton -->
 
-    <div id="attendanceModal" class="modal">
+<!--    <div id="attendanceModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <!-- Closing X icon in modal -->
-            <div class="header">
+        --><!-- Closing X icon in modal -->
+<!--            <div class="header">
                 <h1>Närvaro</h1>
                 <form name="input-attendance">
                     <div class="attendance">
@@ -67,25 +68,7 @@
             </div>
         </div>
     </div>
-    <!-- div attendanceModal opens the login box on index screen -->
-
-    <div id="newsModal" class="modal">
-            <div class="newsModal-content">
-              <span class="newsClose">&times;</span>  <!-- Closing X icon in modal -->
-              <div class="newsHeader">
-                <span class="newsClose">&times;</span>
-                <h2>Nyheter</h2>
-                </div>
-              <div class="newsBody">
-                <ul>
-                    <li>HTML/CSS</li>
-                    <li>Javascript</li>
-                    <li>Arbetsmetodik</li>
-                    <li>Back-end utveckling</li>
-                </ul>
-              </div>
-            </div>
-          </div> <!-- div newsModal -->
+--><!-- div attendanceModal opens the login box on index screen -->
 
     <div class="wrap">
         <div class="content content-pricing">
@@ -246,6 +229,17 @@
                         </div>
                         <!--tab-->
                     </div>
+                     
+                    <button id="news-button" class="button" ></button>
+
+                    <div class="news-modal" class="modal">
+                        <div class="news-modal-content">
+                            <span #news-close>&times;</span>
+                            <p>Nyheter</p>
+                        </div>
+                    </div>
+
+
                 </section>
 
 
@@ -285,9 +279,11 @@
         </div>
         <!--content-->
     </div>
+
+    
     <!--wrap-->
     <script src="../js/quick-evaluation.js"></script>
-    <script src="../js/attendance.js"></script>
+    <!--<script src="../js/attendance.js"></script>-->
     <script src="../js/drop.js"></script>
     <script src="../js/news.js"></script>
 </body>
