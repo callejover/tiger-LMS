@@ -1,22 +1,14 @@
-# REMEMBER
-1. Check all pages that all functionality is working. If not, take working page and copy it to the non working page and put the important content in for simple fix.
-
 # tiger-LMS
 Team Tigers Learning Management System
 
-# Roles:
+# REMEMBER
+1. Check all pages that all functionality is working. If not, take working page and copy it to the non working page and put the important content in for simple fix.
+
+# Rules:
 1. Always insert a comment at the end tag with the name of the start tag same with {}. example end-div-tag html-comment
 2. Use br-tag in p-tag for good practies.
-3. Use flexbox insted of flot.
-4. Use let and const insted of war in .js.
-
-# Focus:
-1. Functionalety
-
-# Links:
-1. Trello https://trello.com/b/UaFE8N4d/tiger-gu1
-2. Flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
+3. Use flexbox insted of float.
+4. Use "let" and "const" insted of "var" in .js.
 
 # Workflow:
 1. Always create a branch to work on!
@@ -27,6 +19,14 @@ Team Tigers Learning Management System
 6. Commit message structure.
 <br> Exampel: "S1: Adds menu on top of page"
 <br> Syntax: "story name": "what is the code doning?" "note names if has been working more then one person"
+
+
+# Focus:
+1. Functionalety
+
+# Links:
+1. Trello https://trello.com/b/UaFE8N4d/tiger-gu1
+2. Flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 # To do list (Tim & Robban):
 1. Main.css
