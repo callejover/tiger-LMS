@@ -56,19 +56,20 @@
             <span class="close">&times;</span>
         <!-- Closing X icon in modal -->
             <div class="header">
-                <h1>Närvaro</h1>
+                <h2>Närvaro</h2>
                 <form name="input-attendance">
                     <div class="attendance">
-                        <h1>För att anmäla din närvaro på lektionen skriv in koden på tavlan i klassrummet.<br>Koden är giltlig i 5 minuter
-                            sen stängs fönstret.</h1><br>
+                        <p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
+                        <p>Koden är endast giltlig i 5 minuter!</p>
                         <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
-                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button>
+                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button><br>
+                        <span class="wrongCode"></span>          
                     </div>
                 </form>
             </div>
         </div>
     </div>
-<!-- div attendanceModal opens the login box on index screen -->
+    <!-- div attendanceModal opens the login box on index screen -->
 
     <div class="wrap">
         <div class="content content-pricing">
