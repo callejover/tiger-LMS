@@ -1,12 +1,14 @@
-//Get the choosen class value
-var choosenClass = document.getElementById('teacher-code');
+ function createCode() {
+    
+    var x = document.querySelector("#teacher-code").selectedIndex;
+    var y = document.querySelector("#teacher-code").options;
 
-//Get the teachers code button
-var teacherCode = document.getElementById('code-submit');
+    var selectedClass = y[x].value;
+
+    var randomCode = Math.floor((Math.random() * 9999) + 1000);
 
 
-var randomCode = function() {
-    Math.floor((Math.random() * 9999) + 1111);
-    return;
+
+    document.querySelector(".header").innerHTML = "";
+    document.querySelector(".header").innerHTML = selectedClass + " " + randomCode;
 }
-
