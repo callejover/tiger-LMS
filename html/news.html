@@ -56,26 +56,28 @@
             <span class="close">&times;</span>
         <!-- Closing X icon in modal -->
             <div class="header">
-                <h1>Närvaro</h1>
+                <h2>Närvaro</h2>
                 <form name="input-attendance">
                     <div class="attendance">
-                        <h1>För att anmäla din närvaro på lektionen skriv in koden på tavlan i klassrummet.<br>Koden är giltlig i 5 minuter
-                            sen stängs fönstret.</h1><br>
+                        <p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
+                        <p>Koden är endast giltlig i 5 minuter!</p>
                         <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
-                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button>
+                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button><br>
+                        <span class="wrongCode"></span>          
                     </div>
                 </form>
             </div>
         </div>
     </div>
-<!-- div attendanceModal opens the login box on index screen -->
+    <!-- div attendanceModal opens the login box on index screen -->
 
     <div class="wrap">
         <div class="content content-pricing">
             <div class="innerContent apperance">
                 <h2>Nyheter</h2>
-                <p>Här kan du som elev ta del av nyheter som rör dina kurser.</p>
-                <br>
+                <p>Här kan du som elev ta del av nyheter som rör dina kurser.<br>
+                Välj kurs i listan och ta del av nyheterna som rör just den kursen.</p>
+                
 
                 <section class="slide slide-four">
 
@@ -272,7 +274,7 @@
     <!--wrap-->
     <script src="../js/quick-evaluation.js"></script>
     <script src="../js/attendance.js"></script>
-    <script src="../js/drop.js"></script>
+    
     <script src="../js/news.js"></script>
 </body>
 
