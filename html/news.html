@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Studentsidan</title>
+
+    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!--Reset css-->
+    <link rel="stylesheet" href="../css/main.css">
+    <!--main styling and funkutionalety-->
+    <link rel="stylesheet" href="../css/courses.css">
+    <!-- dropdown menu css -->
+    <link rel="stylesheet" href="../css/quick-evaluation.css">
+    <!-- quick-evaluation styling -->
+    <link rel="stylesheet" href="../css/mediaq.css">
+    <!-- media querys -->
+    <link rel="stylesheet" href="../css/news.css">
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header>
+        <nav id="nav">
+            <div id="nav-button-max-500">MENU</div>
+            <ul class="hidden-max-500">
+                <li><a href="../index.html">logotypeFuture</a></li>
+                <li><a href="courses.html">Kurser</a></li>
+                <li><a href="news.html">Nyheter</a></li>
+                <li><a id="attendanceButton">Närvaro</a></li>
+                <li><a href="../index.html">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <!-- Hidden before clicking loginButton -->
+
+    <div id="attendanceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+        <!-- Closing X icon in modal -->
+            <div class="header">
+                <h2>Närvaro</h2>
+                <form name="input-attendance">
+                    <div class="attendance">
+                        <p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
+                        <p>Koden är endast giltlig i 5 minuter!</p>
+                        <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
+                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button><br>
+                        <span class="wrongCode"></span>          
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- div attendanceModal opens the login box on index screen -->
+
+    <div class="wrap">
+        <div class="content content-pricing">
+            <div class="innerContent apperance">
+                <h2>Nyheter</h2>
+                <p>Här kan du som elev ta del av nyheter som rör dina kurser.<br>
+                Välj kurs i listan och ta del av nyheterna som rör just den kursen.</p>
+                
+
+                <section class="slide slide-four">
+
+                    <div class="tab-group">
+                        <div class="tab">
+                            <input id="tab-one" type="checkbox" name="tab">
+                            <label for="tab-one" class="tabPadding">HTML och CSS</label>
+                            <div class="tab-content">
+                                <div class="news-content">
+                                        <div class="newsTab">
+                                            <!--<h2>Datum</h2>-->
+                                            <h3>2017-10-16</h3>
+                                            <p>
+                                                Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                            </p>
+                                        </div>
+                                        <div class="newsTab">
+                                                <!--<h2>Datum</h2>-->
+                                                <h3>2017-10-20</h3>
+                                                <p>
+                                                    Cow turducken landjaeger meatball. Jerky cow alcatra, pancetta meatloaf ribeye sirloin. Short loin shankle 
+                                                    turducken pork loin, ham hock spare ribs sirloin meatloaf. Kevin pastrami tenderloin brisket tail rump andouille 
+                                                    ribeye turducken cow ball tip landjaeger. Boudin venison burgdoggen filet mignon drumstick doner tri-tip, 
+                                                    bresaola shank fatback tail beef ribs brisket ball tip corned beef. Bresaola pastrami frankfurter meatloaf cow.
+                                                </p>
+                                        </div>
+                                </div>
+                            </div>
+                            <!--tab-content-->
+                        </div>
+                        <!--tab-->
+                    </div>
+                </section>
+
+
+                <section class="slide slide-four">
+
+                    <div class="tab-group">
+                        <div class="tab">
+                            <input id="tab-two" type="checkbox" name="tab">
+                            <label for="tab-two" class="tabPadding">Javascript</label>
+                            <div class="tab-content">
+                                <div class="news-content">
+                                        <div class="newsTab">
+                                            <!--<h2>Datum</h2>-->
+                                            <h3>2017-10-16</h3>
+                                            <p>
+                                                Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                            </p>
+                                        </div>
+                                        <div class="newsTab">
+                                                <!--<h2>Datum</h2>-->
+                                                <h3>2017-10-20</h3>
+                                                <p>
+                                                    Cow turducken landjaeger meatball. Jerky cow alcatra, pancetta meatloaf ribeye sirloin. Short loin shankle 
+                                                    turducken pork loin, ham hock spare ribs sirloin meatloaf. Kevin pastrami tenderloin brisket tail rump andouille 
+                                                    ribeye turducken cow ball tip landjaeger. Boudin venison burgdoggen filet mignon drumstick doner tri-tip, 
+                                                    bresaola shank fatback tail beef ribs brisket ball tip corned beef. Bresaola pastrami frankfurter meatloaf cow.
+                                                </p>
+                                        </div>
+                                </div>
+                            </div>
+                            <!--tab-content-->
+                        </div>
+                        <!--tab-->
+                    </div>
+                </section>
+                <section class="slide slide-four">
+
+                    <div class="tab-group">
+                        <div class="tab">
+                            <input id="tab-three" type="checkbox" name="tab">
+                            <label for="tab-three" class="tabPadding">Arbetsmetodik</label>
+                            <div class="tab-content">
+                                <div class="news-content">
+                                    <div class="newsTab">
+                                        <!--<h2>Datum</h2>-->
+                                        <h3>2017-10-16</h3>
+                                        <p>
+                                            Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                            jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                            Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                            ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                            pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                        </p>
+                                    </div>
+                                    <div class="newsTab">
+                                        <!--<h2>Datum</h2>-->
+                                        <h3>2017-10-20</h3>
+                                        <p>
+                                            Cow turducken landjaeger meatball. Jerky cow alcatra, pancetta meatloaf ribeye sirloin. Short loin shankle 
+                                            turducken pork loin, ham hock spare ribs sirloin meatloaf. Kevin pastrami tenderloin brisket tail rump andouille 
+                                            ribeye turducken cow ball tip landjaeger. Boudin venison burgdoggen filet mignon drumstick doner tri-tip, 
+                                            bresaola shank fatback tail beef ribs brisket ball tip corned beef. Bresaola pastrami frankfurter meatloaf cow.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--assignments-->
+                            </div>
+                            <!--tab-content-->
+                        </div>
+                        <!--tab-->
+                    </div>
+                </section>
+
+                <section class="slide slide-four">
+
+                    <div class="tab-group">
+                        <div class="tab">
+                            <input id="tab-four" type="checkbox" name="tab">
+                            <label for="tab-four" class="tabPadding">Back-end utveckling</label>
+                            <div class="tab-content">
+                                    <div class="news-content">
+                                        <div class="newsTab">
+                                            <!--<h2>Datum</h2>-->
+                                            <h3>2017-10-16</h3>
+                                            <p>
+                                                Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                            </p>
+                                        </div>
+                                        <div class="newsTab">
+                                                <!--<h2>Datum</h2>-->
+                                                <h3>2017-10-20</h3>
+                                                <p>
+                                                    Cow turducken landjaeger meatball. Jerky cow alcatra, pancetta meatloaf ribeye sirloin. Short loin shankle 
+                                                    turducken pork loin, ham hock spare ribs sirloin meatloaf. Kevin pastrami tenderloin brisket tail rump andouille 
+                                                    ribeye turducken cow ball tip landjaeger. Boudin venison burgdoggen filet mignon drumstick doner tri-tip, 
+                                                    bresaola shank fatback tail beef ribs brisket ball tip corned beef. Bresaola pastrami frankfurter meatloaf cow.
+                                                </p>
+                                        </div>
+                                    </div>
+                                <!--assignments-->
+                            </div>
+                            <!--tab-content-->
+                        </div>
+                        <!--tab-->
+                    </div>
+                     
+                </section>
+
+                
+
+
+            </div>
+            <!--innerContent-->
+            <div class="quick-evaluation-wrap">
+                <div class="quick-evaluation-content apperance">
+                    <h4>Daglig utvärdering</h4>
+                    <p>Berätta för oss hur du upplever dagen genom att klicka på någon av dessa emojis.</p>
+                    <div id="quick-evaluation">
+
+                        <div class="quick-evaluation-inner">
+                            <a href="#" id="glad" onclick="clickItem1()"><img src="../img/quick-evaluation-glad.png" alt="All good" title="All good"></a>
+                            <span class="glad-message">Härligt, tack!</span>
+                        </div>
+
+                        <div class="quick-evaluation-inner">
+                            <a href="#" id="between" onclick="clickItem2()"><img src="../img/quick-evaluation-between.png" alt="All good" title="It's ok"></a>
+                            <span class="between-message">Ok, tack!</span>
+                        </div>
+
+                        <div class="quick-evaluation-inner">
+                            <a href="#" id="sad" onclick="clickItem3()"><img src="../img/quick-evaluation-sad.png" alt="All good" title="Not good!"></a>
+                            <span class="sad-message">Vad trist, tack!</span>
+                        </div>
+
+                    </div>
+                    <!-- quick-evaluation -->
+                    <p class="evaluation-info">Varje vecka så kommer du att ha möjlighet att göra en mer utförlig utvärdering och även på de enskilda
+                        kurserna du läser.</p>
+                    <ul>
+                        <li><a href="../html/weekly-feedback.html">Vecko-utvärdering</a></li>
+                        <li><a href="../html/course-evaluation.html">Kurs-utvärdering</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--content-->
+    </div>
+
+    
+    <!--wrap-->
+    <script src="../js/quick-evaluation.js"></script>
+    <script src="../js/attendance.js"></script>
+    
+    <script src="../js/news.js"></script>
+</body>
+
+</html>

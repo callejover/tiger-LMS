@@ -16,7 +16,7 @@ var objPeople = [
         username: "teacher",
         password: "teacher",
         account: "teacher",
-        refPage: (currentPage === 'index.html') ? 'html/coursessssss.html' : 'courses.html'  // Html waiting for page
+        refPage: (currentPage === 'index.html') ? 'html/teacher.html' : 'teacher.html'
     }, {
         username: "admin",
         password: "admin",
@@ -30,6 +30,8 @@ var objPeople = [
 function getInfo() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
+    var message = "Du har skrivit in fel lösenord!";
+  
 
 // Loops accouts and checks for matches
     for(i = 0; i < objPeople.length; i++) {
@@ -43,9 +45,12 @@ function getInfo() {
             }
             return; // Stops the loop
         }
+
     }
 
-    alert("Du har angivit fel användarnamn eller lösenord");
+
+document.querySelector('#wrongPass').innerHTML = message;
+
 }
 
 
@@ -81,8 +86,8 @@ window.onclick = function(event) {
 }
 
 
-document.getElementById("password")
-    .addEventListener("keyup", function(event) {
+
+document.getElementById("password").addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode == 13) {
         document.getElementById("password").click(getInfo());
