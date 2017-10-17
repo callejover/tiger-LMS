@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="../css/reset.css"><!--Reset css-->
         <link rel="stylesheet" href="../css/main.css"><!--main styling and funkutionalety-->
         <link rel="stylesheet" href="../css/mediaq.css"><!--main styling and funkutionalety-->
+
+        <script src="https://code.jquery.com/jquery-1.x-git.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -72,7 +74,7 @@
               <div class="scrollHead">
                   <nav>
                       <ul>
-                          <li><a href="#selection1" class="scrollSticker"></a></li>
+                          <li><a href="#selection1" class="scrollSticker active"></a></li>
                           <br>
                           <li><a href="#selection2" class="scrollSticker"></a></li>
                           <br>
@@ -83,9 +85,9 @@
                       </ul>
                   </nav>
               </div><!-- /sidebar -->
-              <div class="scroll">
-                  <section id="selection1">
-                    <div class="content">
+              <div>
+                  <section id="selection1" class="par">
+                    <div class="content scroll">
                       <div class="innerContent apperance">
                           <h2>Enkel översik</h2>
                           <p>
@@ -96,8 +98,8 @@
                       </div><!--innerContent-->
                     </div><!--content-->
                   </section>
-                  <section id="selection2">
-                    <div class="content dark">
+                  <section id="selection2" class="par">
+                    <div class="content dark scroll">
                       <div class="innerContent apperance">
                           <h2>Kommunicera med skolan</h2>
                           <p>
@@ -106,8 +108,8 @@
                       </div><!--innerContent-->
                     </div><!--content dark-->
                   </section>
-                  <section id="selection3">
-                    <div class="content">
+                  <section id="selection3" class="par">
+                    <div class="content scroll">
                       <div class="innerContent apperance">
                           <h2>Vara på plats</h2>
                           <p>
@@ -118,8 +120,8 @@
                       </div><!--innerContent-->
                     </div><!--content -->
                   </section>
-                  <section id="selection4">
-                    <div class="content dark">
+                  <section id="selection4" class="par">
+                    <div class="content dark scroll">
                       <div class="innerContent apperance">
                           <h2>Uppgifter</h2>
                           <p>
@@ -138,5 +140,6 @@
 
       <script src="../js/drop.js"></script>
       <script src="../js/features.js"></script>
+      <script src="../js/jquery.combinedScroll.js"></script>
     </body>
 </html>

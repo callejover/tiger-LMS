@@ -131,6 +131,10 @@ strong {
   background-color: rgba(255,242,255,0.9);
 }
 
+.index{
+  min-height: calc(100vh - 5em);
+}
+
 .content{
  min-height: calc(100vh - 5em);
  width: 100%;
@@ -146,6 +150,9 @@ strong {
 
 }
 
+.scroll{
+  min-height: 100vh;
+}
 .content.mobile{
   min-height: 5em;
   height: 5em;
@@ -165,10 +172,7 @@ strong {
   padding-right: 2.5em;
 }
 
-.scroll{
-
-}
-.scrollSticker{
+.scrollHead a{
   content:none;
   display: block;
   width: 1em;
@@ -183,10 +187,14 @@ strong {
 
 
 }
-.scrollSticker:hover{
+
+.scrollHead a:hover{
   opacity: 1;
 }
+.scrollHead a.active{
+  opacity: 1;
 
+}
 
 img{
     display: block;
