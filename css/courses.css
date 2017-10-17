@@ -94,3 +94,30 @@
 .tabPadding {
   padding-left:1em;
 }
+
+.news-content {
+  display: flex;
+  flex-direction: column; 
+}
+
+.newsTab {
+  display:flex;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.newsTab h2 {
+  font-size: 1em;
+  flex:1;
+}
+
+.newsTab h3 {
+  flex:1;
+  font-size: 1em;
+  text-align: end;
+}
+
+.newsTab p {
+  flex:3;
+  order: -1;
+}

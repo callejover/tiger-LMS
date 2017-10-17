@@ -14,19 +14,42 @@
         <script src = "../js/feedback.js"></script>
     </head>
     <body> 
+
         <header>
             <nav id="nav">
                 <div id="nav-button-max-500">MENU</div>
-
-                    <ul class="hidden-max-500">
-                        <li><a href="../index.html">logotypeFuture</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="../index.html">Log out</a></li>
-                    </ul>
-                </div>    
-
+                <ul class="hidden-max-500">
+                    <li><a href="../index.html">logotypeFuture</a></li>
+                    <li><a href="courses.html">Kurser</a></li>
+                    <li><a href="news.html">Nyheter</a></li>
+                    <li><a id="attendanceButton">Närvaro</a></li>
+                    <li><a href="../index.html">Log out</a></li>
+                </ul>
             </nav>
-        </header>    
+        </header>
+    
+    
+    <!-- Hidden before clicking loginButton -->
+
+    <div id="attendanceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+        <!-- Closing X icon in modal -->
+            <div class="header">
+                <h2>Närvaro</h2>
+                <form name="input-attendance">
+                    <div class="attendance">
+                        <p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
+                        <p>Koden är endast giltlig i 5 minuter!</p>
+                        <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
+                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button><br>
+                        <span class="wrongCode"></span>          
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- div attendanceModal opens the login box on index screen -->
 
         <div class="wrap">
             <div class="content">
@@ -108,5 +131,12 @@
                 </div>
             </div>
         </div>
+
+        
+    <!--wrap-->
+    <script src="../js/quick-evaluation.js"></script>
+    <script src="../js/attendance.js"></script>
+    
+    <script src="../js/news.js"></script>
     </body>
 </html>

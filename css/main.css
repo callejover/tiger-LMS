@@ -48,6 +48,13 @@ body{
   color: rgba(255, 255, 255, 1);
 
 }/*body*/
+p {
+  margin: 1em 0;
+}
+
+strong {
+  font-weight: bold;
+}
 
 img{
     display: block;
@@ -226,6 +233,7 @@ h4 {
   padding: inherit;
 }
 
+
   /*====================================
   nav  attributes
   =====================================*/
@@ -303,7 +311,7 @@ h4 {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 1000000000000; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -341,3 +349,4 @@ h4 {
 .modal-content {
   background-color: #3b003f
 }
+
