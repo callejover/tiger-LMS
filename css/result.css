@@ -20,7 +20,7 @@
 }
 
 .drop-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -33,7 +33,7 @@
 }
 
 .dropbtn { /* button-styling */
-    width: 12em;
+    min-width: 160px;
     /* margin: 1em 0 5em 0; */
     background-color: #91009C; 
     border: none;
@@ -41,7 +41,9 @@
     padding: 1em 1em;
     text-decoration: none;
     display: inline-block;
-    font-size: 1em;  
+    font-size: 0.7em;  
+    font-weight: bold;
+    text-transform: uppercase;
     cursor: pointer;
     text-align: center;
     
@@ -55,7 +57,7 @@
 }
 
 .result-text {
-    margin: 1em 0 1em 1.5em;
+    margin: 0 0 1em 7em;
 }
 
 .result-text li {
