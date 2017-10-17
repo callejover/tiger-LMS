@@ -44,6 +44,23 @@
     font-size: 1em;  
     cursor: pointer;
     text-align: center;
+    
+    
+}
+
+#chart_div {
+    justify-content: center;
+    margin: 2em 0 0 1em;
+
+}
+
+.result-text {
+    margin: 1em 0 1em 1.5em;
+}
+
+.result-text li {
+    font-size: 0.8em;
+    
 }
 
 
