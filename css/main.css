@@ -247,6 +247,11 @@ h4 {
     z-index: 1000
   }
 
+  #nav .current {
+    background-color: rgba(145,0,156,1);
+    /* color: #d900e8; */
+  }
+
   #nav ul {
       display: flex;
       flex-direction: row;

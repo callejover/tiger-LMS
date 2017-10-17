@@ -37,7 +37,7 @@
     }
 
     .tab-content{
-      max-height: 0;
+      height: 0;
       overflow: hidden;
       transition: all .35s;
       display:flex;
@@ -52,7 +52,7 @@
     }
 
     .tab input:checked ~ .tab-content {
-      max-height: 30em;
+      height: auto;
     }
 
 
