@@ -65,5 +65,16 @@
     
 }
 
+.result-text p {
+    font-size: 0.7em;
+}
 
+.result-text2 h5 {
+    font-weight: bold;
+    margin-top: 1.5em;
+}
+
+#chart2 {
+
+}
 
