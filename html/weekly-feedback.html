@@ -14,24 +14,47 @@
         <script src = "../js/feedback.js"></script>
     </head>
     <body> 
+
         <header>
             <nav id="nav">
                 <div id="nav-button-max-500">MENU</div>
-
-                    <ul class="hidden-max-500">
-                        <li><a href="../index.html">logotypeFuture</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="../index.html">Log out</a></li>
-                    </ul>
-                </div>    
-
+                <ul class="hidden-max-500">
+                    <li><a href="../index.html">logotypeFuture</a></li>
+                    <li><a href="courses.html">Kurser</a></li>
+                    <li><a href="news.html">Nyheter</a></li>
+                    <li><a id="attendanceButton">Närvaro</a></li>
+                    <li><a href="../index.html">Log out</a></li>
+                </ul>
             </nav>
-        </header>    
+        </header>
+    
+    
+    <!-- Hidden before clicking loginButton -->
+
+    <div id="attendanceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+        <!-- Closing X icon in modal -->
+            <div class="header">
+                <h2>Närvaro</h2>
+                <form name="input-attendance">
+                    <div class="attendance">
+                        <p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
+                        <p>Koden är endast giltlig i 5 minuter!</p>
+                        <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
+                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button><br>
+                        <span class="wrongCode"></span>          
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- div attendanceModal opens the login box on index screen -->
 
         <div class="wrap">
             <div class="content">
                 <div class="innerContent apperance">
-                    <h3>Veckans Utvärdering</h3><p class = "required">(* = Obligatorisk)</p><br>
+                    <h3>Veckans Utvärdering</h3><p class = "required">(* = Obligatorisk)</p><br><br>
                     <form class="weekly-feedback" name="checkFormData" action="courses.html" onsubmit="return check()">
                         <h4>Hur upplever du just nu tempot i utbildningen?<span style="color:red">*</span></h4>
                         <div class = "radio">
@@ -52,7 +75,7 @@
                                 <input type="radio" id = "num7" name = "num" value = "7" required></label>
                             <p>Hänger med till 100 %</p>
                             <br>
-                        </div>
+                        </div><br>
                         <h4>Hur engagerad anser du själv att du är i dina studier?<span style="color:red">*</span></h4>
                         <div class = "radio">
                             <p class = "p-left">Inte engagerad alls</p>
@@ -71,7 +94,7 @@
                             <label for="num2-7">7<br/>    
                                 <input type="radio" id = "num2-7" name = "num2" value = "7" required></label>
                             <p>Väldigt engagerad</p><br>
-                        </div>
+                        </div><br>
                         <h4>Hur upplever du stämningen i klassen?<span style="color:red">*</span></h4>
                         <div class = "radio">
                             <p class = "p-left">Dålig stämning</p>
@@ -91,7 +114,7 @@
                                 <input type="radio" id = "num3-7" name = "num3" value = "7" required></label>
                             <p>Mycket god stämning</p>
                             <br>
-                        </div>
+                        </div><br>
 
                         <h4>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h4> 
                         <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br>
@@ -108,5 +131,12 @@
                 </div>
             </div>
         </div>
+
+        
+    <!--wrap-->
+    <script src="../js/quick-evaluation.js"></script>
+    <script src="../js/attendance.js"></script>
+    
+    <script src="../js/news.js"></script>
     </body>
 </html>

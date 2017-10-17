@@ -3,7 +3,7 @@
 }
 
 .radio p { 
-    display: inline; /* place the texts beside radio-buttons */
+    display: inline; /* place the texts to the left&the right of radio-buttons */
     font-size: 0.8em; 
     color: #FFFFFF;
 }
@@ -53,10 +53,19 @@ textarea { /* textarea-sizing */
 
 label {
     float: left;
+    position: relative;
     padding: 0 1em;
     text-align: center;
   }
 
+label:hover {
+    color: #DD46E8;
+    font-size: 1.1em;
+} 
+  
 .p-left {
     float: left;
+    width: 5em;
 }
+
+​

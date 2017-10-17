@@ -72,9 +72,15 @@
     width: 8em;
     box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
     font-weight: bold;
-    text-align: center
+    text-align: center;
+    transition: .4s;
 }
 
 #glad:focus + .glad-message,
 #sad:focus + .sad-message,
 #between:focus + .between-message {display: block;}
+
+.opacity50 {
+    opacity: .5;
+    transition: .4s;
+}
