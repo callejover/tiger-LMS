@@ -1,14 +1,23 @@
+ 
+ //Chooses class and creates a random code that displays in the same modal
  function createCode() {
-    
-    var x = document.querySelector("#teacher-code").selectedIndex;
-    var y = document.querySelector("#teacher-code").options;
 
+    //Chooses the selected option in the dropdown
+    var x = document.querySelector("#teacher-code").selectedIndex;
+    //Creates the dropdowns options to an array
+    var y = document.querySelector("#teacher-code").options;
+    //Finds the dropdowns optiions, then finds the class and returns the value
     var selectedClass = y[x].value;
 
-    var randomCode = Math.floor((Math.random() * 9999) + 1000);
+    //Sets the random number between 1111 and 9999
+    var randomCode = getRndInteger(1111,9999);
+
+    //Creates the new modals content after you've clicked on create code
+    document.querySelector(".header").innerHTML = "Den nya lektionskoden för <strong>" + selectedClass + "</strong> är <br><h2>" + randomCode +"</h2>";
+}
 
 
-
-    document.querySelector(".header").innerHTML = "";
-    document.querySelector(".header").innerHTML = selectedClass + " " + randomCode;
+// Creates the random number
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
 }
