@@ -57,7 +57,8 @@
     min-height: 2.5em;
     height: 5em;
     border: none;
-    padding: 0.75em;
+    padding: 0.9em;
+    line-height:normal;
   }
 
   .pricingContent {
@@ -75,6 +76,9 @@
     margin-left: 0
   }
 
+.scrollHead{
+ display: none;
+}
  /*menu all .html files*/
 
   #nav ul li {
@@ -117,8 +121,9 @@
 }
 
 .modal-content {
-  width: 50%; 
-  margin-top: 17em;
+  width: 50%;
+  margin-top: 12em;
+
 }
 
 }/*@media 1200px*/

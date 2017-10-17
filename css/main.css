@@ -8,7 +8,7 @@ hex:
 3. 91009C
 4. DD46E8
 5. 620069     Dark purple
-6. 3b003f     Darker purple of number 5. 
+6. 3b003f     Darker purple of number 5.
 
 rgb():
 1. 217,0,232
@@ -41,6 +41,7 @@ body{
   background-repeat:no-repeat;
 	background-attachment: fixed;
   background-size: 100% auto;
+  background-size: ;
 	background-position:center, center;
   font-family: verdana, sans-serif;
   font-size: 0.9em;
@@ -55,14 +56,6 @@ p {
 strong {
   font-weight: bold;
 }
-
-img{
-    display: block;
-    width: 200px;
-    height: auto;
-    border-radius: 5%;
-    z-index: 500;
-  }
 
     textarea,
     input[type=submit],
@@ -162,6 +155,47 @@ img{
   display: none;
 }
 
+.scrollHead{
+  position: fixed;
+  flex-direction: column;
+  z-index: 1000;
+  right: 0;
+  padding-top: 25vh;
+  vertical-align: middle;
+  padding-right: 2.5em;
+}
+
+.scroll{
+
+}
+.scrollSticker{
+  content:none;
+  display: block;
+  width: 1em;
+  height: 1em;
+  min-width: 50px;
+  min-height: 50px;
+  background: rgb(98,0,105) no-repeat;
+  background-blend-mode: overlay;
+	background-size: cover;
+  opacity: 0.7;
+  border-radius: 50%;
+
+
+}
+.scrollSticker:hover{
+  opacity: 1;
+}
+
+
+img{
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 5%;
+    z-index: 500;
+  }
+
 .features, .pricing, .textContent {
   width: 30%;
   padding: 0;
@@ -176,10 +210,9 @@ img{
 }
 
 .features, .pricing{
-  height: 35vh;
-  vertical-align:middle;
-  line-height: 35vh;
-  
+    height: 35vh;
+    vertical-align: middle;
+    line-height: 35vh;
 }
 
 .pricingContent {
@@ -269,6 +302,7 @@ h4 {
       text-transform: uppercase;
       font-weight: bold;
       align-content: flex-end;
+      flex-grow: 0.1;
   }
 
   #nav ul li a {
@@ -349,4 +383,8 @@ h4 {
 .modal-content {
   background-color: #3b003f
 }
+
+/*====================================
+testing in progress
+=====================================*/
 
