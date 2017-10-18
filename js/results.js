@@ -85,115 +85,114 @@ function chart2() {
   chart.draw(data, options);
 }
 
-              function chart3() {
+function chart3() {
                 
-                        // Create the data table.
-                        var data = new google.visualization.DataTable();
-                        data.addColumn('string', 'Betyg');
-                        data.addColumn('number', 'Antal svar');
-                        data.addRows([
-                          ['1', 1],
-                          ['2', 4],
-                          ['3', 5],
-                          ['4', 4],
-                          ['5', 8],
-                          ['6', 2],
-                          ['7', 6],
-                        ]);
+  // Create the data table.
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Betyg');
+  data.addColumn('number', 'Antal svar');
+  data.addRows([
+  ['1', 1],
+  ['2', 4],
+  ['3', 5],
+  ['4', 4],
+  ['5', 8],
+  ['6', 2],
+  ['7', 6],
+  ]);
                         
                 
-                        // Set chart options
-                        var options = {'title':'Hur engagerad anser du själv att du är i dina studier?',
-                                        colors: ['#DD46E8'],
-                                        backgroundColor: { fill:'transparent' },
-                                        legendTextStyle: { color: '#FFF' },
-                                        titleTextStyle: { color: '#FFF', fontSize: '18' },
-                                        hAxis: {
-                                        textStyle:{color: '#FFF'}
-                                        },
-                                        vAxis: {
-                                        textStyle:{color: '#FFF'}, baseline: {color: '#FFF'}
-                                        },
-                                       'width':800,
-                                       'height':300};
+  // Set chart options
+  var options = {'title':'Hur engagerad anser du själv att du är i dina studier?',
+                  colors: ['#DD46E8'],
+                  backgroundColor: { fill:'transparent' },
+                  legendTextStyle: { color: '#FFF' },
+                  titleTextStyle: { color: '#FFF', fontSize: '18' },
+                  hAxis: {
+                  textStyle:{color: '#FFF'}
+                  },
+                  vAxis: {
+                  textStyle:{color: '#FFF'}, baseline: {color: '#FFF'}
+                  },
+                  'width':800,
+                  'height':300};
                 
-                        // Instantiate and draw our chart, passing in some options.
-                        var chart = new google.visualization.ColumnChart(document.getElementById('chart3'));
-                        chart.draw(data, options);
-                      }
+  // Instantiate and draw our chart, passing in some options.
+  var chart = new google.visualization.ColumnChart(document.getElementById('chart3'));
+  chart.draw(data, options);
+}
 
-                      function chart4() {
+function chart4() {
                         
-                                // Create the data table.
-                                var data = new google.visualization.DataTable();
-                                data.addColumn('string', 'Betyg');
-                                data.addColumn('number', 'Antal svar');
-                                data.addRows([
-                                  ['1', 0],
-                                  ['2', 2],
-                                  ['3', 5],
-                                  ['4', 8],
-                                  ['5', 8],
-                                  ['6', 2],
-                                  ['7', 5],
-                                ]);
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Betyg');
+  data.addColumn('number', 'Antal svar');
+  data.addRows([
+  ['1', 0],
+  ['2', 2],
+  ['3', 5],
+  ['4', 8],
+  ['5', 8],
+  ['6', 2],
+  ['7', 5],
+  ]);
                                 
                         
-                                // Set chart options
-                                var options = {'title':'Hur upplever du stämningen i klassen?',
-                                                colors: ['#DD46E8'],
-                                                backgroundColor: { fill:'transparent' },
-                                                legendTextStyle: { color: '#FFF' },
-                                                titleTextStyle: { color: '#FFF', fontSize: '18' },
-                                                hAxis: {
-                                                textStyle:{color: '#FFF'}
-                                                },
-                                                vAxis: {
-                                                textStyle:{color: '#FFF'}, baseline: {color: '#FFF'}
-                                                },
-                                               'width':800,
-                                               'height':300};
+// Set chart options
+  var options = {'title':'Hur upplever du stämningen i klassen?',
+                colors: ['#DD46E8'],
+                backgroundColor: { fill:'transparent' },
+                legendTextStyle: { color: '#FFF' },
+                titleTextStyle: { color: '#FFF', fontSize: '18' },
+                hAxis: {
+                textStyle:{color: '#FFF'}
+                },
+                vAxis: {
+                textStyle:{color: '#FFF'}, baseline: {color: '#FFF'}
+                },
+                'width':800,
+                'height':300};
                         
-                                // Instantiate and draw our chart, passing in some options.
-                                var chart = new google.visualization.ColumnChart(document.getElementById('chart4'));
-                                chart.draw(data, options);
-                              }
+  // Instantiate and draw our chart, passing in some options.
+  var chart = new google.visualization.ColumnChart(document.getElementById('chart4'));
+  chart.draw(data, options);
+}
 
-    function chart5() {                               
+function chart5() {                               
                                         
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Betyg');
-      data.addColumn('number', 'Antal svar');
-      data.addRows([
-      ['1', 1],
-      ['2', 6],
-      ['3', 6],
-      ['4', 7],
-      ['5', 3],
-      ['6', 4],
-      ['7', 4],
-      ]);
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Betyg');
+  data.addColumn('number', 'Antal svar');
+  data.addRows([
+  ['1', 1],
+  ['2', 6],
+  ['3', 6],
+  ['4', 7],
+  ['5', 3],
+  ['6', 4],
+  ['7', 4],
+  ]);
                                         
                                 
                                         
-      var options = {'title':'Har vi gjort det vi ska?',
-                    colors: ['#DD46E8'],
-                    backgroundColor: { fill:'transparent' },
-                    legendTextStyle: { color: '#FFF' },
-                    titleTextStyle: { color: '#FFF', fontSize: '18' },
-                    hAxis: {
-                    textStyle:{color: '#FFF'}
-                    },
-                    vAxis: {
-                    textStyle:{color: '#FFF'}, baseline: {color: '#FFF'}
-                    },
-                    'width':800,
-                    'height':300};
+  var options = {'title':'Har vi gjort det vi ska?',
+                colors: ['#DD46E8'],
+                backgroundColor: { fill:'transparent' },
+                legendTextStyle: { color: '#FFF' },
+                titleTextStyle: { color: '#FFF', fontSize: '18' },
+                hAxis: {
+                textStyle:{color: '#FFF'}
+                },
+                vAxis: {
+                textStyle:{color: '#FFF'}, baseline: {color: '#FFF'}
+                },
+                'width':800,
+                'height':300};
                                 
                                         
-      var chart = new google.visualization.ColumnChart(document.getElementById('chart5'));
-      chart.draw(data, options);
-    }
+  var chart = new google.visualization.ColumnChart(document.getElementById('chart5'));
+  chart.draw(data, options);
+}
 
 function chart6() {
                                         
