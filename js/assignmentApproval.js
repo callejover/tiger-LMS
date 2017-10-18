@@ -18,7 +18,7 @@ function gradeApproved() {
         return false;
     } else {
         assignmentApprovalContent.innerHTML = "";
-        assignmentApprovalContent.innerHTML = "<h4 class=\"assignmentApprovalContentText\">Betyget " + gradeSelectList + " är satt för eleven " + studentName.options[studentName.selectedIndex].text + " och uppgift " + assignment.options[assignment.selectedIndex].text + " för kursen " + courseList.options[courseList.selectedIndex].text + "</h4>";
+        assignmentApprovalContent.innerHTML = "<h4 class=\"assignmentApprovalContentText\">Betyget <strong>" + gradeSelectList + "</strong> är satt för eleven <strong>" + studentName.options[studentName.selectedIndex].text + "</strong> och uppgift <strong>" + assignment.options[assignment.selectedIndex].text + "</strong> för kursen <strong>" + courseList.options[courseList.selectedIndex].text + "</strong></h4>";
         assignmentApprovalContent.style.textAlign = "center";
         setTimeout("pageSwap()", 3000);
         return true;
