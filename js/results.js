@@ -40,7 +40,7 @@ function drawChart() {
                 vAxis: {
                 textStyle:{color: '#FFF'}, baseline: {color: '#FFF'}
                 },
-                'width':500,
+                'width':800,
                 'height':300};
 
   // Instantiate and draw our chart, passing in some options.
