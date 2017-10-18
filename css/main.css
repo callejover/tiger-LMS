@@ -292,6 +292,11 @@ h4 {
     z-index: 1000
   }
 
+  #nav .current {
+    background-color: rgba(145,0,156,1);
+    /* color: #d900e8; */
+  }
+
   #nav ul {
       display: flex;
       flex-direction: row;
@@ -340,6 +345,12 @@ h4 {
    line-height: normal;
   }
 
+  #back {
+  font-size: 1em;
+  float: right;
+  padding: 0;
+  border: none;
+}
 /*  #nav > ul > li:nth-child(1) > a */
 
 /*
@@ -352,6 +363,7 @@ h4 {
   font-weight: bold;
 }
 */
+
 
 
 .modal {
@@ -396,7 +408,46 @@ h4 {
   background-color: #3b003f
 }
 
-/*====================================
-testing in progress
-=====================================*/
 
+/*==========================================
+This is CSS only for the news.html page
+============================================*/
+
+.news-head {
+  padding: 3em 0;
+}
+
+.news {
+  width: 100%;
+  padding: 1em;
+  font-weight: bold;
+  background-color: rgba(166,79,172,0.5);
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsTab {
+  display:flex;
+  flex-direction: row-reverse;
+  padding: 1em 0 1em 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.newsTab h3{
+  font-size: 1.2em;
+}
+
+.newsTab h4{
+  font-size: 1em;
+}
+
+.newsDate {
+  flex: 1;
+}
+
+.news-content2 {
+  flex: 3;
+}

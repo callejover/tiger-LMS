@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Läraresidan</title>
+
+    <title>Tiger-LMS | Lärare</title>
 
     <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
     <link rel="stylesheet" href="../css/reset.css">
@@ -60,16 +61,23 @@
                     <div class="attendance">
                         <h1>Välj den klass du vill skapa en kod till.<br>
                             När du valt klass, tryck på "Skapa kod" för att få en kod generad.</h1><br>
-                        <select id="teacher-code">  <!--Dropdown with classes to a code to-->
+                        <select id="teacher-code"> <!-- Choose your class -->
                             <option value="FE16">FE16</option>
                             <option value="FE17">FE17</option>
                         </select>
+                        <select id="lesson-code"> <!-- Choose your lesson -->
+                            <option value="Lek1">Lektionstillfälle 1</option>
+                            <option value="Lek2">Lektionstillfälle 2</option>
+                            <option value="Lek3">Lektionstillfälle 3</option>
+                            <option value="Lek4">Lektionstillfälle 4</option>
+                        </select>
                         <button id="code-submit" type="submit" onclick="createCode()">Skapa kod</button>
-                    </div>
+                    </div> <!-- attendance -->
                 </form>
-            </div>
-        </div>
-    </div>
+            </div> <!-- header -->
+        </div> <!-- modal-content -->
+    </div> <!-- attendanceModal -->
+    
     <!-- div attendanceModal opens the login box on index screen -->
 
  
