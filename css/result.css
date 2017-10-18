@@ -78,3 +78,22 @@
 
 }
 
+.chart-5 h5, .chart-6 h5, .chart-7 h5, .chart-8 h5 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-left: 6em;
+}
+
+.chart-5 ul, .chart-6 ul, .chart-7 ul, .chart-8 ul {
+    margin-left: 6em;
+}
+
+.result-text3 h5 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-left: 6em;
+}
+
+.result-text3 ul {
+    margin-left: 6em;
+}
