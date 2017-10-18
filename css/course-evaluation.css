@@ -27,3 +27,9 @@
     text-align: end;
     margin-bottom: 0;
 }
+
+.thanks {
+	height:95%;
+	z-index:1002;
+}
+

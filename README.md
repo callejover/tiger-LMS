@@ -59,9 +59,12 @@ Team Tigers Learning Management System
 5. Tim L: Placsement of text for pricing and features (done)
 6. Kanya: Redirect weekley-evaluation to courses.html (done)
 
-# To do list 171012
-1. Tim A: menu adjusting to mediaq in all menus
-2. Tim L: Fix course info pages
+
+# To do list 171017
+1. Title på alla sidor ska ha en relativ titel.
+2. Tim A: menu adjusting to mediaq in all menus
+3. Tim L: Fix course info pages
+
 
 ---
 

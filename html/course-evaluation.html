@@ -70,7 +70,7 @@
                 <div class="back-bar"><button id="back" onclick="goBack()"><--Tillbaka</button></div>
                 <h2>Kursutvärdering</h2>
                 <p>Alla fält med en röd stjärna (<span class="color-red">*</span>) är obligatoriska att fylla i.</p>
-                <form class="course-evaluation" name="checkFormData" action="courses.html" onsubmit="return check()">
+                <form class="course-evaluation" name="checkFormData" action="javascript:check();" onsubmit="return check()">
                     <br><br>
                     <h4>Har vi gjort det vi ska?</h4>
                     <div class = "radio">
@@ -175,7 +175,8 @@
                     <h5>Något annat utöver detta?</h5>
                     <textarea name="" id="courseContains" cols="30" rows="10"></textarea>
                     
-                    <button class = "send-button" type="submit">Skicka!</button>
+                    <button class = "send-button"  type="submit">Skicka!</button>
+
 
                 </form>
             </div>
@@ -186,6 +187,7 @@
 
     
     <!--wrap-->
+    <script src="../js/course-evaluation.js"></script>
     <script src="../js/quick-evaluation.js"></script>
     <script src="../js/attendance.js"></script>
     <script src="../js/news.js"></script>
