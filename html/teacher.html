@@ -10,22 +10,13 @@
 
     <title>Läraresidan</title>
 
-    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
-    <link rel="stylesheet" href="../css/reset.css">
-
-    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
-    <link rel="stylesheet" href="../css/reset.css">
-    <!--Reset css-->
-    <link rel="stylesheet" href="../css/main.css">
-    <!--main styling and funkutionalety-->
-    <link rel="stylesheet" href="../css/courses.css">
-    <!-- dropdown menu css -->
-    <link rel="stylesheet" href="../css/quick-evaluation.css">
-    <!-- quick-evaluation styling -->
-    <link rel="stylesheet" href="../css/mediaq.css">
-    <!-- media querys -->
-    <link rel="stylesheet" href="../css/result.css">
-    <!-- evaluation's results styling-->
+    <link rel="shortcut icon" href="../img/tiger.png" />
+    <link rel="stylesheet" href="../css/reset.css">  <!--Reset css-->
+    <link rel="stylesheet" href="../css/main.css"><!--main styling and funkutionalety-->
+    <link rel="stylesheet" href="../css/courses.css"><!-- dropdown menu css -->
+    <link rel="stylesheet" href="../css/quick-evaluation.css"><!-- quick-evaluation styling -->
+    <link rel="stylesheet" href="../css/mediaq.css"><!-- media querys -->
+    <link rel="stylesheet" href="../css/result.css"><!-- evaluation's results styling-->
 </head>
 
 <body>
@@ -38,18 +29,17 @@
             <div id="nav-button-max-500">MENU</div>
             <ul class="hidden-max-500">
                 <li><a href="../index.html">logotypeFuture</a></li>
-                
+                <li><a>Resultat</a></li>
                 <li><a id="attendanceButton">Närvaro</a></li>
                 <li><a href="../index.html">Log out</a></li>
             </ul>
-            </nav>            
+            </nav>
         </header>
 
 
 
 
-    <!-- Hidden before clicking loginButton -->
-
+    <!-- Hidden before clicking logiout -->
     <div id="attendanceModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -65,38 +55,98 @@
                             <option value="FE17">FE17</option>
                         </select>
                         <button id="code-submit" type="submit" onclick="createCode()">Skapa kod</button>
-                    </div>
+                    </div><!--attendance-->
                 </form>
-            </div>
-        </div>
-    </div>
-    <!-- div attendanceModal opens the login box on index screen -->
+            </div><!--header-->
+        </div><!--modal-content-->
+    </div><!-- div attendanceModal opens the login box on index screen -->
 
- 
 
-    <div class="wrap">
-        <div class="content content-pricing">
-            <div class="innerContent apperance">
-                    <div class="dropdown">
-                            <a class="dropbtn">Utvärderingsresultat</a>
-                            <div class="drop-content">
-                                <a href="../html/evaluationResults/quickEvaluationResult.html">Dagliga utvärderingar</a>
-                                <a href="../html/evaluationResults/weekEvaluationResult.html">Veckans utvärderingar</a>
-                                <a href="../html/evaluationResults/courseEvaluationResult.html">Kursutvärderingar</a>
-                            </div>                                        
-                        </div>
-                <h2>Teacher</h2>
-                <p>Teachers page!</p>
-                
 
-            </div>
-            
-        </div>
-        <!--content-->
-    </div>
-    <!--wrap-->
+    <div class="wrap index teachWrap">
+      <div class="teachCourses apperance ">
+        <a id="loadw1">
+        </a>
+      </div><!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a href="html/pricing.html" class="click">
+          2. Html & Css: FE17
+        </a>
+      </div><!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a href="html/pricing.html" class="click">
+          3. Arbetsmetodik: FE17
+        </a>
+      </div><!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a href="html/pricing.html" class="click">
+          4. Back end utveckling: FE17
+        </a>
+      </div><!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a href="html/pricing.html" class="click">
+          5. Javascript: FE16
+        </a>
+      </div><!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a href="html/pricing.html" class="click">
+          6. Html & Css: FE16
+        </a>
+      </div><!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a href="html/pricing.html" class="click">
+          7. Arbetsmetodik: FE16
+        </a>
+      </div><!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a href="html/pricing.html" class="click">
+          8. Back end utveckling: FE16
+        </a>
+      </div><!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a href="html/pricing.html" class="click">
+          9. Javascript: FE15
+        </a>
+      </div><!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a href="html/pricing.html" class="click">
+          10. Html & Css: FE15
+        </a>
+      </div><!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a href="html/pricing.html" class="click">
+          11. Arbetsmetodik: FE15
+        </a>
+      </div><!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a href="html/pricing.html" class="click">
+          12. Back end utveckling: FE15
+        </a>
+      </div><!--teachCourses-->
+
+    </div><!--wrap-->
+
+    <link rel="import" href="teacherInfoCourses.html">
     <script src="../js/attendance.js"></script>
     <script src="../js/teacher-attendance.js"></script>
+
 </body>
 
 </html>
+
+<!-- Tested code:
+1. <object data="html/stuff_to_include.html"> </object> /*imports an hole web page to the area that it's set in*/
+
+
+-->

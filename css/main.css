@@ -135,6 +135,11 @@ strong {
   min-height: calc(100vh - 5em);
 }
 
+.teachWrap{
+  align-items: flex-start;
+
+}
+
 .content{
  min-height: calc(100vh - 5em);
  width: 100%;
@@ -204,12 +209,20 @@ img{
     z-index: 500;
   }
 
-.features, .pricing, .textContent {
+.features, .pricing, .textContent, .teachCourses {
   width: 30%;
   padding: 0;
   margin: 2.5% 5% 0 5%;
   text-align: center;
 
+}
+
+.teachCourses{
+  width: 20%;
+  height: 25vh;
+  vertical-align: middle;
+  line-height: 25vh;
+  margin: 1em 1em 1em 1em;
 }
 
 .textContent{
@@ -395,4 +408,3 @@ h4 {
 /*====================================
 testing in progress
 =====================================*/
-
