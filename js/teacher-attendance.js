@@ -20,7 +20,7 @@
     var randomCode = getRndInteger(1111,9999);
 
     //Creates the new modals content after you've clicked on create code
-    document.querySelector(".header").innerHTML = "Den nya lektionskoden för <strong>" + selectedClass + "</strong> och <strong>" + selectLesson + "</strong> är <br><h2>" + randomCode +"</h2>";
+    document.querySelector(".header").innerHTML = "Den nya lektionskoden <br><h4>" + selectedClass + "</h4><h4>" + selectLesson + "</h4><br><h2>" + randomCode +"</h2>";
 }
 
 

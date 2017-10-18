@@ -362,3 +362,45 @@ h4 {
   background-color: #3b003f
 }
 
+/*==========================================
+This is CSS only for the news.html page
+============================================*/
+
+.news-head {
+  padding: 3em 0;
+}
+
+.news {
+  width: 100%;
+  padding: 1em;
+  font-weight: bold;
+  background-color: rgba(166,79,172,0.5);
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsTab {
+  display:flex;
+  flex-direction: row-reverse;
+  padding: 1em 0 1em 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.newsTab h3{
+  font-size: 1.2em;
+}
+
+.newsTab h4{
+  font-size: 1em;
+}
+
+.newsDate {
+  flex: 1;
+}
+
+.news-content2 {
+  flex: 3;
+}
