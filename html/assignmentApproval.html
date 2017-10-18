@@ -89,238 +89,115 @@
         <div class="content content-pricing">
             <div class="innerContent apperance">
                 <h2>Betygsätt uppgifter</h2>
+                <div class="assignmentApprovalContent">
+                    <div class="studentassignments">
 
-                <section class="slide slide-four">
+                        <select id="studentList">
+                            <option value="Student1">Lilla Fridolf</option>
+                            <option value="Student2">Daniel Doppsko</option>
+                            <option value="Student3">Carl Åkerblom</option>
+                            <option value="Student4">Nicke Lilltroll</option>
+                            <option value="Student5">Emil Wern</option>
+                        </select>
+                        <select id="courseList">
+                            <option value="htmlcss">HTML och CSS</option>
+                            <option value="js">JavaScript</option>
+                            <option value="arbmeto">Arbetsmetodik</option>
+                            <option value="backend">Back-end utv.</option>
+                        </select>
 
-                    <div class="tab-group">
-                        <div class="tab">
-                            <input id="tab-one" type="checkbox" name="tab" checked> <!------------------- REMOVE CHECKED WHEN DONE! -->
-                            <label for="tab-one" class="tabPadding">HTML och CSS</label>
-                            <div class="tab-content assignmentApprovalContent">
-                                <form>
-                                    <select>
-                                        <option value="Student1">Student 1</option>
-                                        <option value="Student2">Student 2</option>
-                                        <option value="Student3">Student 3</option>
-                                        <option value="Student4">Student 4</option>
-                                        <option value="Student5">Student 5</option>
-                                    </select>
-
-                                    <select>
-                                        <option value="assignment1">Assignment 1</option>
-                                        <option value="assignment2">Assignment 2</option>
-                                        <option value="assignment3">Assignment 3</option>
-                                        <option value="assignment4">Assignment 4</option>
-                                        <option value="assignment5">Assignment 5</option>
-                                    </select>
-                                </form>
-                                <form>
-                                    <button type="button">Öppna dokument</button>
-                                </form>
-
-                                <form>
-                                    <textarea name="assigmentFeedback" class="assigmentFeedback" cols="30" rows="10"></textarea>
-                                    <button type="button">Send Feedback</button>
-                                    
-                                    
-                                    <select name="grades" id="grades">
-                                            <option value="IG">IG</option>
-                                            <option value="G">G</option>
-                                            <option value="VG">VG</option>
-                                        </select>
-                                        <button type="button">Set grade</button>
-                                </form>
-
-                                <form action="">
-                                    asdsad
-                                </form>
-
-                                </div>
-                                <!--tab-content-->
-                            </div>
-                            <!--tab-->
-                        </div>
-                </section>
-
-
-                <section class="slide slide-four">
-
-                    <div class="tab-group">
-                        <div class="tab">
-                            <input id="tab-two" type="checkbox" name="tab">
-                            <label for="tab-two" class="tabPadding">Javascript</label>
-                            <div class="tab-content">
-                                <div class="news-content">
-                                    <div class="newsTab">
-                                        <!--<h2>Datum</h2>-->
-                                        <h3>2017-10-16</h3>
-                                        <p>
-                                            Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami jowl short loin beef hamburger fatback. Andouille
-                                            meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. Chicken swine bacon
-                                            landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger
-                                            ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf
-                                            spare ribs. Pork chop hamburger pork loin frankfurter pork t-bone ham hock corned
-                                            beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                        </p>
-                                    </div>
-                                    <div class="newsTab">
-                                        <!--<h2>Datum</h2>-->
-                                        <h3>2017-10-20</h3>
-                                        <p>
-                                            Cow turducken landjaeger meatball. Jerky cow alcatra, pancetta meatloaf ribeye sirloin. Short loin shankle turducken pork
-                                            loin, ham hock spare ribs sirloin meatloaf. Kevin pastrami tenderloin brisket
-                                            tail rump andouille ribeye turducken cow ball tip landjaeger. Boudin venison
-                                            burgdoggen filet mignon drumstick doner tri-tip, bresaola shank fatback tail
-                                            beef ribs brisket ball tip corned beef. Bresaola pastrami frankfurter meatloaf
-                                            cow.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--tab-content-->
-                        </div>
-                        <!--tab-->
+                        <select id="assignmentList">
+                            <option value="assignment1">Uppgift 1</option>
+                            <option value="assignment2">Uppgift 2</option>
+                            <option value="assignment3">Uppgift 3</option>
+                            <option value="assignment4">Uppgift 4</option>
+                            <option value="assignment5">Uppgift 5</option>
+                        </select>
                     </div>
-                </section>
-                <section class="slide slide-four">
-
-                    <div class="tab-group">
-                        <div class="tab">
-                            <input id="tab-three" type="checkbox" name="tab">
-                            <label for="tab-three" class="tabPadding">Arbetsmetodik</label>
-                            <div class="tab-content">
-                                <div class="news-content">
-                                    <div class="newsTab">
-                                        <!--<h2>Datum</h2>-->
-                                        <h3>2017-10-16</h3>
-                                        <p>
-                                            Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami jowl short loin beef hamburger fatback. Andouille
-                                            meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. Chicken swine bacon
-                                            landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger
-                                            ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf
-                                            spare ribs. Pork chop hamburger pork loin frankfurter pork t-bone ham hock corned
-                                            beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                        </p>
-                                    </div>
-                                    <div class="newsTab">
-                                        <!--<h2>Datum</h2>-->
-                                        <h3>2017-10-20</h3>
-                                        <p>
-                                            Cow turducken landjaeger meatball. Jerky cow alcatra, pancetta meatloaf ribeye sirloin. Short loin shankle turducken pork
-                                            loin, ham hock spare ribs sirloin meatloaf. Kevin pastrami tenderloin brisket
-                                            tail rump andouille ribeye turducken cow ball tip landjaeger. Boudin venison
-                                            burgdoggen filet mignon drumstick doner tri-tip, bresaola shank fatback tail
-                                            beef ribs brisket ball tip corned beef. Bresaola pastrami frankfurter meatloaf
-                                            cow.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!--assignments-->
-                            </div>
-                            <!--tab-content-->
-                        </div>
-                        <!--tab-->
-                    </div>
-                </section>
-
-                <section class="slide slide-four">
-
-                    <div class="tab-group">
-                        <div class="tab">
-                            <input id="tab-four" type="checkbox" name="tab">
-                            <label for="tab-four" class="tabPadding">Back-end utveckling</label>
-                            <div class="tab-content">
-                                <div class="news-content">
-                                    <div class="newsTab">
-                                        <!--<h2>Datum</h2>-->
-                                        <h3>2017-10-16</h3>
-                                        <p>
-                                            Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami jowl short loin beef hamburger fatback. Andouille
-                                            meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. Chicken swine bacon
-                                            landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger
-                                            ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf
-                                            spare ribs. Pork chop hamburger pork loin frankfurter pork t-bone ham hock corned
-                                            beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                        </p>
-                                    </div>
-                                    <div class="newsTab">
-                                        <!--<h2>Datum</h2>-->
-                                        <h3>2017-10-20</h3>
-                                        <p>
-                                            Cow turducken landjaeger meatball. Jerky cow alcatra, pancetta meatloaf ribeye sirloin. Short loin shankle turducken pork
-                                            loin, ham hock spare ribs sirloin meatloaf. Kevin pastrami tenderloin brisket
-                                            tail rump andouille ribeye turducken cow ball tip landjaeger. Boudin venison
-                                            burgdoggen filet mignon drumstick doner tri-tip, bresaola shank fatback tail
-                                            beef ribs brisket ball tip corned beef. Bresaola pastrami frankfurter meatloaf
-                                            cow.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!--assignments-->
-                            </div>
-                            <!--tab-content-->
-                        </div>
-                        <!--tab-->
+                    <div class="assignmentDocument">
+                        <a href="../documents/StudentUppgift.docx" class="button">Öppna dokument</a>
                     </div>
 
-                </section>
+                    <div class="assignmentFeedback">
+                        <textarea name="assignmentFeedbackTextarea" id="assignmentFeedbackTextarea" cols="30" rows="10"></textarea>
 
+                        <div>
+                            <button type="button" onclick="assignmentFeedback()">Skicka feedback</button>
+                            <span class="assignmentFeedbackTextareaMessage"></span>
+                        </div>
 
+                        <div>
+                            <span class="gradeSelectListMessage"></span>
+                            <select name="grade" id="grade">
+                                <option value="">-- Välj betyg</option>
+                                <option value="IG">IG</option>
+                                <option value="G">G</option>
+                                <option value="VG">VG</option>
+                            </select>
+                            <button type="button" onclick="gradeApproved()">Sätt betyg</button>
+                        </div>
 
+                    </div>
 
                 </div>
-                <!--innerContent-->
-                <div class="quick-evaluation-wrap">
-                    <div class="quick-evaluation-content apperance">
-                        <h4>Daglig utvärdering</h4>
-                        <p>Berätta för oss hur du upplever dagen genom att klicka på någon av dessa emojis.</p>
-                        <div id="quick-evaluation">
+                <!--tab-content-->
 
-                            <div class="quick-evaluation-inner">
-                                <a href="#" id="glad" onclick="clickItem1()">
-                                    <img src="../img/quick-evaluation-glad.png" alt="All good" title="All good">
-                                </a>
-                                <span class="glad-message">Härligt, tack!</span>
-                            </div>
 
-                            <div class="quick-evaluation-inner">
-                                <a href="#" id="between" onclick="clickItem2()">
-                                    <img src="../img/quick-evaluation-between.png" alt="All good" title="It's ok">
-                                </a>
-                                <span class="between-message">Ok, tack!</span>
-                            </div>
 
-                            <div class="quick-evaluation-inner">
-                                <a href="#" id="sad" onclick="clickItem3()">
-                                    <img src="../img/quick-evaluation-sad.png" alt="All good" title="Not good!">
-                                </a>
-                                <span class="sad-message">Vad trist, tack!</span>
-                            </div>
 
+            </div>
+            <!--innerContent-->
+            <div class="quick-evaluation-wrap">
+                <div class="quick-evaluation-content apperance">
+                    <h4>Daglig utvärdering</h4>
+                    <p>Berätta för oss hur du upplever dagen genom att klicka på någon av dessa emojis.</p>
+                    <div id="quick-evaluation">
+
+                        <div class="quick-evaluation-inner">
+                            <a href="#" id="glad" onclick="clickItem1()">
+                                <img src="../img/quick-evaluation-glad.png" alt="All good" title="All good">
+                            </a>
+                            <span class="glad-message">Härligt, tack!</span>
                         </div>
-                        <!-- quick-evaluation -->
-                        <p class="evaluation-info">Varje vecka så kommer du att ha möjlighet att göra en mer utförlig utvärdering och även på de enskilda
-                            kurserna du läser.</p>
-                        <ul>
-                            <li>
-                                <a href="../html/weekly-feedback.html">Vecko-utvärdering</a>
-                            </li>
-                            <li>
-                                <a href="../html/course-evaluation.html">Kurs-utvärdering</a>
-                            </li>
-                        </ul>
+
+                        <div class="quick-evaluation-inner">
+                            <a href="#" id="between" onclick="clickItem2()">
+                                <img src="../img/quick-evaluation-between.png" alt="All good" title="It's ok">
+                            </a>
+                            <span class="between-message">Ok, tack!</span>
+                        </div>
+
+                        <div class="quick-evaluation-inner">
+                            <a href="#" id="sad" onclick="clickItem3()">
+                                <img src="../img/quick-evaluation-sad.png" alt="All good" title="Not good!">
+                            </a>
+                            <span class="sad-message">Vad trist, tack!</span>
+                        </div>
+
                     </div>
+                    <!-- quick-evaluation -->
+                    <p class="evaluation-info">Varje vecka så kommer du att ha möjlighet att göra en mer utförlig utvärdering och även på de enskilda
+                        kurserna du läser.</p>
+                    <ul>
+                        <li>
+                            <a href="../html/weekly-feedback.html">Vecko-utvärdering</a>
+                        </li>
+                        <li>
+                            <a href="../html/course-evaluation.html">Kurs-utvärdering</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <!--content-->
         </div>
+        <!--content-->
+    </div>
 
 
-        <!--wrap-->
-        <script src="../js/quick-evaluation.js"></script>
-        <script src="../js/attendance.js"></script>
+    <!--wrap-->
+    <script src="../js/quick-evaluation.js"></script>
+    <script src="../js/attendance.js"></script>
 
-        <script src="../js/assignmentApproval.js"></script>
+    <script src="../js/assignmentApproval.js"></script>
 </body>
 
 </html>
