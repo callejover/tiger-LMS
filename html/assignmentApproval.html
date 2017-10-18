@@ -23,9 +23,7 @@
     <link rel="stylesheet" href="../css/quick-evaluation.css">
     <!-- quick-evaluation styling -->
     <link rel="stylesheet" href="../css/mediaq.css">
-    <!-- media querys -->
-    <link rel="stylesheet" href="../css/news.css">
-
+    <link rel="stylesheet" href="../css/result.css">
     <link rel="stylesheet" href="../css/assignmetApproval.css">
 
 </head>
@@ -40,13 +38,16 @@
             <div id="nav-button-max-500">MENU</div>
             <ul class="hidden-max-500">
                 <li>
-                    <a href="../index.html">logotypeFuture</a>
+                    <a href="teacher.html">logotypeFuture</a>
                 </li>
                 <li>
                     <a href="courses.html">Kurser</a>
                 </li>
                 <li>
                     <a href="news.html">Nyheter</a>
+                </li>
+                <li>
+                    <a href="results.html">Resultat</a>
                 </li>
                 <li>
                     <a id="attendanceButton">Närvaro</a>
@@ -68,21 +69,34 @@
             <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header">
-                <h2>Närvaro</h2>
-                <form name="input-attendance">
+                <h1>Närvarokod</h1>
+                <form name="input-attendance-teacher">
                     <div class="attendance">
-                        <p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
-                        <p>Koden är endast giltlig i 5 minuter!</p>
-                        <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance">
+                        <h1>Välj den klass du vill skapa en kod till.
+                            <br> När du valt klass, tryck på "Skapa kod" för att få en kod generad.</h1>
                         <br>
-                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button>
-                        <br>
-                        <span class="wrongCode"></span>
+                        <select id="teacher-code">
+                            <!-- Choose your class -->
+                            <option value="FE16">FE16</option>
+                            <option value="FE17">FE17</option>
+                        </select>
+                        <select id="lesson-code">
+                            <!-- Choose your lesson -->
+                            <option value="Lek1">Lektionstillfälle 1</option>
+                            <option value="Lek2">Lektionstillfälle 2</option>
+                            <option value="Lek3">Lektionstillfälle 3</option>
+                            <option value="Lek4">Lektionstillfälle 4</option>
+                        </select>
+                        <button id="code-submit" type="submit" onclick="createCode()">Skapa kod</button>
                     </div>
+                    <!-- attendance -->
                 </form>
             </div>
+            <!-- header -->
         </div>
+        <!-- modal-content -->
     </div>
+    <!-- attendanceModal -->
     <!-- div attendanceModal opens the login box on index screen -->
 
     <div class="wrap">
@@ -92,6 +106,7 @@
                 <div class="assignmentApprovalContent">
                     <div class="studentassignments">
 
+                        <label for="studentList">Student: </label>
                         <select id="studentList">
                             <option value="Student1">Lilla Fridolf</option>
                             <option value="Student2">Daniel Doppsko</option>
@@ -99,13 +114,14 @@
                             <option value="Student4">Nicke Lilltroll</option>
                             <option value="Student5">Emil Wern</option>
                         </select>
+                        <label for="courseList">Kurs: </label>
                         <select id="courseList">
                             <option value="htmlcss">HTML och CSS</option>
                             <option value="js">JavaScript</option>
                             <option value="arbmeto">Arbetsmetodik</option>
                             <option value="backend">Back-end utv.</option>
                         </select>
-
+                        <label for="assignmentList">Uppgift: </label>
                         <select id="assignmentList">
                             <option value="assignment1">Uppgift 1</option>
                             <option value="assignment2">Uppgift 2</option>
@@ -119,6 +135,7 @@
                     </div>
 
                     <div class="assignmentFeedback">
+                        <label for="assignmentFeedbackTextarea">Feedback:</label>
                         <textarea name="assignmentFeedbackTextarea" id="assignmentFeedbackTextarea" cols="30" rows="10"></textarea>
 
                         <div>
@@ -198,6 +215,8 @@
     <script src="../js/attendance.js"></script>
 
     <script src="../js/assignmentApproval.js"></script>
+
+    <script src="../js/teacher-attendance.js"></script>
 </body>
 
 </html>
