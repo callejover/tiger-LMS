@@ -8,13 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-        <title>Features</title>
+        <title>Tiger-LMS | Features</title>
 
         <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
         <link rel="stylesheet" href="../css/reset.css"><!--Reset css-->
         <link rel="stylesheet" href="../css/main.css"><!--main styling and funkutionalety-->
         <link rel="stylesheet" href="../css/mediaq.css"><!--main styling and funkutionalety-->
 
+        <script src="https://code.jquery.com/jquery-1.x-git.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -35,7 +36,6 @@
     </header>
 
         <!-- Hidden before clicking loginButton -->
-
           <div id="loginModal" class="modal">
               <div class="modal-content">
                 <span class="close">&times;</span>  <!-- Closing X icon in modal -->
@@ -49,7 +49,6 @@
                         <button type="button" class="login" onclick="getInfo()">Login</button>
 
                        <span class="wrongPass"></span>
-                        
 
                       </div>
                     </form>
@@ -57,8 +56,8 @@
               </div>
             </div> <!-- div loginModal opens the login box on index screen -->
 
-
         <div class="wrap">
+
           <div class="content mobile mobileShow">
             <div class="features apperance" href"html/features.html">
               <a href="../html/features.html" class="click">
@@ -71,47 +70,76 @@
               </a>
             </div><!--pricing-->
           </div><!--content mobile-->
-          <div class="content">
-            <div class="innerContent apperance">
-                <h2>Enkel översik</h2>
-                <p>
-                  Med Tiger-LMS så ser du snabbt och enkelt vilka kurser du har och den informationen som rör de specifika kurserna. Och detta på ett lätt sätt som alla kan behärska.
-                  <br><br>
-                  Som elev kan du se information om kursen och om den är pågående eller avslutad och även vad du har för betyg i de kurser som du redan har avslutat.
-                </p>
-            </div><!--innerContent-->
-          </div><!--content dark-->
-          <div class="content dark">
-            <div class="innerContent apperance">
-                <h2>Kommunicera med skolan</h2>
-                <p>
-                  I tigerLMS så finns det inbyggt kraftfulla kommunikationsverktyg för att direkt kommunicera personal eller att ge feedback efter veckor och månader för att kunna påverka din utbildning. Du kommer även kunna ge feedback utifrån varje avslutad kurs för att kunna ge mer detaljerad inte i syfte att utveckla utbildningen framåt.
-                </p>
-            </div><!--innerContent-->
-          </div><!--content-->
-          <div class="content">
-            <div class="innerContent apperance">
-                <h2>Vara på plats</h2>
-                <p>
-                  Att registers närvaro är naturligt och enkelt med tiger-LMS verktyg där du får en kod från din lärare som du sedan skriver in i tiger-LMS som automatisk registrerar att du är på plats.
-                  <br><br>
-                  Som lärare är det enkelt att hantera närvaron då du har kontroll hur länge eleverna kan registers sin närvaro som i sin tur eliminerar fusk med närvaro. Du kan sedan enkelt se vilka som har varit närvarande.
-                </p>
-            </div><!--innerContent-->
-          </div><!--content dark-->
-          <div class="content dark">
-            <div class="innerContent apperance">
-                <h2>Uppgifter</h2>
-                <p>
-                  Hantering av uppgifter är enkelt och strukturerat i sin presentation att du som elev kan lätt förstå vad du behöva i varje uppgift.
-                  <br><br>
-                  Det hjälper även dig som lärare att enkelt kunna se vem som har lämnat in vad. Som lärare kan du även lägga till andra element i from av uppgifter som är betygs grundande.
-                </p>
-            </div><!--innerContent-->
-          </div><!--content-->
+
+              <div class="scrollHead">
+                  <nav>
+                      <ul>
+                          <li><a href="#selection1" class="scrollSticker active"></a></li>
+                          <br>
+                          <li><a href="#selection2" class="scrollSticker"></a></li>
+                          <br>
+                          <li><a href="#selection3" class="scrollSticker"></a></li>
+                          <br>
+                          <li><a href="#selection4" class="scrollSticker"></a></li>
+
+                      </ul>
+                  </nav>
+              </div><!-- /sidebar -->
+              <div>
+                  <section id="selection1" class="par">
+                    <div class="content scroll">
+                      <div class="innerContent apperance">
+                          <h2>Enkel översik</h2>
+                          <p>
+                            Med Tiger-LMS så ser du snabbt och enkelt vilka kurser du har och den informationen som rör de specifika kurserna. Och detta på ett lätt sätt som alla kan behärska.
+                            <br><br>
+                            Som elev kan du se information om kursen och om den är pågående eller avslutad och även vad du har för betyg i de kurser som du redan har avslutat.
+                          </p>
+                      </div><!--innerContent-->
+                    </div><!--content-->
+                  </section>
+                  <section id="selection2" class="par">
+                    <div class="content dark scroll">
+                      <div class="innerContent apperance">
+                          <h2>Kommunicera med skolan</h2>
+                          <p>
+                            I tigerLMS så finns det inbyggt kraftfulla kommunikationsverktyg för att direkt kommunicera personal eller att ge feedback efter veckor och månader för att kunna påverka din utbildning. Du kommer även kunna ge feedback utifrån varje avslutad kurs för att kunna ge mer detaljerad inte i syfte att utveckla utbildningen framåt.
+                          </p>
+                      </div><!--innerContent-->
+                    </div><!--content dark-->
+                  </section>
+                  <section id="selection3" class="par">
+                    <div class="content scroll">
+                      <div class="innerContent apperance">
+                          <h2>Vara på plats</h2>
+                          <p>
+                            Att registers närvaro är naturligt och enkelt med tiger-LMS verktyg där du får en kod från din lärare som du sedan skriver in i tiger-LMS som automatisk registrerar att du är på plats.
+                            <br><br>
+                            Som lärare är det enkelt att hantera närvaron då du har kontroll hur länge eleverna kan registers sin närvaro som i sin tur eliminerar fusk med närvaro. Du kan sedan enkelt se vilka som har varit närvarande.
+                          </p>
+                      </div><!--innerContent-->
+                    </div><!--content -->
+                  </section>
+                  <section id="selection4" class="par">
+                    <div class="content dark scroll">
+                      <div class="innerContent apperance">
+                          <h2>Uppgifter</h2>
+                          <p>
+                            Hantering av uppgifter är enkelt och strukturerat i sin presentation att du som elev kan lätt förstå vad du behöva i varje uppgift.
+                            <br><br>
+                            Det hjälper även dig som lärare att enkelt kunna se vem som har lämnat in vad. Som lärare kan du även lägga till andra element i from av uppgifter som är betygs grundande.
+                          </p>
+                      </div><!--innerContent-->
+                    </div><!--content dark-->
+                  </section>
+              </div><!--scroll -->
+
         </div><!--wrap-->
 
       <script src="../js/login.js"></script>
-      
+
+      <script src="../js/drop.js"></script>
+      <script src="../js/features.js"></script>
+      <script src="../js/jquery.combinedScroll.js"></script>
     </body>
 </html>

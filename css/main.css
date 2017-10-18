@@ -8,7 +8,7 @@ hex:
 3. 91009C
 4. DD46E8
 5. 620069     Dark purple
-6. 3b003f     Darker purple of number 5. 
+6. 3b003f     Darker purple of number 5.
 
 rgb():
 1. 217,0,232
@@ -41,6 +41,7 @@ body{
   background-repeat:no-repeat;
 	background-attachment: fixed;
   background-size: 100% auto;
+  background-size: ;
 	background-position:center, center;
   font-family: verdana, sans-serif;
   font-size: 0.9em;
@@ -51,9 +52,11 @@ body{
 p {
   margin: 1em 0;
 }
+
 strong {
   font-weight: bold;
 }
+
 
 img{
     display: block;
@@ -62,67 +65,68 @@ img{
     border-radius: 5%;
     z-index: 500;
   }
-    .button,
-    textarea,
-    input[type=submit],
-    input,
-    input::placeholder,
-    select,
-    button {
-      background: rgba(255,242,255,0.9);
-      border: none;
-      color: #D900E8;
-      font-size: .9em;
-      padding: .5em;
-      font-family: verdana, sans-serif;
-      margin: .2em 0;
-      border: 1px solid #A64FAC;
-    }
 
-    
-    a.button {
-      line-height: 3.5em;
-      text-decoration: none;
-    }
+.button,
+textarea,
+input[type=submit],
+input,
+input::placeholder,
+select,
+button {
+  background: rgba(255,242,255,0.9);
+  border: none;
+  color: #D900E8;
+  font-size: .9em;
+  padding: .5em;
+  font-family: verdana, sans-serif;
+  margin: .2em 0;
+  border: 1px solid #A64FAC;
+}
 
 
-    .button:active,
-    button:active,
-    textarea:focus,
-    input:focus,
-    select:focus {
-      background: #fff;
-      color: #D900E8;
-      border: 1px solid #D900E8;
-    }
+a.button {
+  line-height: 3.5em;
+  text-decoration: none;
+}
 
-    input:focus::placeholder{
-      color: #D900E8;
-      border: none;
-    }
 
-    input::placeholder{
-      border: none;
-      background: none;
-      color: #D900E8;
-    }
+.button:active,
+button:active,
+textarea:focus,
+input:focus,
+select:focus {
+  background: #fff;
+  color: #D900E8;
+  border: 1px solid #D900E8;
+}
 
-    .button,
-    button {
-      padding: 1em;
-      color:  rgba(255, 255, 255, 1);
-      background-color: rgb(98,0,105);
-    }
-    
-    .button,
-    button,
-    input[type=submit],
-    label,
-    input[type=radio],
-    input[type=checkbox],
-    a {
-      cursor: pointer;
-    }
+input:focus::placeholder{
+  color: #D900E8;
+  border: none;
+}
+
+input::placeholder{
+  border: none;
+  background: none;
+  color: #D900E8;
+}
+
+.button,
+button {
+  padding: 1em;
+  color:  rgba(255, 255, 255, 1);
+  background-color: rgb(98,0,105);
+}
+
+.button,
+button,
+input[type=submit],
+label,
+input[type=radio],
+input[type=checkbox],
+a {
+  cursor: pointer;
+}
 
 .main{
   display: block;
@@ -147,6 +151,14 @@ img{
   background-color: rgba(255,242,255,0.9);
 }
 
+.index{
+  min-height: calc(100vh - 5em);
+}
+
+.teachContent{
+  width: 100%;
+}
+
 .content{
  min-height: calc(100vh - 5em);
  width: 100%;
@@ -162,6 +174,9 @@ img{
 
 }
 
+.scroll{
+  min-height: 100vh;
+}
 .content.mobile{
   min-height: 5em;
   height: 5em;
@@ -170,6 +185,48 @@ img{
 .mobileShow{
   display: none;
 }
+
+.scrollHead{
+  position: fixed;
+  flex-direction: column;
+  z-index: 1000;
+  right: 0;
+  padding-top: 25vh;
+  vertical-align: middle;
+  padding-right: 2.5em;
+}
+
+.scrollHead a{
+  content:none;
+  display: block;
+  width: 1em;
+  height: 1em;
+  min-width: 50px;
+  min-height: 50px;
+  background: rgb(98,0,105) no-repeat;
+  background-blend-mode: overlay;
+	background-size: cover;
+  opacity: 0.7;
+  border-radius: 50%;
+
+
+}
+
+.scrollHead a:hover{
+  opacity: 1;
+}
+.scrollHead a.active{
+  opacity: 1;
+
+}
+
+img{
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 5%;
+    z-index: 500;
+  }
 
 .features, .pricing, .textContent {
   width: 30%;
@@ -185,10 +242,9 @@ img{
 }
 
 .features, .pricing{
-  height: 35vh;
-  vertical-align:middle;
-  line-height: 35vh;
-  
+    height: 35vh;
+    vertical-align: middle;
+    line-height: 35vh;
 }
 
 .pricingContent {
@@ -256,6 +312,11 @@ h4 {
     z-index: 1000
   }
 
+  #nav .current {
+    background-color: rgba(145,0,156,1);
+    /* color: #d900e8; */
+  }
+
   #nav ul {
       display: flex;
       flex-direction: row;
@@ -278,6 +339,7 @@ h4 {
       text-transform: uppercase;
       font-weight: bold;
       align-content: flex-end;
+      flex-grow: 0.1;
   }
 
   #nav ul li a {
@@ -303,6 +365,12 @@ h4 {
    line-height: normal;
   }
 
+  #back {
+  font-size: 1em;
+  float: right;
+  padding: 0;
+  border: none;
+}
 /*  #nav > ul > li:nth-child(1) > a */
 
 /*
@@ -315,6 +383,7 @@ h4 {
   font-weight: bold;
 }
 */
+
 
 
 .modal {
@@ -359,3 +428,46 @@ h4 {
   background-color: #3b003f
 }
 
+
+/*==========================================
+This is CSS only for the news.html page
+============================================*/
+
+.news-head {
+  padding: 3em 0;
+}
+
+.news {
+  width: 100%;
+  padding: 1em;
+  font-weight: bold;
+  background-color: rgba(166,79,172,0.5);
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsTab {
+  display:flex;
+  flex-direction: row-reverse;
+  padding: 1em 0 1em 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.newsTab h3{
+  font-size: 1.2em;
+}
+
+.newsTab h4{
+  font-size: 1em;
+}
+
+.newsDate {
+  flex: 1;
+}
+
+.news-content2 {
+  flex: 3;
+}

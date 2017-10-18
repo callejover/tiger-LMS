@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Studentsidan</title>
+
+    <title>Tiger-LMS | Lärare</title>
 
     <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
     <link rel="stylesheet" href="../css/reset.css">
@@ -24,7 +25,8 @@
     <!-- quick-evaluation styling -->
     <link rel="stylesheet" href="../css/mediaq.css">
     <!-- media querys -->
-
+    <link rel="stylesheet" href="../css/result.css">
+    <!-- evaluation's results styling-->
 </head>
 
 <body>
@@ -36,12 +38,13 @@
         <nav id="nav">
             <div id="nav-button-max-500">MENU</div>
             <ul class="hidden-max-500">
-                <li><a href="../index.html">logotypeFuture</a></li>
+                <li><a href="../index.html">logotypeFuture</a></li>                
+                <div><li><a href = "results.html">Resultat</a></li></div>
                 <li><a id="attendanceButton">Närvaro</a></li>
                 <li><a href="../index.html">Log out</a></li>
             </ul>
-        </nav>
-    </header>
+            </nav>            
+        </header>
 
 
 
@@ -53,27 +56,37 @@
             <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header">
-                <h1>Närvaro</h1>
-                <form name="input-attendance">
+                <h1>Närvarokod</h1>
+                <form name="input-attendance-teacher">
                     <div class="attendance">
-                        <h1>För att anmäla din närvaro på lektionen skriv in koden på tavlan i klassrummet.<br>Koden är giltlig i 5 minuter
-                            sen stängs fönstret.</h1><br>
-                        <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
-                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button>
-                    </div>
+                        <h1>Välj den klass du vill skapa en kod till.<br>
+                            När du valt klass, tryck på "Skapa kod" för att få en kod generad.</h1><br>
+                        <select id="teacher-code"> <!-- Choose your class -->
+                            <option value="FE16">FE16</option>
+                            <option value="FE17">FE17</option>
+                        </select>
+                        <select id="lesson-code"> <!-- Choose your lesson -->
+                            <option value="Lek1">Lektionstillfälle 1</option>
+                            <option value="Lek2">Lektionstillfälle 2</option>
+                            <option value="Lek3">Lektionstillfälle 3</option>
+                            <option value="Lek4">Lektionstillfälle 4</option>
+                        </select>
+                        <button id="code-submit" type="submit" onclick="createCode()">Skapa kod</button>
+                    </div> <!-- attendance -->
                 </form>
-            </div>
-        </div>
-    </div>
+            </div> <!-- header -->
+        </div> <!-- modal-content -->
+    </div> <!-- attendanceModal -->
+    
     <!-- div attendanceModal opens the login box on index screen -->
+
+ 
 
     <div class="wrap">
         <div class="content content-pricing">
             <div class="innerContent apperance">
-
                 <h2>Teacher</h2>
                 <p>Teachers page!</p>
-
             </div>
             
         </div>
@@ -81,7 +94,7 @@
     </div>
     <!--wrap-->
     <script src="../js/attendance.js"></script>
-    
+    <script src="../js/teacher-attendance.js"></script>
 </body>
 
 </html>
