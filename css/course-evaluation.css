@@ -5,6 +5,7 @@
 .mandatory {
     position: relative;
 }
+
 .mandatory::after {
     content: "*";
     position: absolute;
@@ -19,4 +20,10 @@
 .course-contains {
     line-height: 250%;
     margin-bottom: 1.5em;
+}
+
+#back {
+    font-size: 1em;
+    text-align: end;
+    margin-bottom: 0;
 }

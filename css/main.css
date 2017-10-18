@@ -299,6 +299,12 @@ h4 {
    line-height: normal;
   }
 
+  #back {
+  font-size: 1em;
+  float: right;
+  padding: 0;
+  border: none;
+}
 /*  #nav > ul > li:nth-child(1) > a */
 
 /*
@@ -311,6 +317,7 @@ h4 {
   font-weight: bold;
 }
 */
+
 
 
 .modal {
