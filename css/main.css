@@ -57,56 +57,76 @@ strong {
   font-weight: bold;
 }
 
-    textarea,
-    input[type=submit],
-    input,
-    input::placeholder,
-    select,
-    button {
-      background: rgba(255,242,255,0.9);
-      border: none;
-      color: #D900E8;
-      font-size: .9em;
-      padding: .5em;
-      font-family: verdana, sans-serif;
-      margin: .2em 0;
-      border: 1px solid #A64FAC;
-    }
 
-    textarea:focus,
-    input:focus,
-    select:focus,
-    button:focus {
-      background: #fff;
-      color: #D900E8;
-      border: 1px solid #D900E8;
-    }
+img{
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 5%;
+    z-index: 500;
+  }
 
-    input:focus::placeholder{
-      color: #D900E8;
-      border: none;
-    }
+.button,
+textarea,
+input[type=submit],
+input,
+input::placeholder,
+select,
+button {
+  background: rgba(255,242,255,0.9);
+  border: none;
+  color: #D900E8;
+  font-size: .9em;
+  padding: .5em;
+  font-family: verdana, sans-serif;
+  margin: .2em 0;
+  border: 1px solid #A64FAC;
+}
 
-    input::placeholder{
-      border: none;
-      background: none;
-      color: #D900E8;
-    }
 
-    button {
-      padding: 1em;
-      color:  rgba(255, 255, 255, 1);
-      background-color: rgb(98,0,105);
-    }
+a.button {
+  line-height: 3.5em;
+  text-decoration: none;
+}
 
-    button,
-    input[type=submit],
-    label,
-    input[type=radio],
-    input[type=checkbox],
-    a {
-      cursor: pointer;
-    }
+
+.button:active,
+button:active,
+textarea:focus,
+input:focus,
+select:focus {
+  background: #fff;
+  color: #D900E8;
+  border: 1px solid #D900E8;
+}
+
+input:focus::placeholder{
+  color: #D900E8;
+  border: none;
+}
+
+input::placeholder{
+  border: none;
+  background: none;
+  color: #D900E8;
+}
+
+.button,
+button {
+  padding: 1em;
+  color:  rgba(255, 255, 255, 1);
+  background-color: rgb(98,0,105);
+}
+
+.button,
+button,
+input[type=submit],
+label,
+input[type=radio],
+input[type=checkbox],
+a {
+  cursor: pointer;
+}
 
 .main{
   display: block;
