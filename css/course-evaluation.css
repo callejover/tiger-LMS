@@ -20,3 +20,7 @@
     line-height: 250%;
     margin-bottom: 1.5em;
 }
+.thanks {
+	height:95%;
+	z-index:1002;
+}
