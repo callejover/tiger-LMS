@@ -23,8 +23,6 @@
     <link rel="stylesheet" href="../css/quick-evaluation.css">
     <!-- quick-evaluation styling -->
     <link rel="stylesheet" href="../css/mediaq.css">
-    <!-- media querys -->
-    <link rel="stylesheet" href="../css/news.css">
 
     <link rel="stylesheet" href="../css/assignmetApproval.css">
 
@@ -94,7 +92,8 @@
                 <h2>Inlämning</h2>
                 <form name="input-assignment">
                     <p>Lämna in din uppgift genom att ladda upp dokumentet nedan.</p>
-                        <input type="upload" autofocus="autofocus" placeholder="Lektionskod" id="input-assignment">
+                    <p>OBS! Endast Word dokument!</p>
+                        <input type="file" accept=".doc,.docx" id="input-assignment">
                         <br>
                         <button type="submit" onclick="checkAssignment()">Lämna in uppgift</button>
                         <br>
@@ -598,7 +597,6 @@
     <script src="../js/attendance.js"></script>
     <script src="../js/assignment.js"></script>
 
-    <script src="../js/news.js"></script>
 </body>
 
 </html>
