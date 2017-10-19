@@ -11,65 +11,106 @@
 	<!--Reset css-->
 	<link rel="stylesheet" href="../../css/main.css">
 	<!--main styling and funkutionalety-->
+	<link rel="stylesheet" href="../../css/courses.css">
+	<!-- dropdown menu css -->
+	<link rel="stylesheet" href="../../css/quick-evaluation.css">
+	<!-- quick-evaluation styling -->
+	<link rel="stylesheet" href="../../css/mediaq.css">
+	<!-- media querys -->
 	<link rel="stylesheet" href="info.css">
 	<!-- info styling -->
-	<title>HTML och CSS</title>
+	<title>Tiger-LMS | Javascript Kursinformation</title>
 </head>
 
 <body>
+
+	<!-- Hidden before clicking loginButton -->
+
+    <div id="attendanceModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+			<!-- Closing X icon in modal -->
+				<div class="header">
+					<h2>Närvaro</h2>
+					<form name="input-attendance">
+						<div class="attendance">
+							<p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
+							<p>Koden är endast giltlig i 5 minuter!</p>
+							<input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
+							<button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button><br>
+							<span class="wrongCode"></span>          
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- div attendanceModal opens the login box on index screen -->
+
 	<header>
 		<nav id="nav">
 			<div id="nav-button-max-500">MENU</div>
 			<ul class="hidden-max-500">
 				<li><a href="#">logotypFuture</a></li>
-				<li><a href="../courses.html">Courses</a></li>
+				<li><a class="current" href="../courses.html">Courses</a></li>
+				<li><a href="../news.html">Nyheter</a></li>
+				<li><a id="attendanceButton">Närvaro</a></li>
 				<li><a href="../../index.html">Log out</a></li>
 			</ul>
 		</nav>
 	</header>
 	<div class="wrap">
-		<div class="infobox">
-			<h2>Javascript</h2><br> Utbildningsnummer: 201514480-2 och 201514500-2<br> Fastställd av ledningsgruppen: xx<br>
-			<h2>Kurspoäng</h2><br> 110 poäng<br>
-			<h2>Innehåll</h2><br>
-			<p>Kursen ger de studerande avancerade kunskaper och färdigheter i att programmera och strukturera Javascript-projekt. De
-				studerande får kunskaper om att det finns olika Javascript-versioner och lär sig jämföra dessa samt får förståelse för
-				deras olika kompabilitet med olika webbläsare och plattformar. De studerande ges goda kunskaper gällande att använda
-				olika Javascript-bibliotek t.ex. JQuery. De studerande ges goda kunskaper i hur ramverk fungerar samt kunna välja lämpliga
-				tekniker utifrån projektspecifikationer. Kursen innehåller programmering i Javascript, däribland objektorienterade implementationer
-				i Javascript m.m. Kursen tar även upp hur man använder ramverk i Javascript samt hur man tar hjälp av verktyg som är
-				relevanta för Javascript-fokuserad utveckling.</p>
-			Kursens läranderesultat (mål) Efter avslutad kurs ska den studerande ha:<br>
-			<ul>
-				<li>1. Kunskaper om:</li>
-				<li>1.1. Javascript, grundläggande syntax</li>
-				<li>1.2. Javascriptsversioner och dess kompabilitet</li>
-				<li>1.3. Hur Javascript körs i webbläsaren</li>
-				<li>1.4. Javascript-bibliotek</li>
-				<li>1.5. Javascript-ramverk</li>
-				<li>1.6. DOM</li>
-				<li>1.7. AJAX</li>
-				<li>1.8. HTTP 1.1 / 2.0</li>
-				<li>1.9. Websockets och polling</li>
-				<li>2. Färdigheter i att:</li>
-				<li>2.1. Lösa programmeringsuppgifter med Javascript</li>
-				<li>2.2. Använda Javascript för att skriva browser-tillämpningar</li>
-				<li>2.3. Använda Javascript-bibliotek och Javascript-ramverk</li>
-				<li>3. Kompetenser för att:</li>
-				<li>3.1. Tillämpa JavaScript som ett programmeringsspråk för att lösa olika typer av tillämpningar inom webbutveckling.</li>
-				<li>3.2. Utveckla en webbapplikation baserad på ett Javascript-ramverk</li>
+		<div class="content content-pricing">
+			<div class="innerContent apperance">
+				<div class="back-bar"><button id="back" onclick="goBack()"><--Tillbaka</button></div>
+				<h2>Javascript</h2><br> Utbildningsnummer: 201514480-2 och 201514500-2<br> Fastställd av ledningsgruppen: xx<br>
+				<h2>Kurspoäng</h2><br> 110 poäng<br>
+				<h2>Innehåll</h2><br>
+				<p>Kursen ger de studerande avancerade kunskaper och färdigheter i att programmera och strukturera Javascript-projekt. De
+					studerande får kunskaper om att det finns olika Javascript-versioner och lär sig jämföra dessa samt får förståelse för
+					deras olika kompabilitet med olika webbläsare och plattformar. De studerande ges goda kunskaper gällande att använda
+					olika Javascript-bibliotek t.ex. JQuery. De studerande ges goda kunskaper i hur ramverk fungerar samt kunna välja lämpliga
+					tekniker utifrån projektspecifikationer. Kursen innehåller programmering i Javascript, däribland objektorienterade implementationer
+					i Javascript m.m. Kursen tar även upp hur man använder ramverk i Javascript samt hur man tar hjälp av verktyg som är
+					relevanta för Javascript-fokuserad utveckling.</p>
+				Kursens läranderesultat (mål) Efter avslutad kurs ska den studerande ha:<br>
+				<ul>
+					<li>1. Kunskaper om:</li>
+					<li>1.1. Javascript, grundläggande syntax</li>
+					<li>1.2. Javascriptsversioner och dess kompabilitet</li>
+					<li>1.3. Hur Javascript körs i webbläsaren</li>
+					<li>1.4. Javascript-bibliotek</li>
+					<li>1.5. Javascript-ramverk</li>
+					<li>1.6. DOM</li>
+					<li>1.7. AJAX</li>
+					<li>1.8. HTTP 1.1 / 2.0</li>
+					<li>1.9. Websockets och polling</li>
+					<li>2. Färdigheter i att:</li>
+					<li>2.1. Lösa programmeringsuppgifter med Javascript</li>
+					<li>2.2. Använda Javascript för att skriva browser-tillämpningar</li>
+					<li>2.3. Använda Javascript-bibliotek och Javascript-ramverk</li>
+					<li>3. Kompetenser för att:</li>
+					<li>3.1. Tillämpa JavaScript som ett programmeringsspråk för att lösa olika typer av tillämpningar inom webbutveckling.</li>
+					<li>3.2. Utveckla en webbapplikation baserad på ett Javascript-ramverk</li>
 
-			</ul>
-			<h3>Betygsättning</h3><br>
-			<h3>Examinationsform</h3><br> Individuellt projekt<br> Tentamen/Hemtenta
-			<br> Projekt i grupp<br>
-			<h3>Betygsgrader</h3><br> IG, G och VG<br>
-			<h3>Icke godkänt (IG)</h3><br> Den studerande har fullföljt kursen men inte nått alla mål för kursen<br>
-			<h3>Kriterier för betyget Godkänt (G)</h3><br> Den studerande har nått samtliga mål med kursen<br>
-			<h3>Kriterier för betyget Väl Godkänt (VG)</h3><br> Den studerande har nått samtliga mål med kursen och kan självständigt
-			redogöra utförligt för kunskapsmålen och med mycket gott handlag självständigt uppnå de färdigheter och kompetenser som
-			kursens mål sätter upp.
-		</div>
+				</ul>
+				<h3>Betygsättning</h3><br>
+				<h3>Examinationsform</h3><br> Individuellt projekt<br> Tentamen/Hemtenta
+				<br> Projekt i grupp<br>
+				<h3>Betygsgrader</h3><br> IG, G och VG<br>
+				<h3>Icke godkänt (IG)</h3><br> Den studerande har fullföljt kursen men inte nått alla mål för kursen<br>
+				<h3>Kriterier för betyget Godkänt (G)</h3><br> Den studerande har nått samtliga mål med kursen<br>
+				<h3>Kriterier för betyget Väl Godkänt (VG)</h3><br> Den studerande har nått samtliga mål med kursen och kan självständigt
+				redogöra utförligt för kunskapsmålen och med mycket gott handlag självständigt uppnå de färdigheter och kompetenser som
+				kursens mål sätter upp.
+			</div>
+		</div>	
 	</div>
+
+	<script src="../../js/quick-evaluation.js"></script>
+	<script src="../../js/attendance.js"></script>
+	<script src="../../js/course-evaluation.js"></script>
+	<script src="../../js/news.js"></script>
+	
 </body>
+
 </html>
