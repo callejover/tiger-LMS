@@ -1,3 +1,5 @@
+/* Teacher */
+
 .assignmentApprovalContent {
     display: flex;
     flex-wrap: wrap;
@@ -30,4 +32,25 @@
     display: block;
     width: 100%;
     margin: 3em;
+}
+
+
+/* Student */
+
+.studentAssignmentTable {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1em;
+}
+.studentAssignmentTable th:nth-child(1)  {
+    width: 60%;
+}
+
+.studentAssignmentTable th:nth-child(2)  {
+    text-align: center
+}
+
+.studentAssignmentTable th:nth-child(3)  {
+    text-align: left;
+    width: 20%
 }

@@ -57,13 +57,21 @@ strong {
   font-weight: bold;
 }
 
-
+/* 
 img{
     display: block;
     width: 200px;
     height: auto;
     border-radius: 5%;
     z-index: 500;
+  } */
+
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
 .button,
@@ -220,13 +228,13 @@ a {
 
 }
 
-img{
+/* img{
     display: block;
     width: 200px;
     height: auto;
     border-radius: 5%;
     z-index: 500;
-  }
+  } */
 
 .features, .pricing, .textContent {
   width: 30%;
