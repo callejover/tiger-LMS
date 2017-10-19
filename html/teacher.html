@@ -68,7 +68,8 @@
 
     <div class="wrap index teachWrap">
       <div class="teachCourses apperance ">
-        <div w3-include-html="teacherInfoCourses.html"></div>
+        <div w3-include-html="teacherInfoCourses.html" href="#load2"></div>
+
       </div><!--teachCourses-->
 
       <div class="teachCourses apperance">
@@ -140,9 +141,12 @@
     </div><!--wrap-->
 
     <!--<script src="../js/linkHtml.js"></script> working on-->
+    <script>
+    w3.includeHTML();
+    </script>
+
     <script src="../js/attendance.js"></script>
     <script src="../js/teacher-attendance.js"></script>
-    <script>w3.includeHTML();</script>
 
 
 </body>
