@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tiger-LMS | Nyheter</title>
+
+    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!--Reset css-->
+    <link rel="stylesheet" href="../css/main.css">
+    <!--main styling and funkutionalety-->
+    <link rel="stylesheet" href="../css/courses.css">
+    <!-- dropdown menu css -->
+    <link rel="stylesheet" href="../css/quick-evaluation.css">
+    <!-- quick-evaluation styling -->
+    <link rel="stylesheet" href="../css/mediaq.css">
+    <!-- media querys -->
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header>
+        <nav id="nav">
+            <div id="nav-button-max-500">MENU</div>
+            <ul class="hidden-max-500">
+                <li><a href="teacher.html">logotypeFuture</a></li>
+                <li><a href="teacher.html">Kurser</a></li>
+                <li><a class="current" href="teacherNews.html">Nyheter</a></li>
+                <div><li><a href = "results.html">Resultat</a></li></div>
+                <li><a id="attendanceButton">Närvaro</a></li>
+                <li><a href="../index.html">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <!-- Hidden before clicking loginButton -->
+    <div id="attendanceModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <!-- Closing X icon in modal -->
+                <div class="header">
+                    <h1>Närvarokod</h1>
+                    <form name="input-attendance-teacher">
+                        <div class="attendance">
+                            <h1>Välj den klass du vill skapa en kod till.<br>
+                                När du valt klass, tryck på "Skapa kod" för att få en kod generad.</h1><br>
+                            <select id="teacher-code"> <!-- Choose your class -->
+                                <option value="FE16">FE16</option>
+                                <option value="FE17">FE17</option>
+                            </select>
+                            <select id="lesson-code"> <!-- Choose your lesson -->
+                                <option value="Lek1">Lektionstillfälle 1</option>
+                                <option value="Lek2">Lektionstillfälle 2</option>
+                                <option value="Lek3">Lektionstillfälle 3</option>
+                                <option value="Lek4">Lektionstillfälle 4</option>
+                            </select>
+                            <button id="code-submit" type="submit" onclick="createCode()">Skapa kod</button>
+                        </div> <!-- attendance -->
+                    </form>
+                </div> <!-- header -->
+            </div> <!-- modal-content -->
+        </div> <!-- attendanceModal -->
+
+    <div class="wrap">
+        <div class="content content-pricing">
+            <div class="innerContent apperance">
+                <div class="news-head">
+                        <h2>Nyheter</h2>
+                        <p>Här kan du som lärare ta del av nyheter som rör dina kurser.<br>
+                        Välj kurs i listan och ta del av nyheterna som rör just den kursen.</p>
+                </div>
+                <section class="slide slide-four">
+                    <div class="tab-group">
+                        <div class="tab">
+                            <div class="news">HTML/CSS</div> <!-- news -->
+                            <div class="news-tab-content">
+                                <div class="news-content">
+                                    <div class="newsTab">
+                                        <div class="newsDate">
+                                                <h4>2017-10-16</h4>
+                                        </div>
+                                        <div class="news-content2">
+                                                <h3>Nytt Schema</h3>
+                                                <p>
+                                                    Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                    jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                    Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                    ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                    pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                </p>
+                                        </div>
+                                        <!-- news-contet2-->
+                                    </div>
+                                    <!-- newsTab-->
+                                    <div class="newsTab">
+                                        <div class="newsDate">
+                                                <h4>2017-10-16</h4>
+                                        </div>
+                                        <div class="news-content2">
+                                                <h3>Kursstart vecka 10</h3>
+                                                <p>
+                                                    Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                    jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                    Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                    ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                    pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                </p>
+                                        </div>
+                                        <!--news-content2-->
+                                    </div>
+                                    <!-- newsTab-->
+                                </div>
+                                <!-- news-content-->
+                            </div>
+                            <!--news-tab-content-->
+                       </div>
+                        <!--tab-->
+                    </div>
+                    <!--tab-group-->
+                </section>
+
+
+                <section class="slide slide-four">
+
+                    <div class="tab-group">
+                        <div class="tab">
+                            <div class="news">Javascript</div> <!-- news -->
+                            <div class="news-tab-content">
+                                <div class="news-content">
+                                        <div class="newsTab">
+                                            <div class="newsDate">
+                                                    <h4>2017-10-16</h4>
+                                            </div>
+                                            <div class="news-content2">
+                                                    <h3>Nytt Schema</h3>
+                                                    <p>
+                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                    </p>
+                                            </div>
+                                            <!-- news-contet2-->
+                                        </div>
+                                        <!-- newsTab-->
+                                        <div class="newsTab">
+                                            <div class="newsDate">
+                                                    <h4>2017-10-16</h4>
+                                            </div>
+                                            <div class="news-content2">
+                                                    <h3>Kursstart vecka 10</h3>
+                                                    <p>
+                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                    </p>
+                                            </div>
+                                            <!--news-content2-->
+                                        </div>
+                                        <!-- newsTab-->
+                                </div>
+                                <!--news-content-->
+                            </div>
+                            <!--news-tab-content-->
+                        </div>
+                        <!--tab-->
+                    </div>
+                    <!--tab-group-->
+                </section>
+
+
+                <section class="slide slide-four">
+
+                    <div class="tab-group">
+                        <div class="tab">
+                            <div class="news">Arbetsmetodik</div> <!-- news -->
+                            <div class="news-tab-content">
+                                <div class="news-content">
+                                    <div class="newsTab">
+                                        <div class="newsDate">
+                                                <h4>2017-10-16</h4>
+                                        </div>
+                                        <div class="news-content2">
+                                                <h3>Nytt Schema</h3>
+                                                <p>
+                                                    Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                    jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                    Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                    ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                    pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                </p>
+                                        </div>
+                                        <!-- news-contet2-->
+                                    </div>
+                                    <!-- newsTab-->
+                                    <div class="newsTab">
+                                            <div class="newsDate">
+                                                    <h4>2017-10-16</h4>
+                                            </div>
+                                            <div class="news-content2">
+                                                    <h3>Kursstart vecka 10</h3>
+                                                    <p>
+                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                    </p>
+                                            </div>
+                                    </div> <!-- newsTab-->
+                                </div>
+                                <!--assignments-->
+                            </div>
+                            <!--news-tab-content-->
+                        </div>
+                        <!--tab-->
+                    </div>
+                    <!--tab-group-->
+                </section>
+
+
+                <section class="slide slide-four">
+
+                    <div class="tab-group">
+                        <div class="tab">
+                            <div class="news">Back-End utveckling</div> <!-- news -->
+                            <div class="news-tab-content">
+                                    <div class="news-content">
+                                        <div class="newsTab">
+                                            <div class="newsDate">
+                                                    <h4>2017-10-16</h4>
+                                            </div>
+                                            <div class="news-content2">
+                                                    <h3>Nytt Schema</h3>
+                                                    <p>
+                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                    </p>
+                                            </div>
+                                        </div> <!-- newsTab-->
+                                    <div class="newsTab">
+                                            <div class="newsDate">
+                                                    <h4>2017-10-16</h4>
+                                            </div>
+                                            <div class="news-content2">
+                                                    <h3>Kursstart vecka 10</h3>
+                                                    <p>
+                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                    </p>
+                                            </div>
+                                        </div> <!-- newsTab-->
+                                    </div>
+                                <!--assignments-->
+                            </div>
+                            <!--news-tab-content-->
+                        </div>
+                        <!--tab-->
+                    </div>
+                    <!--tab-group--> 
+                </section>
+
+                
+
+
+            </div>
+            <!--innerContent-->
+        </div>
+        <!--content-->
+    </div>
+
+    
+    <!--wrap-->
+    <script src="../js/quick-evaluation.js"></script>
+    <script src="../js/attendance.js"></script>
+    
+    <script src="../js/news.js"></script>
+</body>
+
+</html>
