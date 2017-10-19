@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="../css/quick-evaluation.css"><!-- quick-evaluation styling -->
     <link rel="stylesheet" href="../css/mediaq.css"><!-- media querys -->
     <link rel="stylesheet" href="../css/result.css"><!-- evaluation's results styling-->
+
+    <!--<link rel="import" href="teacherInfoCourses.html"> Working on -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
 <body>
@@ -65,12 +68,11 @@
 
     <div class="wrap index teachWrap">
       <div class="teachCourses apperance ">
-        <a id="loadw1">
-        </a>
+        <div w3-include-html="teacherInfoCourses.html"></div>
       </div><!--teachCourses-->
 
       <div class="teachCourses apperance">
-        <a href="html/pricing.html" class="click">
+        <a href="pricing.html" class="click">
           2. Html & Css: FE17
         </a>
       </div><!--teachCourses-->
@@ -137,9 +139,11 @@
 
     </div><!--wrap-->
 
-    <link rel="import" href="teacherInfoCourses.html">
+    <!--<script src="../js/linkHtml.js"></script> working on-->
     <script src="../js/attendance.js"></script>
     <script src="../js/teacher-attendance.js"></script>
+    <script>w3.includeHTML();</script>
+
 
 </body>
 

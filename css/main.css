@@ -223,6 +223,7 @@ img{
   vertical-align: middle;
   line-height: 25vh;
   margin: 1em 1em 1em 1em;
+  overflow: hidden;
 }
 
 .textContent{
