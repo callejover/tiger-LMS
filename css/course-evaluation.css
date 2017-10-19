@@ -5,6 +5,7 @@
 .mandatory {
     position: relative;
 }
+
 .mandatory::after {
     content: "*";
     position: absolute;
@@ -20,3 +21,15 @@
     line-height: 250%;
     margin-bottom: 1.5em;
 }
+
+#back {
+    font-size: 1em;
+    text-align: end;
+    margin-bottom: 0;
+}
+
+.thanks {
+	height:95%;
+	z-index:1002;
+}
+

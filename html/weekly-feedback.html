@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Veckans Utvärdering</title>
+        <title>Tiger-LMS | Veckans Utvärdering</title>
         <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
         <link rel="stylesheet" href="../css/reset.css"><!--Reset css-->
         <link rel="stylesheet" href="../css/main.css"><!--main styling and funkutionalety-->
@@ -54,8 +54,9 @@
         <div class="wrap">
             <div class="content">
                 <div class="innerContent apperance">
+                    <div class="back-bar"><button id="back" onclick="goBack()"><--Tillbaka</button></div>
                     <h3>Veckans Utvärdering</h3><p class = "required">(* = Obligatorisk)</p><br><br>
-                    <form class="weekly-feedback" name="checkFormData" action="courses.html" onsubmit="return check()">
+                    <form class="weekly-feedback" name="checkFormData" action="javascript:checkWeekly();" onsubmit="return checkWeekly()">
                         <h4>Hur upplever du just nu tempot i utbildningen?<span style="color:red">*</span></h4>
                         <div class = "radio">
                             <p class = "p-left">Hänger inte med alls</p>
@@ -136,7 +137,7 @@
     <!--wrap-->
     <script src="../js/quick-evaluation.js"></script>
     <script src="../js/attendance.js"></script>
-    
+    <script src="../js/course-evaluation.js"></script>
     <script src="../js/news.js"></script>
     </body>
 </html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Resultat</title>
+
+    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!--Reset css-->
+    <link rel="stylesheet" href="../css/main.css">
+    <!--main styling and funkutionalety-->
+    <link rel="stylesheet" href="../css/courses.css">
+    <!-- dropdown menu css -->
+    <link rel="stylesheet" href="../css/quick-evaluation.css">
+    <!-- quick-evaluation styling -->
+    <link rel="stylesheet" href="../css/mediaq.css">
+    <!-- media querys -->
+    <link rel="stylesheet" href="../css/result.css">
+    <!-- styling for all results contents -->
+
+    <script src="https://code.jquery.com/jquery-1.x-git.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header>
+        <nav id="nav">
+            <div id="nav-button-max-500">MENU</div>
+            <ul class="hidden-max-500">
+                <li><a href="../index.html">logotypeFuture</a></li>
+                <div><li><a href = "results.html">Resultat</a></li></div>
+                <li><a id="attendanceButton">Närvaro</a></li>
+                <li><a href="../index.html">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <!-- Hidden before clicking loginButton -->
+    <div id="attendanceModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <!-- Closing X icon in modal -->
+                <div class="header">
+                    <h1>Närvarokod</h1>
+                    <form name="input-attendance-teacher">
+                        <div class="attendance">
+                            <h1>Välj den klass du vill skapa en kod till.<br>
+                                När du valt klass, tryck på "Skapa kod" för att få en kod generad.</h1><br>
+                            <select id="teacher-code"> <!-- Choose your class -->
+                                <option value="FE16">FE16</option>
+                                <option value="FE17">FE17</option>
+                            </select>
+                            <select id="lesson-code"> <!-- Choose your lesson -->
+                                <option value="Lek1">Lektionstillfälle 1</option>
+                                <option value="Lek2">Lektionstillfälle 2</option>
+                                <option value="Lek3">Lektionstillfälle 3</option>
+                                <option value="Lek4">Lektionstillfälle 4</option>
+                            </select>
+                            <button id="code-submit" type="submit" onclick="createCode()">Skapa kod</button>
+                        </div> <!-- attendance -->
+                    </form>
+                </div> <!-- header -->
+            </div> <!-- modal-content -->
+        </div> <!-- attendanceModal -->
+
+    <div class="wrap">
+        <div class="scrollHead">
+            <nav>
+                <ul>
+                    <li><a href="#selection1" class="scrollSticker active"></a></li>
+                    <br>
+                    <li><a href="#selection2" class="scrollSticker"></a></li>
+                    <br>
+                    <li><a href="#selection3" class="scrollSticker"></a></li>  
+                </ul>
+            </nav>
+        </div><!-- /sidebar -->
+        <div class="teachContent">
+            <section id="selection1" class="par">
+                <div class="content scroll">
+                    <div class="innerContent apperance">
+                        <h3>Daglig Utvärderings Resultat</h3>                           
+                        <div id="chart_div"></div>
+                        <div class = "result-text">
+                            <h5><b>Resultat</b></h5>
+                            <p>2017-10-17</p>
+                            <ul>
+                                <li>Väldigt nöjd: 10 st</li>
+                                <li>Nöjd: 15 st</li>
+                                <li>Inte nöjd: 5 st</li>
+                            </ul>
+                        </div><!-- result-text -->
+                    </div><!--innerContent-->
+                </div><!--content-->
+            </section>
+            <section id="selection2" class="par">
+                <div class="content dark scroll">
+                    <div class="innerContent apperance">
+                        <div class = "result-text2">
+                            <h3>Veckans Uvärderings Resultat</h3>
+                            <h5>Veckan 35</h5><br>                   
+                            <div id="chart2"></div><br>
+                            <div id="chart3"></div><br>
+                            <div id="chart4"></div>                   
+                            <h5>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h5>
+                            <ul>
+                                <li>- bla bla</li>
+                                <li>- bla bla</li>
+                                <li>- bla bla</li>
+                                <li>- bla bla</li>
+                                <li>- bla bla</li>
+                                <li>- bla bla</li>
+                                <li>- bla bla</li>
+                                <li>- bla bla</li>
+                                <li>- bla bla</li>
+                            </ul>
+                            <h5>Vad har varit bra?</h5>
+                            <ul>
+                                <li>- bla bla</li>
+                                <li>- bla bla</li>
+                                <li>- bla bla</li>
+                                <li>- bla bla</li>
+                                <li>- bla bla</li>                                
+                            </ul>
+                            <h5>Förslag på förbättringar</h5>
+                            <ul>
+                                <li>- bla bla</li>
+                                <li>- bla bla</li>
+                                <li>- bla bla</li>                           
+                                </ul>
+                        </div><!-- result-text2    -->
+                    </div><!--innerContent-->
+                </div><!--content dark-->
+            </section>
+            <section id="selection3" class="par">
+                <div class="content scroll">
+                    <div class="innerContent apperance">
+                        <h3>Kursutvärderings Resultat</h3><br>
+                        <h5>Kursnamn: HTML och CSS</h5> 
+                        <h5>Klass: FE17</h5><br>
+                        <div class = "chart-5">
+                            <div id="chart5"></div>
+                            <h5>Kommentarer</h5>
+                            <ul>
+                                <li>- kommentar#1</li>
+                                <li>- kommentar#2</li>
+                                <li>- kommentar#3</li>
+                                <li>- kommentar#4</li>
+                                <li>- kommentar#5</li>
+                            </ul>
+                        </div><!-- chart-5 --><br><br>
+            
+                        <div class = "chart-6">
+                            <div id="chart6"></div>
+                            <h5>Kommentarer</h5>
+                            <ul>
+                                <li>- kommentar#1</li>
+                                <li>- kommentar#2</li>
+                                <li>- kommentar#3</li>
+                                <li>- kommentar#4</li>
+                                <li>- kommentar#5</li>
+                            </ul>
+                        </div><!-- chart-6 --><br><br>
+            
+                        <div class = "chart-7">
+                            <div id="chart7"></div>
+                            <h5>Kommentarer</h5>
+                            <ul>
+                                <li>- kommentar#1</li>
+                                <li>- kommentar#2</li>
+                                <li>- kommentar#3</li>
+                                <li>- kommentar#4</li>
+                                <li>- kommentar#5</li>
+                            </ul>
+                        </div><!-- chart-7 --><br><br>
+            
+                        <div class = "chart-8">
+                            <div id="chart8"></div>
+                            <h5>Kommentarer</h5>
+                            <ul>
+                                <li>- kommentar#1</li>
+                                <li>- kommentar#2</li>
+                                <li>- kommentar#3</li>
+                                <li>- kommentar#4</li>
+                                <li>- kommentar#5</li>
+                            </ul>
+                        </div><!-- chart-8 -->
+                        <br><br>
+                        <div class = "result-text3">
+                            <h5>Uppgifter som kursen har innefattat</h5>
+                            <ul>
+                                <li>- Uppgift 1</li>
+                                <li>- Uppgift 2</li>
+                                <li>- Uppgift 3</li>
+                                <li>- Uppgift 4</li>
+                            </ul>
+                            <br><br>
+                            <h5>Övriga kommentarer</h5>
+                            <ul>
+                                <li>- kommentar 1</li>
+                                <li>- kommentar 2<li>
+                                <li>- kommentar 3</li>
+                            </ul><br><br>
+                        </div><!-- result-text3 -->
+                       
+                    </div><!--innerContent-->
+                </div><!--content -->
+            </section>
+        </div><!--teachContent -->
+    </div><!--wrap-->
+    <script src="../js/attendance.js"></script>
+    <script src="../js/features.js"></script>
+    <script src="../js/jquery.combinedScroll.js"></script>
+    <script src = "../js/results.js"></script>
+    
+</body>
+
+</html>

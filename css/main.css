@@ -57,56 +57,76 @@ strong {
   font-weight: bold;
 }
 
-    textarea,
-    input[type=submit],
-    input,
-    input::placeholder,
-    select,
-    button {
-      background: rgba(255,242,255,0.9);
-      border: none;
-      color: #D900E8;
-      font-size: .9em;
-      padding: .5em;
-      font-family: verdana, sans-serif;
-      margin: .2em 0;
-      border: 1px solid #A64FAC;
-    }
 
-    textarea:focus,
-    input:focus,
-    select:focus,
-    button:focus {
-      background: #fff;
-      color: #D900E8;
-      border: 1px solid #D900E8;
-    }
+img{
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 5%;
+    z-index: 500;
+  }
 
-    input:focus::placeholder{
-      color: #D900E8;
-      border: none;
-    }
+.button,
+textarea,
+input[type=submit],
+input,
+input::placeholder,
+select,
+button {
+  background: rgba(255,242,255,0.9);
+  border: none;
+  color: #D900E8;
+  font-size: .9em;
+  padding: .5em;
+  font-family: verdana, sans-serif;
+  margin: .2em 0;
+  border: 1px solid #A64FAC;
+}
 
-    input::placeholder{
-      border: none;
-      background: none;
-      color: #D900E8;
-    }
 
-    button {
-      padding: 1em;
-      color:  rgba(255, 255, 255, 1);
-      background-color: rgb(98,0,105);
-    }
+a.button {
+  line-height: 3.5em;
+  text-decoration: none;
+}
 
-    button,
-    input[type=submit],
-    label,
-    input[type=radio],
-    input[type=checkbox],
-    a {
-      cursor: pointer;
-    }
+
+.button:active,
+button:active,
+textarea:focus,
+input:focus,
+select:focus {
+  background: #fff;
+  color: #D900E8;
+  border: 1px solid #D900E8;
+}
+
+input:focus::placeholder{
+  color: #D900E8;
+  border: none;
+}
+
+input::placeholder{
+  border: none;
+  background: none;
+  color: #D900E8;
+}
+
+.button,
+button {
+  padding: 1em;
+  color:  rgba(255, 255, 255, 1);
+  background-color: rgb(98,0,105);
+}
+
+.button,
+button,
+input[type=submit],
+label,
+input[type=radio],
+input[type=checkbox],
+a {
+  cursor: pointer;
+}
 
 .main{
   display: block;
@@ -250,6 +270,11 @@ img{
   padding: 1em;
 }
 
+
+h2, h3, h4 {
+  margin: 0 0 .5em 0;
+}
+
 h2{
   font-size: 3em;
 }
@@ -302,6 +327,11 @@ h4 {
     z-index: 1000
   }
 
+  #nav .current {
+    background-color: rgba(145,0,156,1);
+    /* color: #d900e8; */
+  }
+
   #nav ul {
       display: flex;
       flex-direction: row;
@@ -350,6 +380,12 @@ h4 {
    line-height: normal;
   }
 
+  #back {
+  font-size: 1em;
+  float: right;
+  padding: 0;
+  border: none;
+}
 /*  #nav > ul > li:nth-child(1) > a */
 
 /*
@@ -362,6 +398,7 @@ h4 {
   font-weight: bold;
 }
 */
+
 
 
 .modal {
@@ -406,6 +443,48 @@ h4 {
   background-color: #3b003f
 }
 
-/*====================================
-testing in progress
 =====================================*/
+=======
+
+/*==========================================
+This is CSS only for the news.html page
+============================================*/
+
+.news-head {
+  padding: 3em 0;
+}
+
+.news {
+  width: 100%;
+  padding: 1em;
+  font-weight: bold;
+  background-color: rgba(166,79,172,0.5);
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsTab {
+  display:flex;
+  flex-direction: row-reverse;
+  padding: 1em 0 1em 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.newsTab h3{
+  font-size: 1.2em;
+}
+
+.newsTab h4{
+  font-size: 1em;
+}
+
+.newsDate {
+  flex: 1;
+}
+
+.news-content2 {
+  flex: 3;
+}

@@ -26,7 +26,6 @@
     display: block;
 }
 
-
 .dropdown:hover .drop-content {
     display: block;
     z-index: 999;
@@ -45,9 +44,7 @@
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
-    text-align: center;
-    
-    
+    text-align: center;   
 }
 
 #chart_div {
@@ -61,20 +58,35 @@
 }
 
 .result-text li {
-    font-size: 0.8em;
+    font-size: 1em;
     
 }
 
 .result-text p {
-    font-size: 0.7em;
+    font-size: 1em;
 }
 
-.result-text2 h5 {
+.result-text2 h5, .result-text h5 {
     font-weight: bold;
     margin-top: 1.5em;
 }
 
-#chart2 {
-
+.chart-5 h5, .chart-6 h5, .chart-7 h5, .chart-8 h5 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-left: 6em;
 }
 
+.chart-5 ul, .chart-6 ul, .chart-7 ul, .chart-8 ul {
+    margin-left: 6em;
+}
+
+.result-text3 h5 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-left: 6em;
+}
+
+.result-text3 ul {
+    margin-left: 6em;
+}

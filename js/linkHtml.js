@@ -7,3 +7,6 @@ var link = document.querySelector('link[rel="import"]');
     var el = content.querySelector('.apa');
 
     document.body.appendChild(el.cloneNode(true));
+
+
+/* Chosing what id to print to the selected a in teacher.html */
