@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Studentsidan</title>
+
+    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!--Reset css-->
+    <link rel="stylesheet" href="../css/main.css">
+    <!--main styling and funkutionalety-->
+    <link rel="stylesheet" href="../css/courses.css">
+    <!-- dropdown menu css -->
+    <link rel="stylesheet" href="../css/quick-evaluation.css">
+    <!-- quick-evaluation styling -->
+    <link rel="stylesheet" href="../css/mediaq.css">
+    <link rel="stylesheet" href="../css/result.css">
+    <link rel="stylesheet" href="../css/assignmetApproval.css">
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header>
+        <nav id="nav">
+            <div id="nav-button-max-500">MENU</div>
+            <ul class="hidden-max-500">
+                <li>
+                    <a href="teacher.html">logotypeFuture</a>
+                </li>
+                <li>
+                    <a href="courses.html">Kurser</a>
+                </li>
+                <li>
+                    <a href="news.html">Nyheter</a>
+                </li>
+                <li>
+                    <a href="results.html">Resultat</a>
+                </li>
+                <li>
+                    <a id="attendanceButton">Närvaro</a>
+                </li>
+                <li>
+                    <a href="../index.html">Log out</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <!-- Hidden before clicking loginButton -->
+
+    <div id="attendanceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Closing X icon in modal -->
+            <div class="header">
+                <h1>Närvarokod</h1>
+                <form name="input-attendance-teacher">
+                    <div class="attendance">
+                        <h1>Välj den klass du vill skapa en kod till.
+                            <br> När du valt klass, tryck på "Skapa kod" för att få en kod generad.</h1>
+                        <br>
+                        <select id="teacher-code">
+                            <!-- Choose your class -->
+                            <option value="FE16">FE16</option>
+                            <option value="FE17">FE17</option>
+                        </select>
+                        <select id="lesson-code">
+                            <!-- Choose your lesson -->
+                            <option value="Lek1">Lektionstillfälle 1</option>
+                            <option value="Lek2">Lektionstillfälle 2</option>
+                            <option value="Lek3">Lektionstillfälle 3</option>
+                            <option value="Lek4">Lektionstillfälle 4</option>
+                        </select>
+                        <button id="code-submit" type="submit" onclick="createCode()">Skapa kod</button>
+                    </div>
+                    <!-- attendance -->
+                </form>
+            </div>
+            <!-- header -->
+        </div>
+        <!-- modal-content -->
+    </div>
+    <!-- attendanceModal -->
+    <!-- div attendanceModal opens the login box on index screen -->
+
+    <div class="wrap">
+        <div class="content content-pricing">
+            <div class="innerContent apperance">
+                <h2>Betygsätt uppgifter</h2>
+                <div class="assignmentApprovalContent">
+                    <div class="studentassignments">
+
+                        <label for="studentList">Student: </label>
+                        <select id="studentList">
+                            <option value="Student1">Lilla Fridolf</option>
+                            <option value="Student2">Daniel Doppsko</option>
+                            <option value="Student3">Carl Åkerblom</option>
+                            <option value="Student4">Nicke Lilltroll</option>
+                            <option value="Student5">Emil Wern</option>
+                        </select>
+                        <label for="courseList">Kurs: </label>
+                        <select id="courseList">
+                            <option value="htmlcss">HTML och CSS</option>
+                            <option value="js">JavaScript</option>
+                            <option value="arbmeto">Arbetsmetodik</option>
+                            <option value="backend">Back-end utv.</option>
+                        </select>
+                        <label for="assignmentList">Uppgift: </label>
+                        <select id="assignmentList">
+                            <option value="assignment1">Uppgift 1</option>
+                            <option value="assignment2">Uppgift 2</option>
+                            <option value="assignment3">Uppgift 3</option>
+                            <option value="assignment4">Uppgift 4</option>
+                            <option value="assignment5">Uppgift 5</option>
+                        </select>
+                    </div>
+                    <div class="assignmentDocument">
+                        <a href="../documents/StudentUppgift.docx" class="button">Öppna dokument</a>
+                    </div>
+
+                    <div class="assignmentFeedback">
+                        <label for="assignmentFeedbackTextarea">Feedback:</label>
+                        <textarea name="assignmentFeedbackTextarea" id="assignmentFeedbackTextarea" cols="30" rows="10"></textarea>
+
+                        <div>
+                            <button type="button" onclick="assignmentFeedback()">Skicka feedback</button>
+                            <span class="assignmentFeedbackTextareaMessage"></span>
+                        </div>
+
+                        <div>
+                            <span class="gradeSelectListMessage"></span>
+                            <select name="grade" id="grade">
+                                <option value="">-- Välj betyg</option>
+                                <option value="IG">IG</option>
+                                <option value="G">G</option>
+                                <option value="VG">VG</option>
+                            </select>
+                            <button type="button" onclick="gradeApproved()">Sätt betyg</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--tab-content-->
+
+
+
+
+            </div>
+            <!--innerContent-->
+            <div class="quick-evaluation-wrap">
+                <div class="quick-evaluation-content apperance">
+                    <h4>Daglig utvärdering</h4>
+                    <p>Berätta för oss hur du upplever dagen genom att klicka på någon av dessa emojis.</p>
+                    <div id="quick-evaluation">
+
+                        <div class="quick-evaluation-inner">
+                            <a href="#" id="glad" onclick="clickItem1()">
+                                <img src="../img/quick-evaluation-glad.png" alt="All good" title="All good">
+                            </a>
+                            <span class="glad-message">Härligt, tack!</span>
+                        </div>
+
+                        <div class="quick-evaluation-inner">
+                            <a href="#" id="between" onclick="clickItem2()">
+                                <img src="../img/quick-evaluation-between.png" alt="All good" title="It's ok">
+                            </a>
+                            <span class="between-message">Ok, tack!</span>
+                        </div>
+
+                        <div class="quick-evaluation-inner">
+                            <a href="#" id="sad" onclick="clickItem3()">
+                                <img src="../img/quick-evaluation-sad.png" alt="All good" title="Not good!">
+                            </a>
+                            <span class="sad-message">Vad trist, tack!</span>
+                        </div>
+
+                    </div>
+                    <!-- quick-evaluation -->
+                    <p class="evaluation-info">Varje vecka så kommer du att ha möjlighet att göra en mer utförlig utvärdering och även på de enskilda
+                        kurserna du läser.</p>
+                    <ul>
+                        <li>
+                            <a href="../html/weekly-feedback.html">Vecko-utvärdering</a>
+                        </li>
+                        <li>
+                            <a href="../html/course-evaluation.html">Kurs-utvärdering</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--content-->
+    </div>
+
+
+    <!--wrap-->
+    <script src="../js/quick-evaluation.js"></script>
+    <script src="../js/attendance.js"></script>
+
+    <script src="../js/assignmentApproval.js"></script>
+
+    <script src="../js/teacher-attendance.js"></script>
+</body>
+
+</html>
