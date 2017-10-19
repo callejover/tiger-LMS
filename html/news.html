@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Studentsidan</title>
+    <title>Tiger-LMS | Nyheter</title>
 
     <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
     <link rel="stylesheet" href="../css/reset.css">
@@ -24,7 +24,6 @@
     <!-- quick-evaluation styling -->
     <link rel="stylesheet" href="../css/mediaq.css">
     <!-- media querys -->
-    <link rel="stylesheet" href="../css/news.css">
 
 </head>
 
@@ -39,7 +38,7 @@
             <ul class="hidden-max-500">
                 <li><a href="../index.html">logotypeFuture</a></li>
                 <li><a href="courses.html">Kurser</a></li>
-                <li><a href="news.html">Nyheter</a></li>
+                <li><a class="current" href="news.html">Nyheter</a></li>
                 <li><a id="attendanceButton">Närvaro</a></li>
                 <li><a href="../index.html">Log out</a></li>
             </ul>
@@ -74,46 +73,59 @@
     <div class="wrap">
         <div class="content content-pricing">
             <div class="innerContent apperance">
-                <h2>Nyheter</h2>
-                <p>Här kan du som elev ta del av nyheter som rör dina kurser.<br>
-                Välj kurs i listan och ta del av nyheterna som rör just den kursen.</p>
-                
-
+                <div class="news-head">
+                        <h2>Nyheter</h2>
+                        <p>Här kan du som elev ta del av nyheter som rör dina kurser.<br>
+                        Välj kurs i listan och ta del av nyheterna som rör just den kursen.</p>
+                </div>
                 <section class="slide slide-four">
-
                     <div class="tab-group">
                         <div class="tab">
-                            <input id="tab-one" type="checkbox" name="tab">
-                            <label for="tab-one" class="tabPadding">HTML och CSS</label>
-                            <div class="tab-content">
+                            <div class="news">HTML/CSS</div> <!-- news -->
+                            <div class="news-tab-content">
                                 <div class="news-content">
-                                        <div class="newsTab">
-                                            <!--<h2>Datum</h2>-->
-                                            <h3>2017-10-16</h3>
-                                            <p>
-                                                Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
-                                                jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
-                                                Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
-                                                ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
-                                                pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                            </p>
+                                    <div class="newsTab">
+                                        <div class="newsDate">
+                                                <h4>2017-10-16</h4>
                                         </div>
-                                        <div class="newsTab">
-                                                <!--<h2>Datum</h2>-->
-                                                <h3>2017-10-20</h3>
+                                        <div class="news-content2">
+                                                <h3>Nytt Schema</h3>
                                                 <p>
-                                                    Cow turducken landjaeger meatball. Jerky cow alcatra, pancetta meatloaf ribeye sirloin. Short loin shankle 
-                                                    turducken pork loin, ham hock spare ribs sirloin meatloaf. Kevin pastrami tenderloin brisket tail rump andouille 
-                                                    ribeye turducken cow ball tip landjaeger. Boudin venison burgdoggen filet mignon drumstick doner tri-tip, 
-                                                    bresaola shank fatback tail beef ribs brisket ball tip corned beef. Bresaola pastrami frankfurter meatloaf cow.
+                                                    Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                    jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                    Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                    ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                    pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
                                                 </p>
                                         </div>
+                                        <!-- news-contet2-->
+                                    </div>
+                                    <!-- newsTab-->
+                                    <div class="newsTab">
+                                        <div class="newsDate">
+                                                <h4>2017-10-16</h4>
+                                        </div>
+                                        <div class="news-content2">
+                                                <h3>Kursstart vecka 10</h3>
+                                                <p>
+                                                    Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                    jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                    Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                    ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                    pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                </p>
+                                        </div>
+                                        <!--news-content2-->
+                                    </div>
+                                    <!-- newsTab-->
                                 </div>
+                                <!-- news-content-->
                             </div>
-                            <!--tab-content-->
-                        </div>
+                            <!--news-tab-content-->
+                       </div>
                         <!--tab-->
                     </div>
+                    <!--tab-group-->
                 </section>
 
 
@@ -121,113 +133,149 @@
 
                     <div class="tab-group">
                         <div class="tab">
-                            <input id="tab-two" type="checkbox" name="tab">
-                            <label for="tab-two" class="tabPadding">Javascript</label>
-                            <div class="tab-content">
+                            <div class="news">Javascript</div> <!-- news -->
+                            <div class="news-tab-content">
                                 <div class="news-content">
                                         <div class="newsTab">
-                                            <!--<h2>Datum</h2>-->
-                                            <h3>2017-10-16</h3>
-                                            <p>
-                                                Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
-                                                jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
-                                                Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
-                                                ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
-                                                pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                            </p>
+                                            <div class="newsDate">
+                                                    <h4>2017-10-16</h4>
+                                            </div>
+                                            <div class="news-content2">
+                                                    <h3>Nytt Schema</h3>
+                                                    <p>
+                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                    </p>
+                                            </div>
+                                            <!-- news-contet2-->
                                         </div>
+                                        <!-- newsTab-->
                                         <div class="newsTab">
-                                                <!--<h2>Datum</h2>-->
-                                                <h3>2017-10-20</h3>
-                                                <p>
-                                                    Cow turducken landjaeger meatball. Jerky cow alcatra, pancetta meatloaf ribeye sirloin. Short loin shankle 
-                                                    turducken pork loin, ham hock spare ribs sirloin meatloaf. Kevin pastrami tenderloin brisket tail rump andouille 
-                                                    ribeye turducken cow ball tip landjaeger. Boudin venison burgdoggen filet mignon drumstick doner tri-tip, 
-                                                    bresaola shank fatback tail beef ribs brisket ball tip corned beef. Bresaola pastrami frankfurter meatloaf cow.
-                                                </p>
+                                            <div class="newsDate">
+                                                    <h4>2017-10-16</h4>
+                                            </div>
+                                            <div class="news-content2">
+                                                    <h3>Kursstart vecka 10</h3>
+                                                    <p>
+                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                    </p>
+                                            </div>
+                                            <!--news-content2-->
                                         </div>
+                                        <!-- newsTab-->
                                 </div>
+                                <!--news-content-->
                             </div>
-                            <!--tab-content-->
+                            <!--news-tab-content-->
                         </div>
                         <!--tab-->
                     </div>
+                    <!--tab-group-->
                 </section>
+
+
                 <section class="slide slide-four">
 
                     <div class="tab-group">
                         <div class="tab">
-                            <input id="tab-three" type="checkbox" name="tab">
-                            <label for="tab-three" class="tabPadding">Arbetsmetodik</label>
-                            <div class="tab-content">
+                            <div class="news">Arbetsmetodik</div> <!-- news -->
+                            <div class="news-tab-content">
                                 <div class="news-content">
                                     <div class="newsTab">
-                                        <!--<h2>Datum</h2>-->
-                                        <h3>2017-10-16</h3>
-                                        <p>
-                                            Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
-                                            jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
-                                            Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
-                                            ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
-                                            pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                        </p>
+                                        <div class="newsDate">
+                                                <h4>2017-10-16</h4>
+                                        </div>
+                                        <div class="news-content2">
+                                                <h3>Nytt Schema</h3>
+                                                <p>
+                                                    Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                    jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                    Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                    ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                    pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                </p>
+                                        </div>
+                                        <!-- news-contet2-->
                                     </div>
+                                    <!-- newsTab-->
                                     <div class="newsTab">
-                                        <!--<h2>Datum</h2>-->
-                                        <h3>2017-10-20</h3>
-                                        <p>
-                                            Cow turducken landjaeger meatball. Jerky cow alcatra, pancetta meatloaf ribeye sirloin. Short loin shankle 
-                                            turducken pork loin, ham hock spare ribs sirloin meatloaf. Kevin pastrami tenderloin brisket tail rump andouille 
-                                            ribeye turducken cow ball tip landjaeger. Boudin venison burgdoggen filet mignon drumstick doner tri-tip, 
-                                            bresaola shank fatback tail beef ribs brisket ball tip corned beef. Bresaola pastrami frankfurter meatloaf cow.
-                                        </p>
-                                    </div>
+                                            <div class="newsDate">
+                                                    <h4>2017-10-16</h4>
+                                            </div>
+                                            <div class="news-content2">
+                                                    <h3>Kursstart vecka 10</h3>
+                                                    <p>
+                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                    </p>
+                                            </div>
+                                    </div> <!-- newsTab-->
                                 </div>
                                 <!--assignments-->
                             </div>
-                            <!--tab-content-->
+                            <!--news-tab-content-->
                         </div>
                         <!--tab-->
                     </div>
+                    <!--tab-group-->
                 </section>
+
 
                 <section class="slide slide-four">
 
                     <div class="tab-group">
                         <div class="tab">
-                            <input id="tab-four" type="checkbox" name="tab">
-                            <label for="tab-four" class="tabPadding">Back-end utveckling</label>
-                            <div class="tab-content">
+                            <div class="news">Back-End utveckling</div> <!-- news -->
+                            <div class="news-tab-content">
                                     <div class="news-content">
                                         <div class="newsTab">
-                                            <!--<h2>Datum</h2>-->
-                                            <h3>2017-10-16</h3>
-                                            <p>
-                                                Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
-                                                jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
-                                                Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
-                                                ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
-                                                pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                            </p>
-                                        </div>
-                                        <div class="newsTab">
-                                                <!--<h2>Datum</h2>-->
-                                                <h3>2017-10-20</h3>
-                                                <p>
-                                                    Cow turducken landjaeger meatball. Jerky cow alcatra, pancetta meatloaf ribeye sirloin. Short loin shankle 
-                                                    turducken pork loin, ham hock spare ribs sirloin meatloaf. Kevin pastrami tenderloin brisket tail rump andouille 
-                                                    ribeye turducken cow ball tip landjaeger. Boudin venison burgdoggen filet mignon drumstick doner tri-tip, 
-                                                    bresaola shank fatback tail beef ribs brisket ball tip corned beef. Bresaola pastrami frankfurter meatloaf cow.
-                                                </p>
-                                        </div>
+                                            <div class="newsDate">
+                                                    <h4>2017-10-16</h4>
+                                            </div>
+                                            <div class="news-content2">
+                                                    <h3>Nytt Schema</h3>
+                                                    <p>
+                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                    </p>
+                                            </div>
+                                        </div> <!-- newsTab-->
+                                    <div class="newsTab">
+                                            <div class="newsDate">
+                                                    <h4>2017-10-16</h4>
+                                            </div>
+                                            <div class="news-content2">
+                                                    <h3>Kursstart vecka 10</h3>
+                                                    <p>
+                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
+                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
+                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
+                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
+                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
+                                                    </p>
+                                            </div>
+                                        </div> <!-- newsTab-->
                                     </div>
                                 <!--assignments-->
                             </div>
-                            <!--tab-content-->
+                            <!--news-tab-content-->
                         </div>
                         <!--tab-->
                     </div>
-                     
+                    <!--tab-group--> 
                 </section>
 
                 

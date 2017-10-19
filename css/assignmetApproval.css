@@ -1,0 +1,33 @@
+.assignmentApprovalContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#assignmentFeedbackTextarea {
+    min-width: 100%;
+}   
+
+.assignmentApprovalContent .studentassignments {
+
+    width: 50%;
+}
+.assignmentApprovalContent .assignmentDocument {
+    width: 50%;
+    text-align: right
+}
+
+.assignmentApprovalContent .assignmentFeedback {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between
+}
+
+
+.assignmentApprovalContentText { /* Used in JS */
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 3em;
+}

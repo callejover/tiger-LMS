@@ -37,7 +37,7 @@
     }
 
     .tab-content{
-      max-height: 0;
+      height: 0;
       overflow: hidden;
       transition: all .35s;
       display:flex;
@@ -52,8 +52,8 @@
     }
 
     .tab input:checked ~ .tab-content {
-      max-height: 30em;
-    }
+      height: auto;
+    } 
 
 
 	label span {
@@ -121,14 +121,14 @@
   flex:3;
   order: -1;
 }
+
 .attendanceTab {
   height:auto;
-  
-
-
 
 }
+
 .attendanceContent {
+
 
 }
 
@@ -138,23 +138,38 @@
   flex-wrap:wrap;
   width:100%;
   
-
-
-
 }
+
+.attendanceTab2 {
+  display:flex;
+  flex-direction:column;
+  padding-left:1em;
+  width:33%;
+}
+
+.attendanceTab3 {
+  display:flex;
+  flex-direction:column;
+  width:33%;
+  padding-left:1em;
+}
+
+.attendanceMain {
+  display:flex;
+  flex-direction:row;
+  width:100%;
+}
+
 .tab-content2 {
       max-height: 0;
       overflow: hidden;
       transition: all .35s;
-
       background-color:rgba(98,0,105,0.9);
       color: rgb( 255,255,255);
 
 
 }
-    .tab-content2 p {
-      margin: 1em 0;
-    }
+
 
     .tab input:checked ~ .tab-content2 {
       max-height: 30em;
@@ -178,4 +193,13 @@ margin-left:1em;
 .attendanceSort3 {
   width:31%;
   margin-left:1em;
+}
+.tab-content2 p {
+  margin: 1em 0;
+}
+
+
+.tab input:checked ~ .tab-content2 {
+  max-height: 30em;
+
 }

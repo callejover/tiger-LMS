@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Studentsidan</title>
+    <title>Tiger-LMS | Kursutvärdering</title>
 
     <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
     <link rel="stylesheet" href="../css/reset.css">
@@ -67,6 +67,7 @@
     <div class="wrap">
         <div class="content">
             <div class="innerContent apperance">
+                <div class="back-bar"><button id="back" onclick="goBack()"><--Tillbaka</button></div>
                 <h2>Kursutvärdering</h2>
                 <p>Alla fält med en röd stjärna (<span class="color-red">*</span>) är obligatoriska att fylla i.</p>
                 <form class="course-evaluation" name="checkFormData" action="javascript:check();" onsubmit="return check()">
@@ -190,6 +191,7 @@
     <script src="../js/quick-evaluation.js"></script>
     <script src="../js/attendance.js"></script>
     <script src="../js/news.js"></script>
+    <script src="../js/course-evaluation.js"></script>
 </body>
 
 </html>
