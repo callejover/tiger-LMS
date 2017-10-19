@@ -91,17 +91,14 @@
             <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header">
-                <h2>Närvaro</h2>
+                <h2>Inlämning</h2>
                 <form name="input-assignment">
-                    
-                        <p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
-                        <p>Koden är endast giltlig i 5 minuter!</p>
-                        <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-assignment">
+                    <p>Lämna in din uppgift genom att ladda upp dokumentet nedan.</p>
+                        <input type="upload" autofocus="autofocus" placeholder="Lektionskod" id="input-assignment">
                         <br>
-                        <button type="submit" onclick="checkassignment()">Bekräfta närvaro</button>
+                        <button type="submit" onclick="checkAssignment()">Lämna in uppgift</button>
                         <br>
-                        <span class="wrongCode"></span>
-
+                        <span class="wrongCodeAssignmnet"></span>
                 </form>
             </div>
         </div>
@@ -252,7 +249,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -260,7 +257,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -268,7 +265,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a  id="assignmentButton">Lämna in asasad</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -276,7 +273,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                     </table>
@@ -288,7 +285,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -296,7 +293,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -304,7 +301,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -312,7 +309,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                     </table>
@@ -365,7 +362,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -373,7 +370,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -381,7 +378,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -389,7 +386,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                     </table>
@@ -401,7 +398,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -409,7 +406,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -417,7 +414,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -425,7 +422,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                     </table>
@@ -477,7 +474,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -491,7 +488,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -499,7 +496,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                     </table>
@@ -511,7 +508,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -519,7 +516,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -533,7 +530,7 @@
                                             <th>Ej satt</th>
                                             <th>
                                                 <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a href="#">Lämna in</a>
+                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                     </table>
