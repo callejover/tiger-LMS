@@ -123,36 +123,23 @@
 }
 .attendanceTab {
   height:auto;
-  width:100%;
-  display:flex;
-  flex-direction:row;
+  
+
 
 
 }
 .attendanceContent {
-  display:flex;
-  flex-direction:column;
-width:33%;
-  
-}
-.attendanceTab2 {
-  display:flex;
-  flex-direction:column;
-  padding-left:1em;
-  width:33%;
 
 }
-.attendanceTab3 {
-  display:flex;
-  flex-direction:column;
-  width:33%;
-  padding-left:1em;
-}
+
 .attendanceMain {
   display:flex;
   flex-direction:row;
-  
+  flex-wrap:wrap;
   width:100%;
+  
+
+
 
 }
 .tab-content2 {
@@ -162,6 +149,8 @@ width:33%;
 
       background-color:rgba(98,0,105,0.9);
       color: rgb( 255,255,255);
+
+
 }
     .tab-content2 p {
       margin: 1em 0;
@@ -170,3 +159,23 @@ width:33%;
     .tab input:checked ~ .tab-content2 {
       max-height: 30em;
     }
+    .slideAttendance{
+      width:100%;
+      text-align:center;
+      
+    }
+.infoTab2 ul li {
+  font-size:13px;
+}
+.attendanceSort {
+  width:31%;
+  margin-left:0.5em;
+}
+.attendanceSort2 {
+width:31%;
+margin-left:1em;
+}
+.attendanceSort3 {
+  width:31%;
+  margin-left:1em;
+}
