@@ -51,6 +51,14 @@
 }
 
 .studentAssignmentTable th:nth-child(3)  {
-    text-align: left;
-    width: 20%
+    text-align: right;
+}
+
+.studentAssignmentTable th  {
+    padding: .25em 0;
+}
+a.assignmentButton {
+    padding: .25em .5em;
+
+    line-height: 2em;
 }

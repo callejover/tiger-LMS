@@ -420,14 +420,21 @@ h4 {
   width: 25%; /* Could be more or less, depending on screen size */
 }
 
-.close {
+.close,
+.assignmentClose,
+.attendanceClose {
   color: #DBDBDB;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus,
+.assignmentClose:hover,
+.assignmentClose:focus,
+.attendanceClose:hover,
+.attendanceClose:focus {
   color: #313131;
   text-decoration: none;
   cursor: pointer;

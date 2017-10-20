@@ -26,7 +26,10 @@
     opacity: 0;    
 } */
 
-.quick-evaluation-inner {position: relative}
+.quick-evaluation-inner {
+    position: relative;
+    margin: 0 5%;
+}
 
 
 

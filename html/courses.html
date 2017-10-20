@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="../css/courses.css">
     <!-- dropdown menu css -->
     <link rel="stylesheet" href="../css/quick-evaluation.css">
-    <!-- quick-evaluation styling -->
-    <link rel="stylesheet" href="../css/mediaq.css">
 
     <link rel="stylesheet" href="../css/assignmetApproval.css">
+    <!-- quick-evaluation styling -->
+    <link rel="stylesheet" href="../css/mediaq.css">
 
 </head>
 
@@ -86,7 +86,7 @@
 
     <div id="assignmentModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="assignmentClose">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header">
                 <h2>Inlämning</h2>
@@ -95,7 +95,7 @@
                     <p>OBS! Endast Word dokument!</p>
                         <input type="file" accept=".doc,.docx" id="input-assignment">
                         <br>
-                        <button type="submit" onclick="checkAssignment()">Lämna in uppgift</button>
+                        <button type="submit" onclick="checkAssignment()">Lämna in</button>
                         <br>
                         <span class="wrongCodeAssignmnet"></span>
                 </form>
@@ -103,6 +103,8 @@
         </div>
     </div>
     <!-- div assignmentModal opens the login box on index screen -->
+
+    
 
     <div class="wrap">
         <div class="content content-pricing">
@@ -116,7 +118,7 @@
 
                     <div class="tab-group">
                         <div class="tab">
-                            <input id="tab-one" type="checkbox" name="tab" checked>
+                            <input id="tab-one" type="checkbox" name="tab">
                             <label for="tab-one" class="tabPadding">HTML och CSS
                                 <span>Betyg: VG</span>
                             </label>
@@ -130,71 +132,71 @@
                                     </p>
                                 </div>
                                 <div class="assignments">
-                                    <h3>Uppgifter</h3>
+                                    
                                     <table class="studentAssignmentTable">
                                         <tr>
-                                            <th>Uppgift 1</th>
+                                            <th><strong>Uppgifter</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 1</th>
                                             <th>G</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th></th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 2</th>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 2</th>
                                             <th>VG</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th></th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 3</th>
-                                            <th>IG</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
-                                        </tr>
-                                        <tr>
-                                            <th>Uppgift 4</th>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 3</th>
                                             <th>VG</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th></th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 5</th>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 4</th>
                                             <th>VG</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th></th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 6</th>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 5</th>
                                             <th>VG</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 6</th>
+                                            <th>VG</th>
+                                            <th></th>
                                         </tr>
                                     </table>
 
-                                    <h3>Examinationsmoment</h3>
+                                    
                                     <table class="studentAssignmentTable">
                                         <tr>
-                                            <th>Examinationsmoment 1</th>
-                                            <th>VG</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th><strong>Examinationsmoment</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
                                         </tr>
                                         <tr>
-                                            <th>Examinationsmoment 2</th>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Examinationsmoment 1</th>
                                             <th>VG</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th></th>
                                         </tr>
                                         <tr>
-                                            <th>Examinationsmoment 3</th>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Examinationsmoment 2</th>
+                                            <th>VG</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Examinationsmoment 3</th>
                                             <th>G</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th></th>
                                         </tr>
                                         <tr>
-                                            <th>Examinationsmoment 4</th>
-                                            <th>IG</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Examinationsmoment 4</th>
+                                            <th>VG</th>
+                                            <th></th>
                                         </tr>
                                     </table>
 
@@ -229,86 +231,85 @@
                                 </div>
                                 <!--infoTab-->
                                 <div class="assignments">
-                                    <h3>Uppgifter</h3>
+                                    
                                     <table class="studentAssignmentTable">
                                         <tr>
-                                            <th>Uppgift 1</th>
+                                            <th><strong>Uppgifter</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 1</th>
                                             <th>VG</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th></th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 2</th>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 2</th>
                                             <th>VG</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th></th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 3</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 3</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 4</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 4</th>
+                                            <th>Väntar</th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 5</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 5</th>
+                                            <th>Granska</th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton feedbackButton button">Läs feeback</a>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 6</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 6</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                     </table>
 
-                                    <h3>Examinationsmoment</h3>
+                                    
                                     <table class="studentAssignmentTable">
                                         <tr>
-                                            <th>Examinationsmoment 1</th>
-                                            <th>Ej satt</th>
+                                            <th><strong>Examinationsmoment</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 1</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>Examinationsmoment 2</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 2</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>Examinationsmoment 3</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 3</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>Examinationsmoment 4</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 4</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                     </table>
@@ -342,86 +343,82 @@
                                 </div>
                                 <!--infoTab-->
                                 <div class="assignments">
-                                    <h3>Uppgifter</h3>
+                                    
                                     <table class="studentAssignmentTable">
                                         <tr>
-                                            <th>Uppgift 1</th>
+                                            <th><strong>Uppgifter</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 1</th>
                                             <th>VG</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th></th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 2</th>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 2</th>
                                             <th>G</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th></th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 3</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 3</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 4</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 4</th>
+                                            <th>G</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 5</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 5</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 6</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th>Uppgift 6</th>
-                                            <th>Ej satt</th>
-                                            <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                     </table>
 
-                                    <h3>Examinationsmoment</h3>
+                                    
                                     <table class="studentAssignmentTable">
                                         <tr>
-                                            <th>Examinationsmoment 1</th>
-                                            <th>Ej satt</th>
+                                            <th><strong>Examinationsmoment</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 1</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>Examinationsmoment 2</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 2</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>Examinationsmoment 3</th>
-                                            <th>Ej satt</th>
-                                            <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
-                                            </th>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Examinationsmoment 3</th>
+                                            <th>VG</th>
+                                            <th></th>
                                         </tr>
                                         <tr>
-                                            <th>Examinationsmoment 4</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 4</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                     </table>
@@ -454,82 +451,86 @@
                                 </div>
                                 <!--infoTab-->
                                 <div class="assignments">
-                                    <h3>Uppgifter</h3>
+                                    
                                     <table class="studentAssignmentTable">
                                         <tr>
-                                            <th>Uppgift 1</th>
-                                            <th>VG</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th><strong>Uppgift</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 2</th>
-                                            <th>VG</th>
-                                            <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 1</th>
+                                            <th></th>
+                                            <th><a class="assignmentButton button">Lämna in</a></th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 3</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 2</th>
+                                            <th></th>
+                                            <th><a class="assignmentButton button">Lämna in</a></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 3</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 4</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 4</th>
+                                            <th></th>                                            
                                             <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
-                                        </tr>
-                                        <tr>
-                                            <th>Uppgift 5</th>
-                                            <th>Ej satt</th>
-                                            <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>Uppgift 6</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 5</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 6</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                     </table>
 
-                                    <h3>Examinationsmoment</h3>
+                                    
                                     <table class="studentAssignmentTable">
                                         <tr>
-                                            <th>Examinationsmoment 1</th>
-                                            <th>Ej satt</th>
+                                            <th><strong>Examinationsmoment</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 1</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>Examinationsmoment 2</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 2</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>Examinationsmoment 3</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 3</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/yes_tick.png" height="16" width="16" alt=""> Inlämnad</th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
                                         </tr>
                                         <tr>
-                                            <th>Examinationsmoment 4</th>
-                                            <th>Ej satt</th>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 4</th>
+                                            <th></th>
                                             <th>
-                                                <img src="../img/no_tick.png" height="16" width="16" alt="">
-                                                <a class="assignmentButton">Lämna in</a>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                     </table>
