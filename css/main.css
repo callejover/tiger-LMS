@@ -151,6 +151,10 @@ a {
   background-color: rgba(255,242,255,0.9);
 }
 
+.hiddenCode{
+  display: none;
+}
+
 .index{
   min-height: calc(100vh - 5em);
 }
@@ -412,6 +416,10 @@ h4 {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: slideIn; /* Fade in the background /*/
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
 }
 
 .modal-content {
@@ -420,6 +428,10 @@ h4 {
   padding: 20px;
   border: 1px solid #888;
   width: 25%; /* Could be more or less, depending on screen size */
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn ;
+  animation-duration: 0.4s;
 }
 
 .close {
@@ -427,6 +439,7 @@ h4 {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .close:hover, .close:focus {
@@ -442,9 +455,6 @@ h4 {
 .modal-content {
   background-color: #3b003f
 }
-
-=====================================*/
-=======
 
 /*==========================================
 This is CSS only for the news.html page
@@ -487,4 +497,28 @@ This is CSS only for the news.html page
 
 .news-content2 {
   flex: 3;
+}
+
+/*==========================================
+Add Animation for modal. Under construcktion for all pages testing on teacher.html
+============================================*/
+
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
 }
