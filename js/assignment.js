@@ -1,69 +1,72 @@
-// Get the modal
-var assignmentModal = document.querySelector('#assignmentModal');
+// function checkAssignment() {
+//     /*var inputassignment = document.getElementById("").value*/
+//     var wrongInput = "<strong>Du måste skicka med ett dokument för att lämna ditt arbete!</strong>";
+//     var rightInput = "<h2>Tack för din inlämning</h2> <p>Du kommer antigen få feedback från läraren eller så får du ett betyg. Dessa kan du se direkt i tabellen med uppgifter/examinationsmoment.</p><p>Klicka på krysset eller utanför rutan för att stänga eller annars stängs den efter 30 sekunder.</p>";
+//     var headerText = document.querySelectorAll(".header");
 
-// Get the button that opens the modal
-var assignmentButton = document.querySelectorAll(".assignmentButton");
+//     event.preventDefault();
 
-// Get the <span> element that closes the modal
-var assignmentClose = document.querySelectorAll(".assignmentClose");
+//     if (document.querySelector("#input-assignment").value === "") {
+//         document.querySelector(".wrongCodeAssignmnet").innerHTML = wrongInput;
+//         return false;
+//     } else {
 
+//         headerText.innerHTML = "";
+//         headerText.innerHTML = rightInput;
+//         setTimeout("pageSwap()", 30000);
+//     }
+// }
+
+
+// For the modal
+var assignmentModal = document.getElementById('assignmentModal'); // Get the modal
+var assignmentButton = document.getElementById("assignmentButton"); // Get the button that opens the modal
+var assignmentClose = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
+
+// For the code validaiton
+var assignmentInput = document.getElementById("input-assignment");
+var assignmentHeader = document.querySelector(".header");
+var assignmentWrongCode = document.querySelector(".wrongCode");
+var assignmentWrongInput = "<strong>Du har angivit fel kod, försök igen!</strong>";
+var assignmentRightInput = "<h2>Du har angivit rätt kod!</h2> Du kan nu stänga ner denna ruta.";
+
+// Checks if the assignment code valid
 function checkAssignment() {
-    /*var inputattendance = document.getElementById("").value*/
-    var wrongInput = "<strong>Du måste skicka med ett dokument för att lämna ditt arbete!</strong>";
-    var rightInput = "<h2>Tack för din inlämning</h2> <p>Du kommer antigen få feedback från läraren eller så får du ett betyg. Dessa kan du se direkt i tabellen med uppgifter/examinationsmoment.</p><p>Klicka på krysset eller utanför rutan för att stänga eller annars stängs den efter 30 sekunder.</p>";
-    var headerText = document.querySelectorAll(".header");
 
     event.preventDefault();
 
-    if (document.querySelector("#input-assignment").value === "") {
-        document.querySelector(".wrongCodeAssignmnet").innerHTML = wrongInput;
-        return false;
-    } else {   
-            // When the user clicks on <span> (x), close the modal
-            for (let i = 0; i < assignmentButton.length; i++) {       
-                headerText[i].onclick = function() {
-                    headerText[i].innerHTML = "";
-                    headerText[i].innerHTML = rightInput;
-                    setTimeout("pageSwap()",30000);
-                }
-            }
+    if (assignmentInput.value === "111") {
+        assignmentHeader.innerHTML = "";
+        assignmentHeader.innerHTML = assignmentRightInput;
         return true;
+
+    } else {
+        assignmentWrongCode.innerHTML = assignmentWrongInput;
+        return false;
     }
-    return false;
 }
 
+assignmentInput.addEventListener("keyup", function (event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        checkassignment();
+    }
+});
 
-
-// Opens modul window to assignment
-// When the user clicks on the button, open the modal
-for (let i = 0; i < assignmentButton.length; i++) {
-    assignmentButton[i].onclick = function() {
+// Opens modal window to assignment
+    // When the user clicks on the button, open the modal
+    assignmentButton.onclick = function () {
         assignmentModal.style.display = "block";
-    }    
-}
+    };
 
-// When the user clicks on <span> (x), close the modal
-for (let i = 0; i < assignmentButton.length; i++) {       
-    assignmentClose[i].onclick = function() {
+    // When the user clicks on <span> (x), close the modal
+    assignmentClose.onclick = function () {
         assignmentModal.style.display = "none";
-    }
-}
+    };
 
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == assignmentModal) {
-        assignmentModal.style.display = "none";
-    }
-}
-
-
-
-
-function pageSwap() {
-    // Close module
-    //modal.style.display = "none";
-
-    // Redirect to page
-    window.location.replace("../html/courses.html");
-}
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target === assignmentModal) {
+            assignmentModal.style.display = "none";
+        }
+    };
