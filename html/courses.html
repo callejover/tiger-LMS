@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="../css/courses.css">
     <!-- dropdown menu css -->
     <link rel="stylesheet" href="../css/quick-evaluation.css">
+
+    <link rel="stylesheet" href="../css/assignmetApproval.css">
     <!-- quick-evaluation styling -->
     <link rel="stylesheet" href="../css/mediaq.css">
-    <!-- media querys -->
-    <link rel="stylesheet" href="../css/news.css">
 
 </head>
 
@@ -37,11 +37,21 @@
         <nav id="nav">
             <div id="nav-button-max-500">MENU</div>
             <ul class="hidden-max-500">
-                <li><a href="../index.html">logotypeFuture</a></li>
-                <li><a class="current" href="courses.html">Kurser</a></li>
-                <li><a href="news.html">Nyheter</a></li>
-                <li><a id="attendanceButton">Närvaro</a></li>
-                <li><a href="../index.html">Log out</a></li>
+                <li>
+                    <a href="../index.html">logotypeFuture</a>
+                </li>
+                <li>
+                    <a class="current" href="courses.html">Kurser</a>
+                </li>
+                <li>
+                    <a href="news.html">Nyheter</a>
+                </li>
+                <li>
+                    <a id="attendanceButton">Närvaro</a>
+                </li>
+                <li>
+                    <a href="../index.html">Log out</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -52,22 +62,49 @@
     <div id="attendanceModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-        <!-- Closing X icon in modal -->
+            <!-- Closing X icon in modal -->
             <div class="header">
                 <h2>Närvaro</h2>
                 <form name="input-attendance">
                     <div class="attendance">
                         <p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
                         <p>Koden är endast giltlig i 5 minuter!</p>
-                        <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
-                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button><br>
-                        <span class="wrongCode"></span>          
+                        <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance">
+                        <br>
+                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button>
+                        <br>
+                        <span class="wrongCode"></span>
                     </div>
                 </form>
             </div>
         </div>
     </div>
     <!-- div attendanceModal opens the login box on index screen -->
+
+
+    <!-- Hidden before clicking loginButton -->
+
+    <div id="assignmentModal" class="modal">
+        <div class="modal-content">
+            <span class="assignmentClose">&times;</span>
+            <!-- Closing X icon in modal -->
+            <div class="header headerAssignment">
+                <h2>Inlämning</h2>
+                <form name="input-assignment">
+                    <p>Lämna in din uppgift genom att ladda upp dokumentet nedan.</p>
+                    <p>OBS! Endast Word dokument!</p>
+                        <input type="file" accept=".doc,.docx" id="input-assignment">
+                        <br>
+                        <button type="submit" onclick="checkAssignment()">Lämna in</button>
+                        <br>
+                        <span class="wrongCodeAssignmnet"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- div assignmentModal opens the login box on index screen -->
+
+    
 
     <div class="wrap">
         <div class="content content-pricing">
@@ -82,7 +119,9 @@
                     <div class="tab-group">
                         <div class="tab">
                             <input id="tab-one" type="checkbox" name="tab">
-                            <label for="tab-one" class="tabPadding">HTML och CSS<span>Betyg: VG</span></label>
+                            <label for="tab-one" class="tabPadding">HTML och CSS
+                                <span>Betyg: VG</span>
+                            </label>
                             <div class="tab-content">
                                 <div class="infoTab">
                                     <p>
@@ -93,18 +132,74 @@
                                     </p>
                                 </div>
                                 <div class="assignments">
-                                    <ul class="pricing-list">
-                                        <li class="yes">Uppgift 1 Betyg: VG</li>
-                                        <li class="yes">Uppgift 2 Betyg: VG</li>
-                                        <li class="yes">Uppgift 3 Betyg: VG</li>
-                                        <li class="yes">Uppgift 4 Betyg: VG</li>
-                                        <li class="yes">Uppgift 5 Betyg: VG</li>
-                                        <li class="yes">Uppgift 6 betyg: VG</li>
-                                        <li class="yes ex">Examinationsmoment 1 Betyg: VG</li>
-                                        <li class="yes ex">Examinationsmoment 2 Betyg: VG</li>
-                                        <li class="yes ex">Examinationsmoment 3 Betyg: VG</li>
-                                        <li class="yes ex">Examinationsmoment 4 Betyg: VG</li>
-                                    </ul>
+                                    
+                                    <table class="studentAssignmentTable">
+                                        <tr>
+                                            <th><strong>Uppgifter</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 1</th>
+                                            <th>G</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 2</th>
+                                            <th>VG</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 3</th>
+                                            <th>VG</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 4</th>
+                                            <th>VG</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 5</th>
+                                            <th>VG</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 6</th>
+                                            <th>VG</th>
+                                            <th></th>
+                                        </tr>
+                                    </table>
+
+                                    
+                                    <table class="studentAssignmentTable">
+                                        <tr>
+                                            <th><strong>Examinationsmoment</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Examinationsmoment 1</th>
+                                            <th>VG</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Examinationsmoment 2</th>
+                                            <th>VG</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Examinationsmoment 3</th>
+                                            <th>G</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Examinationsmoment 4</th>
+                                            <th>VG</th>
+                                            <th></th>
+                                        </tr>
+                                    </table>
+
                                 </div>
                                 <!--<img src="../media/img/1.jpg" width="auto" height="100">-->
                             </div>
@@ -120,7 +215,9 @@
                     <div class="tab-group">
                         <div class="tab">
                             <input id="tab-two" type="checkbox" name="tab">
-                            <label for="tab-two" class="tabPadding">Javascript<span>Pågående</span></label>
+                            <label for="tab-two" class="tabPadding">Javascript
+                                <span>Pågående</span>
+                            </label>
                             <div class="tab-content">
                                 <div class="infoTab">
                                     <p>
@@ -135,19 +232,97 @@
                                 </div>
                                 <!--infoTab-->
                                 <div class="assignments">
-                                    <ul class="pricing-list">
-                                        <li class="yes">Uppgift 1 Betyg: IG</li>
-                                        <li class="yes">Uppgift 2 Betyg: G</li>
-                                        <li class="no">Uppgift 3</li>
-                                        <li class="no">Uppgift 4</li>
-                                        <li class="no">Uppgift 5</li>
-                                        <li class="no">Uppgift 6</li>
-                                        <li class="no ex">Examinationsmoment 1</li>
-                                        <li class="no ex">Examinationsmoment 2</li>
-                                        <li class="no ex">Examinationsmoment 3</li>
-                                        <li class="no ex">Examinationsmoment 4</li>
-                                    </ul>
+                                    
+                                    <table class="studentAssignmentTable">
+                                        <tr>
+                                            <th><strong>Uppgifter</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 1</th>
+                                            <th>VG</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 2</th>
+                                            <th>VG</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 3</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 4</th>
+                                            <th>Väntar</th>
+                                            <th>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 5</th>
+                                            <th>Granska</th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in på nytt</a>
+                                            </th>
+                                        </tr>
+                                        
+                                        <tr class="feedbackText">
+                                            <th colspan="3"><strong>Feedback:</strong><p>Cupidatat esse voluptate qui velit do ad proident id. Est voluptate exercitation irure ea. Voluptate exercitation veniam et qui amet pariatur dolor.</p>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 6</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+
+                                    
+                                    <table class="studentAssignmentTable">
+                                        <tr>
+                                            <th><strong>Examinationsmoment</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 1</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 2</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 3</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 4</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                    </table>
                                 </div>
+
+
+
                             </div>
                             <!--tab-content-->
                         </div>
@@ -159,7 +334,9 @@
                     <div class="tab-group">
                         <div class="tab">
                             <input id="tab-three" type="checkbox" name="tab">
-                            <label for="tab-three" class="tabPadding">Arbetsmetodik<span>Pågående</span></label>
+                            <label for="tab-three" class="tabPadding">Arbetsmetodik
+                                <span>Pågående</span>
+                            </label>
                             <div class="tab-content">
                                 <div class="infoTab">
                                     <p>
@@ -173,18 +350,86 @@
                                 </div>
                                 <!--infoTab-->
                                 <div class="assignments">
-                                    <ul class="pricing-list">
-                                        <li class="yes">Uppgift 1 Betyg: IG</li>
-                                        <li class="yes">Uppgift 2 Betyg: G</li>
-                                        <li class="no">Uppgift 3</li>
-                                        <li class="no">Uppgift 4</li>
-                                        <li class="no">Uppgift 5</li>
-                                        <li class="no">Uppgift 6</li>
-                                        <li class="no ex">Examinationsmoment 1</li>
-                                        <li class="no ex">Examinationsmoment 2</li>
-                                        <li class="no ex">Examinationsmoment 3</li>
-                                        <li class="no ex">Examinationsmoment 4</li>
-                                    </ul>
+                                    
+                                    <table class="studentAssignmentTable">
+                                        <tr>
+                                            <th><strong>Uppgifter</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 1</th>
+                                            <th>VG</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 2</th>
+                                            <th>G</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 3</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 4</th>
+                                            <th>G</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 5</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 6</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+
+                                    
+                                    <table class="studentAssignmentTable">
+                                        <tr>
+                                            <th><strong>Examinationsmoment</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 1</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 2</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/yes_tick.png" height="16" width="16" alt=""> Examinationsmoment 3</th>
+                                            <th>VG</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 4</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+
                                 </div>
                                 <!--assignments-->
                             </div>
@@ -199,7 +444,9 @@
                     <div class="tab-group">
                         <div class="tab">
                             <input id="tab-four" type="checkbox" name="tab">
-                            <label for="tab-four" class="tabPadding">Back-end utveckling<span>Kommande</span></label>
+                            <label for="tab-four" class="tabPadding">Back-end utveckling
+                                <span>Kommande</span>
+                            </label>
                             <div class="tab-content">
                                 <div class="infoTab">
                                     <p>
@@ -212,18 +459,89 @@
                                 </div>
                                 <!--infoTab-->
                                 <div class="assignments">
-                                    <ul class="pricing-list">
-                                        <li class="no">Uppgift 1</li>
-                                        <li class="no">Uppgift 2</li>
-                                        <li class="no">Uppgift 3</li>
-                                        <li class="no">Uppgift 4</li>
-                                        <li class="no">Uppgift 5</li>
-                                        <li class="no">Uppgift 6</li>
-                                        <li class="no ex">Examinationsmoment 1</li>
-                                        <li class="no ex">Examinationsmoment 2</li>
-                                        <li class="no ex">Examinationsmoment 3</li>
-                                        <li class="no ex">Examinationsmoment 4</li>
-                                    </ul>
+                                    
+                                    <table class="studentAssignmentTable">
+                                        <tr>
+                                            <th><strong>Uppgift</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 1</th>
+                                            <th></th>
+                                            <th><a class="assignmentButton button">Lämna in</a></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 2</th>
+                                            <th></th>
+                                            <th><a class="assignmentButton button">Lämna in</a></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 3</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 4</th>
+                                            <th></th>                                            
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 5</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Uppgift 6</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+
+                                    
+                                    <table class="studentAssignmentTable">
+                                        <tr>
+                                            <th><strong>Examinationsmoment</strong></th>
+                                            <th><strong>Betyg</strong></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 1</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 2</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 3</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><img src="../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 4</th>
+                                            <th></th>
+                                            <th>
+                                                <a class="assignmentButton button">Lämna in</a>
+                                            </th>
+                                        </tr>
+                                    </table>
                                 </div>
                                 <!--assignments-->
                             </div>
@@ -231,7 +549,7 @@
                         </div>
                         <!--tab-->
                     </div>
-                     
+
                 </section>
 
 
@@ -244,17 +562,23 @@
                     <div id="quick-evaluation">
 
                         <div class="quick-evaluation-inner">
-                            <a href="#" id="glad" onclick="clickItem1()"><img src="../img/quick-evaluation-glad.png" alt="All good" title="All good"></a>
+                            <a href="#" id="glad" onclick="clickItem1()">
+                                <img src="../img/quick-evaluation-glad.png" alt="All good" title="All good">
+                            </a>
                             <span class="glad-message">Härligt, tack!</span>
                         </div>
 
                         <div class="quick-evaluation-inner">
-                            <a href="#" id="between" onclick="clickItem2()"><img src="../img/quick-evaluation-between.png" alt="All good" title="It's ok"></a>
+                            <a href="#" id="between" onclick="clickItem2()">
+                                <img src="../img/quick-evaluation-between.png" alt="All good" title="It's ok">
+                            </a>
                             <span class="between-message">Ok, tack!</span>
                         </div>
 
                         <div class="quick-evaluation-inner">
-                            <a href="#" id="sad" onclick="clickItem3()"><img src="../img/quick-evaluation-sad.png" alt="All good" title="Not good!"></a>
+                            <a href="#" id="sad" onclick="clickItem3()">
+                                <img src="../img/quick-evaluation-sad.png" alt="All good" title="Not good!">
+                            </a>
                             <span class="sad-message">Vad trist, tack!</span>
                         </div>
 
@@ -263,8 +587,12 @@
                     <p class="evaluation-info">Varje vecka så kommer du att ha möjlighet att göra en mer utförlig utvärdering och även på de enskilda
                         kurserna du läser.</p>
                     <ul>
-                        <li><a href="../html/weekly-feedback.html">Vecko-utvärdering</a></li>
-                        <li><a href="../html/course-evaluation.html">Kurs-utvärdering</a></li>
+                        <li>
+                            <a href="../html/weekly-feedback.html">Vecko-utvärdering</a>
+                        </li>
+                        <li>
+                            <a href="../html/course-evaluation.html">Kurs-utvärdering</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -272,12 +600,12 @@
         <!--content-->
     </div>
 
-    
+
     <!--wrap-->
     <script src="../js/quick-evaluation.js"></script>
     <script src="../js/attendance.js"></script>
-    
-    <script src="../js/news.js"></script>
+    <script src="../js/assignment.js"></script>
+
 </body>
 
 </html>
