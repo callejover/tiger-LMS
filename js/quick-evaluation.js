@@ -6,6 +6,7 @@ let itemImg3 = document.querySelector("#sad img");
 
 // Add opacity 50% and removes if current clicked item has opacity
 function clickItem1() {
+    event.preventDefault();
     itemImg2.classList.add("opacity50");
     itemImg3.classList.add("opacity50");
     itemImg1.classList.remove("opacity50");
@@ -13,6 +14,7 @@ function clickItem1() {
 
 // Add opacity 50% and removes if current clicked item has opacity
 function clickItem2() {
+    event.preventDefault();
     itemImg1.classList.add("opacity50");
     itemImg3.classList.add("opacity50");
     itemImg2.classList.remove("opacity50");
@@ -20,6 +22,7 @@ function clickItem2() {
 
 // Add opacity 50% and removes if current clicked item has opacity
 function clickItem3() {
+    event.preventDefault();
     itemImg1.classList.add("opacity50");
     itemImg2.classList.add("opacity50");
     itemImg3.classList.remove("opacity50");
