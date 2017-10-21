@@ -1,10 +1,10 @@
 // For the modal
-var attendanceModal = document.getElementById('attendanceModal'); // Get the modal
-var attendanceButton = document.getElementById("attendanceButton"); // Get the button that opens the modal
-var attendanceClose = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
+var attendanceModal = document.querySelector("#attendanceModal"); // Get the modal
+var attendanceButton = document.querySelector("#attendanceButton"); // Get the button that opens the modal
+var attendanceClose = document.querySelector(".close"); // Get the <span> element that closes the modal
 
 // For the code validaiton
-var attendanceInput = document.getElementById("input-attendance");
+var attendanceInput = document.querySelector("#input-attendance");
 var attendanceHeader = document.querySelector(".header");
 var attendanceWrongCode = document.querySelector(".wrongCode");
 var attendanceWrongInput = "<strong>Du har angivit fel kod, försök igen!</strong>";
@@ -49,4 +49,5 @@ attendanceInput.addEventListener("keyup", function (event) {
         if (event.target === attendanceModal) {
             attendanceModal.style.display = "none";
         }
+        windowCloseAssignmentModal();
     };

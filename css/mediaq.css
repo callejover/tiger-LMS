@@ -154,6 +154,12 @@
   label.tabPadding {
     font-size: 80%;
   }
+    
+  .assignments {
+    align-content: left;
+    padding-left: 0;
+  }
+  
 }
 
 
