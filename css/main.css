@@ -57,13 +57,21 @@ strong {
   font-weight: bold;
 }
 
-
+/* 
 img{
     display: block;
     width: 200px;
     height: auto;
     border-radius: 5%;
     z-index: 500;
+  } */
+
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
 .button,
@@ -151,12 +159,17 @@ a {
   background-color: rgba(255,242,255,0.9);
 }
 
+.hiddenCode{
+  display: none;
+}
+
 .index{
   min-height: calc(100vh - 5em);
 }
 
-.teachContent{
-  width: 100%;
+.teachWrap{
+  align-items: flex-start;
+
 }
 
 .content{
@@ -220,20 +233,29 @@ a {
 
 }
 
-img{
+/* img{
     display: block;
     width: 200px;
     height: auto;
     border-radius: 5%;
     z-index: 500;
-  }
+  } */
 
-.features, .pricing, .textContent {
+.features, .pricing, .textContent, .teachCourses {
   width: 30%;
   padding: 0;
   margin: 2.5% 5% 0 5%;
   text-align: center;
 
+}
+
+.teachCourses{
+  width: 20%;
+  height: 25vh;
+  vertical-align: middle;
+  line-height: 25vh;
+  margin: 1em 1em 1em 1em;
+  overflow: hidden;
 }
 
 .textContent{
@@ -402,6 +424,10 @@ h4 {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: slideIn; /* Fade in the background /*/
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
 }
 
 .modal-content {
@@ -410,16 +436,28 @@ h4 {
   padding: 20px;
   border: 1px solid #888;
   width: 25%; /* Could be more or less, depending on screen size */
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn ;
+  animation-duration: 0.4s;
 }
 
-.close {
+.close,
+.assignmentClose,
+.attendanceClose {
   color: #DBDBDB;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  text-decoration: none;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus,
+.assignmentClose:hover,
+.assignmentClose:focus,
+.attendanceClose:hover,
+.attendanceClose:focus {
   color: #313131;
   text-decoration: none;
   cursor: pointer;
@@ -432,7 +470,6 @@ h4 {
 .modal-content {
   background-color: #3b003f
 }
-
 
 /*==========================================
 This is CSS only for the news.html page
@@ -475,4 +512,28 @@ This is CSS only for the news.html page
 
 .news-content2 {
   flex: 3;
+}
+
+/*==========================================
+Add Animation for modal. Under construcktion for all pages testing on teacher.html
+============================================*/
+
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
 }

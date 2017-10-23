@@ -63,11 +63,7 @@
 	}
 
 
-    .assignments {
-      width:50%;
-      align-content:center;
-      padding-left:5%;
-    }
+    
     .infoTab {
       width:50%;
     }
@@ -114,7 +110,6 @@
 .newsTab h3 {
   flex:1;
   font-size: 1em;
-  text-align: end;
 }
 
 .newsTab p {
