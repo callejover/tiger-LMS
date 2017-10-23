@@ -11,18 +11,17 @@ var objPeople = [
         username: "student",
         password: "student",
         account: "student",
-        refPage: (currentPage === 'index.html') ? '/html/courses.html' : 'courses.html',
-
+        refPage: (currentPage === 'index.html') ? 'html/courses.html' : 'courses.html'
     }, {
         username: "teacher",
         password: "teacher",
         account: "teacher",
-        refPage: (currentPage === 'index.html') ? '/html/teacher.html' : 'teacher.html'
+        refPage: (currentPage === 'index.html') ? 'html/teacher.html' : 'teacher.html'
     }, {
         username: "admin",
         password: "admin",
         account: "admin",
-        refPage: (currentPage === 'index.html') ? '/html/courseeeeeeeeees.html' : 'courses.html'  // Html waiting for page
+        refPage: (currentPage === 'index.html') ? 'html/courseeeeeeeeees.html' : 'courses.html'  // Html waiting for page
     }
 ]
 
@@ -32,7 +31,7 @@ function getInfo() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     var message = "Du har skrivit in fel lösenord!";
-
+  
 
 // Loops accouts and checks for matches
     for(i = 0; i < objPeople.length; i++) {
@@ -94,3 +93,4 @@ document.getElementById("password").addEventListener("keyup", function(event) {
         document.getElementById("password").click(getInfo());
     }
 });
+
