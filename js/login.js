@@ -11,17 +11,18 @@ var objPeople = [
         username: "student",
         password: "student",
         account: "student",
-        refPage: (currentPage === 'index.html') ? 'html/courses.html' : 'courses.html'
+        refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/courses.html' : 'courses.html',
+
     }, {
         username: "teacher",
         password: "teacher",
         account: "teacher",
-        refPage: (currentPage === 'index.html') ? 'html/teacher.html' : 'teacher.html'
+        refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/teacher.html' : 'teacher.html'
     }, {
         username: "admin",
         password: "admin",
         account: "admin",
-        refPage: (currentPage === 'index.html') ? 'html/courseeeeeeeeees.html' : 'courses.html'  // Html waiting for page
+        refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/courseeeeeeeeees.html' : 'courses.html'  // Html waiting for page
     }
 ]
 
