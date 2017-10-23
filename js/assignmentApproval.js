@@ -19,7 +19,7 @@ function gradeApproved() {
     }
 }
 
-// Validation for Feedback on assignment 
+// Validation for Feedback on assignment
 function assignmentFeedback() {
 
     let assignmentFeedbackTextarea = document.querySelector("#assignmentFeedbackTextarea").value;
@@ -27,10 +27,10 @@ function assignmentFeedback() {
     let assignmentFeedbackTextareaMessage = document.querySelector(".assignmentFeedbackTextareaMessage");
 
     if (assignmentFeedbackTextarea == "") {
-        assignmentFeedbackTextareaMessage.innerHTML = "Du måste fylla i rutan ovan för att ge feedback!";
+        assignmentFeedbackTextareaMessage.innerHTML = "Du måste fylla i rutan ovan.";
         return false;
     } else {
-        assignmentFeedbackTextareaMessage.innerHTML = "Tack för din feedback!";
+        assignmentFeedbackTextareaMessage.innerHTML = "Tack: Datan är registrerad";
     }
 
 }
