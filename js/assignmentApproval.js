@@ -1,17 +1,11 @@
-
 // Validation for setting a grade on assignment
 function gradeApproved() {
 
     let gradeSelectList = document.querySelector("#grade").value;
     let assignmentApprovalContent = document.querySelector(".assignmentApprovalContent");
-
-
     let courseList = document.querySelector("#courseList");
     let studentName = document.querySelector("#studentList");
     let assignment = document.querySelector("#assignmentList");
-
-    
-
 
     if (gradeSelectList == "") {
         document.querySelector(".gradeSelectListMessage").innerHTML = "Du måste välja ett betyg!";

@@ -1,97 +1,89 @@
 @charset "UTF-8";
+
 /* Media Query for resizeing */
+
 
 /*====================================
   media querys 1200px or less screen width
 =====================================*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1410px) {
+  .studentAssignmentTable th:nth-child(1) {
+    width: 50%;
+  }
+}
 
-  body{
+
+@media (max-width: 1200px) {
+  body {
     background-size: auto 100%;
   }
-
-
-  .mobileHide{
+  .mobileHide {
     display: none;
   }
-
-  .mobileShow{
+  .mobileShow {
     display: flex;
   }
-
-  .index{ /*companion to wrap but just for index.html*/
-      flex-direction:row;
+  .index {
+    /*companion to wrap but just for index.html*/
+    flex-direction: row;
   }
-
-  .textContent{
+  .textContent {
     order: 2;
     width: 100%;
     margin: 0;
     margin-top: -17.5em;
     top: 0;
   }
-
-  .features{
+  .features {
     order: 0;
     z-index: 12;
   }
-
-  .pricing{
+  .pricing {
     order: 1;
     z-index: 13;
   }
-
   .innerContent,
   .quick-evaluation-content {
-      margin: 5% 0;
-      width: 100%;
-    }
-
-
+    margin: 5% 0;
+    width: 100%;
+  }
   /*pricing.html*/
-
-  .pricing, .features {
+  .pricing,
+  .features {
     width: 50%;
     margin: 2.5% 0;
     min-height: 2.5em;
     height: 5em;
     border: none;
     padding: 0.9em;
-    line-height:normal;
+    line-height: normal;
   }
-
   .pricingContent {
-      margin: 5% 0;
-      width: 100%;
-    }
-
-  .pricingAjust{
+    margin: 5% 0;
+    width: 100%;
+  }
+  .pricingAjust {
     flex-direction: column;
   }
-
   .pricing_pic {
     float: right;
     width: 60%;
     margin-left: 0
   }
-
-.scrollHead{
- display: none;
-}
- /*menu all .html files*/
-
+  .scrollHead {
+    display: none;
+  }
+  /*menu all .html files*/
   #nav ul li {
     width: 50%;
     text-align: center;
   }
-
   #nav ul li:nth-child(1) {
     flex-grow: 0;
     display: block;
     padding: 2em;
   }
-
   .quick-evaluation-wrap {
     position: static;
     width: 100%;
@@ -101,32 +93,29 @@
     justify-content: center;
     text-align: center;
     flex-direction: column
-}
-
-.content-pricing {
-  flex-direction: column
-}
-
-#quick-evaluation {
-  flex-direction: row;
-}
-
-
-.glad-message {
+  }
+  .content-pricing {
+    flex-direction: column
+  }
+  #quick-evaluation {
+    flex-direction: row;
+  }
+  .glad-message {
     top: 70%;
     right: auto;
     left: 70%;
     border-top-right-radius: 1em;
     border-top-left-radius: 0;
+  }
+  .modal-content {
+    width: 50%;
+    margin-top: 12em;
+  }
 }
 
-.modal-content {
-  width: 50%;
-  margin-top: 12em;
 
-}
+/*@media 1200px*/
 
-}/*@media 1200px*/
 
 /*====================================
   media querys 769px or less screen width
@@ -138,11 +127,44 @@
     width: 100%;
     margin-left: 0
   }
+  .tab-content {
+    flex-direction: column;
+  }
+  .assignments,
+  .infoTab {
+    width: 100%;
+  }
+  .studentAssignmentTable th:nth-child(1) {
+    width: auto;
+    word-break: break-word
+  }
+  .studentAssignmentTable {
+    font-size: 90%
+  }
+  
+  .studentAssignmentTable th:nth-child(3) a {
+   display: inline-block
+  }
+  .modal-content {
+    width: 90%;
+  }
+  .innerContent {
+    padding: 0 0.2em
+  }
+  label.tabPadding {
+    font-size: 80%;
+  }
+    
+  .assignments {
+    align-content: left;
+    padding-left: 0;
+  }
+  
 }
+
 
 /*====================================
 	  media querys 500px or less screen width
 	=====================================*/
 
-@media (max-width: 500px) {
-}
+@media (max-width: 500px) {}
