@@ -46,10 +46,24 @@ function checkAttendance() {
         attendanceModal.style.display = "none";
     };
 
+    
+
+// When the user clicks anywhere outside of the modal, close it
+/// Gets called in attendance.js
+function closeModuleTeacher() {
+    var modalDialogTeahcer = document.querySelectorAll(".modalDialog");
+    for (let i = 0; i < modalDialogTeahcer.length; i++) {
+        if (event.target === modalDialogTeahcer[i]) {
+            modalDialogTeahcer[i].style.display = "none";
+        }
+    }
+}
+
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
         if (event.target === attendanceModal) {
             attendanceModal.style.display = "none";
         }
         windowCloseAssignmentModal();
+        closeModuleTeacher();
     };
