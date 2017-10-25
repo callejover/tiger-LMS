@@ -53,10 +53,10 @@ window.classChanged = function classChanged(){
 
 generateStudentList();
 
-var modal = document.getElementById('loginModal');
+var modal = document.getElementById('classModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("loginButton");
+var btn = document.getElementById("classAttendance");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
