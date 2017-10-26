@@ -37,5 +37,5 @@ function assignmentFeedback() {
 
 // Redirects to same page when added grade
 function pageSwap() {
-    window.location.replace("../html/assignmentApproval.html");
+    window.location.replace("../teacher/assignmentApproval.html");
 }

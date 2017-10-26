@@ -11,7 +11,7 @@ function check() {
 	setTimeout("pageSwap()",2000);
 }
 function pageSwap() {
-	window.location.replace("../html/courses.html");
+	window.location.replace("../student/courses.html");
 }
 function checkWeekly() {
 	document.querySelector(".weekly-feedback").innerHTML = "";

@@ -39,9 +39,6 @@
             <a href="courses.html">logotypeFuture</a>
           </li>
           <li>
-            <a id="classAttendance">Klassnärvaro</a>
-          </li>
-          <li>
             <a href="news.html">Nyheter</a>
           </li>
           <li>
@@ -62,16 +59,14 @@
 
 
 
-  <div id="classModal" class="modal">
+  <!-- Hidden before clicking logiout -->
+  <div id="attendanceModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <!-- Closing X icon in modal -->
       <div class="header">
-        <form name="login">
-          <!-- Form for user input -->
-          <div class="login">
-
-            <select id="ClassSelect" onchange="classChanged()">
+        <h2>Närvarolista</h2>
+          <select id="ClassSelect" onchange="classChanged()">
               <option value="A">Klass 1</option>
               <option value="B">Klass 2</option>
               <option value="C">Klass 3</option>
@@ -82,20 +77,8 @@
               <tbody class="StudentListBody">
               </tbody>
             </table>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- Opens class attendance on the screen -->
 
-  <!-- Hidden before clicking logiout -->
-  <div id="attendanceModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <!-- Closing X icon in modal -->
-      <div class="header">
-        <h1>Närvarokod</h1>
+        <h2>Närvarokod</h2>
         <form name="input-attendance-teacher">
           <div class="attendance">
             <h1>Välj den klass du vill skapa en kod till.
@@ -117,6 +100,7 @@
           </div>
           <!--attendance-->
         </form>
+        
       </div>
       <!--header-->
     </div>
@@ -221,13 +205,12 @@
   <script>
     w3.includeHTML();
   </script>
-  <!--<script src="../js/linkHtml.js"></script>-->
-  <script src="../js/attendance.js"></script>
-  <script src="../js/teacher-attendance.js"></script>
-  <script src="../js/assignmentApproval.js"></script>
-  <script src="../js/assignment.js"></script>
-  <script src="../js/teacher.js"></script>
-  <script src="../js/attendanceOverview.js"></script>
+  
+  <script src="../../js/windowOnClickFunction.js"></script>
+  <script src="../../js/attendance.js"></script>
+  <script src="../../js/teacherAttendanceCode.js"></script>
+  <script src="../../js/teacherAssignmentApproval.js"></script>
+  <script src="../../js/teacherAttendanceOverview.js"></script>
 
 
 </body>

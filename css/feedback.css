@@ -20,6 +20,7 @@
 input[type="text"] { /* namebox-sizing */
     width: 25em;
     margin: 0 0 2em 0;
+    width: 100%;
 }
 
 .send-button { /* button-styling */
