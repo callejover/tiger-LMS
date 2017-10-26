@@ -53,7 +53,7 @@ function checkAttendance() {
 // function closeModuleTeacher() {
 //     var modalDialogTeahcer = document.querySelectorAll(".modalDialog");
 //     for (let i = 0; i < modalDialogTeahcer.length; i++) {
-//         if (event.target === modalDialogTeahcer[i]) {
+//         if (event.target === modalDialogTeahcer[ i]) {
 //             modalDialogTeahcer[i].style.display = "none";
 //         }
 //     }
