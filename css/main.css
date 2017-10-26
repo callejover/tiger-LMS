@@ -541,3 +541,58 @@ Add Animation for modal. Under construcktion for all pages testing on teacher.ht
     from {opacity: 0}
     to {opacity: 1}
 }
+
+
+ul.pricing-list {
+   list-style-position: inside;
+   margin: 1em;
+   margin-bottom: 4em;
+   flex-grow: 1;
+}
+
+ul.pricing-list li {
+    font-size: 1em;
+    margin: .8em 0;
+}
+
+ul.pricing-list li.yes {
+    list-style-image: url(../img/yes_tick.png);
+}
+
+ul.pricing-list li.no {
+    list-style-image: url(../img/no_tick.png);
+}
+
+.pricingContent button {
+    width: calc(100% - 2em);
+    margin: 0 1em;
+    font-size: 1.5em;
+    padding: .5em;
+    cursor: pointer;
+    background: rgba(145,0,156,1);
+    border-color: rgba(145,0,156,1);
+    border: 1px solid rgba(145,0,156,1);
+    color: #fff;
+    transition: .5s;
+    text-transform: uppercase;
+}
+.pricingContent button:hover {
+    background: none;
+    border-color: #fff;
+    transition: 1s
+}
+
+.pricingContent p {
+    margin: 2em 0;
+}
+
+.pricingContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing_pic {
+    float: right;
+    width: auto;
+    margin-left: 3em
+}
