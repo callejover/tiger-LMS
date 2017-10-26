@@ -19,14 +19,14 @@ function drawChart() {
 
 // Create the data table.
   var data = new google.visualization.DataTable();
-  data.addColumn('string', 'Veckan');
+  data.addColumn('string', 'Dag');
   data.addColumn('number', 'Hur upplever du dagen?');
   data.addRows([
-  ['Veckan 39', 2,],
-  ['Veckan 40', 1],
-  ['Veckan 41', 3],
-  ['Veckan 42', 2],
-  ['Veckan 43', 3],
+  ['Måndag', 2,],
+  ['Tisdag', 1],
+  ['Onsdag', 3],
+  ['Torsdag', 2],
+  ['Fredag', 3],
   ]);
         
 
