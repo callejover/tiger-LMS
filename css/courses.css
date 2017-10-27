@@ -98,6 +98,7 @@
 
 .newsTab {
   display:flex;
+  flex-direction: column-reverse;
   padding: 20px 0 20px 0;
   border-bottom: 1px solid #ffffff;
 }
@@ -110,6 +111,10 @@
 .newsTab h3 {
   flex:1;
   font-size: 1em;
+}
+
+.newsTab h4 {
+  font-size: 0.8em;
 }
 
 .newsTab p {
