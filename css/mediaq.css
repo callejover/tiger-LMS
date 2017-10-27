@@ -159,6 +159,10 @@
     align-content: left;
     padding-left: 0;
   }
+
+  .teachCourses {
+    width: 90%;
+  }
   
 }
 

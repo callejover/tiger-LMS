@@ -45,6 +45,7 @@ textarea { /* textarea-sizing */
     height: 4em;
     width: 30em;
     margin: 1em 0 2em 0;
+    width: 100%
 }
 
 .required {
@@ -66,11 +67,6 @@ label:hover {
   
 .p-left {
     float: left;
-    width: 5em;
-}
-
-.course-evaluation textarea {
-    width: 100%
 }
 
 .mandatory {
