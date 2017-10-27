@@ -72,7 +72,7 @@ span.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+function closeAttendanceOverview() {
     if (event.target == modal) {
         modal.style.display = "none";
     }
