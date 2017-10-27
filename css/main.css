@@ -179,11 +179,11 @@ a {
  flex-direction: row;
  justify-content: center;
  width: 100%;
- background-color: rgba(255,242,255,0.9);
+ background-color: rgba(255,242,255,0.5);
 }
 
 .content.dark{
-  background-color: rgba(255,231,255,0.9);
+  background-color: rgba(255,231,255,0.5);
 
 }
 
