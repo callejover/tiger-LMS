@@ -514,6 +514,9 @@ This is CSS only for the news.html page
   font-size: 1em;
 }
 
+.newsHead {
+  font-size: 1.5em;
+}
 /*==========================================
 Add Animation for modal. Under construcktion for all pages testing on teacher.html
 ============================================*/
