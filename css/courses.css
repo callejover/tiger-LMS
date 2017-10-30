@@ -98,9 +98,10 @@ ul.pricing-list li.no {
 }
 
 .newsTab {
-    display: flex;
-    padding: 20px 0 20px 0;
-    border-bottom: 1px solid #ffffff;
+  display:flex;
+  flex-direction: column-reverse;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #ffffff;
 }
 
 .newsTab h2 {
@@ -111,6 +112,10 @@ ul.pricing-list li.no {
 .newsTab h3 {
     flex: 1;
     font-size: 1em;
+}
+
+.newsTab h4 {
+  font-size: 0.8em;
 }
 
 .newsTab p {

@@ -509,22 +509,22 @@ This is CSS only for the news.html page
   border-bottom: 1px solid #ffffff;
 }
 
-.newsTab h3{
-  font-size: 1.2em;
-}
-
-.newsTab h4{
-  font-size: 1em;
-}
-
 .newsDate {
+  padding-left: 1em; 
   flex: 1;
+  font-size: 0.8em;
 }
 
 .news-content2 {
+  background-color: rgba(128, 19, 136, 0.35);
+  padding: 1em;
   flex: 3;
+  font-size: 1em;
 }
 
+.newsHead {
+  font-size: 1.5em;
+}
 /*==========================================
 Add Animation for modal. Under construcktion for all pages testing on teacher.html
 ============================================*/
