@@ -7,8 +7,8 @@ google.charts.load('current', {'packages':['corechart']});
 // Set a callback to run when the Google Visualization API is loaded.
 google.charts.setOnLoadCallback(drawChart);
 google.charts.setOnLoadCallback(chart2);
-google.charts.setOnLoadCallback(chart3);
-google.charts.setOnLoadCallback(chart4);
+/* google.charts.setOnLoadCallback(chart3);
+google.charts.setOnLoadCallback(chart4); */
 google.charts.setOnLoadCallback(chart5);
 google.charts.setOnLoadCallback(chart6);
 google.charts.setOnLoadCallback(chart7);
@@ -19,17 +19,19 @@ function drawChart() {
 
 // Create the data table.
   var data = new google.visualization.DataTable();
-  data.addColumn('string', 'Betyg');
-  data.addColumn('number', 'Antal svar');
+  data.addColumn('string', 'Dag');
+  data.addColumn('number', 'Hur upplever du dagen?');
   data.addRows([
-  ['Väldigt nöjd', 10],
-  ['Nöjd', 15],
-  ['Inte nöjd', 5],
+  ['Måndag', 2,],
+  ['Tisdag', 1],
+  ['Onsdag', 3],
+  ['Torsdag', 2],
+  ['Fredag', 3],
   ]);
         
 
   // Set chart options
-  var options = {'title':'Hur upplever du dagen?',
+  var options = {'title':'',
                 colors: ['#DD46E8'],
                 backgroundColor: { fill:'transparent' },
                 legendTextStyle: { color: '#FFF' },
@@ -40,11 +42,12 @@ function drawChart() {
                 vAxis: {
                 textStyle:{color: '#FFF'}, baseline: {color: '#FFF'}
                 },
-                'width':500,
+                /* curveType: 'function', */
+                'width':800,
                 'height':300};
 
   // Instantiate and draw our chart, passing in some options.
-  var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+  var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
   chart.draw(data, options);
 }
 
@@ -52,22 +55,22 @@ function chart2() {
         
   // Create the data table.
   var data = new google.visualization.DataTable();
-  data.addColumn('string', 'Betyg');
-  data.addColumn('number', 'Antal svar');
+  data.addColumn('string', 'Veckan');
+  data.addColumn('number', 'Hur upplever du just nu tempot i utbildningen?');
+  data.addColumn('number', 'Hur engagerad anser du själv att du är i dina studier?');
+  data.addColumn('number', 'Hur upplever du stämningen i klassen?');
   data.addRows([
-  ['1', 1],
-  ['2', 1],
-  ['3', 5],
-  ['4', 10],
-  ['5', 8],
-  ['6', 4],
-  ['7', 1],
+  ['Veckan 39', 5.5, 4.5, 5],
+  ['Veckan 40', 4.5, 5, 5.5],
+  ['Veckan 41', 5, 5, 6],
+  ['Veckan 42', 6, 5.5, 6],
+  ['Veckan 43', 5.7, 5.3, 6.5],
   ]);
                 
         
   // Set chart options
-  var options = {'title':'Hur upplever du just nu tempot i utbildningen?',
-                colors: ['#DD46E8'],
+  var options = {'title':'Veckans Utvärdering',
+                colors: ['#DD46E8', 'pink', 'plum'],
                 backgroundColor: { fill:'transparent' },
                 legendTextStyle: { color: '#FFF' },
                 titleTextStyle: { color: '#FFF', fontSize: '18' },
@@ -77,11 +80,12 @@ function chart2() {
                 vAxis: {
                 textStyle:{color: '#FFF'}, baseline: {color: '#FFF'}
                 },
-                'width':800,
-                'height':300};
+                /* curveType: 'function',  */
+                'width':900,
+                'height':500};
         
   // Instantiate and draw our chart, passing in some options.
-  var chart = new google.visualization.ColumnChart(document.getElementById('chart2'));
+  var chart = new google.visualization.LineChart(document.getElementById('chart2'));
   chart.draw(data, options);
 }
 

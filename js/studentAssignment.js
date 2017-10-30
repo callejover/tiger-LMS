@@ -55,5 +55,5 @@ function windowCloseAssignmentModal() {
 
 // Redirects to same page when added grade
 function pageSwap() {
-    window.location.replace("../html/courses.html");
+    window.location.replace("../student/courses.html");
 }

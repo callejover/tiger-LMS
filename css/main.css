@@ -74,6 +74,10 @@ img{
     text-decoration: none;
   }
 
+input[type="text"], input[type="password"] {
+  max-width: 100%;
+}
+
 .button,
 textarea,
 input[type=submit],
@@ -179,11 +183,11 @@ a {
  flex-direction: row;
  justify-content: center;
  width: 100%;
- background-color: rgba(255,242,255,0.9);
+ background-color: rgba(255,242,255,0.5);
 }
 
 .content.dark{
-  background-color: rgba(255,231,255,0.9);
+  background-color: rgba(255,231,255,0.5);
 
 }
 
@@ -325,6 +329,10 @@ h4 {
   padding: inherit;
 }
 
+.clickAssignment {
+
+}
+
 .par, .teachContent{
   width: 100%;
   min-width: 100%;
@@ -363,7 +371,6 @@ h4 {
   #nav ul li {
       height: 5em;
       line-height: 5em;
-      width: 10%;
       text-align: center;
       letter-spacing: 1px;
       font-size: 1em;
@@ -502,22 +509,22 @@ This is CSS only for the news.html page
   border-bottom: 1px solid #ffffff;
 }
 
-.newsTab h3{
-  font-size: 1.2em;
-}
-
-.newsTab h4{
-  font-size: 1em;
-}
-
 .newsDate {
+  padding-left: 1em;
   flex: 1;
+  font-size: 0.8em;
 }
 
 .news-content2 {
+  background-color: rgba(128, 19, 136, 0.35);
+  padding: 1em;
   flex: 3;
+  font-size: 1em;
 }
 
+.newsHead {
+  font-size: 1.5em;
+}
 /*==========================================
 Add Animation for modal. Under construcktion for all pages testing on teacher.html
 ============================================*/
@@ -540,4 +547,59 @@ Add Animation for modal. Under construcktion for all pages testing on teacher.ht
 @keyframes fadeIn {
     from {opacity: 0}
     to {opacity: 1}
+}
+
+
+ul.pricing-list {
+   list-style-position: inside;
+   margin: 1em;
+   margin-bottom: 4em;
+   flex-grow: 1;
+}
+
+ul.pricing-list li {
+    font-size: 1em;
+    margin: .8em 0;
+}
+
+ul.pricing-list li.yes {
+    list-style-image: url(../img/yes_tick.png);
+}
+
+ul.pricing-list li.no {
+    list-style-image: url(../img/no_tick.png);
+}
+
+.pricingContent button {
+    width: calc(100% - 2em);
+    margin: 0 1em;
+    font-size: 1.5em;
+    padding: .5em;
+    cursor: pointer;
+    background: rgba(145,0,156,1);
+    border-color: rgba(145,0,156,1);
+    border: 1px solid rgba(145,0,156,1);
+    color: #fff;
+    transition: .5s;
+    text-transform: uppercase;
+}
+.pricingContent button:hover {
+    background: none;
+    border-color: #fff;
+    transition: 1s
+}
+
+.pricingContent p {
+    margin: 2em 0;
+}
+
+.pricingContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing_pic {
+    float: right;
+    width: auto;
+    margin-left: 3em
 }

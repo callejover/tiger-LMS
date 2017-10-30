@@ -20,6 +20,7 @@
 input[type="text"] { /* namebox-sizing */
     width: 25em;
     margin: 0 0 2em 0;
+    width: 100%;
 }
 
 .send-button { /* button-styling */
@@ -44,6 +45,7 @@ textarea { /* textarea-sizing */
     height: 4em;
     width: 30em;
     margin: 1em 0 2em 0;
+    width: 100%
 }
 
 .required {
@@ -65,5 +67,37 @@ label:hover {
   
 .p-left {
     float: left;
-    width: 5em;
 }
+
+.mandatory {
+    position: relative;
+}
+
+.mandatory::after {
+    content: "*";
+    position: absolute;
+    color: #ff0000;
+    padding: .2em
+}
+
+.color-red {
+    color: #ff0000
+}
+
+.course-contains {
+    line-height: 250%;
+    margin-bottom: 1.5em;
+}
+
+#back {
+    font-size: 1em;
+    text-align: end;
+    margin-bottom: 0;
+}
+
+.thanks {
+	height:95%;
+	z-index:1002;
+}
+
+

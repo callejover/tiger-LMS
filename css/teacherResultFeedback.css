@@ -1,0 +1,56 @@
+
+#chart_div {
+    justify-content: center;
+    margin: 2em 0 0 1em;
+
+}
+
+.result-text {
+    margin: 0 0 1em 7em;
+}
+
+.result-text li {
+    font-size: 1em;
+    
+}
+
+.result-text p {
+    font-size: 1em;
+}
+
+.result-text2 h5, .result-text h5 {
+    font-weight: bold;
+    margin-top: 1.5em;
+}
+
+.chart-5 h5, .chart-6 h5, .chart-7 h5, .chart-8 h5 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-left: 6em;
+}
+
+.chart-5 ul, .chart-6 ul, .chart-7 ul, .chart-8 ul {
+    margin-left: 6em;
+}
+
+.result-text3 h5 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-left: 6em;
+}
+
+.result-text3 ul {
+    margin-left: 6em;
+}
+
+.comments {
+    line-height: 1.5em;
+}
+
+.days {
+    line-height: 2em;
+}
+
+/* #chart2 {
+    margin: 0 0;
+} */

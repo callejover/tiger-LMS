@@ -12,7 +12,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 3;
-    
+
 }
 
 .drop-content a:hover {
@@ -34,17 +34,17 @@
 .dropbtn { /* button-styling */
     min-width: 160px;
     /* margin: 1em 0 5em 0; */
-    background-color: #91009C; 
+    background-color: #91009C;
     border: none;
     color: white;
     padding: 1em 1em;
     text-decoration: none;
     display: inline-block;
-    font-size: 0.7em;  
+    font-size: 0.7em;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
-    text-align: center;   
+    text-align: center;
 }
 
 #chart_div {
@@ -59,7 +59,7 @@
 
 .result-text li {
     font-size: 1em;
-    
+
 }
 
 .result-text p {
