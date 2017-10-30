@@ -13,8 +13,9 @@
     <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" href="../../css/mediaq.css">
     <link rel="stylesheet" href="../../css/teacherResultFeedback.css">
+    
+    <link rel="stylesheet" href="../../css/mediaq.css">
 
     <script src="https://code.jquery.com/jquery-1.x-git.min.js"></script>
     <script src="https://www.gstatic.com/charts/loader.js"></script>
@@ -86,13 +87,8 @@
                   <option value="FE16">FE16</option>
                   <option value="FE17">FE17</option>
                 </select>
-                <select id="lesson-code">
-                  <!-- Choose your lesson -->
-                  <option value="Lek1">Lektionstillfälle 1</option>
-                  <option value="Lek2">Lektionstillfälle 2</option>
-                  <option value="Lek3">Lektionstillfälle 3</option>
-                  <option value="Lek4">Lektionstillfälle 4</option>
-                </select>
+                <input id="lesson-day" type="date">
+                <!-- Choose your lesson date -->
                 <button id="code-submit" type="submit" onclick="createCode()">Skapa kod</button>
               </div>
               <!--attendance-->
