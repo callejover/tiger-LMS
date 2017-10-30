@@ -74,8 +74,8 @@ img{
     text-decoration: none;
   }
 
-input[type="text"] {
-  width: 100%;
+input[type="text"], input[type"password"] {
+  max-width: 100%;
 }
 
 .button,
