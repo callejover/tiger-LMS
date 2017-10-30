@@ -1,99 +1,100 @@
-
-    .tab-group{
-      margin: 0 auto;
-      width: 100%;
-      height:auto;
-    }/*.tab_grup*/
-
-    .tab{
-      position: relative;
-      width: 100%;
-      float: left;
-      display: block;
-      height: auto;
-    }/*.tab*/
-
-    .tab input{
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: -999;
-    }
-
-    .tab label{
-      background: rgba(166,79,172,0.5);
-      color: rgb( 255,255,255);
-      display: block;
-      font-weight: bold;
-      line-height: 3;
-      margin-bottom: .5em;
-      transition: letter-spacing .55s;
-    }
-
-    .tab input:checked + label,
-    .tab label:hover {
-      letter-spacing: 1px;
-      background: rgb(221,70,232);
-    }
-
-    .tab-content{
-      height: 0;
-      overflow: hidden;
-      transition: all .35s;
-      display:flex;
-      flex-direction: row;
-      flex-wrap:nowrap;
-      background-color:rgba(98,0,105,0.9);
-      color: rgb( 255,255,255);
-    }
-
-    .tab-content p {
-      margin: 1em 0;
-    }
-
-    .tab input:checked ~ .tab-content {
-      height: auto;
-    } 
+.tab-group {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
 
 
-	label span {
-		display: inline;
-		float: right;
-		padding: 0 1em 0 0;
-	}
+/*.tab_grup*/
+
+.tab {
+    position: relative;
+    width: 100%;
+    float: left;
+    display: block;
+    height: auto;
+}
 
 
-    
-    .infoTab {
-      width:50%;
-    }
+/*.tab*/
 
-    .ex{
-      text-decoration: underline;
-    }
+.tab input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -999;
+}
 
+.tab label {
+    background: rgba(166, 79, 172, 0.5);
+    color: rgb( 255, 255, 255);
+    display: block;
+    font-weight: bold;
+    line-height: 3;
+    margin-bottom: .5em;
+    transition: letter-spacing .55s;
+}
 
-    ul.pricing-list li {
+.tab input:checked+label,
+.tab label:hover {
+    letter-spacing: 1px;
+    background: rgb(221, 70, 232);
+}
+
+.tab-content {
+    height: 0;
+    overflow: hidden;
+    transition: all .35s;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: rgba(98, 0, 105, 0.9);
+    color: rgb( 255, 255, 255);
+}
+
+.tab-content p {
+    margin: 1em 0;
+}
+
+.tab input:checked~.tab-content {
+    height: auto;
+}
+
+label span {
+    display: inline;
+    float: right;
+    padding: 0 1em 0 0;
+}
+
+.infoTab {
+    width: 50%;
+}
+
+.ex {
+    text-decoration: underline;
+}
+
+ul.pricing-list li {
     list-style-type: dotted;
     font-size: 1em;
     margin: .8em 0;
-    }
+}
 
-    ul.pricing-list li.yes {
-        list-style-image: url(../img/yes_tick.png);
-    }
+ul.pricing-list li.yes {
+    list-style-image: url(../img/yes_tick.png);
+}
 
-    ul.pricing-list li.no {
-        list-style-image: url(../img/no_tick.png);
-    }
+ul.pricing-list li.no {
+    list-style-image: url(../img/no_tick.png);
+}
 
 .tabPadding {
-  padding-left:1em;
+    padding-left: 1em;
 }
 
 .news-content {
-  display: flex;
-  flex-direction: column; 
+    display: flex;
+    flex-direction: column;
 }
 
 .newsTab {
@@ -104,13 +105,13 @@
 }
 
 .newsTab h2 {
-  font-size: 1em;
-  flex:1;
+    font-size: 1em;
+    flex: 1;
 }
 
 .newsTab h3 {
-  flex:1;
-  font-size: 1em;
+    flex: 1;
+    font-size: 1em;
 }
 
 .newsTab h4 {
@@ -118,91 +119,87 @@
 }
 
 .newsTab p {
-  flex:3;
-  order: -1;
+    flex: 3;
+    order: -1;
 }
 
 .attendanceTab {
-  height:auto;
-
+    height: auto;
 }
 
-.attendanceContent {
-
-
-}
+.attendanceContent {}
 
 .attendanceMain {
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  width:100%;
-  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .attendanceTab2 {
-  display:flex;
-  flex-direction:column;
-  padding-left:1em;
-  width:33%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 33%;
 }
 
 .attendanceTab3 {
-  display:flex;
-  flex-direction:column;
-  width:33%;
-  padding-left:1em;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding-left: 1em;
 }
 
 .attendanceMain {
-  display:flex;
-  flex-direction:row;
-  width:100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .tab-content2 {
-      max-height: 0;
-      overflow: hidden;
-      transition: all .35s;
-      background-color:rgba(98,0,105,0.9);
-      color: rgb( 255,255,255);
-
-
+    max-height: 0;
+    overflow: hidden;
+    transition: all .35s;
+    background-color: rgba(98, 0, 105, 0.9);
+    color: rgb( 255, 255, 255);
 }
 
+.tab input:checked~.tab-content2 {
+    max-height: 30em;
+}
 
-    .tab input:checked ~ .tab-content2 {
-      max-height: 30em;
-    }
-    .slideAttendance{
-      width:100%;
-      text-align:center;
-      
-    }
+.slideAttendance {
+    width: 100%;
+    text-align: center;
+}
+
 .infoTab2 ul li {
-  font-size:13px;
+    font-size: 13px;
 }
+
 .attendanceSort {
-  width:31%;
-  margin-left:0.5em;
+    width: 31%;
+    margin-left: 0.5em;
 }
+
 .attendanceSort2 {
-width:31%;
-margin-left:1em;
+    width: 31%;
+    margin-left: 1em;
 }
+
 .attendanceSort3 {
-  width:31%;
-  margin-left:1em;
+    width: 31%;
+    margin-left: 1em;
 }
+
 .tab-content2 p {
-  margin: 1em 0;
+    margin: 1em 0;
 }
 
-
-.tab input:checked ~ .tab-content2 {
-  max-height: 30em;
-
+.tab input:checked~.tab-content2 {
+    max-height: 30em;
 }
+
 
 /* Teacher */
 
@@ -214,12 +211,12 @@ margin-left:1em;
 
 #assignmentFeedbackTextarea {
     min-width: 100%;
-}   
+}
 
 .assignmentApprovalContent .studentassignments {
-
     width: 50%;
 }
+
 .assignmentApprovalContent .assignmentDocument {
     width: 50%;
     text-align: right
@@ -232,8 +229,8 @@ margin-left:1em;
     justify-content: space-between
 }
 
-
-.assignmentApprovalContentText { /* Used in JS */
+.assignmentApprovalContentText {
+    /* Used in JS */
     text-align: center;
     display: block;
     width: 100%;
@@ -248,33 +245,35 @@ margin-left:1em;
     text-align: left;
     margin-bottom: 1em;
 }
+
 .studentAssignmentTable tr:nth-child(even) {
     background: rgba(0, 0, 0, .1)
 }
 
-.studentAssignmentTable th:nth-child(1)  {
+.studentAssignmentTable th:nth-child(1) {
     width: 50%;
     padding-left: 1em;
 }
 
-.studentAssignmentTable th:nth-child(2)  {
+.studentAssignmentTable th:nth-child(2) {
     text-align: center
 }
 
-.studentAssignmentTable th:nth-child(3)  {
+.studentAssignmentTable th:nth-child(3) {
     text-align: right;
+    padding-right: 1em;
 }
 
-.studentAssignmentTable th  {
+.studentAssignmentTable th {
     padding: .25em 0;
 }
-a.assignmentButton {
+
+.assignmentButton {
     padding: .25em .5em;
-    line-height: 2em;
 }
 
 .studentAssignmentTable tr.feedbackText {
-    background: rgba(255,242,255,0.9);
+    background: rgba(255, 242, 255, 0.9);
     color: #000;
 }
 
@@ -283,12 +282,13 @@ a.assignmentButton {
     margin: 1em;
     margin-left: 0;
 }
+
 .feedbackText p {
     margin-top: 0;
 }
 
 .assignments {
-    width:50%;
-    align-content:center;
-    padding-left:5%;
-  }
+    width: 50%;
+    align-content: center;
+    padding-left: 5%;
+}
