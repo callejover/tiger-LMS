@@ -41,7 +41,6 @@ body{
   background-repeat:no-repeat;
 	background-attachment: fixed;
   background-size: 100% auto;
-  background-size: ;
 	background-position:center, center;
   font-family: verdana, sans-serif;
   font-size: 0.9em;
@@ -74,7 +73,7 @@ img{
     text-decoration: none;
   }
 
-input[type="text"], input[type"password"] {
+input[type="text"], input[type="password"] {
   max-width: 100%;
 }
 
@@ -82,7 +81,7 @@ input[type="text"], input[type"password"] {
 textarea,
 input[type=submit],
 input,
-input::placeholder,
+input::-webkit-input-placeholder,
 select,
 button {
   background: rgba(255,242,255,0.9);
@@ -112,12 +111,12 @@ select:focus {
   border: 1px solid #D900E8;
 }
 
-input:focus::placeholder{
+input:focus::-webkit-input-placeholder{
   color: #D900E8;
   border: none;
 }
 
-input::placeholder{
+input::-webkit-input-placeholder{
   border: none;
   background: none;
   color: #D900E8;
