@@ -320,13 +320,24 @@ h4 {
   padding: inherit;
 }
 
-.clickAssignment {
-
-}
 
 .par, .teachContent{
   width: 100%;
   min-width: 100%;
+}
+
+.courseName {
+  width: calc(80% + 6em);
+  min-width: 80%;
+  height: 2.5em;
+  vertical-align: text-top;
+  text-align: left;
+  padding-left: 1em;
+  font-weight: bold;
+  text-decoration: underline;
+  top: 0;
+  line-height:2.5em;
+
 }
 
   /*====================================
