@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="../../css/courses.css">
   <link rel="stylesheet" href="../../css/brandingKyh.css">
 
+  <link rel="stylesheet" href="../../css/accounts.css">
+
   <link rel="stylesheet" href="../../css/mediaq.css">
 
   <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> Not needed -->
@@ -52,41 +54,49 @@
     </header>
 
     <div class="wrap">
-        <div class="content">
-            <h1>Skapa konton</h1>
-            <p>Här kan du skapa nya konton till sidan.</p>
-        </div>
-        <div class="inner-content">
-           <div id="username">
-                <h2>Ange kontots användarnamn.</h2>
-                <input type="text" placeholder="Användarnamn">
-           </div>
-           <div id="password">
-               <h2>Ange kontots lösenord.</h2>
-               <input type="text" placeholder="Lösenord">
-           </div>
-           <div id="full-name">
-                <h2>Ange användarens förnamn och efternamn.</h2>
-                <input type="text" placeholder="Förnamn">
-                <input type="text" placeholder="Efternamn">
-           </div>
-           <div id="email">
-               <h2>Ange kontots epostadress.</h2>
-               <input type="text" placeholder="Epostadress">
-           </div>
-           <div id="account-type">
-               <h2>Välj om kontot tillhör en student, lärare eller administratör.</h2>
-               <h3>Student.</h3>
-               <input type="radio">
-               <h3>Lärare.</h3>
-               <input type="radio">
-               <h3>Administratör.</h3>
-               <input type="radio">
-           </div>
-           <div id="submit-button">
-               <button>Skapa användare.</button>
-            </div>
-        </div><!--inner-content-->
+        <div class="account-content">
+            <div class="account-main-content">
+                    <h1>Skapa konton</h1>
+                    <p>Här kan du skapa nya konton till sidan.</p>
+                <div class="account-form">
+                    <div id="username">
+                        <h2>Ange kontots användarnamn.</h2>
+                        <input type="text" placeholder="Användarnamn">
+                    </div>
+                    <div id="password">
+                        <h2>Ange kontots lösenord.</h2>
+                        <input type="text" placeholder="Lösenord">
+                    </div>
+                    <div id="full-name">
+                        <h2>Ange användarens förnamn och efternamn.</h2>
+                        <input type="text" placeholder="Förnamn">
+                        <input type="text" placeholder="Efternamn">
+                    </div>
+                    <div id="email">
+                        <h2>Ange kontots epostadress.</h2>
+                        <input type="text" placeholder="Epostadress">
+                    </div>
+                    <div id="account-type">
+                        <h2>Välj om kontot tillhör en student, lärare eller administratör.</h2>
+                        <div id="student-radio">
+                            <h3>Student.</h3>
+                            <input type="radio">
+                        </div>
+                        <div id="teacher-radio">
+                            <h3>Lärare.</h3>
+                            <input type="radio">
+                        </div>
+                        <div id="admin-radio">
+                            <h3>Administratör.</h3>
+                            <input type="radio">
+                        </div>
+                    </div>
+                </div><!--account-form-->
+                <div id="submit-button">
+                    <button>Skapa användare.</button>
+                </div>
+             </div><!--account-main-content-->
+        </div><!--account-content-->
     </div><!--wrap-->
 
 
