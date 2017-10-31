@@ -23,16 +23,14 @@ function gradeApproved() {
 function assignmentFeedback() {
 
     let assignmentFeedbackTextarea = document.querySelector("#assignmentFeedbackTextarea").value;
-    let assigmentFeedbackTitle = document.querySelector("#assigmentTitle").value;
-    let assignmentHeader = document.querySelector(".headerAssignment");
 
     let assignmentFeedbackTextareaMessage = document.querySelector(".assignmentFeedbackTextareaMessage");
 
-    if ((assignmentFeedbackTextarea == "") || (assigmentFeedbackTitle == "")) {
-        assignmentFeedbackTextareaMessage.innerHTML = "Du måste fylla i båda fälten ovan";
+    if (assignmentFeedbackTextarea == "") {
+        assignmentFeedbackTextareaMessage.innerHTML = "Du måste fylla i rutan ovan";
         return false;
     } else {
-        assignmentHeader.innerHTML = "<h2>Tack: Datan är registrerad</h2>";
+        assignmentFeedbackTextareaMessage.innerHTML = "Feedback har skickats";
     }
 
 }
