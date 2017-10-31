@@ -17,6 +17,7 @@
 
   <link rel="stylesheet" href="../../css/courses.css">
   <link rel="stylesheet" href="../../css/teachInfoCourses.css">
+  <link rel="stylesheet" href="../../css/brandingKyh.css">
 
   <link rel="stylesheet" href="../../css/mediaq.css">
 
@@ -33,7 +34,7 @@
       <div id="nav-button-max-500">MENY</div>
       <ul class="hidden-max-500">
         <li>
-          <a href="courses.html">logotypeFuture</a>
+          <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
         </li>
         <li>
           <a href="news.html">Nyheter</a>
@@ -103,7 +104,7 @@
   <!-- div attendanceModal opens the login box on index screen -->
 
 
-  
+
     <!-- Hidden before clicking loginButton -->
 
     <div id="assignmentModal" class="modal">
@@ -115,23 +116,22 @@
             <div class="assignmentApprovalContent">
                 <label for="assigmentTitle">Uppgift: </label>
                 <input type="text" id="assigmentTitle">
-      
                 <input type="file">
           
                 <div class="assignmentFeedback">
                     <label for="assignmentFeedbackTextarea">Instruktioner:</label>
                     <br>
                     <textarea name="assignmentFeedbackTextarea" id="assignmentFeedbackTextarea" cols="30" rows="10"></textarea>
-          
+
                     <br>
-          
+
                     <div>
                         <button type="button" onclick="assignmentFeedback()">Lägg till uppgift</button>
                         <span class="assignmentFeedbackTextareaMessage"></span>
                     </div>
-          
+
                 </div>
-          
+
             </div>
 
           </div>
