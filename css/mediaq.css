@@ -136,8 +136,7 @@
   }
   .studentAssignmentTable th:nth-child(1) {
     width: auto;
-    /* word-break: keep-all; */
-    word-break: break-word;
+    word-break: keep-all;
   }
   .studentAssignmentTable {
     font-size: 90%;
