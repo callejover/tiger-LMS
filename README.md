@@ -2,7 +2,7 @@
 Team Tigers Learning Management System
 
 # REMEMBER
-1. Check all pages that all functionality is working. If not, take working page and copy it to the non working page and put the important content in for simple fix.
+1. Check all pages that all functionality is working. If not, take working page and copy it to the non working page and put the important content in for simple fix
 
 # Rules:
 1. Always insert a comment at the end tag with the name of the start tag same with {}. example end-div-tag html-comment
@@ -15,7 +15,7 @@ Team Tigers Learning Management System
 2. Name the branches with initials at the end of the name: "branchNameRE"
 3. When done with feature push and merge to github and resolve possible conflicts.
 4. camelCase in JavaScript and CSS/HTML-code
-5. When done for the day, push to github for backup if computer gets broken. 
+5. When done for the day, push to github for backup if computer gets broken.
 6. Commit message structure.
 <br> Exampel: "S1: Adds menu on top of page"
 <br> Syntax: "story name": "what is the code doning?" "note names if has been working more then one person"
