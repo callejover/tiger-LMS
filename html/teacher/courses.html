@@ -70,11 +70,9 @@
         </select>
 
         <table>
-          <tr>
-            <th>Elev</th>
-          </tr>
-            <tbody class="StudentListBody">
-            </tbody>
+          <th>Elev</th>
+          <tbody class="StudentListBody">
+          </tbody>
         </table>
 
         <h2>Närvarokod</h2>
@@ -103,35 +101,31 @@
   <!-- div attendanceModal opens the login box on index screen -->
 
 
-  
-    <!-- Hidden before clicking loginButton -->
 
-    <div id="assignmentModal" class="modal">
-      <div class="modal-content">
-          <span class="assignmentClose">&times;</span>
-          <!-- Closing X icon in modal -->
-          <div class="header headerAssignment">
-            <h3>Lägg till Uppgift</h3>
-            <div class="assignmentApprovalContent">
-                <label for="assigmentTitle">Uppgift: </label>
-                <input type="text" id="assigmentTitle">
-      
-                <input type="file">
-          
-                <div class="assignmentFeedback">
-                    <label for="assignmentFeedbackTextarea">Instruktioner:</label>
-                    <br>
-                    <textarea name="assignmentFeedbackTextarea" id="assignmentFeedbackTextarea" cols="30" rows="10"></textarea>
-          
-                    <br>
-          
-                    <div>
-                        <button type="button" onclick="assignmentFeedback()">Lägg till uppgift</button>
-                        <span class="assignmentFeedbackTextareaMessage"></span>
-                    </div>
-          
-                </div>
-          
+  <!-- Hidden before clicking loginButton -->
+
+  <div id="assignmentModal" class="modal">
+    <div class="modal-content">
+      <span class="assignmentClose">&times;</span>
+      <!-- Closing X icon in modal -->
+      <div class="header headerAssignment">
+        <h3>Lägg till Uppgift</h3>
+        <div class="assignmentApprovalContent">
+          <label for="assigmentTitle">Uppgift: </label>
+          <input type="text" id="assigmentTitle">
+
+          <input type="file" name="" id="">
+
+          <div class="assignmentFeedback">
+            <label for="assignmentFeedbackTextarea">Instruktioner:</label>
+            <br>
+            <textarea name="assignmentFeedbackTextarea" id="assignmentFeedbackTextarea" cols="30" rows="10"></textarea>
+
+            <br>
+
+            <div>
+              <button type="button" onclick="assignmentFeedback()">Lägg till uppgift</button>
+              <span class="assignmentFeedbackTextareaMessage"></span>
             </div>
 
           </div>
@@ -245,7 +239,7 @@
   <script src="../../js/attendance.js"></script>
   <script src="../../js/teacherAssignment.js"></script>
   <script src="../../js/teacherAttendanceCode.js"></script>
-  <script src="../../js/teacherAssignmentAdd.js"></script>
+  <script src="../../js/teacherAssignmentApproval.js"></script>
   <script src="../../js/teacherAttendanceOverview.js"></script>
 
 

@@ -106,67 +106,623 @@
   </div>
   <!-- div attendanceModal opens the login box on index screen -->
 
-  <div class="wrap index teachWrap">
-      <div class="innerContent apperance">
-        
-                <div class="assignmentApprovalContent">
-                    <div class="studentassignments">
 
-                        <label for="studentList">Student: </label>
-                        <select id="studentList">
-                            <option value="Student1">Lilla Fridolf</option>
-                            <option value="Student2">Daniel Doppsko</option>
-                            <option value="Student3">Carl Åkerblom</option>
-                            <option value="Student4">Nicke Lilltroll</option>
-                            <option value="Student5">Emil Wern</option>
-                        </select>
-                        <label for="courseList">Kurs: </label>
-                        <select id="courseList">
-                            <option value="htmlcss">HTML och CSS</option>
-                            <option value="js">JavaScript</option>
-                            <option value="arbmeto">Arbetsmetodik</option>
-                            <option value="backend">Back-end utv.</option>
-                        </select>
-                        <label for="assignmentList">Uppgift: </label>
-                        <select id="assignmentList">
-                            <option value="assignment1">Uppgift 1</option>
-                            <option value="assignment2">Uppgift 2</option>
-                            <option value="assignment3">Uppgift 3</option>
-                            <option value="assignment4">Uppgift 4</option>
-                            <option value="assignment5">Uppgift 5</option>
-                        </select>
-                    </div>
-                    <div class="assignmentDocument">
-                        <a href="../../documents/StudentUppgift.docx" class="button">Öppna dokument</a>
-                    </div>
+  <div class="wrap">
+    <div class="content content-pricing">
+        <div class="innerContent apperance">
+            <h2>Kurser</h2>
+            <p>Som elev kan du se information om kursen och om den är pågående eller avslutad och även vad du har för betyg
+                i de kurser som du redan har avslutat.</p>
+            <br>
 
-                    <div class="assignmentFeedback">
-                        <label for="assignmentFeedbackTextarea">Feedback:</label>
-                        <textarea name="assignmentFeedbackTextarea" id="assignmentFeedbackTextarea" cols="30" rows="10"></textarea>
+            <div class="slide slide-four">
 
-                        <div>
-                            <button type="button" onclick="assignmentFeedback()">Skicka feedback</button>
-                            <span class="assignmentFeedbackTextareaMessage"></span>
+                <div class="tab-group">
+                    <div class="tab">
+                        <input id="tab-one" type="checkbox" name="tab">
+                        <label for="tab-one" class="tabPadding">HTML och CSS
+                            <span>Betyg: VG</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="assignmentsTeacher">
+
+                                <table class="studentAssignmentTable">
+                                    <tr>
+                                        <th>
+                                            <strong>Uppgift 1</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Betyg</strong>
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 1</th>
+                                        <th>G</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 2</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 3</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 4</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 5</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 6</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 7</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 8</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 9</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 10</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                </table>
+
+
+                                <table class="studentAssignmentTable">
+                                    <tr>
+                                        <th>
+                                            <strong>Examinationsmoment 1</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Betyg</strong>
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 1</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 2</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 3</th>
+                                        <th>G</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 4</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 5</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 6</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 7</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 8</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 9</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Elev 10</th>
+                                        <th>VG</th>
+                                        <th>
+                                          <a class="assignmentButton button">Betygsätt</a>
+                                        </th>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <!--<img src="../media/img/1.jpg" width="auto" height="100">-->
                         </div>
-
-                        <div>
-                            <span class="gradeSelectListMessage"></span>
-                            <select name="grade" id="grade">
-                                <option value="">-- Välj betyg</option>
-                                <option value="IG">IG</option>
-                                <option value="G">G</option>
-                                <option value="VG">VG</option>
-                            </select>
-                            <button type="button" onclick="gradeApproved()">Sätt betyg</button>
-                        </div>
-
+                        <!--tab-content-->
                     </div>
-
+                    <!--tab-->
                 </div>
-               
+            </div>
+
+
+            <div class="slide slide-four">
+
+                <div class="tab-group">
+                    <div class="tab">
+                        <input id="tab-two" type="checkbox" name="tab">
+                        <label for="tab-two" class="tabPadding">Javascript
+                            <span>Pågående</span>
+                        </label>
+                        <div class="tab-content">
+                            <!--infoTab-->
+                            <div class="assignmentsTeacher">
+
+                                <table class="studentAssignmentTable">
+                                    <tr>
+                                        <th>
+                                            <strong>Uppgifter</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Betyg</strong>
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 1</th>
+                                        <th>VG</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 2</th>
+                                        <th>VG</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Uppgift 3</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Uppgift 4</th>
+                                        <th>Väntar</th>
+                                        <th>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Uppgift 5</th>
+                                        <th>Granska</th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in på nytt</a>
+                                        </th>
+                                    </tr>
+
+                                    <tr class="feedbackText">
+                                        <th colspan="3">
+                                            <strong>Feedback:</strong>
+                                            <p>Cupidatat esse voluptate qui velit do ad proident id. Est voluptate exercitation
+                                                irure ea. Voluptate exercitation veniam et qui amet pariatur dolor.</p>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Uppgift 6</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                </table>
+
+
+                                <table class="studentAssignmentTable">
+                                    <tr>
+                                        <th>
+                                            <strong>Examinationsmoment</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Betyg</strong>
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 1</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 2</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 3</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 4</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                </table>
+                            </div>
+
+
+
+                        </div>
+                        <!--tab-content-->
+                    </div>
+                    <!--tab-->
+                </div>
+            </div>
+            <div class="slide slide-four">
+
+                <div class="tab-group">
+                    <div class="tab">
+                        <input id="tab-three" type="checkbox" name="tab">
+                        <label for="tab-three" class="tabPadding">Arbetsmetodik
+                            <span>Pågående</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="infoTab">
+                                <p>
+                                    Kursen ger kunskap i modern lättrörlig projektmetodik och praktiska färdigheter inom detta. Andra systemutvecklingsmetoder
+                                    som ex. testdriven utveckling ingår i kursen. Kursen ger exempel på relevanta verktyg
+                                    och arbetsmetoder för en utvecklare. Under kursen lär sig de studerande versionshantering
+                                    och verktyg relevanta för utvecklarrollen.
+                                </p>
+                                <div class="read-more">
+                                    <a href="info/arbetsmetodik.html">Läs mer om kursen här</a>
+                                </div>
+                            </div>
+                            <!--infoTab-->
+                            <div class="assignmentsTeacher">
+
+                                <table class="studentAssignmentTable">
+                                    <tr>
+                                        <th>
+                                            <strong>Uppgifter</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Betyg</strong>
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 1</th>
+                                        <th>VG</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 2</th>
+                                        <th>G</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Uppgift 3</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/yes_tick.png" height="16" width="16" alt=""> Uppgift 4</th>
+                                        <th>G</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Uppgift 5</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Uppgift 6</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                </table>
+
+
+                                <table class="studentAssignmentTable">
+                                    <tr>
+                                        <th>
+                                            <strong>Examinationsmoment</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Betyg</strong>
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 1</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 2</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/yes_tick.png" height="16" width="16" alt=""> Examinationsmoment 3</th>
+                                        <th>VG</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 4</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <!--assignmentsTeacher-->
+                        </div>
+                        <!--tab-content-->
+                    </div>
+                    <!--tab-->
+                </div>
+            </div>
+
+            <div class="slide slide-four">
+
+                <div class="tab-group">
+                    <div class="tab">
+                        <input id="tab-four" type="checkbox" name="tab">
+                        <label for="tab-four" class="tabPadding">Back-end utveckling
+                            <span>Kommande</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="infoTab">
+                                <p>
+                                    Efter avslutad kurs ska de studerande ha kunskap för att utföra sådana arbetsuppgifter inom back-endprogrammering som relaterar
+                                    till front-end-utveckling. De ska även ha fått kunskap i CMS-verktyget Wordpress
+                                    och behärska detta
+                                </p>
+                                <div class="read-more">
+                                    <a href="info/backend.html">Läs mer om kursen här</a>
+                                </div>
+                            </div>
+                            <!--infoTab-->
+                            <div class="assignmentsTeacher">
+
+                                <table class="studentAssignmentTable">
+                                    <tr>
+                                        <th>
+                                            <strong>Uppgift</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Betyg</strong>
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Uppgift 1</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Uppgift 2</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Uppgift 3</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Uppgift 4</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Uppgift 5</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Uppgift 6</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                </table>
+
+
+                                <table class="studentAssignmentTable">
+                                    <tr>
+                                        <th>
+                                            <strong>Examinationsmoment</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Betyg</strong>
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 1</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 2</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 3</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="../../img/no_tick.png" height="16" width="16" alt=""> Examinationsmoment 4</th>
+                                        <th></th>
+                                        <th>
+                                            <a class="assignmentButton button">Lämna in</a>
+                                        </th>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--assignmentsTeacher-->
+                        </div>
+                        <!--tab-content-->
+                    </div>
+                    <!--tab-->
+                </div>
+
+            </div>
+
+
         </div>
-  </div>
-  <!--wrap content found in teacherInfoCourses.html-->
+        <!--innerContent-->
+
+
+
+    </div><!--content-->
+</div><!--wrap-->
 
   <!--v(the file sycked on the next row) Contains the content of the page for simpler oraganization of the site.-->
   <div w3-include-html="../include/teacherInfoCourses.html" = "displayResult()"></div>
