@@ -18,8 +18,8 @@ rgb();
 5. 176,42,9
 
 background:
-1. rgba (252,155,86.0.9)
-2. rgba (204,82,0,0.9)
+1. rgba (252,155,86.0.9) Light
+2. rgba (204,82,0,0.9) Dark
 
 */
 /*====================================
@@ -37,12 +37,29 @@ input,
 input::placeholder,
 select,
 button {
-  background: rgba(252,155,86.0.9);
+  background: rgba(252,155,86,.0.9);
+  color: #E8770C;
+  border: 1px solid #FA9500;
+}
+
+.button:active,
+button:active,
+textarea:focus,
+input:focus,
+select:focus {
+  background: #fff;
+  color: #FA6400;
+  border: 1px solid #FA6400;
+}
+
+input::placeholder, input:focus::placeholder{
+  color: #FA6400;
 }
 
 .button,
 button {
-  background-color: rgb(176,42,9);
+  background-color: rgb(250,100,0);
+  color: #fff;
 }
 
 .wrap{
@@ -115,4 +132,38 @@ Pricing Branding
   background: rgba(232,119,12,1);
   border-color: rgba(232,119,12,1);
   border: 1px solid rgba(232,119,12,1);
+}
+
+
+/*====================================
+courses.css Branding
+=====================================*/
+
+.tab label {
+    background: rgba(250,149,0, 0.5);
+}
+
+.tab input:checked+label,
+.tab label:hover {
+  background: rgb(232,77,12);
+}
+
+.tab-content, .tab-content2 {
+  background-color: rgba(176,42,9, 0.9);
+}
+
+.studentAssignmentTable tr.feedbackText {
+    background: rgba(252,155,86.0.9);
+}
+
+/*====================================
+feedback.css Branding
+=====================================*/
+
+.send-button { /* button-styling */
+    background-color: #E8770C;
+}
+
+.send-button:hover, label:hover {
+    background-color: #E84D0C;
 }
