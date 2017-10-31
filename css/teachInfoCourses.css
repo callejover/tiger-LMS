@@ -28,6 +28,31 @@
 }
 
 
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    background: rgba(98,0,105,1);
+    padding: 1em 0;
+    margin-bottom: 3em
+}
+
+.flexRow .assignmentButton {
+    width: 100%;
+    margin: 0 1em;
+    background: #3b003f;
+    text-align: center;
+    font-size: 120%;
+    padding: 3em 1em;
+}
+
+h3.flexRowTitle {
+    width: 100%;
+    background: #3b003f;
+    margin: 0;
+    padding: .2em;
+    padding-left: .5em;
+}
+
 /* The Modal (background) *
 .modal {
     display: none; /* Hidden by default *
@@ -44,7 +69,7 @@
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
     animation-duration: 0.4s
-}
+}*/
 
 /* Modal Content *
 .modal-content {
@@ -56,7 +81,7 @@
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
     animation-duration: 0.4s
-}
+}*/
 
 /* The Close Button *
 .close {
@@ -64,7 +89,7 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
-}
+}*/
 
 .close:hover,
 .close:focus {

@@ -42,6 +42,7 @@ function swapPage(){
     // When the user clicks on the button, open the modal
     attendanceButton.onclick = function () {
         attendanceModal.style.display = "block";
+        setCurrentDate(); //Global function from teacherAttendanceCode.js
     };
 
     // When the user clicks on <span> (x), close the modal

@@ -22,7 +22,7 @@
 
         <header>
             <nav id="nav">
-                <div id="nav-button-max-500">MENU</div>
+                <div id="nav-button-max-500">MENY</div>
                 <ul class="hidden-max-500">
                     <li>
                         <a href="courses.html">logotypeFuture</a>
@@ -72,7 +72,7 @@
         <div class="wrap">
             <div class="content">
                 <div class="innerContent apperance">
-                    <div class="back-bar"><button id="back" onclick="goBack()"><--Tillbaka</button></div>
+                    <div class="back-bar"><button id="back" onclick="goBack()">&lt;Tillbaka</button></div>
                     <h3>Veckans Utvärdering</h3><p class = "required">(* = Obligatorisk)</p><br><br>
                     <form class="weekly-feedback" name="checkFormData" action="javascript:checkWeekly();" onsubmit="return checkWeekly()">
                         <h4>Hur upplever du just nu tempot i utbildningen?<span style="color:red">*</span></h4>
@@ -144,15 +144,40 @@
                         <h4>Förslag på förbättringar</h4>
                         <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br><br>
                         
-                        <button class = "send-button" type="submit" >Skicka!</button> 
+                        <button class = "send-button" type="submit">Skicka!</button> 
                         <!-- submit button -->
                     </form>
                 </div>
             </div>
-        </div>
+        </div><!--wrap-->    
 
         
-    <!--wrap-->    
+        <div class="quick-evaluation-wrap">
+            <div class="quick-evaluation-content apperance">
+                <h4>Daglig utvärdering</h4>
+                <div id="quick-evaluation">
+    
+                    <div class="quick-evaluation-inner">
+                        <a href="#" id="glad" onclick="clickItem1()"><img src="../../img/quick-evaluation-glad.png" alt="All good" title="All good"></a>
+                        <span class="glad-message">Härligt, tack!</span>
+                    </div>
+    
+                    <div class="quick-evaluation-inner">
+                        <a href="#" id="between" onclick="clickItem2()"><img src="../../img/quick-evaluation-between.png" alt="All good" title="It's ok"></a>
+                        <span class="between-message">Ok, tack!</span>
+                    </div>
+    
+                    <div class="quick-evaluation-inner">
+                        <a href="#" id="sad" onclick="clickItem3()"><img src="../../img/quick-evaluation-sad.png" alt="All good" title="Not good!"></a>
+                        <span class="sad-message">Vad trist, tack!</span>
+                    </div>
+    
+                </div>
+                <p>Berätta för oss hur du upplever dagen genom att klicka på någon av dessa emojis.</p>
+            </div>
+        </div>
+        <!-- quick-evaluation -->
+
     <script src="../../js/windowOnClickFunction.js"></script>
     
     <script src="../../js/studentFeedback.js"></script>

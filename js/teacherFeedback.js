@@ -61,9 +61,9 @@ function chart2() {
   data.addColumn('number', 'Hur upplever du stämningen i klassen?');
   data.addRows([
   ['Veckan 39', 5.5, 4.5, 5],
-  ['Veckan 40', 4.5, 5, 5.5],
-  ['Veckan 41', 5, 5, 6],
-  ['Veckan 42', 6, 5.5, 6],
+  ['Veckan 40', 4.5, 5, 5.3],
+  ['Veckan 41', 5, 5.6, 6.3],
+  ['Veckan 42', 5.7, 5.5, 6],
   ['Veckan 43', 5.7, 5.3, 6.5],
   ]);
                 

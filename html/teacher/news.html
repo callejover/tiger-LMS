@@ -9,18 +9,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Tiger-LMS | Lärare</title>
+  <title>Tiger-LMS | Nyheter</title>
 
   <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
   <link rel="stylesheet" href="../../css/reset.css">
-  <!--Reset css-->
   <link rel="stylesheet" href="../../css/main.css">
-  <!--main styling and funkutionalety-->
-  <link rel="stylesheet" href="../../css/courses.css">
-  <!-- evaluation's results styling-->
-  <link rel="stylesheet" href="../../css/teachInfoCourses.css">
-  <!-- evaluation's results styling-->
 
+  <link rel="stylesheet" href="../../css/courses.css">
+  <link rel="stylesheet" href="../../css/teachInfoCourses.css">
+
+  <link rel="stylesheet" href="../../css/mediaq.css">
 
   <!--<link rel="import" href="teacherInfoCourses.html"> Working on -->
   <script src="https://www.w3schools.com/lib/w3.js"></script>
@@ -33,7 +31,7 @@
 
   <header>
     <nav id="nav">
-        <div id="nav-button-max-500">MENU</div>
+        <div id="nav-button-max-500">MENY</div>
         <ul class="hidden-max-500">
           <li>
             <a href="courses.html">logotypeFuture</a>
@@ -51,7 +49,7 @@
             <a id="attendanceButton">Närvaro</a>
           </li>
           <li>
-            <a href="../../index.html">Log out</a>
+            <a href="../../index.html">Logga ut</a>
           </li>
         </ul>
       </nav>
@@ -73,9 +71,11 @@
             </select>
 
             <table>
-              <th>Elev</th>
-              <tbody class="StudentListBody">
-              </tbody>
+              <tr>
+                <th>Elev</th>
+              </tr>
+                <tbody class="StudentListBody">
+                </tbody>
             </table>
 
         <h2>Närvarokod</h2>
@@ -89,13 +89,8 @@
               <option value="FE16">FE16</option>
               <option value="FE17">FE17</option>
             </select>
-            <select id="lesson-code">
-              <!-- Choose your lesson -->
-              <option value="Lek1">Lektionstillfälle 1</option>
-              <option value="Lek2">Lektionstillfälle 2</option>
-              <option value="Lek3">Lektionstillfälle 3</option>
-              <option value="Lek4">Lektionstillfälle 4</option>
-            </select>
+            <input id="lesson-day" type="date">
+            <!-- Choose your lesson date -->
             <button id="code-submit" type="submit" onclick="createCode()">Skapa kod</button>
           </div>
           <!--attendance-->

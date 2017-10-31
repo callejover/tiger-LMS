@@ -41,7 +41,6 @@ body{
   background-repeat:no-repeat;
 	background-attachment: fixed;
   background-size: 100% auto;
-  background-size: ;
 	background-position:center, center;
   font-family: verdana, sans-serif;
   font-size: 0.9em;
@@ -74,11 +73,15 @@ img{
     text-decoration: none;
   }
 
+input[type="text"], input[type="password"] {
+  max-width: 100%;
+}
+
 .button,
 textarea,
 input[type=submit],
 input,
-input::placeholder,
+input::-webkit-input-placeholder,
 select,
 button {
   background: rgba(255,242,255,0.9);
@@ -108,12 +111,12 @@ select:focus {
   border: 1px solid #D900E8;
 }
 
-input:focus::placeholder{
+input:focus::-webkit-input-placeholder{
   color: #D900E8;
   border: none;
 }
 
-input::placeholder{
+input::-webkit-input-placeholder{
   border: none;
   background: none;
   color: #D900E8;
@@ -179,11 +182,11 @@ a {
  flex-direction: row;
  justify-content: center;
  width: 100%;
- background-color: rgba(255,242,255,0.9);
+ background-color: rgba(255,242,255,0.5);
 }
 
 .content.dark{
-  background-color: rgba(255,231,255,0.9);
+  background-color: rgba(255,231,255,0.5);
 
 }
 
@@ -303,7 +306,7 @@ h4 {
 }
 
 .innerContent {
-  margin: 10%;
+  margin: 5%;
   padding: 2em;
   width: 70%;
 
@@ -323,6 +326,10 @@ h4 {
   width: 100%;
   height: 100%;
   padding: inherit;
+}
+
+.clickAssignment {
+  
 }
 
 .par, .teachContent{
@@ -502,22 +509,22 @@ This is CSS only for the news.html page
   border-bottom: 1px solid #ffffff;
 }
 
-.newsTab h3{
-  font-size: 1.2em;
-}
-
-.newsTab h4{
-  font-size: 1em;
-}
-
 .newsDate {
+  padding-left: 1em; 
   flex: 1;
+  font-size: 0.8em;
 }
 
 .news-content2 {
+  background-color: rgba(128, 19, 136, 0.35);
+  padding: 1em;
   flex: 3;
+  font-size: 1em;
 }
 
+.newsHead {
+  font-size: 1.5em;
+}
 /*==========================================
 Add Animation for modal. Under construcktion for all pages testing on teacher.html
 ============================================*/
