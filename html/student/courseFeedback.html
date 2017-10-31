@@ -79,7 +79,7 @@
     <div class="wrap">
         <div class="content">
             <div class="innerContent apperance">
-                <div class="back-bar"><button id="back" onclick="goBack()"><--Tillbaka</button></div>
+                <div class="back-bar"><button id="back" onclick="goBack()">&lt;Tillbaka</button></div>
                 <h2>Kursutvärdering</h2>
                 <p>Alla fält med en röd stjärna (<span class="color-red">*</span>) är obligatoriska att fylla i.</p>
                 <form class="course-evaluation" name="checkFormData" action="javascript:check();" onsubmit="return check()">
@@ -104,7 +104,7 @@
                     <span class="mandatory">Stämmer väldigt bra</span><br> 
                     </div>
                     <h5>Beskriv i ord:</h5>
-                    <textarea name="haveDone" id="" cols="30" rows="5"></textarea><br><br>
+                    <textarea name="haveDone" cols="30" rows="5"></textarea><br><br>
                    
                     <h4>Hur var kursen?</h4>
                     <div class = "radio">
@@ -126,7 +126,7 @@
                     <span class="mandatory">Bra</span><br> 
                     </div>
                     <h5>Beskriv i ord:</h5>
-                    <textarea name="howCourse" id="" cols="30" rows="5"></textarea><br><br>
+                    <textarea name="howCourse" cols="30" rows="5"></textarea><br><br>
 
                     <h4>Vad tyckte du om läraren?</h4>
                     <div class = "radio">
@@ -148,7 +148,7 @@
                     <span class="mandatory">Bra</span><br>
                     </div>
                     <h5>Beskriv i ord:</h5>
-                    <textarea name= "aboutTeacher" id="" cols="30" rows="5"></textarea><br>
+                    <textarea name= "aboutTeacher" cols="30" rows="5"></textarea><br>
                     <br>
 
                     <h4>Hur var kursen som helhet?</h4>
@@ -171,7 +171,7 @@
                     <span class="mandatory">Bra</span><br> 
                     </div>
                     <h5>Beskriv i ord:</h5>
-                    <textarea name="" id="courseOverhead" cols="30" rows="10"></textarea>
+                    <textarea id="courseOverhead" cols="30" rows="10"></textarea>
                     <br><br>
 
                     <h4>Har kursen innefattat detta?</h4>
@@ -185,7 +185,7 @@
                     <label><input type="checkbox" name="courseContains" value="6">Uppgift 6</label><br>
                     </div> 
                     <h5>Något annat utöver detta?</h5>
-                    <textarea name="" id="courseContains" cols="30" rows="10"></textarea>
+                    <textarea id="courseContains" cols="30" rows="10"></textarea>
                     
                     <button class = "send-button"  type="submit">Skicka!</button>
 
