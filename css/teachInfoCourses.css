@@ -44,7 +44,7 @@
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
     animation-duration: 0.4s
-}
+}*/
 
 /* Modal Content *
 .modal-content {
@@ -56,7 +56,7 @@
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
     animation-duration: 0.4s
-}
+}*/
 
 /* The Close Button *
 .close {
@@ -64,7 +64,7 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
-}
+}*/
 
 .close:hover,
 .close:focus {

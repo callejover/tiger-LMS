@@ -125,7 +125,7 @@
   .pricing_pic {
     float: right;
     width: 100%;
-    margin-left: 0
+    margin-left: 0;
   }
   .tab-content {
     flex-direction: column;
@@ -136,27 +136,28 @@
   }
   .studentAssignmentTable th:nth-child(1) {
     width: auto;
-    word-break: break-word
+    /* word-break: keep-all; */
+    word-break: break-word;
   }
   .studentAssignmentTable {
-    font-size: 90%
+    font-size: 90%;
   }
   
   .studentAssignmentTable th:nth-child(3) a {
-   display: inline-block
+   display: inline-block;
   }
   .modal-content {
     width: 90%;
   }
   .innerContent {
-    padding: 0 0.2em
+    padding: 0 0.2em;
   }
   label.tabPadding {
     font-size: 80%;
   }
     
   .assignments {
-    align-content: left;
+    align-content: flex-start;
     padding-left: 0;
   }
 
