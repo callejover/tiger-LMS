@@ -13,7 +13,7 @@ hex:
 rgb():
 1. 217,0,232
 2. 166,79,172
-3. 145,0,156
+3. 145,0,156 main
 4. 221,70,232
 5. 98,0,105
 
@@ -57,14 +57,15 @@ strong {
   font-weight: bold;
 }
 
-/*
+
 img{
-    display: block;
-    width: 200px;
-    height: auto;
-    border-radius: 5%;
+    display:block;
+    width: auto;
+    height: 5em;
     z-index: 500;
-  } */
+    top: 0;
+    left: 0;
+  }
 
   a {
     color: #fff;
@@ -403,6 +404,7 @@ h4 {
    line-height: normal;
   }
 
+
   #back {
   font-size: 1em;
   float: right;
@@ -433,7 +435,6 @@ h4 {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   -webkit-animation-name: slideIn; /* Fade in the background /*/
   -webkit-animation-duration: 0.4s;
@@ -442,7 +443,7 @@ h4 {
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: #3b003f;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
@@ -476,10 +477,6 @@ h4 {
 
 #loginButton:hover {
   cursor: pointer;
-}
-
-.modal-content {
-  background-color: #3b003f
 }
 
 /*==========================================
@@ -516,7 +513,7 @@ This is CSS only for the news.html page
 }
 
 .news-content2 {
-  background-color: rgba(128, 19, 136, 0.35);
+  background-color: rgba(221,70,232, 0.35);
   padding: 1em;
   flex: 3;
   font-size: 1em;

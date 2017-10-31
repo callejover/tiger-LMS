@@ -13,10 +13,11 @@
     <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/main.css">
-    
+
     <link rel="stylesheet" href="../../css/feedback.css">
     <link rel="stylesheet" href="../../css/dailyFeedback.css">
-    
+    <link rel="stylesheet" href="../../css/brandingKyh.css">
+
     <link rel="stylesheet" href="../../css/mediaq.css">
 
 </head>
@@ -26,13 +27,13 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  
+
     <header>
         <nav id="nav">
             <div id="nav-button-max-500">MENU</div>
             <ul class="hidden-max-500">
                 <li>
-                    <a href="courses.html">logotypeFuture</a>
+                    <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
                 </li>
                 <li>
                     <a href="news.html">Nyheter</a>
@@ -68,7 +69,7 @@
                         <p>Koden är endast giltlig i 5 minuter!</p>
                         <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
                         <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button><br>
-                        <span class="wrongCode"></span>          
+                        <span class="wrongCode"></span>
                     </div>
                 </form>
             </div>
@@ -100,30 +101,30 @@
                     <label for="haveDone6">6<br/>
                         <input type="radio" id = "haveDone6" name="haveDone" value="6" required></label>
                     <label for="haveDone7">7<br/>
-                        <input type="radio" id = "haveDone7" name="haveDone" value="7" required></label>                   
-                    <span class="mandatory">Stämmer väldigt bra</span><br> 
+                        <input type="radio" id = "haveDone7" name="haveDone" value="7" required></label>
+                    <span class="mandatory">Stämmer väldigt bra</span><br>
                     </div>
                     <h5>Beskriv i ord:</h5>
                     <textarea name="haveDone" id="" cols="30" rows="5"></textarea><br><br>
-                   
+
                     <h4>Hur var kursen?</h4>
                     <div class = "radio">
                     <span class = "p-left">Dålig</span>
                     <label for="howCourse1">1<br/>
-                        <input type="radio" id = "howCourse1" name="howCourse" value="1" required></label>                    
+                        <input type="radio" id = "howCourse1" name="howCourse" value="1" required></label>
                     <label for="howCourse2">2<br/>
-                        <input type="radio" id = "howCourse2" name="howCourse" value="2" required></label>                    
+                        <input type="radio" id = "howCourse2" name="howCourse" value="2" required></label>
                     <label for="howCourse3">3<br/>
-                        <input type="radio" id = "howCourse3" name="howCourse" value="3" required></label>                    
+                        <input type="radio" id = "howCourse3" name="howCourse" value="3" required></label>
                     <label for="howCourse4">4<br/>
-                        <input type="radio" id = "howCourse4" name="howCourse" value="4" required></label>                    
+                        <input type="radio" id = "howCourse4" name="howCourse" value="4" required></label>
                     <label for="howCourse5">5<br/>
-                        <input type="radio" id = "howCourse5" name="howCourse" value="5" required></label>                    
+                        <input type="radio" id = "howCourse5" name="howCourse" value="5" required></label>
                     <label for="howCourse6">6<br/>
-                        <input type="radio" id = "howCourse6" name="howCourse" value="6" required></label>                    
+                        <input type="radio" id = "howCourse6" name="howCourse" value="6" required></label>
                     <label for="howCourse7">7<br/>
-                        <input type="radio" id = "howCourse7" name="howCourse" value="7" required></label>                    
-                    <span class="mandatory">Bra</span><br> 
+                        <input type="radio" id = "howCourse7" name="howCourse" value="7" required></label>
+                    <span class="mandatory">Bra</span><br>
                     </div>
                     <h5>Beskriv i ord:</h5>
                     <textarea name="howCourse" id="" cols="30" rows="5"></textarea><br><br>
@@ -167,8 +168,8 @@
                     <label for="courseOverhead6">6<br/>
                         <input type="radio" id = "courseOverhead6" name="courseOverhead" value="6" required></label>
                     <label for="courseOverhead7">7<br/>
-                        <input type="radio" id = "courseOverhead7" name="courseOverhead" value="7" required></label>     
-                    <span class="mandatory">Bra</span><br> 
+                        <input type="radio" id = "courseOverhead7" name="courseOverhead" value="7" required></label>
+                    <span class="mandatory">Bra</span><br>
                     </div>
                     <h5>Beskriv i ord:</h5>
                     <textarea name="" id="courseOverhead" cols="30" rows="10"></textarea>
@@ -183,23 +184,23 @@
                     <label><input type="checkbox" name="courseContains" value="4">Uppgift 4</label><br>
                     <label><input type="checkbox" name="courseContains" value="5">Uppgift 5</label><br>
                     <label><input type="checkbox" name="courseContains" value="6">Uppgift 6</label><br>
-                    </div> 
+                    </div>
                     <h5>Något annat utöver detta?</h5>
                     <textarea name="" id="courseContains" cols="30" rows="10"></textarea>
-                    
+
                     <button class = "send-button"  type="submit">Skicka!</button>
 
 
                 </form>
             </div>
-            
+
         </div>
         <!--content-->
     </div>
     <!--wrap-->
 
-    
-        
+
+
     <div class="quick-evaluation-wrap">
         <div class="quick-evaluation-content apperance">
             <h4>Daglig utvärdering</h4>
@@ -226,11 +227,11 @@
     </div>
     <!-- quick-evaluation -->
 
-    
+
     <!--wrap-->
 
     <script src="../../js/windowOnClickFunction.js"></script>
-    
+
     <script src="../../js/studentFeedback.js"></script>
     <script src="../../js/studentDailyFeedback.js"></script>
     <script src="../../js/attendance.js"></script>
