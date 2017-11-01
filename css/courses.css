@@ -207,6 +207,7 @@ ul.pricing-list li.no {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 #assignmentFeedbackTextarea {
@@ -214,7 +215,7 @@ ul.pricing-list li.no {
 }
 
 .assignmentApprovalContent .studentassignments {
-    width: 50%;
+    width: 30%;
 }
 
 .assignmentApprovalContent .assignmentDocument {
@@ -240,36 +241,43 @@ ul.pricing-list li.no {
 
 /* Student */
 
-.studentAssignmentTable {
+.teacherAssignmentTable,
+.allAssignmentTable {
     width: 100%;
     text-align: left;
     margin-bottom: 1em;
+    /* flex-wrap: wrap; */
+    margin-top: 2em;
+}
+.teacherAssignmentTable {
+    width: 49%;
 }
 
-.studentAssignmentTable tr:nth-child(even) {
+.allAssignmentTable tr:nth-child(even) {
     background: rgba(0, 0, 0, .1)
 }
 
-.studentAssignmentTable th:nth-child(1) {
-    width: 50%;
+.allAssignmentTable th:nth-child(1) {
+    /* width: 50%; */
     padding: .5em;
     padding-left: 1em;
 }
 
-.studentAssignmentTable th:nth-child(2) {
+.allAssignmentTable th:nth-child(2) {
     text-align: center
 }
 
-.studentAssignmentTable th:nth-child(3) {
+.allAssignmentTable th:nth-child(3) {
     text-align: right;
     padding-right: 1em;
 }
 
-.assignmentButton {
+.assignmentButton,
+.narrowButton {
     padding: .25em .5em;
 }
 
-.studentAssignmentTable tr.feedbackText {
+.allAssignmentTable tr.feedbackText {
     background: rgba(255, 242, 255, 0.9);
     color: #000;
 }
@@ -291,5 +299,9 @@ ul.pricing-list li.no {
 }
 
 .assignmentsTeacher {
-    width: 100%
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
