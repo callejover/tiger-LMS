@@ -96,7 +96,7 @@ button {
 
 
 a.button {
-  /* line-height: 3.5em; */
+  line-height: 3.5em;
   text-decoration: none;
 }
 
@@ -286,7 +286,7 @@ a {
 }
 
 
-h2, h3, h4 {
+h2, h3, h4, h5, h6 {
   margin: 0 0 .5em 0;
 }
 
@@ -298,6 +298,21 @@ h3 {
 }
 h4 {
   font-size: 1.5em
+}
+h5 {
+  font-size: 1.3em;
+}
+h6 {
+  font-size: 1.2em;
+}
+
+.teacherAssignmentTable h6 {
+  margin-top: 4em
+}
+
+.teacherAssignmentTable:nth-child(1) h6,
+.teacherAssignmentTable:nth-child(2) h6 {
+  margin-top: 0;
 }
 
 .apperance {
