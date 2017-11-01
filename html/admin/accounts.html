@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Tiger-LMS | Admin</title>
+  <title>Tiger-LMS | Skapa konton</title>
 
   <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
   <link rel="stylesheet" href="../../css/reset.css">
@@ -44,7 +44,7 @@
             <a href="assignmentApproval.html">#</a>
           </li>
           <li>
-            <a id="attendanceButton">#</a>
+            <a id="create-account">Skapa konton</a>
           </li>
           <li>
             <a href="../../index.html">Log out</a>
@@ -78,18 +78,11 @@
                     </div>
                     <div id="account-type">
                         <h2>Välj om kontot tillhör en student, lärare eller administratör.</h2>
-                        <div id="student-radio">
-                            <h3>Student.</h3>
-                            <input type="radio">
-                        </div>
-                        <div id="teacher-radio">
-                            <h3>Lärare.</h3>
-                            <input type="radio">
-                        </div>
-                        <div id="admin-radio">
-                            <h3>Administratör.</h3>
-                            <input type="radio">
-                        </div>
+                        <select name="account-select" id="account-select">
+                            <option value="Student">Student</option>
+                            <option value="Lärare">Lärare</option>
+                            <option value="Administratör">Administratör</option>
+                        </select>
                     </div>
                 </div><!--account-form-->
                 <div id="submit-button">
