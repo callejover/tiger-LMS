@@ -102,6 +102,33 @@
     <!--modal-content-->
   </div>
   <!-- div attendanceModal opens the login box on index screen -->
+  <div id="newsModal" class="modal">
+        <div class="modal-content">
+            <span class="newsClose">&times;</span>
+            <!-- Closing X icon in modal -->
+            <div class="header headerAssignment">
+              <div id="newsContent">
+                <h2>Lägg till nyheter</h2>
+                
+                <form name="newsForm">
+                    <select id="classNews">
+                      <option value="javascript">Javascript</option>
+                      <option value="htmlCss">HTML och CSS </option>
+                      <option value="backend">Backend</option>
+
+
+                    </select>
+                    <textarea rows="10" cols="50">
+                    </textarea>
+                    <button id="sendNews" onclick="sendNews1()" >Lägg till</button>
+                    <span id="newsSent"></span>
+                    
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+
 
   <div class="wrap index teachWrap">
       <div class="innerContent apperance">
@@ -109,6 +136,7 @@
                 <h2>Nyheter</h2>
                 <p>Här kan du som lärare ta del av nyheter som rör dina kurser.<br>
                 Välj kurs i listan och ta del av nyheterna som rör just den kursen.</p>
+                <button id="newsButton" >Lägg till nyheter</button>
         </div>
   </div>
   <!--wrap content found in teacherInfoCourses.html-->
@@ -127,6 +155,7 @@
   <script src="../../js/teacherAttendanceCode.js"></script>
   <script src="../../js/teacherAssignmentApproval.js"></script>
   <script src="../../js/teacherAttendanceOverview.js"></script>
+  <script src="../../js/teacherNews.js"></script>
 
 
 </body>

@@ -455,7 +455,8 @@ h4 {
 
 .close,
 .assignmentClose,
-.attendanceClose {
+.attendanceClose,
+.newsClose {
   color: #DBDBDB;
   float: right;
   font-size: 28px;
@@ -468,7 +469,9 @@ h4 {
 .assignmentClose:hover,
 .assignmentClose:focus,
 .attendanceClose:hover,
-.attendanceClose:focus {
+.attendanceClose:focus,
+.newsClose:focus,
+.newsClose:hover {
   color: #313131;
   text-decoration: none;
   cursor: pointer;
