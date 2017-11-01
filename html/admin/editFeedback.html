@@ -20,7 +20,9 @@
 
   <link rel="stylesheet" href="../../css/mediaq.css">
 
-  <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> Not needed -->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -33,7 +35,7 @@
             <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
           </li>
           <li>
-            <a href="news.html">Nyheter</a>
+            <a href="editFeedback.html">Utvärdering</a>
           </li>
           <li>
             <a href="resultFeedback.html">#</a>
@@ -51,9 +53,49 @@
       </nav>
     </header>
 
-    <div class="wrap">
+    <div class="wrap adminwrap">
+
+      <div class="teachCourses apperance courseName">
+        <!-- Trigger/Open The Modal -->
+          Redigera utvärderingar
+      </div>
+      <!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a class="assignmentButton click" onclick="myFunction()">
+          Daglig utvärdering
+        </a>
+      </div>
+      <!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a class="assignmentButton click">
+          Vecko utvärdering
+        </a>
+      </div>
+      <!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a class="assignmentButton click">
+          Kurs utvärdering
+        </a>
+      </div>
+      <!--teachCourses-->
+
+      <div class="teachCourses apperance">
+        <a class="assignmentButton click">
+          +
+        </a>
+      </div>
+      <!--teachCourses-->
 
     </div><!--wrap-->
+
+    <div w3-include-html="../includes/adminEditFeedback.html"="displayResult()">
+    </div>
+    <script>
+      w3.includeHTML();
+    </script>
 
 
   </body>
