@@ -1,0 +1,65 @@
+button {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+    background-color: rgba(250,149,0,0.5);
+}
+
+input {
+    background-color: none;
+    border: 1px solid rgba(176,42,9, 0.9);
+}
+
+input::placeholder {
+    border: none;
+}
+
+.account-content {
+    background-color: rgba(232,119,12,1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2em;
+    margin: 5em;
+}
+
+.account-form {
+    text-align: center;
+    border: 0.3em solid rgba(176,42,9, 0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.account-main-content h1{
+    font-size: 3em;
+}
+
+.account-main-content h2{
+    font-size: 2em;
+    /* background-color: rgb(250,100,0); */
+    background-color: rgba(250,149,0,0.5);
+}
+
+.account-main-content h3{
+    font-size: 1.5em;
+}
+
+#username, 
+#password, 
+#full-name,
+#email,  
+#account-type {
+    /* background-color: rgb(250,100,0); */
+    background-color: rgba(250,149,0,0.5);
+    padding-bottom: 2em;
+}
+
+#username {
+    padding-top: 2em;
+}
+
+#submit-button {
+    padding: 2em;
+}

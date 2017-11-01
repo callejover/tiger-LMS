@@ -61,7 +61,7 @@
                 <div class="account-form">
                     <div id="username">
                         <h2>Ange kontots användarnamn.</h2>
-                        <input type="text" placeholder="Användarnamn">
+                        <input type="text" placeholder="Användarnamn" autofocus="autofocus">
                     </div>
                     <div id="password">
                         <h2>Ange kontots lösenord.</h2>
@@ -74,7 +74,7 @@
                     </div>
                     <div id="email">
                         <h2>Ange kontots epostadress.</h2>
-                        <input type="text" placeholder="Epostadress">
+                        <input type="text" id="email-box" placeholder="Epostadress">
                     </div>
                     <div id="account-type">
                         <h2>Välj om kontot tillhör en student, lärare eller administratör.</h2>
@@ -85,13 +85,17 @@
                         </select>
                     </div>
                 </div><!--account-form-->
-                <div id="submit-button">
+                <div id="submit-button" onclick="response()">
                     <button>Skapa användare.</button>
+                </div>
+                <div id="accout-respond-box">
+                    <p></p>
                 </div>
              </div><!--account-main-content-->
         </div><!--account-content-->
     </div><!--wrap-->
 
+<script src="../../js/accounts.js"></script>
 
   </body>
 
