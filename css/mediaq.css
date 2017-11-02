@@ -163,6 +163,13 @@
   .teachCourses {
     width: 90%;
   }
+
+  .assignmentsTeacher {
+    flex-direction: column
+  }
+  .teacherAssignmentTable {
+    width: 100%
+  }
   
 }
 
