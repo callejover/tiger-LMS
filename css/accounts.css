@@ -46,6 +46,15 @@ input::placeholder {
     font-size: 1.5em;
 }
 
+.response-area {
+    display: flex;
+    flex-direction: row;
+}
+
+#accout-respond-box {
+    margin: 2em;
+}
+
 #username, 
 #password, 
 #full-name,
