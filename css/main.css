@@ -356,9 +356,9 @@ h6 {
 
 }
 
-  /*====================================
+  /*===================================================================================
   nav  attributes
-  =====================================*/
+  ====================================================================================*/
 
   header{
     overflow: hidden;
@@ -509,9 +509,9 @@ h6 {
   cursor: pointer;
 }
 
-/*==========================================
+/*=========================================================================================
 This is CSS only for the news.html page
-============================================*/
+===========================================================================================*/
 
 .news-head {
   padding: 3em 0;
@@ -635,3 +635,72 @@ ul.pricing-list li.no {
 .StudentListTable {
 	width: 100%;
 }
+
+
+/* =================================================================================
+CSS for accounts.html on admin pages
+================================================================================= */
+
+
+.account-content {
+  background-color: rgba(98,0,105,1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2em;
+  margin: 5% 20%;
+}
+
+.account-form {
+  text-align: center; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.account-main-content h1{
+  font-size: 3em;
+}
+
+.account-main-content h2{
+  font-size: 2em;
+  background-color:rgba(166, 79, 172, 0.5);
+}
+
+.account-main-content h3{
+  font-size: 1.5em;
+}
+
+.response-area {
+  display: flex;
+  flex-direction: row;
+}
+
+.account-main-content input::placeholder {
+  border: none;
+}
+
+.account-main-content button:hover {
+  background-color: rgba(166, 79, 172, 0.5);
+}
+
+#accout-respond-box {
+  margin: 2em;
+}
+
+#account-username, 
+#account-password, 
+#account-full-name,
+#account-email,  
+#account-type {
+  padding-bottom: 2em;
+}
+
+#account-username {
+  padding-top: 2em;
+}
+
+#submit-button {
+  padding: 2em;
+}
+
