@@ -32,7 +32,7 @@ function drawChart() {
 
   // Set chart options
   var options = {'title':'',
-                colors: ['#DD46E8'],
+                colors: ['#FA9500'],
                 backgroundColor: { fill:'transparent' },
                 legendTextStyle: { color: '#FFF' },
                 titleTextStyle: { color: '#FFF', fontSize: '18' },
@@ -70,7 +70,7 @@ function chart2() {
         
   // Set chart options
   var options = {'title':'Veckans Utvärdering',
-                colors: ['#DD46E8', 'pink', 'plum'],
+                colors: ['#FA9500', '#FF3333', '#FFEC33'],
                 backgroundColor: { fill:'transparent' },
                 legendTextStyle: { color: '#FFF' },
                 titleTextStyle: { color: '#FFF', fontSize: '18' },
@@ -89,78 +89,6 @@ function chart2() {
   chart.draw(data, options);
 }
 
-function chart3() {
-                
-  // Create the data table.
-  var data = new google.visualization.DataTable();
-  data.addColumn('string', 'Betyg');
-  data.addColumn('number', 'Antal svar');
-  data.addRows([
-  ['1', 1],
-  ['2', 4],
-  ['3', 5],
-  ['4', 4],
-  ['5', 8],
-  ['6', 2],
-  ['7', 6],
-  ]);
-                        
-                
-  // Set chart options
-  var options = {'title':'Hur engagerad anser du själv att du är i dina studier?',
-                  colors: ['#DD46E8'],
-                  backgroundColor: { fill:'transparent' },
-                  legendTextStyle: { color: '#FFF' },
-                  titleTextStyle: { color: '#FFF', fontSize: '18' },
-                  hAxis: {
-                  textStyle:{color: '#FFF'}
-                  },
-                  vAxis: {
-                  textStyle:{color: '#FFF'}, baseline: {color: '#FFF'}
-                  },
-                  'width':800,
-                  'height':300};
-                
-  // Instantiate and draw our chart, passing in some options.
-  var chart = new google.visualization.ColumnChart(document.getElementById('chart3'));
-  chart.draw(data, options);
-}
-
-function chart4() {
-                        
-  var data = new google.visualization.DataTable();
-  data.addColumn('string', 'Betyg');
-  data.addColumn('number', 'Antal svar');
-  data.addRows([
-  ['1', 0],
-  ['2', 2],
-  ['3', 5],
-  ['4', 8],
-  ['5', 8],
-  ['6', 2],
-  ['7', 5],
-  ]);
-                                
-                        
-// Set chart options
-  var options = {'title':'Hur upplever du stämningen i klassen?',
-                colors: ['#DD46E8'],
-                backgroundColor: { fill:'transparent' },
-                legendTextStyle: { color: '#FFF' },
-                titleTextStyle: { color: '#FFF', fontSize: '18' },
-                hAxis: {
-                textStyle:{color: '#FFF'}
-                },
-                vAxis: {
-                textStyle:{color: '#FFF'}, baseline: {color: '#FFF'}
-                },
-                'width':800,
-                'height':300};
-                        
-  // Instantiate and draw our chart, passing in some options.
-  var chart = new google.visualization.ColumnChart(document.getElementById('chart4'));
-  chart.draw(data, options);
-}
 
 function chart5() {                               
                                         
@@ -180,7 +108,7 @@ function chart5() {
                                 
                                         
   var options = {'title':'Har vi gjort det vi ska?',
-                colors: ['#DD46E8'],
+                colors: ['#FA9500'],
                 backgroundColor: { fill:'transparent' },
                 legendTextStyle: { color: '#FFF' },
                 titleTextStyle: { color: '#FFF', fontSize: '18' },
@@ -216,7 +144,7 @@ function chart6() {
                                                                                     
   // Set chart options
   var options = {'title':'Hur var kursen?',
-                colors: ['#DD46E8'],
+                colors: ['#FA9500'],
                 backgroundColor: { fill:'transparent' },
                 legendTextStyle: { color: '#FFF' },
                 titleTextStyle: { color: '#FFF', fontSize: '18' },
@@ -251,7 +179,7 @@ function chart7() {
                                                                                     
   // Set chart options
   var options = {'title':'Vad tyckte du om läraren?',
-                colors: ['#DD46E8'],
+                colors: ['#FA9500'],
                 backgroundColor: { fill:'transparent' },
                 legendTextStyle: { color: '#FFF' },
                 titleTextStyle: { color: '#FFF', fontSize: '18' },
@@ -286,7 +214,7 @@ function chart8() {
                                                                                     
   // Set chart options
   var options = {'title':'Hur var kursen som helhet?',
-                colors: ['#DD46E8'],
+                colors: ['#FA9500'],
                 backgroundColor: { fill:'transparent' },
                 legendTextStyle: { color: '#FFF' },
                 titleTextStyle: { color: '#FFF', fontSize: '18' },
