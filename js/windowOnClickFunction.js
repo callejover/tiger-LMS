@@ -4,7 +4,8 @@ window.onclick = function (event) {
         attendanceModal.style.display = "none";
     }
     windowCloseAssignmentModal();
-    closeAttendanceOverview();
+    // closeAttendanceOverview();
+    windowCloseAssignmentFeedbackModal();
 
     //closeModuleTeacher();
 };
