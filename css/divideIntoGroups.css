@@ -1,0 +1,71 @@
+#groupWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.groupRight,
+.groupLeft {
+    width: 29%;
+}
+
+.groupLeft {
+    width: 70%;
+}
+
+
+#groupClassList,
+#groupGroups {
+    width: 29%;
+    /* border: 1px solid #000; */
+    padding: .5em;
+    margin-top: 1em;
+    background: #8a2108;
+}
+#groupClassList {
+    padding: 1em;
+}
+
+#groupGroups {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.groupGroup {
+    /* border: 1px solid #000; */
+    padding: 1em;
+    flex-grow: 1;
+    margin: .5em;
+    width: 25%;
+    min-height: 10em;
+    position: relative;
+    background: #581a0b;
+}
+
+.groupGroup:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: .2em
+}
+#group0:after { content: "#1" }
+#group1:after { content: "#2" }
+#group2:after { content: "#3" }
+#group3:after { content: "#4" }
+#group4:after { content: "#5" }
+#group5:after { content: "#6" }
+#group6:after { content: "#7" }
+#group7:after { content: "#8" }
+#group8:after { content: "#9" }
+#group9:after { content: "#10" }
+
+.groupStudent {
+    background: #b02a0a;
+    padding: .5em;
+    margin-bottom: .2em
+}

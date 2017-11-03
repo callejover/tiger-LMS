@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Tiger-LMS | Gruppindelning</title>
+
+    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <link rel="stylesheet" href="../../css/courses.css">
+    <link rel="stylesheet" href="../../css/teachInfoCourses.css">
+    <link rel="stylesheet" href="../../css/divideIntoGroups.css">
+
+    <link rel="stylesheet" href="../../css/brandingKyh.css">
+
+    <link rel="stylesheet" href="../../css/mediaq.css">
+
+    <!--<link rel="import" href="teacherInfoCourses.html"> Working on -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header>
+        <nav id="nav">
+            <div id="nav-button-max-500">MENY</div>
+            <ul class="hidden-max-500">
+                <li>
+                    <a href="courses.html">
+                        <img src="../../img/KYH-logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="news.html">Nyheter</a>
+                </li>
+                <li>
+                    <a href="resultFeedback.html">Resultat</a>
+                </li>
+                <li>
+                    <a href="assignmentApproval.html">Betyg</a>
+                </li>
+                <li>
+                    <a id="attendanceButton">Närvaro</a>
+                </li>
+                <li>
+                    <a href="../../index.html">Logga ut</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- Hidden before clicking logiout -->
+    <div id="attendanceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Closing X icon in modal -->
+            <div class="header">
+                <h2>Närvarolista</h2>
+                <select id="ClassSelect" onchange="classChanged()">
+                    <option value="A">Klass 1</option>
+                    <option value="B">Klass 2</option>
+                    <option value="C">Klass 3</option>
+                </select>
+
+                <table class="StudentListTable">
+                    <tr>
+                        <td>
+                            <strong>Elev</strong>
+                        </td>
+                        <td>
+                            <strong>Närvaro</strong>
+                        </td>
+                    </tr>
+                    <tbody class="StudentListBody">
+                    </tbody>
+                </table>
+
+                <h2>Närvarokod</h2>
+                <form name="input-attendance-teacher">
+                    <div class="attendance">
+                        <h1>Välj den klass du vill skapa en kod till.
+                            <br> När du valt klass, tryck på "Skapa kod" för att få en kod generad.</h1>
+                        <br>
+                        <select id="teacher-code">
+                            <!-- Choose your class -->
+                            <option value="FE16">FE16</option>
+                            <option value="FE17">FE17</option>
+                        </select>
+                        <input id="lesson-day" type="date">
+                        <!-- Choose your lesson date -->
+                        <button id="code-submit" type="submit" onclick="createCode()">Skapa kod</button>
+                    </div>
+                    <!--attendance-->
+                </form>
+
+            </div>
+            <!--header-->
+        </div>
+        <!--modal-content-->
+    </div>
+    <!-- div attendanceModal opens the login box on index screen -->
+
+    <div class="wrap index teachWrap">
+        <div class="innerContent apperance">
+            <h3>Gruppindelning</h3>
+
+            <div id="groupWrap">
+                <div class="groupLeft">
+                    <label for="numGroups">Antal grupper: </label>
+                    <input id="numGroups" type="number" value="2" min="2" max="20" onchange="groupGenerateGroups()">
+                    
+                <span id="groupGroupsCount"></span>
+                </div>
+                <div class="groupRight">
+                    <label for="groupsSelectList">Klass: </label>
+                    <select name="" id="groupsSelectList" onchange="groupGenerateClassList()">
+                        <option value="FE15">FE15</option>
+                        <option value="FE16">FE16</option>
+                        <option value="FE17">FE17</option>  
+                    </select>
+                    <span id="groupsSelectListCount"></span>
+                    <button onclick="foo()">Autofyll</button>
+                </div>
+                <div class="groupLeft" id="groupGroups">
+                </div>
+                <div class="groupRight" id="groupClassList">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--wrap content found in teacherInfoCourses.html-->
+
+    <!--v(the file sycked on the next row) Contains the content of the page for simpler oraganization of the site.-->
+    <div w3-include-html="../include/teacherInfoCourses.html"="displayResult()"></div>
+    <!--wrap content found in teacherInfoCourses.html-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--<script src="../js/linkHtml.js"></script> working on-->
+    <script>
+        w3.includeHTML();
+    </script>
+
+    <script src="../../js/windowOnClickFunction.js"></script>
+    <script src="../../js/attendance.js"></script>
+    <script src="../../js/teacherAttendanceCode.js"></script>
+    <script src="../../js/teacherAssignmentApproval.js"></script>
+    <script src="../../js/teacherAttendanceOverview.js"></script>
+    <script src="../../js/devideIntoGroups.js"></script>
+
+
+</body>
+
+</html>
+
+<!-- Tested code:
+1. <object data="html/stuff_to_include.html"> </object> /*imports an hole web page to the area that it's set in*/
+
+
+-->
