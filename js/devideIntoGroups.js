@@ -65,13 +65,9 @@ function groupGenerateClassList() {
     var groupSelectListCount = document.querySelector("#groupsSelectListCount");
     var groupClassCounter = 0;
 
-    console.log(groupSelectListValue);
 
     // Resets the list before appending new 
     groupClassList.innerHTML = "";
-
-    // Test
-    console.log(groupStudents.length);
         
     groupStudents.forEach(function(item, index) {
         // console.log(item.name);
@@ -125,6 +121,8 @@ function groupGenerateGroups() {
     groupGroupsCount.innerHTML = "innehåller " + groupGroupsCounter + " grupper";
 
 }
+
+//groupAutoFill
 
 
 // Displays the currently selected class
