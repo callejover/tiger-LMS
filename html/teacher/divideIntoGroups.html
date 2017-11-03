@@ -121,15 +121,14 @@
                 <div class="groupLeft">
                     <label for="numGroups">Antal grupper: </label>
                     <input id="numGroups" type="number" value="2" min="2" max="20" onchange="groupGenerateGroups()">
-                    
-                <span id="groupGroupsCount"></span>
+
                 </div>
                 <div class="groupRight">
                     <label for="groupsSelectList">Klass: </label>
                     <select name="" id="groupsSelectList" onchange="groupGenerateClassList()">
-                        <option value="FE15">FE15</option>
-                        <option value="FE16">FE16</option>
-                        <option value="FE17">FE17</option>  
+                        <option value="0">FE15</option>
+                        <option value="1">FE16</option>
+                        <option value="2">FE17</option>
                     </select>
                     <span id="groupsSelectListCount"></span>
                     <button onclick="groupAutoFill()">Autofyll</button>
