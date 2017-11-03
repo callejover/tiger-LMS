@@ -163,7 +163,7 @@ function groupAutoFill() {
 
             // var size = Math.fround(groupStudents[i].length / numGroups.value);
 
-
+            // Testa denna istället: https://jsfiddle.net/wvLpyss5/
 
 
             var newArray = new Array(Math.ceil(groupStudents[i].length / size)).fill("")
