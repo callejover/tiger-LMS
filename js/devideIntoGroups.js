@@ -37,6 +37,22 @@ var groupStudents = [
     {name:"Hans Pettersson", class:"FE17"},
     {name:"Ingrid Pettersson", class:"FE17"},
     {name:"Kristina Larsson", class:"FE17"},
+    {name:"Lennart Jonsson", class:"FE17"},
+    {name:"Maria Johansson", class:"FE17"},
+    {name:"Margareta Karlsson", class:"FE17"},
+    {name:"Elisabeth Nilsson", class:"FE17"},
+    {name:"Eva Eriksson", class:"FE17"},
+    {name:"Erik Johansson", class:"FE17"},
+    {name:"Lars Andersson", class:"FE17"},
+    {name:"Christina Jonsson", class:"FE17"},
+    {name:"Carl Persson", class:"FE17"},
+    {name:"Gunnar Bengtsson", class:"FE17"},
+    {name:"Hans Pettersson", class:"FE17"},
+    {name:"Per Larsson", class:"FE17"},
+    {name:"Johan Eriksson", class:"FE17"},
+    {name:"Hans Pettersson", class:"FE17"},
+    {name:"Ingrid Pettersson", class:"FE17"},
+    {name:"Kristina Larsson", class:"FE17"},
     {name:"Lennart Jonsson", class:"FE17"}
 
 ];
@@ -109,6 +125,8 @@ function groupGenerateGroups() {
     groupGroupsCount.innerHTML = "innehåller " + groupGroupsCounter + " grupper";
 
 }
+
+
 // Displays the currently selected class
 groupGenerateClassList();
 groupGenerateGroups()
