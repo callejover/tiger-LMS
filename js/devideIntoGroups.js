@@ -128,7 +128,7 @@ function groupGenerateGroups() {
 
 
 //groupAutoFill
-function groupAutoFill() {
+function groupAutoFillPerGroup() {
     var numGroups = document.querySelector("#numGroups");
     var groupSelectList = document.querySelector("#groupsSelectList");
     var groupSelectListValue = groupSelectList.options[groupSelectList.selectedIndex].value;
@@ -158,6 +158,73 @@ function groupAutoFill() {
 
 
             var size = Math.ceil(groupStudents[i].length / numGroups.value);
+            // var size = Math.floor(groupStudents[i].length / numGroups.value);
+            // var size = groupStudents[i].length / numGroups.value);
+
+            // var size = Math.fround(groupStudents[i].length / numGroups.value);
+
+            // Testa denna istället: https://jsfiddle.net/wvLpyss5/
+
+            var dividedGroups = new Array(Math.ceil(groupStudents[i].length / size)).fill("")
+                .map(function () {
+                    return this.splice(0, size);
+                }, groupStudents[i].slice());
+
+            for (let k = 0; k < dividedGroups.length; k++) {
+                groupGroups.innerHTML += "<div class=\"groupGroup\" id=\"group" + k + "\"></div>";
+
+                for (let j = 0; j < dividedGroups[k].length; j++) {
+
+                    var item = document.createElement("div");
+                    
+                    var textnode = document.createTextNode(dividedGroups[k][j]);
+                    
+                    item.appendChild(textnode);
+                
+                    var list = document.getElementById("group" + k);
+                    
+                    list.insertBefore(item, list.childNodes[0]).setAttribute("class", "groupStudent");
+                
+                }
+
+            }
+        }
+    }
+}
+
+
+
+//groupAutoFill
+function groupAutoFillPerStudent() {
+    var numStudents = document.querySelector("#numStudents");
+    var groupSelectList = document.querySelector("#groupsSelectList");
+    var groupSelectListValue = groupSelectList.options[groupSelectList.selectedIndex].value;
+
+    // groupGroupsCount.value
+
+
+    // Resets the list before appending new 
+    groupClassList.innerHTML = "";
+    // Resets the list before appending new 
+    groupGroups.innerHTML = "";
+
+    for (let i = 0; i < groupStudents.length; i++) {
+
+        // Check witch class is selected
+        if (groupSelectListValue == i) {
+
+            // Splice array beroende på hur många grupper det ska vara
+
+            // Antal grupper: numGroups.value
+
+            // Antal elver: groupStudents.length
+
+            // Size: groupSelectListValue / numGroups = x
+            // runda upp eller ner x för att få ett heltal?
+            // Math.floor(groupStudents.length / numGroups.value)
+
+
+            var size = numStudents.value;
             // var size = Math.floor(groupStudents[i].length / numGroups.value);
             // var size = groupStudents[i].length / numGroups.value);
 

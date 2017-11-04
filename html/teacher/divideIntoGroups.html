@@ -119,8 +119,13 @@
 
             <div id="groupWrap">
                 <div class="groupLeft">
-                    <label for="numGroups">Antal grupper: </label>
-                    <input id="numGroups" type="number" value="2" min="2" max="20" onchange="groupGenerateGroups()">
+                    <label for="numGroups">Antal grupper:</label>
+                    <input id="numGroups" type="number" value="2" min="2" max="20" onchange="groupGenerateGroupsBasedOnNumGroup()">
+                    <button onclick="groupAutoFillPerGroup()">Autofyll</button>
+                    <br>
+                    <label for="numStudents">Antal elver per grupp: </label>
+                    <input id="numStudents" type="number" value="2" min="2" max="200">
+                    <button onclick="groupAutoFillPerStudent()">Autofyll</button>
 
                 </div>
                 <div class="groupRight">
@@ -131,7 +136,7 @@
                         <option value="2">FE17</option>
                     </select>
                     <span id="groupsSelectListCount"></span>
-                    <button onclick="groupAutoFill()">Autofyll</button>
+                    
                 </div>
                 <div class="groupLeft" id="groupGroups">
                 </div>
