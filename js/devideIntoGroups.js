@@ -1,28 +1,88 @@
 var groupStudents = [
     FE15 = [
-        "Anton",
-        "Kalle",
-        "Robbin",
-        "Callé",
-        "Rabarber",
-        "Kebab",
-        "Rotete",
-        "Sara",
-        "Christoffer",
-        "Sebastian"
+        "Maria Johansson",
+        "Margareta Karlsson",
+        "Elisabeth Nilsson",
+        "Eva Eriksson",
+        "Erik Johansson",
+        "Lars Andersson",
+        "Christina Jonsson",
+        "Carl Persson",
+        "Gunnar Bengtsson",
+        "Hans Pettersson",
+        "Per Larsson",
+        "Johan Eriksson",
+        "Hans Pettersson",
+        "Ingrid Pettersson",
+        "Kristina Larsson",
+        "Lennart Jonsson",
+
+        "Maria Johansson",
+        "Margareta Karlsson",
+        "Elisabeth Nilsson",
+        "Eva Eriksson",
+        "Erik Johansson",
+        "Lars Andersson",
+        "Christina Jonsson",
+        "Per Larsson",
+        "Johan Eriksson",
+        "Hans Pettersson",
+        "Ingrid Pettersson",
+        "Kristina Larsson",
+        "Lennart Jonsson",
+
+        "Maria Johansson",
+        "Margareta Karlsson",
+        "Elisabeth Nilsson",
+        "Eva Eriksson",
+        "Erik Johansson",
+        "Lars Andersson",
+        "Christina Jonsson",
+        "Carl Persson",
+        "Gunnar Bengtsson",
+        "Hans Pettersson",
+        "Per Larsson"
     ],
     FE16 = [
-        "William",
-        "Tim",
-        "Robba",
-        "Atnon",
-        "Hello",
-        "Tim Arro",
-        "Rebecca",
-        "Klara",
-        "Tobias",
-        "Kristian",
-        "Klementin"
+        "Maria Johansson",
+        "Margareta Karlsson",
+        "Elisabeth Nilsson",
+        "Eva Eriksson",
+        "Erik Johansson",
+        "Lars Andersson",
+        "Christina Jonsson",
+        "Carl Persson",
+        "Gunnar Bengtsson",
+        "Hans Pettersson",
+        "Per Larsson",
+        "Johan Eriksson",
+        "Hans Pettersson",
+        "Ingrid Pettersson",
+        "Kristina Larsson",
+        "Lennart Jonsson",
+
+        "Maria Johansson",
+        "Margareta Karlsson",
+        "Elisabeth Nilsson",
+        "Eva Eriksson",
+        "Per Larsson",
+        "Johan Eriksson",
+        "Hans Pettersson",
+        "Ingrid Pettersson",
+        "Kristina Larsson",
+        "Lennart Jonsson",
+
+        "Lars Andersson",
+        "Christina Jonsson",
+        "Carl Persson",
+        "Gunnar Bengtsson",
+        "Hans Pettersson",
+        "Per Larsson",
+        "Johan Eriksson",
+        "Hans Pettersson",
+        "Ingrid Pettersson",
+        "Kristina Larsson",
+        "Lennart Jonsson"
     ],
 
     FE17 = [
@@ -42,6 +102,24 @@ var groupStudents = [
         "Ingrid Pettersson",
         "Kristina Larsson",
         "Lennart Jonsson",
+
+        "Maria Johansson",
+        "Margareta Karlsson",
+        "Elisabeth Nilsson",
+        "Eva Eriksson",
+        "Erik Johansson",
+        "Lars Andersson",
+        "Christina Jonsson",
+        "Carl Persson",
+        "Gunnar Bengtsson",
+        "Hans Pettersson",
+        "Per Larsson",
+        "Johan Eriksson",
+        "Hans Pettersson",
+        "Ingrid Pettersson",
+        "Kristina Larsson",
+        "Lennart Jonsson",
+
         "Maria Johansson",
         "Margareta Karlsson",
         "Elisabeth Nilsson",
@@ -62,7 +140,7 @@ var groupStudents = [
 ];
 
 
-
+// Spits out the class list chosen from select-list
 function groupGenerateClassList() {
     var groupSelectList = document.querySelector("#groupsSelectList");
     var groupSelectListValue = groupSelectList.options[groupSelectList.selectedIndex].value;
@@ -71,22 +149,18 @@ function groupGenerateClassList() {
     var groupGroups = document.querySelector("#groupGroups");
 
     // Resets the list before appending new 
-    groupClassList.innerHTML = "";
+    // groupClassList.innerHTML = "";
 
     // To keep the group count intact after loading classList
     groupGenerateGroups();
 
     for (let i = 0; i < groupStudents.length; i++) {
-
         // Check witch class is selected
         if (groupSelectListValue == i) {
             for (let j = 0; j < groupStudents[i].length; j++) {
-
                 // Generates the class list
-                groupClassList.innerHTML += "<div class=\"groupStudent\" id=\"student" + i + "\">" + groupStudents[i][j] + "</div>";
-
+                groupClassList.innerHTML += "<div draggable=\"true\" ondragstart=\"onDragStart(event)\" ondragleave=\"onDragLeave(event)\" class=\"groupStudent\" id=\"drag" + i + j + "\">" + groupStudents[i][j] + "</div>";
             }
-
             // Displays the numbers of students that is currently selected
             groupSelectListCount.innerHTML = groupStudents[i].length + " st";
         }
@@ -97,98 +171,66 @@ function groupGenerateClassList() {
 
 
 
-
-
-
-
-
+// Spits out number of groups chosen
 function groupGenerateGroups() {
     var numGroups = document.querySelector("#numGroups");
     var groupGroups = document.querySelector("#groupGroups");
     var groupGroupsCount = document.querySelector("#groupGroupsCount");
 
-    //console.log(numGroups.value);
-
     // Resets the list before appending new 
     groupGroups.innerHTML = "";
 
     for (let i = 0; i < numGroups.value; i++) {
-
-        //console.log("groupGroups");
-        groupGroups.innerHTML += "<div class=\"groupGroup\" id=\"group" + i + "\"></div>";
-        // <div class="groupGroup" id="group1"></div>
-        // <div class="groupGroup" id="group2"></div>
-
+        groupGroups.innerHTML += "<div class=\"groupGroup\" id=\"group" + i + "\" ondrop=\"onDrop(event)\" ondragover=\"onDragOver(event)\" ondragleave=\"onDragLeave(event)\"></div>";
     }
 }
 
 
 
 
-
-
-
-
-
-
-//groupAutoFill
+//AutoFill Per Group
 function groupAutoFillPerGroup() {
     var numGroups = document.querySelector("#numGroups");
     var groupSelectList = document.querySelector("#groupsSelectList");
     var groupSelectListValue = groupSelectList.options[groupSelectList.selectedIndex].value;
 
-    // groupGroupsCount.value
-
-
     // Resets the list before appending new 
     groupClassList.innerHTML = "";
+
     // Resets the list before appending new 
     groupGroups.innerHTML = "";
 
-    for (let i = 0; i < groupStudents.length; i++) {
+    for (var i = 0; i < groupStudents.length; i++) {
 
         // Check witch class is selected
         if (groupSelectListValue == i) {
 
-            // Splice array beroende på hur många grupper det ska vara
-
-            // Antal grupper: numGroups.value
-
-            // Antal elver: groupStudents.length
-
-            // Size: groupSelectListValue / numGroups = x
-            // runda upp eller ner x för att få ett heltal?
-            // Math.floor(groupStudents.length / numGroups.value)
-
-
             var size = Math.ceil(groupStudents[i].length / numGroups.value);
-            // var size = Math.floor(groupStudents[i].length / numGroups.value);
-            // var size = groupStudents[i].length / numGroups.value);
-
-            // var size = Math.fround(groupStudents[i].length / numGroups.value);
-
-            // Testa denna istället: https://jsfiddle.net/wvLpyss5/
 
             var dividedGroups = new Array(Math.ceil(groupStudents[i].length / size)).fill("")
                 .map(function () {
                     return this.splice(0, size);
                 }, groupStudents[i].slice());
 
-            for (let k = 0; k < dividedGroups.length; k++) {
-                groupGroups.innerHTML += "<div class=\"groupGroup\" id=\"group" + k + "\"></div>";
+            for (var k = 0; k < dividedGroups.length; k++) {
+
+                groupGroups.innerHTML += "<div class=\"groupGroup\" id=\"group" + k + "\" ondrop=\"onDrop(event)\" ondragover=\"onDragOver(event)\" ondragleave=\"onDragLeave(event)\"></div>";
+
+                // class=\"groupGroup dragNdrop\" id=\"group" + k + "\" ondrop=\"onDrop(event)\" ondragover=\"onDragOver(event)\" ondragleave=\"onDragLeave(event)\"
 
                 for (let j = 0; j < dividedGroups[k].length; j++) {
 
                     var item = document.createElement("div");
-
-                    var textnode = document.createTextNode(dividedGroups[k][j]);
-
-                    item.appendChild(textnode);
-
+                    var textNode = document.createTextNode(dividedGroups[k][j]);
+                    item.appendChild(textNode);
                     var list = document.getElementById("group" + k);
-
-                    list.insertBefore(item, list.childNodes[0]).setAttribute("class", "groupStudent");
-
+                    setAttributes(list.insertBefore(item, list.childNodes[0]), {
+                        "draggable": "true",
+                        "ondragstart": "onDragStart(event)",
+                        "ondragleave": "onDragLeave(event)",
+                        "class": "groupStudent",
+                        "id": "drag" + k + j // Uniqe id for every item - look into more fore buggy behavior!
+                    });
                 }
             }
         }
@@ -197,68 +239,55 @@ function groupAutoFillPerGroup() {
 
 
 
-//groupAutoFill
+//AutoFill Per Group
 function groupAutoFillPerStudent() {
     var numStudents = document.querySelector("#numStudents");
     var groupSelectList = document.querySelector("#groupsSelectList");
     var groupSelectListValue = groupSelectList.options[groupSelectList.selectedIndex].value;
-
-    // groupGroupsCount.value
-
 
     // Resets the list before appending new 
     groupClassList.innerHTML = "";
     // Resets the list before appending new 
     groupGroups.innerHTML = "";
 
-    for (let i = 0; i < groupStudents.length; i++) {
-
+    for (var i = 0; i < groupStudents.length; i++) {
         // Check witch class is selected
         if (groupSelectListValue == i) {
-
-            // Splice array beroende på hur många grupper det ska vara
-
-            // Antal grupper: numGroups.value
-
-            // Antal elver: groupStudents.length
-
-            // Size: groupSelectListValue / numGroups = x
-            // runda upp eller ner x för att få ett heltal?
-            // Math.floor(groupStudents.length / numGroups.value)
-
-
             var size = numStudents.value;
-            // var size = Math.floor(groupStudents[i].length / numGroups.value);
-            // var size = groupStudents[i].length / numGroups.value);
-
-            // var size = Math.fround(groupStudents[i].length / numGroups.value);
-
-            // Testa denna istället: https://jsfiddle.net/wvLpyss5/
-
             var dividedGroups = new Array(Math.ceil(groupStudents[i].length / size)).fill("")
                 .map(function () {
                     return this.splice(0, size);
                 }, groupStudents[i].slice());
 
-            for (let k = 0; k < dividedGroups.length; k++) {
-                groupGroups.innerHTML += "<div class=\"groupGroup\" id=\"group" + k + "\"></div>";
+            for (var k = 0; k < dividedGroups.length; k++) {
+                groupGroups.innerHTML += "<div class=\"groupGroup\" id=\"group" + k + "\" ondrop=\"onDrop(event)\" ondragover=\"onDragOver(event)\" ondragleave=\"onDragLeave(event)\"></div>";
 
                 for (let j = 0; j < dividedGroups[k].length; j++) {
-
                     var item = document.createElement("div");
+                    var textNode = document.createTextNode(dividedGroups[k][j]);
 
-                    var textnode = document.createTextNode(dividedGroups[k][j]);
-
-                    item.appendChild(textnode);
+                    item.appendChild(textNode);
 
                     var list = document.getElementById("group" + k);
-
-                    list.insertBefore(item, list.childNodes[0]).setAttribute("class", "groupStudent");
+                    setAttributes(list.insertBefore(item, list.childNodes[0]), {
+                        "draggable": "true",
+                        "ondragstart": "onDragStart(event)",
+                        "ondragleave": "onDragLeave(event)",
+                        "class": "groupStudent",
+                        "id": "drag" + k + j // Uniqe id for every item - look into more fore buggy behavior!
+                    });
 
                 }
-
             }
         }
+    }
+}
+
+
+// For adding more then one attribute on element
+function setAttributes(el, attrs) {
+    for (var key in attrs) {
+        el.setAttribute(key, attrs[key]);
     }
 }
 
