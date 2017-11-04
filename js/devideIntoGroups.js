@@ -68,9 +68,13 @@ function groupGenerateClassList() {
     var groupSelectListValue = groupSelectList.options[groupSelectList.selectedIndex].value;
     var groupClassList = document.querySelector("#groupClassList")
     var groupSelectListCount = document.querySelector("#groupsSelectListCount");
+    var groupGroups = document.querySelector("#groupGroups");
 
     // Resets the list before appending new 
     groupClassList.innerHTML = "";
+
+    // To keep the group count intact after loading classList
+    groupGenerateGroups();
 
     for (let i = 0; i < groupStudents.length; i++) {
 
@@ -84,7 +88,7 @@ function groupGenerateClassList() {
             }
 
             // Displays the numbers of students that is currently selected
-            groupSelectListCount.innerHTML = "innehåller " + groupStudents[i].length + " elever";
+            groupSelectListCount.innerHTML = groupStudents[i].length + " st";
         }
     }
 
@@ -176,17 +180,16 @@ function groupAutoFillPerGroup() {
                 for (let j = 0; j < dividedGroups[k].length; j++) {
 
                     var item = document.createElement("div");
-                    
-                    var textnode = document.createTextNode(dividedGroups[k][j]);
-                    
-                    item.appendChild(textnode);
-                
-                    var list = document.getElementById("group" + k);
-                    
-                    list.insertBefore(item, list.childNodes[0]).setAttribute("class", "groupStudent");
-                
-                }
 
+                    var textnode = document.createTextNode(dividedGroups[k][j]);
+
+                    item.appendChild(textnode);
+
+                    var list = document.getElementById("group" + k);
+
+                    list.insertBefore(item, list.childNodes[0]).setAttribute("class", "groupStudent");
+
+                }
             }
         }
     }
@@ -243,15 +246,15 @@ function groupAutoFillPerStudent() {
                 for (let j = 0; j < dividedGroups[k].length; j++) {
 
                     var item = document.createElement("div");
-                    
+
                     var textnode = document.createTextNode(dividedGroups[k][j]);
-                    
+
                     item.appendChild(textnode);
-                
+
                     var list = document.getElementById("group" + k);
-                    
+
                     list.insertBefore(item, list.childNodes[0]).setAttribute("class", "groupStudent");
-                
+
                 }
 
             }

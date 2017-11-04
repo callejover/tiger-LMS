@@ -120,7 +120,7 @@
             <div id="groupWrap">
                 <div class="groupLeft">
                     <label for="numGroups">Antal grupper:</label>
-                    <input id="numGroups" type="number" value="2" min="2" max="20" onchange="groupGenerateGroupsBasedOnNumGroup()">
+                    <input id="numGroups" type="number" value="2" min="2" max="20" onchange="groupGenerateGroups()">
                     <button onclick="groupAutoFillPerGroup()">Autofyll</button>
                     <br>
                     <label for="numStudents">Antal elver per grupp: </label>
@@ -136,13 +136,161 @@
                         <option value="2">FE17</option>
                     </select>
                     <span id="groupsSelectListCount"></span>
-                    
+
                 </div>
                 <div class="groupLeft" id="groupGroups">
                 </div>
                 <div class="groupRight" id="groupClassList">
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+            <style>
+                .dragNdrop {
+                    position: relative;
+                    z-index: 2;
+                }
+                .dragItem {
+                    cursor: move;
+                    z-index: 1;
+                    position: relative;
+                }
+
+                [id*="div"] {
+                    float: left;
+                    width: 10em;
+                    min-height: 3em;
+                    margin: .5em;
+                    padding: .5em;
+                    border: 1px solid black;
+                }
+
+                [id*="drag"]:first-child {
+                    margin-top: 0;
+                }
+
+                [id*="drag"]:last-child {
+                    margin-bottom: 0;
+                }
+
+                [id*="drag"] {
+                    padding: .25em;
+                    margin: .5em 0;
+                    border: 1px solid black;
+                    transition: padding .3s
+                }
+            </style>
+            <script>
+
+                
+                
+                 // Events fired on the draggable target (the source element):
+                    // ondragstart - occurs when the user starts to drag an element
+                    function onDragStart(event) {                            
+                        event.dataTransfer.setData("text", event.target.id);
+
+                        if (event.target.className == "dragNdrop") {
+                            event.target.style.paddingBottom = ".5em";
+                            event.target.style.transition = "0.3s";
+                        } 
+                    }
+
+                    // ondrag - occurs when an element is being dragged
+                    function onDrag(event) {
+                    }
+
+                    // ondragend - occurs when the user has finished dragging the element
+                    function onDragEnd(event) {
+                    }
+
+
+
+
+                // Events fired on the drop target:
+                    // ondragenter - occurs when the dragged element enters the drop target
+                    function ondragenter(event) {
+                    }
+
+                    // ondragover - occurs when the dragged element is over the drop target
+                    function onDragOver(event) {
+                        event.preventDefault();
+
+                        
+                        if (event.target.className == "dragNdrop") {
+                            event.target.style.paddingBottom = "3em";
+                            event.target.style.transition = "0.3s";    
+                        }
+                    }
+
+                    // ondragleave - occurs when the dragged element leaves the drop target
+                    function onDragLeave(event) {
+                        if (event.target.className == "dragNdrop") {
+                            event.target.style.paddingBottom = ".5em";
+                            event.target.style.transition = "0.3s";
+                        }
+                    }
+
+                    // ondrop - occurs when the dragged element is dropped on the drop target
+                    function onDrop(event) {
+                        var data = event.dataTransfer.getData("Text");
+                        if (event.target.className != "dragNdrop") {
+                            event.target = el.parentNode;
+                        } else {
+                            event.target.style.paddingBottom = ".5em";
+                            event.target.style.transition = "0.3s";
+                        }
+                        event.target.appendChild(document.getElementById(data));
+                        event.target.preventDefault();
+
+                    }
+
+            </script>
+
+
+            <h2>Drag and Drop</h2>
+            <p>Drag the image back and forth between the two div elements.</p>
+
+            <div class="dragNdrop" id="div1" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)">
+                <div draggable="true" ondragstart="onDragStart(event)" ondragleave="onDragLeave(event)" id="drag1" class="dragItem">Item 1</div>
+                <div draggable="true" ondragstart="onDragStart(event)" ondragleave="onDragLeave(event)" id="drag2" class="dragItem">Item 2</div>
+                <div draggable="true" ondragstart="onDragStart(event)" ondragleave="onDragLeave(event)" id="drag3" class="dragItem">Item 3</div>
+                <div draggable="true" ondragstart="onDragStart(event)" ondragleave="onDragLeave(event)" id="drag4" class="dragItem">Item 4</div>
+            </div>
+
+            <div class="dragNdrop" id="div2" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)">
+                <div draggable="true" ondragstart="onDragStart(event)" ondragleave="onDragLeave(event)" id="drag5" class="dragItem">Item 5</div>
+                <div draggable="true" ondragstart="onDragStart(event)" ondragleave="onDragLeave(event)" id="drag6" class="dragItem">Item 6</div>
+                <div draggable="true" ondragstart="onDragStart(event)" ondragleave="onDragLeave(event)" id="drag7" class="dragItem">Item 7</div>
+                <div draggable="true" ondragstart="onDragStart(event)" ondragleave="onDragLeave(event)" id="drag8" class="dragItem">Item 8</div>
+            </div>
+
+
+            <p>OBS! Om du drar en student på en annan så bildas det en grupp och du drar i båda om du drar i den övre eleven.
+                Om du drar i den undre så kan du dra ut eleven till en annan.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         </div>
     </div>
