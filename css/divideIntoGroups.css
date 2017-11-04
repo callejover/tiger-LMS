@@ -49,8 +49,9 @@
 .groupGroup:after {
     position: absolute;
     top: 0;
-    right: 0;
+    left: .2em;
     color: #fff;
+    font-size: .8em;
 }
 #group0:after { content: "1" }
 #group1:after { content: "2" }

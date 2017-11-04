@@ -103,14 +103,14 @@ function groupGenerateGroups() {
     var groupGroups = document.querySelector("#groupGroups");
     var groupGroupsCount = document.querySelector("#groupGroupsCount");
 
-    console.log(numGroups.value);
+    //console.log(numGroups.value);
 
     // Resets the list before appending new 
     groupGroups.innerHTML = "";
 
     for (let i = 0; i < numGroups.value; i++) {
 
-        console.log("groupGroups");
+        //console.log("groupGroups");
         groupGroups.innerHTML += "<div class=\"groupGroup\" id=\"group" + i + "\"></div>";
         // <div class="groupGroup" id="group1"></div>
         // <div class="groupGroup" id="group2"></div>
@@ -157,7 +157,7 @@ function groupAutoFill() {
             // Math.floor(groupStudents.length / numGroups.value)
 
 
-            var size = Math.round(groupStudents[i].length / numGroups.value);
+            var size = Math.ceil(groupStudents[i].length / numGroups.value);
             // var size = Math.floor(groupStudents[i].length / numGroups.value);
             // var size = groupStudents[i].length / numGroups.value);
 
@@ -165,19 +165,33 @@ function groupAutoFill() {
 
             // Testa denna istället: https://jsfiddle.net/wvLpyss5/
 
-
-            var newArray = new Array(Math.ceil(groupStudents[i].length / size)).fill("")
+            var dividedGroups = new Array(Math.ceil(groupStudents[i].length / size)).fill("")
                 .map(function () {
                     return this.splice(0, size);
                 }, groupStudents[i].slice());
 
-            for (let k = 0; k < newArray.length; k++) {
-                groupGroups.innerHTML += "<div class=\"groupGroup\" id=\"group" + k + "\">" + newArray[k] + "</div>";
-            }
+            for (let k = 0; k < dividedGroups.length; k++) {
+                groupGroups.innerHTML += "<div class=\"groupGroup\" id=\"group" + k + "\"></div>";
 
+                for (let j = 0; j < dividedGroups[k].length; j++) {
+
+                    var item = document.createElement("div");
+                    
+                    var textnode = document.createTextNode(dividedGroups[k][j]);
+                    
+                    item.appendChild(textnode);
+                
+                    var list = document.getElementById("group" + k);
+                    
+                    list.insertBefore(item, list.childNodes[0]).setAttribute("class", "groupStudent");
+                
+                }
+
+            }
         }
     }
 }
+
 
 // Displays the currently selected class
 groupGenerateClassList();
