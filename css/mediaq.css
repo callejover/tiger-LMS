@@ -74,6 +74,14 @@
   .scrollHead {
     display: none;
   }
+/* ============================================================================ */
+  .hidden-max-500 {
+    display: none;
+  }
+
+  #nav-button-max-500 {
+    display: flex;
+  }
   /*menu all .html files*/
   #nav ul li {
     width: 50%;
@@ -179,3 +187,9 @@
 	=====================================*/
 
 @media (max-width: 500px) {}
+
+@media (min-width: 1200px) {
+  .hidden-max-500 {
+    display: flex;
+  }
+}

@@ -104,6 +104,10 @@ nav  attributes Branding
  padding: 0;
 }
 
+#nav-button-max-500 {
+  background-color: rgba(176,42,9,1);
+}
+
 /*====================================
 Modal Branding
 =====================================*/
