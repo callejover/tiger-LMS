@@ -417,8 +417,14 @@ h6 {
   #nav-button-max-500 {
       display: none;
       background-color: rgba(145,0,156,1);
-      justify-content: flex-end;
+      justify-content: space-between;
       padding: 10px;
+  }
+
+  #nav-button-max-500 img {
+    max-width: auto;
+    max-height: 70px;
+  }
 
   }
 
@@ -444,6 +450,11 @@ h6 {
   float: right;
   padding: 0;
   border: none;
+}
+
+#menu-button {
+  background-color: none;
+  border-radius: 50%;
 }
 /*  #nav > ul > li:nth-child(1) > a */
 
