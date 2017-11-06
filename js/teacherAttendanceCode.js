@@ -1,5 +1,5 @@
 //Sets the input date to current date for quicker attendancecode
-function setCurrentDate() {
+function setCurrentDate() { // Gets called from windowOnClickFunction.js
     document.querySelector("#lesson-day").valueAsDate = new Date();
 }
 

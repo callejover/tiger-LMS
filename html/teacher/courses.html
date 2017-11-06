@@ -43,6 +43,9 @@
           <a href="resultFeedback.html">Resultat</a>
         </li>
         <li>
+            <a href="divideIntoGroups.html">Gruppindelning</a>
+        </li>
+        <li>
           <a href="assignmentApproval.html">Betyg</a>
         </li>
         <li>
@@ -70,12 +73,13 @@
           <option value="C">Klass 3</option>
         </select>
 
-        <table>
-          <tr>
-            <th>Elev</th>
-          </tr>
-            <tbody class="StudentListBody">
-            </tbody>
+        <table class="StudentListTable">
+			<tr>		
+			  <td><strong>Elev</strong></td>
+				<td><strong>Närvaro</strong></td>
+			</tr>
+			<tbody class="StudentListBody">
+			</tbody>
         </table>
 
         <h2>Närvarokod</h2>
@@ -105,33 +109,30 @@
 
 
 
-    <!-- Hidden before clicking loginButton -->
+  <!-- Hidden before clicking loginButton -->
 
-    <div id="assignmentModal" class="modal">
-      <div class="modal-content">
-          <span class="assignmentClose">&times;</span>
-          <!-- Closing X icon in modal -->
-          <div class="header headerAssignment">
-            <h3>Lägg till Uppgift</h3>
-            <div class="assignmentApprovalContent">
-                <label for="assigmentTitle">Uppgift: </label>
-                <input type="text" id="assigmentTitle">
-                <input type="file">
+  <div id="assignmentModal" class="modal">
+    <div class="modal-content">
+      <span class="assignmentClose">&times;</span>
+      <!-- Closing X icon in modal -->
+      <div class="header headerAssignment">
+        <h3>Lägg till Uppgift</h3>
+        <div class="assignmentApprovalContent">
+          <label for="assigmentTitle">Uppgift: </label>
+          <input type="text" id="assigmentTitle">
 
-                <div class="assignmentFeedback">
-                    <label for="assignmentFeedbackTextarea">Instruktioner:</label>
-                    <br>
-                    <textarea name="assignmentFeedbackTextarea" id="assignmentFeedbackTextarea" cols="30" rows="10"></textarea>
+          <input type="file" name="" id="">
 
-                    <br>
+          <div class="assignmentFeedback">
+            <label for="assignmentFeedbackTextarea">Instruktioner:</label>
+            <br>
+            <textarea name="assignmentFeedbackTextarea" id="assignmentFeedbackTextarea" cols="30" rows="10"></textarea>
 
-                    <div>
-                        <button type="button" onclick="assignmentFeedback()">Lägg till uppgift</button>
-                        <span class="assignmentFeedbackTextareaMessage"></span>
-                    </div>
+            <br>
 
-                </div>
-
+            <div>
+              <button type="button" onclick="assignmentFeedback()">Lägg till uppgift</button>
+              <span class="assignmentFeedbackTextareaMessage"></span>
             </div>
 
           </div>

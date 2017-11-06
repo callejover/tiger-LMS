@@ -3,6 +3,12 @@ var assignmentModal = document.querySelector("#assignmentModal"); // Get the mod
 var assignmentButton = document.querySelectorAll(".assignmentButton"); // Get the button that opens the modal
 var assignmentClose = document.querySelector(".assignmentClose"); // Get the <span> element that closes the modal
 
+
+var assignmentFeedbackModal = document.querySelector("#assignmentFeedbackModal"); // Get the modal
+var assignmentFeedbackButton = document.querySelectorAll(".assignmentFeedbackButton"); // Get the button that opens the modal
+var assignmentFeedbackClose = document.querySelector(".assignmentFeedbackClose"); // Get the <span> element that closes the modal
+
+
 // For the code validaiton
 var assignmentInput = document.querySelector("#input-assignment");
 var assignmentHeader = document.querySelector(".headerAssignment");
@@ -51,6 +57,32 @@ function windowCloseAssignmentModal() {
         }
     }
 }
+
+
+        // Opens modal window to assignment
+        // When the user clicks on the button, open the modal
+        for (i = 0; i < assignmentFeedbackButton.length; i++) {
+            assignmentFeedbackButton[i].onclick = function () {
+                assignmentFeedbackModal.style.display = "block";
+            };
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        assignmentFeedbackClose.onclick = function () {
+            assignmentFeedbackModal.style.display = "none";
+        };
+
+        // When the user clicks anywhere outside of the modal, close it
+        /// Gets called in attendance.js
+        function windowCloseAssignmentFeedbackModal() {
+            if (event.target === assignmentFeedbackModal) {
+                assignmentFeedbackModal.style.display = "none";
+                if (assignmentInput.value != "") {
+                    pageSwap();
+                }
+            }
+        }
+
 
 
 // Redirects to same page when added grade

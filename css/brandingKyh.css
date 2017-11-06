@@ -104,6 +104,10 @@ nav  attributes Branding
  padding: 0;
 }
 
+#nav-button-max-500 {
+  background-color: rgba(176,42,9,1);
+}
+
 /*====================================
 Modal Branding
 =====================================*/
@@ -168,4 +172,18 @@ feedback.css Branding
     background-color: #E84D0C;
 }
 
+/* =====================================
+accounts.css Branding
+===================================== */
 
+.account-content {
+  background-color: #B02A09;
+}
+
+.account-main-content h2{
+  background-color: rgba(250,149,0,0.5);
+}
+
+.account-main-content button:hover {
+  background-color: rgba(250,149,0,0.5);
+}

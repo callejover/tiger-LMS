@@ -74,14 +74,27 @@
   .scrollHead {
     display: none;
   }
+/* ============================================================================ */
+  .hidden-max-500 {
+    /* display: none; */
+  }
+
+  #nav-button-max-500 {
+    display: flex;
+  }
   /*menu all .html files*/
+
+  #nav ul {
+    flex-direction: column;
+  }
+
   #nav ul li {
     width: 50%;
     text-align: center;
   }
   #nav ul li:nth-child(1) {
     flex-grow: 0;
-    display: block;
+    display: none;
     padding: 2em;
   }
   .quick-evaluation-wrap {
@@ -162,6 +175,13 @@
 
   .teachCourses {
     width: 90%;
+  }
+
+  .assignmentsTeacher {
+    flex-direction: column
+  }
+  .teacherAssignmentTable {
+    width: 100%
   }
   
 }
