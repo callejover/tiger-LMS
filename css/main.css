@@ -439,7 +439,7 @@ h6 {
       color: white;
   }
 
-  #nav ul li a:hover {
+  #nav li:hover {
       background-color: rgba(145,0,156,1);
       transition-duration: 1s;
   }
