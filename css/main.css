@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* main styling
-Color map
+Color map main
 
 hex:
 1. D900E8
@@ -13,7 +13,7 @@ hex:
 rgb():
 1. 217,0,232
 2. 166,79,172
-3. 145,0,156
+3. 145,0,156 main
 4. 221,70,232
 5. 98,0,105
 
@@ -55,15 +55,6 @@ p {
 strong {
   font-weight: bold;
 }
-
-/*
-img{
-    display: block;
-    width: 200px;
-    height: auto;
-    border-radius: 5%;
-    z-index: 500;
-  } */
 
   a {
     color: #fff;
@@ -224,8 +215,6 @@ a {
 	background-size: cover;
   opacity: 0.7;
   border-radius: 50%;
-
-
 }
 
 .scrollHead a:hover{
@@ -328,13 +317,28 @@ h4 {
   padding: inherit;
 }
 
-.clickAssignment {
-  
-}
 
 .par, .teachContent{
   width: 100%;
   min-width: 100%;
+}
+
+.par{
+  margin-bottom: 1em;
+}
+
+.courseName {
+  width: calc(80% + 6em);
+  min-width: 80%;
+  height: 2.5em;
+  vertical-align: text-top;
+  text-align: left;
+  padding-left: 1em;
+  font-weight: bold;
+  text-decoration: underline;
+  top: 0;
+  line-height:2.5em;
+
 }
 
   /*====================================
@@ -402,6 +406,16 @@ h4 {
    line-height: normal;
   }
 
+  #nav ul li:nth-child(1) img{
+      display:block;
+      width: auto;
+      height: 5em;
+      z-index: 500;
+      top: 0;
+      left: 0;
+    }
+
+
   #back {
   font-size: 1em;
   float: right;
@@ -431,8 +445,7 @@ h4 {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow:auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
+  overflow: auto; /* Enable scroll if needed */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   -webkit-animation-name: slideIn; /* Fade in the background /*/
   -webkit-animation-duration: 0.4s;
@@ -442,8 +455,9 @@ h4 {
 }
 
 .modal-content {
-  background-color: #fefefe;
-  margin: 7% auto; /* 15% from the top and centered */
+
+  background-color: #3b003f;
+  margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 25%; /* Could be more or less, depending on screen size */
@@ -481,10 +495,6 @@ h4 {
   cursor: pointer;
 }
 
-.modal-content {
-  background-color: #3b003f
-}
-
 /*==========================================
 This is CSS only for the news.html page
 ============================================*/
@@ -513,13 +523,13 @@ This is CSS only for the news.html page
 }
 
 .newsDate {
-  padding-left: 1em; 
+  padding-left: 1em;
   flex: 1;
   font-size: 0.8em;
 }
 
 .news-content2 {
-  background-color: rgba(128, 19, 136, 0.35);
+  background-color: rgba(221,70,232, 0.35);
   padding: 1em;
   flex: 3;
   font-size: 1em;

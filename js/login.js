@@ -22,7 +22,7 @@ var objPeople = [
         username: "admin",
         password: "admin",
         account: "admin",
-        refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/admin/courses.html' : 'admin/courses.html'  // Html waiting for page
+        refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/admin/admin.html' : 'admin/admin.html'  // Html waiting for page
     }
 ]
 
@@ -32,7 +32,7 @@ function getInfo() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     var message = "Du har skrivit in fel lösenord!";
-  
+
 
 // Loops accouts and checks for matches
     for(i = 0; i < objPeople.length; i++) {
@@ -94,4 +94,3 @@ document.getElementById("password").addEventListener("keyup", function(event) {
         document.getElementById("password").click(getInfo());
     }
 });
-
