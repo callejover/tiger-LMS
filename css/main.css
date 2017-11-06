@@ -241,6 +241,36 @@ a {
 
 }
 
+.subj1 {
+background: #ffb477 url('../img/java2.jpg') no-repeat;
+background-blend-mode: overlay;
+background-size: cover;
+}
+
+.subj2 {
+  background: #ffb477 url('../img/html_css_2.jpg') no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.subj3 {
+  background: #ffb477 url('../img/scrum2.png') no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.subj4 {
+  background: #ffb477 url('../img/backend2.png') no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.subj1:hover, .subj2:hover, .subj3:hover, .subj4:hover {
+  background-color: rgba(255,0,0,0);
+  font-weight: bold;
+  text-shadow: 0 0 0.3em #000;
+  transition-duration: 1s; 
+}
 .teachCourses{
   width: 20%;
   height: 25vh;
