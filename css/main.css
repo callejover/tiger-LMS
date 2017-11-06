@@ -268,6 +268,7 @@ background-size: cover;
 .subj1:hover, .subj2:hover, .subj3:hover, .subj4:hover {
   background-color: rgba(255,0,0,0);
   font-weight: bold;
+  text-shadow: 0 0 0.3em #000;
   transition-duration: 1s; 
 }
 .teachCourses{
