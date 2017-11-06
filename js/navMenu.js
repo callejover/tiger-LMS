@@ -32,7 +32,7 @@ function navShowHide() { // Change .hidden-max-500 element to display: flex
     Reset the state so it aper on the desktop view again 
 */
 function resizeWindow() {
-    if (window.innerWidth < 500) {
+    if (window.innerWidth < 1200) {
         hiddenNavWarp.style.display = "none";     
     } else {
         hiddenNavWarp.style.display = "flex";          
