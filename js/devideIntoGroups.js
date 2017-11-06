@@ -148,9 +148,6 @@ function groupGenerateClassList() {
     var groupSelectListCount = document.querySelector("#groupsSelectListCount");
     var groupGroups = document.querySelector("#groupGroups");
 
-    // Resets the list before appending new 
-    // groupClassList.innerHTML = "";
-
     // To keep the group count intact after loading classList
     groupGenerateGroups();
 
@@ -207,6 +204,8 @@ function groupAutoFillPerGroup() {
 
             var size = Math.ceil(groupStudents[i].length / numGroups.value);
 
+            var  studentUniqueId = 0;
+            
             var dividedGroups = new Array(Math.ceil(groupStudents[i].length / size)).fill("")
                 .map(function () {
                     return this.splice(0, size);
@@ -216,9 +215,11 @@ function groupAutoFillPerGroup() {
 
                 groupGroups.innerHTML += "<div class=\"groupGroup\" id=\"group" + k + "\" ondrop=\"onDrop(event)\" ondragover=\"onDragOver(event)\" ondragleave=\"onDragLeave(event)\"></div>";
 
-                // class=\"groupGroup dragNdrop\" id=\"group" + k + "\" ondrop=\"onDrop(event)\" ondragover=\"onDragOver(event)\" ondragleave=\"onDragLeave(event)\"
-
                 for (let j = 0; j < dividedGroups[k].length; j++) {
+
+                studentUniqueId++;
+                    
+                console.log(studentUniqueId);
 
                     var item = document.createElement("div");
                     var textNode = document.createTextNode(dividedGroups[k][j]);
@@ -229,7 +230,7 @@ function groupAutoFillPerGroup() {
                         "ondragstart": "onDragStart(event)",
                         "ondragleave": "onDragLeave(event)",
                         "class": "groupStudent",
-                        "id": "drag" + k + j // Uniqe id for every item - look into more fore buggy behavior!
+                        "id": "drag" + studentUniqueId // Uniqe id for every item - look into more fore buggy behavior!
                     });
                 }
             }
@@ -254,6 +255,9 @@ function groupAutoFillPerStudent() {
         // Check witch class is selected
         if (groupSelectListValue == i) {
             var size = numStudents.value;
+            
+            var  studentUniqueId = 0;
+
             var dividedGroups = new Array(Math.ceil(groupStudents[i].length / size)).fill("")
                 .map(function () {
                     return this.splice(0, size);
@@ -265,6 +269,8 @@ function groupAutoFillPerStudent() {
                 for (let j = 0; j < dividedGroups[k].length; j++) {
                     var item = document.createElement("div");
                     var textNode = document.createTextNode(dividedGroups[k][j]);
+                    
+                    studentUniqueId++;
 
                     item.appendChild(textNode);
 
@@ -274,7 +280,7 @@ function groupAutoFillPerStudent() {
                         "ondragstart": "onDragStart(event)",
                         "ondragleave": "onDragLeave(event)",
                         "class": "groupStudent",
-                        "id": "drag" + k + j // Uniqe id for every item - look into more fore buggy behavior!
+                        "id": "drag" + studentUniqueId // Uniqe id for every item - look into more fore buggy behavior!
                     });
 
                 }
