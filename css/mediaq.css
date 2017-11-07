@@ -127,6 +127,10 @@
   #groupWrap {
     display: none;
   }
+
+  #displaysUnder1200 {
+    display: flex;
+}
 }
 
 
