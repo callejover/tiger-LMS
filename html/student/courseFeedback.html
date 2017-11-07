@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../../css/feedback.css">
     <link rel="stylesheet" href="../../css/dailyFeedback.css">
     <link rel="stylesheet" href="../../css/brandingKyh.css">
+    <link rel="stylesheet" href="../../css/slider.css">
 
     <link rel="stylesheet" href="../../css/mediaq.css">
 
@@ -31,11 +32,16 @@
     <header>
         <nav id="nav">
             <div id="nav-button-max-500">
-                <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
-                <button id="menu-button">MENY</button></div>
+                <a href="courses.html">
+                    <img src="../../img/KYH-logo.png">
+                </a>
+                <button id="menu-button">MENY</button>
+            </div>
             <ul class="hidden-max-500">
                 <li>
-                    <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
+                    <a href="courses.html">
+                        <img src="../../img/KYH-logo.png">
+                    </a>
                 </li>
                 <li>
                     <a href="news.html">Nyheter</a>
@@ -62,15 +68,17 @@
     <div id="attendanceModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-        <!-- Closing X icon in modal -->
+            <!-- Closing X icon in modal -->
             <div class="header">
                 <h2>Närvaro</h2>
                 <form name="input-attendance">
                     <div class="attendance">
                         <p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
                         <p>Koden är endast giltlig i 5 minuter!</p>
-                        <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
-                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button><br>
+                        <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance">
+                        <br>
+                        <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button>
+                        <br>
                         <span class="wrongCode"></span>
                     </div>
                 </form>
@@ -82,117 +90,97 @@
     <div class="wrap">
         <div class="content">
             <div class="innerContent apperance">
-                <div class="back-bar"><button id="back" onclick="goBack()">&lt;Tillbaka</button></div>
+                <div class="back-bar">
+                    <button id="back" onclick="goBack()">&lt;Tillbaka</button>
+                </div>
                 <h2>Kursutvärdering</h2>
-                <p>Alla fält med en röd stjärna (<span class="color-red">*</span>) är obligatoriska att fylla i.</p>
+                <p>Alla fält med en röd stjärna (
+                    <span class="color-red">*</span>) är obligatoriska att fylla i.</p>
                 <form class="course-evaluation" name="checkFormData" action="javascript:check();" onsubmit="return check()">
-                    <br><br>
+                    <br>
+                    <br>
                     <h4>Har vi gjort det vi ska?</h4>
-                    <div class = "radio">
-                    <span class = "p-left">Stämmer inte alls</span>
-                    <label for="haveDone1">1<br/>
-                        <input type="radio" id = "haveDone1" name="haveDone" value="1" required></label>
-                    <label for="haveDone2">2<br/>
-                        <input type="radio" id = "haveDone2" name="haveDone" value="2" required></label>
-                    <label for="haveDone3">3<br/>
-                        <input type="radio" id = "haveDone3" name="haveDone" value="3" required></label>
-                    <label for="haveDone4">4<br/>
-                        <input type="radio" id = "haveDone4" name="haveDone" value="4" required></label>
-                    <label for="haveDone5">5<br/>
-                        <input type="radio" id = "haveDone5" name="haveDone" value="5" required></label>
-                    <label for="haveDone6">6<br/>
-                        <input type="radio" id = "haveDone6" name="haveDone" value="6" required></label>
-                    <label for="haveDone7">7<br/>
-                        <input type="radio" id = "haveDone7" name="haveDone" value="7" required></label>
-                    <span class="mandatory">Stämmer väldigt bra</span><br>
+                    <span class="slider-value" id="number1"></span>
+                    <div class="flexSliderContainer">
+                        <span class="slider-text text-align-right">Hänger inte med alls.</span>
+                        <input type="range" min="0" max="10" value="5" class="create_slider1" id="slider1">
+                        <span class="slider-text">Hänger med till 100%.</span>
                     </div>
+
                     <h5>Beskriv i ord:</h5>
 
-                    <textarea name="haveDone" cols="30" rows="5"></textarea><br><br>
-                   
+                    <textarea name="haveDone" cols="30" rows="5"></textarea>
+                    <br>
+                    <br>
+
                     <h4>Hur var kursen?</h4>
-                    <div class = "radio">
-                    <span class = "p-left">Dålig</span>
-                    <label for="howCourse1">1<br/>
-                        <input type="radio" id = "howCourse1" name="howCourse" value="1" required></label>
-                    <label for="howCourse2">2<br/>
-                        <input type="radio" id = "howCourse2" name="howCourse" value="2" required></label>
-                    <label for="howCourse3">3<br/>
-                        <input type="radio" id = "howCourse3" name="howCourse" value="3" required></label>
-                    <label for="howCourse4">4<br/>
-                        <input type="radio" id = "howCourse4" name="howCourse" value="4" required></label>
-                    <label for="howCourse5">5<br/>
-                        <input type="radio" id = "howCourse5" name="howCourse" value="5" required></label>
-                    <label for="howCourse6">6<br/>
-                        <input type="radio" id = "howCourse6" name="howCourse" value="6" required></label>
-                    <label for="howCourse7">7<br/>
-                        <input type="radio" id = "howCourse7" name="howCourse" value="7" required></label>
-                    <span class="mandatory">Bra</span><br>
+
+                    <span class="slider-value" id="number2"></span>
+                    <div class="flexSliderContainer">
+                        <span class="slider-text text-align-right">Inte engagerad all.</span>
+                        <input type="range" min="0" max="10" value="5" class="create_slider2" id="slider2">
+                        <span class="slider-text">Mycket engagerad.</span>
                     </div>
+
                     <h5>Beskriv i ord:</h5>
-                    <textarea name="howCourse" cols="30" rows="5"></textarea><br><br>
+                    <textarea name="howCourse" cols="30" rows="5"></textarea>
+                    <br>
+                    <br>
 
                     <h4>Vad tyckte du om läraren?</h4>
-                    <div class = "radio">
-                    <span class = "p-left">Dålig</span>
-                    <label for="aboutTeacher1">1<br/>
-                        <input type="radio" id = "aboutTeacher1" name="aboutTeacher" value="1" required></label>
-                    <label for="aboutTeacher2">2<br/>
-                        <input type="radio" id = "aboutTeacher2" name="aboutTeacher" value="2" required></label>
-                    <label for="aboutTeacher3">3<br/>
-                        <input type="radio" id = "aboutTeacher3" name="aboutTeacher" value="3" required></label>
-                    <label for="aboutTeacher4">4<br/>
-                        <input type="radio" id = "aboutTeacher4" name="aboutTeacher" value="4" required></label>
-                    <label for="aboutTeacher5">5<br/>
-                        <input type="radio" id = "aboutTeacher5" name="aboutTeacher" value="5" required></label>
-                    <label for="aboutTeacher6">6<br/>
-                        <input type="radio" id = "aboutTeacher6" name="aboutTeacher" value="6" required></label>
-                    <label for="aboutTeacher7">7<br/>
-                        <input type="radio" id = "aboutTeacher7" name="aboutTeacher" value="7" required></label>
-                    <span class="mandatory">Bra</span><br>
+
+                    <span class="slider-value" id="number3"></span>
+                    <div class="flexSliderContainer">
+                        <span class="slider-text text-align-right">Dålig stämning.</span>
+                        <input type="range" min="0" max="10" value="5" class="create_slider3" id="slider3">
+                        <span class="slider-text">Mycket god stämning.</span>
                     </div>
                     <h5>Beskriv i ord:</h5>
-                    <textarea name= "aboutTeacher" cols="30" rows="5"></textarea><br>
+                    <textarea name="aboutTeacher" cols="30" rows="5"></textarea>
+                    <br>
                     <br>
 
                     <h4>Hur var kursen som helhet?</h4>
-                    <div class = "radio">
-                    <span class = "p-left">Dålig</span>
-                    <label for="courseOverhead1">1<br/>
-                        <input type="radio" id = "courseOverhead1" name="courseOverhead" value="1" required></label>
-                    <label for="courseOverhead2">2<br/>
-                        <input type="radio" id = "courseOverhead2" name="courseOverhead" value="2" required></label>
-                    <label for="courseOverhead3">3<br/>
-                        <input type="radio" id = "courseOverhead3" name="courseOverhead" value="3" required></label>
-                    <label for="courseOverhead4">4<br/>
-                        <input type="radio" id = "courseOverhead4" name="courseOverhead" value="4" required></label>
-                    <label for="courseOverhead5">5<br/>
-                        <input type="radio" id = "courseOverhead5" name="courseOverhead" value="5" required></label>
-                    <label for="courseOverhead6">6<br/>
-                        <input type="radio" id = "courseOverhead6" name="courseOverhead" value="6" required></label>
-                    <label for="courseOverhead7">7<br/>
-                        <input type="radio" id = "courseOverhead7" name="courseOverhead" value="7" required></label>
-                    <span class="mandatory">Bra</span><br>
+
+                    <span class="slider-value" id="number4"></span>
+                    <div class="flexSliderContainer">
+                        <span class="slider-text text-align-right">Dålig stämning.</span>
+                        <input type="range" min="0" max="10" value="5" class="create_slider4" id="slider4">
+                        <span class="slider-text">Mycket god stämning.</span>
                     </div>
+
                     <h5>Beskriv i ord:</h5>
                     <textarea id="courseOverhead" cols="30" rows="10"></textarea>
-                    <br><br>
+                    <br>
+                    <br>
 
                     <h4>Har kursen innefattat detta?</h4>
-                    <div class = "course-contains">
-                    <p>Bock i det som stämmer överens med vad kursen har innefattat.</p>
-                    <label><input type="checkbox" name="courseContains" value="1">Uppgift 1</label><br>
-                    <label><input type="checkbox" name="courseContains" value="2">Uppgift 2</label><br>
-                    <label><input type="checkbox" name="courseContains" value="3">Uppgift 3</label><br>
-                    <label><input type="checkbox" name="courseContains" value="4">Uppgift 4</label><br>
-                    <label><input type="checkbox" name="courseContains" value="5">Uppgift 5</label><br>
-                    <label><input type="checkbox" name="courseContains" value="6">Uppgift 6</label><br>
+                    <div class="course-contains">
+                        <p>Bock i det som stämmer överens med vad kursen har innefattat.</p>
+                        <label>
+                            <input type="checkbox" name="courseContains" value="1">Uppgift 1</label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="courseContains" value="2">Uppgift 2</label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="courseContains" value="3">Uppgift 3</label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="courseContains" value="4">Uppgift 4</label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="courseContains" value="5">Uppgift 5</label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="courseContains" value="6">Uppgift 6</label>
+                        <br>
                     </div>
                     <h5>Något annat utöver detta?</h5>
-                  
+
                     <textarea name="" id="courseContains" cols="30" rows="10"></textarea>
 
-                    <button class = "send-button"  type="submit">Skicka!</button>
+                    <button class="send-button" type="submit">Skicka!</button>
 
 
                 </form>
@@ -211,17 +199,23 @@
             <div id="quick-evaluation">
 
                 <div class="quick-evaluation-inner">
-                    <a href="#" id="glad" onclick="clickItem1()"><img src="../../img/quick-evaluation-glad.png" alt="All good" title="All good"></a>
+                    <a href="#" id="glad" onclick="clickItem1()">
+                        <img src="../../img/quick-evaluation-glad.png" alt="All good" title="All good">
+                    </a>
                     <span class="glad-message">Härligt, tack!</span>
                 </div>
 
                 <div class="quick-evaluation-inner">
-                    <a href="#" id="between" onclick="clickItem2()"><img src="../../img/quick-evaluation-between.png" alt="All good" title="It's ok"></a>
+                    <a href="#" id="between" onclick="clickItem2()">
+                        <img src="../../img/quick-evaluation-between.png" alt="All good" title="It's ok">
+                    </a>
                     <span class="between-message">Ok, tack!</span>
                 </div>
 
                 <div class="quick-evaluation-inner">
-                    <a href="#" id="sad" onclick="clickItem3()"><img src="../../img/quick-evaluation-sad.png" alt="All good" title="Not good!"></a>
+                    <a href="#" id="sad" onclick="clickItem3()">
+                        <img src="../../img/quick-evaluation-sad.png" alt="All good" title="Not good!">
+                    </a>
                     <span class="sad-message">Vad trist, tack!</span>
                 </div>
 
@@ -239,6 +233,7 @@
     <script src="../../js/studentFeedback.js"></script>
     <script src="../../js/studentDailyFeedback.js"></script>
     <script src="../../js/attendance.js"></script>
+    <script src="../../js/slider.js"></script>
 
     <script src="../../js/navMenu.js"></script>
 </body>
