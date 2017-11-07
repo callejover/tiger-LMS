@@ -236,9 +236,21 @@ a {
 .features, .pricing, .textContent, .teachCourses {
   width: 30%;
   padding: 0;
-  margin: 2.5% 5% 0 5%;
+  margin: 2.5% 5% 2.5% 5%;
   text-align: center;
 
+}
+
+.features {
+  background: url('../img/features.png') no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.pricing {
+  background: url('../img/money.jpeg') no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
 }
 
 .subj1 {
@@ -265,7 +277,8 @@ background-size: cover;
   background-size: cover;
 }
 
-.subj1:hover, .subj2:hover, .subj3:hover, .subj4:hover {
+.subj1:hover, .subj2:hover, .subj3:hover, .subj4:hover, 
+.pricing:hover, .features:hover {
   background-color: rgba(255,0,0,0);
   font-weight: bold;
   text-shadow: 0 0 0.3em #000;
