@@ -11,6 +11,16 @@
 
 // ======================================================================================
 
+// When the window loads, display navigation none
+
+window.onload = function() {
+    if (window.innerWidth < 1200) {
+        hiddenNavWarp.style.display = "none";     
+    } else {
+        hiddenNavWarp.style.display = "flex";       
+    } 
+}
+
 /*
     When clicking on the nav-button-max-500
     then the hidden-max-500 changes to display: flex
@@ -35,9 +45,11 @@ function resizeWindow() {
     if (window.innerWidth < 1200) {
         hiddenNavWarp.style.display = "none";     
     } else {
-        hiddenNavWarp.style.display = "flex";          
-    }
+        hiddenNavWarp.style.display = "flex";       
+    } 
+    
 }
+
 
 
 // Call functions with event listener 

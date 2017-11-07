@@ -32,7 +32,9 @@
 
   <header>
     <nav id="nav">
-        <div id="nav-button-max-500">MENY</div>
+        <div id="nav-button-max-500">
+            <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
+            <button id="menu-button">MENY</button></div>
         <ul class="hidden-max-500">
           <li>
             <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
@@ -107,14 +109,45 @@
     <!--modal-content-->
   </div>
   <!-- div attendanceModal opens the login box on index screen -->
+  <div id="newsModal" class="modal">
+        <div class="modal-content">
+            <span class="newsClose">&times;</span>
+            <!-- Closing X icon in modal -->
+            <div class="header headerAssignment">
+              <div id="newsContent">
+                <h2>Lägg till nyheter</h2>
+                
+                <form name="newsForm">
+                    <select id="classNews">
+                      <option value="javascript">Javascript</option>
+                      <option value="htmlCss">HTML och CSS </option>
+                      <option value="backend">Backend</option>
+
+
+                    </select>
+                    <textarea rows="10" cols="50">
+                    </textarea>
+                    <button id="sendNews" onclick="sendNews1()" >Lägg till</button>
+                    <span id="newsSent"></span>
+                    
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+
 
   <div class="wrap index teachWrap">
       <div class="innerContent apperance">
+
+                
+
         <div class="news-head">
                 <h2>Viktiga Nyheter</h2>
                 <p>Här kan du som lärare ta del av viktiga nyheter som berör skolan.
                 <br>
                 Välj efter ämnes område ur listan och visa det som berör just det området.</p>
+                <button id="newsButton" >Lägg till nyheter</button>
         </div>
         <section class="slide slide-four">
             <div class="tab-group">
@@ -315,6 +348,7 @@
             </div>
             <!--tab-group-->
         </section>
+
         </div>
   </div>
   <!--wrap content found in teacherInfoCourses.html-->
@@ -333,7 +367,9 @@
   <script src="../../js/teacherAttendanceCode.js"></script>
   <script src="../../js/teacherAssignmentApproval.js"></script>
   <script src="../../js/teacherAttendanceOverview.js"></script>
+  <script src="../../js/teacherNews.js"></script>
 
+  <script src="../../js/navMenu.js"></script>
 
 </body>
 

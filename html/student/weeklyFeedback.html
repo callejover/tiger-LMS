@@ -23,7 +23,9 @@
 
         <header>
             <nav id="nav">
-                <div id="nav-button-max-500">MENY</div>
+                <div id="nav-button-max-500">
+                    <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
+                    <button id="menu-button">MENY</button></div>
                 <ul class="hidden-max-500">
                     <li>
                         <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
@@ -76,7 +78,7 @@
                     <div class="back-bar"><button id="back" onclick="goBack()">&lt;Tillbaka</button></div>
                     <h3>Veckans Utvärdering</h3><p class = "required">(* = Obligatorisk)</p><br><br>
                     <form class="weekly-feedback" name="checkFormData" action="javascript:checkWeekly();" onsubmit="return checkWeekly()">
-                        <h4>Hur upplever du just nu tempot i utbildningen?<span style="color:red">*</span></h4>
+                        <h4>Hur upplever du just nu tempot i utbildningen?*</h4>
                         <div class = "radio">
                             <p class = "p-left">Hänger inte med alls</p>
                             <label for="num1">1<br/>
@@ -96,7 +98,7 @@
                             <p>Hänger med till 100 %</p>
                             <br>
                         </div><br>
-                        <h4>Hur engagerad anser du själv att du är i dina studier?<span style="color:red">*</span></h4>
+                        <h4>Hur engagerad anser du själv att du är i dina studier?*</h4>
                         <div class = "radio">
                             <p class = "p-left">Inte engagerad alls</p>
                             <label for="num2-1">1<br/>
@@ -115,7 +117,7 @@
                                 <input type="radio" id = "num2-7" name = "num2" value = "7" required></label>
                             <p>Väldigt engagerad</p><br>
                         </div><br>
-                        <h4>Hur upplever du stämningen i klassen?<span style="color:red">*</span></h4>
+                        <h4>Hur upplever du stämningen i klassen?*</h4>
                         <div class = "radio">
                             <p class = "p-left">Dålig stämning</p>
                             <label for="num3-1">1<br/>
@@ -184,6 +186,8 @@
     <script src="../../js/studentFeedback.js"></script>
     <script src="../../js/studentDailyFeedback.js"></script>
     <script src="../../js/attendance.js"></script>
+
+    <script src="../../js/navMenu.js"></script>
 
     </body>
 </html>

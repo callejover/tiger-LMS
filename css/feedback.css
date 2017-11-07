@@ -49,7 +49,7 @@ textarea { /* textarea-sizing */
 }
 
 .required {
-    color: red;
+    color: #FFF;
     font-size: 0.9em;
 }
 
