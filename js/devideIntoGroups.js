@@ -209,7 +209,7 @@ function groupAutoFillPerGroup() {
     for (var i = 0; i < groupStudents.length; i++) {
 
         // Check witch class is selected
-        if (groupSelectListValue == i) {
+        if (groupSelectListValue == i) {    
 
             var size = Math.ceil(groupStudents[i].length / numGroups.value);
 
