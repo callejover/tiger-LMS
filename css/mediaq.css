@@ -128,9 +128,9 @@
     display: none;
   }
 
-  #displaysUnder1200 {
+  .displaysUnder1200 {
     display: flex;
-}
+  }
 }
 
 
