@@ -513,11 +513,9 @@ h6 {
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
   animation-duration: 0.4s;
-
 }
 
 .modal-content {
-
   background-color: #3b003f;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
@@ -535,8 +533,7 @@ h6 {
 
 .close,
 .assignmentClose,
-.attendanceClose,
-.newsClose {
+.attendanceClose {
   color: #DBDBDB;
   float: right;
   font-size: 28px;
@@ -549,9 +546,7 @@ h6 {
 .assignmentClose:hover,
 .assignmentClose:focus,
 .attendanceClose:hover,
-.attendanceClose:focus,
-.newsClose:focus,
-.newsClose:hover {
+.attendanceClose:focus {
   color: #313131;
   text-decoration: none;
   cursor: pointer;
@@ -756,4 +751,6 @@ CSS for accounts.html on admin pages
   padding: 2em;
 }
 
-
+.newsArea {
+  width: 100%;
+}
