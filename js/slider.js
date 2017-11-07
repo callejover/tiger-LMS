@@ -1,11 +1,13 @@
     let slider = [
         document.querySelector("#slider1"),
         document.querySelector("#slider2"),
-        document.querySelector("#slider3")
+        document.querySelector("#slider3"),
+        document.querySelector("#slider4")
     ];
     let output = [
         document.querySelector("#number1"),
         document.querySelector("#number2"),
+        document.querySelector("#number4"),
         document.querySelector("#number3")
     ];
     
