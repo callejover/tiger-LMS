@@ -123,6 +123,10 @@
     width: 50%;
     margin-top: 12em;
   }
+
+  #groupWrap {
+    display: none;
+  }
 }
 
 

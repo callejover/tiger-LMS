@@ -1,3 +1,12 @@
+// if(window.resizeTo > 1200) {
+//     resizeWindow();
+// }
+
+// function resizeWindow() {
+//     var hidddenGroups = document.querySelector(".innerContent"); 
+
+//     hiddenGroups.innerHTML = alert(123);
+
 var groupStudents = [
     FE15 = [
         "Maria Johansson",

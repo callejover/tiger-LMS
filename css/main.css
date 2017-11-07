@@ -456,8 +456,6 @@ h6 {
     max-height: 70px;
   }
 
-  }
-
   #nav ul li:nth-child(1) {
    flex-grow: 3;
    flex-shrink: 0;
@@ -752,4 +750,5 @@ CSS for accounts.html on admin pages
 #submit-button {
   padding: 2em;
 }
+
 
