@@ -52,10 +52,43 @@
     </header>
 
     <div class="wrap">
+      <div id="newsModal" class="modal">
+        <div class="modal-content">
+            <span class="newsClose">&times;</span>
+            <!-- Closing X icon in modal -->
+            <div class="header headerAssignment">
+              <div id="newsContent">
+                <h2>Lägg till nyheter</h2>
+                
+                <form name="newsForm">
+                    <select id="classNews">
+                      <option value="javascript">Javascript</option>
+                      <option value="htmlCss">HTML och CSS </option>
+                      <option value="backend">Backend</option>
+                      <option value="arbetsmetodik">Arbetsmetodik</option>
+
+
+                    </select>
+                    <select id="teacherStudent">
+                      <option value="student">Elever</option>
+                      <option value="teacher">Lärare</option>
+                    </select>
+                    <textarea rows="10" cols="50">
+                    </textarea>
+                    <button id="sendNews" onclick="sendNews1()" >Lägg till</button>
+                    <span id="newsSent"></span>
+                    
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+    <a id="newsButton">Lägg till nyheter</button>
+
 
     </div><!--wrap-->
 
-
+<script src="../../js/teacherNews.js"></script>
   </body>
 
   </html>
