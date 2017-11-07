@@ -22,6 +22,7 @@
 
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//js.jotform.com/JotFormAnywhere.js"></script>
 
 </head>
 
@@ -53,6 +54,37 @@
       </nav>
     </header>
 
+    <div id="assignmentModal" class="modal">
+      <div class="modal-content">
+        <span class="assignmentClose">&times;</span>
+        <!-- Closing X icon in modal -->
+        <div class="header headerAssignment">
+          <h3>Lägg till Uppgift</h3>
+          <div class="assignmentApprovalContent">
+            <label for="assigmentTitle">Uppgift: </label>
+            <input type="text" id="assigmentTitle">
+
+            <input type="file" name="" id="">
+
+            <div class="assignmentFeedback">
+              <label for="assignmentFeedbackTextarea">Instruktioner:</label>
+              <br>
+              <textarea name="assignmentFeedbackTextarea" id="assignmentFeedbackTextarea" cols="30" rows="10"></textarea>
+
+              <br>
+
+              <div>
+                <button type="button" onclick="assignmentFeedback()">Lägg till uppgift</button>
+                <span class="assignmentFeedbackTextareaMessage"></span>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="wrap adminwrap">
 
       <div class="teachCourses apperance courseName">
@@ -62,7 +94,7 @@
       <!--teachCourses-->
 
       <div class="teachCourses apperance">
-        <a class="assignmentButton click" onclick="myFunction()">
+        <a class="assignmentButton click">
           Daglig utvärdering
         </a>
       </div>
@@ -83,7 +115,7 @@
       <!--teachCourses-->
 
       <div class="teachCourses apperance">
-        <a class="assignmentButton click">
+        <a class="assignmentButton click" onclick="JotformAnywhere.launchFormBuilder();">
           +
         </a>
       </div>
@@ -96,6 +128,14 @@
     <script>
       w3.includeHTML();
     </script>
+    <script src="../../js/adminEditFeedback.js"></script>
+
+    <script src="../../js/windowOnClickFunction.js"></script>
+    <script src="../../js/attendance.js"></script>
+    <script src="../../js/teacherAssignment.js"></script>
+    <script src="../../js/teacherAttendanceCode.js"></script>
+    <script src="../../js/teacherAssignmentApproval.js"></script>
+    <script src="../../js/teacherAttendanceOverview.js"></script>
 
 
   </body>

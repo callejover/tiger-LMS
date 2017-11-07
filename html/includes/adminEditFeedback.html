@@ -1,1 +1,103 @@
+<div class="wrap">
+    <div class="content">
+        <div class="innerContent apperance">
+            <div class="back-bar"><button id="back" onclick="goBack()">&lt;Tillbaka</button></div>
+            <h3>Veckans Utvärdering</h3><p class = "required">(* = Obligatorisk)</p><br><br>
+            <form class="weekly-feedback" name="checkFormData" action="" onsubmit="return checkWeekly();">
+                <div class = "remove">
+                  <h4 contenteditable="true">Hur upplever du just nu tempot i utbildningen?<span style="color:red">*</span></h4>
+                  <div class = "radio">
+                      <p class = "p-left">Hänger inte med alls</p>
+                      <label for="num1">1<br/>
+                          <input type="radio" id = "num1" name = "num" value = "1" required></label>
+                      <label for="num2">2<br/>
+                          <input type="radio" id = "num2" name = "num" value = "2" required></label>
+                      <label for="num3">3<br/>
+                          <input type="radio" id = "num3" name = "num" value = "3" required></label>
+                      <label for="num4">4<br/>
+                          <input type="radio" id = "num4" name = "num" value = "4" required></label>
+                      <label for="num5">5<br/>
+                          <input type="radio" id = "num5" name = "num" value = "5" required></label>
+                      <label for="num6">6<br/>
+                          <input type="radio" id = "num6" name = "num" value = "6" required></label>
+                      <label for="num7">7<br/>
+                          <input type="radio" id = "num7" name = "num" value = "7" required></label>
+                      <p>Hänger med till 100 %</p>
+                      <br>
+                  </div>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                </div>
+                  <br>
+                <div class = "remove">
+                  <h4 contenteditable="true">Hur engagerad anser du själv att du är i dina studier?<span style="color:red">*</span></h4>
+                  <div class = "radio">
+                      <p class = "p-left">Inte engagerad alls</p>
+                      <label for="num2-1">1<br/>
+                          <input type="radio" id = "num2-1" name = "num2" value = "1" required></label>
+                      <label for="num2-2">2<br/>
+                          <input type="radio" id = "num2-2" name = "num2" value = "2" required></label>
+                      <label for="num2-3">3<br/>
+                          <input type="radio" id = "num2-3" name = "num2" value = "3" required></label>
+                      <label for="num2-4">4<br/>
+                          <input type="radio" id = "num2-4" name = "num2" value = "4" required></label>
+                      <label for="num2-5">5<br/>
+                          <input type="radio" id = "num2-5" name = "num2" value = "5" required></label>
+                      <label for="num2-6">6<br/>
+                          <input type="radio" id = "num2-6" name = "num2" value = "6" required></label>
+                      <label for="num2-7">7<br/>
+                          <input type="radio" id = "num2-7" name = "num2" value = "7" required></label>
+                      <p>Väldigt engagerad</p><br>
+                  </div>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                </div>
+                  <br>
+                <div class = "remove">
+                  <h4 contenteditable="true">Hur upplever du stämningen i klassen?<span style="color:red">*</span></h4>
+                  <div class = "radio">
+                      <p class = "p-left">Dålig stämning</p>
+                      <label for="num3-1">1<br/>
+                          <input type="radio" id = "num3-1" name = "num3" value = "1" required></label>
+                      <label for="num3-2">2<br/>
+                          <input type="radio" id = "num3-2" name = "num3" value = "2" required></label>
+                      <label for="num3-3">3<br/>
+                          <input type="radio" id = "num3-3" name = "num3" value = "3" required></label>
+                      <label for="num3-4">4<br/>
+                          <input type="radio" id = "num3-4" name = "num3" value = "4" required></label>
+                      <label for="num3-5">5<br/>
+                          <input type="radio" id = "num3-5" name = "num3" value = "5" required></label>
+                      <label for="num3-6">6<br/>
+                          <input type="radio" id = "num3-6" name = "num3" value = "6" required></label>
+                      <label for="num3-7">7<br/>
+                          <input type="radio" id = "num3-7" name = "num3" value = "7" required></label>
+                      <p>Mycket god stämning</p>
+                      <br>
+                  </div>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                </div>
+                  <br>
+                <div class = "remove">
+                  <h4 contenteditable="true">Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h4>
+                  <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                   <!-- textarea for longer text -->
+                </div>
+                <div class = "remove">
+                  <h4 contenteditable="true">Vad har varit bra?</h4>
+                  <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                </div>
+                <div class = "remove">
+                  <h4 contenteditable="true">Förslag på förbättringar</h4>
+                  <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                  <br>
+                </div>
+                <br>
 
+                <button class = "send-button" type="submit">Skicka!</button>
+                <button id="btn1" onclick="addContent()">Lägg till</button>
+                <!-- submit button -->
+            </form>
+        </div>
+    </div>
+</div><!--wrap-->
