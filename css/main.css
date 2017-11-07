@@ -244,6 +244,36 @@ a {
 
 }
 
+.subj1 {
+background: #ffb477 url('../img/java2.jpg') no-repeat;
+background-blend-mode: overlay;
+background-size: cover;
+}
+
+.subj2 {
+  background: #ffb477 url('../img/html_css_2.jpg') no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.subj3 {
+  background: #ffb477 url('../img/scrum2.png') no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.subj4 {
+  background: #ffb477 url('../img/backend2.png') no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.subj1:hover, .subj2:hover, .subj3:hover, .subj4:hover {
+  background-color: rgba(255,0,0,0);
+  font-weight: bold;
+  text-shadow: 0 0 0.3em #000;
+  transition-duration: 1s; 
+}
 .teachCourses{
   width: 20%;
   height: 25vh;
@@ -359,9 +389,9 @@ h6 {
 
 }
 
-  /*====================================
+  /*===================================================================================
   nav  attributes
-  =====================================*/
+  ====================================================================================*/
 
   header{
     overflow: hidden;
@@ -372,13 +402,17 @@ h6 {
     z-index: 1000
   }
 
+  .hidden-max-500 {
+    display: flex;
+  }
+
   #nav .current {
     background-color: rgba(145,0,156,1);
     /* color: #d900e8; */
   }
 
   #nav ul {
-      display: flex;
+      /* display: flex; */
       flex-direction: row;
       flex-wrap: wrap;
       /* This aligns items to the end line on main-axis */
@@ -408,13 +442,23 @@ h6 {
       color: white;
   }
 
-  #nav ul li a:hover {
+  #nav li:hover {
       background-color: rgba(145,0,156,1);
       transition-duration: 1s;
   }
 
   #nav-button-max-500 {
       display: none;
+      background-color: rgba(145,0,156,1);
+      justify-content: space-between;
+      padding: 10px;
+  }
+
+  #nav-button-max-500 img {
+    max-width: auto;
+    max-height: 70px;
+  }
+
   }
 
   #nav ul li:nth-child(1) {
@@ -439,6 +483,11 @@ h6 {
   float: right;
   padding: 0;
   border: none;
+}
+
+#menu-button {
+  background-color: none;
+  border-radius: 50%;
 }
 /*  #nav > ul > li:nth-child(1) > a */
 
@@ -512,9 +561,9 @@ h6 {
   cursor: pointer;
 }
 
-/*==========================================
+/*=========================================================================================
 This is CSS only for the news.html page
-============================================*/
+===========================================================================================*/
 
 .news-head {
   padding: 3em 0;
@@ -638,3 +687,72 @@ ul.pricing-list li.no {
 .StudentListTable {
 	width: 100%;
 }
+
+
+/* =================================================================================
+CSS for accounts.html on admin pages
+================================================================================= */
+
+
+.account-content {
+  background-color: rgba(98,0,105,1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2em;
+  margin: 5% 20%;
+}
+
+.account-form {
+  text-align: center; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.account-main-content h1{
+  font-size: 3em;
+}
+
+.account-main-content h2{
+  font-size: 2em;
+  background-color:rgba(166, 79, 172, 0.5);
+}
+
+.account-main-content h3{
+  font-size: 1.5em;
+}
+
+.response-area {
+  display: flex;
+  flex-direction: row;
+}
+
+.account-main-content input::placeholder {
+  border: none;
+}
+
+.account-main-content button:hover {
+  background-color: rgba(166, 79, 172, 0.5);
+}
+
+#accout-respond-box {
+  margin: 2em;
+}
+
+#account-username, 
+#account-password, 
+#account-full-name,
+#account-email,  
+#account-type {
+  padding-bottom: 2em;
+}
+
+#account-username {
+  padding-top: 2em;
+}
+
+#submit-button {
+  padding: 2em;
+}
+
