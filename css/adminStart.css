@@ -1,0 +1,30 @@
+.wrap-admin {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: auto;
+    justify-content: flex-start;
+    background-color: rgba(255,242,255,0.9);
+  }
+
+.tt {
+    justify-content: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.circle-plus {
+    padding: 1em 1.35em;
+    background-color: orangered;
+    border-radius: 50%;
+    margin-left: 1em;
+    margin-top: 1.7em;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+
+
