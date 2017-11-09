@@ -767,3 +767,46 @@ CSS for accounts.html on admin pages
 .newsArea {
   width: 100%;
 }
+
+.width100 {
+  width: 100%;
+}
+
+
+/*
+  For for create.html
+*/
+.createCoursesStudents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.createCourses,
+.createStudents {
+  width: 49%;
+  background: #743878;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.courseCheckList,
+.studentCheckList {
+  margin: 1em
+}
+
+.excelButton {
+  width: 32px;
+  height: 32px;
+}
+
+.courseContainerList,
+.studentContainerList {
+  /* display: flex;
+  flex-direction: row; */
+}
