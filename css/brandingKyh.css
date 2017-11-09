@@ -30,16 +30,21 @@ body{
   background-image: url('../img/kyh1.jpg');
 }
 
+input {
+  margin: 5px 0;
+}
+
 .button,
 textarea,
 input[type=submit],
 input,
-input::placeholder,
+/* input::placeholder, */
 select,
 button {
   background: rgba(252,155,86,.0.9);
   color: #E8770C;
   border: 1px solid #FA9500;
+  width: 100%;
 }
 
 .button:active,
@@ -52,7 +57,7 @@ select:focus {
   border: 1px solid #FA6400;
 }
 
-input::placeholder, input:focus::placeholder{
+input::placeholder, input:focus::placeholder{ 
   color: #FA6400;
 }
 

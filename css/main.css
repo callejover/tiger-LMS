@@ -546,7 +546,8 @@ h6 {
 
 .close,
 .assignmentClose,
-.attendanceClose {
+.attendanceClose,
+.accountClose {
   color: #DBDBDB;
   float: right;
   font-size: 28px;
@@ -559,7 +560,9 @@ h6 {
 .assignmentClose:hover,
 .assignmentClose:focus,
 .attendanceClose:hover,
-.attendanceClose:focus {
+.attendanceClose:focus,
+.accountClose:hover,
+.accountClose:focus {
   color: #313131;
   text-decoration: none;
   cursor: pointer;
@@ -742,26 +745,6 @@ CSS for accounts.html on admin pages
 
 .account-main-content button:hover {
   background-color: rgba(166, 79, 172, 0.5);
-}
-
-#accout-respond-box {
-  margin: 2em;
-}
-
-#account-username, 
-#account-password, 
-#account-full-name,
-#account-email,  
-#account-type {
-  padding-bottom: 2em;
-}
-
-#account-username {
-  padding-top: 2em;
-}
-
-#submit-button {
-  padding: 2em;
 }
 
 .newsArea {
