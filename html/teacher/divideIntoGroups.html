@@ -34,7 +34,9 @@
 
     <header>
         <nav id="nav">
-            <div id="nav-button-max-500">MENY</div>
+            <div id="nav-button-max-500">
+                <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
+                <button id="menu-button">MENY</button></div>
             <ul class="hidden-max-500">
                 <li>
                     <a href="courses.html">
@@ -120,6 +122,10 @@
         <div class="innerContent apperance">
             <h3>Gruppindelning</h3>
 
+            <div class="displaysUnder1200">
+                <p>Gruppindelning är ej möjlig i mobilvy</p>
+            </div>  
+
             <div id="groupWrap">
                 <div class="groupLeft">
                     <label for="numGroups">Antal grupper:</label>
@@ -149,6 +155,7 @@
                 <div class="groupGroup" id="groupClassList" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)">
                     
                 </div>
+
             </div>
 
 
@@ -173,6 +180,7 @@
     <script src="../../js/teacherAttendanceOverview.js"></script>
     <script src="../../js/dragAndDrop.js"></script>
     <script src="../../js/devideIntoGroups.js"></script>
+    <script src="../../js/navMenu.js"></script>
 
 
 </body>

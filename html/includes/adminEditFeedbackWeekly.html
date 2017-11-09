@@ -1,8 +1,7 @@
 <div class="wrap">
     <div class="content">
         <div class="innerContent apperance">
-            <div class="back-bar"><button id="back" onclick="goBack()">&lt;Tillbaka</button></div>
-            <h3>Veckans Utvärdering</h3><p class = "required">(* = Obligatorisk)</p><br><br>
+            <h3>Redigera: Veckans Utvärdering</h3><p class = "required">(* = Obligatorisk)</p><br><br>
             <form class="weekly-feedback" name="checkFormData" action="" onsubmit="return checkWeekly();">
                 <div class = "remove">
                   <h4 contenteditable="true">Hur upplever du just nu tempot i utbildningen?<span style="color:red">*</span></h4>
@@ -95,7 +94,11 @@
                 <br>
 
                 <button class = "send-button" type="submit">Skicka!</button>
-                <button id="btn1" onclick="addContent()">Lägg till</button>
+                <select name="Lägg till list" value"Lägg Till">
+                  <option value="Text"><button id="btn1" onclick="addContent1(this.form)">Lägg till1</button></option>
+                  <option value="Slider"><button id="btn1" onclick="addContent2(this.form)">Lägg till2</button></option>
+                  <option value="Checkbox"><button id="btn1" onclick="addContent3(this.form)">Lägg till3</button></option>
+                </select>
                 <!-- submit button -->
             </form>
         </div>

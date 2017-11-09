@@ -85,46 +85,12 @@
       </div>
     </div>
 
-    <div class="wrap adminwrap">
 
-      <div class="teachCourses apperance courseName">
-        <!-- Trigger/Open The Modal -->
-          Redigera utvärderingar
-      </div>
-      <!--teachCourses-->
-
-      <div class="teachCourses apperance">
-        <a class="assignmentButton click">
-          Daglig utvärdering
-        </a>
-      </div>
-      <!--teachCourses-->
-
-      <div class="teachCourses apperance">
-        <a class="assignmentButton click">
-          Vecko utvärdering
-        </a>
-      </div>
-      <!--teachCourses-->
-
-      <div class="teachCourses apperance">
-        <a class="assignmentButton click">
-          Kurs utvärdering
-        </a>
-      </div>
-      <!--teachCourses-->
-
-      <div class="teachCourses apperance">
-        <a class="assignmentButton click" onclick="JotformAnywhere.launchFormBuilder();">
-          +
-        </a>
-      </div>
-      <!--teachCourses-->
-
-    </div><!--wrap-->
-
-    <div w3-include-html="../includes/adminEditFeedback.html"="displayResult()">
+    <div w3-include-html="../includes/adminEditFeedbackWeekly.html"="displayResult()">
     </div>
+    <div w3-include-html="../includes/adminEditFeedbackCourse.html"="displayResult()">
+    </div>
+
     <script>
       w3.includeHTML();
     </script>

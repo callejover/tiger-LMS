@@ -239,9 +239,21 @@ a {
 .features, .pricing, .textContent, .teachCourses {
   width: 30%;
   padding: 0;
-  margin: 2.5% 5% 0 5%;
+  margin: 2.5% 5% 2.5% 5%;
   text-align: center;
 
+}
+
+.features {
+  background: url('../img/features.png') no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.pricing {
+  background: url('../img/money.jpeg') no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
 }
 
 .subj1 {
@@ -268,7 +280,8 @@ background-size: cover;
   background-size: cover;
 }
 
-.subj1:hover, .subj2:hover, .subj3:hover, .subj4:hover {
+.subj1:hover, .subj2:hover, .subj3:hover, .subj4:hover,
+.pricing:hover, .features:hover {
   background-color: rgba(255,0,0,0);
   font-weight: bold;
   text-shadow: 0 0 0.3em #000;
@@ -746,3 +759,52 @@ CSS for accounts.html on admin pages
 #submit-button {
   padding: 2em;
 }
+
+.newsArea {
+  width: 100%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

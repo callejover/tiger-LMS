@@ -1,0 +1,143 @@
+<div class="wrap">
+    <div class="content">
+        <div class="innerContent apperance">
+            <h3>Redigera: Kursutvärdering</h3>
+            <p>Alla fält med en röd stjärna (
+                <span class="color-red">*</span>) är obligatoriska att fylla i.</p>
+            <form class="course-evaluation" name="checkFormData" action="javascript:check();" onsubmit="return check()">
+                <br>
+                <br>
+                <div class = "remove">
+                  <h4 contenteditable="true">Har vi gjort det vi ska?</h4>
+                  <span class="slider-value" id="number1"></span>
+                  <div class="flexSliderContainer">
+                      <span class="slider-text text-align-right">Hänger inte med alls.</span>
+                      <input type="range" min="0" max="10" value="5" class="create_slider1" id="slider1">
+                      <span class="slider-text">Hänger med till 100%.</span>
+                  </div>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                </div>
+                <br>
+
+                <div class = "remove">
+                  <h5 contenteditable="true">Beskriv i ord:</h5>
+                  <textarea name="haveDone" cols="30" rows="5"></textarea>
+                  <br>
+                    <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                  </div>
+                <br>
+
+                <div class = "remove">
+                  <h4 contenteditable="true">Hur var kursen?</h4>
+                  <span class="slider-value" id="number2"></span>
+                  <div class="flexSliderContainer">
+                      <span class="slider-text text-align-right">Inte engagerad all.</span>
+                      <input type="range" min="0" max="10" value="5" class="create_slider2" id="slider2">
+                      <span class="slider-text">Mycket engagerad.</span>
+                  </div>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                </div>
+                <br>
+
+                <div class = "remove">
+                  <h5 contenteditable="true">Beskriv i ord:</h5>
+                  <textarea name="howCourse" cols="30" rows="5"></textarea>
+                  <br>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                </div>
+                <br>
+
+                <div class = "remove">
+                  <h4 contenteditable="true">Vad tyckte du om läraren?</h4>
+                  <span class="slider-value" id="number3"></span>
+                  <div class="flexSliderContainer">
+                      <span class="slider-text text-align-right">Dålig stämning.</span>
+                      <input type="range" min="0" max="10" value="5" class="create_slider3" id="slider3">
+                      <span class="slider-text">Mycket god stämning.</span>
+                  </div>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                </div>
+
+                <div class = "remove">
+                  <h5 contenteditable="true">Beskriv i ord:</h5>
+                  <textarea name="aboutTeacher" cols="30" rows="5"></textarea>
+                  <br>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                </div>
+                <br>
+
+                <div class = "remove">
+                  <h4 contenteditable="true">Hur var kursen som helhet?</h4>
+                  <span class="slider-value" id="number4"></span>
+                  <div class="flexSliderContainer">
+                      <span class="slider-text text-align-right">Dålig stämning.</span>
+                      <input type="range" min="0" max="10" value="5" class="create_slider4" id="slider4">
+                      <span class="slider-text">Mycket god stämning.</span>
+                  </div>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                </div>
+                <br>
+
+                <div class = "remove">
+                  <h5 contenteditable="true">Beskriv i ord:</h5>
+                  <textarea id="courseOverhead" cols="30" rows="10"></textarea>
+                  <br>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                </div>
+                <br>
+
+                <div class = "remove">
+                  <h4 contenteditable="true">Har kursen innefattat detta?</h4>
+                  <p>Bock i det som stämmer överens med vad kursen har innefattat.</p>
+                  <div class="course-contains">
+                      <label>
+                          <input type="checkbox" name="courseContains" value="1"><t contenteditable="true">Uppgift 1</t></label>
+                      <br>
+                      <label>
+                          <input type="checkbox" name="courseContains" value="2"><t contenteditable="true">Uppgift 2</t></label>
+                      <br>
+                      <label>
+                          <input type="checkbox" name="courseContains" value="3"><t contenteditable="true">Uppgift 3</t></label>
+                      <br>
+                      <label>
+                          <input type="checkbox" name="courseContains" value="4"><t contenteditable="true">Uppgift 4</t></label>
+                      <br>
+                      <label>
+                          <input type="checkbox" name="courseContains" value="5"><t contenteditable="true">Uppgift 5</t></label>
+                      <br>
+                      <label>
+                          <input type="checkbox" name="courseContains" value="6"><t contenteditable="true">Uppgift 6</t></label>
+                      <br>
+                      <button id="btn1" onclick="addContent4()">Lägg till4</button>
+                  </div>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                </div>
+                <br>
+
+                <div class = "remove">
+                  <h5 contenteditable="true">Något annat utöver detta?</h5>
+                  <textarea name="" id="courseContains" cols="30" rows="10"></textarea>
+                  <br>
+                  <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
+                </div>
+                <button class="send-button" type="submit">Skicka!</button>
+                <button id="btn1" onclick="addContent1(this.form)">Lägg till1</button>
+                <button id="btn1" onclick="addContent2(this.form)">Lägg till2</button>
+                <button id="btn1" onclick="addContent3(this.form)">Lägg till3</button>
+
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a id="btn1" onclick="addContent1(this.form)">Lägg till1</a>
+                    <a id="btn1" onclick="addContent2(this.form)">Lägg till2</a>
+                    <a id="btn1" onclick="addContent3(this.form)">Lägg till3</a>
+                  </div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <!--content-->
+</div>
+<!--wrap-->
