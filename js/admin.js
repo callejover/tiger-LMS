@@ -27,9 +27,11 @@ window.onclick = function(event) {
 }
 
 
+
 // =================================================================================
 
-function response() {
-    document.querySelector("#accout-respond-box").innerHTML = "Grattis!<br>Du har skapat ett nytt konto!<br>Ett mail har skickats med en <strong>aktiveringskod</strong> till den nya användarens e-postadress.";
+//On submit button, changes the modals inner HTML
 
+function accountResponse() {
+        document.querySelector('.header').innerHTML = "<h3>En ny användare har skapats!</h3><br><p>Ett mail med bekräftelsekod har skickats till den nya användarens e-postadress.</p>";
 }

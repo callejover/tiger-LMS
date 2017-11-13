@@ -61,21 +61,18 @@
         <span class="accountClose">&times;</span>  <!-- Closing X icon in modal -->
         <div class="header">
           <h1>Skapa ny användare</h1>
-            <form id="account-form">  <!-- Form for user input -->
-              <div id="account-firstname">
-                <input type="text" placeholder="Förnamn">
-              </div>
-              <div id="account-lastname">
-                <input type="text" placeholder="Efternamn">
+            <form id="account-form" onsubmit="accountResponse()">  <!-- Form for user input -->
+              <div id="account-name">
+                <input type="text" placeholder="Fullständigt namn" required>
               </div>
               <div id="account-email">
-                <input type="text" id="email-box" placeholder="Epostadress">
+                <input type="text" id="email-box" placeholder="Epostadress" required>
               </div>
               <div id="account-username">
-                  <input type="text" placeholder="Användarnamn" autofocus="autofocus">
+                  <input type="text" placeholder="Användarnamn" autofocus="autofocus" required>
               </div>
               <div id="account-password">
-                <input type="text" placeholder="Lösenord">
+                <input type="text" placeholder="Lösenord" required>
               </div>
               <div id="account-type">
                 <select name="account-select" id="account-select">
@@ -84,7 +81,7 @@
                     <option value="Administratör">Administratör</option>
                 </select>
                 <div class="accountButton">
-                  <button id="accountButton">Skapa användare</button>
+                  <input type="submit" value="submit">
                 </div>
               </div>
             </form>
