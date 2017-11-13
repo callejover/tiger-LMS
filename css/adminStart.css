@@ -1,0 +1,37 @@
+/* .wrap-admin {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: auto;
+    justify-content: flex-start;
+    background-color: rgba(255,242,255,0.9);
+  } */
+
+
+/* .circle-plus {
+    padding: 5% 5%;
+    background-color: #BE3000;
+    border-radius: 50%;
+    text-decoration: none;
+} */
+
+.invisible-box {
+    opacity: 0;
+}
+
+.toned-down {
+    opacity: 0.6;
+}
+
+.classes:hover {
+    background-color: orangered;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+
+
+
