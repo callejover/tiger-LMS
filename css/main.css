@@ -161,8 +161,11 @@ a {
   min-height: calc(100vh - 5em);
 }
 
-.teachWrap{
-  align-items: flex-start;
+.teachWrap, .adminwrap{
+  align-content: flex-start;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 
 }
 
@@ -277,12 +280,12 @@ background-size: cover;
   background-size: cover;
 }
 
-.subj1:hover, .subj2:hover, .subj3:hover, .subj4:hover, 
+.subj1:hover, .subj2:hover, .subj3:hover, .subj4:hover,
 .pricing:hover, .features:hover {
   background-color: rgba(255,0,0,0);
   font-weight: bold;
   text-shadow: 0 0 0.3em #000;
-  transition-duration: 1s; 
+  transition-duration: 1s;
 }
 .teachCourses{
   width: 20%;
@@ -416,13 +419,14 @@ h6 {
     display: flex;
   }
 
+
   #nav .current {
     background-color: rgba(145,0,156,1);
     /* color: #d900e8; */
   }
 
   #nav ul {
-      /* display: flex; */
+      display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       /* This aligns items to the end line on main-axis */
@@ -452,21 +456,13 @@ h6 {
       color: white;
   }
 
-  #nav li:hover {
+  #nav ul li a:hover {
       background-color: rgba(145,0,156,1);
       transition-duration: 1s;
   }
 
   #nav-button-max-500 {
       display: none;
-      background-color: rgba(145,0,156,1);
-      justify-content: space-between;
-      padding: 10px;
-  }
-
-  #nav-button-max-500 img {
-    max-width: auto;
-    max-height: 70px;
   }
 
   #nav ul li:nth-child(1) {
@@ -714,7 +710,7 @@ CSS for accounts.html on admin pages
 }
 
 .account-form {
-  text-align: center; 
+  text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -748,10 +744,10 @@ CSS for accounts.html on admin pages
   margin: 2em;
 }
 
-#account-username, 
-#account-password, 
+#account-username,
+#account-password,
 #account-full-name,
-#account-email,  
+#account-email,
 #account-type {
   padding-bottom: 2em;
 }

@@ -17,6 +17,5 @@ function checkWeekly() {
 	document.querySelector(".weekly-feedback").innerHTML = "";
 	document.querySelector(".weekly-feedback").innerHTML = "TACK FÖR DINA SVAR";
 	setTimeout("pageSwap()",2000);
+	return true;
 }
-
-

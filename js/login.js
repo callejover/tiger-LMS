@@ -22,7 +22,7 @@ var objPeople = [
         username: "admin",
         password: "admin",
         account: "admin",
-        refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/admin/admin.html' : 'admin/admin.html'  // Html waiting for page
+        refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/admin/adminStart.html' : 'admin/adminStart.html'  // Html waiting for page
     }
 ]
 
