@@ -72,15 +72,15 @@
                             <div>
 
                                 <table class="width100">
-
+                                        <tbody>
                                     <tr>
                                         <th>
                                         </th>
                                         <th>
-                                            <strong>Kurs</strong>
+                                            <strong>Kursnamn</strong>
                                         </th>
                                         <th>
-                                            <strong>Lärare</strong>
+                                            <strong>Lärare för kursen</strong>
                                         </th>
                                     </tr>
 
@@ -111,13 +111,14 @@
                                         </td>
                                         <td>Carl Persson</td>
                                     </tr>
+                                </tbody>
                                 </table>
                             </div>
 
                             <div class="courseContainerList">
                                 <input type="text" placeholder="Kursnamn...">
                                 <select name="teacherList" id="">
-                                    <option selected="">Lärare</option>
+                                    <option selected="" value="" disabled>Välj lärare...</option>
                                     <option value="0">Maria Johansson</option>
                                     <option value="1">Margareta Karlsson</option>
                                     <option value="2">Elisabeth Nilsson</option>
@@ -137,7 +138,9 @@
 
                                     <input id="file-input" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
                                 </div>
-                                <button class="roundButton">+</button>
+                                <button class="roundButton" id="add-course-to-table">+</button>
+                                
+                                <span id="errorMessageCourse"></span>
                             </div>
                         </div>
 
@@ -145,13 +148,12 @@
                         <div class="createStudents">
                             <div>
                                 <table class="width100">
-
                                     <tr>
                                         <th>
                                             <strong></strong>
                                         </th>
                                         <th>
-                                            <strong>Elev</strong>
+                                            <strong>Elevnamn</strong>
                                         </th>
                                     </tr>
 
@@ -183,7 +185,7 @@
                             </div>
                             <div class="studentContainerList">
                                 <select name="studentList" id="">
-                                    <option selected="">Studenter</option>
+                                    <option selected="" value="" disabled>Välj student...</option>
                                     <option value="0">Maria Johansson</option>
                                     <option value="1">Margareta Karlsson</option>
                                     <option value="2">Elisabeth Nilsson</option>
@@ -242,14 +244,16 @@
                                     <input id="file-input" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
                                 </div>
 
-                                <button class="roundButton">+</button>
+                                <button class="roundButton" id="add-student-to-table">+</button>
+                                
+                                <span id="errorMessageStudent"></span>
                             </div>
                         </div>
 
                     </div>
 
                     <div class="createCoursesStudentsBottom">
-                        <button class="roundButton">+</button>
+                        <button id="addCreatedClass">Lägg till klass</button>
                     </div>
 
 

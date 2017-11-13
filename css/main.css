@@ -850,6 +850,7 @@ CSS for accounts.html on admin pages
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .excelButton {
@@ -931,4 +932,36 @@ button.roundButton {
 .image-upload > input
 {
     display: none;
+}
+
+#errorMessageStudent,
+#errorMessageCourse {
+  position: absolute;
+  bottom: 5em;
+  /* border: 1px solid #000; */
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: .5em;
+  background: rgba(0,0,0,.2);
+}
+
+.visibilityVisible {
+  visibility: visible;
+  opacity: 1;
+  transition: .5s;
+}
+.visibilityHidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+
+.courseAddedAfterCreation {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 20%;
+  font-weight: bold;
+  font-size: 200%
 }
