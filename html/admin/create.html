@@ -61,110 +61,199 @@
         <div class="content">
             <div class="innerContent apperance">
 
-                <input type="text" placeholder="Skriv in det nya klassnamnet här..." class="width100">
-                <!-- <h2 contenteditable="true">Klassnam</h2> -->
-
                 <div class="createCoursesStudents">
-
-                    <div class="createCourses">
-                        <div>
-                            <ul class="courseCheckList">
-                                <li><label><input type="checkbox" name="" id=""> JavaScript (Maria Eriksson)</label></li>
-                                <li><label><input type="checkbox" name="" id=""> Back End (Elisabeth Nilsson)</label></li>
-                                <li><label><input type="checkbox" name="" id=""> Arbetsmetodik (Carl Persson)</label></li>
-                            </ul>
-                        </div>
-                        <div class="courseContainerList">
-                            <input type="text" placeholder="Kursnamn...">
-                            <select name="teacherList" id="">
-                                <option selected>Lärare</option>
-                                <option value="0">Maria Johansson</option>
-                                <option value="1">Margareta Karlsson</option>
-                                <option value="2">Elisabeth Nilsson</option>
-                                <option value="3">Eva Eriksson</option>
-                                <option value="4">Erik Johansson</option>
-                                <option value="5">Lars Andersson</option>
-                                <option value="6">Christina Jonsson</option>
-                                <option value="7">Carl Persson</option>
-                                <option value="8">Gunnar Bengtsson</option>
-                                <option value="9">Hans Pettersson</option>
-                            </select>
-                            <img src="../../img/excel.png" alt="" class="excelButton">
-                            <button>Lägg till</button>
-                        </div>
+                    <div class="createCoursesStudentsTop">
+                        <input type="text" placeholder="Skriv in det nya klassnamnet här..." class="width100">
                     </div>
 
-                    <div class="createStudents">
-                        <div>
-                            <ul class="studentCheckList">
-                                <li><label><input type="checkbox" name="" id=""> Calle Jover</label></li>
-                                <li><label><input type="checkbox" name="" id=""> Robbin Eriksson</label></li>
-                                <li><label><input type="checkbox" name="" id=""> Tim Aro</label></li>
-                            </ul>
+                    <div class="createCoursesStudentsMiddle">
+
+                        <div class="createCourses">
+                            <div>
+
+                                <table class="width100">
+
+                                    <tr>
+                                        <th>
+                                        </th>
+                                        <th>
+                                            <strong>Kurs</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Lärare</strong>
+                                        </th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-align-center">
+                                            <input type="checkbox" name="" id="checkbox1">
+                                        </td>
+                                        <td>
+                                            <label for="checkbox1">JavaScript</label>
+                                        </td>
+                                        <td>Maria Eriksson</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-align-center">
+                                            <input type="checkbox" name="" id="checkbox2">
+                                        </td>
+                                        <td>
+                                            <label for="checkbox2">Back End</label>
+                                        </td>
+                                        <td>Elisabeth Nilsson</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-align-center">
+                                            <input type="checkbox" name="" id="checkbox3">
+                                        </td>
+                                        <td>
+                                            <label for="checkbox3">Arbetsmetodik</label>
+                                        </td>
+                                        <td>Carl Persson</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="courseContainerList">
+                                <input type="text" placeholder="Kursnamn...">
+                                <select name="teacherList" id="">
+                                    <option selected="">Lärare</option>
+                                    <option value="0">Maria Johansson</option>
+                                    <option value="1">Margareta Karlsson</option>
+                                    <option value="2">Elisabeth Nilsson</option>
+                                    <option value="3">Eva Eriksson</option>
+                                    <option value="4">Erik Johansson</option>
+                                    <option value="5">Lars Andersson</option>
+                                    <option value="6">Christina Jonsson</option>
+                                    <option value="7">Carl Persson</option>
+                                    <option value="8">Gunnar Bengtsson</option>
+                                    <option value="9">Hans Pettersson</option>
+                                </select>
+
+                                <div class="image-upload excelButton">
+                                    <label for="file-input">
+                                        <img src="../../img/excel.png" />
+                                    </label>
+
+                                    <input id="file-input" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                                </div>
+                                <button class="roundButton">+</button>
+                            </div>
                         </div>
-                        <div class="studentContainerList">
-                            <select name="studentList" id="">
-                                <option selected>Studenter</option>
-                                <option value="0">Maria Johansson</option>
-                                <option value="1">Margareta Karlsson</option>
-                                <option value="2">Elisabeth Nilsson</option>
-                                <option value="3">Eva Eriksson</option>
-                                <option value="4">Erik Johansson</option>
-                                <option value="5">Lars Andersson</option>
-                                <option value="6">Christina Jonsson</option>
-                                <option value="7">Carl Persson</option>
-                                <option value="8">Gunnar Bengtsson</option>
-                                <option value="9">Hans Pettersson</option>
-                                <option value="10">Per Larsson</option>
-                                <option value="11">Johan Eriksson</option>
-                                <option value="12">Hans Pettersson</option>
-                                <option value="13">Ingrid Pettersson</option>
-                                <option value="14">Kristina Larsson</option>
-                                <option value="15">Lennart Jonsson</option>
-                                <option value="16">Maria Johansson</option>
-                                <option value="17">Margareta Karlsson</option>
-                                <option value="18">Elisabeth Nilsson</option>
-                                <option value="19">Eva Eriksson</option>
-                                <option value="20">Erik Johansson</option>
-                                <option value="21">Lars Andersson</option>
-                                <option value="22">Christina Jonsson</option>
-                                <option value="23">Carl Persson</option>
-                                <option value="24">Gunnar Bengtsson</option>
-                                <option value="25">Hans Pettersson</option>
-                                <option value="26">Per Larsson</option>
-                                <option value="27">Johan Eriksson</option>
-                                <option value="28">Hans Pettersson</option>
-                                <option value="29">Ingrid Pettersson</option>
-                                <option value="30">Kristina Larsson</option>
-                                <option value="31">Lennart Jonsson</option>
-                                <option value="32">Maria Johansson</option>
-                                <option value="33">Margareta Karlsson</option>
-                                <option value="34">Elisabeth Nilsson</option>
-                                <option value="35">Eva Eriksson</option>
-                                <option value="36">Erik Johansson</option>
-                                <option value="37">Lars Andersson</option>
-                                <option value="38">Christina Jonsson</option>
-                                <option value="39">Carl Persson</option>
-                                <option value="40">Gunnar Bengtsson</option>
-                                <option value="41">Hans Pettersson</option>
-                                <option value="42">Per Larsson</option>
-                                <option value="43">Johan Eriksson</option>
-                                <option value="44">Hans Pettersson</option>
-                                <option value="45">Ingrid Pettersson</option>
-                                <option value="46">Kristina Larsson</option>
-                                <option value="47">Lennart Jonsson</option>
-                            </select>
-                            <img src="../../img/excel.png" alt="" class="excelButton">
-                            <button>Lägg till</button>
+
+
+                        <div class="createStudents">
+                            <div>
+                                <table class="width100">
+
+                                    <tr>
+                                        <th>
+                                            <strong></strong>
+                                        </th>
+                                        <th>
+                                            <strong>Elev</strong>
+                                        </th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-align-center">
+                                            <input type="checkbox" name="" id="checkbox4">
+                                        </td>
+                                        <td>
+                                            <label for="checkbox4">Calle Jover</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-align-center">
+                                            <input type="checkbox" name="" id="checkbox5">
+                                        </td>
+                                        <td>
+                                            <label for="checkbox5">Robbin Eriksson</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-align-center">
+                                            <input type="checkbox" name="" id="checkbox6">
+                                        </td>
+                                        <td>
+                                            <label for="checkbox6">Tim Aro</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="studentContainerList">
+                                <select name="studentList" id="">
+                                    <option selected="">Studenter</option>
+                                    <option value="0">Maria Johansson</option>
+                                    <option value="1">Margareta Karlsson</option>
+                                    <option value="2">Elisabeth Nilsson</option>
+                                    <option value="3">Eva Eriksson</option>
+                                    <option value="4">Erik Johansson</option>
+                                    <option value="5">Lars Andersson</option>
+                                    <option value="6">Christina Jonsson</option>
+                                    <option value="7">Carl Persson</option>
+                                    <option value="8">Gunnar Bengtsson</option>
+                                    <option value="9">Hans Pettersson</option>
+                                    <option value="10">Per Larsson</option>
+                                    <option value="11">Johan Eriksson</option>
+                                    <option value="12">Hans Pettersson</option>
+                                    <option value="13">Ingrid Pettersson</option>
+                                    <option value="14">Kristina Larsson</option>
+                                    <option value="15">Lennart Jonsson</option>
+                                    <option value="16">Maria Johansson</option>
+                                    <option value="17">Margareta Karlsson</option>
+                                    <option value="18">Elisabeth Nilsson</option>
+                                    <option value="19">Eva Eriksson</option>
+                                    <option value="20">Erik Johansson</option>
+                                    <option value="21">Lars Andersson</option>
+                                    <option value="22">Christina Jonsson</option>
+                                    <option value="23">Carl Persson</option>
+                                    <option value="24">Gunnar Bengtsson</option>
+                                    <option value="25">Hans Pettersson</option>
+                                    <option value="26">Per Larsson</option>
+                                    <option value="27">Johan Eriksson</option>
+                                    <option value="28">Hans Pettersson</option>
+                                    <option value="29">Ingrid Pettersson</option>
+                                    <option value="30">Kristina Larsson</option>
+                                    <option value="31">Lennart Jonsson</option>
+                                    <option value="32">Maria Johansson</option>
+                                    <option value="33">Margareta Karlsson</option>
+                                    <option value="34">Elisabeth Nilsson</option>
+                                    <option value="35">Eva Eriksson</option>
+                                    <option value="36">Erik Johansson</option>
+                                    <option value="37">Lars Andersson</option>
+                                    <option value="38">Christina Jonsson</option>
+                                    <option value="39">Carl Persson</option>
+                                    <option value="40">Gunnar Bengtsson</option>
+                                    <option value="41">Hans Pettersson</option>
+                                    <option value="42">Per Larsson</option>
+                                    <option value="43">Johan Eriksson</option>
+                                    <option value="44">Hans Pettersson</option>
+                                    <option value="45">Ingrid Pettersson</option>
+                                    <option value="46">Kristina Larsson</option>
+                                    <option value="47">Lennart Jonsson</option>
+                                </select>
+
+                                <div class="image-upload excelButton">
+                                    <label for="file-input">
+                                        <img src="../../img/excel.png" />
+                                    </label>
+
+                                    <input id="file-input" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                                </div>
+
+                                <button class="roundButton">+</button>
+                            </div>
                         </div>
+
                     </div>
 
-                    <div class="width100">
-                        <button>Lägg till</button>
+                    <div class="createCoursesStudentsBottom">
+                        <button class="roundButton">+</button>
                     </div>
+
 
                 </div>
-
             </div>
             <!--account-main-content-->
         </div>
