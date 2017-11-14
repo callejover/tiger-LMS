@@ -45,7 +45,7 @@
             <a href="news.html">Nyheter</a>
           </li>
           <li>
-            <a id="create-account" href="accounts.html">Skapa konton</a>
+            <a id="createAccountButton">Skapa konton</a>
           </li>
           <li>
             <a href="../../index.html">Log out</a>
@@ -54,6 +54,43 @@
       </nav>
     </header>
 
+    <!-- Hidden before clicking loginButton -->
+
+    <div id="createAccountModal" class="modal">
+      <div class="modal-content">
+        <span class="accountClose">&times;</span>  <!-- Closing X icon in modal -->
+        <div class="header">
+          <h1>Skapa ny användare</h1>
+            <form id="account-form" onsubmit="accountResponse()">  <!-- Form for user input -->
+              <div id="account-name">
+                <input type="text" placeholder="Fullständigt namn" required>
+              </div>
+              <div id="account-email">
+                <input type="text" id="email-box" placeholder="Epostadress" required>
+              </div>
+              <div id="account-username">
+                  <input type="text" placeholder="Användarnamn" autofocus="autofocus" required>
+              </div>
+              <div id="account-password">
+                <input type="text" placeholder="Lösenord" required>
+              </div>
+              <div id="account-type">
+                <select name="account-select" id="account-select">
+                    <option value="Student">Student</option>
+                    <option value="Lärare">Lärare</option>
+                    <option value="Administratör">Administratör</option>
+                </select>
+                <div class="accountButton">
+                  <input type="submit" value="submit">
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div> <!-- div loginModal opens the login box on index screen -->
+
+
+    <div class="wrap">
     
     <div class="wrap index teachWrap">
       
@@ -155,7 +192,7 @@
         </div>
         <!--wrap content found in teacherInfoCourses.html-->
 
-    <script src="../../js/navMenu.js"></script>
+    <script src="../../js/admin.js"></script>
 
   </body>
 

@@ -584,12 +584,13 @@ header {
 
 .close,
 .assignmentClose,
-.attendanceClose {
-    color: #DBDBDB;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    text-decoration: none;
+.attendanceClose,
+.accountClose {
+  color: #DBDBDB;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .close:hover,
@@ -597,10 +598,12 @@ header {
 .assignmentClose:hover,
 .assignmentClose:focus,
 .attendanceClose:hover,
-.attendanceClose:focus {
-    color: #313131;
-    text-decoration: none;
-    cursor: pointer;
+.attendanceClose:focus,
+.accountClose:hover,
+.accountClose:focus {
+  color: #313131;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #loginButton:hover {
