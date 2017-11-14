@@ -310,9 +310,6 @@ a {
     line-height: 25vh;
     margin: 1em 1em 1em 1em;
     overflow: hidden;
-  background: #ffb477 url('../img/backend2.png') no-repeat;
-  background-blend-mode: overlay;
-  background-size: cover;
 }
 
 
