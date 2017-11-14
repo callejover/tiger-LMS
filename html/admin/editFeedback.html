@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Tiger-LMS | Admin</title>
+
+  <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link rel="stylesheet" href="../../css/courses.css">
+  <link rel="stylesheet" href="../../css/brandingKyh.css">
+
+  <link rel="stylesheet" href="../../css/mediaq.css">
+
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//js.jotform.com/JotFormAnywhere.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+      <nav id="nav">
+        <div id="nav-button-max-500">MENU</div>
+        <ul class="hidden-max-500">
+          <li>
+            <a href="admin.html"><img src="../../img/KYH-logo.png"></a>
+          </li>
+          <li>
+            <a href="editFeedback.html">Utvärdering</a>
+          </li>
+          <li>
+            <a href="resultFeedback.html">#</a>
+          </li>
+          <li>
+            <a href="news.html">Nyheter</a>
+          </li>
+          <li>
+            <a id="create-account" href="accounts.html">Skapa konton</a>
+          </li>
+          <li>
+            <a href="../../index.html">Log out</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="assignmentModal" class="modal">
+      <div class="modal-content">
+        <span class="assignmentClose">&times;</span>
+        <!-- Closing X icon in modal -->
+        <div class="header headerAssignment">
+          <h3>Lägg till Uppgift</h3>
+          <div class="assignmentApprovalContent">
+            <label for="assigmentTitle">Uppgift: </label>
+            <input type="text" id="assigmentTitle">
+
+            <input type="file" name="" id="">
+
+            <div class="assignmentFeedback">
+              <label for="assignmentFeedbackTextarea">Instruktioner:</label>
+              <br>
+              <textarea name="assignmentFeedbackTextarea" id="assignmentFeedbackTextarea" cols="30" rows="10"></textarea>
+
+              <br>
+
+              <div>
+                <button type="button" onclick="assignmentFeedback()">Lägg till uppgift</button>
+                <span class="assignmentFeedbackTextareaMessage"></span>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div w3-include-html="../includes/adminEditFeedbackWeekly.html"="displayResult()">
+    </div>
+    <div w3-include-html="../includes/adminEditFeedbackCourse.html"="displayResult()">
+    </div>
+
+    <script>
+      w3.includeHTML();
+    </script>
+    <script src="../../js/adminEditFeedback.js"></script>
+
+    <script src="../../js/studentFeedback.js"></script>
+    <script src="../../js/windowOnClickFunction.js"></script>
+    <script src="../../js/attendance.js"></script>
+    <script src="../../js/teacherAssignment.js"></script>
+    <script src="../../js/teacherAttendanceCode.js"></script>
+    <script src="../../js/teacherAssignmentApproval.js"></script>
+    <script src="../../js/teacherAttendanceOverview.js"></script>
+
+
+  </body>
+
+  </html>

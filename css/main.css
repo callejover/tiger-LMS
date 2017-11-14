@@ -167,6 +167,11 @@ a {
 .index {
     min-height: calc(100vh - 5em);
 }
+.teachWrap, .adminwrap{
+  align-content: flex-start;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 
 .teachWrap {
     align-items: flex-start;
@@ -305,7 +310,11 @@ a {
     line-height: 25vh;
     margin: 1em 1em 1em 1em;
     overflow: hidden;
+  background: #ffb477 url('../img/backend2.png') no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
 }
+
 
 .textContent {
     width: 70%;
@@ -488,7 +497,6 @@ header {
     max-width: auto;
     max-height: 70px;
 }
-
 #nav ul li:nth-child(1) {
     flex-grow: 3;
     flex-shrink: 0;
@@ -765,8 +773,8 @@ CSS for accounts.html on admin pages
 }
 
 .account-form {
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .account-main-content h1 {
