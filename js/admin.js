@@ -1,4 +1,3 @@
-
 // Opens modul window to login
 
 // Get the modal
@@ -11,17 +10,17 @@ var btn = document.getElementById("createAccountButton");
 var span = document.getElementsByClassName("accountClose")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+btn.onclick = function () {
     modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
     modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
@@ -33,9 +32,90 @@ window.onclick = function(event) {
 
 //On submit button, changes the modals inner HTML
 
-function accountResponse() {
-        document.querySelector('.header').innerHTML = "<h3>En ny användare har skapats!</h3><br><p>Ett mail med bekräftelsekod har skickats till den nya användarens e-postadress.</p>";
-}
+let fullNameCreate = document.querySelector("#fullnameCreate");
+let createdUserMassage = document.querySelector(".createdUserMassage");
+let accountResponse = document.querySelector("#accountResponse");
+
+let accountEmail = document.querySelector("#account-email input");
+let accountUsername = document.querySelector("#account-username input");
+let accountPassword = document.querySelector("#account-password input");
+
+let createStudent = document.querySelector(".createStudent");
+let createTeacher = document.querySelector(".createTeacher");
+let accountSelect = document.querySelector("#account-select");
+
+
+accountResponse.addEventListener("click", function (event) {
+
+    event.preventDefault();
+
+    if (accountSelect.value == "Student") {
+
+        if (fullNameCreate.value != "" && accountEmail.value != "" && accountUsername.value != "" && accountPassword.value != "") {
+
+            let row = createStudents.insertRow(-1);
+            let cell1 = row.insertCell(0);
+            let cell2 = row.insertCell(1);
+
+            cell1.setAttribute("class", "text-align-center");
+            cell1.innerHTML = "<input type=\"checkbox\" name=\"\" id=\"Student-" + fullNameCreate.value + "\">";
+            cell2.innerHTML = "<label for=\"Student-" + fullNameCreate.value + "\">" + fullNameCreate.value + "</label>";
+
+        }
+    } else if (accountSelect.value == "Lärare") {
+
+
+
+        console.log("Lärare");
+
+        var courseContainerList = document.querySelector(".courseContainerList select");
+        var courseContainerListOption = document.createElement("option");
+        
+        courseContainerListOption.text = fullNameCreate.value;
+    
+        courseContainerList.add(courseContainerListOption);
+
+
+
+
+    }
+
+    if (fullNameCreate.value == "") {
+        createdUserMassage.innerHTML = "Skriv in namn";
+    } else if (accountEmail.value == "") {
+        createdUserMassage.innerHTML = "Skriv in e-post"
+    } else if (accountUsername.value == "") {
+        createdUserMassage.innerHTML = "Skriv in användarnamn";
+    } else if (accountPassword.value == "") {
+        createdUserMassage.innerHTML = "Skriv in lösenord";
+    } else {
+        createdUserMassage.innerHTML = "<h3>En ny användare har skapats!</h3><br><p>Ett mail med bekräftelsekod har skickats till den nya användarens e-postadress.</p>";
+
+        fullNameCreate.value = "";
+        accountEmail.value = "";
+        accountUsername.value = "";
+        accountPassword.value = "";
+
+        setTimeout(function () {
+            createdUserMassage.innerHTML = "";
+        }, 2000);
+    }
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -146,16 +226,16 @@ let errorMessageStudentExistsText = " finns redan i listan, välj ett annat namn
 let messageStudentSuccessText = " studenten tillaggd";
 
 
+let createStudents = document.querySelector(".createStudents table");
+let studentContainerListSelect = document.querySelector(".studentContainerList select");
+
+
+let studentContainerListSelectOption = document.querySelector(".studentContainerList select").value;
+
 
 errorMessageStudent.classList.add("visibilityHidden");
 
 addStudentToTableButton.addEventListener("click", function (event) {
-
-    let createStudents = document.querySelector(".createStudents table");
-    let studentContainerListSelect = document.querySelector(".studentContainerList select");
-
-
-    let studentContainerListSelectOption = document.querySelector(".studentContainerList select").value;
 
     errorMessageStudent.classList.add("visibilityVisible");
     errorMessageStudent.classList.remove("visibilityHidden");
@@ -200,4 +280,4 @@ addCreatedClass.addEventListener("click", function () {
     setTimeout(function () {
         window.location.href = "adminStart.html";
     }, 3000);
-})
+});
