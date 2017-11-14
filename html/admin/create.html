@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Tiger-LMS | Skapa konton</title>
+
+    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <link rel="stylesheet" href="../../css/brandingKyh.css">
+
+    <link rel="stylesheet" href="../../css/mediaq.css">
+
+    <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> Not needed -->
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav">
+            <div id="nav-button-max-500">
+                <a href="adminStart.html">
+                    <img src="../../img/KYH-logo.png">
+                </a>
+                <button id="menu-button">MENY</button>
+            </div>
+            <ul class="hidden-max-500">
+                <li>
+                    <a href="adminStart.html">
+                        <img src="../../img/KYH-logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="...">#</a>
+                </li>
+                <li>
+                    <a href="resultFeedback.html">#</a>
+                </li>
+                <li>
+                    <a href="news.html">Nyheter</a>
+                </li>
+                <li>
+                    <a href="accounts.html">Skapa konton</a>
+                </li>
+                <li>
+                    <a href="../../index.html">Log out</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrap">
+        <div class="content">
+            <div class="innerContent apperance">
+
+                <div class="createCoursesStudents">
+                    <div class="createCoursesStudentsTop">
+                        <input type="text" placeholder="Skriv in det nya klassnamnet här..." class="width100">
+                    </div>
+
+                    <div class="createCoursesStudentsMiddle">
+
+                        <div class="createCourses">
+                            <div>
+
+                                <table class="width100">
+                                        <tbody>
+                                    <tr>
+                                        <th>
+                                        </th>
+                                        <th>
+                                            <strong>Kursnamn</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Lärare för kursen</strong>
+                                        </th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-align-center">
+                                            <input type="checkbox" name="" id="checkbox1">
+                                        </td>
+                                        <td>
+                                            <label for="checkbox1">JavaScript</label>
+                                        </td>
+                                        <td>Maria Eriksson</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-align-center">
+                                            <input type="checkbox" name="" id="checkbox2">
+                                        </td>
+                                        <td>
+                                            <label for="checkbox2">Back End</label>
+                                        </td>
+                                        <td>Elisabeth Nilsson</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-align-center">
+                                            <input type="checkbox" name="" id="checkbox3">
+                                        </td>
+                                        <td>
+                                            <label for="checkbox3">Arbetsmetodik</label>
+                                        </td>
+                                        <td>Carl Persson</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
+
+                            <div class="courseContainerList">
+                                <input type="text" placeholder="Kursnamn...">
+                                <select name="teacherList" id="">
+                                    <option selected="" value="" disabled>Välj lärare...</option>
+                                    <option value="0">Maria Johansson</option>
+                                    <option value="1">Margareta Karlsson</option>
+                                    <option value="2">Elisabeth Nilsson</option>
+                                    <option value="3">Eva Eriksson</option>
+                                    <option value="4">Erik Johansson</option>
+                                    <option value="5">Lars Andersson</option>
+                                    <option value="6">Christina Jonsson</option>
+                                    <option value="7">Carl Persson</option>
+                                    <option value="8">Gunnar Bengtsson</option>
+                                    <option value="9">Hans Pettersson</option>
+                                </select>
+
+                                <div class="image-upload excelButton">
+                                    <label for="file-input">
+                                        <img src="../../img/excel.png" />
+                                    </label>
+
+                                    <input id="file-input" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                                </div>
+                                <button class="roundButton" id="add-course-to-table">+</button>
+                                
+                                <span id="errorMessageCourse"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="createStudents">
+                            <div>
+                                <table class="width100">
+                                    <tr>
+                                        <th>
+                                            <strong></strong>
+                                        </th>
+                                        <th>
+                                            <strong>Elevnamn</strong>
+                                        </th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-align-center">
+                                            <input type="checkbox" name="" id="checkbox4">
+                                        </td>
+                                        <td>
+                                            <label for="checkbox4">Calle Jover</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-align-center">
+                                            <input type="checkbox" name="" id="checkbox5">
+                                        </td>
+                                        <td>
+                                            <label for="checkbox5">Robbin Eriksson</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-align-center">
+                                            <input type="checkbox" name="" id="checkbox6">
+                                        </td>
+                                        <td>
+                                            <label for="checkbox6">Tim Aro</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="studentContainerList">
+                                <select name="studentList" id="">
+                                    <option selected="" value="" disabled>Välj student...</option>
+                                    <option value="0">Maria Johansson</option>
+                                    <option value="1">Margareta Karlsson</option>
+                                    <option value="2">Elisabeth Nilsson</option>
+                                    <option value="3">Eva Eriksson</option>
+                                    <option value="4">Erik Johansson</option>
+                                    <option value="5">Lars Andersson</option>
+                                    <option value="6">Christina Jonsson</option>
+                                    <option value="7">Carl Persson</option>
+                                    <option value="8">Gunnar Bengtsson</option>
+                                    <option value="9">Hans Pettersson</option>
+                                    <option value="10">Per Larsson</option>
+                                    <option value="11">Johan Eriksson</option>
+                                    <option value="12">Hans Pettersson</option>
+                                    <option value="13">Ingrid Pettersson</option>
+                                    <option value="14">Kristina Larsson</option>
+                                    <option value="15">Lennart Jonsson</option>
+                                    <option value="16">Maria Johansson</option>
+                                    <option value="17">Margareta Karlsson</option>
+                                    <option value="18">Elisabeth Nilsson</option>
+                                    <option value="19">Eva Eriksson</option>
+                                    <option value="20">Erik Johansson</option>
+                                    <option value="21">Lars Andersson</option>
+                                    <option value="22">Christina Jonsson</option>
+                                    <option value="23">Carl Persson</option>
+                                    <option value="24">Gunnar Bengtsson</option>
+                                    <option value="25">Hans Pettersson</option>
+                                    <option value="26">Per Larsson</option>
+                                    <option value="27">Johan Eriksson</option>
+                                    <option value="28">Hans Pettersson</option>
+                                    <option value="29">Ingrid Pettersson</option>
+                                    <option value="30">Kristina Larsson</option>
+                                    <option value="31">Lennart Jonsson</option>
+                                    <option value="32">Maria Johansson</option>
+                                    <option value="33">Margareta Karlsson</option>
+                                    <option value="34">Elisabeth Nilsson</option>
+                                    <option value="35">Eva Eriksson</option>
+                                    <option value="36">Erik Johansson</option>
+                                    <option value="37">Lars Andersson</option>
+                                    <option value="38">Christina Jonsson</option>
+                                    <option value="39">Carl Persson</option>
+                                    <option value="40">Gunnar Bengtsson</option>
+                                    <option value="41">Hans Pettersson</option>
+                                    <option value="42">Per Larsson</option>
+                                    <option value="43">Johan Eriksson</option>
+                                    <option value="44">Hans Pettersson</option>
+                                    <option value="45">Ingrid Pettersson</option>
+                                    <option value="46">Kristina Larsson</option>
+                                    <option value="47">Lennart Jonsson</option>
+                                </select>
+
+                                <div class="image-upload excelButton">
+                                    <label for="file-input">
+                                        <img src="../../img/excel.png" />
+                                    </label>
+
+                                    <input id="file-input" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                                </div>
+
+                                <button class="roundButton" id="add-student-to-table">+</button>
+                                
+                                <span id="errorMessageStudent"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="createCoursesStudentsBottom">
+                        <button id="addCreatedClass">Lägg till klass</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--account-main-content-->
+        </div>
+        <!--account-content-->
+    </div>
+    <!--wrap-->
+
+    <script src="../../js/admin.js"></script>
+    <script src="../../js/navMenu.js"></script>
+
+</body>
+
+</html>

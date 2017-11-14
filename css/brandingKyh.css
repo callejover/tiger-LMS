@@ -192,3 +192,11 @@ accounts.css Branding
 .account-main-content button:hover {
   background-color: rgba(250,149,0,0.5);
 }
+
+
+
+
+.createCourses,
+.createStudents {
+  background: #d5998c;
+}
