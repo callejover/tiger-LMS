@@ -8,5 +8,5 @@ window.onclick = function (event) {
     windowCloseAssignmentFeedbackModal();
 
     //closeModuleTeacher();
-    closeNewsModal();
+    windowCloseNewsModal();
 };

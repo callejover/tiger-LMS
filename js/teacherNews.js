@@ -17,11 +17,11 @@ newsSpan.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-function closeNewsModal() {
-    if (event.target === newsModal) {
+window.addEventListener("click", function(event) {
+    if (event.target == newsModal) {
         newsModal.style.display = "none";
     }
-}
+});
 var news = document.querySelector("#newsContent");
 //var selectedValue = document.getElementById("classNews").text;
 
