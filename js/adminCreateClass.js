@@ -1,30 +1,3 @@
-// Opens modul window to login
-
-// Get the modal
-var modal = document.getElementById('createAccountModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("createAccountButton");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("accountClose")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
 
 
 
@@ -32,7 +5,7 @@ window.onclick = function (event) {
 
 //On submit button, changes the modals inner HTML
 
-let fullNameCreate = document.querySelector("#fullnameCreate");
+let fullNameCreate = document.querySelector("#account-name input");
 let createdUserMassage = document.querySelector(".createdUserMassage");
 let accountResponse = document.querySelector("#accountResponse");
 
@@ -40,10 +13,27 @@ let accountEmail = document.querySelector("#account-email input");
 let accountUsername = document.querySelector("#account-username input");
 let accountPassword = document.querySelector("#account-password input");
 
-let createStudent = document.querySelector(".createStudent");
-let createTeacher = document.querySelector(".createTeacher");
 let accountSelect = document.querySelector("#account-select");
 
+let addCreatedClass = document.querySelector("#addCreatedClass");
+let createCoursesStudents = document.querySelector(".createCoursesStudents");
+
+let addStudentToTableButton = document.querySelector("#add-student-to-table");
+let errorMessageStudent = document.querySelector("#errorMessageStudent");
+let errorMessageStudentText = "Du måste välja en student i listan";
+let errorMessageStudentExistsText = " finns redan i listan, välj ett annat namn";
+let messageStudentSuccessText = " studenten tillaggd";
+let createStudents = document.querySelector(".createStudents table");
+let studentContainerListSelect = document.querySelector(".studentContainerList select");
+let studentContainerListSelectOption = studentContainerListSelect.value;
+
+let addCourseToTableButton = document.querySelector("#add-course-to-table");
+let errorMessageCourse = document.querySelector("#errorMessageCourse");
+let errorMessageCourseText = "Du måste skriva in ett kursnamn";
+let errorMessageTeacherText = "Du måste välja en lärare";
+let errorMessageExistsText = " finns redan i listan, välj ett annat namn på kuren";
+let messageSuccessText = " kurs tillaggd";
+let courseExists = ["JavaScript", "Back End", "Arbetsmetodik"];
 
 accountResponse.addEventListener("click", function (event) {
 
@@ -64,26 +54,21 @@ accountResponse.addEventListener("click", function (event) {
         }
     } else if (accountSelect.value == "Lärare") {
 
-
-
         console.log("Lärare");
 
         var courseContainerList = document.querySelector(".courseContainerList select");
         var courseContainerListOption = document.createElement("option");
-        
+
         courseContainerListOption.text = fullNameCreate.value;
-    
+
         courseContainerList.add(courseContainerListOption);
-
-
-
 
     }
 
     if (fullNameCreate.value == "") {
         createdUserMassage.innerHTML = "Skriv in namn";
     } else if (accountEmail.value == "") {
-        createdUserMassage.innerHTML = "Skriv in e-post"
+        createdUserMassage.innerHTML = "Skriv in e-post";
     } else if (accountUsername.value == "") {
         createdUserMassage.innerHTML = "Skriv in användarnamn";
     } else if (accountPassword.value == "") {
@@ -100,8 +85,6 @@ accountResponse.addEventListener("click", function (event) {
             createdUserMassage.innerHTML = "";
         }, 2000);
     }
-
-
 });
 
 
@@ -114,19 +97,8 @@ accountResponse.addEventListener("click", function (event) {
 
 
 
-
-
-
-
-
-
-
-
-
 /*
-
         For the course creation page
-
 */
 
 // Checkes of value in array already exists or not
@@ -160,17 +132,6 @@ let arrayContains = function (needle) {
 
 
 // Add Course & Teacher
-let addCourseToTableButton = document.querySelector("#add-course-to-table");
-
-let errorMessageCourse = document.querySelector("#errorMessageCourse");
-let errorMessageCourseText = "Du måste skriva in ett kursnamn";
-let errorMessageTeacherText = "Du måste välja en lärare";
-let errorMessageExistsText = " finns redan i listan, välj ett annat namn på kuren";
-let messageSuccessText = " kurs tillaggd";
-
-let courseExists = ["JavaScript", "Back End", "Arbetsmetodik"];
-
-
 errorMessageCourse.classList.add("visibilityHidden");
 
 addCourseToTableButton.addEventListener("click", function (event) {
@@ -215,24 +176,7 @@ addCourseToTableButton.addEventListener("click", function (event) {
 });
 
 
-
-
 // Add Students
-let addStudentToTableButton = document.querySelector("#add-student-to-table");
-
-let errorMessageStudent = document.querySelector("#errorMessageStudent");
-let errorMessageStudentText = "Du måste välja en student i listan";
-let errorMessageStudentExistsText = " finns redan i listan, välj ett annat namn";
-let messageStudentSuccessText = " studenten tillaggd";
-
-
-let createStudents = document.querySelector(".createStudents table");
-let studentContainerListSelect = document.querySelector(".studentContainerList select");
-
-
-let studentContainerListSelectOption = document.querySelector(".studentContainerList select").value;
-
-
 errorMessageStudent.classList.add("visibilityHidden");
 
 addStudentToTableButton.addEventListener("click", function (event) {
@@ -271,9 +215,6 @@ addStudentToTableButton.addEventListener("click", function (event) {
 
 
 // Create class
-let addCreatedClass = document.querySelector("#addCreatedClass");
-let createCoursesStudents = document.querySelector(".createCoursesStudents");
-
 addCreatedClass.addEventListener("click", function () {
     createCoursesStudents.innerHTML = "<div class=\"courseAddedAfterCreation\">Klassen är tillaggd</div>";
 

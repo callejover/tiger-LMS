@@ -6,6 +6,7 @@ window.onclick = function (event) {
     windowCloseAssignmentModal();
     // closeAttendanceOverview();
     windowCloseAssignmentFeedbackModal();
+    closeAdminCreateUserModal();
 
     //closeModuleTeacher();
 };
