@@ -1,10 +1,4 @@
-
-
-
-// =================================================================================
-
-//On submit button, changes the modals inner HTML
-
+// Account
 let fullNameCreate = document.querySelector("#account-name input");
 let createdUserMassage = document.querySelector(".createdUserMassage");
 let accountResponse = document.querySelector("#accountResponse");
@@ -18,6 +12,7 @@ let accountSelect = document.querySelector("#account-select");
 let addCreatedClass = document.querySelector("#addCreatedClass");
 let createCoursesStudents = document.querySelector(".createCoursesStudents");
 
+// Student
 let addStudentToTableButton = document.querySelector("#add-student-to-table");
 let errorMessageStudent = document.querySelector("#errorMessageStudent");
 let errorMessageStudentText = "Du måste välja en student i listan";
@@ -25,8 +20,10 @@ let errorMessageStudentExistsText = " finns redan i listan, välj ett annat namn
 let messageStudentSuccessText = " studenten tillaggd";
 let createStudents = document.querySelector(".createStudents table");
 let studentContainerListSelect = document.querySelector(".studentContainerList select");
-let studentContainerListSelectOption = studentContainerListSelect.value;
+//let studentContainerListSelectOption = studentContainerListSelect.value;
+var ul = document.getElementById('myUl');
 
+// Course
 let addCourseToTableButton = document.querySelector("#add-course-to-table");
 let errorMessageCourse = document.querySelector("#errorMessageCourse");
 let errorMessageCourseText = "Du måste skriva in ett kursnamn";
@@ -35,6 +32,8 @@ let errorMessageExistsText = " finns redan i listan, välj ett annat namn på ku
 let messageSuccessText = " kurs tillaggd";
 let courseExists = ["JavaScript", "Back End", "Arbetsmetodik"];
 
+
+// Adds account to table when creating new account (Student & Teacher)
 accountResponse.addEventListener("click", function (event) {
 
     event.preventDefault();
@@ -43,13 +42,18 @@ accountResponse.addEventListener("click", function (event) {
 
         if (fullNameCreate.value != "" && accountEmail.value != "" && accountUsername.value != "" && accountPassword.value != "") {
 
-            let row = createStudents.insertRow(-1);
-            let cell1 = row.insertCell(0);
-            let cell2 = row.insertCell(1);
+                                                                                        let row = createStudents.insertRow(-1);
+                                                                                        let cell1 = row.insertCell(0);
+                                                                                        let cell2 = row.insertCell(1);
 
-            cell1.setAttribute("class", "text-align-center");
-            cell1.innerHTML = "<input type=\"checkbox\" name=\"\" id=\"Student-" + fullNameCreate.value + "\">";
-            cell2.innerHTML = "<label for=\"Student-" + fullNameCreate.value + "\">" + fullNameCreate.value + "</label>";
+                                                                                        cell1.setAttribute("class", "text-align-center");
+                                                                                        cell1.innerHTML = "<input type=\"checkbox\" name=\"\" id=\"Student-" + fullNameCreate.value + "\">";
+                                                                                        cell2.innerHTML = "<label for=\"Student-" + fullNameCreate.value + "\">" + fullNameCreate.value + "</label>";
+
+                    /*
+                        Lägg in ul istället för table saken här
+                    */
+            
 
         }
     } else if (accountSelect.value == "Lärare") {
@@ -95,11 +99,6 @@ accountResponse.addEventListener("click", function (event) {
 
 
 
-
-
-/*
-        For the course creation page
-*/
 
 // Checkes of value in array already exists or not
 let arrayContains = function (needle) {
@@ -165,6 +164,7 @@ addCourseToTableButton.addEventListener("click", function (event) {
             cell3.innerHTML = courseContainerListSelect.options[courseContainerListSelect.selectedIndex].text;
 
             courseContainerListInput.value = "";
+            
         }
     }
     setTimeout(function () {
@@ -184,25 +184,49 @@ addStudentToTableButton.addEventListener("click", function (event) {
     errorMessageStudent.classList.add("visibilityVisible");
     errorMessageStudent.classList.remove("visibilityHidden");
 
-    if (studentContainerListSelect.value == "") {
+
+    let studentContainerListSelectOptionValue = studentContainerListSelect.options[studentContainerListSelect.selectedIndex].value;
+    let studentContainerListSelectOptionText = studentContainerListSelect.options[studentContainerListSelect.selectedIndex].text;
+
+    let newStudent = document.createElement('li');
+    let removeStudent = document.createElement('button');
+    let textStudent = studentContainerListSelectOptionText;
+
+
+    if (studentContainerListSelectOptionValue === "") {
         errorMessageStudent.innerHTML = errorMessageStudentText;
     } else {
 
-        let row = createStudents.insertRow(-1);
-        let cell1 = row.insertCell(0);
-        let cell2 = row.insertCell(1);
+        // let row = createStudents.insertRow(-1);
+        // let cell1 = row.insertCell(0);
+        // let cell2 = row.insertCell(1);
 
-        console.log(studentContainerListSelect.value)
+        // console.log(studentContainerListSelect.value)
 
-        errorMessageStudent.innerHTML = studentContainerListSelect.options[studentContainerListSelect.selectedIndex].text + messageStudentSuccessText;
+        errorMessageStudent.innerHTML = studentContainerListSelectOptionText;
 
 
-        cell1.setAttribute("class", "text-align-center");
-        cell1.innerHTML = "<input type=\"checkbox\" name=\"\" id=\"Student-" + studentContainerListSelect.value + "\">";
-        cell2.innerHTML = "<label for=\"Student-" + studentContainerListSelect.value + "\">" + studentContainerListSelect.options[studentContainerListSelect.selectedIndex].text + "</label>";
+        // cell1.setAttribute("class", "text-align-center");
+        // cell1.innerHTML = "<input type=\"checkbox\" name=\"\" id=\"Student-" + studentContainerListSelect.value + "\">";
+        // cell2.innerHTML = "<label for=\"Student-" + studentContainerListSelect.value + "\">" + studentContainerListSelect.options[studentContainerListSelect.selectedIndex].text + "</label>";
 
-        // Removes the added student
-        studentContainerListSelect.remove(studentContainerListSelect.selectedIndex);
+        // // Removes the added student
+        // studentContainerListSelect.remove(studentContainerListSelect.selectedIndex);
+
+        
+
+        if (textStudent === "") {
+            alert('Add text');
+        } else {
+            newStudent.innerHTML = "<span>" + textStudent + "</span>";
+            newStudent.appendChild(removeStudent);
+            removeStudent.innerHTML = "Ta bort";
+
+            removeStudent.setAttribute("onClick", "removeMe(this)");
+            ul.appendChild(newStudent);
+
+            studentContainerListSelect.remove(studentContainerListSelect.selectedIndex);
+        }
 
     }
     setTimeout(function () {
@@ -212,6 +236,25 @@ addStudentToTableButton.addEventListener("click", function (event) {
 
     }, 2000);
 });
+
+
+function removeMe(item) {
+    let removedText = item.parentElement.textContent.replace('Ta bort', '');
+    let studentContainerListSelect = document.querySelector(".studentContainerList select");
+    var studentContainerListSelectOption = document.createElement("option");
+
+    item.parentElement.parentElement.removeChild(item.parentElement);
+
+    studentContainerListSelectOption.text = "->" + removedText;
+
+    studentContainerListSelect.add(studentContainerListSelectOption);
+
+}
+
+
+
+
+
 
 
 // Create class
