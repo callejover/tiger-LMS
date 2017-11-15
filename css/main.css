@@ -340,6 +340,10 @@ a {
     background-position: center, center;
 }
 
+#nav img {
+    padding-top: 1em;
+}
+
 .features,
 .pricing {
     height: 35vh;
