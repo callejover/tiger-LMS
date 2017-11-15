@@ -26,11 +26,31 @@
     opacity: 0.6;
 }
 
-.classes:hover {
-    background-color: orangered;
+.classes1 {
+    background: #DD5800 url('http://www.simpalm.com/wp-content/uploads/2016/06/front-end-development.png') no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.classes2 {
+    background: #DD5800 url('http://media.arenaekonomi.se/2010/12/iStock_000003655794Small-647x320.jpg') no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.classes3 {
+    background: #DD5800 url('../img/backend2.png') no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.classes1:hover, .classes2:hover, .classes3:hover {
+    background-color: rgba(250,100,0,0.2);
     cursor: pointer;
     transition-duration: 0.3s;
 }
+
+
 
 
 
