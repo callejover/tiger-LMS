@@ -247,7 +247,6 @@ a {
 
 .features,
 .pricing,
-.textContent,
 .teachCourses {
     width: 30%;
     padding: 0;
@@ -314,8 +313,31 @@ a {
 
 
 .textContent {
-    width: 70%;
-    min-height: 35vh;
+    min-height: 50vh;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 2.5% 0;
+    text-align: center;
+}
+
+.textContent h2 {
+    margin-top: 1em;
+}
+
+.textContent p {
+    margin: 0 15em 0 15em;
+    margin-bottom: 2em;
+    line-height: 3em;
+    letter-spacing: 0.09em;
+}
+
+.textContentApparance {
+    font-size: 1.1em;
+    background-color: rgba(98, 0, 105, 1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-position: center, center;
 }
 
 .features,
