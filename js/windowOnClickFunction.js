@@ -9,5 +9,4 @@ window.onclick = function (event) {
     closeAdminCreateUserModal();
 
     //closeModuleTeacher();
-    closeNewsModal();
 };
