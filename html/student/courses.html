@@ -30,8 +30,13 @@
     <header>
         <nav id="nav">
             <div id="nav-button-max-500">
-                    <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
-                <button id="menu-button">MENY</button></div>
+                <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
+                <div class="menuButton" onclick="menuButton(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
             <ul class="hidden-max-500">
                 <li>
                     <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
@@ -111,14 +116,14 @@
                 <span class="assignmentFeedbackClose close">&times;</span>
                 <!-- Closing X icon in modal -->
                 <div class="header headerassignmentFeedback">
-    
-    
-    
+
+
+
                     <h3>Feedback</h3>
-                    <p>Cupidatat esse voluptate qui velit do ad proident id. Est voluptate exercitation
+                    <p class="pricing_text">Cupidatat esse voluptate qui velit do ad proident id. Est voluptate exercitation
                         irure ea. Voluptate exercitation veniam et qui amet pariatur dolor.</p>
-    
-    
+
+
                 </div>
             </div>
         </div>
@@ -127,8 +132,8 @@
     <div class="wrap">
         <div class="content content-pricing">
             <div class="innerContent apperance">
-                <h2>Kurser</h2>
-                <p>Som elev kan du se information om kursen och om den är pågående eller avslutad och även vad du har för betyg
+                <h2 class="marLeft">Kurser</h2>
+                <p class="pricing_text">Som elev kan du se information om kursen och om den är pågående eller avslutad och även vad du har för betyg
                     i de kurser som du redan har avslutat.</p>
                 <br>
 
@@ -142,7 +147,7 @@
                             </label>
                             <div class="tab-content">
                                 <div class="infoTab">
-                                    <p>
+                                    <p class="pricing_text">
                                         Syftet med kursen är att den studerande ska få kunskap och färdighet i hur man utvecklar webblösningar i HTML5 och CSS3,
                                         både fristående och i publiceringssystem. Kursen belyser även den senaste tekniken
                                         och ramverken inom HTML5/CSS3.
@@ -258,7 +263,7 @@
                             </label>
                             <div class="tab-content">
                                 <div class="infoTab">
-                                    <p>
+                                    <p class="pricing_text">
                                         Kursen ger de studerande avancerade kunskaper och färdigheter i att programmera och strukturera Javascript-projekt. De studerande
                                         får kunskaper om att det finns olika Javascript-versioner och lär sig jämföra dessa
                                         samt får förståelse för deras olika kompabilitet med olika webbläsare och plattformar.
@@ -392,7 +397,7 @@
                             </label>
                             <div class="tab-content">
                                 <div class="infoTab">
-                                    <p>
+                                    <p class="pricing_text">
                                         Kursen ger kunskap i modern lättrörlig projektmetodik och praktiska färdigheter inom detta. Andra systemutvecklingsmetoder
                                         som ex. testdriven utveckling ingår i kursen. Kursen ger exempel på relevanta verktyg
                                         och arbetsmetoder för en utvecklare. Under kursen lär sig de studerande versionshantering
@@ -521,7 +526,7 @@
                             </label>
                             <div class="tab-content">
                                 <div class="infoTab">
-                                    <p>
+                                    <p  class="pricing_text">
                                         Efter avslutad kurs ska de studerande ha kunskap för att utföra sådana arbetsuppgifter inom back-endprogrammering som relaterar
                                         till front-end-utveckling. De ska även ha fått kunskap i CMS-verktyget Wordpress
                                         och behärska detta
