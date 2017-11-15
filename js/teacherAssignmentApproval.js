@@ -104,7 +104,7 @@ function windowCloseAssignmentModal() {
             // var feedbackShowHideContentMargin = document.getElementById("feedbackShowHideContentMargin");
 
             // function showHideFeedback() {
-                
+
             //     if (feedbackShowHideContent.style.display == "block") {
             //         feedbackShowHideContent.style.display = "none";
             //         showHideFeedbackButton.innerHTML = "Visa feedback";
@@ -116,10 +116,9 @@ function windowCloseAssignmentModal() {
             //     }
             // }
 
-        
+
 
 
 // Redirects to same page when added grade
 function pageSwap() {
     window.location.replace("../teacher/assignmentApproval.html");
-}
