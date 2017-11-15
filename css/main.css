@@ -577,7 +577,8 @@ header {
 .close,
 .assignmentClose,
 .attendanceClose,
-.accountClose {
+.accountClose,
+.newsClose {
   color: #DBDBDB;
   float: right;
   font-size: 28px;
@@ -592,7 +593,9 @@ header {
 .attendanceClose:hover,
 .attendanceClose:focus,
 .accountClose:hover,
-.accountClose:focus {
+.accountClose:focus,
+.newsClose:hover,
+.newsClose:focus {
   color: #313131;
   text-decoration: none;
   cursor: pointer;
