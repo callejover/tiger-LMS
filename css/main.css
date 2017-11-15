@@ -639,7 +639,7 @@ This is CSS only for the news.html page
 }
 
 .newsDate {
-    padding-left: 1em;
+    /* padding-left: 1em; */
     flex: 1;
     font-size: 0.8em;
 }
