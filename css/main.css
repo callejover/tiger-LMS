@@ -333,10 +333,12 @@ a {
 
 .textContentApparance {
     font-size: 1.1em;
-    background-color: rgba(98, 0, 105, 1);
+    background: rgba(166, 79, 172, 0.8) url('../img/tiger_bg.jpg') no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% auto;
+    /* background-size: 100% auto; */
     background-position: center, center;
 }
 
