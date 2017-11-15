@@ -27,7 +27,7 @@ function addContent2(myForm){
 };
 
 function addContent3(myForm){
-  $(myForm).prepend('<div class = "remove"><h4 contenteditable="true">Namnlös</h4><p contenteditable="true">Skriv beskrivning</p><div class="course-contains"><label><input type="checkbox" name="courseContains" value="1"><t contenteditable="true">Uppgift 1</t></label><br><button id="btn1" onclick="addContent4()">Lägg till4</button></div><button type="button" id="i" onclick="eraseContent()">Ta bort</button></div><br>');
+  $(myForm).prepend('<div class = "remove"><h4 contenteditable="true">Namnlös</h4><p contenteditable="true">Skriv beskrivning</p><div class="course-contains"><label><input type="checkbox" name="courseContains" value="1"><t contenteditable="true">Uppgift 1</t></label><br><button id="btn1" onclick="addContent4()">Lägg till Checkbox</button></div><button type="button" id="i" onclick="eraseContent()">Ta bort</button></div><br>');
 };
 
 function addContent4(){
