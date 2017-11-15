@@ -310,9 +310,6 @@ a {
     line-height: 25vh;
     margin: 1em 1em 1em 1em;
     overflow: hidden;
-  background: #ffb477 url('../img/backend2.png') no-repeat;
-  background-blend-mode: overlay;
-  background-size: cover;
 }
 
 
@@ -585,7 +582,8 @@ header {
 .close,
 .assignmentClose,
 .attendanceClose,
-.accountClose {
+.accountClose,
+.newsClose {
   color: #DBDBDB;
   float: right;
   font-size: 28px;
@@ -600,7 +598,9 @@ header {
 .attendanceClose:hover,
 .attendanceClose:focus,
 .accountClose:hover,
-.accountClose:focus {
+.accountClose:focus,
+.newsClose:hover,
+.newsClose:focus {
   color: #313131;
   text-decoration: none;
   cursor: pointer;
@@ -639,7 +639,7 @@ This is CSS only for the news.html page
 }
 
 .newsDate {
-    padding-left: 1em;
+    /* padding-left: 1em; */
     flex: 1;
     font-size: 0.8em;
 }

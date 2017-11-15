@@ -17,9 +17,9 @@ span.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-function closeAttendanceOverview() {
-    if (event.target == modal) {
-        modal.style.display = "none";
+function closeNewsModal() {
+    if (event.target === newsModal) {
+        newsModal.style.display = "none";
     }
 }
 var news = document.querySelector("#newsContent");
