@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Tiger-LMS | Skapa konton</title>
+
+    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <link rel="stylesheet" href="../../css/brandingKyh.css">
+
+    <link rel="stylesheet" href="../../css/mediaq.css">
+
+    <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> Not needed -->
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav">
+            <div id="nav-button-max-500">
+                <a href="adminStart.html">
+                    <img src="../../img/KYH-logo.png">
+                </a>
+                <div class="menuButton" onclick="menuButton(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <ul class="hidden-max-500">
+                <li>
+                    <a href="adminStart.html">
+                        <img src="../../img/KYH-logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="editFeedback.html">Utvärdering</a>
+                </li>
+                <li>
+                    <a href="resultFeedback.html">#</a>
+                </li>
+                <li>
+                    <a id="newsButton">Nyheter</a>
+                </li>
+                <li>
+                    <a id="createAccountButton">Skapa konton</a>
+                </li>
+                <li>
+                    <a href="../../index.html">Log out</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="createAccountModal" class="modal">
+        <div class="modal-content">
+            <span class="accountClose">&times;</span>
+            <!-- Closing X icon in modal -->
+            <div class="header">
+                <h1>Skapa ny användare</h1>
+                <form id="account-form">
+                    <!-- Form for user input -->
+                    <div id="account-name">
+                        <input type="text" placeholder="Fullständigt namn">
+                    </div>
+                    <div id="account-email">
+                        <input type="text" id="email-box" placeholder="Epostadress">
+                    </div>
+                    <div id="account-username">
+                        <input type="text" placeholder="Användarnamn" autofocus="autofocus">
+                    </div>
+                    <div id="account-password">
+                        <input type="password" placeholder="Lösenord">
+                    </div>
+                    <div id="account-type">
+                        <select name="account-select" id="account-select">
+                            <option value="Student">Student</option>
+                            <option value="Lärare">Lärare</option>
+                            <option value="Administratör">Administratör</option>
+                        </select>
+                        <div class="accountButton">
+                            <input type="submit" value="submit" id="accountResponse" class="createStudent createTeacher">
+                        </div>
+                    </div>
+                </form>
+                <span class="createdUserMassage"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="newsModal" class="modal">
+        <div class="modal-content">
+            <span class="newsClose">&times;</span>
+            <!-- Closing X icon in modal -->
+            <div class="header headerAssignment">
+                <div id="newsContent">
+                    <h2>Lägg till nyheter</h2>
+
+                    <form name="newsForm">
+                        <select id="classNews">
+                            <option value="javascript">Javascript</option>
+                            <option value="htmlCss">HTML och CSS </option>
+                            <option value="backend">Backend</option>
+                            <option value="arbetsmetodik">Arbetsmetodik</option>
+
+
+                        </select>
+                        <select id="teacherStudent">
+                            <option value="student">Elever</option>
+                            <option value="teacher">Lärare</option>
+                        </select>
+                        <textarea class="headline" rows="1" cols="10" input placeholder="Rubrik"></textarea>
+                        <textarea class="newsArea" rows="10" cols="50"></textarea>
+                        <input type="date" id="dates">
+                        <button id="sendNews" onclick="sendNews1()">Lägg till</button>
+                        <span id="newsSent"></span>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wrap">
+        <div class="content">
+            <div class="innerContent apperance">
+
+                <div class="createCoursesStudents">
+                    <div class="createCoursesStudentsTop">
+                        <h2 contenteditable="true">FE17</h2>
+                    </div>
+
+                    <div class="createCoursesStudentsMiddle">
+
+                        <div class="createCourses">
+                            <div>
+                                <h5>Kurser</h5>
+                                <ul>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Javascript</span>
+                                            <span> (Elisabeth Nilsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="courseContainerList">
+                                <input type="text" placeholder="Kursnamn...">
+                                <select name="teacherList">
+                                    <option selected="" value="" disabled>Välj lärare...</option>
+                                    <option value="0">Maria Johansson</option>
+                                    <option value="1">Margareta Karlsson</option>
+                                    <option value="2">Elisabeth Nilsson</option>
+                                    <option value="3">Eva Eriksson</option>
+                                    <option value="4">Erik Johansson</option>
+                                    <option value="5">Lars Andersson</option>
+                                    <option value="6">Christina Jonsson</option>
+                                    <option value="7">Carl Persson</option>
+                                    <option value="8">Gunnar Bengtsson</option>
+                                    <option value="9">Hans Pettersson</option>
+                                </select>
+                                <div class="image-upload excelButton">
+                                    <label for="file-input">
+                                        <img src="../../img/excel.png" />
+                                    </label>
+
+                                    <input id="file-input" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                                </div>
+                                <button class="roundButton" id="add-course-to-table">+</button>
+
+                                <span id="errorMessageCourse"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="createStudents">
+                            <div>
+                                <h5>Elever</h5>
+                                <ul>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Robbin Eriksson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Tobias Wallner</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Calle Jovér</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="studentContainerList">
+                                <select name="studentList" id="">
+                                    <option selected="" value="" disabled>Välj student...</option>
+                                    <option value="0">Maria Johansson</option>
+                                    <option value="1">Margareta Karlsson</option>
+                                    <option value="2">Elisabeth Nilsson</option>
+                                    <option value="3">Eva Eriksson</option>
+                                    <option value="4">Erik Johansson</option>
+                                    <option value="5">Lars Andersson</option>
+                                    <option value="6">Christina Jonsson</option>
+                                    <option value="7">Carl Persson</option>
+                                    <option value="8">Gunnar Bengtsson</option>
+                                    <option value="9">Hans Pettersson</option>
+                                    <option value="10">Per Larsson</option>
+                                    <option value="11">Johan Eriksson</option>
+                                    <option value="12">Hans Pettersson</option>
+                                    <option value="13">Ingrid Pettersson</option>
+                                    <option value="14">Kristina Larsson</option>
+                                    <option value="15">Lennart Jonsson</option>
+                                    <option value="16">Maria Johansson</option>
+                                    <option value="17">Margareta Karlsson</option>
+                                    <option value="18">Elisabeth Nilsson</option>
+                                    <option value="19">Eva Eriksson</option>
+                                    <option value="20">Erik Johansson</option>
+                                    <option value="21">Lars Andersson</option>
+                                    <option value="22">Christina Jonsson</option>
+                                    <option value="23">Carl Persson</option>
+                                    <option value="24">Gunnar Bengtsson</option>
+                                    <option value="25">Hans Pettersson</option>
+                                    <option value="26">Per Larsson</option>
+                                    <option value="27">Johan Eriksson</option>
+                                    <option value="28">Hans Pettersson</option>
+                                    <option value="29">Ingrid Pettersson</option>
+                                    <option value="30">Kristina Larsson</option>
+                                    <option value="31">Lennart Jonsson</option>
+                                    <option value="32">Maria Johansson</option>
+                                    <option value="33">Margareta Karlsson</option>
+                                    <option value="34">Elisabeth Nilsson</option>
+                                    <option value="35">Eva Eriksson</option>
+                                    <option value="36">Erik Johansson</option>
+                                    <option value="37">Lars Andersson</option>
+                                    <option value="38">Christina Jonsson</option>
+                                    <option value="39">Carl Persson</option>
+                                    <option value="40">Gunnar Bengtsson</option>
+                                    <option value="41">Hans Pettersson</option>
+                                    <option value="42">Per Larsson</option>
+                                    <option value="43">Johan Eriksson</option>
+                                    <option value="44">Hans Pettersson</option>
+                                    <option value="45">Ingrid Pettersson</option>
+                                    <option value="46">Kristina Larsson</option>
+                                    <option value="47">Lennart Jonsson</option>
+                                </select>
+
+                                <div class="image-upload excelButton">
+                                    <label for="file-input">
+                                        <img src="../../img/excel.png" />
+                                    </label>
+
+                                    <input id="file-input" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                                </div>
+
+                                <button class="roundButton" id="add-student-to-table">+</button>
+
+                                <span id="errorMessageStudent"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="createCoursesStudentsBottom">
+                        <button id="addCreatedClass">Lägg till klass</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--account-main-content-->
+        </div>
+        <!--account-content-->
+    </div>
+    <!--wrap-->
+
+    <script src="../../js/adminCreateClass.js"></script>
+    <script src="../../js/adminModal.js"></script>
+    <script src="../../js/teacherNews.js"></script>
+
+
+    <script src="../../js/removeItems.js"></script>
+
+    <script src="../../js/navMenu.js"></script>
+
+
+</body>
+
+</html>
