@@ -44,10 +44,25 @@
     background-size: cover;
 }
 
+.new {
+    background-color: #DD5800;
+}
+
+.new:hover {
+    background-color: rgba(250,100,0,1);
+}
+
 .classes1:hover, .classes2:hover, .classes3:hover {
-    background-color: rgba(250,100,0,0.2);
+    background-color: rgba(250,100,0,0);
     cursor: pointer;
     transition-duration: 0.3s;
+}
+
+.teachCourses a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
 }
 
 
