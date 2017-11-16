@@ -30,7 +30,11 @@
                 <a href="adminStart.html">
                     <img src="../../img/KYH-logo.png">
                 </a>
-                <button id="menu-button">MENY</button>
+                <div class="menuButton" onclick="menuButton(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
             <ul class="hidden-max-500">
                 <li>
@@ -48,7 +52,7 @@
                     <a href="news.html">Nyheter</a>
                 </li>
                 <li>
-                    <a href="accounts.html">Skapa konton</a>
+                    <a id="createAccountButton">Skapa konton</a>
                 </li>
                 <li>
                     <a href="../../index.html">Log out</a>
@@ -56,6 +60,44 @@
             </ul>
         </nav>
     </header>
+
+    <div id="createAccountModal" class="modal">
+        <div class="modal-content">
+            <span class="accountClose">&times;</span>
+            <!-- Closing X icon in modal -->
+            <div class="header">
+                <h1>Skapa ny användare</h1>
+                <form id="account-form">
+                    <!-- Form for user input -->
+                    <div id="account-name">
+                        <input type="text" placeholder="Fullständigt namn">
+                    </div>
+                    <div id="account-email">
+                        <input type="text" id="email-box" placeholder="Epostadress">
+                    </div>
+                    <div id="account-username">
+                        <input type="text" placeholder="Användarnamn" autofocus="autofocus">
+                    </div>
+                    <div id="account-password">
+                        <input type="password" placeholder="Lösenord">
+                    </div>
+                    <div id="account-type">
+                        <select name="account-select" id="account-select">
+                            <option value="Student">Student</option>
+                            <option value="Lärare">Lärare</option>
+                            <option value="Administratör">Administratör</option>
+                        </select>
+                        <div class="accountButton">
+                            <input type="submit" value="submit" id="accountResponse" class="createStudent createTeacher">
+                        </div>
+                    </div>
+                </form>
+                <span class="createdUserMassage"></span>
+            </div>
+        </div>
+    </div>
+    <!-- div loginModal opens the login box on index screen -->
+
 
     <div class="wrap">
         <div class="content">
@@ -72,52 +114,52 @@
                             <div>
 
                                 <table class="width100">
-                                        <tbody>
-                                    <tr>
-                                        <th>
-                                        </th>
-                                        <th>
-                                            <strong>Kursnamn</strong>
-                                        </th>
-                                        <th>
-                                            <strong>Lärare för kursen</strong>
-                                        </th>
-                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                            </th>
+                                            <th>
+                                                <strong>Kursnamn</strong>
+                                            </th>
+                                            <th>
+                                                <strong>Lärare för kursen</strong>
+                                            </th>
+                                        </tr>
 
-                                    <tr>
-                                        <td class="text-align-center">
-                                            <input type="checkbox" name="" id="checkbox1">
-                                        </td>
-                                        <td>
-                                            <label for="checkbox1">JavaScript</label>
-                                        </td>
-                                        <td>Maria Eriksson</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-align-center">
-                                            <input type="checkbox" name="" id="checkbox2">
-                                        </td>
-                                        <td>
-                                            <label for="checkbox2">Back End</label>
-                                        </td>
-                                        <td>Elisabeth Nilsson</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-align-center">
-                                            <input type="checkbox" name="" id="checkbox3">
-                                        </td>
-                                        <td>
-                                            <label for="checkbox3">Arbetsmetodik</label>
-                                        </td>
-                                        <td>Carl Persson</td>
-                                    </tr>
-                                </tbody>
+                                        <tr>
+                                            <td class="text-align-center">
+                                                <input type="checkbox" name="" id="checkbox1">
+                                            </td>
+                                            <td>
+                                                <label for="checkbox1">JavaScript</label>
+                                            </td>
+                                            <td>Maria Eriksson</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-align-center">
+                                                <input type="checkbox" name="" id="checkbox2">
+                                            </td>
+                                            <td>
+                                                <label for="checkbox2">Back End</label>
+                                            </td>
+                                            <td>Elisabeth Nilsson</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-align-center">
+                                                <input type="checkbox" name="" id="checkbox3">
+                                            </td>
+                                            <td>
+                                                <label for="checkbox3">Arbetsmetodik</label>
+                                            </td>
+                                            <td>Carl Persson</td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                             </div>
 
                             <div class="courseContainerList">
                                 <input type="text" placeholder="Kursnamn...">
-                                <select name="teacherList" id="">
+                                <select name="teacherList">
                                     <option selected="" value="" disabled>Välj lärare...</option>
                                     <option value="0">Maria Johansson</option>
                                     <option value="1">Margareta Karlsson</option>
@@ -130,7 +172,6 @@
                                     <option value="8">Gunnar Bengtsson</option>
                                     <option value="9">Hans Pettersson</option>
                                 </select>
-
                                 <div class="image-upload excelButton">
                                     <label for="file-input">
                                         <img src="../../img/excel.png" />
@@ -139,7 +180,7 @@
                                     <input id="file-input" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
                                 </div>
                                 <button class="roundButton" id="add-course-to-table">+</button>
-                                
+
                                 <span id="errorMessageCourse"></span>
                             </div>
                         </div>
@@ -245,7 +286,7 @@
                                 </div>
 
                                 <button class="roundButton" id="add-student-to-table">+</button>
-                                
+
                                 <span id="errorMessageStudent"></span>
                             </div>
                         </div>
@@ -265,8 +306,11 @@
     </div>
     <!--wrap-->
 
-    <script src="../../js/admin.js"></script>
+    <script src="../../js/adminCreateClass.js"></script>
+    <script src="../../js/adminModal.js"></script>
+
     <script src="../../js/navMenu.js"></script>
+
 
 </body>
 
