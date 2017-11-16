@@ -245,6 +245,13 @@ a {
     z-index: 500;
   } */
 
+.tillbaka{
+  height: 100%;
+  width: auto;
+  max-height: 3em;
+  margin: 0.5em;
+}
+
 .features,
 .pricing,
 .teachCourses {
@@ -546,6 +553,8 @@ header {
     float: right;
     padding: 0;
     border: none;
+    background-color: rgba(0,0,0,0);
+    border:none;
 }
 
 
@@ -1036,7 +1045,7 @@ button.roundButton {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0 .5em;    
+    padding: 0 .5em;
 }
 
 
