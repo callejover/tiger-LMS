@@ -114,6 +114,10 @@
     /* width: 50%; */
     text-align: center;
   }
+  #nav ul li a {
+    display: block;
+    padding: 0;
+  }
   #nav ul li:nth-child(1) {
     flex-grow: 0;
     display: none;

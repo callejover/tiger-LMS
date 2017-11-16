@@ -466,7 +466,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000
+    z-index: 1000;
+    box-shadow: 0 0 10px #000
 }
 
 .hidden-max-500 {
@@ -498,7 +499,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     align-content: flex-end;
-    flex-grow: 0.1;
+    /* flex-grow: 0.1; */
 }
 
 #nav ul li a {
@@ -508,7 +509,7 @@ header {
     color: white;
 }
 
-#nav li:hover {
+#nav ul li a:hover {
     background-color: rgba(145, 0, 156, 1);
     transition-duration: 1s;
 }

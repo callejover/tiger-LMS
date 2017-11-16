@@ -101,7 +101,7 @@ nav  attributes Branding
   background-color:rgba(176,42,9,1);
 }
 
-#nav li:hover {
+#nav ul li a:hover {
     background-color: rgba(250,100,0,1);
 }
 
