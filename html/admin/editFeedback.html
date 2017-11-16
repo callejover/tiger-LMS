@@ -30,22 +30,31 @@
 
     <header>
       <nav id="nav">
-        <div id="nav-button-max-500">MENU</div>
+        <div id="nav-button-max-500">
+          <a href="adminStart.html">
+              <img src="../../img/KYH-logo.png">
+          </a>
+          <div class="menuButton" onclick="menuButton(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+          </div>
+      </div>
         <ul class="hidden-max-500">
           <li>
-            <a href="admin.html"><img src="../../img/KYH-logo.png"></a>
+            <a href="adminStart.html"><img src="../../img/KYH-logo.png"></a>
           </li>
           <li>
             <a href="editFeedback.html">Utvärdering</a>
           </li>
           <li>
-            <a href="resultFeedback.html">#</a>
+            <a>#</a>
           </li>
           <li>
             <a href="news.html">Nyheter</a>
           </li>
           <li>
-            <a id="create-account" href="accounts.html">Skapa konton</a>
+            <a id="createAccountButton">Skapa konton</a>
           </li>
           <li>
             <a href="../../index.html">Log out</a>
@@ -103,6 +112,9 @@
     <script src="../../js/teacherAttendanceCode.js"></script>
     <script src="../../js/teacherAssignmentApproval.js"></script>
     <script src="../../js/teacherAttendanceOverview.js"></script>
+
+    <script src="../../js/admin.js"></script>
+    <script src="../../js/navMenu.js"></script>
 
 
   </body>

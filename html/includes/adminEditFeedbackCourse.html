@@ -1,14 +1,14 @@
 <div class="wrap">
     <div class="content">
         <div class="innerContent apperance">
-            <h3>Redigera: Kursutvärdering</h3>
-            <p>Alla fält med en röd stjärna (
+            <h3 class="marLeft">Redigera: Kursutvärdering</h3>
+            <p class="pricing_text">Alla fält med en röd stjärna (
                 <span class="color-red">*</span>) är obligatoriska att fylla i.</p>
             <form class="course-evaluation" name="checkFormData" action="javascript:check();" onsubmit="return check()">
                 <br>
                 <br>
                 <div class = "remove">
-                  <h4 contenteditable="true">Har vi gjort det vi ska?</h4>
+                  <h4 class="marLeft" contenteditable="true">Har vi gjort det vi ska?</h4>
                   <span class="slider-value" id="number1"></span>
                   <div class="flexSliderContainer">
                       <span class="slider-text text-align-right">Hänger inte med alls.</span>
@@ -20,7 +20,7 @@
                 <br>
 
                 <div class = "remove">
-                  <h5 contenteditable="true">Beskriv i ord:</h5>
+                  <h5 class="marLeft" contenteditable="true">Beskriv i ord:</h5>
                   <textarea name="haveDone" cols="30" rows="5"></textarea>
                   <br>
                     <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
@@ -28,7 +28,7 @@
                 <br>
 
                 <div class = "remove">
-                  <h4 contenteditable="true">Hur var kursen?</h4>
+                  <h4 class="marLeft" contenteditable="true">Hur var kursen?</h4>
                   <span class="slider-value" id="number2"></span>
                   <div class="flexSliderContainer">
                       <span class="slider-text text-align-right">Inte engagerad all.</span>
@@ -40,7 +40,7 @@
                 <br>
 
                 <div class = "remove">
-                  <h5 contenteditable="true">Beskriv i ord:</h5>
+                  <h5 class="marLeft" contenteditable="true">Beskriv i ord:</h5>
                   <textarea name="howCourse" cols="30" rows="5"></textarea>
                   <br>
                   <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
@@ -48,7 +48,7 @@
                 <br>
 
                 <div class = "remove">
-                  <h4 contenteditable="true">Vad tyckte du om läraren?</h4>
+                  <h4 class="marLeft" contenteditable="true">Vad tyckte du om läraren?</h4>
                   <span class="slider-value" id="number3"></span>
                   <div class="flexSliderContainer">
                       <span class="slider-text text-align-right">Dålig stämning.</span>
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class = "remove">
-                  <h5 contenteditable="true">Beskriv i ord:</h5>
+                  <h5 class="marLeft" contenteditable="true">Beskriv i ord:</h5>
                   <textarea name="aboutTeacher" cols="30" rows="5"></textarea>
                   <br>
                   <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
@@ -67,7 +67,7 @@
                 <br>
 
                 <div class = "remove">
-                  <h4 contenteditable="true">Hur var kursen som helhet?</h4>
+                  <h4 class="marLeft" contenteditable="true">Hur var kursen som helhet?</h4>
                   <span class="slider-value" id="number4"></span>
                   <div class="flexSliderContainer">
                       <span class="slider-text text-align-right">Dålig stämning.</span>
@@ -79,7 +79,7 @@
                 <br>
 
                 <div class = "remove">
-                  <h5 contenteditable="true">Beskriv i ord:</h5>
+                  <h5 class="marLeft" contenteditable="true">Beskriv i ord:</h5>
                   <textarea id="courseOverhead" cols="30" rows="10"></textarea>
                   <br>
                   <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
@@ -87,35 +87,35 @@
                 <br>
 
                 <div class = "remove">
-                  <h4 contenteditable="true">Har kursen innefattat detta?</h4>
+                  <h4 class="marLeft" contenteditable="true">Har kursen innefattat detta?</h4>
                   <p>Bock i det som stämmer överens med vad kursen har innefattat.</p>
                   <div class="course-contains">
                       <label>
-                          <input type="checkbox" name="courseContains" value="1"><t contenteditable="true">Uppgift 1</t></label>
+                          <input class="pricing_text" type="checkbox" name="courseContains" value="1"><t contenteditable="true">Uppgift 1</t></label>
                       <br>
                       <label>
-                          <input type="checkbox" name="courseContains" value="2"><t contenteditable="true">Uppgift 2</t></label>
+                          <input class="pricing_text" type="checkbox" name="courseContains" value="2"><t contenteditable="true">Uppgift 2</t></label>
                       <br>
                       <label>
-                          <input type="checkbox" name="courseContains" value="3"><t contenteditable="true">Uppgift 3</t></label>
+                          <input class="pricing_text" type="checkbox" name="courseContains" value="3"><t contenteditable="true">Uppgift 3</t></label>
                       <br>
                       <label>
-                          <input type="checkbox" name="courseContains" value="4"><t contenteditable="true">Uppgift 4</t></label>
+                          <input class="pricing_text" type="checkbox" name="courseContains" value="4"><t contenteditable="true">Uppgift 4</t></label>
                       <br>
                       <label>
-                          <input type="checkbox" name="courseContains" value="5"><t contenteditable="true">Uppgift 5</t></label>
+                          <input class="pricing_text" type="checkbox" name="courseContains" value="5"><t contenteditable="true">Uppgift 5</t></label>
                       <br>
                       <label>
-                          <input type="checkbox" name="courseContains" value="6"><t contenteditable="true">Uppgift 6</t></label>
+                          <input class="pricing_text" type="checkbox" name="courseContains" value="6"><t contenteditable="true">Uppgift 6</t></label>
                       <br>
-                      <button id="btn1" onclick="addContent4()">Lägg till4</button>
+                      <button id="btn1" onclick="addContent4()">Lägg till Checkbox</button>
                   </div>
                   <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
                 </div>
                 <br>
 
                 <div class = "remove">
-                  <h5 contenteditable="true">Något annat utöver detta?</h5>
+                  <h5 class="marLeft" contenteditable="true">Något annat utöver detta?</h5>
                   <textarea name="" id="courseContains" cols="30" rows="10"></textarea>
                   <br>
                   <button type="button" id="i" onclick="eraseContent()">Ta bort</button>
@@ -125,7 +125,7 @@
                 <button type="button" id="btn1" onclick="addContent2(this.form)">Lägg till Slider</button>
                 <button type="button" id="btn1" onclick="addContent3(this.form)">Lägg till Checklista</button>
                 <br><br>
-                <button class="send-button" type="submit">Skicka!</button>
+                <button class="send-button" type="submit">Spara</button>
 
             </form>
         </div>

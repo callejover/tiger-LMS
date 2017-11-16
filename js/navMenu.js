@@ -11,6 +11,10 @@
 
 // ======================================================================================
 
+let hiddenNavButton = document.querySelector(".menuButton");    // Gets the nav-button-max-500 element
+let hiddenNavWarp = document.querySelector(".hidden-max-500");          // Gets the hidden-max-500 element
+
+
 // When the window loads, display navigation none
 
 window.onload = function() {
@@ -25,9 +29,6 @@ window.onload = function() {
     When clicking on the nav-button-max-500
     then the hidden-max-500 changes to display: flex
 */
-
-let hiddenNavButton = document.querySelector("#nav-button-max-500");    // Gets the nav-button-max-500 element
-let hiddenNavWarp = document.querySelector(".hidden-max-500");          // Gets the hidden-max-500 element
 
 function navShowHide() { // Change .hidden-max-500 element to display: flex
     if (hiddenNavWarp.style.display == "flex") {
@@ -55,3 +56,9 @@ function resizeWindow() {
 // Call functions with event listener 
 window.addEventListener("resize", resizeWindow);
 hiddenNavButton.addEventListener("click", navShowHide);
+
+
+
+function menuButton(x) {
+    x.classList.toggle("change");
+}

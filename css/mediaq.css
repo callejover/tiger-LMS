@@ -67,6 +67,23 @@
     padding: 0.9em;
     line-height: normal;
   }
+
+  .textContent{
+    margin-top: 2em;
+  }
+
+  .pricing_text{
+    margin: 0 2em 2em 2em;
+  }
+
+  .marLeft{
+    margin: 0 0 0.5em 0.5em;
+  }
+
+  .teachWrap{
+    padding-top: 2em;
+  }
+
   .pricingContent {
     margin: 5% 0;
     width: 100%;
@@ -83,7 +100,7 @@
     display: none;
   }
 /* ============================================================================ */
-  
+
   #nav-button-max-500 {
     display: flex;
   }
@@ -167,7 +184,7 @@
   .studentAssignmentTable {
     font-size: 90%;
   }
-  
+
   .studentAssignmentTable th:nth-child(3) a {
    display: inline-block;
   }
@@ -181,7 +198,7 @@
   label.tabPadding {
     font-size: 80%;
   }
-    
+
   .assignments {
     align-content: flex-start;
     padding-left: 0;
@@ -197,7 +214,7 @@
   .teacherAssignmentTable {
     width: 100%
   }
-  
+
 }
 
 
