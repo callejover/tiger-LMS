@@ -990,3 +990,73 @@ button.roundButton {
   font-weight: bold;
   font-size: 200%
 }
+
+
+
+
+.createCourses ul li:nth-child(odd),
+.createStudents ul li:nth-child(odd) {
+    background: rgba(0, 0, 0, .1)
+}
+
+.createCourses ul li,
+.createStudents ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .5em;    
+}
+
+
+.createCourses ul li span {
+    width: 50%;
+    padding: .5em;
+}
+
+.createCourses ul li input {
+    width: auto;
+}
+.createCourses ul li label {
+    display: flex;
+    align-items: center;
+}
+.createCourses ul li label:hover {
+    background: none
+}
+
+.createCourses ul li label,
+.createStudents ul li span {
+    width: 80%;
+}
+
+.createCourses ul li button,
+.createStudents ul li button {
+    padding: .5em;
+    width: 20%;
+}
+
+.createCourses ul li:hover,
+.createStudents ul li:hover {
+    background: rgba(0, 0, 0, .25);
+}
+
+
+.createStudents div:nth-child(1) {
+    overflow: auto;
+    height: 50vh;
+    flex-grow: 1;
+}
+
+button:disabled {
+    background: rgb(184, 184, 184);
+    border: 1px solid #8a8a8a;
+    opacity: .75;
+    cursor: not-allowed
+}
+
+.createCourses h5,
+.createStudents h5 {
+    padding: .25em;
+    margin: 0;
+}
