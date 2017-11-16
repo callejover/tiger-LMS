@@ -13,6 +13,11 @@
   }
 }
 
+@media (min-width: 100px) and (max-width: 1080px){
+  .textContent p {
+    margin: 0;
+  }
+}
 
 @media (max-width: 1200px) {
   body {
@@ -37,6 +42,7 @@
     margin-top: -7.5em;
     top: 0;
   }
+
   .features {
     order: 0;
     z-index: 12;

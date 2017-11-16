@@ -247,7 +247,6 @@ a {
 
 .features,
 .pricing,
-.textContent,
 .teachCourses {
     width: 30%;
     padding: 0;
@@ -314,8 +313,39 @@ a {
 
 
 .textContent {
-    width: 70%;
-    min-height: 35vh;
+    min-height: 50vh;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 2.5% 0;
+    text-align: center;
+}
+
+.textContent h2 {
+    margin-top: 1em;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.textContent p {
+    margin: 0 10em 0 10em;
+    margin-bottom: 2em;
+    font-size: 1.15em;
+    line-height: 2em;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.textContentApparance {
+    font-size: 1.1em;
+    background: rgba(166,79,172, 0.8) url('../img/tiger_bg2.jpg') no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-size: 100% auto; */
+    background-position: center, center;
+}
+
+#nav img {
+    padding-top: 1em;
 }
 
 .features,
