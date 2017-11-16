@@ -1100,3 +1100,27 @@ button:disabled {
     padding: .25em;
     margin: 0;
 }
+
+
+#createNewEducation {
+    position: fixed;
+    
+    right: 0;
+    left: auto;
+    bottom: 0;
+    
+    background: rgba(176,42,9,1);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 5px #000;
+  
+  }
+
+
+  #createNewEducation a {
+  padding: 1em;
+  display: block;
+  }
+
+  
