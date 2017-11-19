@@ -42,7 +42,7 @@ body {
     margin: 0;
     padding: 0;
     margin-top: 5em;
-    background-image: url('../img/1.jpg');
+    background-image: url('../img/white_tiger.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% auto;
@@ -157,7 +157,7 @@ a {
     padding: 0;
     margin: auto;
     justify-content: center;
-    background-color: rgba(255, 242, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .hiddenCode {
@@ -245,9 +245,15 @@ a {
     z-index: 500;
   } */
 
+.tillbaka{
+  height: 100%;
+  width: auto;
+  max-height: 3em;
+  margin: 0.5em;
+}
+
 .features,
 .pricing,
-.textContent,
 .teachCourses {
     width: 30%;
     padding: 0;
@@ -314,8 +320,40 @@ a {
 
 
 .textContent {
-    width: 70%;
-    min-height: 35vh;
+    min-height: 50vh;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 2.5% 0;
+    text-align: center;
+    box-shadow: 0 3px 7px rgba(128, 52, 145, 0.66);
+}
+
+.textContent h2 {
+    margin-top: 1em;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.textContent p {
+    margin: 0 10em 0 10em;
+    margin-bottom: 2em;
+    font-size: 1.15em;
+    line-height: 2em;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.textContentApparance {
+    font-size: 1.1em;
+    background: rgba(166,79,172, 0.5) url('../img/white_tiger.jpg') no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-size: 100% auto; */
+    background-position: center, center;
+}
+
+#nav img {
+    padding-top: 1em;
 }
 
 .features,
@@ -436,7 +474,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000
+    z-index: 1000;
+    box-shadow: 0 0 10px #000
 }
 
 .hidden-max-500 {
@@ -468,7 +507,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     align-content: flex-end;
-    flex-grow: 0.1;
+    /* flex-grow: 0.1; */
 }
 
 #nav ul li a {
@@ -478,7 +517,7 @@ header {
     color: white;
 }
 
-#nav li:hover {
+#nav ul li a:hover {
     background-color: rgba(145, 0, 156, 1);
     transition-duration: 1s;
 }
@@ -515,11 +554,8 @@ header {
     float: right;
     padding: 0;
     border: none;
-}
-
-#menu-button {
-    background-color: none;
-    border-radius: 50%;
+    background-color: rgba(0,0,0,0);
+    border:none;
 }
 
 
@@ -761,6 +797,37 @@ ul.pricing-list li.no {
 
 
 /* =================================================================================
+Anmation for menu button on all student, teacher and admin pages
+================================================================================= */
+
+.menuButton {
+    /* display: inline-block; */
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* =================================================================================
 CSS for accounts.html on admin pages
 ================================================================================= */
 
@@ -808,18 +875,6 @@ CSS for accounts.html on admin pages
 
 #accout-respond-box {
     margin: 2em;
-}
-
-#account-username,
-#account-password,
-#account-full-name,
-#account-email,
-#account-type {
-    padding-bottom: 2em;
-}
-
-#account-username {
-    padding-top: 2em;
 }
 
 #submit-button {
@@ -976,3 +1031,97 @@ button.roundButton {
   font-weight: bold;
   font-size: 200%
 }
+
+
+
+
+.createCourses ul li:nth-child(odd),
+.createStudents ul li:nth-child(odd) {
+    background: rgba(0, 0, 0, .1)
+}
+
+.createCourses ul li,
+.createStudents ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .5em;
+}
+
+
+.createCourses ul li span {
+    width: 50%;
+    padding: .5em;
+}
+
+.createCourses ul li input {
+    width: auto;
+}
+.createCourses ul li label {
+    display: flex;
+    align-items: center;
+}
+.createCourses ul li label:hover {
+    background: none
+}
+
+.createCourses ul li label,
+.createStudents ul li span {
+    width: 80%;
+}
+
+.createCourses ul li button,
+.createStudents ul li button {
+    padding: .5em;
+    width: 20%;
+}
+
+.createCourses ul li:hover,
+.createStudents ul li:hover {
+    background: rgba(0, 0, 0, .25);
+}
+
+
+.createStudents div:nth-child(1) {
+    overflow: auto;
+    height: 50vh;
+    flex-grow: 1;
+}
+
+button:disabled {
+    background: rgb(184, 184, 184);
+    border: 1px solid #8a8a8a;
+    opacity: .75;
+    cursor: not-allowed
+}
+
+.createCourses h5,
+.createStudents h5 {
+    padding: .25em;
+    margin: 0;
+}
+
+
+#createNewEducation {
+    position: fixed;
+    
+    right: 0;
+    left: auto;
+    bottom: 0;
+    
+    background: rgba(176,42,9,1);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 5px #000;
+  
+  }
+
+
+  #createNewEducation a {
+  padding: 1em;
+  display: block;
+  }
+
+  

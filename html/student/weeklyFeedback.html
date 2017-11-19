@@ -26,7 +26,12 @@
             <nav id="nav">
                 <div id="nav-button-max-500">
                     <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
-                    <button id="menu-button">MENY</button></div>
+                    <div class="menuButton" onclick="menuButton(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
                 <ul class="hidden-max-500">
                     <li>
                         <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
@@ -76,10 +81,12 @@
         <div class="wrap">
             <div class="content">
                 <div class="innerContent apperance">
-                    <div class="back-bar"><button id="back" onclick="goBack()">&lt;Tillbaka</button></div>
-                    <h3>Veckans Utvärdering</h3><p class = "required">(* = Obligatorisk)</p><br><br>
+                    <div class="back-bar">
+                        <button id="back" onclick="goBack()"><img class="tillbaka" src="../../img/Tillbaka.png"></button>
+                    </div>
+                    <h3 class="marLeft">Veckans Utvärdering</h3><p class = "required pricing_text">(* = Obligatorisk)</p><br><br>
                     <form class="weekly-feedback" name="checkFormData" action="javascript:checkWeekly();" onsubmit="return checkWeekly()">
-                        <h4>Hur upplever du just nu tempot i utbildningen?*</h4>
+                        <h4 class="marLeft">Hur upplever du just nu tempot i utbildningen?*</h4>
 
                         <span class="slider-value" id="number1"></span>
                     	  <div class="flexSliderContainer">
@@ -89,7 +96,7 @@
                         </div>
                         <br>
 
-                        <h4>Hur engagerad anser du själv att du är i dina studier?*</h4>
+                        <h4 class="marLeft">Hur engagerad anser du själv att du är i dina studier?*</h4>
                         <span class="slider-value" id="number2"></span>
                         <div class="flexSliderContainer">
                             <span class="slider-text text-align-right">Inte engagerad all.</span>
@@ -97,7 +104,7 @@
                             <span class="slider-text">Mycket engagerad.</span>
                         </div>
                         <br>
-                        <h4>Hur upplever du stämningen i klassen?*</h4>
+                        <h4 class="marLeft">Hur upplever du stämningen i klassen?*</h4>
                         <span class="slider-value" id="number3"></span>
                         <div class="flexSliderContainer">
                             <span class="slider-text text-align-right">Dålig stämning.</span>
@@ -105,23 +112,23 @@
                             <span class="slider-text">Mycket god stämning.</span>
                         </div><br>
 
-                        <h4>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h4>
+                        <h4 class="marLeft">Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h4>
                         <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br>
                          <!-- textarea for longer text -->
-                        <h4>Vad har varit bra?</h4>
+                        <h4 class="marLeft">Vad har varit bra?</h4>
                         <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br>
 
-                        <h4>Förslag på förbättringar</h4>
+                        <h4 class="marLeft">Förslag på förbättringar</h4>
                         <textarea placeholder="Ditt svar" cols="30" rows="5"></textarea><br><br>
 
-                        <button class = "send-button" type="submit">Skicka!</button>
+                        <button class = "send-button marLeft" type="submit">Skicka!</button>
                         <!-- submit button -->
                     </form>
                 </div>
             </div>
                     <div class="quick-evaluation-wrap">
             <div class="quick-evaluation-content apperance">
-                <h4>Daglig utvärdering</h4>
+                <h4 class="marLeft">Daglig utvärdering</h4>
                 <div id="quick-evaluation">
 
                     <div class="quick-evaluation-inner">

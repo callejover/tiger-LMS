@@ -35,7 +35,11 @@
                 <a href="courses.html">
                     <img src="../../img/KYH-logo.png">
                 </a>
-                <button id="menu-button">MENY</button>
+                <div class="menuButton" onclick="menuButton(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
             <ul class="hidden-max-500">
                 <li>
@@ -91,15 +95,15 @@
         <div class="content">
             <div class="innerContent apperance">
                 <div class="back-bar">
-                    <button id="back" onclick="goBack()">&lt;Tillbaka</button>
+                    <button id="back" onclick="goBack()"><img class="tillbaka" src="../../img/Tillbaka.png"></button>
                 </div>
-                <h3>Kursutvärdering</h3>
-                <p>Alla fält med en röd stjärna (
+                <h3 class="marLeft">Kursutvärdering</h3>
+                <p class="pricing_text">Alla fält med en röd stjärna (
                     <span class="color-red">*</span>) är obligatoriska att fylla i.</p>
                 <form class="course-evaluation" name="checkFormData" action="javascript:check();" onsubmit="return check()">
                     <br>
                     <br>
-                    <h4>Har vi gjort det vi ska?</h4>
+                    <h4 class="marLeft">Har vi gjort det vi ska?</h4>
                     <span class="slider-value" id="number1"></span>
                     <div class="flexSliderContainer">
                         <span class="slider-text text-align-right">Hänger inte med alls.</span>
@@ -107,13 +111,13 @@
                         <span class="slider-text">Hänger med till 100%.</span>
                     </div>
 
-                    <h5>Beskriv i ord:</h5>
+                    <h5 class="marLeft">Beskriv i ord:</h5>
 
                     <textarea name="haveDone" cols="30" rows="5"></textarea>
                     <br>
                     <br>
 
-                    <h4>Hur var kursen?</h4>
+                    <h4 class="marLeft">Hur var kursen?</h4>
 
                     <span class="slider-value" id="number2"></span>
                     <div class="flexSliderContainer">
@@ -122,12 +126,12 @@
                         <span class="slider-text">Mycket engagerad.</span>
                     </div>
 
-                    <h5>Beskriv i ord:</h5>
+                    <h5 class="marLeft">Beskriv i ord:</h5>
                     <textarea name="howCourse" cols="30" rows="5"></textarea>
                     <br>
                     <br>
 
-                    <h4>Vad tyckte du om läraren?</h4>
+                    <h4 class="marLeft">Vad tyckte du om läraren?</h4>
 
                     <span class="slider-value" id="number3"></span>
                     <div class="flexSliderContainer">
@@ -135,12 +139,12 @@
                         <input type="range" min="0" max="10" value="5" class="create_slider3" id="slider3">
                         <span class="slider-text">Mycket god stämning.</span>
                     </div>
-                    <h5>Beskriv i ord:</h5>
+                    <h5 class="marLeft">Beskriv i ord:</h5>
                     <textarea name="aboutTeacher" cols="30" rows="5"></textarea>
                     <br>
                     <br>
 
-                    <h4>Hur var kursen som helhet?</h4>
+                    <h4 class="marLeft">Hur var kursen som helhet?</h4>
 
                     <span class="slider-value" id="number4"></span>
                     <div class="flexSliderContainer">
@@ -149,38 +153,38 @@
                         <span class="slider-text">Mycket god stämning.</span>
                     </div>
 
-                    <h5>Beskriv i ord:</h5>
+                    <h5 class="marLeft">Beskriv i ord:</h5>
                     <textarea id="courseOverhead" cols="30" rows="10"></textarea>
                     <br>
                     <br>
 
-                    <h4>Har kursen innefattat detta?</h4>
+                    <h4 class="marLeft">Har kursen innefattat detta?</h4>
                     <div class="course-contains">
-                        <p>Bock i det som stämmer överens med vad kursen har innefattat.</p>
+                        <p class="pricing_text">Bock i det som stämmer överens med vad kursen har innefattat.</p>
                         <label>
-                            <input type="checkbox" name="courseContains" value="1">Uppgift 1</label>
+                            <input class="pricing_text" type="checkbox" name="courseContains" value="1">Uppgift 1</label>
                         <br>
                         <label>
-                            <input type="checkbox" name="courseContains" value="2">Uppgift 2</label>
+                            <input class="pricing_text" type="checkbox" name="courseContains" value="2">Uppgift 2</label>
                         <br>
                         <label>
-                            <input type="checkbox" name="courseContains" value="3">Uppgift 3</label>
+                            <input class="pricing_text" type="checkbox" name="courseContains" value="3">Uppgift 3</label>
                         <br>
                         <label>
-                            <input type="checkbox" name="courseContains" value="4">Uppgift 4</label>
+                            <input class="pricing_text" type="checkbox" name="courseContains" value="4">Uppgift 4</label>
                         <br>
                         <label>
-                            <input type="checkbox" name="courseContains" value="5">Uppgift 5</label>
+                            <input class="pricing_text" type="checkbox" name="courseContains" value="5">Uppgift 5</label>
                         <br>
                         <label>
-                            <input type="checkbox" name="courseContains" value="6">Uppgift 6</label>
+                            <input class="pricing_text" type="checkbox" name="courseContains" value="6">Uppgift 6</label>
                         <br>
                     </div>
-                    <h5>Något annat utöver detta?</h5>
+                    <h5 class="marLeft">Något annat utöver detta?</h5>
 
                     <textarea name="" id="courseContains" cols="30" rows="10"></textarea>
 
-                    <button class="send-button" type="submit">Skicka!</button>
+                    <button class="send-button marLeft" type="submit">Skicka!</button>
 
 
                 </form>

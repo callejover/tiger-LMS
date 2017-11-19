@@ -13,6 +13,11 @@
   }
 }
 
+@media (min-width: 100px) and (max-width: 1080px){
+  .textContent p {
+    margin: 0;
+  }
+}
 
 @media (max-width: 1200px) {
   body {
@@ -37,6 +42,7 @@
     margin-top: -7.5em;
     top: 0;
   }
+
   .features {
     order: 0;
     z-index: 12;
@@ -61,6 +67,23 @@
     padding: 0.9em;
     line-height: normal;
   }
+
+  .textContent{
+    margin-top: 2em;
+  }
+
+  .pricing_text{
+    margin: 0 2em 2em 2em;
+  }
+
+  .marLeft{
+    margin: 0 0 0.5em 0.5em;
+  }
+
+  .teachWrap{
+    padding-top: 2em;
+  }
+
   .pricingContent {
     margin: 5% 0;
     width: 100%;
@@ -77,11 +100,16 @@
     display: none;
   }
 /* ============================================================================ */
-  
+
   #nav-button-max-500 {
     display: flex;
   }
   /*menu all .html files*/
+
+  #nav .current {
+      background-color: rgba(145, 0, 156, 0);
+      /* color: #d900e8; */
+  }
 
   #nav ul {
     flex-direction: column;
@@ -90,6 +118,10 @@
   #nav ul li {
     /* width: 50%; */
     text-align: center;
+  }
+  #nav ul li a {
+    display: block;
+    padding: 0;
   }
   #nav ul li:nth-child(1) {
     flex-grow: 0;
@@ -161,7 +193,7 @@
   .studentAssignmentTable {
     font-size: 90%;
   }
-  
+
   .studentAssignmentTable th:nth-child(3) a {
    display: inline-block;
   }
@@ -175,7 +207,7 @@
   label.tabPadding {
     font-size: 80%;
   }
-    
+
   .assignments {
     align-content: flex-start;
     padding-left: 0;
@@ -191,7 +223,28 @@
   .teacherAssignmentTable {
     width: 100%
   }
-  
+  #createNewEducation {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+  }
+  .invisible-box {
+    display: none;
+  }
+
+  .textContentApparance {
+    font-size: 1.1em;
+    background: rgba(166,79,172, 0.5) url('../img/white_tiger_mobile.jpg') no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-size: 100% auto; */
+    background-position: center, center;
+  }
+
 }
 
 

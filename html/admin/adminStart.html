@@ -30,7 +30,12 @@
       <nav id="nav">
         <div id="nav-button-max-500">
           <a href="adminStart.html"><img src="../../img/KYH-logo.png"></a>
-          <button id="menu-button">MENY</button></div>
+          <div class="menuButton" onclick="menuButton(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
         <ul class="hidden-max-500">
           <li>
             <a href="adminStart.html"><img src="../../img/KYH-logo.png"></a>
@@ -82,7 +87,7 @@
                             <option value="Administratör">Administratör</option>
                         </select>
                         <div class="accountButton">
-                            <input type="submit" value="submit" id="accountResponse" class="createStudent createTeacher">
+                            <input type="submit" value="Skapa användare" id="accountResponse" class="createStudent createTeacher">
                         </div>
                     </div>
                 </form>
@@ -133,100 +138,83 @@
 
     <div class="wrap index teachWrap">
 
-      <div class="teachCourses apperance courseName">
-        <!-- Trigger/Open The Modal -->
-        Front-end Utveckling
-      </div>
-      <!--teachCourses-->
+      
+          <div class="teachCourses apperance courseName">
+            <!-- Trigger/Open The Modal -->
+              Front-end Utveckling
+          </div>
+          <!--teachCourses-->
+      
+          <div class="teachCourses apperance classes1">
+            <a href="createdClass_FE15.html">FE15</a>
+          </div>
+         
+      
+          <div class="teachCourses apperance classes1">
+              <a href="createdClass_FE16.html">FE16</a>
+          </div>
+          <!--teachCourses-->
+      
+          <div class="teachCourses apperance classes1">
+              <a href="createdClass_FE17.html">FE17</a>
+          </div>
+          <!--teachCourses-->
+      
+          <div class="toned-down teachCourses apperance new">
+              <a href="create.html">+ Lägg till</a>
+          </div>
+          <!--teachCourses-->
+      
+          <div class="teachCourses apperance courseName">
+              Ekonomi
+          </div>
+          <!--teachCourses-->
+      
+          <div class="teachCourses apperance classes2">
+            <a href="createdClass_EK16.html">EK16</a>
+          </div>
+          <!--teachCourses-->
+      
+          <div class="teachCourses apperance classes2">
+            <a href="createdClass_EK17.html">EK17</a>
+          </div>
+          <!--teachCourses-->
+      
+          <div class="toned-down teachCourses apperance new">
+            <a href="create.html">+ Lägg till</a>
+          </div>
+          <!--teachCourses-->
 
-      <div class="teachCourses apperance classes">
-        <!-- Trigger/Open The Modal -->
-        <a class="">
-          FE15
-        </a>
-      </div>
-      <!--teachCourses-->
+          <div class="invisible-box teachCourses apperance">
+          </div>
+          
+      
+          <div class="teachCourses apperance courseName">
+              Back-end Utveckling
+          </div>
+          <!--teachCourses-->
+      
+          <div class="teachCourses apperance classes3">
+            <a href="createdClass_BE16.html">BE16</a>
+          </div>
+          <!--teachCourses-->
+      
+          <div class="teachCourses apperance classes3">
+            <a href="createdClass_BE17.html">BE17</a>
+          </div>
+          <!--teachCourses-->
+      
+          <div class="toned-down teachCourses apperance new">
+            <a href="create.html">+ Lägg till</a>
+          </div>
+          <!--teachCourses-->
 
-      <div class="teachCourses apperance classes">
-        <a class="">
-          FE16
-        </a>
-      </div>
-      <!--teachCourses-->
-
-      <div class="teachCourses apperance classes">
-        <a class="">
-          FE17
-        </a>
-      </div>
-      <!--teachCourses-->
-
-      <div class="toned-down teachCourses apperance classes">
-        <a class="">
-          + Lägg till
-        </a>
-      </div>
-      <!--teachCourses-->
-
-      <div class="teachCourses apperance courseName">
-        Ekonomi
-      </div>
-      <!--teachCourses-->
-
-      <div class="teachCourses apperance classes">
-        <a class="">
-          EK16
-        </a>
-      </div>
-      <!--teachCourses-->
-
-      <div class="teachCourses apperance classes">
-        <a class="">
-          EK17
-        </a>
-      </div>
-      <!--teachCourses-->
-
-      <div class="toned-down teachCourses apperance classes">
-        <a class="">
-          + Lägg till
-        </a>
-      </div>
-      <!--teachCourses-->
-
-      <div class="invisible-box teachCourses apperance">
-      </div>
-      <!--teachCourses-->
-
-      <div class="teachCourses apperance courseName">
-        Back-end Utveckling
-      </div>
-      <!--teachCourses-->
-
-      <div class="teachCourses apperance classes">
-        <a class="">
-          BE16
-        </a>
-      </div>
-      <!--teachCourses-->
-
-      <div class="teachCourses apperance classes">
-        <a class="">
-          BE17
-        </a>
-      </div>
-      <!--teachCourses-->
-
-      <div class="toned-down teachCourses apperance classes">
-        <a class="circle-plus ">
-          + Lägg till
-        </a>
-      </div>
-      <!--teachCourses-->
-
-      <div class="invisible-box teachCourses apperance">
-      </div>
-      <!--teachCourses-->
+          <div class="invisible-box teachCourses apperance">
+          </div> <!-- invisible box for pushing the boxes to the right -->
+          
+          <div id="createNewEducation">
+            <a>+ Utbildning</a>
+          </div>
 
     </div>
     <!--wrap content found in teacherInfoCourses.html-->
@@ -234,6 +222,10 @@
     <script src="../../js/adminCreateUser.js"></script>
     <script src="../../js/adminModal.js"></script>
     <script src="../../js/teacherNews.js"></script>
+
+    <script src="../../js/addNewEducation.js"></script>
+
+    <script src="../../js/navMenu.js"></script>
 
 
 </body>
