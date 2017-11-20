@@ -354,10 +354,6 @@ a {
     background-position: center, center;
 }
 
-#nav img {
-    padding-top: 1em;
-}
-
 .features,
 .pricing {
     height: 35vh;
@@ -647,6 +643,11 @@ header {
     color: #313131;
     text-decoration: none;
     cursor: pointer;
+}
+
+#loginButton img {
+    vertical-align: middle;
+    height: auto;
 }
 
 #loginButton:hover {
