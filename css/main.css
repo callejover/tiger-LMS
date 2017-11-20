@@ -196,6 +196,7 @@ a {
 
 .scroll {
     min-height: 100vh;
+    z-index: 100;
 }
 
 .content.mobile {
@@ -257,7 +258,8 @@ a {
 
 .features,
 .pricing,
-.teachCourses {
+.teachCourses,
+.home {
     width: 30%;
     padding: 0;
     margin: 2.5% 5% 2.5% 5%;
@@ -266,38 +268,41 @@ a {
 
 .features {
     background: url('../img/features.png') no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
 }
 
 .pricing {
     background: url('../img/money.jpeg') no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
+}
+
+.home {
+    background: url('../img/logoSmal.png') no-repeat;
 }
 
 .subj1 {
     background: #ffb477 url('../img/java2.jpg') no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
 }
 
 .subj2 {
     background: #ffb477 url('../img/html_css_2.jpg') no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
 }
 
 .subj3 {
     background: #ffb477 url('../img/scrum2.png') no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
 }
 
 .subj4 {
     background: #ffb477 url('../img/backend2.png') no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
+}
+
+.features,
+.pricing,
+.home,
+.subj1,
+.subj2,
+.subj3,
+.subj4 {
+  background-blend-mode: overlay;
+  background-size: cover;
 }
 
 .subj1:hover,
@@ -305,7 +310,8 @@ a {
 .subj3:hover,
 .subj4:hover,
 .pricing:hover,
-.features:hover {
+.features:hover,
+.home:hover {
     background-color: rgba(255, 0, 0, 0);
     font-weight: bold;
     text-shadow: 0 0 0.3em #000;
@@ -345,17 +351,16 @@ a {
 
 .textContentApparance {
     font-size: 1.1em;
-    background: rgba(166, 79, 172, 0.5) url('../img/white_tiger.jpg') no-repeat;
-    background-blend-mode: overlay;
+    background: url('../img/white_tiger.jpg') no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     /* background-size: 100% auto; */
     background-position: center, center;
 }
 
 .features,
-.pricing {
+.pricing,
+.home {
     height: 35vh;
     vertical-align: middle;
     line-height: 35vh;
@@ -539,13 +544,19 @@ header {
     line-height: normal;
 }
 
-#nav ul li:nth-child(1) img {
+#nav ul li:nth-child(1) img  {
     display: block;
     width: auto;
     height: 5em;
     z-index: 500;
     top: 0;
     left: 0;
+}
+
+#nav ul li:nth-child(1) a,#nav ul li:nth-child(1) a img {
+  padding: 0 0 0 0.5em;
+
+
 }
 
 #back {
