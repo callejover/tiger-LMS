@@ -157,7 +157,7 @@ a {
     padding: 0;
     margin: auto;
     justify-content: center;
-    background-color: rgba(255, 242, 255, 0.97);
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .hiddenCode {
@@ -245,6 +245,13 @@ a {
     z-index: 500;
   } */
 
+.tillbaka{
+  height: 100%;
+  width: auto;
+  max-height: 3em;
+  margin: 0.5em;
+}
+
 .features,
 .pricing,
 .teachCourses {
@@ -318,6 +325,7 @@ a {
     padding: 0;
     margin: 0 0 2.5% 0;
     text-align: center;
+    box-shadow: 0 3px 7px rgba(128, 52, 145, 0.66);
 }
 
 .textContent h2 {
@@ -542,6 +550,8 @@ header {
     float: right;
     padding: 0;
     border: none;
+    background-color: rgba(0,0,0,0);
+    border:none;
 }
 
 
@@ -1037,7 +1047,7 @@ button.roundButton {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0 .5em;    
+    padding: 0 .5em;
 }
 
 
@@ -1092,3 +1102,27 @@ button:disabled {
     padding: .25em;
     margin: 0;
 }
+
+
+#createNewEducation {
+    position: fixed;
+    
+    right: 0;
+    left: auto;
+    bottom: 0;
+    
+    background: rgba(176,42,9,1);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 5px #000;
+  
+  }
+
+
+  #createNewEducation a {
+  padding: 1em;
+  display: block;
+  }
+
+  
