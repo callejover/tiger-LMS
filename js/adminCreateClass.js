@@ -242,9 +242,7 @@ addStudentToTableButton.addEventListener("click", function (event) {
 
         errorMessageStudent.innerHTML = studentContainerListSelectOptionText;
 
-        if (textStudent === "") {
-            alert('Add text');
-        } else {
+        if (textStudent != "") {
             newStudent.innerHTML = "<span>" + textStudent + "</span>";
             newStudent.appendChild(removeStudent);
             removeStudent.innerHTML = "Ta bort";
