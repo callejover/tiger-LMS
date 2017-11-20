@@ -947,7 +947,7 @@ CSS for accounts.html on admin pages
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    min-height: 100%;
+    /* min-height: 100%; */
 }
 
 .createCoursesStudentsTop {
@@ -956,11 +956,11 @@ CSS for accounts.html on admin pages
 
 .createCoursesStudentsMiddle {
     flex-grow: 1;
-    text-align: justify;
 }
 
 .createCoursesStudentsBottom {
     flex-grow: 0;
+    height:;
 }
 
 .courseContainerList,
@@ -1132,4 +1132,9 @@ button:disabled {
 #createNewEducation a {
     padding: 1em;
     display: block;
+}
+
+
+#newsButton {
+    margin-bottom: 1em
 }

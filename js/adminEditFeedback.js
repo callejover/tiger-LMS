@@ -33,6 +33,8 @@ function addContent3(myForm){
 function addContent4(){
   $(".course-contains").prepend('<label><input type="checkbox" name="courseContains" value="6"><t contenteditable="true">Namnlös</t></label><br>');
 };
+
+
 /*====================================
 part .1.1
 =====================================*
