@@ -625,6 +625,7 @@ header {
     width: 50%;
 }
 
+.modal-content select,
 .modal-content input {
     width: 100%;
 }
