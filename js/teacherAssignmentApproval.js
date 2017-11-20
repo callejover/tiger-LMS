@@ -122,3 +122,4 @@ function windowCloseAssignmentModal() {
 // Redirects to same page when added grade
 function pageSwap() {
     window.location.replace("../teacher/assignmentApproval.html");
+}
