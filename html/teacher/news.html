@@ -57,7 +57,7 @@
             <a href="assignmentApproval.html">Betyg</a>
           </li>
           <li>
-            <a id="attendanceButton">Närvaro</a>
+            <a class="myModal3">Närvaro</a>
           </li>
           <li>
             <a href="../../index.html">Logga ut</a>
@@ -69,7 +69,7 @@
 
 
   <!-- Hidden before clicking logiout -->
-  <div id="attendanceModal" class="modal">
+  <div id="myModal3" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <!-- Closing X icon in modal -->
@@ -114,9 +114,9 @@
     <!--modal-content-->
   </div>
   <!-- div attendanceModal opens the login box on index screen -->
-  <div id="newsModal" class="modal">
+  <div id="myModal4" class="modal">
         <div class="modal-content">
-            <span class="newsClose">&times;</span>
+            <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header headerAssignment">
               <div id="newsContent">
@@ -132,7 +132,7 @@
                     <textarea class="headline" rows="1" cols="10" input placeholder="Rubrik"></textarea>
                     <textarea class="newsArea" rows="10" cols="50"></textarea>
                     <input type="date" id="dates">
-                    <button id="sendNews" onclick="sendNews1()" >Lägg till</button>
+                    <button id="sendNews" onclick="sendNews1()">Lägg till</button>
                     <span id="newsSent"></span>
 
                 </form>
@@ -152,7 +152,7 @@
                 <p class="pricing_text">Här kan du som lärare ta del av viktiga nyheter som berör skolan.
                 <br>
                 Välj efter ämnes område ur listan och visa det som berör just det området.</p>
-                <button id="newsButton" >Lägg till nyheter</button>
+                <a class="modal-button" href="#myModal4" >Lägg till nyheter</button>
         </div>
         <section class="slide slide-four">
             <div class="tab-group">

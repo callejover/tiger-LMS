@@ -1,29 +1,39 @@
-var newsModal = document.getElementById('newsModal');
-
 // Get the button that opens the modal
-var newsBtn = document.getElementById("newsButton");
+var btn = document.querySelectorAll("a.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
 
 // Get the <span> element that closes the modal
-var newsSpan = document.getElementsByClassName("newsClose")[0];
+var spans = document.getElementsByClassName("close");
 
-// When the user clicks on the button, open the modal
-newsBtn.onclick = function() {
-    newsModal.style.display = "block";
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
 }
 
 // When the user clicks on <span> (x), close the modal
-newsSpan.onclick = function() {
-    newsModal.style.display = "none";
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.addEventListener("click", function(event) {
-    if (event.target == newsModal) {
-        newsModal.style.display = "none";
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
     }
-});
+}
 var news = document.querySelector("#newsContent");
-//var selectedValue = document.getElementById("classNews").text;
 
 function sendNews1() {
 
@@ -35,3 +45,6 @@ function sendNews1() {
 function swapNewsPage(){
     newsModal.style.display = "none";
 }
+
+
+
