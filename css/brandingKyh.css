@@ -44,7 +44,6 @@ button {
   background: rgba(252,155,86,.0.9);
   color: #E8770C;
   border: 1px solid #FA9500;
-  width: 100%;
 }
 
 .button:active,
