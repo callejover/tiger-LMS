@@ -29,6 +29,7 @@
   }
   .mobileShow {
     display: flex;
+    z-index: 200;
   }
   .index {
     /*companion to wrap but just for index.html*/
@@ -58,7 +59,8 @@
   }
   /*pricing.html*/
   .pricing,
-  .features {
+  .features,
+  .home {
     width: 50%;
     margin: 2.5% 0;
     min-height: 2.5em;
@@ -236,10 +238,9 @@
 
   .textContentApparance {
     font-size: 1.1em;
-    background: rgba(166,79,172, 0.5) url('../img/white_tiger_mobile.jpg') no-repeat;
-    background-blend-mode: overlay;
+    background: url('../img/white_tiger_mobile.jpg') no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
+
     background-attachment: fixed;
     /* background-size: 100% auto; */
     background-position: center, center;
