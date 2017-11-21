@@ -36,7 +36,9 @@
     <header>
         <nav id="nav">
             <div id="nav-button-max-500">
-                <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
+                <a href="courses.html">
+                    <img src="../../img/KYH-logo.png">
+                </a>
                 <div class="menuButton" onclick="menuButton(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
@@ -56,7 +58,7 @@
                     <a href="resultFeedback.html">Resultat</a>
                 </li>
                 <li>
-                    <a class="current" href="divideIntoGroups.html" >Gruppindelning</a>
+                    <a class="current" href="divideIntoGroups.html">Gruppindelning</a>
                 </li>
                 <li>
                     <a href="assignmentApproval.html">Betyg</a>
@@ -65,7 +67,10 @@
                     <a class="modal-button" href="#myModal3">Närvaro</a>
                 </li>
                 <li>
-                    <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
+                    <a href="../../index.html" id="loginButton">
+                        <!-- LOGGA UT -->
+                        <img src="../../img/logut_icon3.png" width="35" height="50">
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -135,20 +140,23 @@
             <div id="groupWrap">
                 <div class="groupLeft">
                     <label for="numGroups">Antal grupper:</label>
-                    <input id="numGroups" type="number" value="2" min="2" max="20" onchange="groupGenerateGroups()">
+                    <input id="numGroups" type="number" value="2" min="2" max="40" onchange="groupGenerateGroups()">
                     <button onclick="groupAutoFillPerGroup()">Autofyll</button>
+                    <div id="numGroupsMessge"></div>
                     <br>
                     <label for="numStudents">Antal elver per grupp: </label>
                     <input id="numStudents" type="number" value="2" min="2" max="200">
                     <button onclick="groupAutoFillPerStudent()">Autofyll</button>
+                    <div id="numStudentsMessge"></div>
 
                 </div>
                 <div class="groupRight">
                     <label for="groupsSelectList">Klass: </label>
-                    <select name="" id="groupsSelectList" onchange="groupGenerateClassList()">
-                        <option value="0">FE15</option>
-                        <option value="1">FE16</option>
-                        <option value="2">FE17</option>
+                    <select name="" id="groupsSelectList" onchange="groupGenerateClassListAndGroups()">
+                        <option value="0">FE16</option>
+                        <option value="1">FE17</option>
+                        <option value="2">BE17</option>
+                        <option value="3">BE16</option>
                     </select>
                     <span id="groupsSelectListCount"></span>
 
@@ -170,22 +178,16 @@
     </div>
     <!--wrap content found in teacherInfoCourses.html-->
 
-    <!--v(the file sycked on the next row) Contains the content of the page for simpler oraganization of the site.-->
-    <div w3-include-html="../include/teacherInfoCourses.html"="displayResult()"></div>
     <!--wrap content found in teacherInfoCourses.html-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <!--<script src="../js/linkHtml.js"></script> working on-->
-    <script>
-        w3.includeHTML();
-    </script>
 
-    
     <script src="../../js/attendance.js"></script>
     <script src="../../js/teacherAttendanceCode.js"></script>
-    <script src="../../js/teacherAssignmentApproval.js"></script>
     <script src="../../js/teacherAttendanceOverview.js"></script>
+
     <script src="../../js/dragAndDrop.js"></script>
-    <script src="../../js/devideIntoGroups.js"></script>
+    <script src="../../js/divideIntoGroups.js"></script>
+
     <script src="../../js/navMenu.js"></script>
     <script src="../../js/teacherNews.js"></script>
 

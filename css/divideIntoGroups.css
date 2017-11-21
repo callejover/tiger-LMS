@@ -48,34 +48,13 @@
     background: #581a0b;
 }
 
-.groupGroup:after {
+.numGroupLabelValue {
     position: absolute;
     top: 0;
     left: .2em;
     color: #fff;
     font-size: .8em;
 }
-#group0:after { content: "1" }
-#group1:after { content: "2" }
-#group2:after { content: "3" }
-#group3:after { content: "4" }
-#group4:after { content: "5" }
-#group5:after { content: "6" }
-#group6:after { content: "7" }
-#group7:after { content: "8" }
-#group8:after { content: "9" }
-#group9:after { content: "10" }
-
-#group10:after { content: "11" }
-#group11:after { content: "12" }
-#group12:after { content: "13" }
-#group13:after { content: "14" }
-#group14:after { content: "15" }
-#group15:after { content: "16" }
-#group16:after { content: "17" }
-#group17:after { content: "18" }
-#group18:after { content: "19" }
-#group19:after { content: "20" }
 
 
 .groupStudent {
