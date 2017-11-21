@@ -50,12 +50,14 @@
           <li>
             <a href="editFeedback.html">Utvärdering</a>
           </li>
+
           <li>
-            <a id="newsButton">Nyheter</a>
-        </li>
-        <li>
-            <a id="createAccountButton">Skapa konton</a>
-        </li>
+            <a class="modal-button" href="#myModal1">Nyheter</a>
+          </li>
+          <li>
+            <a class="modal-button" href="#myModal2">Skapa konton</a>
+          </li>
+
           <li>
             <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
           </li>
@@ -64,7 +66,7 @@
     </header>
 
 
-    <div id="createAccountModal" class="modal">
+    <div id="myModal2" class="modal">
       <div class="modal-content">
           <span class="accountClose">&times;</span>
           <!-- Closing X icon in modal -->
@@ -101,7 +103,7 @@
   </div>
 
 
-  <div id="newsModal" class="modal">
+  <div id="myModal1" class="modal">
       <div class="modal-content">
           <span class="newsClose">&times;</span>
           <!-- Closing X icon in modal -->
@@ -143,6 +145,14 @@
       w3.includeHTML();
     </script>
     <script src="../../js/adminEditFeedback.js"></script>
+
+    <script src="../../js/studentFeedback.js"></script>
+
+    <script src="../../js/attendance.js"></script>
+    <script src="../../js/teacherAssignment.js"></script>
+    <script src="../../js/teacherAttendanceCode.js"></script>
+    <script src="../../js/teacherAssignmentApproval.js"></script>
+    <script src="../../js/teacherAttendanceOverview.js"></script>
 
     <script src="../../js/navMenu.js"></script>
 

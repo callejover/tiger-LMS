@@ -84,13 +84,17 @@ assignmentFeedbackClose.onclick = function () {
     assignmentFeedbackModal.style.display = "none";
 };
 
+// Redirects to same page when added grade
+function pageSwap() {
+    window.location.replace("../teacher/assignmentApproval.html");
+}
 // When the user clicks anywhere outside of the modal, close it
 /// Gets called in attendance.js
 function windowCloseAssignmentFeedbackModal() {
     if (event.target === assignmentFeedbackModal) {
         assignmentFeedbackModal.style.display = "none";
         if (assignmentInput.value != "") {
-            window.location.replace("../teacher/assignmentApproval.html");
+            pageSwap();
         }
     }
 }
