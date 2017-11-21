@@ -1,9 +1,28 @@
+<<<<<<< HEAD
+//Sets the input date to current date
+function setCurrentDate() {
+    document.querySelector(".lesson-day").valueAsDate = new Date();
+}
+
+// ==================================================================
+
+
+var newsModal = document.getElementById('newsModal');
+
+=======
+>>>>>>> 53d8a357a468a473998cc93ce372f7f6ea4bd08e
 // Get the button that opens the modal
 var btn = document.querySelectorAll("a.modal-button, img.modal-button");
 
 // All page modals
 var modals = document.querySelectorAll('.modal');
 
+<<<<<<< HEAD
+// When the user clicks on the button, open the modal
+newsBtn.onclick = function() {
+    newsModal.style.display = "block";
+    setCurrentDate();
+=======
 // Get the <span> element that closes the modal
 var spans = document.getElementsByClassName("close");
 
@@ -14,6 +33,7 @@ for (var i = 0; i < btn.length; i++) {
     modal = document.querySelector(e.target.getAttribute("href"));
     modal.style.display = "block";
  }
+>>>>>>> 53d8a357a468a473998cc93ce372f7f6ea4bd08e
 }
 
 // When the user clicks on <span> (x), close the modal
