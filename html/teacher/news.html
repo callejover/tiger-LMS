@@ -101,7 +101,7 @@
               <option value="FE16">FE16</option>
               <option value="FE17">FE17</option>
             </select>
-            <input id="lesson-day" type="date">
+            <input class="lesson-day" type="date">
             <!-- Choose your lesson date -->
             <button id="code-submit" type="submit" onclick="createCode()">Skapa kod</button>
           </div>
@@ -131,7 +131,7 @@
                     </select>
                     <textarea class="headline" rows="1" cols="10" input placeholder="Rubrik"></textarea>
                     <textarea class="newsArea" rows="10" cols="50"></textarea>
-                    <input type="date" id="dates">
+                    <input class="lesson-day" type="date">
                     <button id="sendNews" onclick="sendNews1()" >Lägg till</button>
                     <span id="newsSent"></span>
 
@@ -152,7 +152,7 @@
                 <p class="pricing_text">Här kan du som lärare ta del av viktiga nyheter som berör skolan.
                 <br>
                 Välj efter ämnes område ur listan och visa det som berör just det området.</p>
-                <button id="newsButton" >Lägg till nyheter</button>
+                <button id="newsButton">Lägg till nyheter</button>
         </div>
         <section class="slide slide-four">
             <div class="tab-group">
@@ -351,12 +351,13 @@
     w3.includeHTML();
   </script>
 
-  <script src="../../js/windowOnClickFunction.js"></script>
+  
   <script src="../../js/attendance.js"></script>
   <script src="../../js/teacherAttendanceCode.js"></script>
   <script src="../../js/teacherAssignmentApproval.js"></script>
   <script src="../../js/teacherAttendanceOverview.js"></script>
   <script src="../../js/teacherNews.js"></script>
+  <script src="../../js/windowOnClickFunction.js"></script>
 
   <script src="../../js/navMenu.js"></script>
 

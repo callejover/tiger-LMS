@@ -35,16 +35,16 @@ function getInfo() {
     var password = document.getElementById("password").value;
     var message = "Du har skrivit in fel lösenord!";
 
-//Loops accouts and checks for matches
-    for( i = 0; i < objPeople.length; i++) {
-        if(username == objPeople[i].username && password == objPeople[i].password) {
+    //Loops accouts and checks for matches
+    for (i = 0; i < objPeople.length; i++) {
+        if (username == objPeople[i].username && password == objPeople[i].password) {
             window.location.replace(objPeople[i].refPage);
             return;
         }
     }
 
-//Displays wrong message if username/password is incorrect
-document.querySelector('#wrongPass').innerHTML = message;
+    //Displays wrong message if username/password is incorrect
+    document.querySelector('#wrongPass').innerHTML = message;
 
 }
 
@@ -64,17 +64,17 @@ var btn = document.getElementById("loginButton");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+btn.onclick = function () {
     modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
     modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
@@ -85,7 +85,7 @@ window.onclick = function(event) {
 //Allows enter click to submit
 
 
-document.getElementById("password").addEventListener("keyup", function(event) {
+document.getElementById("password").addEventListener("keyup", function (event) {
     event.preventDefault();
     if (event.keyCode == 13) {
         document.getElementById("password").click(getInfo());

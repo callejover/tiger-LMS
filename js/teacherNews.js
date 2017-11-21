@@ -1,3 +1,11 @@
+//Sets the input date to current date
+function setCurrentDate() {
+    document.querySelector(".lesson-day").valueAsDate = new Date();
+}
+
+// ==================================================================
+
+
 var newsModal = document.getElementById('newsModal');
 
 // Get the button that opens the modal
@@ -9,6 +17,7 @@ var newsSpan = document.getElementsByClassName("newsClose")[0];
 // When the user clicks on the button, open the modal
 newsBtn.onclick = function() {
     newsModal.style.display = "block";
+    setCurrentDate();
 }
 
 // When the user clicks on <span> (x), close the modal
