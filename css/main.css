@@ -209,6 +209,10 @@ a {
     display: none;
 }
 
+.mobileShow:hover {
+    background-color: rgba(98, 0, 105, 1) !important;
+}
+
 .scrollHead {
     position: fixed;
     flex-direction: column;
