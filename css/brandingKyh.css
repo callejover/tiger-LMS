@@ -56,7 +56,7 @@ select:focus {
   border: 1px solid #FA6400;
 }
 
-input::placeholder, input:focus::placeholder{ 
+input::placeholder, input:focus::placeholder{
   color: #FA6400;
 }
 
@@ -100,7 +100,11 @@ nav  attributes Branding
   background-color:rgba(176,42,9,1);
 }
 
-#nav ul li a:hover {
+#nav ul li:last-child a {
+    padding: 0;
+}
+
+#nav ul li:hover {
     background-color: rgba(250,100,0,1);
 }
 
