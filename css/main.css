@@ -520,7 +520,12 @@ header {
     color: white;
 }
 
-#nav ul li a:hover {
+#nav ul li:last-child a {
+    padding: 0 0 0 2em;
+    margin-right:2em;
+}
+
+#nav ul li:hover {
     background-color: rgba(145, 0, 156, 1);
     transition-duration: 1s;
 }
