@@ -11,6 +11,7 @@
 
     <title>Tiger-LMS | Skapa konton</title>
 
+    <link rel="shortcut icon" href="../../img/favicon.ico">
     <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/main.css">
@@ -45,17 +46,16 @@
                 <li>
                     <a href="editFeedback.html">Utvärdering</a>
                 </li>
-                <li>
-                    <a href="resultFeedback.html">#</a>
-                </li>
+
                 <li>
                     <a class="modal-button" href="#myModal1">Nyheter</a>
+
                 </li>
                 <li>
                     <a class="modal-button" href="#myModal2">Skapa konton</a>
                 </li>
                 <li>
-                    <a href="../../index.html">Log out</a>
+                    <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
                 </li>
             </ul>
         </nav>
@@ -67,7 +67,7 @@
             <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header">
-                <h1>Skapa ny användare</h1>
+                <h3>Skapa ny användare</h3>
                 <form id="account-form">
                     <!-- Form for user input -->
                     <div id="account-name">
@@ -105,7 +105,7 @@
             <!-- Closing X icon in modal -->
             <div class="header headerAssignment">
                 <div id="newsContent">
-                    <h2>Lägg till nyheter</h2>
+                    <h3>Lägg till nyheter</h3>
 
                     <form name="newsForm">
                         <select id="classNews">
@@ -137,7 +137,7 @@
     <div class="wrap">
         <div class="content">
             <div class="innerContent apperance">
-
+<h3>Skapa ny klass</h3>
                 <div class="createCoursesStudents">
                     <div class="createCoursesStudentsTop">
                         <input type="text" placeholder="Skriv in det nya klassnamnet här..." class="width100">
@@ -157,8 +157,77 @@
                                         </label>
                                         <button disabled>Ta bort</button>
                                     </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Back End Utveckling</span>
+                                            <span> (Lennart Jonsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>HTML/CSS</span>
+                                            <span> (Elisabeth Nilsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Node.js</span>
+                                            <span> (Elisabeth Nilsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>PHP</span>
+                                            <span> (Lennart Jonsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Serverar</span>
+                                            <span> (Hans Pettersson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
 
+
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Handel och försäljning</span>
+                                            <span> (Erik Johansson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Bokföring och redovisning</span>
+                                            <span> (Margareta Karlsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Aktier och privatekonomi</span>
+                                            <span> (Eva Eriksson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
                                 </ul>
+
+
 
                             </div>
 
@@ -166,16 +235,14 @@
                                 <input type="text" placeholder="Kursnamn...">
                                 <select name="teacherList">
                                     <option selected="" value="" disabled>Välj lärare...</option>
-                                    <option value="0">Maria Johansson</option>
+                                    <option value="0">Erik Johansson</option>
                                     <option value="1">Margareta Karlsson</option>
                                     <option value="2">Elisabeth Nilsson</option>
                                     <option value="3">Eva Eriksson</option>
-                                    <option value="4">Erik Johansson</option>
-                                    <option value="5">Lars Andersson</option>
-                                    <option value="6">Christina Jonsson</option>
-                                    <option value="7">Carl Persson</option>
-                                    <option value="8">Gunnar Bengtsson</option>
-                                    <option value="9">Hans Pettersson</option>
+                                    <option value="4">Lars Andersson</option>
+                                    <option value="5">Christina Jonsson</option>
+                                    <option value="6">Gunnar Bengtsson</option>
+                                    <option value="7">Hans Pettersson</option>
                                 </select>
                                 <div class="image-upload excelButton">
                                     <label for="file-input">
@@ -195,18 +262,7 @@
                             <div>
                                 <h5>Elever</h5>
                                 <ul>
-                                    <li style="opacity: 1; transition: 1s;">
-                                        <span>Robbin Eriksson</span>
-                                        <button onclick="removeMe(this)">Ta bort</button>
-                                    </li>
-                                    <li style="opacity: 1; transition: 1s;">
-                                        <span>Tobias Wallner</span>
-                                        <button onclick="removeMe(this)">Ta bort</button>
-                                    </li>
-                                    <li style="opacity: 1; transition: 1s;">
-                                        <span>Calle Jovér</span>
-                                        <button onclick="removeMe(this)">Ta bort</button>
-                                    </li>
+
                                 </ul>
                             </div>
                             <div class="studentContainerList">

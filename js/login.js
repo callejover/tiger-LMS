@@ -1,30 +1,28 @@
-
-
 // Checks witch page youre currently at and pops out the html
 
 var currentPage = window.location.pathname.split('/').pop(); // Split will split the path into different obijects
 
 // Accouts with acess to the page
 
-var objPeople = [
-    {
-        username: "student",
-        password: "student",
-        account: "student",
-        refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/student/courses.html' : 'student/courses.html',
+var objPeople = [{
+    username: "student",
+    password: "student",
+    account: "student",
+    refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/student/courses.html' : 'student/courses.html',
 
-    }, {
-        username: "teacher",
-        password: "teacher",
-        account: "teacher",
-        refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/teacher/courses.html' : 'teacher/courses.html'
-    }, {
-        username: "admin",
-        password: "admin",
-        account: "admin",
-        refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/admin/adminStart.html' : 'admin/adminStart.html'  // Html waiting for page
-    }
-]
+}, {
+    username: "teacher",
+    password: "teacher",
+    account: "teacher",
+    refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/teacher/courses.html' : 'teacher/courses.html'
+}, {
+    username: "admin",
+    password: "admin",
+    account: "admin",
+    refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/admin/adminStart.html' : 'admin/adminStart.html' // Html waiting for page
+}]
+
+
 
 // Puts typed username and password into variables
 
@@ -34,24 +32,14 @@ function getInfo() {
     var message = "Du har skrivit in fel lösenord!";
 
 
-// Loops accouts and checks for matches
-    for(i = 0; i < objPeople.length; i++) {
+//Loops accouts and checks for matches
+    for( i = 0; i < objPeople.length; i++) {
         if(username == objPeople[i].username && password == objPeople[i].password) {
-            if(objPeople[i].account == "student") {
-              window.location.replace(objPeople[i].refPage);
-            } else if(objPeople[i].account == "teacher") {
-                window.location.replace(objPeople[i].refPage);
-            } else {
-                window.location.replace(objPeople[i].refPage);
-            }
-            return; // Stops the loop
+            window.location.replace(objPeople[i].refPage);
+            return;
         }
-
     }
-
-
 document.querySelector('#wrongPass').innerHTML = message;
-
 }
 
 
@@ -62,6 +50,10 @@ document.querySelector('#wrongPass').innerHTML = message;
 
 
 
+
+
+
+//Allows enter click to submit
 document.getElementById("password").addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode == 13) {

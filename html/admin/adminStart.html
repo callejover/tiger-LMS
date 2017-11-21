@@ -11,6 +11,7 @@
 
   <title>Tiger-LMS | Admin</title>
 
+  <link rel="shortcut icon" href="../../img/favicon.ico">
   <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
   <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="../../css/main.css">
@@ -25,7 +26,7 @@
 </head>
 
 <body>
-  
+
     <header>
       <nav id="nav">
         <div id="nav-button-max-500">
@@ -44,37 +45,43 @@
             <a href="editFeedback.html">Utvärdering</a>
           </li>
           <li>
+
             <a href="resultFeedback.html">#</a>
           </li>
           <li>
             <a class="modal-button" href="#myModal1">Nyheter</a>
+
           </li>
           <li>
             <a class="modal-button" href="#myModal2">Skapa konton</a>
           </li>
-            <a href="../../index.html">Log out</a>
+
+          <li>
+            <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
+
           </li>
         </ul>
       </nav>
     </header>
+
                 
                 
     <div id="myModal2" class="modal">
         <div class="modal-content">
-            <span class="accountClose">&times;</span>
+            <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header">
-                <h1>Skapa ny användare</h1>
+                <h3>Skapa ny användare</h3>
                 <form id="account-form">
                     <!-- Form for user input -->
                     <div id="account-name">
-                        <input type="text" placeholder="Fullständigt namn">
+                        <input type="text" placeholder="Fullständigt namn" autofocus="autofocus">
                     </div>
                     <div id="account-email">
                         <input type="text" id="email-box" placeholder="Epostadress">
                     </div>
                     <div id="account-username">
-                        <input type="text" placeholder="Användarnamn" autofocus="autofocus">
+                        <input type="text" placeholder="Användarnamn">
                     </div>
                     <div id="account-password">
                         <input type="password" placeholder="Lösenord">
@@ -95,6 +102,7 @@
         </div>
     </div>
 
+
                 
     <div id="myModal1" class="modal">
         <div class="modal-content">
@@ -102,8 +110,8 @@
             <!-- Closing X icon in modal -->
             <div class="header headerAssignment">
               <div id="newsContent">
-                <h2>Lägg till nyheter</h2>
-                
+                <h3>Lägg till nyheter</h3>
+
                 <form name="newsForm">
                     <select id="classNews">
                       <option value="javascript">Javascript</option>
@@ -122,7 +130,7 @@
                     <input type="date" id="dates">
                     <button id="sendNews" onclick="sendNews1()" >Lägg till</button>
                     <span id="newsSent"></span>
-                    
+
                 </form>
               </div>
             </div>
@@ -137,48 +145,48 @@
 
     <div class="wrap index teachWrap">
 
-      
+
           <div class="teachCourses apperance courseName">
             <!-- Trigger/Open The Modal -->
               Front-end Utveckling
           </div>
           <!--teachCourses-->
-      
+
           <div class="teachCourses apperance classes1">
             <a href="createdClass_FE15.html">FE15</a>
           </div>
-         
-      
+
+
           <div class="teachCourses apperance classes1">
               <a href="createdClass_FE16.html">FE16</a>
           </div>
           <!--teachCourses-->
-      
+
           <div class="teachCourses apperance classes1">
               <a href="createdClass_FE17.html">FE17</a>
           </div>
           <!--teachCourses-->
-      
+
           <div class="toned-down teachCourses apperance new">
               <a href="create.html">+ Lägg till</a>
           </div>
           <!--teachCourses-->
-      
+
           <div class="teachCourses apperance courseName">
               Ekonomi
           </div>
           <!--teachCourses-->
-      
+
           <div class="teachCourses apperance classes2">
             <a href="createdClass_EK16.html">EK16</a>
           </div>
           <!--teachCourses-->
-      
+
           <div class="teachCourses apperance classes2">
             <a href="createdClass_EK17.html">EK17</a>
           </div>
           <!--teachCourses-->
-      
+
           <div class="toned-down teachCourses apperance new">
             <a href="create.html">+ Lägg till</a>
           </div>
@@ -186,23 +194,23 @@
 
           <div class="invisible-box teachCourses apperance">
           </div>
-          
-      
+
+
           <div class="teachCourses apperance courseName">
               Back-end Utveckling
           </div>
           <!--teachCourses-->
-      
+
           <div class="teachCourses apperance classes3">
             <a href="createdClass_BE16.html">BE16</a>
           </div>
           <!--teachCourses-->
-      
+
           <div class="teachCourses apperance classes3">
             <a href="createdClass_BE17.html">BE17</a>
           </div>
           <!--teachCourses-->
-      
+
           <div class="toned-down teachCourses apperance new">
             <a href="create.html">+ Lägg till</a>
           </div>
@@ -210,7 +218,7 @@
 
           <div class="invisible-box teachCourses apperance">
           </div> <!-- invisible box for pushing the boxes to the right -->
-          
+
           <div id="createNewEducation">
             <a>+ Utbildning</a>
           </div>

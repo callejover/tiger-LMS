@@ -11,6 +11,7 @@
 
     <title>Tiger-LMS | Betygsättning</title>
 
+    <link rel="shortcut icon" href="../../img/favicon.ico">
     <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
     <link rel="stylesheet" href="../../css/reset.css">
     <!--Reset css-->
@@ -25,7 +26,6 @@
     <link rel="stylesheet" href="../../css/mediaq.css">
 
     <!--<link rel="import" href="teacherInfoCourses.html"> Working on -->
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
 <body>
@@ -36,7 +36,9 @@
     <header>
         <nav id="nav">
             <div id="nav-button-max-500">
-                <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
+                <a href="courses.html">
+                    <img src="../../img/KYH-logo.png">
+                </a>
                 <div class="menuButton" onclick="menuButton(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
@@ -65,7 +67,7 @@
                     <a class="modal-button" href="#myModal3">Närvaro</a>
                 </li>
                 <li>
-                    <a href="../../index.html">Logga ut</a>
+                    <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
                 </li>
             </ul>
         </nav>
@@ -79,7 +81,7 @@
             <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header">
-                <h2>Närvarolista</h2>
+                <h3>Närvarolista</h3>
                 <select id="ClassSelect" onchange="classChanged()">
                     <option value="A">Klass 1</option>
                     <option value="B">Klass 2</option>
@@ -100,7 +102,7 @@
                 </table>
 
 
-                <h2>Närvarokod</h2>
+                <h3>Närvarokod</h3>
                 <form name="input-attendance-teacher">
                     <div class="attendance">
                         <h1>Välj den klass du vill skapa en kod till.
@@ -195,7 +197,7 @@
     <div class="wrap">
         <div class="content content-pricing">
             <div class="innerContent apperance">
-                <h2 class="marLeft">Betyg</h2>
+                <h3 class="marLeft">Betyg</h3>
                 <p class="pricing_text">Som elev kan du se information om kursen och om den är pågående eller avslutad och även vad du har för betyg
                     i de kurser som du redan har avslutat.</p>
                 <br>
@@ -4632,19 +4634,11 @@
 
             </div>
         </div>
-        </div>
-        <!--wrap content found in teacherInfoCourses.html-->
+    </div>
+    <!--wrap content found in teacherInfoCourses.html-->
 
-        <!--v(the file sycked on the next row) Contains the content of the page for simpler oraganization of the site.-->
-        <div w3-include-html="../include/teacherInfoCourses.html"="displayResult()"></div>
-        <!--wrap content found in teacherInfoCourses.html-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <!--<script src="../js/linkHtml.js"></script> working on-->
-        <script>
-            w3.includeHTML();
-        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-        <script src="../../js/windowOnClickFunction.js"></script>
         <script src="../../js/attendance.js"></script>
         <script src="../../js/teacherAttendanceCode.js"></script>
         <script src="../../js/teacherAssignmentApproval.js"></script>

@@ -10,6 +10,7 @@
 
         <title>Tiger-LMS | Funktioner</title>
 
+        <link rel="shortcut icon" href="../img/favicon.ico">
         <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
         <link rel="stylesheet" href="../css/reset.css"><!--Reset css-->
         <link rel="stylesheet" href="../css/main.css"><!--main styling and funkutionalety-->
@@ -26,11 +27,12 @@
         <nav id="nav">
             <!-- <div id="nav-button-max-500">MENY</div> -->
             <ul class="hidden-max-500">
-              <li><a href="../index.html">logotypeFuture</a></li>
+              <li class="mobileShow"><a href="../index.html"><img src="../img/logoSmal.png"></a></li>
               <li class="mobileHide"><a href="../index.html">Start</a></li>
               <li class="mobileHide"><a href="features.html">Funktioner</a></li>
               <li class="mobileHide"><a href="pricing.html">Priser</a></li>
-              <li><a class="modal-button" href="#myModal3">LOGGA IN</a></li>
+              <li><a class="modal-button" id="loginButton1" href="#myModal3">&nbsp;</a></li>
+
             </ul>
         </nav>
     </header>
@@ -59,11 +61,11 @@
         <div class="wrap">
 
           <div class="content mobile mobileShow">
-            <div class="features apperance">
+            <div class="home apperance">
               <a href="../index.html" class="click">
                 Hem
               </a>
-            </div><!--freatures-->
+            </div><!--pricing-->
             <div class="pricing apperance">
               <a href="../html/pricing.html" class="click">
                 Priser
@@ -86,7 +88,7 @@
                   <section id="selection1" class="par">
                     <div class="content scroll">
                       <div class="innerContent apperance">
-                          <h2 class="marLeft">Enkel översikt</h2>
+                          <h3 class="marLeft">Enkel översikt</h3>
                           <p class="pricing_text">
                             Med Tiger-LMS så ser du snabbt och enkelt vilka kurser du har och den informationen som rör de specifika kurserna. Och detta på ett lätt sätt som alla kan behärska.
                             <br><br>
@@ -98,7 +100,7 @@
                   <section id="selection2" class="par">
                     <div class="content dark scroll">
                       <div class="innerContent apperance">
-                          <h2 class="marLeft">Kommunicera med skolan</h2>
+                          <h3 class="marLeft">Kommunicera med skolan</h3>
                           <p class="pricing_text">
                             I tigerLMS så finns det inbyggt kraftfulla kommunikationsverktyg för att direkt kommunicera personal eller att ge feedback efter veckor och månader för att kunna påverka din utbildning. Du kommer även kunna ge feedback utifrån varje avslutad kurs för att kunna ge mer detaljerad inte i syfte att utveckla utbildningen framåt.
                           </p>
@@ -108,7 +110,7 @@
                   <section id="selection3" class="par">
                     <div class="content scroll">
                       <div class="innerContent apperance">
-                          <h2 class="marLeft">Vara på plats</h2>
+                          <h3 class="marLeft">Vara på plats</h3>
                           <p class="pricing_text">
                             Att registers närvaro är naturligt och enkelt med tiger-LMS verktyg där du får en kod från din lärare som du sedan skriver in i tiger-LMS som automatisk registrerar att du är på plats.
                             <br><br>
@@ -120,7 +122,7 @@
                   <section id="selection4" class="par">
                     <div class="content dark scroll">
                       <div class="innerContent apperance">
-                          <h2 class="marLeft">Uppgifter</h2>
+                          <h3 class="marLeft">Uppgifter</h3>
                           <p class="pricing_text">
                             Hantering av uppgifter är enkelt och strukturerat i sin presentation att du som elev kan lätt förstå vad du behöva i varje uppgift.
                             <br><br>

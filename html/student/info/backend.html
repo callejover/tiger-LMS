@@ -8,14 +8,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
 	<!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
 	<link rel="stylesheet" href="../../../css/reset.css">
 	<link rel="stylesheet" href="../../../css/main.css">
-	
+
 	<link rel="stylesheet" href="../../../css/feedback.css">
 	<link rel="stylesheet" href="../../../css/dailyFeedback.css">
 	<link rel="stylesheet" href="../../../css/brandingKyh.css">
-	
+
 	<link rel="stylesheet" href="../../../css/mediaq.css">
 
 	<title>Tiger-LMS | Back-end Utveckling Kursinformation</title>
@@ -31,14 +32,14 @@
 				<span class="close">&times;</span>
 			<!-- Closing X icon in modal -->
 				<div class="header">
-					<h2>Närvaro</h2>
+					<h3>Närvaro</h3>
 					<form name="input-attendance">
 						<div class="attendance">
 							<p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
 							<p>Koden är endast giltlig i 5 minuter!</p>
 							<input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
 							<button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button><br>
-							<span class="wrongCode"></span>          
+							<span class="wrongCode"></span>
 						</div>
 					</form>
 				</div>
@@ -74,7 +75,7 @@
 						<a id="attendanceButton">Närvaro</a>
 					</li>
 					<li>
-						<a href="../../../index.html">logga ut</a>
+						<a href="../../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../../img/logut_icon3.png" width="35" height="50"></a>
 					</li>
 				</ul>
 			</nav>
@@ -83,13 +84,13 @@
     <div class="wrap">
 		<div class="content content-pricing">
 			<div class="innerContent apperance">
-				<div class="back-bar"><button id="back" onclick="goBack()">&lt;Tillbaka</button></div>
-				<h2>Back-end utveckling</h2><br>
+				<div class="back-bar"><a id="back" onclick="goBack()">&lt;Tillbaka</a></div>
+				<h3>Back-end utveckling</h3><br>
 				Utbildningsnummer: 201514480-2 och 201514500-2<br>
 				Fastställd av ledningsgruppen: xx<br>
-				<h2>Kurspoäng</h2><br>
+				<h3>Kurspoäng</h3><br>
 				40 poäng<br>
-				<h2>Innehåll</h2><br>
+				<h3>Innehåll</h3><br>
 				<p>Efter avslutad kurs ska de studerande ha kunskap för att utföra sådana arbetsuppgifter inom back-endprogrammering
 				som relaterar till front-end-utveckling.
 				De ska även ha fått kunskap i CMS-verktyget Wordpress och behärska detta.
@@ -131,12 +132,12 @@
 				<h3>Kriterier för betyget Väl Godkänt (VG)</h3><br>
 				Den studerande har nått samtliga mål med kursen och kan självständigt redogöra utförligt för
 				kunskapsmålen och med mycket gott handlag självständigt uppnå de färdigheter och kompetenser som
-				kursens mål sätter upp. 
+				kursens mål sätter upp.
 			</div>
 		</div>
 	</div>
 
-	
+
 
     <div class="quick-evaluation-wrap">
         <div class="quick-evaluation-content apperance">

@@ -11,6 +11,7 @@
 
   <title>Tiger-LMS | Nyheter</title>
 
+  <link rel="shortcut icon" href="../../img/favicon.ico">
   <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
   <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="../../css/main.css">
@@ -57,10 +58,10 @@
             <a href="assignmentApproval.html">Betyg</a>
           </li>
           <li>
-            <a class="myModal3">Närvaro</a>
+            <a class="modal-button" href="#myModal3">Närvaro</a>
           </li>
           <li>
-            <a href="../../index.html">Logga ut</a>
+            <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
           </li>
         </ul>
       </nav>
@@ -74,7 +75,7 @@
       <span class="close">&times;</span>
       <!-- Closing X icon in modal -->
       <div class="header">
-        <h2>Närvarolista</h2>
+        <h3>Närvarolista</h3>
           <select id="ClassSelect" onchange="classChanged()">
               <option value="A">Klass 1</option>
               <option value="B">Klass 2</option>
@@ -90,7 +91,7 @@
                 </tbody>
             </table>
 
-        <h2>Närvarokod</h2>
+        <h3>Närvarokod</h3>
         <form name="input-attendance-teacher">
           <div class="attendance">
             <h1>Välj den klass du vill skapa en kod till.
@@ -120,7 +121,7 @@
             <!-- Closing X icon in modal -->
             <div class="header headerAssignment">
               <div id="newsContent">
-                <h2>Lägg till nyheter</h2>
+                <h3>Lägg till nyheter</h3>
 
                 <form name="newsForm">
                     <select id="classNews">
@@ -154,6 +155,7 @@
                 Välj efter ämnes område ur listan och visa det som berör just det området.</p>
                 <a class="modal-button" href="#myModal4" >Lägg till nyheter</button>
         </div>
+
         <section class="slide slide-four">
             <div class="tab-group">
                 <div class="tab">
@@ -351,7 +353,7 @@
     w3.includeHTML();
   </script>
 
-  <script src="../../js/windowOnClickFunction.js"></script>
+  
   <script src="../../js/attendance.js"></script>
   <script src="../../js/teacherAttendanceCode.js"></script>
   <script src="../../js/teacherAssignmentApproval.js"></script>

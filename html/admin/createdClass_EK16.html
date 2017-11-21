@@ -11,6 +11,7 @@
 
     <title>Tiger-LMS | Skapa konton</title>
 
+    <link rel="shortcut icon" href="../../img/favicon.ico">
     <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/main.css">
@@ -46,16 +47,13 @@
                     <a href="editFeedback.html">Utvärdering</a>
                 </li>
                 <li>
-                    <a href="resultFeedback.html">#</a>
-                </li>
-                <li>
                     <a id="newsButton">Nyheter</a>
                 </li>
                 <li>
                     <a id="createAccountButton">Skapa konton</a>
                 </li>
                 <li>
-                    <a href="../../index.html">Log out</a>
+                    <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
                 </li>
             </ul>
         </nav>
@@ -67,7 +65,7 @@
             <span class="accountClose">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header">
-                <h1>Skapa ny användare</h1>
+                <h3>Skapa ny användare</h3>
                 <form id="account-form">
                     <!-- Form for user input -->
                     <div id="account-name">
@@ -105,7 +103,7 @@
             <!-- Closing X icon in modal -->
             <div class="header headerAssignment">
                 <div id="newsContent">
-                    <h2>Lägg till nyheter</h2>
+                    <h3>Lägg till nyheter</h3>
 
                     <form name="newsForm">
                         <select id="classNews">
@@ -140,7 +138,7 @@
 
                 <div class="createCoursesStudents">
                     <div class="createCoursesStudentsTop">
-                        <h2 contenteditable="true">EK16</h2>
+                        <h3 contenteditable="true">EK16</h3>
                     </div>
 
                     <div class="createCoursesStudentsMiddle">
@@ -157,7 +155,74 @@
                                         </label>
                                         <button disabled>Ta bort</button>
                                     </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Back End Utveckling</span>
+                                            <span> (Lennart Jonsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>HTML/CSS</span>
+                                            <span> (Elisabeth Nilsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Node.js</span>
+                                            <span> (Elisabeth Nilsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>PHP</span>
+                                            <span> (Lennart Jonsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Serverar</span>
+                                            <span> (Hans Pettersson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
 
+
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="" checked>
+                                            <span>Handel och försäljning</span>
+                                            <span> (Erik Johansson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="" checked>
+                                            <span>Bokföring och redovisning</span>
+                                            <span> (Margareta Karlsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="" checked>
+                                            <span>Aktier och privatekonomi</span>
+                                            <span> (Eva Eriksson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
                                 </ul>
 
                             </div>
@@ -205,6 +270,78 @@
                                     </li>
                                     <li style="opacity: 1; transition: 1s;">
                                         <span>Calle Jovér</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Kristina Larsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Ingrid Pettersson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Kristina Larsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Lennart Jonsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Maria Johansson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Margareta Karlsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Elisabeth Nilsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Eva Eriksson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Erik Johansson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Lars Andersson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Christina Jonsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Carl Persson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Gunnar Bengtsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Hans Pettersson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Per Larsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Johan Eriksson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Hans Pettersson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Ingrid Pettersson</span>
                                         <button onclick="removeMe(this)">Ta bort</button>
                                     </li>
                                 </ul>

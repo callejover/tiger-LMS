@@ -11,12 +11,15 @@
 
   <title>Tiger-LMS | Admin</title>
 
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
   <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
   <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="../../css/main.css">
 
   <link rel="stylesheet" href="../../css/courses.css">
   <link rel="stylesheet" href="../../css/brandingKyh.css">
+  <link rel="stylesheet" href="../../css/slider.css">
 
   <link rel="stylesheet" href="../../css/mediaq.css">
 
@@ -47,53 +50,91 @@
           <li>
             <a href="editFeedback.html">Utvärdering</a>
           </li>
-          <li>
-            <a>#</a>
-          </li>
+
           <li>
             <a class="modal-button" href="#myModal1">Nyheter</a>
           </li>
           <li>
             <a class="modal-button" href="#myModal2">Skapa konton</a>
           </li>
+
           <li>
-            <a href="../../index.html">Log out</a>
+            <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <div id="assignmentModal" class="modal">
+
+    <div id="myModal2" class="modal">
       <div class="modal-content">
-        <span class="assignmentClose">&times;</span>
-        <!-- Closing X icon in modal -->
-        <div class="header headerAssignment">
-          <h3>Lägg till Uppgift</h3>
-          <div class="assignmentApprovalContent">
-            <label for="assigmentTitle">Uppgift: </label>
-            <input type="text" id="assigmentTitle">
-
-            <input type="file" name="" id="">
-
-            <div class="assignmentFeedback">
-              <label for="assignmentFeedbackTextarea">Instruktioner:</label>
-              <br>
-              <textarea name="assignmentFeedbackTextarea" id="assignmentFeedbackTextarea" cols="30" rows="10"></textarea>
-
-              <br>
-
-              <div>
-                <button type="button" onclick="assignmentFeedback()">Lägg till uppgift</button>
-                <span class="assignmentFeedbackTextareaMessage"></span>
-              </div>
-
-            </div>
-
+          <span class="accountClose">&times;</span>
+          <!-- Closing X icon in modal -->
+          <div class="header">
+              <h3>Skapa ny användare</h3>
+              <form id="account-form">
+                  <!-- Form for user input -->
+                  <div id="account-name">
+                      <input type="text" placeholder="Fullständigt namn">
+                  </div>
+                  <div id="account-email">
+                      <input type="text" id="email-box" placeholder="Epostadress">
+                  </div>
+                  <div id="account-username">
+                      <input type="text" placeholder="Användarnamn" autofocus="autofocus">
+                  </div>
+                  <div id="account-password">
+                      <input type="password" placeholder="Lösenord">
+                  </div>
+                  <div id="account-type">
+                      <select name="account-select" id="account-select">
+                          <option value="Student">Student</option>
+                          <option value="Lärare">Lärare</option>
+                          <option value="Administratör">Administratör</option>
+                      </select>
+                      <div class="accountButton">
+                          <input type="submit" value="Skapa användare" id="accountResponse" class="createStudent createTeacher">
+                      </div>
+                  </div>
+              </form>
+              <span class="createdUserMassage"></span>
           </div>
-        </div>
       </div>
-    </div>
+  </div>
 
+
+  <div id="myModal1" class="modal">
+      <div class="modal-content">
+          <span class="newsClose">&times;</span>
+          <!-- Closing X icon in modal -->
+          <div class="header headerAssignment">
+              <div id="newsContent">
+                  <h3>Lägg till nyheter</h3>
+
+                  <form name="newsForm">
+                      <select id="classNews">
+                          <option value="javascript">Javascript</option>
+                          <option value="htmlCss">HTML och CSS </option>
+                          <option value="backend">Backend</option>
+                          <option value="arbetsmetodik">Arbetsmetodik</option>
+
+
+                      </select>
+                      <select id="teacherStudent">
+                          <option value="student">Elever</option>
+                          <option value="teacher">Lärare</option>
+                      </select>
+                      <textarea class="headline" rows="1" cols="10" input placeholder="Rubrik"></textarea>
+                      <textarea class="newsArea" rows="10" cols="50"></textarea>
+                      <input type="date" id="dates">
+                      <button id="sendNews" onclick="sendNews1()">Lägg till</button>
+                      <span id="newsSent"></span>
+
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
 
     <div w3-include-html="../includes/adminEditFeedbackWeekly.html"="displayResult()">
     </div>
@@ -106,15 +147,17 @@
     <script src="../../js/adminEditFeedback.js"></script>
 
     <script src="../../js/studentFeedback.js"></script>
-    <script src="../../js/windowOnClickFunction.js"></script>
+
     <script src="../../js/attendance.js"></script>
     <script src="../../js/teacherAssignment.js"></script>
     <script src="../../js/teacherAttendanceCode.js"></script>
     <script src="../../js/teacherAssignmentApproval.js"></script>
     <script src="../../js/teacherAttendanceOverview.js"></script>
-    <script src="../../js/teacherNews.js"></script>
-    <script src="../../js/admin.js"></script>
+
     <script src="../../js/navMenu.js"></script>
+
+    <script src="../../js/adminModal.js"></script>
+    <script src="../../js/teacherNews.js"></script>
 
 
   </body>

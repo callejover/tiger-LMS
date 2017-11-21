@@ -167,12 +167,15 @@ a {
 .index {
     min-height: calc(100vh - 5em);
 }
-.teachWrap, .adminwrap{
-  align-content: flex-start;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
+
+.teachWrap,
+.adminwrap {
+    align-content: flex-start;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
+
 .teachWrap {
     align-items: flex-start;
 }
@@ -193,6 +196,7 @@ a {
 
 .scroll {
     min-height: 100vh;
+    z-index: 100;
 }
 
 .content.mobile {
@@ -245,16 +249,17 @@ a {
     z-index: 500;
   } */
 
-.tillbaka{
-  height: 100%;
-  width: auto;
-  max-height: 3em;
-  margin: 0.5em;
+.tillbaka {
+    height: 100%;
+    width: auto;
+    max-height: 3em;
+    margin: 0.5em;
 }
 
 .features,
 .pricing,
-.teachCourses {
+.teachCourses,
+.home {
     width: 30%;
     padding: 0;
     margin: 2.5% 5% 2.5% 5%;
@@ -263,38 +268,41 @@ a {
 
 .features {
     background: url('../img/features.png') no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
 }
 
 .pricing {
     background: url('../img/money.jpeg') no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
+}
+
+.home {
+    background: url('../img/logoSmal.png') no-repeat;
 }
 
 .subj1 {
     background: #ffb477 url('../img/java2.jpg') no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
 }
 
 .subj2 {
     background: #ffb477 url('../img/html_css_2.jpg') no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
 }
 
 .subj3 {
     background: #ffb477 url('../img/scrum2.png') no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
 }
 
 .subj4 {
     background: #ffb477 url('../img/backend2.png') no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
+}
+
+.features,
+.pricing,
+.home,
+.subj1,
+.subj2,
+.subj3,
+.subj4 {
+  background-blend-mode: overlay;
+  background-size: cover;
 }
 
 .subj1:hover,
@@ -302,7 +310,8 @@ a {
 .subj3:hover,
 .subj4:hover,
 .pricing:hover,
-.features:hover {
+.features:hover,
+.home:hover {
     background-color: rgba(255, 0, 0, 0);
     font-weight: bold;
     text-shadow: 0 0 0.3em #000;
@@ -317,7 +326,6 @@ a {
     margin: 1em 1em 1em 1em;
     overflow: hidden;
 }
-
 
 .textContent {
     min-height: 50vh;
@@ -343,21 +351,16 @@ a {
 
 .textContentApparance {
     font-size: 1.1em;
-    background: rgba(166,79,172, 0.5) url('../img/white_tiger.jpg') no-repeat;
-    background-blend-mode: overlay;
+    background: url('../img/white_tiger.jpg') no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     /* background-size: 100% auto; */
     background-position: center, center;
 }
 
-#nav img {
-    padding-top: 1em;
-}
-
 .features,
-.pricing {
+.pricing,
+.home {
     height: 35vh;
     vertical-align: middle;
     line-height: 35vh;
@@ -533,6 +536,7 @@ header {
     max-width: auto;
     max-height: 70px;
 }
+
 #nav ul li:nth-child(1) {
     flex-grow: 3;
     flex-shrink: 0;
@@ -540,7 +544,7 @@ header {
     line-height: normal;
 }
 
-#nav ul li:nth-child(1) img {
+#nav ul li:nth-child(1) img  {
     display: block;
     width: auto;
     height: 5em;
@@ -549,13 +553,19 @@ header {
     left: 0;
 }
 
+#nav ul li:nth-child(1) a,#nav ul li:nth-child(1) a img {
+  padding: 0 0 0 0.5em;
+
+
+}
+
 #back {
     font-size: 1em;
     float: right;
     padding: 0;
     border: none;
-    background-color: rgba(0,0,0,0);
-    border:none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 
 
@@ -615,16 +625,21 @@ header {
     width: 50%;
 }
 
+.modal-content select,
+.modal-content input {
+    width: 100%;
+}
+
 .close,
 .assignmentClose,
 .attendanceClose,
 .accountClose,
 .newsClose {
-  color: #DBDBDB;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  text-decoration: none;
+    color: #DBDBDB;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .close:hover,
@@ -637,9 +652,14 @@ header {
 .accountClose:focus,
 .newsClose:hover,
 .newsClose:focus {
-  color: #313131;
-  text-decoration: none;
-  cursor: pointer;
+    color: #313131;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#loginButton img {
+    vertical-align: middle;
+    height: auto;
 }
 
 #loginButton:hover {
@@ -807,7 +827,9 @@ Anmation for menu button on all student, teacher and admin pages
     padding: 10px;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: #ffffff;
@@ -816,16 +838,19 @@ Anmation for menu button on all student, teacher and admin pages
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+    opacity: 0;
+}
 
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
+
 
 /* =================================================================================
 CSS for accounts.html on admin pages
@@ -843,8 +868,8 @@ CSS for accounts.html on admin pages
 }
 
 .account-form {
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .account-main-content h1 {
@@ -886,15 +911,9 @@ CSS for accounts.html on admin pages
     width: 100%;
 }
 
-
-
-
 .text-align-center {
-  text-align:  center;
+    text-align: center;
 }
-
-
-
 
 
 /*
@@ -928,7 +947,7 @@ CSS for accounts.html on admin pages
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    min-height: 100%;
+    /* min-height: 100%; */
 }
 
 .createCoursesStudentsTop {
@@ -937,11 +956,11 @@ CSS for accounts.html on admin pages
 
 .createCoursesStudentsMiddle {
     flex-grow: 1;
-    text-align: justify;
 }
 
 .createCoursesStudentsBottom {
     flex-grow: 0;
+    height:;
 }
 
 .courseContainerList,
@@ -981,59 +1000,55 @@ button.roundButton {
     margin-left: 1em;
 }
 
-
 .createCoursesStudents tr:nth-child(even) {
-  background: rgba(0, 0, 0, .1)
+    background: rgba(0, 0, 0, .1)
 }
 
 .createCoursesStudents td,
 .createCoursesStudents th {
-  padding: .5em 0
+    padding: .5em 0
 }
+
 .createCoursesStudents td:first-child {
-  width: 2em
+    width: 2em
 }
 
-
-.image-upload > input
-{
+.image-upload>input {
     display: none;
 }
 
 #errorMessageStudent,
 #errorMessageCourse {
-  position: absolute;
-  bottom: 5em;
-  /* border: 1px solid #000; */
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: .5em;
-  background: rgba(0,0,0,.2);
+    position: absolute;
+    bottom: 5em;
+    /* border: 1px solid #000; */
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: .5em;
+    background: rgba(0, 0, 0, .2);
 }
 
 .visibilityVisible {
-  visibility: visible;
-  opacity: 1;
-  transition: .5s;
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
 }
+
 .visibilityHidden {
-  visibility: hidden;
-  opacity: 0;
-  transition: .5s;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
 }
 
 .courseAddedAfterCreation {
-  width: 100%;
-  display: block;
-  text-align: center;
-  padding: 20%;
-  font-weight: bold;
-  font-size: 200%
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20%;
+    font-weight: bold;
+    font-size: 200%
 }
-
-
-
 
 .createCourses ul li:nth-child(odd),
 .createStudents ul li:nth-child(odd) {
@@ -1049,7 +1064,6 @@ button.roundButton {
     padding: 0 .5em;
 }
 
-
 .createCourses ul li span {
     width: 50%;
     padding: .5em;
@@ -1058,10 +1072,12 @@ button.roundButton {
 .createCourses ul li input {
     width: auto;
 }
+
 .createCourses ul li label {
     display: flex;
     align-items: center;
 }
+
 .createCourses ul li label:hover {
     background: none
 }
@@ -1082,7 +1098,6 @@ button.roundButton {
     background: rgba(0, 0, 0, .25);
 }
 
-
 .createStudents div:nth-child(1) {
     overflow: auto;
     height: 50vh;
@@ -1102,33 +1117,30 @@ button:disabled {
     margin: 0;
 }
 
-
 #createNewEducation {
     position: fixed;
-    
     right: 0;
     left: auto;
     bottom: 0;
-    
-    background: rgba(176,42,9,1);
+    background: rgba(176, 42, 9, 1);
     font-size: 1.2em;
     font-weight: bold;
     text-align: center;
     box-shadow: 0 0 5px #000;
-  
-  }
+}
 
+#createNewEducation a {
+    padding: 1em;
+    display: block;
+}
 
-  #createNewEducation a {
-  padding: 1em;
-  display: block;
-  }
-  #loginButton {
+#loginButton1 {
     background: url('../img/login_icon3.png') no-repeat;
     background-size:35px;
     background-position:center;
   }
 
 
-
-  
+#newsButton {
+    margin-bottom: 1em
+}
