@@ -339,14 +339,16 @@ a {
 .textContent h2 {
     margin-top: 1em;
     text-shadow: 2px 2px 1px #000000;
+    
+    background: rgba(115, 0, 107, 0.8);
 }
 
 .textContent p {
-    margin: 0 10em 0 10em;
-    margin-bottom: 2em;
     font-size: 1.15em;
     line-height: 2em;
-    text-shadow: 2px 2px 1px #000000;
+    background: rgba(115, 0, 107, 0.8);
+    padding: 1em;
+    color: #fff;
 }
 
 .textContentApparance {
