@@ -31,12 +31,12 @@ function swapPage(){
 }
 
 // Destroys the script
-    // attendanceInput.addEventListener("keyup", function (event) {
-    //     event.preventDefault();
-    //     if (event.keyCode === 13) {
-    //         checkAttendance();
-    //     }
-    // });
+//     attendanceInput.addEventListener("keyup", function (event) {
+//         event.preventDefault();
+//         if (event.keyCode === 13) {
+//             checkAttendance();
+//         }
+//     });
 
 // Opens modal window to attendance
     // When the user clicks on the button, open the modal

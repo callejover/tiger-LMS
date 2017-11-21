@@ -2,8 +2,6 @@
 function setCurrentDate() {
     document.querySelector(".lesson-day").valueAsDate = new Date();
 }
-
-
 // ===================================================================================================================
 
 

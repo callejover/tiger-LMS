@@ -23,6 +23,7 @@ for (var i = 0; i < btn.length; i++) {
     e.preventDefault();
     modal = document.querySelector(e.target.getAttribute("href"));
     modal.style.display = "block";
+    setCurrentDate();
  }
 }
 
