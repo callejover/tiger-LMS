@@ -340,7 +340,7 @@ a {
 .textContent h2 {
     margin-top: 1em;
     text-shadow: 2px 2px 1px #000000;
-    
+
     background: rgba(115, 0, 107, 0.8);
 }
 
@@ -521,11 +521,6 @@ header {
     padding: 2em;
     text-decoration: none;
     color: white;
-}
-
-#nav ul li:last-child a {
-    padding: 0 0 0 2em;
-    margin-right:2em;
 }
 
 #nav ul li:hover {
