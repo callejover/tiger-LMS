@@ -99,12 +99,7 @@
   .scrollHead {
     display: none;
   }
-  #loginButton{
-    background: url('../img/login_icon3.png');
-    background-blend-mode: overlay;
-    background-size:35px;
-    background-position:center;
-  }
+
 /* ============================================================================ */
 
   #nav-button-max-500 {
