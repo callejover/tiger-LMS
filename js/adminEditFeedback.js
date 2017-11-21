@@ -35,6 +35,28 @@ function addContent4(){
 };
 
 
+
+
+// Page back button for evaluation pages
+function goBack() {
+	window.history.back(); //Allows the user to return to recent page
+}
+
+
+function check() {
+	document.querySelector(".course-evaluation").innerHTML = "";
+	document.querySelector(".course-evaluation").innerHTML = "Formulär sparat!";
+	// setTimeout("pageSwap()",2000);
+}
+// function pageSwap() {
+// 	window.location.replace("../admin/adminStart.html");
+// }
+function checkWeekly() {
+	document.querySelector(".weekly-feedback").innerHTML = "";
+	document.querySelector(".weekly-feedback").innerHTML = "Formulär sparat!";
+	// setTimeout("pageSwap()",2000);
+	return true;
+}
 /*====================================
 part .1.1
 =====================================*
