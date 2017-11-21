@@ -31,70 +31,14 @@ function getInfo() {
     var password = document.getElementById("password").value;
     var message = "Du har skrivit in fel lösenord!";
 
-<<<<<<< HEAD
     //Loops accouts and checks for matches
     for (i = 0; i < objPeople.length; i++) {
         if (username == objPeople[i].username && password == objPeople[i].password) {
-=======
-
-//Loops accouts and checks for matches
-    for( i = 0; i < objPeople.length; i++) {
-        if(username == objPeople[i].username && password == objPeople[i].password) {
->>>>>>> 53d8a357a468a473998cc93ce372f7f6ea4bd08e
             window.location.replace(objPeople[i].refPage);
             return;
         }
     }
-<<<<<<< HEAD
 
     //Displays wrong message if username/password is incorrect
     document.querySelector('#wrongPass').innerHTML = message;
-
-=======
-document.querySelector('#wrongPass').innerHTML = message;
->>>>>>> 53d8a357a468a473998cc93ce372f7f6ea4bd08e
 }
-
-
-/*==================================================================================*/
-
-
-
-
-
-
-<<<<<<< HEAD
-// When the user clicks on the button, open the modal
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-=======
->>>>>>> 53d8a357a468a473998cc93ce372f7f6ea4bd08e
-
-
-
-//Allows enter click to submit
-<<<<<<< HEAD
-
-
-document.getElementById("password").addEventListener("keyup", function (event) {
-=======
-document.getElementById("password").addEventListener("keyup", function(event) {
->>>>>>> 53d8a357a468a473998cc93ce372f7f6ea4bd08e
-    event.preventDefault();
-    if (event.keyCode == 13) {
-        document.getElementById("password").click(getInfo());
-    }
-});
