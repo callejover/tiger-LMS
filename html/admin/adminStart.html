@@ -45,25 +45,33 @@
             <a href="editFeedback.html">Utvärdering</a>
           </li>
           <li>
-            <a id="newsButton">Nyheter</a>
+
+            <a href="resultFeedback.html">#</a>
           </li>
           <li>
-            <a id="createAccountButton">Skapa konton</a>
+            <a class="modal-button" href="#myModal1">Nyheter</a>
+
           </li>
+          <li>
+            <a class="modal-button" href="#myModal2">Skapa konton</a>
+          </li>
+
           <li>
             <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
+
           </li>
         </ul>
       </nav>
     </header>
 
-
-    <div id="createAccountModal" class="modal">
+                
+                
+    <div id="myModal2" class="modal">
         <div class="modal-content">
-            <span class="accountClose">&times;</span>
+            <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header">
-                <h1>Skapa ny användare</h1>
+                <h3>Skapa ny användare</h3>
                 <form id="account-form">
                     <!-- Form for user input -->
                     <div id="account-name">
@@ -95,13 +103,14 @@
     </div>
 
 
-    <div id="newsModal" class="modal">
+                
+    <div id="myModal1" class="modal">
         <div class="modal-content">
             <span class="newsClose">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header headerAssignment">
               <div id="newsContent">
-                <h2>Lägg till nyheter</h2>
+                <h3>Lägg till nyheter</h3>
 
                 <form name="newsForm">
                     <select id="classNews">
@@ -220,9 +229,11 @@
     <script src="../../js/adminCreateUser.js"></script>
     <script src="../../js/adminModal.js"></script>
     <script src="../../js/teacherNews.js"></script>
+
     <script src="../../js/addNewEducation.js"></script>
 
     <script src="../../js/navMenu.js"></script>
+
 
 </body>
 

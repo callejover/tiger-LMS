@@ -46,11 +46,13 @@
                 <li>
                     <a href="editFeedback.html">Utvärdering</a>
                 </li>
+
                 <li>
-                    <a id="newsButton">Nyheter</a>
+                    <a class="modal-button" href="#myModal1">Nyheter</a>
+
                 </li>
                 <li>
-                    <a id="createAccountButton">Skapa konton</a>
+                    <a class="modal-button" href="#myModal2">Skapa konton</a>
                 </li>
                 <li>
                     <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
@@ -60,12 +62,12 @@
     </header>
 
 
-    <div id="createAccountModal" class="modal">
+    <div id="myModal2" class="modal">
         <div class="modal-content">
-            <span class="accountClose">&times;</span>
+            <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header">
-                <h1>Skapa ny användare</h1>
+                <h3>Skapa ny användare</h3>
                 <form id="account-form">
                     <!-- Form for user input -->
                     <div id="account-name">
@@ -97,13 +99,13 @@
     </div>
 
 
-    <div id="newsModal" class="modal">
+    <div id="myModal1" class="modal">
         <div class="modal-content">
-            <span class="newsClose">&times;</span>
+            <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header headerAssignment">
                 <div id="newsContent">
-                    <h2>Lägg till nyheter</h2>
+                    <h3>Lägg till nyheter</h3>
 
                     <form name="newsForm">
                         <select id="classNews">
@@ -135,7 +137,7 @@
     <div class="wrap">
         <div class="content">
             <div class="innerContent apperance">
-
+<h3>Skapa ny klass</h3>
                 <div class="createCoursesStudents">
                     <div class="createCoursesStudentsTop">
                         <input type="text" placeholder="Skriv in det nya klassnamnet här..." class="width100">
