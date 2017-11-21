@@ -92,7 +92,7 @@ button {
 nav  attributes Branding
 =====================================*/
 
-#nav .current {
+#nav a.current {
   background-color: rgba(250,100,0,1);
   /* color: #d900e8; */
 }
