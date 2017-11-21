@@ -340,16 +340,14 @@ a {
 .textContent h2 {
     margin-top: 1em;
     text-shadow: 2px 2px 1px #000000;
-    
-    background: rgba(115, 0, 107, 0.8);
 }
 
 .textContent p {
+    margin: 0 10em 0 10em;
+    margin-bottom: 2em;
     font-size: 1.15em;
     line-height: 2em;
-    background: rgba(115, 0, 107, 0.8);
-    padding: 1em;
-    color: #fff;
+    text-shadow: 2px 2px 1px #000000;
 }
 
 .textContentApparance {
@@ -633,7 +631,6 @@ header {
     width: 50%;
 }
 
-.modal-content select,
 .modal-content input {
     width: 100%;
 }
@@ -955,7 +952,7 @@ CSS for accounts.html on admin pages
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    /* min-height: 100%; */
+    min-height: 100%;
 }
 
 .createCoursesStudentsTop {
@@ -964,11 +961,11 @@ CSS for accounts.html on admin pages
 
 .createCoursesStudentsMiddle {
     flex-grow: 1;
+    text-align: justify;
 }
 
 .createCoursesStudentsBottom {
     flex-grow: 0;
-    height:;
 }
 
 .courseContainerList,
@@ -1140,15 +1137,4 @@ button:disabled {
 #createNewEducation a {
     padding: 1em;
     display: block;
-}
-
-#loginButton1 {
-    background: url('../img/login_icon3.png') no-repeat;
-    background-size:35px;
-    background-position:center;
-  }
-
-
-#newsButton {
-    margin-bottom: 1em
 }
