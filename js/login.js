@@ -42,3 +42,11 @@ function getInfo() {
     //Displays wrong message if username/password is incorrect
     document.querySelector('#wrongPass').innerHTML = message;
 }
+
+document.getElementById("password")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("password").click(getInfo());
+    }
+});
