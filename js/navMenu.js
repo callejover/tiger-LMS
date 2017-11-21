@@ -1,15 +1,3 @@
-//First try using jQuery. Save for new attempt.
-
-// $(document).ready(() => {
-    
-//     $('#meny-button').on('click', () => {
-//         $('.hidden-max-500').toggle();
-//         });
-    
-//     });
-
-
-// ======================================================================================
 
 let hiddenNavButton = document.querySelector(".menuButton");    // Gets the nav-button-max-500 element
 let hiddenNavWarp = document.querySelector(".hidden-max-500");          // Gets the hidden-max-500 element
