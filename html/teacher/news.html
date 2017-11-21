@@ -11,6 +11,7 @@
 
   <title>Tiger-LMS | Nyheter</title>
 
+  <link rel="shortcut icon" href="../../img/favicon.ico">
   <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
   <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="../../css/main.css">
@@ -57,10 +58,10 @@
             <a href="assignmentApproval.html">Betyg</a>
           </li>
           <li>
-            <a id="attendanceButton">Närvaro</a>
+            <a class="modal-button" href="#myModal3">Närvaro</a>
           </li>
           <li>
-            <a href="../../index.html">Logga ut</a>
+            <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
           </li>
         </ul>
       </nav>
@@ -69,12 +70,12 @@
 
 
   <!-- Hidden before clicking logiout -->
-  <div id="attendanceModal" class="modal">
+  <div id="myModal3" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <!-- Closing X icon in modal -->
       <div class="header">
-        <h2>Närvarolista</h2>
+        <h3>Närvarolista</h3>
           <select id="ClassSelect" onchange="classChanged()">
               <option value="A">Klass 1</option>
               <option value="B">Klass 2</option>
@@ -90,7 +91,7 @@
                 </tbody>
             </table>
 
-        <h2>Närvarokod</h2>
+        <h3>Närvarokod</h3>
         <form name="input-attendance-teacher">
           <div class="attendance">
             <h1>Välj den klass du vill skapa en kod till.
@@ -114,13 +115,13 @@
     <!--modal-content-->
   </div>
   <!-- div attendanceModal opens the login box on index screen -->
-  <div id="newsModal" class="modal">
+  <div id="myModal4" class="modal">
         <div class="modal-content">
-            <span class="newsClose">&times;</span>
+            <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header headerAssignment">
               <div id="newsContent">
-                <h2>Lägg till nyheter</h2>
+                <h3>Lägg till nyheter</h3>
 
                 <form name="newsForm">
                     <select id="classNews">
@@ -131,8 +132,13 @@
                     </select>
                     <textarea class="headline" rows="1" cols="10" input placeholder="Rubrik"></textarea>
                     <textarea class="newsArea" rows="10" cols="50"></textarea>
+<<<<<<< HEAD
                     <input class="lesson-day" type="date">
                     <button id="sendNews" onclick="sendNews1()" >Lägg till</button>
+=======
+                    <input type="date" id="dates">
+                    <button id="sendNews" onclick="sendNews1()">Lägg till</button>
+>>>>>>> 53d8a357a468a473998cc93ce372f7f6ea4bd08e
                     <span id="newsSent"></span>
 
                 </form>
@@ -152,8 +158,13 @@
                 <p class="pricing_text">Här kan du som lärare ta del av viktiga nyheter som berör skolan.
                 <br>
                 Välj efter ämnes område ur listan och visa det som berör just det området.</p>
+<<<<<<< HEAD
                 <button id="newsButton">Lägg till nyheter</button>
+=======
+                <a class="modal-button" href="#myModal4" >Lägg till nyheter</button>
+>>>>>>> 53d8a357a468a473998cc93ce372f7f6ea4bd08e
         </div>
+
         <section class="slide slide-four">
             <div class="tab-group">
                 <div class="tab">

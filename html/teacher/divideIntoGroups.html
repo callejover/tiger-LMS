@@ -11,6 +11,7 @@
 
     <title>Tiger-LMS | Gruppindelning</title>
 
+    <link rel="shortcut icon" href="../../img/favicon.ico">
     <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/main.css">
@@ -61,10 +62,10 @@
                     <a href="assignmentApproval.html">Betyg</a>
                 </li>
                 <li>
-                    <a id="attendanceButton">Närvaro</a>
+                    <a class="modal-button" href="#myModal3">Närvaro</a>
                 </li>
                 <li>
-                    <a href="../../index.html">Logga ut</a>
+                    <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
                 </li>
             </ul>
         </nav>
@@ -73,12 +74,12 @@
 
 
     <!-- Hidden before clicking logiout -->
-    <div id="attendanceModal" class="modal">
+    <div id="myModal3" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header">
-                <h2>Närvarolista</h2>
+                <h3>Närvarolista</h3>
                 <select id="ClassSelect" onchange="classChanged()">
                     <option value="A">Klass 1</option>
                     <option value="B">Klass 2</option>
@@ -98,7 +99,7 @@
                     </tbody>
                 </table>
 
-                <h2>Närvarokod</h2>
+                <h3>Närvarokod</h3>
                 <form name="input-attendance-teacher">
                     <div class="attendance">
                         <h1>Välj den klass du vill skapa en kod till.
@@ -129,7 +130,7 @@
 
             <div class="displaysUnder1200">
                 <p>Gruppindelning är ej möjlig i mobilvy</p>
-            </div>  
+            </div>
 
             <div id="groupWrap">
                 <div class="groupLeft">
@@ -158,7 +159,7 @@
                     </div>
                 </div>
                 <div class="groupGroup" id="groupClassList" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)">
-                    
+
                 </div>
 
             </div>
@@ -178,7 +179,7 @@
         w3.includeHTML();
     </script>
 
-    <script src="../../js/windowOnClickFunction.js"></script>
+    
     <script src="../../js/attendance.js"></script>
     <script src="../../js/teacherAttendanceCode.js"></script>
     <script src="../../js/teacherAssignmentApproval.js"></script>
@@ -186,6 +187,7 @@
     <script src="../../js/dragAndDrop.js"></script>
     <script src="../../js/devideIntoGroups.js"></script>
     <script src="../../js/navMenu.js"></script>
+    <script src="../../js/teacherNews.js"></script>
 
 
 </body>

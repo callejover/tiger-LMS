@@ -10,6 +10,7 @@
 
     <title>Tiger-LMS | Nyheter</title>
 
+    <link rel="shortcut icon" href="../../img/favicon.ico">
     <!-- <link rel="shortcut icon" href="../../../img/tiger.png" /> -->
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/main.css">
@@ -52,10 +53,10 @@
                     <a href="courseFeedback.html">Kurs utv.</a>
                 </li>
                 <li>
-                    <a id="attendanceButton">Närvaro</a>
+                    <a class="modal-button" href="#myModal1">Närvaro</a>
                 </li>
                 <li>
-                    <a href="../../index.html">logga ut</a>
+                    <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
                 </li>
             </ul>
         </nav>
@@ -66,12 +67,12 @@
 
     <!-- Hidden before clicking loginButton -->
 
-    <div id="attendanceModal" class="modal">
+    <div id="myModal1" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
         <!-- Closing X icon in modal -->
             <div class="header">
-                <h2>Närvaro</h2>
+                <h3>Närvaro</h3>
                 <form name="input-attendance">
                     <div class="attendance">
                         <p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
@@ -89,11 +90,11 @@
     <div class="wrap">
         <div class="content content-pricing">
             <div class="innerContent apperance">
-                <div class="news-head">
-                      <h2 class="marLeft">Nyheter</h2>
-                        <p class="pricing_text">Här kan du som elev ta del av nyheter som rör dina kurser.<br>
-                        Välj kurs i listan och ta del av nyheterna som rör just den kursen.</p>
-                </div>
+                
+                <h3>Nyheter</h3>
+                <p>Här kan du som elev ta del av nyheter som rör dina kurser.<br>
+                    Välj kurs i listan och ta del av nyheterna som rör just den kursen.</p>
+            
                 <section class="slide slide-four">
                     <div class="tab-group">
                         <div class="tab">
@@ -317,11 +318,11 @@
 
     <!--wrap-->
 
-    <script src="../../js/windowOnClickFunction.js"></script>
+    
 
     <script src="../../js/studentDailyFeedback.js"></script>
     <script src="../../js/attendance.js"></script>
-
+    <script src="../../js/teacherNews.js"></script>
     <script src="../../js/navMenu.js"></script>
 </body>
 

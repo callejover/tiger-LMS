@@ -10,6 +10,7 @@
 
     <title>Tiger-LMS | Kurser</title>
 
+    <link rel="shortcut icon" href="../../img/favicon.ico">
     <!-- <link rel="shortcut icon" href="../../img/tiger.png" /> -->
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/main.css">
@@ -51,10 +52,10 @@
                     <a href="courseFeedback.html">Kurs utv.</a>
                 </li>
                 <li>
-                    <a id="attendanceButton">Närvaro</a>
+                    <a class="modal-button" href="#myModal5">Närvaro</a>
                 </li>
                 <li>
-                    <a href="../../index.html">logga ut</a>
+                    <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
                 </li>
             </ul>
         </nav>
@@ -63,12 +64,12 @@
 
     <!-- Hidden before clicking loginButton -->
 
-    <div id="attendanceModal" class="modal">
+    <div id="myModal5" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header">
-                <h2>Närvaro</h2>
+                <h3>Närvaro</h3>
                 <form name="input-attendance">
                     <div class="attendance">
                         <p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
@@ -93,7 +94,7 @@
             <span class="assignmentClose">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header headerAssignment">
-                <h2>Inlämning</h2>
+                <h3>Inlämning</h3>
                 <form name="input-assignment">
                     <p>Lämna in din uppgift genom att ladda upp dokumentet nedan.</p>
                     <p>OBS! Endast Word dokument!</p>
@@ -132,7 +133,7 @@
     <div class="wrap">
         <div class="content content-pricing">
             <div class="innerContent apperance">
-                <h2 class="marLeft">Kurser</h2>
+                <h3 class="marLeft">Kurser</h3>
                 <p class="pricing_text">Som elev kan du se information om kursen och om den är pågående eller avslutad och även vad du har för betyg
                     i de kurser som du redan har avslutat.</p>
                 <br>
@@ -692,12 +693,12 @@
         </div><!--content-->
     </div><!--wrap-->
 
-    <script src="../../js/windowOnClickFunction.js"></script>
+    
 
     <script src="../../js/studentDailyFeedback.js"></script>
     <script src="../../js/studentAssignment.js"></script>
     <script src="../../js/attendance.js"></script>
-
+    <script src="../../js/teacherNews.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <!-- Jquery script -->
     <script src="../../js/navMenu.js"></script>

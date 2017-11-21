@@ -1,30 +1,26 @@
-
-
 // Checks witch page youre currently at and pops out the html
 
 var currentPage = window.location.pathname.split('/').pop(); // Split will split the path into different obijects
 
 // Accouts with acess to the page
 
-var objPeople = [
-    {
-        username: "student",
-        password: "student",
-        account: "student",
-        refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/student/courses.html' : 'student/courses.html',
+var objPeople = [{
+    username: "student",
+    password: "student",
+    account: "student",
+    refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/student/courses.html' : 'student/courses.html',
 
-    }, {
-        username: "teacher",
-        password: "teacher",
-        account: "teacher",
-        refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/teacher/courses.html' : 'teacher/courses.html'
-    }, {
-        username: "admin",
-        password: "admin",
-        account: "admin",
-        refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/admin/adminStart.html' : 'admin/adminStart.html'  // Html waiting for page
-    }
-]
+}, {
+    username: "teacher",
+    password: "teacher",
+    account: "teacher",
+    refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/teacher/courses.html' : 'teacher/courses.html'
+}, {
+    username: "admin",
+    password: "admin",
+    account: "admin",
+    refPage: (currentPage === 'index.html' || currentPage === '') ? 'html/admin/adminStart.html' : 'admin/adminStart.html' // Html waiting for page
+}]
 
 
 
@@ -35,34 +31,39 @@ function getInfo() {
     var password = document.getElementById("password").value;
     var message = "Du har skrivit in fel lösenord!";
 
+<<<<<<< HEAD
     //Loops accouts and checks for matches
     for (i = 0; i < objPeople.length; i++) {
         if (username == objPeople[i].username && password == objPeople[i].password) {
+=======
+
+//Loops accouts and checks for matches
+    for( i = 0; i < objPeople.length; i++) {
+        if(username == objPeople[i].username && password == objPeople[i].password) {
+>>>>>>> 53d8a357a468a473998cc93ce372f7f6ea4bd08e
             window.location.replace(objPeople[i].refPage);
             return;
         }
     }
+<<<<<<< HEAD
 
     //Displays wrong message if username/password is incorrect
     document.querySelector('#wrongPass').innerHTML = message;
 
+=======
+document.querySelector('#wrongPass').innerHTML = message;
+>>>>>>> 53d8a357a468a473998cc93ce372f7f6ea4bd08e
 }
 
 
 /*==================================================================================*/
 
 
-// Opens modul window to login
 
-// Get the modal
-var modal = document.getElementById('loginModal');
 
-// Get the button that opens the modal
-var btn = document.getElementById("loginButton");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
+<<<<<<< HEAD
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
     modal.style.display = "block";
@@ -79,13 +80,19 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+=======
+>>>>>>> 53d8a357a468a473998cc93ce372f7f6ea4bd08e
 
 
 
 //Allows enter click to submit
+<<<<<<< HEAD
 
 
 document.getElementById("password").addEventListener("keyup", function (event) {
+=======
+document.getElementById("password").addEventListener("keyup", function(event) {
+>>>>>>> 53d8a357a468a473998cc93ce372f7f6ea4bd08e
     event.preventDefault();
     if (event.keyCode == 13) {
         document.getElementById("password").click(getInfo());

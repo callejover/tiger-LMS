@@ -7,8 +7,8 @@
     let output = [
         document.querySelector("#number1"),
         document.querySelector("#number2"),
-        document.querySelector("#number4"),
-        document.querySelector("#number3")
+        document.querySelector("#number3"),
+        document.querySelector("#number4")
     ];
     
 for (let i = 0; i < slider.length; i++) {
