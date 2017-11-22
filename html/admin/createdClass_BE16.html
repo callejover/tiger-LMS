@@ -47,10 +47,10 @@
                     <a href="editFeedback.html">Utvärdering</a>
                 </li>
                 <li>
-                    <a id="newsButton">Nyheter</a>
+                    <a class="modal-button" href="#myModal1">Nyheter</a>
                 </li>
                 <li>
-                    <a id="createAccountButton">Skapa konton</a>
+                    <a class="modal-button" href="#myModal2">Skapa konton</a>
                 </li>
                 <li>
                     <a href="../../index.html"id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
@@ -60,7 +60,7 @@
     </header>
 
 
-    <div id="createAccountModal" class="modal">
+    <div id="myModal2" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
@@ -97,7 +97,7 @@
     </div>
 
 
-    <div id="newsModal" class="modal">
+    <div id="myModal1" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
@@ -120,7 +120,7 @@
                         </select>
                         <textarea class="headline" rows="1" cols="10" input placeholder="Rubrik"></textarea>
                         <textarea class="newsArea" rows="10" cols="50"></textarea>
-                        <input type="date" id="dates">
+                        <input type="date" class="lesson-day" id="dates" >
                         <button id="sendNews" onclick="sendNews1()">Lägg till</button>
                         <span id="newsSent"></span>
 
