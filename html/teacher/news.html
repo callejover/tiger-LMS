@@ -22,8 +22,6 @@
 
   <link rel="stylesheet" href="../../css/mediaq.css">
 
-  <!--<link rel="import" href="teacherInfoCourses.html"> Working on -->
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
 <body>
@@ -81,15 +79,21 @@
               <option value="B">Klass 2</option>
               <option value="C">Klass 3</option>
             </select>
-
-            <table class="StudentListTable">
-				<tr>
-				  <td><strong>Elev</strong></td>
-					<td><strong>Närvaro</strong></td>
-				</tr>
-                <tbody class="StudentListBody">
-                </tbody>
-            </table>
+            
+            <div class="StudentListTableOverflow">
+                <table class="StudentListTable">
+                    <tr>
+                        <td>
+                            <strong>Elev</strong>
+                        </td>
+                        <td>
+                            <strong>Närvaro</strong>
+                        </td>
+                    </tr>
+                    <tbody class="StudentListBody">
+                    </tbody>
+                </table>
+            </div>
 
         <h3>Närvarokod</h3>
         <form name="input-attendance-teacher">
@@ -135,7 +139,6 @@
                     <input class="lesson-day" type="date">
                     <button id="sendNews" onclick="sendNews1()" >Lägg till</button>
                     <span id="newsSent"></span>
-
                 </form>
               </div>
             </div>
@@ -342,21 +345,12 @@
 
         </div>
   </div>
-  <!--wrap content found in teacherInfoCourses.html-->
-
-  <!--v(the file sycked on the next row) Contains the content of the page for simpler oraganization of the site.-->
-  <div w3-include-html="../include/teacherInfoCourses.html"="displayResult()"></div>
+  
   <!--wrap content found in teacherInfoCourses.html-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <!--<script src="../js/linkHtml.js"></script> working on-->
-  <script>
-    w3.includeHTML();
-  </script>
-
   
   <script src="../../js/attendance.js"></script>
   <script src="../../js/teacherAttendanceCode.js"></script>
-  <script src="../../js/teacherAssignmentApproval.js"></script>
   <script src="../../js/teacherAttendanceOverview.js"></script>
   <script src="../../js/teacherNews.js"></script>
   <!-- <script src="../../js/windowOnClickFunction.js"></script> -->

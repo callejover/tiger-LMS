@@ -113,6 +113,10 @@ nav  attributes Branding
     background-color: rgba(250,100,0,1);
 }
 
+#nav ul li:nth-child(1):hover {
+  background-color: rgba(176,42,9,1);
+}
+
 #nav ul li:nth-child(1) a {
  padding: 0;
 }

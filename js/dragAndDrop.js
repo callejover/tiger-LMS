@@ -44,13 +44,17 @@ function onDragLeave(event) {
 // ondrop - occurs when the dragged element is dropped on the drop target
 function onDrop(event) {
     var data = event.dataTransfer.getData("Text");
-    if (event.target.className != "groupGroup" /* && event.target.className != "dragItem" */ ) {
-        event.target = el.parentNode;
-    } else {
+    if (event.target.className == "groupGroup" /* && event.target.className != "dragItem" */ ) {
+
         event.target.style.paddingBottom = ".5em";
         event.target.style.transition = "0.3s";
     }
     event.target.appendChild(document.getElementById(data));
-    event.target.preventDefault();
+    event.stopPropagation();
 
+}
+
+// Prevents the item to be dropped in another item
+function noAllowDrop(ev) {
+    ev.stopPropagation();
 }

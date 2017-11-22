@@ -209,6 +209,10 @@ a {
     display: none;
 }
 
+.mobileShow:hover {
+    background-color: rgba(98, 0, 105, 1) !important;
+}
+
 .scrollHead {
     position: fixed;
     flex-direction: column;
@@ -814,9 +818,31 @@ ul.pricing-list li.no {
     margin-left: 3em
 }
 
+
+.StudentListTableOverflow tbody,
+.StudentListTableOverflow {
+    height: 200px;
+    overflow: auto;
+}
+
+.StudentListTableOverflow {
+    height: 200px;
+    overflow: auto;
+    border: 2px solid #8d2207;
+}
+
 .StudentListTable {
     width: 100%;
 }
+
+.StudentListBody tr:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.2)
+}
+.StudentListTable tr td {
+    padding: .4em
+}
+
+
 
 
 /* =================================================================================

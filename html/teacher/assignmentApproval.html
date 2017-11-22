@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../../css/mediaq.css">
 
     <!--<link rel="import" href="teacherInfoCourses.html"> Working on -->
+
 </head>
 
 <body>
@@ -67,7 +68,10 @@
                     <a class="modal-button" href="#myModal3">Närvaro</a>
                 </li>
                 <li>
-                    <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
+                    <a href="../../index.html" id="loginButton">
+                        <!-- LOGGA UT -->
+                        <img src="../../img/logut_icon3.png" width="35" height="50">
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -88,18 +92,20 @@
                     <option value="C">Klass 3</option>
                 </select>
 
-                <table class="StudentListTable">
-                    <tr>
-                        <td>
-                            <strong>Elev</strong>
-                        </td>
-                        <td>
-                            <strong>Närvaro</strong>
-                        </td>
-                    </tr>
-                    <tbody class="StudentListBody">
-                    </tbody>
-                </table>
+                <div class="StudentListTableOverflow">
+                    <table class="StudentListTable">
+                        <tr>
+                            <td>
+                                <strong>Elev</strong>
+                            </td>
+                            <td>
+                                <strong>Närvaro</strong>
+                            </td>
+                        </tr>
+                        <tbody class="StudentListBody">
+                        </tbody>
+                    </table>
+                </div>
 
 
                 <h3>Närvarokod</h3>
@@ -206,7 +212,7 @@
 
                     <div class="tab-group">
                         <div class="tab">
-                            <input id="tab-one" type="checkbox" name="tab">
+                            <input id="tab-one" type="radio" name="tab" onclick="checkOff()">
                             <label for="tab-one" class="tabPadding">HTML och CSS</label>
                             <div class="tab-content">
                                 <div class="assignmentsTeacher">
@@ -1314,7 +1320,7 @@
 
                     <div class="tab-group">
                         <div class="tab">
-                            <input id="tab-two" type="checkbox" name="tab">
+                            <input id="tab-two" type="radio" name="tab" onclick="checkOff()">
                             <label for="tab-two" class="tabPadding">Javascript</label>
                             <div class="tab-content">
                                 <!--infoTab-->
@@ -2422,7 +2428,7 @@
 
                     <div class="tab-group">
                         <div class="tab">
-                            <input id="tab-three" type="checkbox" name="tab">
+                            <input id="tab-three" type="radio" name="tab" onclick="checkOff()">
                             <label for="tab-three" class="tabPadding">Arbetsmetodik</label>
                             <div class="tab-content">
 
@@ -3529,7 +3535,7 @@
 
                     <div class="tab-group">
                         <div class="tab">
-                            <input id="tab-four" type="checkbox" name="tab">
+                            <input id="tab-four" type="radio" name="tab" onclick="checkOff()">
                             <label for="tab-four" class="tabPadding">Back-end utveckling</label>
                             <div class="tab-content">
                                 <div class="assignmentsTeacher">
@@ -4650,6 +4656,7 @@
         <script src="../../js/teacherNews.js"></script>
         <script src="../../js/navMenu.js"></script>
         <script src="../../js/adminEditFeedback.js"></script>
+
 </body>
 
 </html>

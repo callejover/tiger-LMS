@@ -53,10 +53,11 @@ for (i = 0; i < assignmentButton.length; i++) {
     };
 }
 
+
 // When the user clicks on <span> (x), close the modal
-assignmentClose.onclick = function () {
+assignmentClose.addEventListener("click", function() {
     assignmentModal.style.display = "none";
-};
+});
 
 // When the user clicks anywhere outside of the modal, close it
 /// Gets called in attendance.js
@@ -80,9 +81,9 @@ for (i = 0; i < assignmentFeedbackButton.length; i++) {
 }
 
 // When the user clicks on <span> (x), close the modal
-assignmentFeedbackClose.onclick = function () {
+assignmentFeedbackClose.addEventListener("click", function() {
     assignmentFeedbackModal.style.display = "none";
-};
+});
 
 // Redirects to same page when added grade
 function pageSwap() {
@@ -96,5 +97,23 @@ function windowCloseAssignmentFeedbackModal() {
         if (assignmentInput.value != "") {
             pageSwap();
         }
+    }
+}
+
+function checkOff() {
+    var allRadios = document.getElementsByName('tab');
+    var booRadio;
+    var x = 0;
+    for(x = 0; x < allRadios.length; x++){
+
+        allRadios[x].onclick = function() {
+            if(booRadio == this){
+                this.checked = false;
+                booRadio = null;
+            }
+            else {
+            booRadio = this;
+            }
+        };
     }
 }

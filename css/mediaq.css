@@ -215,8 +215,8 @@
   #createNewEducation {
     position: fixed;
     right: 0;
-    left: 0;
     bottom: 0;
+   max-width: 50%
   }
   .invisible-box {
     display: none;
