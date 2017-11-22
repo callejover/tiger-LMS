@@ -23,6 +23,8 @@
 
   <link rel="stylesheet" href="../../css/mediaq.css">
 
+  <link rel="stylesheet" href="../../css/style.css">
+
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="//js.jotform.com/JotFormAnywhere.js"></script>
@@ -31,8 +33,8 @@
 
 <body>
 
-    <header>
-      <nav id="nav">
+    <header class="cd-auto-hide-header">
+      <nav id="nav" class="cd-primary-nav">
         <div id="nav-button-max-500">
           <a href="adminStart.html">
               <img src="../../img/KYH-logo.png">
@@ -135,10 +137,11 @@
           </div>
       </div>
   </div>
-
-    <div w3-include-html="../includes/adminEditFeedbackWeekly.html"="displayResult()">
-    </div>
-    <div w3-include-html="../includes/adminEditFeedbackCourse.html"="displayResult()">
+    <div class="cd-main-content">
+      <div w3-include-html="../includes/adminEditFeedbackWeekly.html"="displayResult()">
+      </div>
+      <div w3-include-html="../includes/adminEditFeedbackCourse.html"="displayResult()">
+      </div>
     </div>
 
     <script>
