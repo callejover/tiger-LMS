@@ -1,8 +1,13 @@
 
 //Sets the input date to current date
 function setCurrentDate() {
-    document.querySelector(".lesson-day").valueAsDate = new Date();
-}
+
+   let a = document.querySelectorAll(".lesson-day");  
+
+   for(i = 0; i < a.length; i++) {      //Loops all .lesson-day on page
+       a[i].valueAsDate = new Date();   //Gives all of them a new date
+   }
+}   
 
 // ==================================================================
 
