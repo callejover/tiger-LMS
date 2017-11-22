@@ -124,12 +124,15 @@ jQuery(document).ready(function($){
 	    } else if( currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
 	    	//if scrolling down...
 	    	mainHeader.addClass('is-hidden');
-        hiddenNavWarp.style.display = "none";
-        hiddenNavButton.classList.remove("change");
+
+        if(window.innerWidth < 1200){
+          hiddenNavWarp.style.display = "none";
+          hiddenNavButton.classList.remove("change");
+        }
 	    }
 	}
 
-	function checkStickyNavigation(currentTop) {
+	/*function checkStickyNavigation(currentTop) {
 		//secondary nav below intro section - sticky secondary nav
 		var secondaryNavOffsetTop = belowNavHeroContent.offset().top - secondaryNavigation.height() - mainHeader.height();
 
@@ -162,5 +165,5 @@ jQuery(document).ready(function($){
 	    	}
 
 	    }
-	}
+	}*/
 });
