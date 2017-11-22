@@ -718,6 +718,15 @@ This is CSS only for the news.html page
     font-size: 1.5em;
 }
 
+#newsBtn {
+    width: 100%;
+    padding: 0.5em;
+    text-decoration: none;
+    border: 1px solid rgba(221, 70, 232, 0.35);
+    border-radius: 10px;
+    background-color: rgba(166, 79, 172, 0.5);
+}
+
 
 /*==========================================
 Add Animation for modal. Under construcktion for all pages testing on teacher.html
