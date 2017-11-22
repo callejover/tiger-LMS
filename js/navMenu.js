@@ -39,8 +39,6 @@ function resizeWindow() {
 
 }
 
-
-
 // Call functions with event listener
 window.addEventListener("resize", resizeWindow);
 hiddenNavButton.addEventListener("click", navShowHide);
@@ -117,18 +115,24 @@ jQuery(document).ready(function($){
 		scrolling = false;
 	}
 
-	function checkSimpleNavigation(currentTop) {
+	function checkSimpleNavigation(currentTop, x) {
 		//there's no secondary nav or secondary nav is below primary nav
 	    if (previousTop - currentTop > scrollDelta) {
 	    	//if scrolling up...
 	    	mainHeader.removeClass('is-hidden');
+
 	    } else if( currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
 	    	//if scrolling down...
 	    	mainHeader.addClass('is-hidden');
+
+        if(window.innerWidth < 1200){
+          hiddenNavWarp.style.display = "none";
+          hiddenNavButton.classList.remove("change");
+        }
 	    }
 	}
 
-	function checkStickyNavigation(currentTop) {
+	/*function checkStickyNavigation(currentTop) {
 		//secondary nav below intro section - sticky secondary nav
 		var secondaryNavOffsetTop = belowNavHeroContent.offset().top - secondaryNavigation.height() - mainHeader.height();
 
@@ -161,5 +165,5 @@ jQuery(document).ready(function($){
 	    	}
 
 	    }
-	}
+	}*/
 });
