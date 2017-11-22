@@ -71,3 +71,12 @@ Team Tigers Learning Management System
 # IF HAVE TIME DO THIS:
 1. Footer (if have time)
 2. Tim A: Logotype
+
+
+To do 171122
+1. Datum inte bara dagens
+2. Drag and drop för edit feedback
+3. Tydligare klassnamn för create i admin
+4. Backlog få en fungerande knapp för att importera exel dokument
+5. Skapa konto funkar inte.
+6. Testa allt för presentationen och gör en intressant sale pisch.
