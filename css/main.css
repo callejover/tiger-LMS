@@ -679,7 +679,7 @@ This is CSS only for the news.html page
 ===========================================================================================*/
 
 .news-head {
-    padding: 3em 0;
+    padding-bottom: 3em;
 }
 
 .news {
