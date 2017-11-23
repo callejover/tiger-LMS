@@ -58,6 +58,3 @@ function sendNews1() {
 	news.innerHTML = "";
 	news.innerHTML = "<strong> Nyheten är nu sparad.</strong>";
 }
-function swapNewsPage(){
-    newsModal.style.display = "none";
-}
