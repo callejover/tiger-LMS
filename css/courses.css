@@ -244,8 +244,6 @@ ul.pricing-list li.no {
     width: 100%;
     text-align: left;
     margin-bottom: 1em;
-    /* flex-wrap: wrap; */
-    /* margin-top: 2em; */
 }
 .teacherAssignmentTable {
     width: 49%;
@@ -256,7 +254,6 @@ ul.pricing-list li.no {
 }
 
 .allAssignmentTable th:nth-child(1) {
-    /* width: 50%; */
     padding: .5em;
     padding-left: 1em;
 }
@@ -267,7 +264,6 @@ ul.pricing-list li.no {
 
 .allAssignmentTable th:nth-child(3) {
     text-align: right;
-    /* padding-right: 1em; */
 }
 
 .assignmentButton,
