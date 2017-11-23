@@ -261,6 +261,11 @@ a {
     margin: 0.5em;
 }
 
+.featuresImg {
+    width: 100%;
+    height: auto;
+}
+
 .features,
 .pricing,
 .teachCourses,
