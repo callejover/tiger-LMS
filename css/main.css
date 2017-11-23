@@ -53,7 +53,6 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
-
 /*body*/
 
 p {
@@ -245,15 +244,6 @@ a {
     opacity: 1;
 }
 
-
-/* img{
-    display: block;
-    width: 200px;
-    height: auto;
-    border-radius: 5%;
-    z-index: 500;
-  } */
-
 .tillbaka {
     height: 100%;
     width: auto;
@@ -361,7 +351,6 @@ a {
     background: url('../img/white_tiger.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* background-size: 100% auto; */
     background-position: center, center;
 }
 
@@ -472,6 +461,7 @@ h6 {
   nav  attributes
   ====================================================================================*/
 
+
 header {
     overflow: hidden;
     position: fixed;
@@ -488,11 +478,9 @@ header {
 
 #nav .current {
     background-color: rgba(145, 0, 156, 1);
-    /* color: #d900e8; */
 }
 
 #nav ul {
-    /* display: flex; */
     flex-direction: row;
     flex-wrap: wrap;
     /* This aligns items to the end line on main-axis */
@@ -511,7 +499,6 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     align-content: flex-end;
-    /* flex-grow: 0.1; */
 }
 
 #nav ul li a {
@@ -534,7 +521,6 @@ header {
 }
 
 #nav-button-max-500 img {
-    max-width: auto;
     max-height: 70px;
 }
 
@@ -556,8 +542,6 @@ header {
 
 #nav ul li:nth-child(1) a,#nav ul li:nth-child(1) a img {
   padding: 0 0 0 0.5em;
-
-
 }
 
 #back {
@@ -568,21 +552,6 @@ header {
     background-color: rgba(0, 0, 0, 0);
     border: none;
 }
-
-
-/*  #nav > ul > li:nth-child(1) > a */
-
-
-/*
-#nav ul li a {
-  text-decoration: none;
-  color: white;
-  letter-spacing: 1px;
-  font-size: 1.3em;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-*/
 
 .modal {
     display: none;
@@ -672,6 +641,7 @@ header {
 This is CSS only for the news.html page
 ===========================================================================================*/
 
+
 .news-head {
     padding-bottom: 3em;
 }
@@ -696,7 +666,6 @@ This is CSS only for the news.html page
 }
 
 .newsDate {
-    /* padding-left: 1em; */
     flex: 1;
     font-size: 0.8em;
 }
@@ -725,6 +694,7 @@ This is CSS only for the news.html page
 /*==========================================
 Add Animation for modal. Under construcktion for all pages testing on teacher.html
 ============================================*/
+
 
 @-webkit-keyframes slideIn {
     from {
@@ -845,11 +815,10 @@ ul.pricing-list li.no {
 }
 
 
-
-
 /* =================================================================================
 Anmation for menu button on all student, teacher and admin pages
 ================================================================================= */
+
 
 .menuButton {
     /* display: inline-block; */
@@ -886,6 +855,7 @@ Anmation for menu button on all student, teacher and admin pages
 /* =================================================================================
 CSS for accounts.html on admin pages
 ================================================================================= */
+
 
 .account-content {
     background-color: rgba(98, 0, 105, 1);
@@ -947,9 +917,10 @@ CSS for accounts.html on admin pages
 }
 
 
-/*
-  For for create.html
-*/
+/* =================================================================================
+For for create.html
+================================================================================= */
+
 
 .createCoursesStudentsMiddle {
     display: flex;
@@ -978,7 +949,6 @@ CSS for accounts.html on admin pages
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    /* min-height: 100%; */
 }
 
 .createCoursesStudentsTop {
@@ -991,7 +961,6 @@ CSS for accounts.html on admin pages
 
 .createCoursesStudentsBottom {
     flex-grow: 0;
-    height:;
 }
 
 .courseContainerList,
@@ -1052,7 +1021,6 @@ button.roundButton {
 #errorMessageCourse {
     position: absolute;
     bottom: 5em;
-    /* border: 1px solid #000; */
     left: 0;
     right: 0;
     text-align: center;
