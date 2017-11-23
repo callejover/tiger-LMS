@@ -19,19 +19,11 @@
     font-style: italic;
     font-size: 80%
 }
-/* 
-#quick-evaluation-thank-you {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;    
-} */
 
 .quick-evaluation-inner {
     position: relative;
     margin: 0 5%;
 }
-
-
 
 .quick-evaluation-wrap {
     position: fixed;
@@ -55,7 +47,6 @@
     
     padding: 1em;
 }
-
 
 .glad-message,
 .sad-message,

@@ -821,7 +821,6 @@ ul.pricing-list li.no {
     margin-left: 3em
 }
 
-
 .StudentListTableOverflow tbody,
 .StudentListTableOverflow {
     height: 200px;
@@ -1203,3 +1202,4 @@ Menu hide
       -ms-transform: translateY(-100%);
           transform: translateY(-100%);
 }
+

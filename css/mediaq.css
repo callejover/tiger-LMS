@@ -13,6 +13,8 @@
   }
 }
 
+/* ======================================= */
+
 @media (min-width: 100px) and (max-width: 1080px) {
   .textContent p {
     margin: 0;
@@ -56,7 +58,7 @@
     width: 100%;
     padding: 0 1em
   }
-  /*pricing.html*/
+  
   .pricing,
   .features,
   .home {
@@ -96,7 +98,6 @@
     display: none;
   }
 
-
 /* ============================================================================ */
 
 
@@ -111,6 +112,7 @@
   #nav ul {
     flex-direction: column;
   }
+
   #nav ul li {
     /* width: 50%; */
     text-align: center;
@@ -162,8 +164,6 @@
 }
 
 
-/*@media 1200px*/
-
 
 /*====================================
   media querys 769px or less screen width
@@ -184,7 +184,7 @@
   }
   .studentAssignmentTable th:nth-child(1) {
     width: auto;
-    word-break: keep-all;
+    word-break: break-word;
   }
   .studentAssignmentTable {
     font-size: 90%;
@@ -268,10 +268,3 @@
     margin: 1em;
   }
 }
-
-
-/*====================================
-	  media querys 500px or less screen width
-	=====================================*/
-
-@media (max-width: 500px) {}

@@ -62,7 +62,6 @@
 
 label span {
     display: inline;
-    float: right;
     padding: 0 1em 0 0;
 }
 
@@ -126,8 +125,6 @@ ul.pricing-list li.no {
 .attendanceTab {
     height: auto;
 }
-
-.attendanceContent {}
 
 .attendanceMain {
     display: flex;
