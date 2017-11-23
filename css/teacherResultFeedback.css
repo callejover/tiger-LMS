@@ -2,7 +2,6 @@
 #chart_div {
     justify-content: center;
     margin: 2em 0 0 1em;
-
 }
 
 .result-text {
@@ -10,8 +9,7 @@
 }
 
 .result-text li {
-    font-size: 1em;
-    
+    font-size: 1em; 
 }
 
 .result-text p {
