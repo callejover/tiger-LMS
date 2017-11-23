@@ -24,7 +24,6 @@
   <link rel="stylesheet" href="../../css/mediaq.css">
 
 
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="//js.jotform.com/JotFormAnywhere.js"></script>
 
@@ -36,7 +35,7 @@
       <nav id="nav" class="cd-primary-nav">
         <div id="nav-button-max-500">
           <a href="adminStart.html">
-              <img src="../../img/KYH-logo.png">
+              <img src="../../img/KYH-logo.png" alt="logo">
           </a>
           <div class="menuButton" onclick="menuButton(this)">
               <div class="bar1"></div>
@@ -46,7 +45,7 @@
       </div>
         <ul class="hidden-max-500">
           <li>
-            <a href="adminStart.html"><img src="../../img/KYH-logo.png"></a>
+            <a href="adminStart.html"><img src="../../img/KYH-logo.png" alt="logo"></a>
           </li>
           <li>
             <a class="current" href="editFeedback.html">Utvärdering</a>
@@ -60,7 +59,7 @@
           </li>
 
           <li>
-            <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
+            <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" alt="login" width="35" height="50"></a>
           </li>
         </ul>
       </nav>
@@ -125,7 +124,7 @@
                           <option value="student">Elever</option>
                           <option value="teacher">Lärare</option>
                       </select>
-                      <textarea class="headline" rows="1" cols="10" input placeholder="Rubrik"></textarea>
+                      <textarea class="headline" rows="1" cols="10"  placeholder="Rubrik"></textarea>
                       <textarea class="newsArea" rows="10" cols="50"></textarea>
                       <input type="date" class="lesson-day" id="dates" >
                       <button id="sendNews" onclick="sendNews1()">Lägg till</button>
@@ -137,12 +136,13 @@
       </div>
   </div>
     <div class="cd-main-content">
-      <div w3-include-html="../includes/adminEditFeedbackWeekly.html"="displayResult()">
+      <div data-w3-include-html="../includes/adminEditFeedbackWeekly.html">
       </div>
-      <div w3-include-html="../includes/adminEditFeedbackCourse.html"="displayResult()">
+      <div data-w3-include-html="../includes/adminEditFeedbackCourse.html">
       </div>
     </div>
 
+    <script src="../../js/w3-include-html.js"></script>
     <script>
       w3.includeHTML();
     </script>

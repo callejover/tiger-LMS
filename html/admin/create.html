@@ -31,7 +31,7 @@
     <nav id="nav" class="cd-primary-nav">
             <div id="nav-button-max-500">
                 <a href="adminStart.html">
-                    <img src="../../img/KYH-logo.png">
+                    <img src="../../img/KYH-logo.png" alt="logo">
                 </a>
                 <div class="menuButton" onclick="menuButton(this)">
                     <div class="bar1"></div>
@@ -42,7 +42,7 @@
             <ul class="hidden-max-500">
                 <li>
                     <a href="adminStart.html">
-                        <img src="../../img/KYH-logo.png">
+                        <img src="../../img/KYH-logo.png" alt="Kyh-logo">
                     </a>
                 </li>
                 <li>
@@ -57,7 +57,7 @@
                     <a class="modal-button" href="#myModal2">Skapa konton</a>
                 </li>
                 <li>
-                    <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
+                    <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50" alt="logut"></a>
                 </li>
             </ul>
         </nav>
@@ -122,7 +122,7 @@
                             <option value="student">Elever</option>
                             <option value="teacher">Lärare</option>
                         </select>
-                        <textarea class="headline" rows="1" cols="10" input placeholder="Rubrik"></textarea>
+                        <textarea class="headline" rows="1" cols="10" placeholder="Rubrik"></textarea>
                         <textarea class="newsArea" rows="10" cols="50"></textarea>
                         <input type="date" class="lesson-day" id="dates" >
                         <button id="sendNews" onclick="sendNews1()">Lägg till</button>
@@ -139,7 +139,7 @@
     <div class="wrap">
         <div class="content">
             <div class="innerContent apperance">
-<h3>Skapa ny klass</h3>
+              <h3>Skapa ny klass</h3>
                 <div class="createCoursesStudents">
                     <div class="createCoursesStudentsTop">
                         <input type="text" placeholder="Skriv in det nya klassnamnet här..." class="width100">
@@ -153,7 +153,7 @@
                                 <ul>
                                     <li style="opacity: 1; transition: 1s;">
                                         <label>
-                                            <input type="checkbox" name="">
+                                            <input type="checkbox">
                                             <span>Javascript</span>
                                             <span> (Elisabeth Nilsson)</span>
                                         </label>
@@ -161,7 +161,7 @@
                                     </li>
                                     <li style="opacity: 1; transition: 1s;">
                                         <label>
-                                            <input type="checkbox" name="">
+                                            <input type="checkbox">
                                             <span>Back End Utveckling</span>
                                             <span> (Lennart Jonsson)</span>
                                         </label>
@@ -169,7 +169,7 @@
                                     </li>
                                     <li style="opacity: 1; transition: 1s;">
                                         <label>
-                                            <input type="checkbox" name="">
+                                            <input type="checkbox">
                                             <span>HTML/CSS</span>
                                             <span> (Elisabeth Nilsson)</span>
                                         </label>
@@ -177,7 +177,7 @@
                                     </li>
                                     <li style="opacity: 1; transition: 1s;">
                                         <label>
-                                            <input type="checkbox" name="">
+                                            <input type="checkbox">
                                             <span>Node.js</span>
                                             <span> (Elisabeth Nilsson)</span>
                                         </label>
@@ -185,7 +185,7 @@
                                     </li>
                                     <li style="opacity: 1; transition: 1s;">
                                         <label>
-                                            <input type="checkbox" name="">
+                                            <input type="checkbox">
                                             <span>PHP</span>
                                             <span> (Lennart Jonsson)</span>
                                         </label>
@@ -193,7 +193,7 @@
                                     </li>
                                     <li style="opacity: 1; transition: 1s;">
                                         <label>
-                                            <input type="checkbox" name="">
+                                            <input type="checkbox">
                                             <span>Serverar</span>
                                             <span> (Hans Pettersson)</span>
                                         </label>
@@ -203,7 +203,7 @@
 
                                     <li style="opacity: 1; transition: 1s;">
                                         <label>
-                                            <input type="checkbox" name="">
+                                            <input type="checkbox">
                                             <span>Handel och försäljning</span>
                                             <span> (Erik Johansson)</span>
                                         </label>
@@ -212,7 +212,7 @@
 
                                     <li style="opacity: 1; transition: 1s;">
                                         <label>
-                                            <input type="checkbox" name="">
+                                            <input type="checkbox">
                                             <span>Bokföring och redovisning</span>
                                             <span> (Margareta Karlsson)</span>
                                         </label>
@@ -221,7 +221,7 @@
 
                                     <li style="opacity: 1; transition: 1s;">
                                         <label>
-                                            <input type="checkbox" name="">
+                                            <input type="checkbox">
                                             <span>Aktier och privatekonomi</span>
                                             <span> (Eva Eriksson)</span>
                                         </label>
@@ -248,7 +248,7 @@
                                 </select>
                                 <div class="image-upload excelButton">
                                     <label for="file-input">
-                                        <img src="../../img/excel.png" />
+                                        <img src="../../img/excel.png" alt="exel" />
                                     </label>
 
                                     <input id="file-input" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
@@ -268,7 +268,7 @@
                                 </ul>
                             </div>
                             <div class="studentContainerList">
-                                <select name="studentList" id="">
+                                <select name="studentList">
                                     <option selected="" value="" disabled>Välj student...</option>
                                     <option value="0">Maria Johansson</option>
                                     <option value="1">Margareta Karlsson</option>
@@ -322,7 +322,7 @@
 
                                 <div class="image-upload excelButton">
                                     <label for="file-input">
-                                        <img src="../../img/excel.png" />
+                                        <img src="../../img/excel.png" alt="exel" />
                                     </label>
 
                                     <input id="file-input" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
@@ -354,7 +354,6 @@
     <script src="../../js/teacherNews.js"></script>
 
 
-    <script src="../../js/removeItems.js"></script>
 
     <script src="../../js/navMenu.js"></script>
 
