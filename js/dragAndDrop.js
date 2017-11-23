@@ -9,15 +9,6 @@ function onDragStart(event) {
     }
 }
 
-// ondrag - occurs when an element is being dragged
-function onDrag(event) {}
-
-// ondragend - occurs when the user has finished dragging the element
-function onDragEnd(event) {}
-
-
-
-
 // Events fired on the drop target:
 // ondragenter - occurs when the dragged element enters the drop target
 function ondragenter(event) {}
