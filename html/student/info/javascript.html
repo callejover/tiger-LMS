@@ -7,14 +7,19 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
 	<!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
 	<link rel="stylesheet" href="../../../css/reset.css">
 	<link rel="stylesheet" href="../../../css/main.css">
-	
+
 	<link rel="stylesheet" href="../../../css/feedback.css">
 	<link rel="stylesheet" href="../../../css/dailyFeedback.css">
-	
+	<link rel="stylesheet" href="../../../css/brandingKyh.css">
+
 	<link rel="stylesheet" href="../../../css/mediaq.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 
 	<title>Tiger-LMS | Javascript Kursinformation</title>
@@ -29,14 +34,14 @@
 				<span class="close">&times;</span>
 			<!-- Closing X icon in modal -->
 				<div class="header">
-					<h2>Närvaro</h2>
+					<h3>Närvaro</h3>
 					<form name="input-attendance">
 						<div class="attendance">
 							<p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
 							<p>Koden är endast giltlig i 5 minuter!</p>
 							<input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
 							<button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button><br>
-							<span class="wrongCode"></span>          
+							<span class="wrongCode"></span>
 						</div>
 					</form>
 				</div>
@@ -44,12 +49,19 @@
 		</div>
 		<!-- div attendanceModal opens the login box on index screen -->
 
-		<header>
-			<nav id="nav">
-				<div id="nav-button-max-500">MENY</div>
+		<header class="cd-auto-hide-header">
+      <nav id="nav" class="cd-primary-nav">
+				<div id="nav-button-max-500">
+					<a href="../courses.html"><img src="../../../img/KYH-logo.png"></a>
+					<div class="menuButton" onclick="menuButton(this)">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</div>
 				<ul class="hidden-max-500">
 					<li>
-						<a href="../courses.html">logotypeFuture</a>
+						<a href="../courses.html"><img src="../../../img/KYH-logo.png"></a>
 					</li>
 					<li>
 						<a href="../news.html">Nyheter</a>
@@ -64,19 +76,21 @@
 						<a id="attendanceButton">Närvaro</a>
 					</li>
 					<li>
-						<a href="../../../index.html">logga ut</a>
+						<a href="../../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../../img/logut_icon3.png" width="35" height="50"></a>
 					</li>
 				</ul>
 			</nav>
 		</header>
-		
+
 	<div class="wrap">
 		<div class="content content-pricing">
 			<div class="innerContent apperance">
-				<div class="back-bar"><button id="back" onclick="goBack()"><--Tillbaka</button></div>
-				<h2>Javascript</h2><br> Utbildningsnummer: 201514480-2 och 201514500-2<br> Fastställd av ledningsgruppen: xx<br>
-				<h2>Kurspoäng</h2><br> 110 poäng<br>
-				<h2>Innehåll</h2><br>
+				<div class="back-bar">
+						<button id="back" onclick="goBack()"><img class="tillbaka" src="../../../img/Tillbaka.png"></button>
+				</div>
+				<h3>Javascript</h3><br> Utbildningsnummer: 201514480-2 och 201514500-2<br> Fastställd av ledningsgruppen: xx<br>
+				<h3>Kurspoäng</h3><br> 110 poäng<br>
+				<h3>Innehåll</h3><br>
 				<p>Kursen ger de studerande avancerade kunskaper och färdigheter i att programmera och strukturera Javascript-projekt. De
 					studerande får kunskaper om att det finns olika Javascript-versioner och lär sig jämföra dessa samt får förståelse för
 					deras olika kompabilitet med olika webbläsare och plattformar. De studerande ges goda kunskaper gällande att använda
@@ -115,10 +129,10 @@
 				redogöra utförligt för kunskapsmålen och med mycket gott handlag självständigt uppnå de färdigheter och kompetenser som
 				kursens mål sätter upp.
 			</div>
-		</div>	
+		</div>
 	</div>
-	
-	
+
+
 
     <div class="quick-evaluation-wrap">
         <div class="quick-evaluation-content apperance">
@@ -149,7 +163,9 @@
 	<script src="../../../js/studentDailyFeedback.js"></script>
 	<script src="../../../js/attendance.js"></script>
 	<script src="../../../js/teacherFeedback.js"></script>
-  
+
+	<script src="../../../js/navMenu.js"></script>
+
 </body>
 
 </html>

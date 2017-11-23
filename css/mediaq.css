@@ -15,6 +15,12 @@
 
 /* ======================================= */
 
+@media (min-width: 100px) and (max-width: 1080px) {
+  .textContent p {
+    margin: 0;
+  }
+}
+
 @media (max-width: 1200px) {
   body {
     background-size: auto 100%;
@@ -24,6 +30,7 @@
   }
   .mobileShow {
     display: flex;
+    z-index: 200;
   }
   .index {
     /*companion to wrap but just for index.html*/
@@ -33,7 +40,8 @@
     order: 2;
     width: 100%;
     margin: 0;
-    margin-top: -17.5em;
+    /* margin-top: -17.5em; */
+    margin-top: -7.5em;
     top: 0;
   }
   .features {
@@ -48,10 +56,12 @@
   .quick-evaluation-content {
     margin: 5% 0;
     width: 100%;
+    padding: 0 1em
   }
   
   .pricing,
-  .features {
+  .features,
+  .home {
     width: 50%;
     margin: 2.5% 0;
     min-height: 2.5em;
@@ -59,6 +69,18 @@
     border: none;
     padding: 0.9em;
     line-height: normal;
+  }
+  .textContent {
+    margin-top: 2em;
+  }
+  .pricing_text {
+    margin: 0 2em 2em 2em;
+  }
+  .marLeft {
+    margin: 0 0 0.5em 0.5em;
+  }
+  .teachWrap {
+    padding-top: 2em;
   }
   .pricingContent {
     margin: 5% 0;
@@ -75,14 +97,33 @@
   .scrollHead {
     display: none;
   }
-  
+
+/* ============================================================================ */
+
+
+  #nav-button-max-500 {
+    display: flex;
+  }
+  /*menu all .html files*/
+  #nav .current {
+    background-color: rgba(145, 0, 156, 0);
+    /* color: #d900e8; */
+  }
+  #nav ul {
+    flex-direction: column;
+  }
+
   #nav ul li {
-    width: 50%;
+    /* width: 50%; */
     text-align: center;
+  }
+  #nav ul li a {
+    display: block;
+    padding: 0;
   }
   #nav ul li:nth-child(1) {
     flex-grow: 0;
-    display: block;
+    display: none;
     padding: 2em;
   }
   .quick-evaluation-wrap {
@@ -109,9 +150,17 @@
     border-top-left-radius: 0;
   }
   .modal-content {
-    width: 50%;
+    width: 35%;
     margin-top: 12em;
   }
+  #groupWrap {
+    display: none;
+  }
+  .displaysUnder1200 {
+    display: flex;
+  }
+
+  
 }
 
 
@@ -140,27 +189,82 @@
   .studentAssignmentTable {
     font-size: 90%;
   }
-  
   .studentAssignmentTable th:nth-child(3) a {
-   display: inline-block;
+    display: inline-block;
   }
   .modal-content {
     width: 90%;
   }
   .innerContent {
-    padding: 0 0.2em;
+    margin-top: 2.6em;
   }
   label.tabPadding {
     font-size: 80%;
   }
-    
   .assignments {
     align-content: flex-start;
     padding-left: 0;
   }
-
   .teachCourses {
     width: 90%;
   }
-  
+  .assignmentsTeacher {
+    flex-direction: column
+  }
+  .teacherAssignmentTable {
+    width: 100%
+  }
+  #createNewEducation {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    max-width: 50%;
+    width: 50%;
+  }
+  .invisible-box {
+    display: none;
+  }
+  .textContentApparance {
+    font-size: 1.1em;
+
+    background: url('../img/white_tiger_mobile.jpg') no-repeat;
+    background-size: cover;
+
+    background-attachment: fixed;
+    /* background-size: 100% auto; */
+    background-position: center, center;
+  }
+  #chart8,
+  #chart-7,
+  #chart6,
+  #chart5,
+  #chart2,
+  #chart_div {
+    /* overflow: hidden;
+    width: 330px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-left: -2em; */
+  }
+  #chart_div {
+    margin: 0;
+  }
+  #chart8:after,
+  #chart-7:after,
+  #chart6:after,
+  #chart5:after,
+  #chart2:after,
+  #chart_div:after {
+    content: "Hur upplever du dagen?";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2em;
+    text-align: center;
+    margin-left: 4em;
+  }
+  .result-text {
+    margin: 1em;
+  }
 }

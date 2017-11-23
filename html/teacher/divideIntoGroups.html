@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Tiger-LMS | Gruppindelning</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <link rel="stylesheet" href="../../css/courses.css">
+    <link rel="stylesheet" href="../../css/teachInfoCourses.css">
+    <link rel="stylesheet" href="../../css/divideIntoGroups.css">
+
+    <link rel="stylesheet" href="../../css/brandingKyh.css">
+
+    <link rel="stylesheet" href="../../css/mediaq.css">
+
+    <!--<link rel="import" href="teacherInfoCourses.html"> Working on -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header class="cd-auto-hide-header">
+      <nav id="nav" class="cd-primary-nav">
+            <div id="nav-button-max-500">
+                <a href="courses.html">
+                    <img src="../../img/KYH-logo.png">
+                </a>
+                <div class="menuButton" onclick="menuButton(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <ul class="hidden-max-500">
+                <li>
+                    <a href="courses.html">
+                        <img src="../../img/KYH-logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="news.html">Nyheter</a>
+                </li>
+                <li>
+                    <a href="resultFeedback.html">Resultat</a>
+                </li>
+                <li>
+                    <a class="current" href="divideIntoGroups.html">Gruppindelning</a>
+                </li>
+                <li>
+                    <a href="assignmentApproval.html">Betyg</a>
+                </li>
+                <li>
+                    <a class="modal-button" href="#myModal3">Närvaro</a>
+                </li>
+                <li>
+                    <a href="../../index.html" id="loginButton">
+                        <!-- LOGGA UT -->
+                        <img src="../../img/logut_icon3.png" width="35" height="50">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- Hidden before clicking logiout -->
+    <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Closing X icon in modal -->
+            <div class="header">
+                <h3>Närvarolista</h3>
+                <select id="ClassSelect" onchange="classChanged()">
+                    <option value="A">Klass 1</option>
+                    <option value="B">Klass 2</option>
+                    <option value="C">Klass 3</option>
+                </select>
+
+                <div class="StudentListTableOverflow">
+                    <table class="StudentListTable">
+                        <tr>
+                            <td>
+                                <strong>Elev</strong>
+                            </td>
+                            <td>
+                                <strong>Närvaro</strong>
+                            </td>
+                        </tr>
+                        <tbody class="StudentListBody">
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Närvarokod</h3>
+                <form name="input-attendance-teacher">
+                    <div class="attendance">
+                        <p>Välj den klass du vill skapa en kod till.</p>
+                        <p>När du valt klass, tryck på "Skapa kod" för att få en kod generad.</p>
+
+                        <select id="teacher-code">
+                            <!-- Choose your class -->
+                            <option value="FE16">FE16</option>
+                            <option value="FE17">FE17</option>
+                        </select>
+                        <input class="lesson-day" type="date">
+                        <!-- Choose your lesson date -->
+                        <button id="code-submit" type="submit" onclick="createCode()">Skapa kod</button>
+                    </div>
+                    <!--attendance-->
+                </form>
+
+            </div>
+            <!--header-->
+        </div>
+        <!--modal-content-->
+    </div>
+    <!-- div attendanceModal opens the login box on index screen -->
+
+    <div class="wrap index teachWrap">
+        <div class="innerContent apperance">
+            <h3>Gruppindelning</h3>
+
+            <div class="displaysUnder1200">
+                <p>Gruppindelning är ej möjlig i mobilvy</p>
+            </div>
+
+            <div id="groupWrap">
+                <div class="groupLeft">
+                    <label for="numGroups">Antal grupper:</label>
+                    <input id="numGroups" type="number" value="2" min="2" max="40" onchange="groupGenerateGroups()">
+                    <button onclick="groupAutoFillPerGroup()">Autofyll</button>
+                    <div id="numGroupsMessge"></div>
+                    <br>
+                    <label for="numStudents">Antal elver per grupp: </label>
+                    <input id="numStudents" type="number" value="2" min="2" max="200">
+                    <button onclick="groupAutoFillPerStudent()">Autofyll</button>
+                    <div id="numStudentsMessge"></div>
+
+                </div>
+                <div class="groupRight">
+                    <label for="groupsSelectList">Klass: </label>
+                    <select name="" id="groupsSelectList" onchange="groupGenerateClassListAndGroups()">
+                        <option value="0">FE16</option>
+                        <option value="1">FE17</option>
+                        <option value="2">BE17</option>
+                        <option value="3">BE16</option>
+                    </select>
+                    <span id="groupsSelectListCount"></span>
+
+                </div>
+                <div class="groupLeft">
+                    <div id="groupGroups">
+
+                    </div>
+                </div>
+                <div class="groupGroup" id="groupClassList" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)">
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <!--wrap content found in teacherInfoCourses.html-->
+
+    <!--wrap content found in teacherInfoCourses.html-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="../../js/attendance.js"></script>
+    <script src="../../js/teacherAttendanceCode.js"></script>
+    <script src="../../js/teacherAttendanceOverview.js"></script>
+
+    <script src="../../js/dragAndDrop.js"></script>
+    <script src="../../js/divideIntoGroups.js"></script>
+
+    <script src="../../js/navMenu.js"></script>
+    <script src="../../js/teacherNews.js"></script>
+
+
+</body>
+
+</html>
+
+<!-- Tested code:
+1. <object data="html/stuff_to_include.html"> </object> /*imports an hole web page to the area that it's set in*/
+
+
+-->

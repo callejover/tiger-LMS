@@ -10,6 +10,7 @@
 
         <title>Tiger-LMS | Priser</title>
 
+        <link rel="shortcut icon" href="../img/favicon.ico">
         <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
         <link rel="stylesheet" href="../css/reset.css"><!--Reset css-->
         <link rel="stylesheet" href="../css/main.css"><!--main styling and funkutionalety-->
@@ -24,13 +25,15 @@
 
       <header>
         <nav id="nav">
-            <div id="nav-button-max-500">MENY</div>
+            <!-- <div id="nav-button-max-500">MENY</div> -->
             <ul class="hidden-max-500">
-              <li><a href="../index.html">logotypeFuture</a></li>
+              <li class="mobileShow"><a href="../index.html"><img src="../img/logoSmal.png"></a></li>
               <li class="mobileHide"><a href="../index.html">Start</a></li>
               <li class="mobileHide"><a href="features.html">Funktioner</a></li>
-              <li class="mobileHide"><a href="pricing.html">Priser</a></li>
-              <li><a id="loginButton">LOGGA IN</a></li>
+              <li class="mobileHide"><a class="current" href="pricing.html">Priser</a></li>
+
+              <li><a class="modal-button" id="loginButton1" href="#myModal3">&nbsp;</a></li>
+
             </ul>
         </nav>
     </header>
@@ -38,19 +41,19 @@
 
     <!-- Hidden before clicking loginButton -->
 
-    <div id="loginModal" class="modal">
+    <div id="myModal3" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>  <!-- Closing X icon in modal -->
         <div class="header">
-          <h1>Logga in</h1>
+          <h3>Logga in</h3>
             <form name="login">  <!-- Form for user input -->
               <div class="login">
-                
+
                         <input type="text" autofocus="autofocus" placeholder="username" id="username"><br>
                         <input type="password" class="login" placeholder="password" id="password"><br>
                         <button type="button" class="login" onclick="getInfo()">Logga in</button>
                         <span id="wrongPass"></span>
-                
+
               </div>
             </form>
         </div>
@@ -65,66 +68,83 @@
                 Funktioner
               </a>
             </div><!--freatures-->
-            <div class="pricing apperance">
-              <a href="../html/pricing.html" class="click">
-                Priser
+            <div class="home apperance">
+              <a href="../index.html" class="click">
+                Hem
               </a>
             </div><!--pricing-->
           </div><!--content mobile-->
           <div class="content dark">
             <div class="pricingAjust">
                 <div class="pricingContent apperance">
-                  <h2>Gratis</h2>
+                  <h3>Gratis</h3>
                   <h4>0kr</h4>
-                  <p>Bacon ipsum dolor amet ground round pork chop chicken porchetta short ribs. T-bone doner picanha brisket kielbasa shank. Meatloaf picanha rump tail jowl short ribs landjaeger beef ribs chuck beef burgdoggen. Fatback bacon ribeye shank hamburger.</p>
-
+ 
                   <ul class="pricing-list">
-                    <li class="yes">Ground round pork</li>
-                    <li class="yes">Kielbasa shank</li>
-                    <li class="no">Short ribs</li>
-                    <li class="no">Chicken porchetta</li>
-                    <li class="no">T-bone doner</li>
-                    <li class="no">Beef burgdoggen</li>
-                    <li class="no">Meatloaf</li>
-                    <li class="no">Landjaeger beef</li>
+                    <li class="yes">Ta del och sätt betyg</li>
+                    <li class="yes">Kursöversikt</li>
+                    <li class="yes">Skapa kurser (max 5)</li>
+                    <li class="yes">Skapa klasser (max 2)</li>
+                    <li class="yes">Skapa utbildningar (max 1)</li>
+                    <li class="yes">Studenter (obegränsat)</li>
+                    <li class="yes">Lärare (max 5)</li>
+                    <li class="yes">Admin (max 1)</li>
+                    <li class="yes">Skriv och ta del av nyheter</li>
+                    <li class="yes">Skapa kod och ta del närvaro</li>
+                    <li class="yes">Lagring (5 GB)</li>
+                    <li class="no">Skapa och ta del av utvärderningar</li>
+                    <li class="no">Skapa och ge Feedback</li>
+                    <li class="no">Eget uteseende för skolan</li>
+                    <li class="no">Gruppindelning</li>
                   </ul>
 
                   <button>Använd gratis</button>
 
                 </div><!--pricingContent-->
                 <div class="pricingContent apperance">
-                  <h2>Standard</h2>
+                  <h3>Standard</h3>
                   <h4>56kr/mån</h4>
-                  <p>Bacon ipsum dolor amet ground round pork chop chicken porchetta short ribs. T-bone doner picanha brisket kielbasa shank. Meatloaf picanha rump tail jowl short ribs landjaeger beef ribs chuck beef burgdoggen. Fatback bacon ribeye shank hamburger.</p>
 
                   <ul class="pricing-list">
-                    <li class="yes">Ground round pork</li>
-                    <li class="yes">Kielbasa shank</li>
-                    <li class="yes">Short ribs</li>
-                    <li class="yes">Chicken porchetta</li>
-                    <li class="no">T-bone doner</li>
-                    <li class="no">Beef burgdoggen</li>
-                    <li class="no">Meatloaf</li>
-                    <li class="no">Landjaeger beef</li>
+                    <li class="yes">Ta del och sätt betyg</li>
+                    <li class="yes">Kursöversikt</li>
+                    <li class="yes">Skapa kurser (max 20)</li>
+                    <li class="yes">Skapa klasser (max 8)</li>
+                    <li class="yes">Skapa utbildningar (max 10)</li>
+                    <li class="yes">Studenter (obegränsat)</li>
+                    <li class="yes">Lärare (max 15)</li>
+                    <li class="yes">Admin (max 5)</li>
+                    <li class="yes">Skriv och ta del av nyheter</li>
+                    <li class="yes">Skapa kod och ta del närvaro</li>
+                    <li class="yes">Lagring (20 GB)</li>
+                    <li class="yes">Skapa och ta del av utvärderningar</li>
+                    <li class="yes">Skapa och ge Feedback</li>
+                    <li class="no">Eget uteseende för skolan</li>
+                    <li class="no">Gruppindelning</li>
                   </ul>
 
                   <button>Köp standard</button>
 
                 </div><!--pricingContent-->
                 <div class="pricingContent apperance">
-                  <h2>Pro</h2>
+                  <h3>Proffs</h3>
                   <h4>199 kr/mån</h4>
-                  <p>Bacon ipsum dolor amet ground round pork chop chicken porchetta short ribs. T-bone doner picanha brisket kielbasa shank. Meatloaf picanha rump tail jowl short ribs landjaeger beef ribs chuck beef burgdoggen. Fatback bacon ribeye shank hamburger.</p>
-
                   <ul class="pricing-list">
-                    <li class="yes">Ground round pork</li>
-                    <li class="yes">Kielbasa shank</li>
-                    <li class="yes">Short ribs</li>
-                    <li class="yes">Chicken porchetta</li>
-                    <li class="yes">T-bone doner</li>
-                    <li class="yes">Beef burgdoggen</li>
-                    <li class="yes">Meatloaf</li>
-                    <li class="yes">Landjaeger beef</li>
+                    <li class="yes">Ta del och sätt betyg</li>
+                    <li class="yes">Kursöversikt</li>
+                    <li class="yes">Skapa kurser (obegränsat)</li>
+                    <li class="yes">Skapa klasser (obegränsat)</li>
+                    <li class="yes">Skapa utbildningar (obegränsat)</li>
+                    <li class="yes">Studenter (obegränsat)</li>
+                    <li class="yes">Lärare (obegränsat)</li>
+                    <li class="yes">Admin (obegränsat)</li>
+                    <li class="yes">Skriv och ta del av nyheter</li>
+                    <li class="yes">Skapa kod och ta del närvaro</li>
+                    <li class="yes">Lagring (Obegränsat)</li>
+                    <li class="yes">Skapa och ta del av utvärderningar</li>
+                    <li class="yes">Skapa och ge Feedback</li>
+                    <li class="yes">Eget uteseende för skolan</li>
+                    <li class="yes">Gruppindelning</li>
                   </ul>
 
                   <button>Köp pro</button>
@@ -134,7 +154,7 @@
           </div><!--content dark-->
           <div class="content">
             <div class="innerContent apperance">
-                <h2>Ytterligare prisinformation</h2>
+                <h3 class="marLeft">Ytterligare prisinformation</h3>
                 <img class="pricing_pic" src="../img/pricing_pic.png" alt="Pricing Picture">
                 <p class="pricing_text">Bacon ipsum dolor amet ground round pork chop chicken porchetta short ribs. T-bone doner picanha brisket kielbasa shank. Meatloaf picanha rump tail jowl short ribs landjaeger beef ribs chuck beef burgdoggen. Fatback bacon ribeye shank hamburger.
                   <br>
@@ -150,7 +170,8 @@
         </div><!--wrap-->
 
       <script src="../js/login.js"></script>
-      
+      <script src="../js/teacherNews.js"></script>
+
 
     </body>
 </html>

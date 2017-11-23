@@ -1,0 +1,81 @@
+/* .wrap-admin {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: auto;
+    justify-content: flex-start;
+    background-color: rgba(255,242,255,0.9);
+  } */
+
+
+/* .circle-plus {
+    padding: 5% 5%;
+    background-color: #BE3000;
+    border-radius: 50%;
+    text-decoration: none;
+} */
+
+.invisible-box {
+    opacity: 0;
+}
+
+.toned-down {
+    opacity: 0.6;
+}
+
+.classes1 {
+    background: #DD5800 url('http://www.simpalm.com/wp-content/uploads/2016/06/front-end-development.png') no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.classes2 {
+    background: #DD5800 url('http://media.arenaekonomi.se/2010/12/iStock_000003655794Small-647x320.jpg') no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.classes3 {
+    background: #DD5800 url('../img/backend2.png') no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.new {
+    background-color: #DD5800;
+}
+
+.new:hover {
+    background-color: rgba(250,100,0,1);
+}
+
+.classes1:hover, .classes2:hover, .classes3:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.teachCourses a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px #000;
+}
+
+.teachCourses a:hover {
+    color: #000000;
+    text-shadow: 2px 2px 0px #FFFFFF;
+    font-weight: bold;
+}
+
+
+
+
+
+
+

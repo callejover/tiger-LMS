@@ -10,6 +10,7 @@
 
         <title>Tiger-LMS | Funktioner</title>
 
+        <link rel="shortcut icon" href="../img/favicon.ico">
         <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
         <link rel="stylesheet" href="../css/reset.css"><!--Reset css-->
         <link rel="stylesheet" href="../css/main.css"><!--main styling and funkutionalety-->
@@ -24,23 +25,24 @@
 
       <header>
         <nav id="nav">
-            <div id="nav-button-max-500">MENY</div>
+            <!-- <div id="nav-button-max-500">MENY</div> -->
             <ul class="hidden-max-500">
-              <li><a href="../index.html">logotypeFuture</a></li>
+              <li class="mobileShow"><a href="../index.html"><img src="../img/logoSmal.png"></a></li>
               <li class="mobileHide"><a href="../index.html">Start</a></li>
-              <li class="mobileHide"><a href="features.html">Funktioner</a></li>
+              <li class="mobileHide"><a class="current" href="features.html">Funktioner</a></li>
               <li class="mobileHide"><a href="pricing.html">Priser</a></li>
-              <li><a id="loginButton">LOGGA IN</a></li>
+              <li><a class="modal-button" id="loginButton1" href="#myModal3">&nbsp;</a></li>
+
             </ul>
         </nav>
     </header>
 
         <!-- Hidden before clicking loginButton -->
-          <div id="loginModal" class="modal">
+          <div id="myModal3" class="modal">
               <div class="modal-content">
                 <span class="close">&times;</span>  <!-- Closing X icon in modal -->
                 <div class="header">
-                  <h1>Logga in</h1>
+                  <h3>Logga in</h3>
                     <form name="login">  <!-- Form for user input -->
                       <div class="login">
 
@@ -59,11 +61,11 @@
         <div class="wrap">
 
           <div class="content mobile mobileShow">
-            <div class="features apperance" href"html/features.html">
-              <a href="../html/features.html" class="click">
-                Funktioner
+            <div class="home apperance">
+              <a href="../index.html" class="click">
+                Hem
               </a>
-            </div><!--freatures-->
+            </div><!--pricing-->
             <div class="pricing apperance">
               <a href="../html/pricing.html" class="click">
                 Priser
@@ -72,25 +74,21 @@
           </div><!--content mobile-->
 
               <div class="scrollHead">
-                  <nav>
+                  <nav id="dots">
                       <ul>
-                          <li><a href="#selection1" class="scrollSticker active"></a></li>
-                          <br>
-                          <li><a href="#selection2" class="scrollSticker"></a></li>
-                          <br>
-                          <li><a href="#selection3" class="scrollSticker"></a></li>
-                          <br>
-                          <li><a href="#selection4" class="scrollSticker"></a></li>
-
+                          <li><a href="#selection1" class="highlight par"></a></li>
+                          <li><a href="#selection2" class="highlight par"></a></li>
+                          <li><a href="#selection3" class="highlight par"></a></li>
+                          <li><a href="#selection4" class="highlight par"></a></li>
                       </ul>
                   </nav>
               </div><!-- scrollHead -->
               <div>
-                  <section id="selection1" class="par">
+                  <section id="selection1" class="section highlight">
                     <div class="content scroll">
                       <div class="innerContent apperance">
-                          <h2>Enkel översik</h2>
-                          <p>
+                          <h3 class="marLeft">Enkel översikt</h3>
+                          <p class="pricing_text">
                             Med Tiger-LMS så ser du snabbt och enkelt vilka kurser du har och den informationen som rör de specifika kurserna. Och detta på ett lätt sätt som alla kan behärska.
                             <br><br>
                             Som elev kan du se information om kursen och om den är pågående eller avslutad och även vad du har för betyg i de kurser som du redan har avslutat.
@@ -98,21 +96,21 @@
                       </div><!--innerContent-->
                     </div><!--content-->
                   </section>
-                  <section id="selection2" class="par">
+                  <section id="selection2" class="section highlight">
                     <div class="content dark scroll">
                       <div class="innerContent apperance">
-                          <h2>Kommunicera med skolan</h2>
-                          <p>
+                          <h3 class="marLeft">Kommunicera med skolan</h3>
+                          <p class="pricing_text">
                             I tigerLMS så finns det inbyggt kraftfulla kommunikationsverktyg för att direkt kommunicera personal eller att ge feedback efter veckor och månader för att kunna påverka din utbildning. Du kommer även kunna ge feedback utifrån varje avslutad kurs för att kunna ge mer detaljerad inte i syfte att utveckla utbildningen framåt.
                           </p>
                       </div><!--innerContent-->
                     </div><!--content dark-->
                   </section>
-                  <section id="selection3" class="par">
+                  <section id="selection3" class="section highlight">
                     <div class="content scroll">
                       <div class="innerContent apperance">
-                          <h2>Vara på plats</h2>
-                          <p>
+                          <h3 class="marLeft">Vara på plats</h3>
+                          <p class="pricing_text">
                             Att registers närvaro är naturligt och enkelt med tiger-LMS verktyg där du får en kod från din lärare som du sedan skriver in i tiger-LMS som automatisk registrerar att du är på plats.
                             <br><br>
                             Som lärare är det enkelt att hantera närvaron då du har kontroll hur länge eleverna kan registers sin närvaro som i sin tur eliminerar fusk med närvaro. Du kan sedan enkelt se vilka som har varit närvarande.
@@ -120,11 +118,11 @@
                       </div><!--innerContent-->
                     </div><!--content -->
                   </section>
-                  <section id="selection4" class="par">
+                  <section id="selection4" class="section highlight">
                     <div class="content dark scroll">
                       <div class="innerContent apperance">
-                          <h2>Uppgifter</h2>
-                          <p>
+                          <h3 class="marLeft">Uppgifter</h3>
+                          <p class="pricing_text">
                             Hantering av uppgifter är enkelt och strukturerat i sin presentation att du som elev kan lätt förstå vad du behöva i varje uppgift.
                             <br><br>
                             Det hjälper även dig som lärare att enkelt kunna se vem som har lämnat in vad. Som lärare kan du även lägga till andra element i from av uppgifter som är betygs grundande.
@@ -136,8 +134,11 @@
 
         </div><!--wrap-->
 
+
       <script src="../js/login.js"></script>
       <script src="../js/jquery.ScrollDots.js"></script>
       <script src="../js/jquery.combinedScroll.js"></script>
+      <script src="../js/teacherNews.js"></script>
+      <script src="../js/currentDotsNav.js"></script>
     </body>
 </html>

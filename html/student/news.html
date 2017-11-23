@@ -9,15 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Tiger-LMS | Nyheter</title>
-    
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
     <!-- <link rel="shortcut icon" href="../../../img/tiger.png" /> -->
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/main.css">
 
     <link rel="stylesheet" href="../../css/courses.css">
     <link rel="stylesheet" href="../../css/dailyFeedback.css">
+    <link rel="stylesheet" href="../../css/brandingKyh.css">
 
     <link rel="stylesheet" href="../../css/mediaq.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 </head>
 
@@ -26,12 +30,20 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <header>
-        <nav id="nav">
-            <div id="nav-button-max-500">MENY</div>
+    <header class="cd-auto-hide-header">
+      <nav id="nav" class="cd-primary-nav">
+            <div id="nav-button-max-500">
+                <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
+                <div class="menuButton" onclick="menuButton(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+
             <ul class="hidden-max-500">
                 <li>
-                    <a href="courses.html">logotypeFuture</a>
+                    <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
                 </li>
                 <li>
                     <a class="current" href="news.html">Nyheter</a>
@@ -43,10 +55,10 @@
                     <a href="courseFeedback.html">Kurs utv.</a>
                 </li>
                 <li>
-                    <a id="attendanceButton">Närvaro</a>
+                    <a class="modal-button" href="#myModal1">Närvaro</a>
                 </li>
                 <li>
-                    <a href="../../index.html">logga ut</a>
+                    <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
                 </li>
             </ul>
         </nav>
@@ -57,19 +69,19 @@
 
     <!-- Hidden before clicking loginButton -->
 
-    <div id="attendanceModal" class="modal">
+    <div id="myModal1" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
         <!-- Closing X icon in modal -->
             <div class="header">
-                <h2>Närvaro</h2>
+                <h3>Närvaro</h3>
                 <form name="input-attendance">
                     <div class="attendance">
                         <p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
                         <p>Koden är endast giltlig i 5 minuter!</p>
                         <input type="text" autofocus="autofocus" placeholder="Lektionskod" id="input-attendance"><br>
                         <button type="submit" onclick="checkAttendance()">Bekräfta närvaro</button><br>
-                        <span class="wrongCode"></span>          
+                        <span class="wrongCode"></span>
                     </div>
                 </form>
             </div>
@@ -80,50 +92,68 @@
     <div class="wrap">
         <div class="content content-pricing">
             <div class="innerContent apperance">
-                <div class="news-head">
-                        <h2>Nyheter</h2>
-                        <p>Här kan du som elev ta del av nyheter som rör dina kurser.<br>
-                        Välj kurs i listan och ta del av nyheterna som rör just den kursen.</p>
-                </div>
+
+                <h3>Nyheter</h3>
+                <p>Här kan du som elev ta del av nyheter som rör dina kurser.<br>
+                    Välj kurs i listan och ta del av nyheterna som rör just den kursen.</p>
+
                 <section class="slide slide-four">
                     <div class="tab-group">
                         <div class="tab">
-                            <div class="news">HTML/CSS</div> <!-- news -->
+                            <div class="news">Allmäna nyheter</div> <!-- news -->
                             <div class="news-tab-content">
                                 <div class="news-content">
                                     <div class="newsTab">
-                                        <div class="newsDate">
-                                                <h4>2017-10-16</h4>
-                                        </div>
                                         <div class="news-content2">
-                                                <div class="newsHead"><h3>Nytt Schema</h3></div>
-                                                <p>
-                                                    Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
-                                                    jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
-                                                    Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
-                                                    ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
-                                                    pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                                </p>
+                                            <div class="newsHead"><h3>Skolstart v.34</h3></div>
+                                            <div class="newsDate"><h4>2017-07-16</h4></div>
+                                            <p>
+                                                Dags för skolstart! Vi vill välkomna alla elever till terminstart den 20/8.<br>
+                                                Samling sker i sal 511 och vi ber er alla att vara uppklädda och välkammade. 
+                                                Efter uppropet bjuds det på saft och bullar, och ni får träffa era lärare. 
+                                                Om ni tagit med något äldre syskon för stöd eller liknande, så är det nu dags för 
+                                                dessa att avvika då vi inte tillåter obehöriga på skolområdet. Vi vill påminna 
+                                                om att skolan är ett internat, så se till att packat ordentligt för nästa chans att 
+                                                komplettera eran packning sker efter höstterminen.<br>
+                                                Vi återkommer med ytterligare information.<br>
+                                                Välkomna
+                                            </p>
                                         </div>
                                         <!-- news-contet2-->
                                     </div>
                                     <!-- newsTab-->
                                     <div class="newsTab">
-                                        <div class="newsDate">
-                                                <h4>2017-10-16</h4>
-                                        </div>
                                         <div class="news-content2">
-                                                <div class="newsHead"><h3>Kursstart vecka 10</h3></div>
-                                                <p>
-                                                    Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
-                                                    jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
-                                                    Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
-                                                    ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
-                                                    pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                                </p>
+                                            <div class="newsHead"><h3>Meny v.35</h3></div>
+                                            <div class="newsDate"><h4>2017-08-24</h4></div>
+                                            <p>
+                                                Efter klagomål om maten de första dagarna har vi nu updaterat menyn inför vecka 35.<br>
+                                                Måndag: Köttbullar med kokt potatis. Lingonsylt kostar extra.<br>
+                                                Tisdag: Korv med kokt potatis. Kopletteras med gårdagens köttbullar, om det finns kvar.<br>
+                                                Onsdag: Vegobuffé.<br>
+                                                Torsdag: Självklara pannkakor med sylt<br>
+                                                Fredag: Lasagne med grogg efter kl:11.
+                                            </p>
                                         </div>
                                         <!--news-content2-->
                                     </div>
+                                    <!-- newsTab-->
+                                    <div class="newsTab">
+                                        <div class="news-content2">
+                                            <div class="newsHead"><h3>Information</h3></div>
+                                            <div class="newsDate"><h4>2017-08-30</h4></div>
+                                            <p>
+                                                Nackabackens samskola har 
+                                                samlat in mer än 200 000 kronor i privata bidrag för att 21 elever ska kunna åka på studieresa till Hawaii. 
+                                                Insamlingen kan bryta mot skollagen och föräldrar har därför anmält den till Skolinspektionen.                                                    
+                                                Enligt Skollagen ska grundskolan och gymnasiet vara avgiftsfri och kvaliteten vara oberoende 
+                                                av ”enskilds ekonomiska förutsättningar”.<br>                                                    
+                                                På skolans hemsida kan man läsa att de kommunala bidragen tyvärr inte räcker och att insamlingar även kan 
+                                                komma att användas till ­andra skolrelaterade projekt.<br>
+                                                Vi ber er uppmärksamma om liknande aktivitet på vår skola och tveka inte att anmäla misstänkta till skolledningen.
+                                            </p>
+                                        </div>
+                                    </div> 
                                     <!-- newsTab-->
                                 </div>
                                 <!-- news-content-->
@@ -141,44 +171,68 @@
                     <div class="tab-group">
                         <div class="tab">
                             <div class="news">Javascript</div> <!-- news -->
-                            <div class="news-tab-content">
-                                <div class="news-content">
+                                <div class="news-tab-content">
+                                    <div class="news-content">
                                         <div class="newsTab">
-                                            <div class="newsDate">
-                                                    <h4>2017-10-16</h4>
-                                            </div>
                                             <div class="news-content2">
-                                                    <div class="newsHead"><h3>Nytt Schema</h3></div>
-                                                    <p>
-                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
-                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
-                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
-                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
-                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                                    </p>
+                                                <div class="newsHead"><h3>Ny lärare</h3></div>
+                                                    <div class="newsDate"><h4>2017-08-27</h4></div>
+                                                        <p>
+                                                            Vi vill välkomna den nya läraren inom Javascript, Robbin Eriksson.<br>
+                                                            Robbin har flera års erfarenhet inom ämnet och har desutom prisats för sin stresshantering och tålamod.<br>
+                                                            Vi tror Robbin kommer testas hårt på dessa punkter här på skolan, men han har sagt att han ser fram emot utmaningen.
+                                                        </p>
                                             </div>
                                             <!-- news-contet2-->
                                         </div>
                                         <!-- newsTab-->
                                         <div class="newsTab">
-                                            <div class="newsDate">
-                                                    <h4>2017-10-16</h4>
-                                            </div>
                                             <div class="news-content2">
-                                                    <div class="newsHead"><h3>Kursstart vecka 10</h3></div>
-                                                    <p>
-                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
-                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
-                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
-                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
-                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                                    </p>
+                                                <div class="newsHead"><h3>Läxa v.37</h3></div>
+                                                <div class="newsDate"><h4>2017-08-30</h4></div>
+                                                <p>
+                                                    Läxan som ska vara klar till vecka 37 lyder följande:<br>
+                                                    3 fungerande webshop sidor med fungerande betalning och mobil bankId möjlighet. 
+                                                    En lista på produkter som ska säljas på dessa sidor finns bifogad i skolkatalogen<br>
+                                                    Det är mycket viktigt att dessa sidor är publicerade senast v.37, på grund av att skolan 
+                                                    behöver finansiera kommande lunchkostnader. 
+                                                </p>
                                             </div>
                                             <!--news-content2-->
                                         </div>
                                         <!-- newsTab-->
+                                    </div>
+                                    <!--news-content-->
                                 </div>
-                                <!--news-content-->
+                                <!--news-tab-content-->
+                        </div>
+                        <!--tab-->
+                    </div>
+                    <!--tab-group-->
+                </section>
+
+
+                <section class="slide slide-four">
+                        
+                    <div class="tab-group">
+                        <div class="tab">
+                            <div class="news">HTML/CSS</div> <!-- news -->
+                            <div class="news-tab-content">
+                                <div class="news-content">
+                                    <div class="newsTab">
+                                        <div class="news-content2">
+                                            <div class="newsHead"><h3>Extralärare sökes</h3></div>
+                                            <div class="newsDate"><h4>2017-10-16</h4></div>
+                                            <p>
+                                                Vi vill meddela att vi söker extralärare till lektioner i HTML och CSS.<br>
+                                                Efter 8 extralärare valde att hoppa av sin tjänst förra veckan känner vi oss lite begränsade med enbart 14 extralärare.<br>
+                                                Om du känner att du skulle kunna bidra, kontakta din lärare.
+                                            </p>
+                                        </div>
+                                        <!-- news-contet2-->
+                                    </div>
+                                </div>
+                                <!--assignments-->
                             </div>
                             <!--news-tab-content-->
                         </div>
@@ -189,43 +243,22 @@
 
 
                 <section class="slide slide-four">
-
+                        
                     <div class="tab-group">
                         <div class="tab">
-                            <div class="news">Arbetsmetodik</div> <!-- news -->
+                            <div class="news">Back-End</div> <!-- news -->
                             <div class="news-tab-content">
                                 <div class="news-content">
                                     <div class="newsTab">
-                                        <div class="newsDate">
-                                                <h4>2017-10-16</h4>
-                                        </div>
                                         <div class="news-content2">
-                                                <div class="newsHead"><h3>Nytt Schema</h3></div>
-                                                <p>
-                                                    Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
-                                                    jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
-                                                    Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
-                                                    ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
-                                                    pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                                </p>
+                                            <div class="newsHead"><h3>Flyttad lektion</h3></div>
+                                            <div class="newsDate"><h4>2017-10-11</h4></div>
+                                            <p>
+                                                Fredagens Back-end lektion är flyttad pga brandövning.<br>
+                                                Vi vill påminna om att samlingsplatsen är ute på parkeringen och vi ber er ställa 
+                                                upp på led i omvänd alfabetisk ordning baserat på smeknamn. 
+                                            </p>
                                         </div>
-                                        <!-- news-contet2-->
-                                    </div>
-                                    <!-- newsTab-->
-                                    <div class="newsTab">
-                                            <div class="newsDate">
-                                                    <h4>2017-10-16</h4>
-                                            </div>
-                                            <div class="news-content2">
-                                                    <div class="newsHead"><h3>Kursstart vecka 10</h3></div>
-                                                    <p>
-                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
-                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
-                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
-                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
-                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                                    </p>
-                                            </div>
                                     </div> <!-- newsTab-->
                                 </div>
                                 <!--assignments-->
@@ -238,54 +271,6 @@
                 </section>
 
 
-                <section class="slide slide-four">
-
-                    <div class="tab-group">
-                        <div class="tab">
-                            <div class="news">Back-End utveckling</div> <!-- news -->
-                            <div class="news-tab-content">
-                                    <div class="news-content">
-                                        <div class="newsTab">
-                                            <div class="newsDate">
-                                                    <h4>2017-10-16</h4>
-                                            </div>
-                                            <div class="news-content2">
-                                                    <div class="newsHead"><h3>Nytt Schema</h3></div>
-                                                    <p>
-                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
-                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
-                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
-                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
-                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                                    </p>
-                                            </div>
-                                        </div> <!-- newsTab-->
-                                    <div class="newsTab">
-                                            <div class="newsDate">
-                                                    <h4>2017-10-16</h4>
-                                            </div>
-                                            <div class="news-content2">
-                                                    <div class="newsHead"><h3>Kursstart vecka 10</h3></div>
-                                                    <p>
-                                                        Bacon ipsum dolor amet tongue andouille landjaeger biltong ham hock pastrami 
-                                                        jowl short loin beef hamburger fatback. Andouille meatloaf alcatra t-bone turkey jowl sirloin pork loin boudin. 
-                                                        Chicken swine bacon landjaeger meatball, cow tenderloin beef ribs ham hock venison. Tongue landjaeger 
-                                                        ham hock salami brisket short ribs porchetta pork andouille shoulder meatloaf spare ribs. Pork chop hamburger 
-                                                        pork loin frankfurter pork t-bone ham hock corned beef meatloaf burgdoggen short ribs fatback kielbasa pastrami.
-                                                    </p>
-                                            </div>
-                                        </div> <!-- newsTab-->
-                                    </div>
-                                <!--assignments-->
-                            </div>
-                            <!--news-tab-content-->
-                        </div>
-                        <!--tab-->
-                    </div>
-                    <!--tab-group--> 
-                </section>
-
-                
 
 
             </div>
@@ -295,39 +280,41 @@
                 <div class="quick-evaluation-content apperance">
                     <h4>Daglig utvärdering</h4>
                     <div id="quick-evaluation">
-        
+
                         <div class="quick-evaluation-inner">
                             <a href="#" id="glad" onclick="clickItem1()"><img src="../../img/quick-evaluation-glad.png" alt="All good" title="All good"></a>
                             <span class="glad-message">Härligt, tack!</span>
                         </div>
-        
+
                         <div class="quick-evaluation-inner">
                             <a href="#" id="between" onclick="clickItem2()"><img src="../../img/quick-evaluation-between.png" alt="All good" title="It's ok"></a>
                             <span class="between-message">Ok, tack!</span>
                         </div>
-        
+
                         <div class="quick-evaluation-inner">
                             <a href="#" id="sad" onclick="clickItem3()"><img src="../../img/quick-evaluation-sad.png" alt="All good" title="Not good!"></a>
                             <span class="sad-message">Vad trist, tack!</span>
                         </div>
-        
+
                     </div>
                     <p>Berätta för oss hur du upplever dagen genom att klicka på någon av dessa emojis.</p>
                 </div>
             </div>
             <!-- quick-evaluation -->
-            
+
         </div>
         <!--content-->
     </div>
 
-    
+
     <!--wrap-->
 
-    <script src="../../js/windowOnClickFunction.js"></script>
-    
+
+
     <script src="../../js/studentDailyFeedback.js"></script>
     <script src="../../js/attendance.js"></script>
+    <script src="../../js/teacherNews.js"></script>
+    <script src="../../js/navMenu.js"></script>
 </body>
 
 </html>

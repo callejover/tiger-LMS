@@ -1,9 +1,7 @@
 //Sets the input date to current date for quicker attendancecode
 function setCurrentDate() {
-    document.querySelector("#lesson-day").valueAsDate = new Date();
+    document.querySelector(".lesson-day").valueAsDate = new Date();
 }
-
-
 // ===================================================================================================================
 
 
@@ -17,7 +15,7 @@ function setCurrentDate() {
     //Finds the dropdowns optiions, then finds the class and returns the value
     var selectedClass = y[x].value;
 
-    var lessonDay = document.querySelector("#lesson-day").value;
+    var lessonDay = document.querySelector(".lesson-day").value;
 
     //Chooses the selected option in the dropdown
     // var xx = document.querySelector("#lesson-code").selectedIndex;

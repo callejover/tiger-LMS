@@ -10,14 +10,16 @@
 
     <title>Tiger-LMS | Resultat</title>
 
+    <link rel="shortcut icon" href="../../img/favicon.ico">
     <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/teacherResultFeedback.css">
-    
+    <link rel="stylesheet" href="../../css/brandingKyh.css">
+
     <link rel="stylesheet" href="../../css/mediaq.css">
 
-    <script src="https://code.jquery.com/jquery-1.x-git.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://www.gstatic.com/charts/loader.js"></script>
 
 </head>
@@ -27,152 +29,181 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header>
-                <nav id="nav">
-                    <div id="nav-button-max-500">MENY</div>
+      <header class="cd-auto-hide-header">
+        <nav id="nav" class="cd-primary-nav">
+                    <div id="nav-button-max-500">
+                        <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
+                        <div class="menuButton" onclick="menuButton(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
                     <ul class="hidden-max-500">
                       <li>
-                        <a href="courses.html">logotypeFuture</a>
+                        <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
                       </li>
                       <li>
                         <a href="news.html">Nyheter</a>
                       </li>
                       <li>
-                        <a href="resultFeedback.html">Resultat</a>
+                        <a class="current" href="resultFeedback.html">Resultat</a>
+                      </li>
+                      <li>
+                          <a href="divideIntoGroups.html">Gruppindelning</a>
                       </li>
                       <li>
                         <a href="assignmentApproval.html">Betyg</a>
                       </li>
                       <li>
-                        <a id="attendanceButton">Närvaro</a>
+                        <a class="modal-button" href="#myModal3">Närvaro</a>
                       </li>
                       <li>
-                        <a href="../../index.html">Logga ut</a>
+                        <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
                       </li>
                     </ul>
                   </nav>
               </header>
-            
 
 
-   
+
+
 
   <!-- Hidden before clicking logiout -->
-  <div id="attendanceModal" class="modal">
+  <div id="myModal3" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
           <!-- Closing X icon in modal -->
           <div class="header">
-            <h2>Närvarolista</h2>
+            <h3>Närvarolista</h3>
               <select id="ClassSelect" onchange="classChanged()">
                   <option value="A">Klass 1</option>
                   <option value="B">Klass 2</option>
                   <option value="C">Klass 3</option>
                 </select>
-    
-                <table>
-                  <th>Elev</th>
-                  <tbody class="StudentListBody">
-                  </tbody>
-                </table>
-    
-            <h2>Närvarokod</h2>
+
+                <div class="StudentListTableOverflow">
+                    <table class="StudentListTable">
+                        <tr>
+                            <td>
+                                <strong>Elev</strong>
+                            </td>
+                            <td>
+                                <strong>Närvaro</strong>
+                            </td>
+                        </tr>
+                        <tbody class="StudentListBody">
+                        </tbody>
+                    </table>
+                </div>
+
+            <h3>Närvarokod</h3>
             <form name="input-attendance-teacher">
               <div class="attendance">
-                <h1>Välj den klass du vill skapa en kod till.
-                  <br> När du valt klass, tryck på "Skapa kod" för att få en kod generad.</h1>
-                <br>
+                <p>Välj den klass du vill skapa en kod till.</p>
+                <p>När du valt klass, tryck på "Skapa kod" för att få en kod generad.</p>
+
                 <select id="teacher-code">
                   <!-- Choose your class -->
                   <option value="FE16">FE16</option>
                   <option value="FE17">FE17</option>
                 </select>
-                <input id="lesson-day" type="date">
+                <input class="lesson-day" type="date">
                 <!-- Choose your lesson date -->
                 <button id="code-submit" type="submit" onclick="createCode()">Skapa kod</button>
               </div>
               <!--attendance-->
             </form>
-            
+
           </div>
           <!--header-->
         </div>
         <!--modal-content-->
       </div>
       <!-- div attendanceModal opens the login box on index screen -->
-    
-    
+
+
     <div class="wrap">
         <div class="scrollHead">
-            <nav>
+            <nav id="dots">
                 <ul>
-                    <li><a href="#selection1" class="scrollSticker active"></a></li>
-                    <br>
-                    <li><a href="#selection2" class="scrollSticker"></a></li>
-                    <br>
-                    <li><a href="#selection3" class="scrollSticker"></a></li>  
+                  <li><a href="#selection1" class="highlight par"></a></li>
+                  <li><a href="#selection2" class="highlight par"></a></li>
+                  <li><a href="#selection3" class="highlight par"></a></li>
                 </ul>
             </nav>
         </div><!-- /sidebar -->
         <div class="teachContent">
-            <section id="selection1" class="par">
+            <section id="selection1" class="section highlight">
                 <div class="content scroll">
                     <div class="innerContent apperance">
-                        <h3>Daglig Utvärderings Resultat</h3>                           
+                        <h3>Daglig Utvärderings Resultat</h3>
+                        <p>Välj klass</p>
+                        <select>
+                            <option>FE16</option>
+                            <option selected>FE17</option>
+                            <option>BE16</option>
+                            <option>BE17</option>
+                        </select>
                         <div id="chart_div"></div>
                         <div class = "result-text">
-                            <h5><b>Resultat</b></h5><br>
-                            <h6>Veckan 39</h6><br>
+                            <h6>Veckan 43</h6>
+                            <p>(Skalan: 1 = Inte nöjd, 2 = Okej, 3 = Väldigt nöjd)</p>
                             <ul class = "days">
-                                <li>Måndag: Okej (2)</li>
-                                <li>Tisdag: Inte nöjd (1)</li>
-                                <li>Onsdag: Väldigt nöjd (3)</li>
-                                <li>Torsdag: Okej (2)</li>
-                                <li>Fredag: Väldigt nöjd (3)</li>
+                                <li>Måndag: Okej</li>
+                                <li>Tisdag: Inte nöjd</li>
+                                <li>Onsdag: Väldigt nöjd</li>
+                                <li>Torsdag: Okej</li>
+                                <li>Fredag: Väldigt nöjd</li>
                             </ul>
                         </div><!-- result-text -->
                     </div><!--innerContent-->
                 </div><!--content-->
             </section>
-            <section id="selection2" class="par">
+            <section id="selection2" class="section highlight">
                 <div class="content dark scroll">
                     <div class="innerContent apperance">
-                        <h3>Veckans Uvärderings Resultat</h3>                 
-                        <div id="chart2"></div>
-                            <div class = "result-text2">
+                        <div class = "result-text2">
+                            <h3>Veckans Uvärderings Resultat</h3>
+                            <p>Välj klass</p>
+                            <select>
+                                <option>FE16</option>
+                                <option selected>FE17</option>
+                                <option>BE16</option>
+                                <option>BE17</option>
+                            </select>
+                            <div id="chart2"></div>
                             <h5 class = "weeks">Veckan 39</h5>
                             <h5>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h5>
                             <ul>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>                               
+                                <li>- Lorem ipsum dolor sit amet.</li>
+                                <li>- Donec ac ligula augue.</li>
                             </ul>
-                            
+
                             <h5>Vad har varit bra?</h5>
                             <ul>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>                             
+                                <li>- Praesent ornare, massa id faucibus dignissim, odio augue.</li>
+                                <li>- Morbi sollicitudin nunc ac nisi viverra commodo.</li>
                             </ul>
                             <h5>Förslag på förbättringar</h5>
                             <ul>
-                                <li>- bla bla</li>                        
+                                <li>- Duis nibh sem, lobortis vel faucibus sed, dictum ut risus.
+                                    Aenean placerat gravida nulla, id dignissim massa varius quis.</li>
                             </ul>
                             <h5 class = "weeks">Veckan 40</h5>
                             <h5>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h5>
                             <ul>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>                               
+                                <li>- Aenean ex lectus, rutrum quis neque non.</li>
+                                <li>- Sed dignissim justo magna, vitae convallis ante dignissim id.</li>
                             </ul>
-                            
+
                             <h5>Vad har varit bra?</h5>
                             <ul>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>                             
+                                <li>- Proin nec interdum libero. Quisque sapien orci, sagittis eget sollicitudin ut.</li>
                             </ul>
                             <h5>Förslag på förbättringar</h5>
                             <ul>
-                                <li>- bla bla</li>                        
+                                <li>- Donec quis nulla magna.</li>
                             </ul>
 
                             <h5 class = "weeks">Veckan 41</h5>
@@ -180,101 +211,110 @@
 
                             <h5>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h5>
                             <ul>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>                               
+                                <li>- Donec quis nulla magna.</li>
+                                <li>- Proin nec interdum libero. Quisque sapien orci.</li>
                             </ul>
-                            
+
                             <h5>Vad har varit bra?</h5>
                             <ul>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>                             
+                                <li>- Aenean ex lectus, rutrum quis neque non.</li>
                             </ul>
                             <h5>Förslag på förbättringar</h5>
                             <ul>
-                                <li>- bla bla</li>                        
+                                <li>- Praesent ornare, massa id faucibus dignissim, odio augue.</li>
                             </ul>
 
                             <h5 class = "weeks">Veckan 42</h5>
 
                             <h5>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h5>
                             <ul>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>                               
+                                <li>- Lorem ipsum dolor sit amet.</li>
+                                <li>- Morbi sollicitudin nunc ac nisi viverra commodo.</li>
                             </ul>
-                            
+
                             <h5>Vad har varit bra?</h5>
                             <ul>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>                             
+                                <li>- Praesent ornare.</li>
                             </ul>
                             <h5>Förslag på förbättringar</h5>
                             <ul>
-                                <li>- bla bla</li>                        
+                                <li>- Nullam aliquam leo nec massa facilisis, in mattis magna scelerisque.</li>
                             </ul>
 
                             <h5 class = "weeks">Veckan 43</h5>
 
                             <h5>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h5>
                             <ul>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>                               
+                                <li>- Fusce porttitor ut arcu non viverra.</li>
                             </ul>
-                            
+
                             <h5>Vad har varit bra?</h5>
                             <ul>
-                                <li>- bla bla</li>
-                                <li>- bla bla</li>                             
+                                <li>- Integer ornare orci eget ipsum viverra, ut congue neque dictum.</li>
+                                <li>- Nullam fermentum pulvinar tincidunt.</li>
                             </ul>
                             <h5>Förslag på förbättringar</h5>
                             <ul>
-                                <li>- bla bla</li>                        
+                                <li>- Aenean in lectus ac nisl volutpat tempus. </li>
                             </ul>
                         </div><!-- result-text2    -->
                     </div><!--innerContent-->
                 </div><!--content dark-->
             </section>
-            <section id="selection3" class="par">
+            <section id="selection3" class="section highlight">
                 <div class="content scroll">
                     <div class="innerContent apperance">
                         <h3>Kursutvärderings Resultat</h3><br>
-                        <h5>Kursnamn: HTML och CSS</h5> 
-                        <h5>Klass: FE17</h5><br>
+                        <p>Välj klass</p>
+                        <select>
+                            <option>FE16</option>
+                            <option selected>FE17</option>
+                            <option>BE16</option>
+                            <option>BE17</option>
+                        </select>
+                        <p>Välj kurs</p>
+                        <select>
+                            <option>HTML och CSS</option>
+                            <option selected>Javascript</option>
+                            <option>Arbetsmetodik</option>
+                            <option>Back-end Utveckling</option>
+                        </select>
                         <div class = "chart-5">
                             <div id="chart5"></div>
                             <h5>Kommentarer</h5>
                             <ul>
-                                <li>- kommentar#1</li>
-                                <li>- kommentar#2</li>
+                                <li>- Aenean in lectus ac nisl volutpat tempus. </li>
+                                <li>- Pellentesque a ex et magna vestibulum ultricies quis pharetra velit.</li>
+                                <li>- Aliquam molestie metus vitae nisl viverra consectetur condimentum ac nibh.</li>
                             </ul>
                         </div><!-- chart-5 --><br><br>
-            
+
                         <div class = "chart-6">
                             <div id="chart6"></div>
                             <h5>Kommentarer</h5>
                             <ul>
-                                <li>- kommentar#1</li>
-                                <li>- kommentar#2</li>
+                                <li>- Morbi vitae neque convallis.</li>
+                                <li>- Cras blandit, lacus sit amet fringilla imperdiet.</li>
+                                <li>- Aliquam erat volutpat.</li>
                             </ul>
                         </div><!-- chart-6 --><br><br>
-            
+
                         <div class = "chart-7">
                             <div id="chart7"></div>
                             <h5>Kommentarer</h5>
                             <ul>
-                                <li>- kommentar#1</li>
-                                <li>- kommentar#2</li>
+                                <li>- Cras interdum enim quis vulputate lobortis.</li>
+                                <li>- Praesent augue tortor, condimentum eget sapien et.</li>
                             </ul>
                         </div><!-- chart-7 --><br><br>
-            
+
                         <div class = "chart-8">
                             <div id="chart8"></div>
                             <h5>Kommentarer</h5>
                             <ul>
-                                <li>- kommentar#1</li>
-                                <li>- kommentar#2</li>
+                                <li>- Praesent augue tortor.</li>
+                                <li>- Praesent ornare.</li>
+                                <li>- Nullam aliquam leo nec massa facilisis.</li>
                             </ul>
                         </div><!-- chart-8 -->
                         <br><br>
@@ -289,30 +329,30 @@
                             <br><br>
                             <h5>Övriga kommentarer</h5>
                             <ul>
-                                <li>- kommentar 1</li>
-                                <li>- kommentar 2<li>
-                                <li>- kommentar 3</li>
+                                <li>- Lorem ipsum dolor sit amet.</li>
+                                <li>- Integer ornare orci eget ipsum viverra.<li>
                             </ul><br><br>
                         </div><!-- result-text3 -->
-                       
+
                     </div><!--innerContent-->
                 </div><!--content -->
             </section>
         </div><!--teachContent -->
     </div><!--wrap-->
-    
+
     <script src="../../js/jquery.ScrollDots.js"></script>
     <script src="../../js/jquery.combinedScroll.js"></script>
 
     <script src="../../js/teacherFeedback.js"></script>
 
-    <script src="../../js/windowOnClickFunction.js"></script>
+
     <script src="../../js/attendance.js"></script>
     <script src="../../js/teacherAttendanceCode.js"></script>
-    <script src="../../js/teacherAssignmentApproval.js"></script>
     <script src="../../js/teacherAttendanceOverview.js"></script>
+    <script src="../../js/teacherNews.js"></script>
+    <script src="../../js/navMenu.js"></script>
+    <script src="../../js/currentDotsNav.js"></script>
 
-    
 </body>
 
 </html>

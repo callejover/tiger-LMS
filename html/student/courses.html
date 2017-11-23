@@ -10,14 +10,18 @@
 
     <title>Tiger-LMS | Kurser</title>
 
+    <link rel="shortcut icon" href="../../img/favicon.ico">
     <!-- <link rel="shortcut icon" href="../../img/tiger.png" /> -->
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/main.css">
 
     <link rel="stylesheet" href="../../css/courses.css">
     <link rel="stylesheet" href="../../css/dailyFeedback.css">
+    <link rel="stylesheet" href="../../css/brandingKyh.css">
 
     <link rel="stylesheet" href="../../css/mediaq.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 </head>
 
@@ -26,12 +30,19 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <header>
-        <nav id="nav">
-            <div id="nav-button-max-500">MENY</div>
+      <header class="cd-auto-hide-header">
+        <nav id="nav" class="cd-primary-nav">
+            <div id="nav-button-max-500">
+                <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
+                <div class="menuButton" onclick="menuButton(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
             <ul class="hidden-max-500">
                 <li>
-                    <a href="courses.html">logotypeFuture</a>
+                    <a href="courses.html"><img src="../../img/KYH-logo.png"></a>
                 </li>
                 <li>
                     <a href="news.html">Nyheter</a>
@@ -43,10 +54,10 @@
                     <a href="courseFeedback.html">Kurs utv.</a>
                 </li>
                 <li>
-                    <a id="attendanceButton">Närvaro</a>
+                    <a class="modal-button" href="#myModal5">Närvaro</a>
                 </li>
                 <li>
-                    <a href="../../index.html">logga ut</a>
+                    <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
                 </li>
             </ul>
         </nav>
@@ -55,12 +66,12 @@
 
     <!-- Hidden before clicking loginButton -->
 
-    <div id="attendanceModal" class="modal">
+    <div id="myModal5" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header">
-                <h2>Närvaro</h2>
+                <h3>Närvaro</h3>
                 <form name="input-attendance">
                     <div class="attendance">
                         <p>För att anmäla din närvaro på lektionen skriv in koden från tavlan i klassrummet.</p>
@@ -85,7 +96,7 @@
             <span class="assignmentClose">&times;</span>
             <!-- Closing X icon in modal -->
             <div class="header headerAssignment">
-                <h2>Inlämning</h2>
+                <h3>Inlämning</h3>
                 <form name="input-assignment">
                     <p>Lämna in din uppgift genom att ladda upp dokumentet nedan.</p>
                     <p>OBS! Endast Word dokument!</p>
@@ -101,12 +112,31 @@
     <!-- div assignmentModal opens the login box on index screen -->
 
 
+    <!-- Hidden before clicking loginButton -->
+
+    <div id="assignmentFeedbackModal" class="modal">
+            <div class="modal-content modal-content-width-50">
+                <span class="assignmentFeedbackClose close">&times;</span>
+                <!-- Closing X icon in modal -->
+                <div class="header headerassignmentFeedback">
+
+
+
+                    <h3>Feedback</h3>
+                    <p class="pricing_text">Cupidatat esse voluptate qui velit do ad proident id. Est voluptate exercitation
+                        irure ea. Voluptate exercitation veniam et qui amet pariatur dolor.</p>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- div assignmentFeedbackModal opens the login box on index screen -->
 
     <div class="wrap">
         <div class="content content-pricing">
             <div class="innerContent apperance">
-                <h2>Kurser</h2>
-                <p>Som elev kan du se information om kursen och om den är pågående eller avslutad och även vad du har för betyg
+                <h3 class="marLeft">Kurser</h3>
+                <p class="pricing_text">Som elev kan du se information om kursen och om den är pågående eller avslutad och även vad du har för betyg
                     i de kurser som du redan har avslutat.</p>
                 <br>
 
@@ -120,7 +150,7 @@
                             </label>
                             <div class="tab-content">
                                 <div class="infoTab">
-                                    <p>
+                                    <p class="pricing_text">
                                         Syftet med kursen är att den studerande ska få kunskap och färdighet i hur man utvecklar webblösningar i HTML5 och CSS3,
                                         både fristående och i publiceringssystem. Kursen belyser även den senaste tekniken
                                         och ramverken inom HTML5/CSS3.
@@ -131,7 +161,7 @@
                                 </div>
                                 <div class="assignments">
 
-                                    <table class="studentAssignmentTable">
+                                    <table class="allAssignmentTable">
                                         <tr>
                                             <th>
                                                 <strong>Uppgifter</strong>
@@ -180,7 +210,7 @@
                                     </table>
 
 
-                                    <table class="studentAssignmentTable">
+                                    <table class="allAssignmentTable">
                                         <tr>
                                             <th>
                                                 <strong>Examinationsmoment</strong>
@@ -236,7 +266,7 @@
                             </label>
                             <div class="tab-content">
                                 <div class="infoTab">
-                                    <p>
+                                    <p class="pricing_text">
                                         Kursen ger de studerande avancerade kunskaper och färdigheter i att programmera och strukturera Javascript-projekt. De studerande
                                         får kunskaper om att det finns olika Javascript-versioner och lär sig jämföra dessa
                                         samt får förståelse för deras olika kompabilitet med olika webbläsare och plattformar.
@@ -250,7 +280,7 @@
                                 <!--infoTab-->
                                 <div class="assignments">
 
-                                    <table class="studentAssignmentTable">
+                                    <table class="allAssignmentTable">
                                         <tr>
                                             <th>
                                                 <strong>Uppgifter</strong>
@@ -292,15 +322,8 @@
                                                 <img src="../../img/no_tick.png" height="16" width="16" alt=""> Uppgift 5</th>
                                             <th>Granska</th>
                                             <th>
-                                                <a class="assignmentButton button">Lämna in på nytt</a>
-                                            </th>
-                                        </tr>
-
-                                        <tr class="feedbackText">
-                                            <th colspan="3">
-                                                <strong>Feedback:</strong>
-                                                <p>Cupidatat esse voluptate qui velit do ad proident id. Est voluptate exercitation
-                                                    irure ea. Voluptate exercitation veniam et qui amet pariatur dolor.</p>
+                                                <button class="assignmentFeedbackButton narrowButton">Visa feedback</button>
+                                                <a class="assignmentButton button">Lämna in</a>
                                             </th>
                                         </tr>
                                         <tr>
@@ -314,7 +337,7 @@
                                     </table>
 
 
-                                    <table class="studentAssignmentTable">
+                                    <table class="allAssignmentTable">
                                         <tr>
                                             <th>
                                                 <strong>Examinationsmoment</strong>
@@ -377,7 +400,7 @@
                             </label>
                             <div class="tab-content">
                                 <div class="infoTab">
-                                    <p>
+                                    <p class="pricing_text">
                                         Kursen ger kunskap i modern lättrörlig projektmetodik och praktiska färdigheter inom detta. Andra systemutvecklingsmetoder
                                         som ex. testdriven utveckling ingår i kursen. Kursen ger exempel på relevanta verktyg
                                         och arbetsmetoder för en utvecklare. Under kursen lär sig de studerande versionshantering
@@ -390,7 +413,7 @@
                                 <!--infoTab-->
                                 <div class="assignments">
 
-                                    <table class="studentAssignmentTable">
+                                    <table class="allAssignmentTable">
                                         <tr>
                                             <th>
                                                 <strong>Uppgifter</strong>
@@ -445,7 +468,7 @@
                                     </table>
 
 
-                                    <table class="studentAssignmentTable">
+                                    <table class="allAssignmentTable">
                                         <tr>
                                             <th>
                                                 <strong>Examinationsmoment</strong>
@@ -506,7 +529,7 @@
                             </label>
                             <div class="tab-content">
                                 <div class="infoTab">
-                                    <p>
+                                    <p  class="pricing_text">
                                         Efter avslutad kurs ska de studerande ha kunskap för att utföra sådana arbetsuppgifter inom back-endprogrammering som relaterar
                                         till front-end-utveckling. De ska även ha fått kunskap i CMS-verktyget Wordpress
                                         och behärska detta
@@ -518,7 +541,7 @@
                                 <!--infoTab-->
                                 <div class="assignments">
 
-                                    <table class="studentAssignmentTable">
+                                    <table class="allAssignmentTable">
                                         <tr>
                                             <th>
                                                 <strong>Uppgift</strong>
@@ -579,7 +602,7 @@
                                     </table>
 
 
-                                    <table class="studentAssignmentTable">
+                                    <table class="allAssignmentTable">
                                         <tr>
                                             <th>
                                                 <strong>Examinationsmoment</strong>
@@ -669,19 +692,19 @@
             <!-- quick-evaluation -->
 
 
-        </div>
-        <!--content-->
-    </div>
+        </div><!--content-->
+    </div><!--wrap-->
 
 
-    <!--wrap-->
-
-    <script src="../../js/windowOnClickFunction.js"></script>
 
     <script src="../../js/studentDailyFeedback.js"></script>
     <script src="../../js/studentAssignment.js"></script>
     <script src="../../js/attendance.js"></script>
-
+    <script src="../../js/teacherNews.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- Jquery script -->
+    <script src="../../js/navMenu.js"></script>
+    <!-- Jquery script for navigaton menu -->
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 @charset "UTF-8";
+
 /* main styling
-Color map
+Color map main
 
 hex:
 1. D900E8
@@ -13,7 +14,7 @@ hex:
 rgb():
 1. 217,0,232
 2. 166,79,172
-3. 145,0,156
+3. 145,0,156 main
 4. 221,70,232
 5. 98,0,105
 
@@ -22,59 +23,59 @@ Background
 2. Dark rgba(255,231,255,0.9)
 
 */
+
+
 /*====================================
   main styling for index.html and main styling for content
 =====================================*/
 
 * {
     box-sizing: border-box;
-}/* (*) */
+}
 
-body{
-  height:100%;
-	width:100%;
-	margin:0;
-	padding:0;
-  margin-top: 5em;
 
-  background-image: url('../img/1.jpg');
-  background-repeat:no-repeat;
-	background-attachment: fixed;
-  background-size: 100% auto;
-	background-position:center, center;
-  font-family: verdana, sans-serif;
-  font-size: 0.9em;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 1);
+/* (*) */
 
-}/*body*/
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 5em;
+    background-image: url('../img/white_tiger.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-position: center, center;
+    font-family: verdana, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/*body*/
+
 p {
-  margin: 1em 0;
+    margin: 1em 0;
 }
 
 strong {
-  font-weight: bold;
+    font-weight: bold;
 }
 
-/*
-img{
-    display: block;
-    width: 200px;
-    height: auto;
-    border-radius: 5%;
-    z-index: 500;
-  } */
-
-  a {
+a {
     color: #fff;
-  }
+}
 
-  a:hover {
+a:hover {
     text-decoration: none;
-  }
+}
 
-input[type="text"], input[type="password"] {
-  max-width: 100%;
+input[type="text"],
+input[type="password"] {
+    /* max-width: 100%; */
+    width: 100%;
 }
 
 .button,
@@ -84,49 +85,47 @@ input,
 input::-webkit-input-placeholder,
 select,
 button {
-  background: rgba(255,242,255,0.9);
-  border: none;
-  color: #D900E8;
-  font-size: .9em;
-  padding: .5em;
-  font-family: verdana, sans-serif;
-  margin: .2em 0;
-  border: 1px solid #A64FAC;
+    background: rgba(255, 242, 255, 0.9);
+    border: none;
+    color: #D900E8;
+    font-size: .9em;
+    padding: .5em;
+    font-family: verdana, sans-serif;
+    margin: .2em 0;
+    border: 1px solid #A64FAC;
 }
-
 
 a.button {
-  line-height: 3.5em;
-  text-decoration: none;
+    line-height: 3.5em;
+    text-decoration: none;
 }
-
 
 .button:active,
 button:active,
 textarea:focus,
 input:focus,
 select:focus {
-  background: #fff;
-  color: #D900E8;
-  border: 1px solid #D900E8;
+    background: #fff;
+    color: #D900E8;
+    border: 1px solid #D900E8;
 }
 
-input:focus::-webkit-input-placeholder{
-  color: #D900E8;
-  border: none;
+input:focus::-webkit-input-placeholder {
+    color: #D900E8;
+    border: none;
 }
 
-input::-webkit-input-placeholder{
-  border: none;
-  background: none;
-  color: #D900E8;
+input::-webkit-input-placeholder {
+    border: none;
+    background: none;
+    color: #D900E8;
 }
 
 .button,
 button {
-  padding: 1em;
-  color:  rgba(255, 255, 255, 1);
-  background-color: rgb(98,0,105);
+    padding: 1em;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgb(98, 0, 105);
 }
 
 .button,
@@ -136,105 +135,116 @@ label,
 input[type=radio],
 input[type=checkbox],
 a {
-  cursor: pointer;
+    cursor: pointer;
 }
 
-.main{
-  display: block;
-  height: 100vh;
-  min-height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background: rgba(255, 255, 255, 0.9);
-  overflow: hidden;
-
-}
-.wrap{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  min-height: 100vh;
-  padding: 0;
-  margin: auto;
-  justify-content: center;
-  background-color: rgba(255,242,255,0.9);
+.main {
+    display: block;
+    height: 100vh;
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.9);
+    overflow: hidden;
 }
 
-.hiddenCode{
-  display: none;
+.wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: auto;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
-.index{
-  min-height: calc(100vh - 5em);
+.hiddenCode {
+    display: none;
 }
 
-.teachWrap{
-  align-items: flex-start;
-
+.index {
+    min-height: calc(100vh - 5em);
 }
 
-.content{
- min-height: calc(100vh - 5em);
- width: 100%;
- display: flex;
- flex-direction: row;
- justify-content: center;
- width: 100%;
- background-color: rgba(255,242,255,0.5);
+.teachWrap,
+.adminwrap {
+    align-content: flex-start;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
-.content.dark{
-  background-color: rgba(255,231,255,0.5);
-
+.teachWrap {
+    align-items: flex-start;
 }
 
-.scroll{
-  min-height: 100vh;
-}
-.content.mobile{
-  min-height: 5em;
-  height: 5em;
-}
-
-.mobileShow{
-  display: none;
+.content {
+    min-height: calc(100vh - 5em);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(255, 242, 255, 0.5);
 }
 
-.scrollHead{
-  position: fixed;
-  flex-direction: column;
-  z-index: 1000;
-  right: 0;
-  padding-top: 25vh;
-  vertical-align: middle;
-  padding-right: 2.5em;
+.content.dark {
+    background-color: rgba(255, 231, 255, 0.5);
 }
 
-.scrollHead a{
-  content:none;
-  display: block;
-  width: 1em;
-  height: 1em;
-  min-width: 50px;
-  min-height: 50px;
-  background: rgb(98,0,105) no-repeat;
-  background-blend-mode: overlay;
-	background-size: cover;
-  opacity: 0.7;
-  border-radius: 50%;
-
-
+.scroll {
+    min-height: 100vh;
+    z-index: 100;
 }
 
-.scrollHead a:hover{
-  opacity: 1;
+.content.mobile {
+    min-height: 5em;
+    height: 5em;
 }
-.scrollHead a.active{
-  opacity: 1;
 
+.mobileShow {
+    display: none;
 }
+
+.mobileShow:hover {
+    background-color: rgba(98, 0, 105, 1) !important;
+}
+
+.scrollHead {
+    position: fixed;
+    flex-direction: column;
+    z-index: 1000;
+    right: 0;
+    padding-top: 25vh;
+    vertical-align: middle;
+    padding-right: 2.5em;
+}
+
+.scrollHead a {
+    content: none;
+    display: block;
+    width: 1em;
+    height: 1em;
+    min-width: 50px;
+    min-height: 50px;
+    background: rgb(98, 0, 105) no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+.scrollHead a:hover {
+    opacity: 1;
+}
+
+.scrollHead a.active {
+    opacity: 1;
+}
+
 
 /* img{
     display: block;
@@ -244,171 +254,324 @@ a {
     z-index: 500;
   } */
 
-.features, .pricing, .textContent, .teachCourses {
-  width: 30%;
-  padding: 0;
-  margin: 2.5% 5% 0 5%;
-  text-align: center;
-
+.tillbaka {
+    height: 100%;
+    width: auto;
+    max-height: 3em;
+    margin: 0.5em;
 }
 
-.teachCourses{
-  width: 20%;
-  height: 25vh;
-  vertical-align: middle;
-  line-height: 25vh;
-  margin: 1em 1em 1em 1em;
-  overflow: hidden;
+.features,
+.pricing,
+.teachCourses,
+.home {
+    width: 30%;
+    padding: 0;
+    margin: 2.5% 5% 2.5% 5%;
+    text-align: center;
 }
 
-.textContent{
-  width: 70%;
-  min-height: 35vh;
+.features {
+    background: url('../img/features.png') no-repeat;
 }
 
-.features, .pricing{
+.pricing {
+    background: url('../img/money.jpeg') no-repeat;
+}
+
+.home {
+    background: url('../img/logoSmal.png') no-repeat;
+}
+
+.subj1 {
+    background: #ffb477 url('../img/java2.jpg') no-repeat;
+}
+
+.subj2 {
+    background: #ffb477 url('../img/html_css_2.jpg') no-repeat;
+}
+
+.subj3 {
+    background: #ffb477 url('../img/scrum2.png') no-repeat;
+}
+
+.subj4 {
+    background: #ffb477 url('../img/backend2.png') no-repeat;
+}
+
+.features,
+.pricing,
+.home,
+.subj1,
+.subj2,
+.subj3,
+.subj4 {
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.subj1:hover,
+.subj2:hover,
+.subj3:hover,
+.subj4:hover,
+.pricing:hover,
+.features:hover,
+.home:hover {
+    background-color: rgba(255, 0, 0, 0);
+    font-weight: bold;
+    text-shadow: 0 0 0.3em #000;
+    transition-duration: 1s;
+}
+
+.teachCourses {
+    width: 20%;
+    height: 25vh;
+    vertical-align: middle;
+    line-height: 25vh;
+    margin: 1em 1em 1em 1em;
+    overflow: hidden;
+}
+
+.textContent {
+    min-height: 50vh;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 2.5% 0;
+    text-align: center;
+    box-shadow: 0 3px 7px rgba(128, 52, 145, 0.66);
+}
+
+.textContent h2 {
+    margin-top: 1em;
+    text-shadow: 2px 2px 1px #000000;
+
+    background: rgba(115, 0, 107, 0.8);
+}
+
+.textContent p {
+    font-size: 1.15em;
+    line-height: 2em;
+    background: rgba(115, 0, 107, 0.8);
+    padding: 1em;
+    color: #fff;
+}
+
+.textContentApparance {
+    font-size: 1.1em;
+    background: url('../img/white_tiger.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-size: 100% auto; */
+    background-position: center, center;
+}
+
+.features,
+.pricing,
+.home {
     height: 35vh;
     vertical-align: middle;
     line-height: 35vh;
 }
 
 .pricingContent {
-  margin: 2.5% 5%;
-  width: 33%;
-  padding: 1em;
+    margin: 1em 1em;
+    height: auto;
+    width: 33%;
+    padding: 1em;
 }
 
-.pricingContent{
-  margin: 2.5% 5%;
-  height: auto;
-  width: 33%;
-  padding: 1em;
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 .5em 0;
 }
 
-
-h2, h3, h4 {
-  margin: 0 0 .5em 0;
+h2 {
+    font-size: 3em;
 }
 
-h2{
-  font-size: 3em;
-}
 h3 {
-  font-size: 2em;
+    font-size: 2em;
 }
+
 h4 {
-  font-size: 1.5em
+    font-size: 1.5em
+}
+
+h5 {
+    font-size: 1.3em;
+}
+
+h6 {
+    font-size: 1.2em;
+}
+
+.teacherAssignmentTable h6 {
+    margin-top: 4em
+}
+
+.teacherAssignmentTable:nth-child(1) h6,
+.teacherAssignmentTable:nth-child(2) h6 {
+    margin-top: 0;
 }
 
 .apperance {
-  background-color:rgba(98,0,105,1);
-  font-size: 1.1em;
+    background-color: rgba(98, 0, 105, 1);
+    font-size: 1.1em;
 }
 
 .innerContent {
-  margin: 5%;
-  padding: 2em;
-  width: 70%;
-
+    margin: 5%;
+    padding: 2em;
+    width: 70%;
 }
 
-.pricingAjust{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
+.pricingAjust {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
-.click{
-  display:inline-block;
-  color: rgba(255, 255, 255, 1);
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-  padding: inherit;
+.click {
+    display: inline-block;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: inherit;
 }
 
-.clickAssignment {
-  
+.par,
+.teachContent {
+    width: 100%;
+    min-width: 100%;
 }
 
-.par, .teachContent{
-  width: 100%;
-  min-width: 100%;
+.par {
+    margin-bottom: 1em;
 }
 
-  /*====================================
+.courseName {
+    width: calc(80% + 6em);
+    min-width: 80%;
+    height: 2.5em;
+    vertical-align: text-top;
+    text-align: left;
+    padding-left: 1em;
+    font-weight: bold;
+    text-decoration: underline;
+    top: 0;
+    line-height: 2.5em;
+}
+
+
+/*===================================================================================
   nav  attributes
-  =====================================*/
+  ====================================================================================*/
 
-  header{
+header {
     overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000
-  }
-
-  #nav .current {
-    background-color: rgba(145,0,156,1);
-    /* color: #d900e8; */
-  }
-
-  #nav ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      /* This aligns items to the end line on main-axis */
-      justify-content: flex-end;
-      background-color:rgba(98,0,105,1);
-      width: 100%;
-      overflow: hidden;
-
-  }
-
-  #nav ul li {
-      height: 5em;
-      line-height: 5em;
-      text-align: center;
-      letter-spacing: 1px;
-      font-size: 1em;
-      text-transform: uppercase;
-      font-weight: bold;
-      align-content: flex-end;
-      flex-grow: 0.1;
-  }
-
-  #nav ul li a {
-      transition-duration: 1s;
-      padding: 2em;
-      text-decoration: none;
-      color: white;
-  }
-
-  #nav ul li a:hover {
-      background-color: rgba(145,0,156,1);
-      transition-duration: 1s;
-  }
-
-  #nav-button-max-500 {
-      display: none;
-  }
-
-  #nav ul li:nth-child(1) {
-   flex-grow: 3;
-   flex-shrink: 0;
-   display: flex;
-   line-height: normal;
-  }
-
-  #back {
-  font-size: 1em;
-  float: right;
-  padding: 0;
-  border: none;
+    z-index: 1000;
+    box-shadow: 0 0 10px #000
 }
+
+.hidden-max-500 {
+    display: flex;
+}
+
+#nav .current {
+    background-color: rgba(145, 0, 156, 1);
+    /* color: #d900e8; */
+}
+
+#nav ul {
+    /* display: flex; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* This aligns items to the end line on main-axis */
+    justify-content: flex-end;
+    background-color: rgba(98, 0, 105, 1);
+    width: 100%;
+    overflow: hidden;
+}
+
+#nav ul li {
+    height: 5em;
+    line-height: 5em;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-content: flex-end;
+    /* flex-grow: 0.1; */
+}
+
+#nav ul li a {
+    transition-duration: 1s;
+    padding: 2em;
+    text-decoration: none;
+    color: white;
+}
+
+#nav ul li:hover {
+    background-color: rgba(145, 0, 156, 1);
+    transition-duration: 1s;
+}
+
+#nav-button-max-500 {
+    display: none;
+    background-color: rgba(145, 0, 156, 1);
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#nav-button-max-500 img {
+    max-width: auto;
+    max-height: 70px;
+}
+
+#nav ul li:nth-child(1) {
+    flex-grow: 3;
+    flex-shrink: 0;
+    display: flex;
+    line-height: normal;
+}
+
+#nav ul li:nth-child(1) img  {
+    display: block;
+    width: auto;
+    height: 5em;
+    z-index: 500;
+    top: 0;
+    left: 0;
+}
+
+#nav ul li:nth-child(1) a,#nav ul li:nth-child(1) a img {
+  padding: 0 0 0 0.5em;
+
+
+}
+
+#back {
+    font-size: 1em;
+    float: right;
+    padding: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+
 /*  #nav > ul > li:nth-child(1) > a */
+
 
 /*
 #nav ul li a {
@@ -421,45 +584,63 @@ h4 {
 }
 */
 
-
-
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1000000000000; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  -webkit-animation-name: slideIn; /* Fade in the background /*/
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
-  animation-duration: 0.4s;
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000000000000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    -webkit-animation-name: slideIn;
+    /* Fade in the background /*/
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
 }
 
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 25%; /* Could be more or less, depending on screen size */
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideIn ;
-  animation-duration: 0.4s;
+    background-color: #3b003f;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    /* Could be more or less, depending on screen size */
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+}
+
+.modal-content-width-50 {
+    width: 50%;
+}
+
+.modal-content select,
+.modal-content input {
+    width: 100%;
 }
 
 .close,
 .assignmentClose,
-.attendanceClose {
-  color: #DBDBDB;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  text-decoration: none;
+.attendanceClose,
+.accountClose,
+.newsClose {
+    color: #DBDBDB;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .close:hover,
@@ -467,93 +648,129 @@ h4 {
 .assignmentClose:hover,
 .assignmentClose:focus,
 .attendanceClose:hover,
-.attendanceClose:focus {
-  color: #313131;
-  text-decoration: none;
-  cursor: pointer;
+.attendanceClose:focus,
+.accountClose:hover,
+.accountClose:focus,
+.newsClose:hover,
+.newsClose:focus {
+    color: #313131;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#loginButton img {
+    vertical-align: middle;
+    height: auto;
 }
 
 #loginButton:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
-.modal-content {
-  background-color: #3b003f
-}
 
-/*==========================================
+/*=========================================================================================
 This is CSS only for the news.html page
-============================================*/
+===========================================================================================*/
 
 .news-head {
-  padding: 3em 0;
+    padding-bottom: 3em;
 }
 
 .news {
-  width: 100%;
-  padding: 1em;
-  font-weight: bold;
-  background-color: rgba(166,79,172,0.5);
+    width: 100%;
+    padding: 1em;
+    font-weight: bold;
+    background-color: rgba(166, 79, 172, 0.5);
 }
 
 .news-content {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .newsTab {
-  display:flex;
-  flex-direction: row-reverse;
-  padding: 1em 0 1em 0;
-  border-bottom: 1px solid #ffffff;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1em 0 1em 0;
+    border-bottom: 1px solid #ffffff;
 }
 
 .newsDate {
-  padding-left: 1em; 
-  flex: 1;
-  font-size: 0.8em;
+    /* padding-left: 1em; */
+    flex: 1;
+    font-size: 0.8em;
 }
 
 .news-content2 {
-  background-color: rgba(128, 19, 136, 0.35);
-  padding: 1em;
-  flex: 3;
-  font-size: 1em;
+    background-color: rgba(221, 70, 232, 0.35);
+    padding: 1em;
+    flex: 3;
+    font-size: 1em;
 }
 
 .newsHead {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
+
+#newsBtn {
+    width: 100%;
+    padding: 0.5em;
+    text-decoration: none;
+    border: 1px solid rgba(221, 70, 232, 0.35);
+    border-radius: 10px;
+    background-color: rgba(166, 79, 172, 0.5);
+}
+
+
 /*==========================================
 Add Animation for modal. Under construcktion for all pages testing on teacher.html
 ============================================*/
 
 @-webkit-keyframes slideIn {
-    from {bottom: -300px; opacity: 0}
-    to {bottom: 0; opacity: 1}
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 @keyframes slideIn {
-    from {bottom: -300px; opacity: 0}
-    to {bottom: 0; opacity: 1}
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0}
-    to {opacity: 1}
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fadeIn {
-    from {opacity: 0}
-    to {opacity: 1}
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
 }
 
-
 ul.pricing-list {
-   list-style-position: inside;
-   margin: 1em;
-   margin-bottom: 4em;
-   flex-grow: 1;
+    list-style-position: inside;
+    margin: 1em;
+    margin-bottom: 4em;
+    flex-grow: 1;
 }
 
 ul.pricing-list li {
@@ -575,13 +792,14 @@ ul.pricing-list li.no {
     font-size: 1.5em;
     padding: .5em;
     cursor: pointer;
-    background: rgba(145,0,156,1);
-    border-color: rgba(145,0,156,1);
-    border: 1px solid rgba(145,0,156,1);
+    background: rgba(145, 0, 156, 1);
+    border-color: rgba(145, 0, 156, 1);
+    border: 1px solid rgba(145, 0, 156, 1);
     color: #fff;
     transition: .5s;
     text-transform: uppercase;
 }
+
 .pricingContent button:hover {
     background: none;
     border-color: #fff;
@@ -601,5 +819,387 @@ ul.pricing-list li.no {
     float: right;
     width: auto;
     margin-left: 3em
+}
+
+.StudentListTableOverflow tbody,
+.StudentListTableOverflow {
+    height: 200px;
+    overflow: auto;
+}
+
+.StudentListTableOverflow {
+    height: 200px;
+    overflow: auto;
+    border: 2px solid #8d2207;
+}
+
+.StudentListTable {
+    width: 100%;
+}
+
+.StudentListBody tr:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.2)
+}
+.StudentListTable tr td {
+    padding: .4em
+}
+
+
+
+
+/* =================================================================================
+Anmation for menu button on all student, teacher and admin pages
+================================================================================= */
+
+.menuButton {
+    /* display: inline-block; */
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/* =================================================================================
+CSS for accounts.html on admin pages
+================================================================================= */
+
+.account-content {
+    background-color: rgba(98, 0, 105, 1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2em;
+    margin: 5% 20%;
+}
+
+.account-form {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.account-main-content h1 {
+    font-size: 3em;
+}
+
+.account-main-content h2 {
+    font-size: 2em;
+    background-color: rgba(166, 79, 172, 0.5);
+}
+
+.account-main-content h3 {
+    font-size: 1.5em;
+}
+
+.response-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.account-main-content input::placeholder {
+    border: none;
+}
+
+.account-main-content button:hover {
+    background-color: rgba(166, 79, 172, 0.5);
+}
+
+#accout-respond-box {
+    margin: 2em;
+}
+
+#submit-button {
+    padding: 2em;
+}
+
+.newsArea,
+.width100 {
+    width: 100%;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+
+/*
+  For for create.html
+*/
+
+.createCoursesStudentsMiddle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.createCourses,
+.createStudents {
+    width: 49%;
+    background: #743878;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.excelButton {
+    width: 32px;
+    height: 32px;
+}
+
+.createCoursesStudents {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* min-height: 100%; */
+}
+
+.createCoursesStudentsTop {
+    flex-grow: 0;
+}
+
+.createCoursesStudentsMiddle {
+    flex-grow: 1;
+}
+
+.createCoursesStudentsBottom {
+    flex-grow: 0;
+    height:;
+}
+
+.courseContainerList,
+.studentContainerList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(255, 255, 255, .2);
+    padding: 1em 0;
+}
+
+.courseContainerList select,
+.courseContainerList button,
+.courseContainerList input,
+.studentContainerList select,
+.studentContainerList button,
+.studentContainerList input {
+    min-width: 20%;
+    margin-left: 1em;
+    flex-grow: 1;
+}
+
+button.roundButton {
+    margin-right: 1em;
+    min-width: auto;
+    width: 3em;
+    border-radius: 50%;
+    flex-grow: 0;
+    line-height: 0;
+    height: 3em;
+}
+
+.courseContainerList .excelButton,
+.studentContainerList .excelButton {
+    margin-left: 1em;
+}
+
+.createCoursesStudents tr:nth-child(even) {
+    background: rgba(0, 0, 0, .1)
+}
+
+.createCoursesStudents td,
+.createCoursesStudents th {
+    padding: .5em 0
+}
+
+.createCoursesStudents td:first-child {
+    width: 2em
+}
+
+.image-upload>input {
+    display: none;
+}
+
+#errorMessageStudent,
+#errorMessageCourse {
+    position: absolute;
+    bottom: 5em;
+    /* border: 1px solid #000; */
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: .5em;
+    background: rgba(0, 0, 0, .2);
+}
+
+.visibilityVisible {
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
+}
+
+.visibilityHidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+.courseAddedAfterCreation {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20%;
+    font-weight: bold;
+    font-size: 200%
+}
+
+.createCourses ul li:nth-child(odd),
+.createStudents ul li:nth-child(odd) {
+    background: rgba(0, 0, 0, .1)
+}
+
+.createCourses ul li,
+.createStudents ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .5em;
+}
+
+.createCourses ul li span {
+    width: 50%;
+    padding: .5em;
+}
+
+.createCourses ul li input {
+    width: auto;
+}
+
+.createCourses ul li label {
+    display: flex;
+    align-items: center;
+}
+
+.createCourses ul li label:hover {
+    background: none
+}
+
+.createCourses ul li label,
+.createStudents ul li span {
+    width: 80%;
+}
+
+.createCourses ul li button,
+.createStudents ul li button {
+    padding: .5em;
+    width: 20%;
+}
+
+.createCourses ul li:hover,
+.createStudents ul li:hover {
+    background: rgba(0, 0, 0, .25);
+}
+
+.createStudents div:nth-child(1) {
+    overflow: auto;
+    height: 50vh;
+    flex-grow: 1;
+}
+
+button:disabled {
+    background: rgb(184, 184, 184);
+    border: 1px solid #8a8a8a;
+    opacity: .75;
+    cursor: not-allowed
+}
+
+.createCourses h5,
+.createStudents h5 {
+    padding: .25em;
+    margin: 0;
+}
+
+#createNewEducation {
+    position: fixed;
+    right: 0;
+    left: auto;
+    bottom: 0;
+    background: rgba(176, 42, 9, 1);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 5px #000;
+}
+
+#createNewEducation a {
+    padding: 1em;
+    display: block;
+}
+
+#loginButton1 {
+    background: url('../img/login_icon3.png') no-repeat;
+    background-size:35px;
+    background-position:center;
+  }
+
+
+#newsButton {
+    margin-bottom: 1em
+}
+
+/* =================================================================================
+Menu hide
+================================================================================= */
+
+.cd-auto-hide-header {
+  /* Force Hardware Acceleration */
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.cd-auto-hide-header::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.cd-auto-hide-header.is-hidden {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 

@@ -18,6 +18,7 @@ function checkAttendance() {
     if (attendanceInput.value === "111") {
         attendanceHeader.innerHTML = "";
         attendanceHeader.innerHTML = attendanceRightInput;
+        setTimeout("swapPage()",2000);
         return true;
 
     } else {
@@ -25,22 +26,24 @@ function checkAttendance() {
         return false;
     }
 }
-
+function swapPage(){
+    attendanceModal.style.display = "none";
+}
 
 // Destroys the script
-    // attendanceInput.addEventListener("keyup", function (event) {
-    //     event.preventDefault();
-    //     if (event.keyCode === 13) {
-    //         checkAttendance();
-    //     }
-    // });
+//     attendanceInput.addEventListener("keyup", function (event) {
+//         event.preventDefault();
+//         if (event.keyCode === 13) {
+//             checkAttendance();
+//         }
+//     });
 
 // Opens modal window to attendance
     // When the user clicks on the button, open the modal
-    attendanceButton.onclick = function () {
-        attendanceModal.style.display = "block";
-        setCurrentDate(); //Global function from teacherAttendanceCode.js
-    };
+  //  attendanceButton.onclick = function () {
+    //    attendanceModal.style.display = "block";
+      //  setCurrentDate(); //Global function from teacherAttendanceCode.js
+    //};
 
     // When the user clicks on <span> (x), close the modal
     attendanceClose.onclick = function () {

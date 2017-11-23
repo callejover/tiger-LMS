@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Tiger-LMS | Skapa konton</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <link rel="stylesheet" href="../../css/brandingKyh.css">
+
+    <link rel="stylesheet" href="../../css/mediaq.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> Not needed -->
+</head>
+
+<body>
+
+  <header class="cd-auto-hide-header">
+    <nav id="nav" class="cd-primary-nav">
+            <div id="nav-button-max-500">
+                <a href="adminStart.html">
+                    <img src="../../img/KYH-logo.png">
+                </a>
+                <div class="menuButton" onclick="menuButton(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <ul class="hidden-max-500">
+                <li>
+                    <a href="adminStart.html">
+                        <img src="../../img/KYH-logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="editFeedback.html">Utvärdering</a>
+                </li>
+                <li>
+                    <a class="modal-button" href="#myModal1">Nyheter</a>
+                </li>
+                <li>
+                    <a class="modal-button" href="#myModal2">Skapa konton</a>
+                </li>
+                <li>
+                    <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Closing X icon in modal -->
+            <div class="header">
+                <h3>Skapa ny användare</h3>
+                <form id="account-form">
+                    <!-- Form for user input -->
+                    <div id="account-name">
+                        <input type="text" placeholder="Fullständigt namn">
+                    </div>
+                    <div id="account-email">
+                        <input type="text" id="email-box" placeholder="Epostadress">
+                    </div>
+                    <div id="account-username">
+                        <input type="text" placeholder="Användarnamn" autofocus="autofocus">
+                    </div>
+                    <div id="account-password">
+                        <input type="password" placeholder="Lösenord">
+                    </div>
+                    <div id="account-type">
+                        <select name="account-select" id="account-select">
+                            <option value="Student">Student</option>
+                            <option value="Lärare">Lärare</option>
+                            <option value="Administratör">Administratör</option>
+                        </select>
+                        <div class="accountButton">
+                            <input type="submit" value="submit" id="accountResponse" class="createStudent createTeacher">
+                        </div>
+                    </div>
+                </form>
+                <span class="createdUserMassage"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Closing X icon in modal -->
+            <div class="header headerAssignment">
+                <div id="newsContent">
+                    <h3>Lägg till nyheter</h3>
+
+                    <form name="newsForm">
+                        <select id="classNews">
+                            <option value="javascript">Javascript</option>
+                            <option value="htmlCss">HTML och CSS </option>
+                            <option value="backend">Backend</option>
+                            <option value="arbetsmetodik">Arbetsmetodik</option>
+
+
+                        </select>
+                        <select id="teacherStudent">
+                            <option value="student">Elever</option>
+                            <option value="teacher">Lärare</option>
+                        </select>
+                        <textarea class="headline" rows="1" cols="10" input placeholder="Rubrik"></textarea>
+                        <textarea class="newsArea" rows="10" cols="50"></textarea>
+                        <input type="date" class="lesson-day" id="dates" >
+                        <button id="sendNews" onclick="sendNews1()">Lägg till</button>
+                        <span id="newsSent"></span>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wrap">
+        <div class="content">
+            <div class="innerContent apperance">
+
+                <div class="createCoursesStudents">
+                    <div class="createCoursesStudentsTop">
+                        <h3 contenteditable="true">FE16</h3>
+                    </div>
+
+                    <div class="createCoursesStudentsMiddle">
+
+                        <div class="createCourses">
+                            <div>
+                                <h5>Kurser</h5>
+                                <ul>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="" checked>
+                                            <span>Javascript</span>
+                                            <span> (Elisabeth Nilsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="" checked>
+                                            <span>Back End Utveckling</span>
+                                            <span> (Lennart Jonsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="" checked>
+                                            <span>HTML/CSS</span>
+                                            <span> (Elisabeth Nilsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Node.js</span>
+                                            <span> (Elisabeth Nilsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>PHP</span>
+                                            <span> (Lennart Jonsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Serverar</span>
+                                            <span> (Hans Pettersson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+
+
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Handel och försäljning</span>
+                                            <span> (Erik Johansson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Bokföring och redovisning</span>
+                                            <span> (Margareta Karlsson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span>Aktier och privatekonomi</span>
+                                            <span> (Eva Eriksson)</span>
+                                        </label>
+                                        <button disabled>Ta bort</button>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="courseContainerList">
+                                <input type="text" placeholder="Kursnamn...">
+                                <select name="teacherList">
+                                    <option selected="" value="" disabled>Välj lärare...</option>
+                                    <option value="0">Erik Johansson</option>
+                                    <option value="1">Margareta Karlsson</option>
+                                    <option value="2">Elisabeth Nilsson</option>
+                                    <option value="3">Eva Eriksson</option>
+                                    <option value="4">Lars Andersson</option>
+                                    <option value="5">Christina Jonsson</option>
+                                    <option value="6">Gunnar Bengtsson</option>
+                                    <option value="7">Hans Pettersson</option>
+                            </select>
+                                <div class="image-upload excelButton">
+                                    <label for="file-input">
+                                        <img src="../../img/excel.png" />
+                                    </label>
+
+                                    <input id="file-input" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                                </div>
+                                <button class="roundButton" id="add-course-to-table">+</button>
+
+                                <span id="errorMessageCourse"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="createStudents">
+                            <div>
+                                <h5>Elever</h5>
+
+
+                                <ul>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Robbin Eriksson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Tobias Wallner</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Calle Jovér</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Kristina Larsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Ingrid Pettersson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Kristina Larsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Lennart Jonsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Maria Johansson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Margareta Karlsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Elisabeth Nilsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Eva Eriksson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Erik Johansson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Lars Andersson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Christina Jonsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Carl Persson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Gunnar Bengtsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Hans Pettersson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Per Larsson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Johan Eriksson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Hans Pettersson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                    <li style="opacity: 1; transition: 1s;">
+                                        <span>Ingrid Pettersson</span>
+                                        <button onclick="removeMe(this)">Ta bort</button>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="studentContainerList">
+
+                                <select name="studentList" id="">
+                                    <option selected="" value="" disabled>Välj student...</option>
+                                    <option value="0">Maria Johansson</option>
+                                    <option value="1">Margareta Karlsson</option>
+                                    <option value="2">Elisabeth Nilsson</option>
+                                    <option value="3">Eva Eriksson</option>
+                                    <option value="4">Erik Johansson</option>
+                                    <option value="5">Lars Andersson</option>
+                                    <option value="6">Christina Jonsson</option>
+                                    <option value="7">Carl Persson</option>
+                                    <option value="8">Gunnar Bengtsson</option>
+                                    <option value="9">Hans Pettersson</option>
+                                    <option value="10">Per Larsson</option>
+                                    <option value="11">Johan Eriksson</option>
+                                    <option value="12">Hans Pettersson</option>
+                                    <option value="13">Ingrid Pettersson</option>
+                                    <option value="14">Kristina Larsson</option>
+                                    <option value="15">Lennart Jonsson</option>
+                                    <option value="16">Maria Johansson</option>
+                                    <option value="17">Margareta Karlsson</option>
+                                    <option value="18">Elisabeth Nilsson</option>
+                                    <option value="19">Eva Eriksson</option>
+                                    <option value="20">Erik Johansson</option>
+                                    <option value="21">Lars Andersson</option>
+                                    <option value="22">Christina Jonsson</option>
+                                    <option value="23">Carl Persson</option>
+                                    <option value="24">Gunnar Bengtsson</option>
+                                    <option value="25">Hans Pettersson</option>
+                                    <option value="26">Per Larsson</option>
+                                    <option value="27">Johan Eriksson</option>
+                                    <option value="28">Hans Pettersson</option>
+                                </select>
+
+                                <div class="image-upload excelButton">
+                                    <label for="file-input">
+                                        <img src="../../img/excel.png" />
+                                    </label>
+
+                                    <input id="file-input" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                                </div>
+
+                                <button class="roundButton" id="add-student-to-table">+</button>
+
+                                <span id="errorMessageStudent"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="createCoursesStudentsBottom">
+                        <button id="addCreatedClass">Lägg till klass</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--account-main-content-->
+        </div>
+        <!--account-content-->
+    </div>
+    <!--wrap-->
+
+    <script src="../../js/adminCreateClass.js"></script>
+    <script src="../../js/adminModal.js"></script>
+    <script src="../../js/teacherNews.js"></script>
+
+
+    <script src="../../js/removeItems.js"></script>
+
+    <script src="../../js/navMenu.js"></script>
+
+
+</body>
+
+</html>

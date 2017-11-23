@@ -2,9 +2,9 @@
     margin: 1em 0 3em 0;
 }
 
-.radio p { 
+.radio p {
     display: inline; /* place the texts to the left&the right of radio-buttons */
-    font-size: 0.8em; 
+    font-size: 0.8em;
     color: #FFFFFF;
 }
 
@@ -17,13 +17,13 @@ input[type="text"] { /* namebox-sizing */
 .send-button { /* button-styling */
     width: 10em;
     margin: 1em 0 5em 0;
-    background-color: #91009C; 
+    background-color: #91009C;
     border: none;
     color: white;
     padding: 1em 1em;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.5em;  
+    font-size: 1.5em;
     cursor: pointer;
 }
 
@@ -40,7 +40,7 @@ textarea { /* textarea-sizing */
 }
 
 .required {
-    color: red;
+    color: #FFF;
     font-size: 0.9em;
 }
 
@@ -52,10 +52,10 @@ label {
   }
 
 label:hover {
-    color: #DD46E8;
+    color: #FFF; 
     font-size: 1.1em;
-} 
-  
+}
+
 .p-left {
     float: left;
 }
@@ -90,5 +90,3 @@ label:hover {
 	height:95%;
 	z-index:1002;
 }
-
-
