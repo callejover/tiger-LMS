@@ -1,8 +1,3 @@
-
-
-
-// =================================================================================
-
 //On submit button, changes the modals inner HTML
 
 let fullNameCreate = document.querySelector("#account-name input");
