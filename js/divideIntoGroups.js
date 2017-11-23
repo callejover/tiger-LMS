@@ -1,12 +1,3 @@
-// if(window.resizeTo > 1200) {
-//     resizeWindow();
-// }
-
-// function resizeWindow() {
-//     let hidddenGroups = document.querySelector(".innerContent"); 
-
-//     hiddenGroups.innerHTML = alert(123);
-
 let groupStudents = [
     FE15 = [
         "Charlotta Abrahamsson",

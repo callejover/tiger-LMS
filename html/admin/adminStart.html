@@ -31,109 +31,116 @@
 
   <header class="cd-auto-hide-header">
     <nav id="nav" class="cd-primary-nav">
-        <div id="nav-button-max-500">
-          <a href="adminStart.html"><img src="../../img/KYH-logo.png"></a>
-          <div class="menuButton" onclick="menuButton(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+      <div id="nav-button-max-500">
+        <a href="adminStart.html">
+          <img alt="" src="../../img/KYH-logo.png">
+        </a>
+        <div class="menuButton" onclick="menuButton(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <ul class="hidden-max-500">
+        <li>
+          <a href="adminStart.html">
+            <img alt="" src="../../img/KYH-logo.png">
+          </a>
+        </li>
+        <li>
+          <a href="editFeedback.html">Utvärdering</a>
+        </li>
+        <li>
+          <a class="modal-button" href="#myModal1">Nyheter</a>
+
+        </li>
+        <li>
+          <a class="modal-button" href="#myModal2">Skapa konton</a>
+        </li>
+
+        <li>
+          <a href="../../index.html" id="loginButton">
+            <!-- LOGGA UT -->
+            <img alt="" src="../../img/logut_icon3.png" width="35" height="50">
+          </a>
+
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <div id="myModal2" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <!-- Closing X icon in modal -->
+      <div class="header">
+        <h3>Skapa ny användare</h3>
+        <form id="account-form">
+          <!-- Form for user input -->
+          <div id="account-name">
+            <input type="text" placeholder="Fullständigt namn" autofocus="autofocus">
           </div>
-        </div>
-        <ul class="hidden-max-500">
-          <li>
-            <a href="adminStart.html"><img src="../../img/KYH-logo.png"></a>
-          </li>
-          <li>
-            <a href="editFeedback.html">Utvärdering</a>
-          </li>
-          <li>
-            <a class="modal-button" href="#myModal1">Nyheter</a>
-
-          </li>
-          <li>
-            <a class="modal-button" href="#myModal2">Skapa konton</a>
-          </li>
-
-          <li>
-            <a href="../../index.html" id="loginButton"><!-- LOGGA UT --><img src = "../../img/logut_icon3.png" width="35" height="50"></a>
-
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-
-
-    <div id="myModal2" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <!-- Closing X icon in modal -->
-            <div class="header">
-                <h3>Skapa ny användare</h3>
-                <form id="account-form">
-                    <!-- Form for user input -->
-                    <div id="account-name">
-                        <input type="text" placeholder="Fullständigt namn" autofocus="autofocus">
-                    </div>
-                    <div id="account-email">
-                        <input type="text" id="email-box" placeholder="Epostadress">
-                    </div>
-                    <div id="account-username">
-                        <input type="text" placeholder="Användarnamn">
-                    </div>
-                    <div id="account-password">
-                        <input type="password" placeholder="Lösenord">
-                    </div>
-                    <div id="account-type">
-                        <select name="account-select" id="account-select">
-                            <option value="Student">Student</option>
-                            <option value="Lärare">Lärare</option>
-                            <option value="Administratör">Administratör</option>
-                        </select>
-                        <div class="accountButton">
-                            <input type="submit" value="Skapa användare" id="accountResponse" class="createStudent createTeacher">
-                        </div>
-                    </div>
-                </form>
-                <span class="createdUserMassage"></span>
+          <div id="account-email">
+            <input type="text" id="email-box" placeholder="Epostadress">
+          </div>
+          <div id="account-username">
+            <input type="text" placeholder="Användarnamn">
+          </div>
+          <div id="account-password">
+            <input type="password" placeholder="Lösenord">
+          </div>
+          <div id="account-type">
+            <select name="account-select" id="account-select">
+              <option value="Student">Student</option>
+              <option value="Lärare">Lärare</option>
+              <option value="Administratör">Administratör</option>
+            </select>
+            <div class="accountButton">
+              <input type="submit" value="Skapa användare" id="accountResponse" class="createStudent createTeacher">
             </div>
-        </div>
+          </div>
+        </form>
+        <span class="createdUserMassage"></span>
+      </div>
     </div>
+  </div>
 
 
 
-    <div id="myModal1" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <!-- Closing X icon in modal -->
-            <div class="header headerAssignment">
-              <div id="newsContent">
-                <h3>Lägg till nyheter</h3>
+  <div id="myModal1" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <!-- Closing X icon in modal -->
+      <div class="header headerAssignment">
+        <div id="newsContent">
+          <h3>Lägg till nyheter</h3>
 
-                <form name="newsForm">
-                    <select id="classNews">
-                      <option value="javascript">Javascript</option>
-                      <option value="htmlCss">HTML och CSS </option>
-                      <option value="backend">Backend</option>
-                      <option value="arbetsmetodik">Arbetsmetodik</option>
+          <form name="newsForm">
+            <select id="classNews">
+              <option value="javascript">Javascript</option>
+              <option value="htmlCss">HTML och CSS </option>
+              <option value="backend">Backend</option>
+              <option value="arbetsmetodik">Arbetsmetodik</option>
 
 
-                    </select>
-                    <select id="teacherStudent">
-                      <option value="student">Elever</option>
-                      <option value="teacher">Lärare</option>
-                    </select>
-                    <textarea class="headline"  rows="1" cols="10" input placeholder="Rubrik"></textarea>
-                    <textarea class="newsArea" rows="10" cols="50"></textarea>
-                    <input type="date" class="lesson-day">
-                    <button id="sendNews" onclick="sendNews1()" >Lägg till</button>
-                    <span id="newsSent"></span>
+            </select>
+            <select id="teacherStudent">
+              <option value="student">Elever</option>
+              <option value="teacher">Lärare</option>
+            </select>
+            <textarea class="headline" name="headline" rows="1" cols="10" placeholder="Rubrik"></textarea>
+            <textarea class="newsArea" rows="10" cols="50"></textarea>
+            <input type="date" class="lesson-day">
+            <button id="sendNews" onclick="sendNews1()">Lägg till</button>
+            <span id="newsSent"></span>
 
-                </form>
-              </div>
-            </div>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
 
 
   <!-- div loginModal opens the login box on index screen -->
@@ -144,93 +151,94 @@
     <div class="wrap index teachWrap">
 
 
-          <div class="teachCourses apperance courseName">
-            <!-- Trigger/Open The Modal -->
-              Front-end Utveckling
-          </div>
-          <!--teachCourses-->
+      <div class="teachCourses apperance courseName">
+        <!-- Trigger/Open The Modal -->
+        Front-end Utveckling
+      </div>
+      <!--teachCourses-->
 
-          <div class="teachCourses apperance classes1">
-            <a href="createdClass_FE15.html">FE15</a>
-          </div>
-
-
-          <div class="teachCourses apperance classes1">
-              <a href="createdClass_FE16.html">FE16</a>
-          </div>
-          <!--teachCourses-->
-
-          <div class="teachCourses apperance classes1">
-              <a href="createdClass_FE17.html">FE17</a>
-          </div>
-          <!--teachCourses-->
-
-          <div class="toned-down teachCourses apperance new">
-              <a href="create.html">+ Lägg till</a>
-          </div>
-          <!--teachCourses-->
-
-          <div class="teachCourses apperance courseName">
-              Ekonomi
-          </div>
-          <!--teachCourses-->
-
-          <div class="teachCourses apperance classes2">
-            <a href="createdClass_EK16.html">EK16</a>
-          </div>
-          <!--teachCourses-->
-
-          <div class="teachCourses apperance classes2">
-            <a href="createdClass_EK17.html">EK17</a>
-          </div>
-          <!--teachCourses-->
-
-          <div class="toned-down teachCourses apperance new">
-            <a href="create.html">+ Lägg till</a>
-          </div>
-          <!--teachCourses-->
-
-          <div class="invisible-box teachCourses apperance">
-          </div>
+      <div class="teachCourses apperance classes1">
+        <a href="createdClass_FE15.html">FE15</a>
+      </div>
 
 
-          <div class="teachCourses apperance courseName">
-              Back-end Utveckling
-          </div>
-          <!--teachCourses-->
+      <div class="teachCourses apperance classes1">
+        <a href="createdClass_FE16.html">FE16</a>
+      </div>
+      <!--teachCourses-->
 
-          <div class="teachCourses apperance classes3">
-            <a href="createdClass_BE16.html">BE16</a>
-          </div>
-          <!--teachCourses-->
+      <div class="teachCourses apperance classes1">
+        <a href="createdClass_FE17.html">FE17</a>
+      </div>
+      <!--teachCourses-->
 
-          <div class="teachCourses apperance classes3">
-            <a href="createdClass_BE17.html">BE17</a>
-          </div>
-          <!--teachCourses-->
+      <div class="toned-down teachCourses apperance new">
+        <a href="create.html">+ Lägg till</a>
+      </div>
+      <!--teachCourses-->
 
-          <div class="toned-down teachCourses apperance new">
-            <a href="create.html">+ Lägg till</a>
-          </div>
-          <!--teachCourses-->
+      <div class="teachCourses apperance courseName">
+        Ekonomi
+      </div>
+      <!--teachCourses-->
 
-          <div class="invisible-box teachCourses apperance">
-          </div> <!-- invisible box for pushing the boxes to the right -->
+      <div class="teachCourses apperance classes2">
+        <a href="createdClass_EK16.html">EK16</a>
+      </div>
+      <!--teachCourses-->
 
-          <div id="createNewEducation">
-            <a>+ Utbildning</a>
-          </div>
+      <div class="teachCourses apperance classes2">
+        <a href="createdClass_EK17.html">EK17</a>
+      </div>
+      <!--teachCourses-->
+
+      <div class="toned-down teachCourses apperance new">
+        <a href="create.html">+ Lägg till</a>
+      </div>
+      <!--teachCourses-->
+
+      <div class="invisible-box teachCourses apperance">
+      </div>
+
+
+      <div class="teachCourses apperance courseName">
+        Back-end Utveckling
+      </div>
+      <!--teachCourses-->
+
+      <div class="teachCourses apperance classes3">
+        <a href="createdClass_BE16.html">BE16</a>
+      </div>
+      <!--teachCourses-->
+
+      <div class="teachCourses apperance classes3">
+        <a href="createdClass_BE17.html">BE17</a>
+      </div>
+      <!--teachCourses-->
+
+      <div class="toned-down teachCourses apperance new">
+        <a href="create.html">+ Lägg till</a>
+      </div>
+      <!--teachCourses-->
+
+      <div class="invisible-box teachCourses apperance">
+      </div>
+      <!-- invisible box for pushing the boxes to the right -->
+
+      <div id="createNewEducation">
+        <a>+ Utbildning</a>
+      </div>
 
     </div>
-    <!--wrap content found in teacherInfoCourses.html-->
+  </div>
+  <!--wrap content found in teacherInfoCourses.html-->
 
-    <script src="../../js/teacherNews.js"></script>
-    <script src="../../js/adminCreateUser.js"></script>
-    <script src="../../js/adminModal.js"></script>
+  <script src="../../js/teacherNews.js"></script>
+  <script src="../../js/adminCreateUser.js"></script>
 
-    <script src="../../js/addNewEducation.js"></script>
+  <script src="../../js/addNewEducation.js"></script>
 
-    <script src="../../js/navMenu.js"></script>
+  <script src="../../js/navMenu.js"></script>
 
 
 </body>
