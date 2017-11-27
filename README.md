@@ -1,8 +1,8 @@
 
-#Tiger-LMS
+# TIGER-LMS
 	Tiger-LMS is a simple to use Learning Management System for students and staff.
 
-#Code Layout
+# CODE LAYOUT
 1. html: Contains all html pages on the repository.
     - student: Contains the html used when you´ve logged in as a student.
     - teacher: Contains the html used when you´ve logged in as a teacher.
