@@ -15,7 +15,7 @@ function checkAttendance() {
 
     event.preventDefault();
 
-    if (attendanceInput.value === "111") {
+    if (attendanceInput.value === "1111") {
         attendanceHeader.innerHTML = "";
         attendanceHeader.innerHTML = attendanceRightInput;
         setTimeout("swapPage()",2000);
