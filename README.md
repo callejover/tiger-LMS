@@ -1,53 +1,53 @@
-#Tiger-LMS
+# Tiger-LMS
 Tiger-LMS is a simple to use Learning Management System for students and staff.
 
-#Code Layout
-	html: Contains all html pages on the repository.
-		student: Contains the html used when you´ve logged in as a student.
-		teacher: Contains the html used when you´ve logged in as a teacher.
-		admin: Contains the html used when you´ve logged in as an administrator.
-		includes: Contains seperate html for edit feedback in admin. 
-		mocup: Contains mocup ideas for page
+# Code Layout
+html: Contains all html pages on the repository.
+student: Contains the html used when you´ve logged in as a student.
+teacher: Contains the html used when you´ve logged in as a teacher.
+admin: Contains the html used when you´ve logged in as an administrator.
+includes: Contains seperate html for edit feedback in admin. 
+mocup: Contains mocup ideas for page
 
-	css: Contains all css files on the repository.
-		reset.css: Resets default values to null.
-		main.css: This CSS is used for the basic layout of the websites reccurent pages.
-		brandingKYH.css: Special CSS that changes the colors of the page to fit KYHs branding.
-		mediaq.css: Contains the special mediaquery widths.
-		Other CSS files are custom for its own html page.
+css: Contains all css files on the repository.
+reset.css: Resets default values to null.
+main.css: This CSS is used for the basic layout of the websites reccurent pages.
+brandingKYH.css: Special CSS that changes the colors of the page to fit KYHs branding.
+mediaq.css: Contains the special mediaquery widths.
+Other CSS files are custom for its own html page.
 
-	js: Contains all javascript files on the repository.
-		addNewEducation.js: Creates a new education.
-		adminCreateClass.js: Creates a new class.
-		adminCreateUser.js: Creates a new user.
-		adminEditFeedback.js: Creates and removes forms in the feedback editor page.
-		assignmentApproval.js: ----------------------------------------////////////////////////
-		attendance.js: Checks if the students attendance code is valid and gives a response.
-		currentDotsNav.js: Makes sure that the navigaton dots is hightlighted at the correct position of the page.
-		divideIntoGroups.js: Allows the teacher to randomize groups of students.
-		dragAndDrop.js: Drags students to correct groups.
-		jquery.combinedScroll.js: -----------------------///////////////////////////
-		jquery.ScrollDots.js: Animation for scroll.
-		linkHtml.js: ------------------//////////////////////////////
-		login.js: Checks and allows access from accouts to log in.
-		navMenu.js: All javascript for the nav menu.
-		removeItems.js: ----------------------------------//////////////////////////////
-		slider.js: Script for slider used at feedback pages.
-		studentAssignment.js: Allows student to turn in an assignment.
-		studentDailyFeedback.js: Script for smiley faces.
-		studentFeedback.js: Response script to feedback pages.
-		teacherAssignment.js: Allows the teacher to create assignments.
-		teacherAssignmentAdd.js: ----------------------------//////////////////////////// 
-		teacherAssignmentApproval.js: Allows the teacher to view the students work and give a response.
-		teacherAttendanceCode.js: Allows the teacher to create a random attendance code.
-		teacherAttendanceOverview.js: Contains all students attendance.
-		teacherFeedback.js: Contains the google charts.
-		modals.js: Script for all modals.
-		w3-include-html.js: Combines two html pages to one.
+js: Contains all javascript files on the repository.
+addNewEducation.js: Creates a new education.
+adminCreateClass.js: Creates a new class.
+adminCreateUser.js: Creates a new user.
+adminEditFeedback.js: Creates and removes forms in the feedback editor page.
+assignmentApproval.js: ----------------------------------------////////////////////////
+attendance.js: Checks if the students attendance code is valid and gives a response.
+currentDotsNav.js: Makes sure that the navigaton dots is hightlighted at the correct position of the page.
+divideIntoGroups.js: Allows the teacher to randomize groups of students.
+dragAndDrop.js: Drags students to correct groups.
+jquery.combinedScroll.js: -----------------------///////////////////////////
+jquery.ScrollDots.js: Animation for scroll.
+linkHtml.js: ------------------//////////////////////////////
+login.js: Checks and allows access from accouts to log in.
+navMenu.js: All javascript for the nav menu.
+removeItems.js: ----------------------------------//////////////////////////////
+slider.js: Script for slider used at feedback pages.
+studentAssignment.js: Allows student to turn in an assignment.
+studentDailyFeedback.js: Script for smiley faces.
+studentFeedback.js: Response script to feedback pages.
+teacherAssignment.js: Allows the teacher to create assignments.
+teacherAssignmentAdd.js: ----------------------------//////////////////////////// 
+teacherAssignmentApproval.js: Allows the teacher to view the students work and give a response.
+teacherAttendanceCode.js: Allows the teacher to create a random attendance code.
+teacherAttendanceOverview.js: Contains all students attendance.
+teacherFeedback.js: Contains the google charts.
+modals.js: Script for all modals.
+w3-include-html.js: Combines two html pages to one.
 
-	documents: Contains all doucuments to be used on the repository
+documents: Contains all doucuments to be used on the repository
 
-	img: Contains the images of the website.
+img: Contains the images of the website.
 
 # REMEMBER
 1. Check all pages that all functionality is working. If not, take working page and copy it to the non working page and put the important content in for simple fix
