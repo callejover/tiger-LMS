@@ -1,5 +1,53 @@
-# tiger-LMS
-Team Tigers Learning Management System
+#Tiger-LMS
+Tiger-LMS is a simple to use Learning Management System for students and staff.
+
+#Code Layout
+	html: Contains all html pages on the repository.
+		student: Contains the html used when you´ve logged in as a student.
+		teacher: Contains the html used when you´ve logged in as a teacher.
+		admin: Contains the html used when you´ve logged in as an administrator.
+		includes: Contains seperate html for edit feedback in admin. 
+		mocup: Contains mocup ideas for page
+
+	css: Contains all css files on the repository.
+		reset.css: Resets default values to null.
+		main.css: This CSS is used for the basic layout of the websites reccurent pages.
+		brandingKYH.css: Special CSS that changes the colors of the page to fit KYHs branding.
+		mediaq.css: Contains the special mediaquery widths.
+		Other CSS files are custom for its own html page.
+
+	js: Contains all javascript files on the repository.
+		addNewEducation.js: Creates a new education.
+		adminCreateClass.js: Creates a new class.
+		adminCreateUser.js: Creates a new user.
+		adminEditFeedback.js: Creates and removes forms in the feedback editor page.
+		assignmentApproval.js: ----------------------------------------////////////////////////
+		attendance.js: Checks if the students attendance code is valid and gives a response.
+		currentDotsNav.js: Makes sure that the navigaton dots is hightlighted at the correct position of the page.
+		divideIntoGroups.js: Allows the teacher to randomize groups of students.
+		dragAndDrop.js: Drags students to correct groups.
+		jquery.combinedScroll.js: -----------------------///////////////////////////
+		jquery.ScrollDots.js: Animation for scroll.
+		linkHtml.js: ------------------//////////////////////////////
+		login.js: Checks and allows access from accouts to log in.
+		navMenu.js: All javascript for the nav menu.
+		removeItems.js: ----------------------------------//////////////////////////////
+		slider.js: Script for slider used at feedback pages.
+		studentAssignment.js: Allows student to turn in an assignment.
+		studentDailyFeedback.js: Script for smiley faces.
+		studentFeedback.js: Response script to feedback pages.
+		teacherAssignment.js: Allows the teacher to create assignments.
+		teacherAssignmentAdd.js: ----------------------------//////////////////////////// 
+		teacherAssignmentApproval.js: Allows the teacher to view the students work and give a response.
+		teacherAttendanceCode.js: Allows the teacher to create a random attendance code.
+		teacherAttendanceOverview.js: Contains all students attendance.
+		teacherFeedback.js: Contains the google charts.
+		modals.js: Script for all modals.
+		w3-include-html.js: Combines two html pages to one.
+
+	documents: Contains all doucuments to be used on the repository
+
+	img: Contains the images of the website.
 
 # REMEMBER
 1. Check all pages that all functionality is working. If not, take working page and copy it to the non working page and put the important content in for simple fix
@@ -27,56 +75,3 @@ Team Tigers Learning Management System
 # Links:
 1. Trello https://trello.com/b/UaFE8N4d/tiger-gu1
 2. Flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
-# To do list (Tim & Robban):
-1. Main.css
-    index id:s to .class see comment in main.css. (Done)
-2. Side menu for features.html create structure.
-3. Pricing with info section.
-... 3. footer with contact info on every site.
-... 4. show current page in menu
-
-
-# Reflection aka To do list. 171005
-1. Logotype link to index.html (Done)
-2. Bread text adjustments (Done)
-3. textbox ajustmets to width:100%, in mediaq.css (Done)
-4. Link under emojis in courses.html to work (Done)
-6. Calle (atendens function). (Done)
-7. Kanya week evaluation (done)
-8. Fix overflow with text. (Done)
-
-# To do list 171010
-1. Login Enter butten (Done)
-2. Courses mobile version (done)
-3. Buttens in pricing.html (done)
-
-# To do list 171011
-1. Robbin: Login design (button and inputs/placeholders) (done)
-2. Tim A/Tim L: Login - Submit form on Enter (done)
-3. Robbin: Make attendence like loginmodule (done)
-4. Robbin: make loginmodule in mobileview 100% (done)
-5. Tim L: Placsement of text for pricing and features (done)
-6. Kanya: Redirect weekley-evaluation to courses.html (done)
-
-
-# To do list 171017
-1. Title på alla sidor ska ha en relativ titel.
-2. Tim A: menu adjusting to mediaq in all menus
-3. Tim L: Fix course info pages
-
-
----
-
-# IF HAVE TIME DO THIS:
-1. Footer (if have time)
-2. Tim A: Logotype
-
-
-To do 171122
-1. Datum inte bara dagens
-2. Drag and drop för edit feedback
-3. Tydligare klassnamn för create i admin
-4. Backlog få en fungerande knapp för att importera exel dokument
-5. Skapa konto funkar inte.
-6. Testa allt för presentationen och gör en intressant sale pisch.
