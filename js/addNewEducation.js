@@ -2,9 +2,9 @@ let addNewEducation = "<div class=\"teachCourses apperance courseName\"><span co
 let teachWrap = document.querySelector(".teachWrap");
 let createNewEducation = document.querySelector("#createNewEducation");
 
-function hej(event) {
+function addNewEducationFunction(event) {
     teachWrap.innerHTML += addNewEducation;
     event.preventDefault();
 }
 
-createNewEducation.addEventListener("click", hej);
+createNewEducation.addEventListener("click", addNewEducationFunction);
