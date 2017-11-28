@@ -267,4 +267,14 @@
   .result-text {
     margin: 1em;
   }
+
+  .createCoursesStudentsMiddle {
+    flex-direction: column;
+  }
+
+  .createCourses, .createStudents {
+    width: 100%;
+  }
+
+
 }
