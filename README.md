@@ -6,17 +6,17 @@ Tiger-LMS is a simple to use Learning Management System for students and staff.
 1. Accounts.
     - username: student
     - password: student
-
+    --------------------
     - username: teacher
     - password: teacher
-
+    --------------------
     - username: admin
     - password: admin
 
 2. Student Attendance Code
     - 1111
 
-    
+
 # CODE LAYOUT
 1. html: Contains all html pages on the repository.
     - student: Contains the html used when you´ve logged in as a student.
