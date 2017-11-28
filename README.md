@@ -62,7 +62,7 @@ Tiger-LMS is a simple to use Learning Management System for students and staff.
 
 
 # REMEMBER
-1. Check all pages that all functionality is working. If not, take working page and copy it to the non working page and put the important content in for simple fix
+1. Check all pages that all Functionality is working. If not, take working page and copy it to the non working page and put the important content in for simple fix
 
 # Rules:
 1. Always insert a comment at the end tag with the name of the start tag same with {}. example end-div-tag html-comment
@@ -78,7 +78,7 @@ function foo() {
 
 
 2. Use br-tag in p-tag for good practies.
-3. Use flexbox insted of float.
+3. Use flexbox instead of float.
 4. Use "let" and "const" insted of "var" in .js.
 
 # Workflow:
@@ -93,7 +93,7 @@ function foo() {
 
 
 # Focus:
-1. Functionalety
+1. Functionality
 
 # Links:
 1. Trello https://trello.com/b/UaFE8N4d/tiger-gu1
