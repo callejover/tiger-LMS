@@ -66,6 +66,17 @@ Tiger-LMS is a simple to use Learning Management System for students and staff.
 
 # Rules:
 1. Always insert a comment at the end tag with the name of the start tag same with {}. example end-div-tag html-comment
+
+```html
+<div class="foo">foo</div><!-- foo -->
+```
+```javascript
+// Kommentar för foo
+function foo() {
+} 
+```
+
+
 2. Use br-tag in p-tag for good practies.
 3. Use flexbox insted of float.
 4. Use "let" and "const" insted of "var" in .js.
