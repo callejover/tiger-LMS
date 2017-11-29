@@ -2,36 +2,42 @@
 
     "use strict";
 
-    const section = document.querySelectorAll(".section.highlight");
-    const links = document.querySelectorAll(".highlight");
-    const header = document.querySelector("#dots");
-    const topPosOffset = header.clientHeight;
+    const section = document.querySelectorAll(".section.highlight"); // Get all sections that have this class
+    const links = document.querySelectorAll(".highlight"); // Get all links for each section
+    const headerHeight = document.querySelector("header"); // Gets the hight of header
+    const topPosOffset = headerHeight.clientHeight + 0; // Get height from header-element to setting an offset for triggering the highlight before the content top-edge
 
-    let lastKnownScrollPos = 0;
-    let scrollTicking = false;
+    let lastKnownScrollPos = 0; // Set variable to store the "last known scroll position", if page is reloaded it gets the new scroll y position value
+    let scrollTicking = false; // Checks if the user is scrolling or not
 
-    // Highlight function
+    // Highlights the links for the corresponding section
     function highlight(scrollPos) {
 
+        // Loop trough the sections and navigation links
         for (let i = 0; i < section.length; i++) {
 
+            // Gets the space from top of section to the window position
             let topPosition = section[i].getBoundingClientRect().y;
+            // Gets the height of the section
             let height = section[i].offsetHeight;
-            let marginTop = window.getComputedStyle(section[i], null).getPropertyValue("margin-top").replace(/px/g, '');
+            // If section has margin get values
+            let marginTop = window.getComputedStyle(section[i], null).getPropertyValue("margin-top").replace(/px/g, '') / 2;
 
-            let start = (topPosition - (marginTop / 2) - topPosOffset) + window.scrollY;
-            let end = (topPosition + height) - (marginTop / 2) - topPosOffset + window.scrollY;
+            // Start position calculation
+            let start = (topPosition - (marginTop) - topPosOffset) + window.scrollY;
+            // End Position calculation
+            let end = ((topPosition + height) - (marginTop) - topPosOffset) + window.scrollY;
 
-            // Hightlight if top hits the start of the element
+            // Hightlight if window top hits the start of the element
             if (scrollPos > start) {
                 links[i].classList.add('active');
                 links[i].classList.remove('inactive');
-            } else {
+            } else { // Stop highlighting if the position is less then start position
                 links[i].classList.remove('active');
                 links[i].classList.add('inactive');
             }
 
-            // Hightlight if top hits the end of the element
+            // Stop hightlight if window-top hits the end of the element
             if (scrollPos > end) {
                 links[i].classList.remove('active');
                 links[i].classList.add('inactive');
@@ -43,8 +49,10 @@
     function highlightLastKnownScrollPos(event) {
         lastKnownScrollPos = window.scrollY;
         if (!scrollTicking) {
+
+            // repaints animation
             window.requestAnimationFrame(function () {
-                highlight(lastKnownScrollPos);
+                highlight(lastKnownScrollPos); // Callback
                 scrollTicking = false;
             });
             scrollTicking = true;
