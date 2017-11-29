@@ -45,7 +45,7 @@ body {
     background-image: url('../img/white_tiger.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-position: center, center;
     font-family: verdana, sans-serif;
     font-size: 0.9em;
@@ -357,6 +357,11 @@ a {
     background-size: cover;
     background-attachment: fixed;
     background-position: center, center;
+}
+
+
+.section.highlight {
+    flex-grow: 1;
 }
 
 .features,

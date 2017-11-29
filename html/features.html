@@ -1,148 +1,202 @@
 <!DOCTYPE html>
 
 <html lang="sv">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-        <title>Tiger-LMS | Funktioner</title>
+  <title>Tiger-LMS | Funktioner</title>
 
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
-        <link rel="stylesheet" href="../css/reset.css"><!--Reset css-->
-        <link rel="stylesheet" href="../css/main.css"><!--main styling and funkutionalety-->
-        <link rel="stylesheet" href="../css/mediaq.css"><!--main styling and funkutionalety-->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <!-- <link rel="shortcut icon" href="../img/tiger.png" /> -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <!--Reset css-->
+  <link rel="stylesheet" href="../css/main.css">
+  <!--main styling and funkutionalety-->
+  <link rel="stylesheet" href="../css/mediaq.css">
+  <!--main styling and funkutionalety-->
 
-        <script src="https://code.jquery.com/jquery-1.x-git.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+  <script src="https://code.jquery.com/jquery-1.x-git.min.js"></script>
+</head>
+
+<body>
+  <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-      <header>
-        <nav id="nav">
-            <!-- <div id="nav-button-max-500">MENY</div> -->
-            <ul class="hidden-max-500">
-              <li class="mobileShow"><a href="../index.html"><img alt="" src="../img/logoSmal.png"></a></li>
-              <li class="mobileHide"><a href="../index.html">Start</a></li>
-              <li class="mobileHide"><a class="current" href="features.html">Funktioner</a></li>
-              <li class="mobileHide"><a href="pricing.html">Priser</a></li>
-              <li><a class="modal-button" id="loginButton1" href="#myModal3">&nbsp;</a></li>
+  <header>
+    <nav id="nav">
+      <!-- <div id="nav-button-max-500">MENY</div> -->
+      <ul class="hidden-max-500">
+        <li class="mobileShow">
+          <a href="../index.html">
+            <img alt="" src="../img/logoSmal.png">
+          </a>
+        </li>
+        <li class="mobileHide">
+          <a href="../index.html">Start</a>
+        </li>
+        <li class="mobileHide">
+          <a class="current" href="features.html">Funktioner</a>
+        </li>
+        <li class="mobileHide">
+          <a href="pricing.html">Priser</a>
+        </li>
+        <li>
+          <a class="modal-button" id="loginButton1" href="#myModal3">&nbsp;</a>
+        </li>
 
-            </ul>
-        </nav>
-    </header>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Hidden before clicking loginButton -->
-          <div id="myModal3" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>  <!-- Closing X icon in modal -->
-                <div class="header">
-                  <h3>Logga in</h3>
-                    <form name="login">  <!-- Form for user input -->
-                      <div class="login">
+  <!-- Hidden before clicking loginButton -->
+  <div id="myModal3" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <!-- Closing X icon in modal -->
+      <div class="header">
+        <h3>Logga in</h3>
+        <form name="login">
+          <!-- Form for user input -->
+          <div class="login">
 
-                        <input type="text" autofocus="autofocus" placeholder="username" id="username"><br>
-                        <input type="password" class="login" placeholder="password" id="password"><br>
-                        <button type="button" class="login" onclick="getInfo()">Logga in</button>
+            <input type="text" autofocus="autofocus" placeholder="username" id="username">
+            <br>
+            <input type="password" class="login" placeholder="password" id="password">
+            <br>
+            <button type="button" class="login" onclick="getInfo()">Logga in</button>
 
-                       <span class="wrongPass"></span>
+            <span class="wrongPass"></span>
 
-                     </div><!--login-->
-                   </form><!--login-->
-                </div><!--header-->
-              </div><!--modal-content-->
-            </div> <!-- div loginModal opens the login box on index screen -->
+          </div>
+          <!--login-->
+        </form>
+        <!--login-->
+      </div>
+      <!--header-->
+    </div>
+    <!--modal-content-->
+  </div>
+  <!-- div loginModal opens the login box on index screen -->
 
-        <div class="wrap">
+  <div class="wrap">
 
-          <div class="content mobile mobileShow">
-            <div class="home apperance">
-              <a href="../index.html" class="click">
-                Hem
-              </a>
-            </div><!--pricing-->
-            <div class="pricing apperance">
-              <a href="../html/pricing.html" class="click">
-                Priser
-              </a>
-            </div><!--pricing-->
-          </div><!--content mobile-->
+    <div class="content mobile mobileShow">
+      <div class="home apperance">
+        <a href="../index.html" class="click">
+          Hem
+        </a>
+      </div>
+      <!--pricing-->
+      <div class="pricing apperance">
+        <a href="../html/pricing.html" class="click">
+          Priser
+        </a>
+      </div>
+      <!--pricing-->
+    </div>
+    <!--content mobile-->
 
-              <div class="scrollHead">
-                  <nav id="dots">
-                      <ul>
-                          <li><a href="#selection1" class="highlight par"></a></li>
-                          <li><a href="#selection2" class="highlight par"></a></li>
-                          <li><a href="#selection3" class="highlight par"></a></li>
-                          <li><a href="#selection4" class="highlight par"></a></li>
-                      </ul>
-                  </nav>
-              </div><!-- scrollHead -->
-              <div>
-                  <section id="selection1" class="section highlight">
-                    <div class="content scroll">
-                      <div class="innerContent apperance">
-                          <h3 class="marLeft">Enkel översikt</h3>
-                          <p class="pricing_text">
-                            Med Tiger-LMS så ser du snabbt och enkelt vilka kurser du har och den informationen som rör de specifika kurserna. Och detta på ett lätt sätt som alla kan behärska.
-                            <br>
-                            Som elev kan du se information om kursen och om den är pågående eller avslutad och även vad du har för betyg i de kurser som du redan har avslutat.
-                          </p>
-                          <img class="featuresImg" src ="../img/overview.png">
-                        </div><!--innerContent-->
-                      </div><!--innerContent-->
-                    </div><!--content-->
-                  </section>
-                  <section id="selection2" class="section highlight">
-                    <div class="content dark scroll">
-                      <div class="innerContent apperance">
-                          <h3 class="marLeft">Kommunicera med skolan</h3>
-                          <p class="pricing_text">
-                            I tigerLMS så finns det inbyggt kraftfulla kommunikationsverktyg för att direkt kommunicera personal eller att ge feedback efter veckor och månader för att kunna påverka din utbildning. Du kommer även kunna ge feedback utifrån varje avslutad kurs för att kunna ge mer detaljerad inte i syfte att utveckla utbildningen framåt.
-                          </p>
-                          <img class="featuresImg" src ="../img/commu.png">
-                      </div><!--innerContent-->
-                    </div><!--content dark-->
-                  </section>
-                  <section id="selection3" class="section highlight">
-                    <div class="content scroll">
-                      <div class="innerContent apperance">
-                          <h3 class="marLeft">Vara på plats</h3>
-                          <p class="pricing_text">
-                            Att registers närvaro är naturligt och enkelt med tiger-LMS verktyg där du får en kod från din lärare som du sedan skriver in i tiger-LMS som automatisk registrerar att du är på plats.
-                            <br>
-                            Som lärare är det enkelt att hantera närvaron då du har kontroll hur länge eleverna kan registers sin närvaro som i sin tur eliminerar fusk med närvaro. Du kan sedan enkelt se vilka som har varit närvarande.
-                          </p>
-                          <img class="featuresImg" src ="../img/attendance_handss.png">
-                      </div><!--innerContent-->
-                    </div><!--content -->
-                  </section>
-                  <section id="selection4" class="section highlight">
-                    <div class="content dark scroll">
-                      <div class="innerContent apperance">
-                          <h3 class="marLeft">Uppgifter</h3>
-                          <p class="pricing_text">
-                            Hantering av uppgifter är enkelt och strukturerat i sin presentation att du som elev kan lätt förstå vad du behöva i varje uppgift.
-                            <br>
-                            Det hjälper även dig som lärare att enkelt kunna se vem som har lämnat in vad. Som lärare kan du även lägga till andra element i from av uppgifter som är betygs grundande.
-                          </p>
-                          <img class="featuresImg" src ="../img/work.png">
-                      </div><!--innerContent-->
-                    </div><!--content dark-->
-                  </section>
-              </div><!--scroll -->
+    <div class="scrollHead">
+      <nav id="dots">
+        <ul>
+          <li>
+            <a href="#selection1" class="highlight par"></a>
+          </li>
+          <li>
+            <a href="#selection2" class="highlight par"></a>
+          </li>
+          <li>
+            <a href="#selection3" class="highlight par"></a>
+          </li>
+          <li>
+            <a href="#selection4" class="highlight par"></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- scrollHead -->
 
-        </div><!--wrap-->
+    <section id="selection1" class="section highlight">
+      <div class="content scroll">
+        <div class="innerContent apperance">
+          <h3 class="marLeft">Enkel översikt</h3>
+          <p class="pricing_text">
+            Med Tiger-LMS så ser du snabbt och enkelt vilka kurser du har och den informationen som rör de specifika kurserna. Och detta
+            på ett lätt sätt som alla kan behärska.
+            <br> Som elev kan du se information om kursen och om den är pågående eller avslutad och även vad du har för betyg
+            i de kurser som du redan har avslutat.
+          </p>
+          <img class="featuresImg" src="../img/overview.png">
+        </div>
+        <!--innerContent-->
+      </div>
+      <!--innerContent-->
+
+    </section>
+    <section id="selection2" class="section highlight">
+      <div class="content dark scroll">
+        <div class="innerContent apperance">
+          <h3 class="marLeft">Kommunicera med skolan</h3>
+          <p class="pricing_text">
+            I tigerLMS så finns det inbyggt kraftfulla kommunikationsverktyg för att direkt kommunicera personal eller att ge feedback
+            efter veckor och månader för att kunna påverka din utbildning. Du kommer även kunna ge feedback utifrån varje
+            avslutad kurs för att kunna ge mer detaljerad inte i syfte att utveckla utbildningen framåt.
+          </p>
+          <img class="featuresImg" src="../img/commu.png">
+        </div>
+        <!--innerContent-->
+      </div>
+      <!--content dark-->
+    </section>
+    <section id="selection3" class="section highlight">
+      <div class="content scroll">
+        <div class="innerContent apperance">
+          <h3 class="marLeft">Vara på plats</h3>
+          <p class="pricing_text">
+            Att registers närvaro är naturligt och enkelt med tiger-LMS verktyg där du får en kod från din lärare som du sedan skriver
+            in i tiger-LMS som automatisk registrerar att du är på plats.
+            <br> Som lärare är det enkelt att hantera närvaron då du har kontroll hur länge eleverna kan registers sin närvaro
+            som i sin tur eliminerar fusk med närvaro. Du kan sedan enkelt se vilka som har varit närvarande.
+          </p>
+          <img class="featuresImg" src="../img/attendance_handss.png">
+        </div>
+        <!--innerContent-->
+      </div>
+      <!--content -->
+    </section>
+    <section id="selection4" class="section highlight">
+      <div class="content dark scroll">
+        <div class="innerContent apperance">
+          <h3 class="marLeft">Uppgifter</h3>
+          <p class="pricing_text">
+            Hantering av uppgifter är enkelt och strukturerat i sin presentation att du som elev kan lätt förstå vad du behöva i varje
+            uppgift.
+            <br> Det hjälper även dig som lärare att enkelt kunna se vem som har lämnat in vad. Som lärare kan du även lägga
+            till andra element i from av uppgifter som är betygs grundande.
+          </p>
+          <img class="featuresImg" src="../img/work.png">
+        </div>
+        <!--innerContent-->
+      </div>
+      <!--content dark-->
+    </section>
+  </div>
+  <!--scroll -->
+
+  </div>
+  <!--wrap-->
 
 
-      <script src="../js/login.js"></script>
-      <script src="../js/jquery.ScrollDots.js"></script>
-      <script src="../js/modals.js"></script>
-      <script src="../js/currentDotsNav.js"></script>
-    </body>
+  <script src="../js/login.js"></script>
+  <script src="../js/jquery.ScrollDots.js"></script>
+  <script src="../js/modals.js"></script>
+  <script src="../js/currentDotsNav.js"></script>
+</body>
+
 </html>
