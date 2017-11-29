@@ -97,4 +97,3 @@ function foo() {
 
 # Links:
 1. Trello https://trello.com/b/UaFE8N4d/tiger-gu1
-2. Flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox/
