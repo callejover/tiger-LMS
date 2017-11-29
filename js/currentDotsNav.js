@@ -30,36 +30,39 @@
 
             // Hightlight if window top hits the start of the element
             if (scrollPos > start) {
-                links[i].classList.add('active');
-                links[i].classList.remove('inactive');
+                links[i].classList.add('active');       // Adds the active link
+                links[i].classList.remove('inactive');  // Current state of al highlights
             } else { // Stop highlighting if the position is less then start position
-                links[i].classList.remove('active');
-                links[i].classList.add('inactive');
+                links[i].classList.remove('active');    // Removes the active class
+                links[i].classList.add('inactive');     // Adds the inactive class
             }
 
             // Stop hightlight if window-top hits the end of the element
             if (scrollPos > end) {
-                links[i].classList.remove('active');
-                links[i].classList.add('inactive');
+                links[i].classList.remove('active');    // Removes the active class
+                links[i].classList.add('inactive');     // Adds the inactive class
             }
         }
     }
 
     // Function for scroll events
     function highlightLastKnownScrollPos(event) {
-        lastKnownScrollPos = window.scrollY;
-        if (!scrollTicking) {
+        lastKnownScrollPos = window.scrollY;  // Store the last know scroll position
+        if (!scrollTicking) { // when true / user scrolling
 
-            // repaints animation
+            // Method tells the browser that you wish to perform an animation and requests that the browser call a specified function to update an animation before the next repaint
             window.requestAnimationFrame(function () {
-                highlight(lastKnownScrollPos); // Callback
+                highlight(lastKnownScrollPos); // Runs the highlight function
                 scrollTicking = false;
             });
             scrollTicking = true;
         }
     }
 
+    // When user is scrolling
     window.addEventListener("scroll", highlightLastKnownScrollPos, false);
+    
+    // Run the function for highlight when loading page
     highlight(lastKnownScrollPos);
 
 })();
