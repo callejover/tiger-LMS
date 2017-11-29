@@ -10,14 +10,9 @@ $(document).ready(function($){
       parPosition[0] += parPosition[1];
       parPosition[1] += (parPosition[2] * 0.9);
       parPosition[2] += (parPosition[1] * 0.6);
-      //parPosition[1] += parPosition[2];
 
-      //parPosition[0] = 949;
-      //parPosition[1] = 3632;
-      //parPosition[2] = 5468;
       console.log("should be 949, 3632, 5468:" + parPosition);
-      //parPosition[2] += parPosition[1];
-      //parPosition.push(3800);
+
   $('a').click(function(){
     $('html, body').animate({
       scrollTop: $( $.attr(this, 'href') ).offset().top

@@ -3,7 +3,7 @@
 function onDragStart(event) {
     event.dataTransfer.setData("text", event.target.id);
 
-    if (event.target.className == "groupGroup" /* || event.target.className == "dragItem" */ ) {
+    if (event.target.className == "groupGroup") {
         event.target.style.paddingBottom = ".5em";
         event.target.style.transition = "0.3s";
     }

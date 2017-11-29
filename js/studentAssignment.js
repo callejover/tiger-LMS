@@ -19,7 +19,6 @@ var assignmentRightInput = "<h2>Tack för din inlämning</h2> <p>Du kommer antig
 console.log(assignmentButton);
 
 function checkAssignment() {
-    /*var inputassignment = document.getElementById("").value*/
 
     event.preventDefault();
 

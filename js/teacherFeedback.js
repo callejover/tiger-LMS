@@ -8,8 +8,6 @@ google.charts.load('current', {
 // Set a callback to run when the Google Visualization API is loaded.
 google.charts.setOnLoadCallback(drawChart);
 google.charts.setOnLoadCallback(chart2);
-/* google.charts.setOnLoadCallback(chart3);
-google.charts.setOnLoadCallback(chart4); */
 google.charts.setOnLoadCallback(chart5);
 google.charts.setOnLoadCallback(chart6);
 google.charts.setOnLoadCallback(chart7);

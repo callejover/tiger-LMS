@@ -17,13 +17,6 @@ function setCurrentDate() {
 
     var lessonDay = document.querySelector(".lesson-day").value;
 
-    //Chooses the selected option in the dropdown
-    // var xx = document.querySelector("#lesson-code").selectedIndex;
-    //Creates the dropdowns options to an array
-    // var yy = document.querySelector("#lesson-code").options;
-    //Finds the dropdowns optiions, then finds the class and returns the value
-    // var selectLesson = yy[xx].text;
-
     //Sets the random number between 1111 and 9999
     var randomCode = getRndInteger(1111,9999);
 
@@ -37,7 +30,3 @@ function setCurrentDate() {
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
-
-
-/* <h4>" + selectedClass + "</h4> */
-// "Den nya lektionskoden <br><h4>" + selectLesson + "</h4><br><h2>" + randomCode +"</h2>";
