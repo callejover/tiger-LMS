@@ -13,10 +13,9 @@ window.onload = function() {
     }
 }
 
-/*
-    When clicking on the nav-button-max-500
-    then the hidden-max-500 changes to display: flex
-*/
+    //When clicking on the nav-button-max-500
+    //then the hidden-max-500 changes to display: flex
+
 
 function navShowHide() { // Change .hidden-max-500 element to display: flex
     if (hiddenNavWarp.style.display == "flex") {
@@ -26,10 +25,10 @@ function navShowHide() { // Change .hidden-max-500 element to display: flex
     }
 }
 
-/*
-    When resizing the window and the menu is toggled and hidden
-    Reset the state so it aper on the desktop view again
-*/
+
+    //When resizing the window and the menu is toggled and hidden
+    //Reset the state so it aper on the desktop view again
+
 function resizeWindow() {
     if (window.innerWidth < 1200) {
         hiddenNavWarp.style.display = "none";
@@ -131,39 +130,4 @@ jQuery(document).ready(function($){
         }
 	    }
 	}
-
-	/*function checkStickyNavigation(currentTop) {
-		//secondary nav below intro section - sticky secondary nav
-		var secondaryNavOffsetTop = belowNavHeroContent.offset().top - secondaryNavigation.height() - mainHeader.height();
-
-		if (previousTop >= currentTop ) {
-	    	//if scrolling up...
-	    	if( currentTop < secondaryNavOffsetTop ) {
-	    		//secondary nav is not fixed
-	    		mainHeader.removeClass('is-hidden');
-	    		secondaryNavigation.removeClass('fixed slide-up');
-	    		belowNavHeroContent.removeClass('secondary-nav-fixed');
-	    	} else if( previousTop - currentTop > scrollDelta ) {
-	    		//secondary nav is fixed
-	    		mainHeader.removeClass('is-hidden');
-	    		secondaryNavigation.removeClass('slide-up').addClass('fixed');
-	    		belowNavHeroContent.addClass('secondary-nav-fixed');
-	    	}
-
-	    } else {
-	    	//if scrolling down...
-	 	  	if( currentTop > secondaryNavOffsetTop + scrollOffset ) {
-	 	  		//hide primary nav
-	    		mainHeader.addClass('is-hidden');
-	    		secondaryNavigation.addClass('fixed slide-up');
-	    		belowNavHeroContent.addClass('secondary-nav-fixed');
-	    	} else if( currentTop > secondaryNavOffsetTop ) {
-	    		//once the secondary nav is fixed, do not hide primary nav if you haven't scrolled more than scrollOffset
-	    		mainHeader.removeClass('is-hidden');
-	    		secondaryNavigation.addClass('fixed').removeClass('slide-up');
-	    		belowNavHeroContent.addClass('secondary-nav-fixed');
-	    	}
-
-	    }
-	}*/
 });

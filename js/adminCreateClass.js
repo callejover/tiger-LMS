@@ -107,12 +107,6 @@ accountResponse.addEventListener("click", function (event) {
 
 
 
-
-
-
-
-
-
 // Checkes of value in array already exists or not
 let arrayContains = function (needle) {
     let findNaN = needle !== needle;
@@ -168,46 +162,24 @@ addCourseToTableButton.addEventListener("click", function (event) {
             errorMessageCourse.innerHTML = courseContainerListInput.value + messageSuccessText;
 
 
-                                                    let createCourses = document.createElement('li');
-                                                    
-                                                    //.setAttribute("class", "visibilityVisible")            
-
-                                                    let removeCourseButton = document.createElement('button');
-                                                    let courseText = courseContainerListInput.value ;
+            let createCourses = document.createElement('li');
+            let removeCourseButton = document.createElement('button');
+            let courseText = courseContainerListInput.value;
 
 
-                                                    createCourses.style.opacity = 0;
-                                                    setTimeout(function () {
-                                                        createCourses.style.opacity = 1;
-                                                        createCourses.style.transition = "1s";
-                                                    }, 0);
+            createCourses.style.opacity = 0;
+            setTimeout(function () {
+                createCourses.style.opacity = 1;
+                createCourses.style.transition = "1s";
+            }, 0);
 
-                                                    createCourses.innerHTML = "<label><input type=\"checkbox\" name=\"\" checked> <span>" + courseText + "</span><span> (" + courseContainerListSelect.options[courseContainerListSelect.selectedIndex].text + ")</span></label>";
-                                                    createCourses.appendChild(removeCourseButton);
-                                                    removeCourseButton.innerHTML = "Ta bort";
-                                                    
-                                                    removeCourseButton.setAttribute("onClick", "removeMe(this)");
-                                                    createCoursesUL.appendChild(createCourses);
+            createCourses.innerHTML = "<label><input type=\"checkbox\" name=\"\" checked> <span>" + courseText + "</span><span> (" + courseContainerListSelect.options[courseContainerListSelect.selectedIndex].text + ")</span></label>";
+            createCourses.appendChild(removeCourseButton);
+            removeCourseButton.innerHTML = "Ta bort";
 
+            removeCourseButton.setAttribute("onClick", "removeMe(this)");
+            createCoursesUL.appendChild(createCourses);
 
-            // let row = createCourses.insertRow(-1);
-            // let cell1 = row.insertCell(0);
-            // let cell2 = row.insertCell(1);
-            // let cell3 = row.insertCell(2);
-
-
-            // row.style.opacity = 0;
-            // setTimeout(function () {
-            //     row.style.opacity = 1;
-            //     row.style.transition = "1s";
-            // },0);
-
-            // cell1.setAttribute("class", "text-align-center");
-            // cell1.innerHTML = "<input type=\"checkbox\" name=\"\" id=\"course-" + courseContainerListInput.value + "\">";
-            // cell2.innerHTML = "<label for=\"course-" + courseContainerListInput.value + "\">" + courseContainerListInput.value + "</label>";
-            // cell3.innerHTML = courseContainerListSelect.options[courseContainerListSelect.selectedIndex].text;
-
-            // courseContainerListInput.value = "";
 
         }
     }
@@ -270,41 +242,41 @@ addStudentToTableButton.addEventListener("click", function (event) {
 });
 
 
-                                                                function removeMe(item) {
-                                                                    let removeStudentItem = item.parentElement.textContent.replace('Ta bort', '');
-                                                                    let removeCourseItem = item.parentElement.children[0].id.replace('course-', '');
+function removeMe(item) {
+    let removeStudentItem = item.parentElement.textContent.replace('Ta bort', '');
+    let removeCourseItem = item.parentElement.children[0].id.replace('course-', '');
 
-                                                                    let studentContainerListSelect = document.querySelector(".studentContainerList select");
-                                                                    var studentContainerListSelectOption = document.createElement("option");
-
-
-                                                                    // Checks if item is deleted on the course side
-                                                                    if (item.parentElement.parentElement.parentElement.parentElement.classList.contains("createCourses")) {
-
-                                                                        // Removes the item from array for comparing if i exits in list
-                                                                        courseExists.splice(courseExists.indexOf(removeCourseItem), 1);
-
-                                                                    } else {
-                                                                        // Students
-                                                                        
-                                                                        // Grabs the student text 
-                                                                        studentContainerListSelectOption.text = removeStudentItem;
-
-                                                                        // Adds back the student that has been removed
-                                                                        studentContainerListSelect.add(studentContainerListSelectOption);
-                                                                    }
+    let studentContainerListSelect = document.querySelector(".studentContainerList select");
+    var studentContainerListSelectOption = document.createElement("option");
 
 
-                                                                    item.parentElement.style.opacity = 0;
-                                                                    item.parentElement.style.transition = "1s";
+    // Checks if item is deleted on the course side
+    if (item.parentElement.parentElement.parentElement.parentElement.classList.contains("createCourses")) {
 
-                                                                    setTimeout(function () {
-                                                                        item.parentElement.style.opacity = 1;
-                                                                        item.parentElement.parentElement.removeChild(item.parentElement);
-                                                                    }, 500);
+        // Removes the item from array for comparing if i exits in list
+        courseExists.splice(courseExists.indexOf(removeCourseItem), 1);
+
+    } else {
+        // Students
+
+        // Grabs the student text 
+        studentContainerListSelectOption.text = removeStudentItem;
+
+        // Adds back the student that has been removed
+        studentContainerListSelect.add(studentContainerListSelectOption);
+    }
 
 
-                                                                }
+    item.parentElement.style.opacity = 0;
+    item.parentElement.style.transition = "1s";
+
+    setTimeout(function () {
+        item.parentElement.style.opacity = 1;
+        item.parentElement.parentElement.removeChild(item.parentElement);
+    }, 500);
+
+
+}
 
 
 
