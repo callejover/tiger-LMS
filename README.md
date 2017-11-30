@@ -2,6 +2,13 @@
 # TIGER-LMS
 Tiger-LMS is a simple to use Learning Management System for students and staff.
 
+1. Vi som har jobbat med det här projektet är:
+    - Calle Jovér
+    - Robbin Eriksson
+    - Tim Aro
+    - Kanya Klayjinda
+    - Tim Lappalainen
+
 # USERNAMES AND PASSWORDS
 1. Accounts.
     - username: student
