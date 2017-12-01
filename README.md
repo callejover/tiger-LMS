@@ -23,6 +23,8 @@ Tiger-LMS is a simple to use Learning Management System for students and staff.
 2. Student Attendance Code
     - 1111
 
+#TECHNICAL INFO
+This project is developed for Google Chrome browsers and made to work on mobile devices.
 
 # CODE LAYOUT
 1. html: Contains all html pages on the repository.
